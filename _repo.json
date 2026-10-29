@@ -1,5 +1,5 @@
 {
-    "name": "reference repository",
-    "description": "Reference repository for ADL 2.x test and demonstration archetypes",
-    "maintainer": "openEHR"
+    "name": "SPLASH",
+    "description": "SPLASH Archetype repository",
+    "maintainer": "splashform.org"
 }
