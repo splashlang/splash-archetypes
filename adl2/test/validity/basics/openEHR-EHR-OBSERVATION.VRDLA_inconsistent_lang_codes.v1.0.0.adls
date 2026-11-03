@@ -53,20 +53,24 @@ terminology
 			["id1"] = <
 				description = <"the measurement by any means (invasive or non-invasive) of systemic arterial blood pressure which is deemed to represent the actual systemic blood pressure">
 				text = <"Blood pressure">
+				description = <"Blood pressure">
 			>
 			["id7"] = <
 				description = <"other event in event history">
 				text = <"any event">
+				description = <"any event">
 			>
 		>
 		["zh-cn"] = <
 			["id1"] = <
 				description = <"the measurement of systemic arterial blood pressure which is deemed to represent the actual systemic blood pressure">
 				text = <"血压测量">
+				description = <"血压测量">
 			>
 			["id7"] = <
 				description = <"other event in event history">
 				text = <"任意事件">
+				description = <"任意事件">
 			>
 		>
 	>

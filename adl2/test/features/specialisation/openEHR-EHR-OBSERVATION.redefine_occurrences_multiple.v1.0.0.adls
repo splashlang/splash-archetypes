@@ -48,23 +48,23 @@ terminology
 		["en"] = <
 			["id1.1"] = <
 				text = <"specialised archetype">
-				description = <"">
+				description = <"specialised archetype">
 			>
 			["id3.1"] = <
 				text = <"any event - occurrences specialised A">
-				description = <"">
+				description = <"any event - occurrences specialised A">
 			>
 			["id3.2"] = <
 				text = <"any event - occurrences specialised B">
-				description = <"">
+				description = <"any event - occurrences specialised B">
 			>
 			["id3.3"] = <
 				text = <"any event - occurrences specialised C">
-				description = <"">
+				description = <"any event - occurrences specialised C">
 			>
 			["id3.4"] = <
 				text = <"any event - occurrences specialised D">
-				description = <"">
+				description = <"any event - occurrences specialised D">
 			>
 		>
 	>

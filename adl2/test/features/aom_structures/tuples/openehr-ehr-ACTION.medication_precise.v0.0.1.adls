@@ -20,6 +20,7 @@ description
 			purpose = <"Test archetye illustrating use of tuples to model ACTIONs.">
 			use = <"Regression testing">
 			keywords = <"test", "tuple">
+            regression = <"FAIL">
 		>
 	>
 

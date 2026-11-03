@@ -41,10 +41,12 @@ terminology
 			["id1"] = <
 				description = <"an Observation">
 				text = <"an Observation">
+				description = <"an Observation">
 			>
 			["id3"] = <
 				description = <"some Event">
 				text = <"some Event">
+				description = <"some Event">
 			>
 		>
 	>

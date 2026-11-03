@@ -50,18 +50,23 @@ terminology
 		["en"] = <
 			["id1"] = <
 				text = <"Laboratory test ordinal">
+				description = <"Laboratory test ordinal">
 			>
 			["id2"] = <
 				text = <"Result value">
+				description = <"Result value">
 			>
 			["at1"] = <
 				text = <"min">
+				description = <"min">
 			>
 			["at2"] = <
 				text = <"med">
+				description = <"med">
 			>
 			["at3"] = <
 				text = <"max">
+				description = <"max">
 			>
 		>
 	>

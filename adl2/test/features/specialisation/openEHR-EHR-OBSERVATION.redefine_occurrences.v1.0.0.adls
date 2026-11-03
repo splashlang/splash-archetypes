@@ -45,11 +45,11 @@ terminology
 		["en"] = <
 			["id1.1"] = <
 				text = <"specialised archetype">
-				description = <"">
+				description = <"specialised archetype">
 			>
 			["id3.1"] = <
 				text = <"any event - occurrences specialised">
-				description = <"">
+				description = <"any event - occurrences specialised">
 			>
 		>
 	>

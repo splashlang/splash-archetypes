@@ -1,5 +1,5 @@
 archetype (adl_version=2.0.6; rm_release=1.0.2)
-	openEHR-EHR-EVALUATION.VSAM_rm_wrong_multiple_attr.v1
+	openEHR-EHR-EVALUATION.VSAM_rm_wrong_multiple_attr.v1.0.0
 
 language
 	original_language = <[ISO_639-1::en]>
@@ -44,14 +44,17 @@ terminology
 			["id1"] = <
 				description = <"Some evaluation">
 				text = <"Some evaluation">
+				description = <"Some evaluation">
 			>
 			["id2"] = <
 				description = <"Structure">
 				text = <"Structure">
+				description = <"Structure">
 			>
 			["id3"] = <
 				description = <"An Element">
 				text = <"An Element">
+				description = <"An Element">
 			>
 		>
 	>

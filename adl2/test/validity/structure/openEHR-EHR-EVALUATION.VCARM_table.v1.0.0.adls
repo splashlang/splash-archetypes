@@ -1,5 +1,5 @@
 archetype (adl_version=2.0.5; rm_release=1.0.2)
-	openEHR-EHR-EVALUATION.VCARM_table.v1
+	openEHR-EHR-EVALUATION.VCARM_table.v1.0.0
 
 language
 	original_language = <[ISO_639-1::en]>
@@ -44,14 +44,17 @@ terminology
 			["id1"] = <
 				description = <"outer object">
 				text = <"outer object">
+				description = <"outer object">
 			>
 			["id2"] = <
 				description = <"some kind of result">
 				text = <"some kind of result">
+				description = <"some kind of result">
 			>
 			["id3"] = <
 				description = <"aspect">
 				text = <"aspect">
+				description = <"aspect">
 			>
 		>
 	>
