@@ -105,10 +105,6 @@ definition
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1"] = <
-				text = <"Adhoc heading">
-				description = <"A generic section header.">
-			>
 			["id1.1"] = <
 				text = <"Patient event information">
 				description = <"Information about the patient event">
@@ -129,34 +125,6 @@ component_terminologies
 		["openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-1.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Admission Short Singapore">
-						description = <"Administrative information for the admission of a patient to the care of a hospital/institution">
-					>
-					["id5"] = <
-						text = <"Date of admission">
-						description = <"*">
-					>
-					["id6"] = <
-						text = <"Admission type">
-						description = <"*">
-					>
-					["id12"] = <
-						text = <"Source of admission">
-						description = <"The place from which the patient was admitted">
-					>
-					["id41"] = <
-						text = <"Referring doctor participation">
-						description = <"Participation of referring doctor">
-					>
-					["id42"] = <
-						text = <"Admitting doctor participation">
-						description = <"Admitting doctor participation">
-					>
-					["id43"] = <
-						text = <"Admitting organisation participation">
-						description = <"Participation of admitting organisation">
-					>
 					["at47"] = <
 						text = <"Emergency">
 						description = <"*">
@@ -168,26 +136,6 @@ component_terminologies
 					["id58"] = <
 						text = <"Event Identifier">
 						description = <"*">
-					>
-					["id59"] = <
-						text = <"Admitting unit">
-						description = <"*">
-					>
-					["at60"] = <
-						text = <"Referring clinician">
-						description = <"*">
-					>
-					["at61"] = <
-						text = <"Principal admitting clinician">
-						description = <"The clinician with primary responsibility for admission.">
-					>
-					["at62"] = <
-						text = <"Admitting organisation">
-						description = <"*">
-					>
-					["ac1"] = <
-						text = <"Admission type (synthesised)">
-						description = <"* (synthesised)">
 					>
 					["id1.1"] = <
 						text = <"Admission event start information">
@@ -203,79 +151,25 @@ component_terminologies
 					>
 				>
 			>
-			value_sets = <
-				["ac1"] = <
-					id = <"ac1">
-					members = <"at47", "at48">
-				>
-			>
 		>
 		["openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-2.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Discharge information - Simple discharge summary">
-						description = <"The administrative information required at the time of discharge of a patient from a period of care">
-					>
-					["id5"] = <
-						text = <"Date of discharge">
-						description = <"The date of discharge for this care episode">
-					>
 					["id31"] = <
 						text = <"Discharge destination type">
 						description = <"The destination of a patient on completion of a hospital provder spell">
-					>
-					["id61"] = <
-						text = <"Discharge unit">
-						description = <"The department or specialty with responsibility for the patient at the time of discharge">
 					>
 					["id67"] = <
 						text = <"Discharge location">
 						description = <"The ward from which the patient was discharged">
 					>
-					["id72"] = <
-						text = <"Discharge description">
-						description = <"Details about the Discharge destination">
-					>
 					["id75"] = <
 						text = <"Discharge details">
-						description = <"*">
-					>
-					["id78"] = <
-						text = <"Outcome">
-						description = <"*">
-					>
-					["id79"] = <
-						text = <"Condition">
-						description = <"*">
-					>
-					["id80"] = <
-						text = <"Discharge Type">
-						description = <"*">
-					>
-					["id81"] = <
-						text = <"Event Identifier">
 						description = <"*">
 					>
 					["at82"] = <
 						text = <"Principal doctor">
 						description = <"Doctor responsible for discharge">
-					>
-					["at84"] = <
-						text = <"Discharging organisation">
-						description = <"Organisation from which the subject was discharged.">
-					>
-					["id85"] = <
-						text = <"Discharging doctor">
-						description = <"Doctor responsible for discharge">
-					>
-					["id86"] = <
-						text = <"Discharging organisation">
-						description = <"Organisation from which the subject was discharged.">
-					>
-					["id87"] = <
-						text = <"Other care provider">
-						description = <"Any other care provider involved in the admission">
 					>
 					["id1.1"] = <
 						text = <"Discharge event end information - Simple discharge summary">

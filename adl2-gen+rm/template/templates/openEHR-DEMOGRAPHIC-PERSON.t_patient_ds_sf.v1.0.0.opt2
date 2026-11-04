@@ -263,10 +263,6 @@ definition
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1"] = <
-				text = <"Person">
-				description = <"Personal demographic data">
-			>
 			["id2"] = <
 				text = <"Demographic details">
 				description = <"A person's demographic details.">
@@ -331,21 +327,9 @@ component_terminologies
 		["openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-1.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Extended personal demographics">
-						description = <"Personal demographic data extended beyond those specified by ISO 22220.">
-					>
-					["id2"] = <
-						text = <"Marital status">
-						description = <"Marital status.">
-					>
 					["id3"] = <
 						text = <"Ethnic background">
 						description = <"The person's ethnic background.">
-					>
-					["ac2"] = <
-						text = <"Marital status codes">
-						description = <"Valid codes for marital status">
 					>
 					["ac3"] = <
 						text = <"Ethnic background codes">
@@ -365,22 +349,6 @@ component_terminologies
 		["openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-2.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Person additional demographic data">
-						description = <"Person additional demographic data according to ISO 22220: sex and mother's family name">
-					>
-					["id2"] = <
-						text = <"Sex">
-						description = <"The sex of the subject.">
-					>
-					["id3"] = <
-						text = <"Mother's family name">
-						description = <"Mother's original family name">
-					>
-					["id4"] = <
-						text = <"Identification comment">
-						description = <"Comments recorded for a person registration to distinguish between two or more persons with the same or similar demographic information">
-					>
 					["at11"] = <
 						text = <"Male">
 						description = <"Male">
@@ -421,45 +389,21 @@ component_terminologies
 		["openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-3.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Birth data">
-						description = <"Birth demographic data">
-					>
 					["id2"] = <
 						text = <"Birth date">
 						description = <"The date of birth of a person">
-					>
-					["id3"] = <
-						text = <"Country of birth">
-						description = <"The country where a person was born">
 					>
 					["id4"] = <
 						text = <"Birth plurality">
 						description = <"An indicator of multiple birth, showing the total number of births resulting from a single pregnancy">
 					>
-					["id5"] = <
-						text = <"Birth order">
-						description = <"The sequential order of this person in a multiple birth regardless of live or still birth">
-					>
-					["id6"] = <
-						text = <"Date of birth follow-up indicator">
-						description = <"Flag that indicates when the current date of birth requires follow-up to obtain a more accurate date">
-					>
 					["id7"] = <
 						text = <"Country specific data">
 						description = <"Additional birth data that are country specific">
 					>
-					["ac1"] = <
-						text = <"Country codes">
-						description = <"valid codes for countries">
-					>
 					["ac2"] = <
 						text = <"Birth plurality codes">
 						description = <"valid codes for birth plurality">
-					>
-					["ac3"] = <
-						text = <"Birth order codes">
-						description = <"valid codes for birth order">
 					>
 					["id1.1"] = <
 						text = <"Birth data">
@@ -471,10 +415,6 @@ component_terminologies
 		["openEHR-DEMOGRAPHIC-PARTY_IDENTITY.t_patient_ds_sf-4.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Person name">
-						description = <"Person name details.">
-					>
 					["id2"] = <
 						text = <"Name">
 						description = <"Components of a person name.">
@@ -491,33 +431,13 @@ component_terminologies
 						text = <"Title">
 						description = <"An honorific form of address commencing a name, used when addressing a person by name, whether by mail, by phone, or depending upon cultural situation in person.">
 					>
-					["id6"] = <
-						text = <"Suffix">
-						description = <"Additional term used following a person name.">
-					>
 					["id8"] = <
 						text = <"Alternative name representations">
 						description = <"Details of alternative representations such as local codesets or language variations.">
 					>
-					["id9"] = <
-						text = <"Preferred name">
-						description = <"Indicates that this is the name by which a person chooses to be identified.">
-					>
-					["id10"] = <
-						text = <"Issues of accuracy and privacy">
-						description = <"An indicator of specific conditions or rules that should be applied to the use of the person name.">
-					>
 					["id11"] = <
 						text = <"Full Name">
 						description = <"The person's full name as a concatenation of its name parts.">
-					>
-					["id20"] = <
-						text = <"Usage interval">
-						description = <"The period of time for which the name usage applies.">
-					>
-					["id21"] = <
-						text = <"Usage identifier">
-						description = <"The combination of identifier type, identifier issuer and identifier name that specify the link between this name and reporting or other unique identifier usage.">
 					>
 					["id22"] = <
 						text = <"Representation usage">
@@ -579,10 +499,6 @@ component_terminologies
 						text = <"Person name (synthesised)">
 						description = <"Person name details. (synthesised)">
 					>
-					["ac2"] = <
-						text = <"Issues of accuracy and privacy (synthesised)">
-						description = <"An indicator of specific conditions or rules that should be applied to the use of the person name. (synthesised)">
-					>
 					["id1.1"] = <
 						text = <"Person name">
 						description = <"Person name for Simple discharge summary">
@@ -594,19 +510,11 @@ component_terminologies
 					id = <"ac1">
 					members = <"at24", "at25", "at26", "at27", "at28", "at29">
 				>
-				["ac2"] = <
-					id = <"ac2">
-					members = <"at32", "at33", "at34", "at35", "at36", "at37">
-				>
 			>
 		>
 		["openEHR-DEMOGRAPHIC-ADDRESS.t_patient_ds_sf-5.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Address">
-						description = <"Address based on ISO22220 standard.">
-					>
 					["id2"] = <
 						text = <"Items">
 						description = <"Address items.">
@@ -614,10 +522,6 @@ component_terminologies
 					["id3"] = <
 						text = <"Address lines">
 						description = <"A composite of one or more standard address components that describe a low level of geographical/physical description of a location that, used in conjunction with the other high-level address components i.e. ‘suburb / town / locality name’, ‘postal code’, ‘state / territory / province’, and ‘country’, forms a complete geographical/physical address.">
-					>
-					["id4"] = <
-						text = <"Delivery point identifier">
-						description = <"A unique number assigned to a postal address as designated by the postal service.">
 					>
 					["id5"] = <
 						text = <"Postal code (ZIP code)">
@@ -627,21 +531,9 @@ component_terminologies
 						text = <"Suburb/town/locality">
 						description = <"The full name of the general locality containing the specific address.">
 					>
-					["id7"] = <
-						text = <"State/territory/province identifier">
-						description = <"An identifier of the province, state or territory containing the address.">
-					>
 					["id8"] = <
 						text = <"Country identifier">
 						description = <"A code representing the country component of an address.">
-					>
-					["id9"] = <
-						text = <"Address type start date accuracy indicator">
-						description = <"An indication of the accuracy of the address type start date at the component level for the date. It is expressed by means of a sequence of three characters with possible values A (accurate), E (estimated) or U (unknown) each. The characters represent the accuracy for the year, month and day respectively. This element was introduced in order to be compatible with ISO 22220, but openEHR reference model represents date accuracy in a different way (see the data types specification).">
-					>
-					["id10"] = <
-						text = <"Address type end date accuracy indicator">
-						description = <"An indication of the accuracy of the address type end date at the component level for the date. It is expressed by means of a sequence of three characters with possible values A (accurate), E (estimated) or U (unknown) each. The characters represent the accuracy for the year, month and day respectively. This element was introduced in order to be compatible with ISO 22220, but openEHR reference model represents date accuracy in a different way (see the data types specification).">
 					>
 					["id11"] = <
 						text = <"Local high level address components">
@@ -730,10 +622,6 @@ component_terminologies
 					["ac3"] = <
 						text = <"Street suffix codes">
 						description = <"Valid codes for street suffixes.">
-					>
-					["ac4"] = <
-						text = <"State codes">
-						description = <"valid codes for state/territory/province.">
 					>
 					["ac5"] = <
 						text = <"Country codes">

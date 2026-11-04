@@ -716,10 +716,6 @@ definition
 terminology
 	term_definitions = <
 		["en"] = <
-			["id1"] = <
-				text = <"Simple discharge summary">
-				description = <"Discharge summary document for patient leaving a hospital">
-			>
 			["id2"] = <
 				text = <"Subject">
 				description = <"Chapter containing subject discharge information">
@@ -776,10 +772,6 @@ component_terminologies
 		["openEHR-DEMOGRAPHIC-PERSON.t_patient_ds_sf.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Person">
-						description = <"Personal demographic data">
-					>
 					["id2"] = <
 						text = <"Demographic details">
 						description = <"A person's demographic details.">
@@ -792,10 +784,6 @@ component_terminologies
 						text = <"Contacts">
 						description = <"A person's contacts.">
 					>
-					["id5"] = <
-						text = <"Relationships">
-						description = <"A person's relationships, especially family ties.">
-					>
 					["id11"] = <
 						text = <"Birth, death, documentation and other demographic data">
 						description = <"Allows the collection of data about birth and death data, documentation and other person's demographic data.">
@@ -803,14 +791,6 @@ component_terminologies
 					["id31"] = <
 						text = <"Addresses">
 						description = <"Addresses linked to a single contact, i.e., with the same time validity.">
-					>
-					["id41"] = <
-						text = <"Relationship type">
-						description = <"Defines the type of relationship between related persons.">
-					>
-					["ac1"] = <
-						text = <"Codes for type of relationship">
-						description = <"Valid codes for type of relationship.">
 					>
 					["id1.1"] = <
 						text = <"Patient demographic data">
@@ -842,21 +822,9 @@ component_terminologies
 		["openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-1.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Extended personal demographics">
-						description = <"Personal demographic data extended beyond those specified by ISO 22220.">
-					>
-					["id2"] = <
-						text = <"Marital status">
-						description = <"Marital status.">
-					>
 					["id3"] = <
 						text = <"Ethnic background">
 						description = <"The person's ethnic background.">
-					>
-					["ac2"] = <
-						text = <"Marital status codes">
-						description = <"Valid codes for marital status">
 					>
 					["ac3"] = <
 						text = <"Ethnic background codes">
@@ -876,22 +844,6 @@ component_terminologies
 		["openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-2.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Person additional demographic data">
-						description = <"Person additional demographic data according to ISO 22220: sex and mother's family name">
-					>
-					["id2"] = <
-						text = <"Sex">
-						description = <"The sex of the subject.">
-					>
-					["id3"] = <
-						text = <"Mother's family name">
-						description = <"Mother's original family name">
-					>
-					["id4"] = <
-						text = <"Identification comment">
-						description = <"Comments recorded for a person registration to distinguish between two or more persons with the same or similar demographic information">
-					>
 					["at11"] = <
 						text = <"Male">
 						description = <"Male">
@@ -932,45 +884,21 @@ component_terminologies
 		["openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-3.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Birth data">
-						description = <"Birth demographic data">
-					>
 					["id2"] = <
 						text = <"Birth date">
 						description = <"The date of birth of a person">
-					>
-					["id3"] = <
-						text = <"Country of birth">
-						description = <"The country where a person was born">
 					>
 					["id4"] = <
 						text = <"Birth plurality">
 						description = <"An indicator of multiple birth, showing the total number of births resulting from a single pregnancy">
 					>
-					["id5"] = <
-						text = <"Birth order">
-						description = <"The sequential order of this person in a multiple birth regardless of live or still birth">
-					>
-					["id6"] = <
-						text = <"Date of birth follow-up indicator">
-						description = <"Flag that indicates when the current date of birth requires follow-up to obtain a more accurate date">
-					>
 					["id7"] = <
 						text = <"Country specific data">
 						description = <"Additional birth data that are country specific">
 					>
-					["ac1"] = <
-						text = <"Country codes">
-						description = <"valid codes for countries">
-					>
 					["ac2"] = <
 						text = <"Birth plurality codes">
 						description = <"valid codes for birth plurality">
-					>
-					["ac3"] = <
-						text = <"Birth order codes">
-						description = <"valid codes for birth order">
 					>
 					["id1.1"] = <
 						text = <"Birth data">
@@ -982,10 +910,6 @@ component_terminologies
 		["openEHR-DEMOGRAPHIC-PARTY_IDENTITY.t_patient_ds_sf-4.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Person name">
-						description = <"Person name details.">
-					>
 					["id2"] = <
 						text = <"Name">
 						description = <"Components of a person name.">
@@ -1002,33 +926,13 @@ component_terminologies
 						text = <"Title">
 						description = <"An honorific form of address commencing a name, used when addressing a person by name, whether by mail, by phone, or depending upon cultural situation in person.">
 					>
-					["id6"] = <
-						text = <"Suffix">
-						description = <"Additional term used following a person name.">
-					>
 					["id8"] = <
 						text = <"Alternative name representations">
 						description = <"Details of alternative representations such as local codesets or language variations.">
 					>
-					["id9"] = <
-						text = <"Preferred name">
-						description = <"Indicates that this is the name by which a person chooses to be identified.">
-					>
-					["id10"] = <
-						text = <"Issues of accuracy and privacy">
-						description = <"An indicator of specific conditions or rules that should be applied to the use of the person name.">
-					>
 					["id11"] = <
 						text = <"Full Name">
 						description = <"The person's full name as a concatenation of its name parts.">
-					>
-					["id20"] = <
-						text = <"Usage interval">
-						description = <"The period of time for which the name usage applies.">
-					>
-					["id21"] = <
-						text = <"Usage identifier">
-						description = <"The combination of identifier type, identifier issuer and identifier name that specify the link between this name and reporting or other unique identifier usage.">
 					>
 					["id22"] = <
 						text = <"Representation usage">
@@ -1090,10 +994,6 @@ component_terminologies
 						text = <"Person name (synthesised)">
 						description = <"Person name details. (synthesised)">
 					>
-					["ac2"] = <
-						text = <"Issues of accuracy and privacy (synthesised)">
-						description = <"An indicator of specific conditions or rules that should be applied to the use of the person name. (synthesised)">
-					>
 					["id1.1"] = <
 						text = <"Person name">
 						description = <"Person name for Simple discharge summary">
@@ -1105,19 +1005,11 @@ component_terminologies
 					id = <"ac1">
 					members = <"at24", "at25", "at26", "at27", "at28", "at29">
 				>
-				["ac2"] = <
-					id = <"ac2">
-					members = <"at32", "at33", "at34", "at35", "at36", "at37">
-				>
 			>
 		>
 		["openEHR-DEMOGRAPHIC-ADDRESS.t_patient_ds_sf-5.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Address">
-						description = <"Address based on ISO22220 standard.">
-					>
 					["id2"] = <
 						text = <"Items">
 						description = <"Address items.">
@@ -1125,10 +1017,6 @@ component_terminologies
 					["id3"] = <
 						text = <"Address lines">
 						description = <"A composite of one or more standard address components that describe a low level of geographical/physical description of a location that, used in conjunction with the other high-level address components i.e. ‘suburb / town / locality name’, ‘postal code’, ‘state / territory / province’, and ‘country’, forms a complete geographical/physical address.">
-					>
-					["id4"] = <
-						text = <"Delivery point identifier">
-						description = <"A unique number assigned to a postal address as designated by the postal service.">
 					>
 					["id5"] = <
 						text = <"Postal code (ZIP code)">
@@ -1138,21 +1026,9 @@ component_terminologies
 						text = <"Suburb/town/locality">
 						description = <"The full name of the general locality containing the specific address.">
 					>
-					["id7"] = <
-						text = <"State/territory/province identifier">
-						description = <"An identifier of the province, state or territory containing the address.">
-					>
 					["id8"] = <
 						text = <"Country identifier">
 						description = <"A code representing the country component of an address.">
-					>
-					["id9"] = <
-						text = <"Address type start date accuracy indicator">
-						description = <"An indication of the accuracy of the address type start date at the component level for the date. It is expressed by means of a sequence of three characters with possible values A (accurate), E (estimated) or U (unknown) each. The characters represent the accuracy for the year, month and day respectively. This element was introduced in order to be compatible with ISO 22220, but openEHR reference model represents date accuracy in a different way (see the data types specification).">
-					>
-					["id10"] = <
-						text = <"Address type end date accuracy indicator">
-						description = <"An indication of the accuracy of the address type end date at the component level for the date. It is expressed by means of a sequence of three characters with possible values A (accurate), E (estimated) or U (unknown) each. The characters represent the accuracy for the year, month and day respectively. This element was introduced in order to be compatible with ISO 22220, but openEHR reference model represents date accuracy in a different way (see the data types specification).">
 					>
 					["id11"] = <
 						text = <"Local high level address components">
@@ -1242,10 +1118,6 @@ component_terminologies
 						text = <"Street suffix codes">
 						description = <"Valid codes for street suffixes.">
 					>
-					["ac4"] = <
-						text = <"State codes">
-						description = <"valid codes for state/territory/province.">
-					>
 					["ac5"] = <
 						text = <"Country codes">
 						description = <"valid codes for countries.">
@@ -1318,18 +1190,6 @@ component_terminologies
 		["openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Discharge">
-						description = <"A summarising communication about at the time of discharge from an institution or an episode of care">
-					>
-					["id4"] = <
-						text = <"Report identifier">
-						description = <"Identification information about the report">
-					>
-					["id5"] = <
-						text = <"Status">
-						description = <"The status of the report">
-					>
 					["at6"] = <
 						text = <"Final">
 						description = <"The report is the final Report">
@@ -1346,21 +1206,9 @@ component_terminologies
 						text = <"Corrected/Amended">
 						description = <"This report is a correction or amendment of a previous report">
 					>
-					["id10"] = <
-						text = <"Date/time of status">
-						description = <"The date and time the report was officially issued">
-					>
-					["id28"] = <
-						text = <"Details">
-						description = <"*">
-					>
 					["at10"] = <
 						text = <"event">
 						description = <"event">
-					>
-					["ac1"] = <
-						text = <"Status (synthesised)">
-						description = <"The status of the report (synthesised)">
 					>
 					["id1.1"] = <
 						text = <"Clinical detail">
@@ -1409,20 +1257,10 @@ component_terminologies
 					["at10"] = <http://openehr.org/id/433>
 				>
 			>
-			value_sets = <
-				["ac1"] = <
-					id = <"ac1">
-					members = <"at6", "at7", "at8", "at9">
-				>
-			>
 		>
 		["openEHR-EHR-SECTION.t_patient_event_info_ds_sf.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Adhoc heading">
-						description = <"A generic section header.">
-					>
 					["id1.1"] = <
 						text = <"Patient event information">
 						description = <"Information about the patient event">
@@ -1441,34 +1279,6 @@ component_terminologies
 		["openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-1.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Admission Short Singapore">
-						description = <"Administrative information for the admission of a patient to the care of a hospital/institution">
-					>
-					["id5"] = <
-						text = <"Date of admission">
-						description = <"*">
-					>
-					["id6"] = <
-						text = <"Admission type">
-						description = <"*">
-					>
-					["id12"] = <
-						text = <"Source of admission">
-						description = <"The place from which the patient was admitted">
-					>
-					["id41"] = <
-						text = <"Referring doctor participation">
-						description = <"Participation of referring doctor">
-					>
-					["id42"] = <
-						text = <"Admitting doctor participation">
-						description = <"Admitting doctor participation">
-					>
-					["id43"] = <
-						text = <"Admitting organisation participation">
-						description = <"Participation of admitting organisation">
-					>
 					["at47"] = <
 						text = <"Emergency">
 						description = <"*">
@@ -1480,26 +1290,6 @@ component_terminologies
 					["id58"] = <
 						text = <"Event Identifier">
 						description = <"*">
-					>
-					["id59"] = <
-						text = <"Admitting unit">
-						description = <"*">
-					>
-					["at60"] = <
-						text = <"Referring clinician">
-						description = <"*">
-					>
-					["at61"] = <
-						text = <"Principal admitting clinician">
-						description = <"The clinician with primary responsibility for admission.">
-					>
-					["at62"] = <
-						text = <"Admitting organisation">
-						description = <"*">
-					>
-					["ac1"] = <
-						text = <"Admission type (synthesised)">
-						description = <"* (synthesised)">
 					>
 					["id1.1"] = <
 						text = <"Admission event start information">
@@ -1515,79 +1305,25 @@ component_terminologies
 					>
 				>
 			>
-			value_sets = <
-				["ac1"] = <
-					id = <"ac1">
-					members = <"at47", "at48">
-				>
-			>
 		>
 		["openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-2.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Discharge information - Simple discharge summary">
-						description = <"The administrative information required at the time of discharge of a patient from a period of care">
-					>
-					["id5"] = <
-						text = <"Date of discharge">
-						description = <"The date of discharge for this care episode">
-					>
 					["id31"] = <
 						text = <"Discharge destination type">
 						description = <"The destination of a patient on completion of a hospital provder spell">
-					>
-					["id61"] = <
-						text = <"Discharge unit">
-						description = <"The department or specialty with responsibility for the patient at the time of discharge">
 					>
 					["id67"] = <
 						text = <"Discharge location">
 						description = <"The ward from which the patient was discharged">
 					>
-					["id72"] = <
-						text = <"Discharge description">
-						description = <"Details about the Discharge destination">
-					>
 					["id75"] = <
 						text = <"Discharge details">
-						description = <"*">
-					>
-					["id78"] = <
-						text = <"Outcome">
-						description = <"*">
-					>
-					["id79"] = <
-						text = <"Condition">
-						description = <"*">
-					>
-					["id80"] = <
-						text = <"Discharge Type">
-						description = <"*">
-					>
-					["id81"] = <
-						text = <"Event Identifier">
 						description = <"*">
 					>
 					["at82"] = <
 						text = <"Principal doctor">
 						description = <"Doctor responsible for discharge">
-					>
-					["at84"] = <
-						text = <"Discharging organisation">
-						description = <"Organisation from which the subject was discharged.">
-					>
-					["id85"] = <
-						text = <"Discharging doctor">
-						description = <"Doctor responsible for discharge">
-					>
-					["id86"] = <
-						text = <"Discharging organisation">
-						description = <"Organisation from which the subject was discharged.">
-					>
-					["id87"] = <
-						text = <"Other care provider">
-						description = <"Any other care provider involved in the admission">
 					>
 					["id1.1"] = <
 						text = <"Discharge event end information - Simple discharge summary">
@@ -1619,17 +1355,9 @@ component_terminologies
 		["openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-1.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Adverse reaction">
-						description = <"Recording the presence of a harmful or undesirable response to an agent or substance including food, as determined by the clinician - excluding poisoning and abnormal use">
-					>
 					["id4"] = <
 						text = <"Agent">
 						description = <"The agent or substance or class that caused the adverse reaction.">
-					>
-					["id5"] = <
-						text = <"Probability of causation">
-						description = <"Degree of certainty that the agent was the cause of the reaction.">
 					>
 					["at6"] = <
 						text = <"Certain/Highly likely">
@@ -1642,10 +1370,6 @@ component_terminologies
 					["at8"] = <
 						text = <"Possible">
 						description = <"The agent is deemed to be a possible cause of the reaction.">
-					>
-					["id11"] = <
-						text = <"Agent category">
-						description = <"The category of the agent.">
 					>
 					["at12"] = <
 						text = <"Food">
@@ -1663,10 +1387,6 @@ component_terminologies
 						text = <"Other chemical or substance">
 						description = <"Non-medicinal chemicals or substances.">
 					>
-					["id16"] = <
-						text = <"Reaction category">
-						description = <"The type of reaction experience by the person as determined by the clinician.">
-					>
 					["at17"] = <
 						text = <"Intolerance">
 						description = <"Leads to unpleasant symptoms which are sufficient to avoid use in the future.">
@@ -1682,10 +1402,6 @@ component_terminologies
 					["id20"] = <
 						text = <"Exposure and reaction detail">
 						description = <"Details of the reaction experienced by the person.">
-					>
-					["id21"] = <
-						text = <"Date of exposure">
-						description = <"The date (+/- time) when the person became exposed to the agent.">
 					>
 					["id22"] = <
 						text = <"Duration of the exposure">
@@ -1727,10 +1443,6 @@ component_terminologies
 						text = <"Non-active ingredient of medication">
 						description = <"A non-medicinal ingredient of medication such as colouring, preservative, etc.(subtype of other chemical)">
 					>
-					["id33"] = <
-						text = <"Specific substance">
-						description = <"The specific substance that caused the reaction if different from the agent (e.g. brands or members of a class).">
-					>
 					["at34"] = <
 						text = <"Imaging dye or media">
 						description = <"A dye or media used in diagnostic imaging (subtype of other chemical).">
@@ -1738,18 +1450,6 @@ component_terminologies
 					["at35"] = <
 						text = <"Environmental">
 						description = <"An agent present in the environment.">
-					>
-					["ac1"] = <
-						text = <"Agent category (synthesised)">
-						description = <"The category of the agent. (synthesised)">
-					>
-					["ac2"] = <
-						text = <"Reaction category (synthesised)">
-						description = <"The type of reaction experience by the person as determined by the clinician. (synthesised)">
-					>
-					["ac3"] = <
-						text = <"Probability of causation (synthesised)">
-						description = <"Degree of certainty that the agent was the cause of the reaction. (synthesised)">
 					>
 					["ac4"] = <
 						text = <"Reaction severity (synthesised)">
@@ -1762,18 +1462,6 @@ component_terminologies
 				>
 			>
 			value_sets = <
-				["ac1"] = <
-					id = <"ac1">
-					members = <"at12", "at13", "at14", "at15", "at32", "at34", "at35">
-				>
-				["ac2"] = <
-					id = <"ac2">
-					members = <"at17", "at18", "at19", "at31">
-				>
-				["ac3"] = <
-					id = <"ac3">
-					members = <"at6", "at7", "at8">
-				>
 				["ac4"] = <
 					id = <"ac4">
 					members = <"at25", "at26", "at27">
@@ -1783,14 +1471,6 @@ component_terminologies
 		["openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-2.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Alert">
-						description = <"Information pertaining to a subject of care that may need special consideration by a healthcare provider before making a decision about his/her actions in order to avert an unfavourable healthcare event, or relate to the safety of subject or providers, or pertain to special circumstances relevant to the delivery of care">
-					>
-					["id3"] = <
-						text = <"Category">
-						description = <"The category of alert">
-					>
 					["id4"] = <
 						text = <"Description">
 						description = <"Details of the alert">
@@ -1798,10 +1478,6 @@ component_terminologies
 					["id5"] = <
 						text = <"Start of alert">
 						description = <"The date/time tat the issue or event commenced">
-					>
-					["id6"] = <
-						text = <"Certainty">
-						description = <"An indication of confidence concerning the existence of the alert">
 					>
 					["at7"] = <
 						text = <"Confirmed">
@@ -1814,10 +1490,6 @@ component_terminologies
 					["at9"] = <
 						text = <"Discounted">
 						description = <"The issue or event has been discounted">
-					>
-					["id10"] = <
-						text = <"Status">
-						description = <"An indication of whether the alert is considered to be an active or inactive issue">
 					>
 					["id11"] = <
 						text = <"Review on">
@@ -1835,50 +1507,16 @@ component_terminologies
 						text = <"Resolved">
 						description = <"The alert has resolved">
 					>
-					["id15"] = <
-						text = <"End of alert">
-						description = <"The end of the alert period if known">
-					>
-					["ac2"] = <
-						text = <"A category of alert based">
-						description = <"Coded categories of alerts based on a domain vocabulary">
-					>
-					["ac3"] = <
-						text = <"Certainty (synthesised)">
-						description = <"An indication of confidence concerning the existence of the alert (synthesised)">
-					>
-					["ac4"] = <
-						text = <"Status (synthesised)">
-						description = <"An indication of whether the alert is considered to be an active or inactive issue (synthesised)">
-					>
 					["id1.1"] = <
 						text = <"Alerts">
 						description = <"Alert details">
 					>
 				>
 			>
-			value_sets = <
-				["ac3"] = <
-					id = <"ac3">
-					members = <"at7", "at8", "at9">
-				>
-				["ac4"] = <
-					id = <"ac4">
-					members = <"at12", "at13", "at14">
-				>
-			>
 		>
 		["openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-3.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Clinical Synopsis - SG">
-						description = <"Narrative summary or overview about a patient, specifically from the perspective of a healthcare provider, and with or without associated interpretations.">
-					>
-					["id3"] = <
-						text = <"Synopsis">
-						description = <"The summary, assessment, conclusions or evaluation of the clinical findings.">
-					>
 					["id4"] = <
 						text = <"Synopsis type">
 						description = <"*">
@@ -1959,26 +1597,6 @@ component_terminologies
 		["openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-4.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Problem">
-						description = <"An issue or obstacle which adversely impacts on the physical, mental and/or social well-being of an individual. The definition of a problem is deliberately kept rather loose so as to capture any real or perceived concerns that may adversely affect an individual's wellbeing to any degree.  ">
-					>
-					["id3"] = <
-						text = <"Problem">
-						description = <"Identification of the index problem.">
-					>
-					["id4"] = <
-						text = <"Date of initial onset">
-						description = <"The date when the problem was first identified by the individual.">
-					>
-					["id5"] = <
-						text = <"Age at initial onset">
-						description = <"The age of the individual when the problem was first identified by the individual.">
-					>
-					["id6"] = <
-						text = <"Severity">
-						description = <"The assessed overall severity of the index problem.">
-					>
 					["at7"] = <
 						text = <"Mild">
 						description = <"The severity of the index problem is mild, not affecting life or longevity.">
@@ -1990,26 +1608,6 @@ component_terminologies
 					["at9"] = <
 						text = <"Severe">
 						description = <"The severity of the index problem has had a major effect on life and/or longevity.">
-					>
-					["id10"] = <
-						text = <"Clinical description">
-						description = <"Description of the clinical aspects of the problem.">
-					>
-					["id11"] = <
-						text = <"Date clinically recognised">
-						description = <"Date the problem was recognised by a healthcare provider.">
-					>
-					["id12"] = <
-						text = <"Location">
-						description = <"Location of the problem in terms of body site.">
-					>
-					["id13"] = <
-						text = <"Body site">
-						description = <"The body site affected.">
-					>
-					["id14"] = <
-						text = <"Location description">
-						description = <"Description of the location.">
 					>
 					["id15"] = <
 						text = <"Aetiology">
@@ -2079,41 +1677,9 @@ component_terminologies
 						text = <"Date of resolution">
 						description = <"The date that the problem resolved or went into remission.">
 					>
-					["id32"] = <
-						text = <"Age at resolution">
-						description = <"The age of the person at the resolution of the problem.">
-					>
-					["id34"] = <
-						text = <"References">
-						description = <"Useful information about this condition.">
-					>
-					["id35"] = <
-						text = <"Reference">
-						description = <"Reference to material about this condition.">
-					>
-					["id36"] = <
-						text = <"Web link">
-						description = <"Useful information on the internet about this condition.">
-					>
 					["id37"] = <
 						text = <"Date of resolution of occurrence">
 						description = <"Date of the resolution of the occurrence or exacerbation.">
-					>
-					["id38"] = <
-						text = <"Age when clinically recognised">
-						description = <"Age at which the problem was recognised by a healthcare provider.">
-					>
-					["id39"] = <
-						text = <"Clinical significance">
-						description = <"Description of the clinical significance of the problem in terms of impact of the problem on the patient.">
-					>
-					["ac1"] = <
-						text = <"Severity (synthesised)">
-						description = <"The assessed overall severity of the index problem. (synthesised)">
-					>
-					["id0.32"] = <
-						text = <"Status">
-						description = <"The status of the diagnosis">
 					>
 					["at0.33"] = <
 						text = <"provisional">
@@ -2123,33 +1689,9 @@ component_terminologies
 						text = <"working">
 						description = <"working diagnosis considered very likely but not yet confirmed">
 					>
-					["id0.35"] = <
-						text = <"Diagnostic criteria">
-						description = <"The criteria on which the diagnosis is based">
-					>
-					["id0.36"] = <
-						text = <"Criterion">
-						description = <"A basis for the diagnosis">
-					>
-					["id1.1"] = <
-						text = <"Diagnosis">
-						description = <"A diagnosis defined by a clinician which is coded in an accepted terminology and may include the stage of the condition and the diagnostic criteria">
-					>
-					["id3.1"] = <
-						text = <"Diagnosis">
-						description = <"The index diagnosis">
-					>
 					["ac0.1"] = <
 						text = <"Any term that 'is_a' diagnosis">
 						description = <"Any term that is a diagnosis in an accepted terminology">
-					>
-					["ac0.2"] = <
-						text = <"Status (synthesised)">
-						description = <"The status of the diagnosis (synthesised)">
-					>
-					["id0.0.55"] = <
-						text = <"Diagnosis type">
-						description = <"Type (reporting category) of diagnosis.">
 					>
 					["at0.0.56"] = <
 						text = <"Primary diagnosis">
@@ -2162,10 +1704,6 @@ component_terminologies
 					["at0.0.58"] = <
 						text = <"Pre-existing condition">
 						description = <"*">
-					>
-					["id1.1.1"] = <
-						text = <"Diagnosis - Singapore">
-						description = <"A diagnosis defined by a clinician which is coded in an accepted terminology and may include the stage of the condition and the diagnostic criteria!">
 					>
 					["ac0.0.1"] = <
 						text = <"Diagnosis type (synthesised)">
@@ -2190,14 +1728,6 @@ component_terminologies
 				>
 			>
 			value_sets = <
-				["ac1"] = <
-					id = <"ac1">
-					members = <"at7", "at8", "at9">
-				>
-				["ac0.2"] = <
-					id = <"ac0.2">
-					members = <"at0.33", "at0.34">
-				>
 				["ac0.0.1"] = <
 					id = <"ac0.0.1">
 					members = <"at0.0.56", "at0.0.57", "at0.0.58">
@@ -2207,10 +1737,6 @@ component_terminologies
 		["openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-5.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Clinical Synopsis - SG">
-						description = <"Narrative summary or overview about a patient, specifically from the perspective of a healthcare provider, and with or without associated interpretations.">
-					>
 					["id3"] = <
 						text = <"Synopsis">
 						description = <"The summary, assessment, conclusions or evaluation of the clinical findings.">
@@ -2233,10 +1759,6 @@ component_terminologies
 		["openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-6.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Clinical Synopsis - SG">
-						description = <"Narrative summary or overview about a patient, specifically from the perspective of a healthcare provider, and with or without associated interpretations.">
-					>
 					["id3"] = <
 						text = <"Synopsis">
 						description = <"The summary, assessment, conclusions or evaluation of the clinical findings.">
@@ -2259,10 +1781,6 @@ component_terminologies
 		["openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-7.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Clinical Synopsis - SG">
-						description = <"Narrative summary or overview about a patient, specifically from the perspective of a healthcare provider, and with or without associated interpretations.">
-					>
 					["id3"] = <
 						text = <"Synopsis">
 						description = <"The summary, assessment, conclusions or evaluation of the clinical findings.">
@@ -2285,22 +1803,6 @@ component_terminologies
 		["openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-8.v1.0.0"] = <
 			term_definitions = <
 				["en"] = <
-					["id1"] = <
-						text = <"Medical Certificate">
-						description = <"Only used for Discharge Summary Document">
-					>
-					["id3"] = <
-						text = <"Status">
-						description = <"Status of fitness for duties e.g. unfit for duty, fit for light duty">
-					>
-					["id4"] = <
-						text = <"Start Date">
-						description = <"*">
-					>
-					["id5"] = <
-						text = <"End Date">
-						description = <"*">
-					>
 					["id6"] = <
 						text = <"Description">
 						description = <"Textual description of the medical certificate.">
