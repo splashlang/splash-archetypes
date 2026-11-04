@@ -1,0 +1,50 @@
+{
+    "id1": {
+        "text": "-",
+        "description": "-"
+    },
+    "id2": {
+        "text": "home",
+        "description": "-"
+    },
+    "id3": {
+        "text": "work",
+        "description": "-"
+    },
+    "id4": {
+        "text": "Postal",
+        "description": "-"
+    },
+    "id5": {
+        "text": "Delivery",
+        "description": "-"
+    },
+    "id6": {
+        "text": "Holiday",
+        "description": "-"
+    },
+    "id7": {
+        "text": "Primary",
+        "description": "-"
+    },
+    "id9": {
+        "text": "Primary name",
+        "description": "-"
+    },
+    "id13": {
+        "text": "Appartment",
+        "description": "-"
+    },
+    "id14": {
+        "text": "Street",
+        "description": "-"
+    },
+    "id17": {
+        "text": "Test DV_ENCAPSULATED type",
+        "description": "-"
+    },
+    "id19": {
+        "text": "Test 2",
+        "description": "-"
+    }
+}

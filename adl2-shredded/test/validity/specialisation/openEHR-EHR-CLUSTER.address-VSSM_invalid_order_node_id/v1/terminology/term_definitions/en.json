@@ -1,0 +1,14 @@
+{
+    "id0.2": {
+        "text": "element 1",
+        "description": "element 1"
+    },
+    "id0.3": {
+        "text": "element 2",
+        "description": "element 2"
+    },
+    "id1.1": {
+        "text": "cluster",
+        "description": "cluster"
+    }
+}

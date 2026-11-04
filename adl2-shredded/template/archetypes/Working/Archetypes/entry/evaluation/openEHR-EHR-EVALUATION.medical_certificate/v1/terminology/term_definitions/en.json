@@ -1,0 +1,22 @@
+{
+    "id1": {
+        "text": "Medical Certificate",
+        "description": "Only used for Discharge Summary Document"
+    },
+    "id3": {
+        "text": "Status",
+        "description": "Status of fitness for duties e.g. unfit for duty, fit for light duty"
+    },
+    "id4": {
+        "text": "Start Date",
+        "description": "*"
+    },
+    "id5": {
+        "text": "End Date",
+        "description": "*"
+    },
+    "id6": {
+        "text": "Description",
+        "description": "Textual description of the medical certificate."
+    }
+}

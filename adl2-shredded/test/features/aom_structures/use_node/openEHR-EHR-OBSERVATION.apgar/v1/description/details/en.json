@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "This example, based on the openEHR Apgar archetype, shows the use of internal references (keyword 'use_node') to re-use a subtree constraint structure repeatedly elsewhere in the archetype.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "internal references"
+    ]
+}

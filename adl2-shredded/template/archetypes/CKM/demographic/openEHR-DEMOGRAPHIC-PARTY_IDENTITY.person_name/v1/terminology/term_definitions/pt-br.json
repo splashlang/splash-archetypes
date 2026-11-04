@@ -1,0 +1,114 @@
+{
+    "id1": {
+        "text": "Nome da pessoa",
+        "description": "Estrutura do nome de uma pessoa."
+    },
+    "id2": {
+        "text": "Componentes do nome",
+        "description": "Componentes do nome da pessoa."
+    },
+    "id3": {
+        "text": "Nome atribuído",
+        "description": "O nome que identifica a pessoa no grupo familiar ou pelo qual ela é univocamente identificada socialmente."
+    },
+    "id4": {
+        "text": "Sobrenome",
+        "description": "A parte do nome que uma pessoa possui em comum com outros membros de sua família, distinta do(s) seu(s) nome(s) atribuído(s)."
+    },
+    "id5": {
+        "text": "Título do nome",
+        "description": "Uma forma honorífica que inicia o nome, usada ao se referir a uma pessoa pelo nome, seja por correspondência ou por telefone, ou, dependendo da situação cultural, pessoalmente."
+    },
+    "id6": {
+        "text": "Sufixo do nome",
+        "description": "Termo adicional usado após o nome da pessoa."
+    },
+    "id8": {
+        "text": "Representação alternativa do nome",
+        "description": "Grupo que descreve uma forma alternativa de representar o nome de uma pessoa."
+    },
+    "id9": {
+        "text": "Nome preferencial",
+        "description": "Indica o nome pelo qual a pessoa prefere ser identificada."
+    },
+    "id10": {
+        "text": "Indicador de acurácia/segurança",
+        "description": "Um indicador das condições específicas ou regras que devem ser aplicadas ao nome de uma pessoa."
+    },
+    "id11": {
+        "text": "Nome completo",
+        "description": "O nome completo da pessoa, resultado da concatenação de suas partes componentes."
+    },
+    "id20": {
+        "text": "Intervalo de utilização",
+        "description": "O período de tempo para o qual este uso do nome se aplica para o nome ao qual ele está associado."
+    },
+    "id21": {
+        "text": "Identificador usado",
+        "description": "A combinação do tipo de identificador, emissor do identificador e nome do identificador que especifica o vínculo entre este nome e o uso do identificador para relatório, ou outros usos."
+    },
+    "id22": {
+        "text": "Uso da representação",
+        "description": "Nome da forma de representação usada."
+    },
+    "id23": {
+        "text": "Representação alternativa do nome",
+        "description": "Representação alternativa do nome desta pessoa usando estilos alternativos de representação, tais como caracteres ou variações do conjunto de caracteres do idioma para exibição local."
+    },
+    "at24": {
+        "text": "Nome para relatório",
+        "description": "O nome do sujeito usado para relatório, quando acompanhado por um identificador específico."
+    },
+    "at25": {
+        "text": "Nome de recém-nascido",
+        "description": "Tipo reservado para identificação de recém-nascidos sem nome."
+    },
+    "at26": {
+        "text": "Nome profissional ou comercial",
+        "description": "O nome usado pela pessoa para propósitos profissionais ou de negócios."
+    },
+    "at27": {
+        "text": "Nome de solteiro(a)",
+        "description": "O nome usado pela pessoa antes de se casar."
+    },
+    "at28": {
+        "text": "Nome legal",
+        "description": "Nome registrado (legal) para a pessoa."
+    },
+    "at29": {
+        "text": "Outro nome",
+        "description": "Qualquer outro nome pelo qual o sujeito é conhecido, ou foi conhecido no passado."
+    },
+    "at32": {
+        "text": "Nome não confiável",
+        "description": "Indica que o nome registrado é um nome fictício ou parcial."
+    },
+    "at33": {
+        "text": "Escrito de forma errada",
+        "description": "Este indicador permite ao usuário indicar que há um erro de digitação, mas que deve ser retido para um uso potencial na vinculação de registros."
+    },
+    "at34": {
+        "text": "Nome para não ser usado",
+        "description": "Indica que este nome não deve ser usado ao se referir à pessoa."
+    },
+    "at35": {
+        "text": "Vínculo do nome proibido por lei",
+        "description": "Indica que este nome e todos os nomes antes dele na seqüência de nomes não devem ser exibidos ou indicados de nenhum modo ao procurar por ou lidar com informações e eventos associados com um nome que segue a este na seqüência de nomes."
+    },
+    "at36": {
+        "text": "Requisito especial seguranca/privacidade",
+        "description": "Indica um nome para o qual episódios são vinculados e devem somente ser acessados por pessoas autorizadas."
+    },
+    "at37": {
+        "text": "Nome temporário",
+        "description": "Indica que o nome da pessoa não foi determinado."
+    },
+    "ac1": {
+        "text": "Nome da pessoa (synthesised)",
+        "description": "Estrutura do nome de uma pessoa. (synthesised)"
+    },
+    "ac2": {
+        "text": "Indicador de acurácia/segurança (synthesised)",
+        "description": "Um indicador das condições específicas ou regras que devem ser aplicadas ao nome de uma pessoa. (synthesised)"
+    }
+}

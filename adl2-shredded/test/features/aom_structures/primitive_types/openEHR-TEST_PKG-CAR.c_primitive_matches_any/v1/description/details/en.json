@@ -1,0 +1,9 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test handling of 'maches any' pattern at C_PRIMITIVE_OBJECT level",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test"
+    ]
+}

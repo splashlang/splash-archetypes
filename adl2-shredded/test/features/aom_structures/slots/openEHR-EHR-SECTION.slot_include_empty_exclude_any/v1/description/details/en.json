@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test slot with no include and exclude = any",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "slots"
+    ]
+}

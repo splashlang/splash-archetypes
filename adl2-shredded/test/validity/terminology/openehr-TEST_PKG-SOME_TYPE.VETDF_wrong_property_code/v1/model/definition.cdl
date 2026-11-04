@@ -1,0 +1,12 @@
+	SOME_TYPE[id1] matches {	-- root item
+		clinical_quantity_attr_1 matches {
+			DV_QUANTITY[id2] matches {
+				property matches {[at1]}
+				[units, magnitude] matches {
+					[{"C"}, {|>=37.0|}],
+					[{"F"}, {|>=96.0|}]
+				}
+			}
+		}
+	}
+

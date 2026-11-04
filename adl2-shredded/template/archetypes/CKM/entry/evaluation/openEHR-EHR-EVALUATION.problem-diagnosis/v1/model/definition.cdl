@@ -1,0 +1,28 @@
+	EVALUATION[id1.1] matches {	-- Diagnosis
+		/data[id2]/items[id3.1]/value matches {
+			DV_CODED_TEXT[id40.1] matches {
+				defining_code matches {[ac0.1]}		-- Any term that 'is_a' diagnosis
+			}
+		}
+		/data[id2]/items matches {
+			before [id4]
+			ELEMENT[id0.32] occurrences matches {0..1} matches {	-- Status
+				value matches {
+					DV_CODED_TEXT[id0.37] matches {
+						defining_code matches {[ac0.2]}		-- Status (synthesised)
+					}
+				}
+			}
+			after [id32]
+			CLUSTER[id0.35] occurrences matches {0..1} matches {	-- Diagnostic criteria
+				items matches {
+					ELEMENT[id0.36] occurrences matches {0..*} matches {	-- Criterion
+						value matches {
+							DV_TEXT[id0.38] 
+						}
+					}
+				}
+			}
+		}
+	}
+

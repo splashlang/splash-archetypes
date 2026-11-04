@@ -1,0 +1,11 @@
+	OBSERVATION[id1.1] matches {	-- Body temperature new GP
+		/data[id3]/events[id4]/data[id2]/items[id5]/value matches {
+			DV_QUANTITY[id61] matches {
+				property matches {[at57]}
+				[units, precision] matches {
+					[{"°C"}, {1}]
+				}
+			}
+		}
+	}
+

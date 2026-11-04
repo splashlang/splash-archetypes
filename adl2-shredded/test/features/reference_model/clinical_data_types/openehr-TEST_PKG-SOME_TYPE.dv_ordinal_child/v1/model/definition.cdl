@@ -1,0 +1,20 @@
+	SOME_TYPE[id1.1] matches {	-- root item
+		standard_ordinal_attr matches {
+			DV_ORDINAL[id6.1] matches {	-- ordinal 2
+				value matches {1}
+				symbol matches {
+					DV_CODED_TEXT[id9.1] matches {
+						defining_code matches {[at3.1]}
+					}
+				}
+			}
+		}
+		clinical_ordinal_attr_1 matches {
+			DV_ORDINAL[id11.1] matches {
+				[value, symbol] matches {
+					[{1}, {[at3.1]}]
+				}
+			}
+		}
+	}
+

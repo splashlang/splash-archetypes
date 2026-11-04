@@ -1,0 +1,13 @@
+	CLUSTER[id1.1] matches {	-- -
+		/items[id2]/value matches {
+			DV_QUANTITY[id0.16] matches {
+				normal_range matches {
+					DV_INTERVAL<DV_QUANTITY>[id0.17] 
+				}
+				other_reference_ranges matches {
+					REFERENCE_RANGE<DV_QUANTITY>[id0.18] 
+				}
+			}
+		}
+	}
+

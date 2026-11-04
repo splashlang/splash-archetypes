@@ -1,0 +1,14 @@
+{
+    "id1.1": {
+        "text": "Patient event information",
+        "description": "Information about the patient event"
+    },
+    "id0.1": {
+        "text": "Event start",
+        "description": "Event start"
+    },
+    "id0.2": {
+        "text": "Event end",
+        "description": "Event end"
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "id": "openEHR-DEMOGRAPHIC-PARTY_IDENTITY.t_patient_ds_sf-4.v1.0.0",
+    "artefact_type": "template_overlay",
+    "specialise": "openEHR-DEMOGRAPHIC-PARTY_IDENTITY.person_name.v1"
+}

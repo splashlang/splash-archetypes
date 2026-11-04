@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Example specialised archetype containing additional nodes and ordering markers within a container attribute defined in the parent. The parent container already includes member ELEMENTs, so the 'after' and 'before' markers in this descendant are used to obtain the intended overall order in the flattened result.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "specialisation"
+    ]
+}

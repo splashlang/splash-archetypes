@@ -1,0 +1,38 @@
+{
+    "id1": {
+        "text": "ISO: Dados demográficos adicionais de uma pessoa",
+        "description": "Dados demográficos adicionais de uma pessoa segundo a ISO 22220: sexo e sobrenome da mãe"
+    },
+    "id2": {
+        "text": "sexo",
+        "description": "sexo da pessoa"
+    },
+    "id3": {
+        "text": "Sobrenome da Mãe",
+        "description": "Sobrenome da mãe"
+    },
+    "id4": {
+        "text": "Comentários de identificação",
+        "description": "Comentários registrados para uma pessoa para distinguir entre duas ou mais pessoas com a mesma informação demográfica ou similar."
+    },
+    "at11": {
+        "text": "Masculino",
+        "description": "Sexo masculino"
+    },
+    "at12": {
+        "text": "Feminino",
+        "description": "Sexo feminino"
+    },
+    "at13": {
+        "text": "Intersexo ou indeterminado",
+        "description": "Usado normalmente para bebês para os quais o sexo não foi determinado por qualquer razão. Não deve ser usado em formulários de coleta de dados completados pelo respondente e deve ser usado somente se a pessoa ou respondente voluntariamente afirma que a pessoa é intersexo ou onde fica claro durante o processo de coleta que o indivíduo não é nem do sexo masculino nem feminino"
+    },
+    "at14": {
+        "text": "Não declarado/inadequadamente descrito",
+        "description": "Não é para ser usado em formulários de coleta primária. É primariamente usado em coleções administrativas, ao transferir conjuntos de dados onde o item não foi coletado"
+    },
+    "ac1": {
+        "text": "sexo (synthesised)",
+        "description": "sexo da pessoa (synthesised)"
+    }
+}

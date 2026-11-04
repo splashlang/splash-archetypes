@@ -1,0 +1,2316 @@
+operational_template (adl_version=2.3.0; rm_release=1.1.0; generated)
+	openEHR-EHR_EXTRACT-EXTRACT.t_basic_discharge_summary_sf.v1.0.0
+
+specialize
+	openEHR-EHR_EXTRACT-EXTRACT.discharge_summary.v1
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"unmanaged">
+	original_author = <
+		["name"] = <"Thomas Beale">
+		["organisation"] = <"Ocean Informatics">
+		["date"] = <"01-04-2011">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Basic discharge summary">
+			use = <"test use">
+			keywords = <"discharge", "admin">
+		>
+	>
+
+definition
+	EXTRACT[id1.1] matches {
+		chapters matches {
+			EXTRACT_CHAPTER[id3] matches {
+				items matches {
+					GENERIC_CONTENT_ITEM[id4] occurrences matches {1} matches {
+						item matches {
+							use_archetype PERSON[id101.1, openEHR-DEMOGRAPHIC-PERSON.t_patient_ds_sf.v1.0.0] matches {
+								details matches {
+									ITEM_TREE[id2] occurrences matches {0..1} matches {
+										items matches {
+											use_archetype CLUSTER[id11.1, openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-1.v1.0.0] occurrences matches {0..1} matches {
+												items matches {
+													ELEMENT[id3] occurrences matches {0..*} matches {
+														value matches {
+															DV_CODED_TEXT[id5] matches {
+																defining_code matches {[ac3]}
+															}
+														}
+													}
+													ELEMENT[id3.1] occurrences matches {0..*} matches {
+														value matches {
+															DV_CODED_TEXT[id5] matches {
+																defining_code matches {[ac3]}
+															}
+														}
+													}
+												}
+											}
+											use_archetype CLUSTER[id11.2, openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-2.v1.0.0] occurrences matches {0..1} matches {
+												items matches {
+													ELEMENT[id2.1] occurrences matches {0..1} matches {
+														value matches {
+															DV_CODED_TEXT[id5] matches {
+																defining_code matches {[ac1]}
+															}
+														}
+													}
+												}
+											}
+											use_archetype CLUSTER[id11.3, openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-3.v1.0.0] occurrences matches {0..1} matches {
+												items matches {
+													ELEMENT[id2] occurrences matches {1} matches {
+														value matches {
+															DV_DATE[id8] 
+														}
+													}
+													ELEMENT[id4] occurrences matches {0..1} matches {
+														value matches {
+															DV_CODED_TEXT[id10] matches {
+																defining_code matches {[ac2]}
+															}
+														}
+													}
+													allow_archetype CLUSTER[id7] closed 
+												}
+											}
+											allow_archetype CLUSTER[id11] closed 
+										}
+									}
+								}
+								identities cardinality matches {1..*; ordered} matches {
+									use_archetype PARTY_IDENTITY[id3.1, openEHR-DEMOGRAPHIC-PARTY_IDENTITY.t_patient_ds_sf-4.v1.0.0] matches {
+										name matches {
+											DV_TEXT[id24] 
+											DV_CODED_TEXT[id25] matches {
+												defining_code matches {[ac1]}
+											}
+										}
+										details matches {
+											ITEM_TREE[id2] occurrences matches {0..1} matches {
+												items cardinality matches {1..*; ordered} matches {
+													ELEMENT[id3] occurrences matches {0..*} matches {
+														value matches {
+															DV_TEXT[id26] 
+														}
+													}
+													ELEMENT[id4] occurrences matches {0..*} matches {
+														value matches {
+															DV_TEXT[id27] 
+														}
+													}
+													ELEMENT[id5] occurrences matches {0..*} matches {
+														value matches {
+															DV_TEXT[id28] 
+														}
+													}
+													CLUSTER[id8] occurrences matches {0..1} matches {
+														items matches {
+															ELEMENT[id22] occurrences matches {1} matches {
+																value matches {
+																	DV_TEXT[id32] 
+																}
+															}
+															ELEMENT[id23] occurrences matches {1} matches {
+																value matches {
+																	DV_TEXT[id33] 
+																}
+															}
+														}
+													}
+													ELEMENT[id11] occurrences matches {0..1} matches {
+														value matches {
+															DV_TEXT[id37] 
+														}
+													}
+												}
+											}
+										}
+									}
+									allow_archetype PARTY_IDENTITY[id3] closed 
+								}
+								contacts matches {
+									CONTACT[id4] occurrences matches {1} matches {
+										addresses matches {
+											use_archetype ADDRESS[id31.1, openEHR-DEMOGRAPHIC-ADDRESS.t_patient_ds_sf-5.v1.0.0] matches {
+												name matches {
+													DV_TEXT[id34] 
+													DV_CODED_TEXT[id35] matches {
+														defining_code matches {[ac6]}
+													}
+												}
+												details matches {
+													ITEM_TREE[id2] occurrences matches {0..1} matches {
+														items cardinality matches {1..*; ordered} matches {
+															CLUSTER[id3] occurrences matches {0..*} matches {
+																items matches {
+																	ELEMENT[id22] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_CODED_TEXT[id36] matches {
+																				defining_code matches {[ac1]}
+																			}
+																		}
+																	}
+																	ELEMENT[id23] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_TEXT[id37] 
+																		}
+																	}
+																	ELEMENT[id24] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_TEXT[id38] 
+																		}
+																	}
+																	ELEMENT[id25] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_TEXT[id39] 
+																		}
+																	}
+																	ELEMENT[id26] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_TEXT[id40] 
+																		}
+																	}
+																	ELEMENT[id27] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_TEXT[id41] 
+																		}
+																	}
+																	ELEMENT[id28] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_CODED_TEXT[id42] matches {
+																				defining_code matches {[ac2]}
+																			}
+																		}
+																	}
+																	ELEMENT[id29] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_TEXT[id43] 
+																		}
+																	}
+																	ELEMENT[id30] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_TEXT[id44] 
+																		}
+																	}
+																	ELEMENT[id31] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_CODED_TEXT[id45] matches {
+																				defining_code matches {[ac3]}
+																			}
+																		}
+																	}
+																	ELEMENT[id32] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_TEXT[id46] 
+																		}
+																	}
+																	allow_archetype CLUSTER[id33] occurrences matches {0..*} matches {
+																		include
+																			archetype_id/value matches {/openEHR-EHR-CLUSTER\.local_address_line(-?a-zA-Z0-9_]+)*\.v1/}
+																	}
+																}
+															}
+															CLUSTER[id3.1] occurrences matches {1..3} matches {
+																items matches {
+																	ELEMENT[id32] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_TEXT[id46] 
+																		}
+																	}
+																	allow_archetype CLUSTER[id33] closed 
+																}
+															}
+															ELEMENT[id5] occurrences matches {0..1} matches {
+																value matches {
+																	DV_TEXT[id48] 
+																}
+															}
+															ELEMENT[id6] occurrences matches {0..1} matches {
+																value matches {
+																	DV_TEXT[id49] 
+																}
+															}
+															ELEMENT[id8] occurrences matches {0..1} matches {
+																value matches {
+																	DV_CODED_TEXT[id51] matches {
+																		defining_code matches {[ac5]}
+																	}
+																}
+															}
+															allow_archetype CLUSTER[id11] closed 
+														}
+													}
+												}
+											}
+											allow_archetype ADDRESS[id31] closed 
+										}
+									}
+								}
+								relationships existence matches {0} 
+							}
+							allow_archetype PERSON[id101] closed 
+						}
+					}
+					GENERIC_CONTENT_ITEM[id5] occurrences matches {1} matches {
+						item matches {
+							use_archetype ORGANISATION[id102.1, openEHR-DEMOGRAPHIC-ORGANISATION.healthcare_establishment.v1.0.0] matches {
+								identities cardinality matches {1..*; ordered} matches {
+									PARTY_IDENTITY[id2] occurrences matches {1..*} matches {
+										details matches {
+											ITEM_LIST[id6] matches {
+												items cardinality matches {2..*; ordered} matches {
+													ELEMENT[id4] occurrences matches {1} matches {
+														value matches {
+															DV_TEXT[id7] 
+														}
+													}
+													ELEMENT[id5] occurrences matches {1..*} matches {
+														value matches {
+															DV_IDENTIFIER[id8] 
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							allow_archetype ORGANISATION[id102] closed 
+						}
+					}
+					GENERIC_CONTENT_ITEM[id6] occurrences matches {1..*} matches {
+						item matches {
+							use_archetype PERSON[id103.1, openEHR-DEMOGRAPHIC-PERSON.healthcare_professional.v1.0.0] matches {
+								identities cardinality matches {1..*; ordered} matches {
+									PARTY_IDENTITY[id2] occurrences matches {1..*} matches {
+										details matches {
+											ITEM_LIST[id6] matches {
+												items cardinality matches {2..*; ordered} matches {
+													ELEMENT[id4] occurrences matches {1} matches {
+														value matches {
+															DV_TEXT[id7] 
+														}
+													}
+													ELEMENT[id5] occurrences matches {1..*} matches {
+														value matches {
+															DV_IDENTIFIER[id8] 
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							allow_archetype PERSON[id103] closed 
+						}
+					}
+				}
+			}
+			EXTRACT_CHAPTER[id2] matches {
+				items matches {
+					GENERIC_CONTENT_ITEM[id7.1] occurrences matches {1} matches {
+						item matches {
+							use_archetype COMPOSITION[id104.1, openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0] matches {
+								category matches {
+									DV_CODED_TEXT[id29] matches {
+										defining_code matches {[at10]}
+									}
+								}
+								context existence matches {0} 
+								content matches {
+									use_archetype SECTION[id0.1, openEHR-EHR-SECTION.t_patient_event_info_ds_sf.v1.0.0] occurrences matches {1} matches {
+										items matches {
+											use_archetype ADMIN_ENTRY[id0.1, openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-1.v1.0.0] occurrences matches {1} matches {
+												other_participations existence matches {0} 
+												data matches {
+													ITEM_TREE[id4] matches {
+														items matches {
+															ELEMENT[id5.1] occurrences matches {1} matches {
+																value matches {
+																	DV_DATE_TIME[id63] 
+																}
+															}
+															ELEMENT[id58] occurrences matches {0..*} matches {
+																value matches {
+																	DV_TEXT[id64] 
+																}
+															}
+															ELEMENT[id58.1] occurrences matches {1..*} matches {
+																value matches {
+																	DV_TEXT[id64] 
+																}
+															}
+														}
+													}
+												}
+											}
+											use_archetype ADMIN_ENTRY[id0.2, openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-2.v1.0.0] occurrences matches {1} matches {
+												other_participations matches {
+													PARTICIPATION[id85.1] occurrences matches {1} matches {
+														function matches {
+															DV_CODED_TEXT[id88] matches {
+																defining_code matches {[at82]}
+															}
+														}
+														performer existence matches {1} 
+													}
+												}
+												data matches {
+													ITEM_TREE[id4] matches {
+														items matches {
+															ELEMENT[id5.1] occurrences matches {1} matches {
+																value matches {
+																	DV_DATE_TIME[id90] 
+																}
+															}
+															ELEMENT[id67] occurrences matches {0..1} matches {
+																value matches {
+																	DV_TEXT[id92] 
+																}
+															}
+															ELEMENT[id61.1] occurrences matches {0..1} matches {
+																value matches {
+																	DV_TEXT[id93] 
+																}
+															}
+															ELEMENT[id31] occurrences matches {0..1} matches {
+																value matches {
+																	DV_TEXT[id94] 
+																}
+															}
+															allow_archetype CLUSTER[id75] closed 
+															ELEMENT[id78.1] occurrences matches {0..1} matches {
+																value matches {
+																	DV_TEXT[id96] 
+																}
+															}
+															ELEMENT[id80.1] occurrences matches {1} matches {
+																value matches {
+																	DV_TEXT[id98] 
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+									use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-1.v1.0.0] occurrences matches {0..1} matches {
+										data matches {
+											ITEM_TREE[id3] matches {
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[id4] matches {
+														value matches {
+															DV_TEXT[id34] 
+														}
+													}
+													CLUSTER[id20] occurrences matches {0..*} matches {
+														items matches {
+															ELEMENT[id22] occurrences matches {0..1} matches {
+																value matches {
+																	DV_DURATION[id40] 
+																}
+															}
+															ELEMENT[id24] occurrences matches {0..1} matches {
+																value matches {
+																	DV_CODED_TEXT[id41] matches {
+																		defining_code matches {[ac4]}
+																	}
+																}
+															}
+															ELEMENT[id23] matches {
+																value matches {
+																	DV_TEXT[id42] 
+																}
+															}
+															ELEMENT[id28] occurrences matches {0..1} matches {
+																value matches {
+																	DV_DATE_TIME[id43] 
+																}
+															}
+															ELEMENT[id29] occurrences matches {0..1} matches {
+																value matches {
+																	DV_DURATION[id44] 
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+									use_archetype EVALUATION[id0.3, openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-2.v1.0.0] matches {
+										data matches {
+											ITEM_LIST[id2] matches {
+												items matches {
+													ELEMENT[id4] occurrences matches {1} matches {
+														value matches {
+															DV_TEXT[id17] 
+														}
+													}
+													ELEMENT[id5] occurrences matches {0..1} matches {
+														value matches {
+															DV_DATE_TIME[id18] matches {
+																value matches {yyyy-??-??T??:??:??}
+															}
+														}
+													}
+													ELEMENT[id11] occurrences matches {0..1} matches {
+														value matches {
+															DV_DATE_TIME[id21] matches {
+																value matches {yyyy-??-??T??:??:??}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+									use_archetype EVALUATION[id0.4, openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-3.v1.0.0] matches {
+										data matches {
+											ITEM_TREE[id2] matches {
+												items cardinality matches {1..*; ordered} matches {
+													ELEMENT[id3.1] occurrences matches {1} matches {
+														value matches {
+															DV_TEXT[id5] 
+														}
+														name matches {
+															DV_TEXT[id0.1] 
+															DV_CODED_TEXT[id0.2] matches {
+																defining_code matches {[ac0.1]}
+															}
+														}
+													}
+													ELEMENT[id4] occurrences matches {0..1} matches {
+														value matches {
+															DV_TEXT[id6] 
+														}
+													}
+												}
+											}
+										}
+									}
+									use_archetype EVALUATION[id0.5, openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-4.v1.0.0] occurrences matches {1..*} matches {
+										data matches {
+											ITEM_TREE[id2] matches {
+												items cardinality matches {1..*; ordered} matches {
+													ELEMENT[id3.1.0.1] occurrences matches {1} matches {
+														value matches {
+															DV_CODED_TEXT[id40.1] matches {
+																defining_code matches {[ac0.1]}
+															}
+														}
+													}
+													ELEMENT[id10.0.0.1] occurrences matches {0..1} matches {
+														value matches {
+															DV_TEXT[id41] 
+														}
+													}
+													ELEMENT[id0.0.55.1] occurrences matches {1} matches {
+														value matches {
+															DV_CODED_TEXT[id0.0.56] matches {
+																defining_code matches {[ac0.0.1]}
+															}
+														}
+													}
+													CLUSTER[id15] occurrences matches {0..*} matches {
+														items matches {
+															ELEMENT[id16] occurrences matches {0..*} matches {
+																value matches {
+																	DV_TEXT[id50] 
+																}
+															}
+															ELEMENT[id17] occurrences matches {0..1} matches {
+																value matches {
+																	DV_TEXT[id51] 
+																	DV_URI[id52] 
+																}
+															}
+															ELEMENT[id18] occurrences matches {0..1} matches {
+																value matches {
+																	DV_TEXT[id53] 
+																}
+															}
+														}
+													}
+													CLUSTER[id19] occurrences matches {0..1} matches {
+														items matches {
+															ELEMENT[id20] occurrences matches {0..1} matches {
+																value matches {
+																	DV_QUANTITY[id54] 
+																}
+															}
+															ELEMENT[id21] occurrences matches {0..1} matches {
+																value matches {
+																	DV_DATE[id55] 
+																}
+															}
+															CLUSTER[id22] occurrences matches {0..*} matches {
+																items matches {
+																	ELEMENT[id23] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_TEXT[id56] 
+																		}
+																	}
+																	ELEMENT[id24] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_TEXT[id57] 
+																		}
+																	}
+																	ELEMENT[id25] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_DATE[id58] 
+																		}
+																	}
+																	ELEMENT[id37] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_DATE[id59] 
+																		}
+																	}
+																}
+															}
+															ELEMENT[id26] occurrences matches {0..1} matches {
+																value matches {
+																	DV_COUNT[id60] matches {
+																		magnitude matches {|1..|}
+																	}
+																}
+															}
+														}
+													}
+													CLUSTER[id27] occurrences matches {0..1} matches {
+														items matches {
+															CLUSTER[id28] occurrences matches {0..*} matches {
+																items matches {
+																	ELEMENT[id29] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_TEXT[id61] 
+																			DV_URI[id62] 
+																		}
+																	}
+																	ELEMENT[id30] occurrences matches {0..1} matches {
+																		value matches {
+																			DV_TEXT[id63] 
+																		}
+																	}
+																}
+															}
+														}
+													}
+													ELEMENT[id31] occurrences matches {0..1} matches {
+														value matches {
+															DV_DATE[id64] 
+														}
+													}
+												}
+											}
+										}
+										protocol existence matches {0} 
+									}
+									use_archetype EVALUATION[id0.6, openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-5.v1.0.0] occurrences matches {0..1} matches {
+										data matches {
+											ITEM_TREE[id2] matches {
+												items cardinality matches {1..*; ordered} matches {
+													ELEMENT[id3] matches {
+														value matches {
+															DV_TEXT[id5] 
+														}
+													}
+													ELEMENT[id3.1] matches {
+														value matches {
+															DV_TEXT[id5] 
+														}
+													}
+													ELEMENT[id4] occurrences matches {0..1} matches {
+														value matches {
+															DV_TEXT[id6] 
+														}
+													}
+												}
+											}
+										}
+									}
+									use_archetype EVALUATION[id0.7, openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-6.v1.0.0] occurrences matches {0..1} matches {
+										data matches {
+											ITEM_TREE[id2] matches {
+												items cardinality matches {1..*; ordered} matches {
+													ELEMENT[id3] matches {
+														value matches {
+															DV_TEXT[id5] 
+														}
+													}
+													ELEMENT[id3.1] matches {
+														value matches {
+															DV_TEXT[id5] 
+														}
+													}
+													ELEMENT[id4] occurrences matches {0..1} matches {
+														value matches {
+															DV_TEXT[id6] 
+														}
+													}
+												}
+											}
+										}
+									}
+									use_archetype EVALUATION[id0.8, openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-7.v1.0.0] occurrences matches {0..*} matches {
+										data matches {
+											ITEM_TREE[id2] matches {
+												items cardinality matches {1..*; ordered} matches {
+													ELEMENT[id3] matches {
+														value matches {
+															DV_TEXT[id5] 
+														}
+													}
+													ELEMENT[id3.1] matches {
+														value matches {
+															DV_TEXT[id5] 
+														}
+													}
+													ELEMENT[id4] occurrences matches {0..1} matches {
+														value matches {
+															DV_TEXT[id6] 
+														}
+													}
+												}
+											}
+										}
+									}
+									use_archetype EVALUATION[id0.9, openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-8.v1.0.0] matches {
+										data matches {
+											ITEM_TREE[id2] matches {
+												items matches {
+													ELEMENT[id6] occurrences matches {0..1} matches {
+														value matches {
+															DV_TEXT[id8] 
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							allow_archetype COMPOSITION[id104] closed 
+						}
+						version_set_id existence matches {1} 
+						item_status existence matches {1} 
+						item_type existence matches {1} 
+						item_type_version existence matches {1} 
+						creation_time existence matches {1} 
+						author existence matches {1} 
+					}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Simple discharge summary">
+				description = <"Discharge summary document for patient leaving a hospital">
+			>
+			["id2"] = <
+				text = <"Subject">
+				description = <"Chapter containing subject discharge information">
+			>
+			["id3"] = <
+				text = <"Participations">
+				description = <"Chapter containing participations information">
+			>
+			["id4"] = <
+				text = <"Patient demographic content">
+				description = <"Patient demographic content">
+			>
+			["id5"] = <
+				text = <"Healthcare establishment demographic content">
+				description = <"Healthcare establishment demographic content">
+			>
+			["id6"] = <
+				text = <"Healthcare professional demographic content">
+				description = <"Healthcare professional demographic content">
+			>
+			["id7"] = <
+				text = <"Clinical data">
+				description = <"Clinical discharge data for patient">
+			>
+			["id101"] = <
+				text = <"Patient demographics slot">
+				description = <"Patient demographics slot">
+			>
+			["id102"] = <
+				text = <"Healthcare establishment demographics slot">
+				description = <"Healthcare establishment demographics slot">
+			>
+			["id103"] = <
+				text = <"Healthcare individual provider demographics slot">
+				description = <"Healthcare individual provider demographics slot">
+			>
+			["id104"] = <
+				text = <"Patient discharge data slot">
+				description = <"Patient discharge data slot">
+			>
+			["id1.1"] = <
+				text = <"Discharge summary">
+				description = <"Discharge summary document for patient leaving a hospital">
+			>
+			["id7.1"] = <
+				text = <"Clinical data">
+				description = <"Clinical discharge data for patient">
+			>
+		>
+	>
+
+component_terminologies
+	component_terminologies = <
+		["openEHR-DEMOGRAPHIC-PERSON.t_patient_ds_sf.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Person">
+						description = <"Personal demographic data">
+					>
+					["id2"] = <
+						text = <"Demographic details">
+						description = <"A person's demographic details.">
+					>
+					["id3"] = <
+						text = <"Name">
+						description = <"A person's name.">
+					>
+					["id4"] = <
+						text = <"Contacts">
+						description = <"A person's contacts.">
+					>
+					["id5"] = <
+						text = <"Relationships">
+						description = <"A person's relationships, especially family ties.">
+					>
+					["id11"] = <
+						text = <"Birth, death, documentation and other demographic data">
+						description = <"Allows the collection of data about birth and death data, documentation and other person's demographic data.">
+					>
+					["id31"] = <
+						text = <"Addresses">
+						description = <"Addresses linked to a single contact, i.e., with the same time validity.">
+					>
+					["id41"] = <
+						text = <"Relationship type">
+						description = <"Defines the type of relationship between related persons.">
+					>
+					["ac1"] = <
+						text = <"Codes for type of relationship">
+						description = <"Valid codes for type of relationship.">
+					>
+					["id1.1"] = <
+						text = <"Patient demographic data">
+						description = <"Simple patient personal demographic data">
+					>
+					["id11.1"] = <
+						text = <"race data">
+						description = <"race data">
+					>
+					["id11.2"] = <
+						text = <"other data">
+						description = <"other data">
+					>
+					["id11.3"] = <
+						text = <"birth data">
+						description = <"birth data">
+					>
+					["id3.1"] = <
+						text = <"Person name">
+						description = <"Person name">
+					>
+					["id31.1"] = <
+						text = <"Address">
+						description = <"Address">
+					>
+				>
+			>
+		>
+		["openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-1.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Extended personal demographics">
+						description = <"Personal demographic data extended beyond those specified by ISO 22220.">
+					>
+					["id2"] = <
+						text = <"Marital status">
+						description = <"Marital status.">
+					>
+					["id3"] = <
+						text = <"Ethnic background">
+						description = <"The person's ethnic background.">
+					>
+					["ac2"] = <
+						text = <"Marital status codes">
+						description = <"Valid codes for marital status">
+					>
+					["ac3"] = <
+						text = <"Ethnic background codes">
+						description = <"Valid codes for ethnic background">
+					>
+					["id1.1"] = <
+						text = <"Person additional demographic data">
+						description = <"Person additional demographic data">
+					>
+					["id3.1"] = <
+						text = <"Race">
+						description = <"The person's race classifier">
+					>
+				>
+			>
+		>
+		["openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-2.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Person additional demographic data">
+						description = <"Person additional demographic data according to ISO 22220: sex and mother's family name">
+					>
+					["id2"] = <
+						text = <"Sex">
+						description = <"The sex of the subject.">
+					>
+					["id3"] = <
+						text = <"Mother's family name">
+						description = <"Mother's original family name">
+					>
+					["id4"] = <
+						text = <"Identification comment">
+						description = <"Comments recorded for a person registration to distinguish between two or more persons with the same or similar demographic information">
+					>
+					["at11"] = <
+						text = <"Male">
+						description = <"Male">
+					>
+					["at12"] = <
+						text = <"Female">
+						description = <"Female">
+					>
+					["at13"] = <
+						text = <"Intersex or indeterminate">
+						description = <"is normally used for babies for whom sex has not been determined for whatever reason, should not generally be used on data collection forms completed by the respondent and should only be used if the person or respondent volunteers that the person is intersex or where it otherwise becomes clear during the collection process that the individual is neither male nor female">
+					>
+					["at14"] = <
+						text = <"Not declared/inadequately described">
+						description = <"is not to be used on primary collection forms. It is primarily for use in administrative collections when transferring data from data sets where the item has not been collected.">
+					>
+					["ac1"] = <
+						text = <"Sex (synthesised)">
+						description = <"The sex of the subject. (synthesised)">
+					>
+					["id1.1"] = <
+						text = <"Person additional demographic data">
+						description = <"*">
+					>
+					["id2.1"] = <
+						text = <"Sex">
+						description = <"*">
+					>
+				>
+			>
+			value_sets = <
+				["ac1"] = <
+					id = <"ac1">
+					members = <"at11", "at12", "at13", "at14">
+				>
+			>
+		>
+		["openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-3.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Birth data">
+						description = <"Birth demographic data">
+					>
+					["id2"] = <
+						text = <"Birth date">
+						description = <"The date of birth of a person">
+					>
+					["id3"] = <
+						text = <"Country of birth">
+						description = <"The country where a person was born">
+					>
+					["id4"] = <
+						text = <"Birth plurality">
+						description = <"An indicator of multiple birth, showing the total number of births resulting from a single pregnancy">
+					>
+					["id5"] = <
+						text = <"Birth order">
+						description = <"The sequential order of this person in a multiple birth regardless of live or still birth">
+					>
+					["id6"] = <
+						text = <"Date of birth follow-up indicator">
+						description = <"Flag that indicates when the current date of birth requires follow-up to obtain a more accurate date">
+					>
+					["id7"] = <
+						text = <"Country specific data">
+						description = <"Additional birth data that are country specific">
+					>
+					["ac1"] = <
+						text = <"Country codes">
+						description = <"valid codes for countries">
+					>
+					["ac2"] = <
+						text = <"Birth plurality codes">
+						description = <"valid codes for birth plurality">
+					>
+					["ac3"] = <
+						text = <"Birth order codes">
+						description = <"valid codes for birth order">
+					>
+					["id1.1"] = <
+						text = <"Birth data">
+						description = <"Singapore birth demographic data">
+					>
+				>
+			>
+		>
+		["openEHR-DEMOGRAPHIC-PARTY_IDENTITY.t_patient_ds_sf-4.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Person name">
+						description = <"Person name details.">
+					>
+					["id2"] = <
+						text = <"Name">
+						description = <"Components of a person name.">
+					>
+					["id3"] = <
+						text = <"Given name">
+						description = <"The person's identifying name(s) within the family group or by which he/she is uniquely socially identified.">
+					>
+					["id4"] = <
+						text = <"Family name">
+						description = <"The part of a name a person usually has in common with some other members of his/her family, as distinguished from his/her given names.">
+					>
+					["id5"] = <
+						text = <"Title">
+						description = <"An honorific form of address commencing a name, used when addressing a person by name, whether by mail, by phone, or depending upon cultural situation in person.">
+					>
+					["id6"] = <
+						text = <"Suffix">
+						description = <"Additional term used following a person name.">
+					>
+					["id8"] = <
+						text = <"Alternative name representations">
+						description = <"Details of alternative representations such as local codesets or language variations.">
+					>
+					["id9"] = <
+						text = <"Preferred name">
+						description = <"Indicates that this is the name by which a person chooses to be identified.">
+					>
+					["id10"] = <
+						text = <"Issues of accuracy and privacy">
+						description = <"An indicator of specific conditions or rules that should be applied to the use of the person name.">
+					>
+					["id11"] = <
+						text = <"Full Name">
+						description = <"The person's full name as a concatenation of its name parts.">
+					>
+					["id20"] = <
+						text = <"Usage interval">
+						description = <"The period of time for which the name usage applies.">
+					>
+					["id21"] = <
+						text = <"Usage identifier">
+						description = <"The combination of identifier type, identifier issuer and identifier name that specify the link between this name and reporting or other unique identifier usage.">
+					>
+					["id22"] = <
+						text = <"Representation usage">
+						description = <"Name of the representational form used.">
+					>
+					["id23"] = <
+						text = <"Alternative representation">
+						description = <"Alternative Representation of this subject of care name using alternative styles of representation such as characters or language character set variations for local display.">
+					>
+					["at24"] = <
+						text = <"Reporting name">
+						description = <"The subject’s name as it is to be used for reporting, when used with a specific identifier.">
+					>
+					["at25"] = <
+						text = <"Newborn name">
+						description = <"A type reserved for the identification of unnamed newborn babies.">
+					>
+					["at26"] = <
+						text = <"Professional or business name">
+						description = <"The name used by the subject for business or professional purposes.">
+					>
+					["at27"] = <
+						text = <"Maiden name">
+						description = <"The name used by the subject of care prior to marriage.">
+					>
+					["at28"] = <
+						text = <"Legal name">
+						description = <"Registered name (Legal name).">
+					>
+					["at29"] = <
+						text = <"Other name">
+						description = <"Any other name by which the subject is known, or has been known by in the past.">
+					>
+					["at32"] = <
+						text = <"Unreliable information">
+						description = <"The name recorded is a fictitious or partial name.">
+					>
+					["at33"] = <
+						text = <"Known misspelling">
+						description = <"This is a misspelling, but should be retained for potential future matching.">
+					>
+					["at34"] = <
+						text = <"Name not to be used">
+						description = <"This name should not be used when referring to this subject.">
+					>
+					["at35"] = <
+						text = <"Name linkage forbidden by law">
+						description = <"By Law, this name and all names prior to it in the name sequence are not to be displayed or indicated in any way when searching for or dealing with information and events associated with a name that is subsequent to this one in the name sequence.">
+					>
+					["at36"] = <
+						text = <"Special privacy/security requirements">
+						description = <"A name for which episodes are attached that should only be accessible to specified authorised persons.">
+					>
+					["at37"] = <
+						text = <"Temporary name">
+						description = <"A temporary name issued where the subject's name has not been determined.">
+					>
+					["ac1"] = <
+						text = <"Person name (synthesised)">
+						description = <"Person name details. (synthesised)">
+					>
+					["ac2"] = <
+						text = <"Issues of accuracy and privacy (synthesised)">
+						description = <"An indicator of specific conditions or rules that should be applied to the use of the person name. (synthesised)">
+					>
+					["id1.1"] = <
+						text = <"Person name">
+						description = <"Person name for Simple discharge summary">
+					>
+				>
+			>
+			value_sets = <
+				["ac1"] = <
+					id = <"ac1">
+					members = <"at24", "at25", "at26", "at27", "at28", "at29">
+				>
+				["ac2"] = <
+					id = <"ac2">
+					members = <"at32", "at33", "at34", "at35", "at36", "at37">
+				>
+			>
+		>
+		["openEHR-DEMOGRAPHIC-ADDRESS.t_patient_ds_sf-5.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Address">
+						description = <"Address based on ISO22220 standard.">
+					>
+					["id2"] = <
+						text = <"Items">
+						description = <"Address items.">
+					>
+					["id3"] = <
+						text = <"Address lines">
+						description = <"A composite of one or more standard address components that describe a low level of geographical/physical description of a location that, used in conjunction with the other high-level address components i.e. ‘suburb / town / locality name’, ‘postal code’, ‘state / territory / province’, and ‘country’, forms a complete geographical/physical address.">
+					>
+					["id4"] = <
+						text = <"Delivery point identifier">
+						description = <"A unique number assigned to a postal address as designated by the postal service.">
+					>
+					["id5"] = <
+						text = <"Postal code (ZIP code)">
+						description = <"The code for a postal delivery area, aligned with locality, suburb or place for the address, as defined by the postal service.">
+					>
+					["id6"] = <
+						text = <"Suburb/town/locality">
+						description = <"The full name of the general locality containing the specific address.">
+					>
+					["id7"] = <
+						text = <"State/territory/province identifier">
+						description = <"An identifier of the province, state or territory containing the address.">
+					>
+					["id8"] = <
+						text = <"Country identifier">
+						description = <"A code representing the country component of an address.">
+					>
+					["id9"] = <
+						text = <"Address type start date accuracy indicator">
+						description = <"An indication of the accuracy of the address type start date at the component level for the date. It is expressed by means of a sequence of three characters with possible values A (accurate), E (estimated) or U (unknown) each. The characters represent the accuracy for the year, month and day respectively. This element was introduced in order to be compatible with ISO 22220, but openEHR reference model represents date accuracy in a different way (see the data types specification).">
+					>
+					["id10"] = <
+						text = <"Address type end date accuracy indicator">
+						description = <"An indication of the accuracy of the address type end date at the component level for the date. It is expressed by means of a sequence of three characters with possible values A (accurate), E (estimated) or U (unknown) each. The characters represent the accuracy for the year, month and day respectively. This element was introduced in order to be compatible with ISO 22220, but openEHR reference model represents date accuracy in a different way (see the data types specification).">
+					>
+					["id11"] = <
+						text = <"Local high level address components">
+						description = <"Local high level address components. Archetypes that include other elements not present in ISO/TS22220 to meet local needs like county/parish, etc.">
+					>
+					["id22"] = <
+						text = <"Building/complex sub-unit type—abbreviation">
+						description = <"The specification of the type of a separately identifiable portion within a building/complex, marina etc. to clearly distinguish it from another.">
+					>
+					["id23"] = <
+						text = <"Building/complex sub-unit number">
+						description = <"The specification of the number of identifier of a building/complex, marina etc. to clearly distinguish it from another.">
+					>
+					["id24"] = <
+						text = <"Address site name">
+						description = <"The full name used to identify the physical building or property as part of its location.">
+					>
+					["id25"] = <
+						text = <"Floor/level number">
+						description = <"Descriptor used to identify the floor or level of a multi-storey building/complex.">
+					>
+					["id26"] = <
+						text = <"Floor/level type">
+						description = <"Descriptor used to classify the type of floor or level of a multi-storey building/complex.">
+					>
+					["id27"] = <
+						text = <"Lot number">
+						description = <"Section, allotment number.">
+					>
+					["id28"] = <
+						text = <"Street type code">
+						description = <"A code that identifies the type of public thoroughfare.">
+					>
+					["id29"] = <
+						text = <"Street name">
+						description = <"The name that identifies a public thoroughfare and differentiates it from others in the same suburb/town/locality.">
+					>
+					["id30"] = <
+						text = <"Street number">
+						description = <"The numeric or string reference number of a house or property that is unique within a street name, suburb.">
+					>
+					["id31"] = <
+						text = <"Street suffix code">
+						description = <"Term used to qualify the street name suitable for directional references.">
+					>
+					["id32"] = <
+						text = <"Address line">
+						description = <"Complete address line.">
+					>
+					["id33"] = <
+						text = <"Local address line components">
+						description = <"Local address line components. Archetypes that include other elements not present in ISO/TS22220 to meet local needs.">
+					>
+					["at462"] = <
+						text = <"Business">
+						description = <"Used to indicate an address that is the physical location of a business or office at which an entity can be contacted.">
+					>
+					["at463"] = <
+						text = <"Mailing or postal">
+						description = <"Used to indicate an address that is only for correspondence and/or billing purposes.">
+					>
+					["at464"] = <
+						text = <"Temporary accomodation">
+						description = <"Temporary accomodation address (such as for a person who usually resides overseas or where the provider of the address is in temporary accomodation due to renovation or treatment).">
+					>
+					["at465"] = <
+						text = <"Residential">
+						description = <"Used to indicate where a person is living. Note that this code is not valid for organisations.">
+					>
+					["at466"] = <
+						text = <"No fixed address">
+						description = <"Used where a person has no fixed address.">
+					>
+					["at467"] = <
+						text = <"Unknown/not stated/inadequately described">
+						description = <"Unknown/not stated/inadequately described may also be used where the person has no fixed address or does not wish to have their residential or correspondence address recorded.">
+					>
+					["ac1"] = <
+						text = <"Building type codes">
+						description = <"Valid codes for types of buildings.">
+					>
+					["ac2"] = <
+						text = <"Street type codes">
+						description = <"Valid codes for street types.">
+					>
+					["ac3"] = <
+						text = <"Street suffix codes">
+						description = <"Valid codes for street suffixes.">
+					>
+					["ac4"] = <
+						text = <"State codes">
+						description = <"valid codes for state/territory/province.">
+					>
+					["ac5"] = <
+						text = <"Country codes">
+						description = <"valid codes for countries.">
+					>
+					["ac6"] = <
+						text = <"Address (synthesised)">
+						description = <"Address based on ISO22220 standard. (synthesised)">
+					>
+					["id1.1"] = <
+						text = <"Address">
+						description = <"Address based on ISO22220 standard.">
+					>
+					["id3.1"] = <
+						text = <"Address lines">
+						description = <"Address lines">
+					>
+				>
+			>
+			value_sets = <
+				["ac6"] = <
+					id = <"ac6">
+					members = <"at462", "at463", "at464", "at465", "at466", "at467">
+				>
+			>
+		>
+		["openEHR-DEMOGRAPHIC-ORGANISATION.healthcare_establishment.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Organisation">
+						description = <"Organisation demographic data">
+					>
+					["id2"] = <
+						text = <"Identification">
+						description = <"Identification - the names the organisation is known by">
+					>
+					["id4"] = <
+						text = <"Name">
+						description = <"An organisation name">
+					>
+					["id5"] = <
+						text = <"Identifier">
+						description = <"An organisation Identifier">
+					>
+				>
+			>
+		>
+		["openEHR-DEMOGRAPHIC-PERSON.healthcare_professional.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Healthcare professional demographic data">
+						description = <"Healthcare professional demographic data">
+					>
+					["id2"] = <
+						text = <"Identification">
+						description = <"Identification - the names the professional is known by">
+					>
+					["id4"] = <
+						text = <"Name">
+						description = <"Healthcare professional name">
+					>
+					["id5"] = <
+						text = <"Identifier">
+						description = <"Healthcare professional Identifier">
+					>
+				>
+			>
+		>
+		["openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Discharge">
+						description = <"A summarising communication about at the time of discharge from an institution or an episode of care">
+					>
+					["id4"] = <
+						text = <"Report identifier">
+						description = <"Identification information about the report">
+					>
+					["id5"] = <
+						text = <"Status">
+						description = <"The status of the report">
+					>
+					["at6"] = <
+						text = <"Final">
+						description = <"The report is the final Report">
+					>
+					["at7"] = <
+						text = <"Interim">
+						description = <"This report is an interim report and a final or further interim report is to be expected">
+					>
+					["at8"] = <
+						text = <"Supplementary">
+						description = <"This report is supplementary to a previous report">
+					>
+					["at9"] = <
+						text = <"Corrected/Amended">
+						description = <"This report is a correction or amendment of a previous report">
+					>
+					["id10"] = <
+						text = <"Date/time of status">
+						description = <"The date and time the report was officially issued">
+					>
+					["id28"] = <
+						text = <"Details">
+						description = <"*">
+					>
+					["at10"] = <
+						text = <"event">
+						description = <"event">
+					>
+					["ac1"] = <
+						text = <"Status (synthesised)">
+						description = <"The status of the report (synthesised)">
+					>
+					["id1.1"] = <
+						text = <"Clinical detail">
+						description = <"Clinical detail of Simple discharge summary">
+					>
+					["id0.1"] = <
+						text = <"Event data">
+						description = <"Event data">
+					>
+					["id0.2"] = <
+						text = <"Allergies & adverse reactions">
+						description = <"Allergies & adverse reactions">
+					>
+					["id0.3"] = <
+						text = <"Alerts">
+						description = <"Alerts">
+					>
+					["id0.4"] = <
+						text = <"Clinical synopsis">
+						description = <"Clinical synopsis">
+					>
+					["id0.5"] = <
+						text = <"Diagnosis">
+						description = <"Diagnosis">
+					>
+					["id0.6"] = <
+						text = <"Investigations">
+						description = <"Investigations">
+					>
+					["id0.7"] = <
+						text = <"Medications">
+						description = <"Medications">
+					>
+					["id0.8"] = <
+						text = <"Procedures">
+						description = <"Procedures">
+					>
+					["id0.9"] = <
+						text = <"Medical certificate">
+						description = <"Medical certificate">
+					>
+				>
+			>
+			term_bindings = <
+				["openehr"] = <
+					["at10"] = <http://openehr.org/id/433>
+				>
+			>
+			value_sets = <
+				["ac1"] = <
+					id = <"ac1">
+					members = <"at6", "at7", "at8", "at9">
+				>
+			>
+		>
+		["openEHR-EHR-SECTION.t_patient_event_info_ds_sf.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Adhoc heading">
+						description = <"A generic section header.">
+					>
+					["id1.1"] = <
+						text = <"Patient event information">
+						description = <"Information about the patient event">
+					>
+					["id0.1"] = <
+						text = <"Event start">
+						description = <"Event start">
+					>
+					["id0.2"] = <
+						text = <"Event end">
+						description = <"Event end">
+					>
+				>
+			>
+		>
+		["openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-1.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Admission Short Singapore">
+						description = <"Administrative information for the admission of a patient to the care of a hospital/institution">
+					>
+					["id5"] = <
+						text = <"Date of admission">
+						description = <"*">
+					>
+					["id6"] = <
+						text = <"Admission type">
+						description = <"*">
+					>
+					["id12"] = <
+						text = <"Source of admission">
+						description = <"The place from which the patient was admitted">
+					>
+					["id41"] = <
+						text = <"Referring doctor participation">
+						description = <"Participation of referring doctor">
+					>
+					["id42"] = <
+						text = <"Admitting doctor participation">
+						description = <"Admitting doctor participation">
+					>
+					["id43"] = <
+						text = <"Admitting organisation participation">
+						description = <"Participation of admitting organisation">
+					>
+					["at47"] = <
+						text = <"Emergency">
+						description = <"*">
+					>
+					["at48"] = <
+						text = <"Elective">
+						description = <"*">
+					>
+					["id58"] = <
+						text = <"Event Identifier">
+						description = <"*">
+					>
+					["id59"] = <
+						text = <"Admitting unit">
+						description = <"*">
+					>
+					["at60"] = <
+						text = <"Referring clinician">
+						description = <"*">
+					>
+					["at61"] = <
+						text = <"Principal admitting clinician">
+						description = <"The clinician with primary responsibility for admission.">
+					>
+					["at62"] = <
+						text = <"Admitting organisation">
+						description = <"*">
+					>
+					["ac1"] = <
+						text = <"Admission type (synthesised)">
+						description = <"* (synthesised)">
+					>
+					["id1.1"] = <
+						text = <"Admission event start information">
+						description = <"Administrative information for the start of episode in hospital">
+					>
+					["id5.1"] = <
+						text = <"Event start date/time">
+						description = <"*">
+					>
+					["id58.1"] = <
+						text = <"Event identifier - mandatory">
+						description = <"Event identifier - mandatory">
+					>
+				>
+			>
+			value_sets = <
+				["ac1"] = <
+					id = <"ac1">
+					members = <"at47", "at48">
+				>
+			>
+		>
+		["openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-2.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Discharge information - Simple discharge summary">
+						description = <"The administrative information required at the time of discharge of a patient from a period of care">
+					>
+					["id5"] = <
+						text = <"Date of discharge">
+						description = <"The date of discharge for this care episode">
+					>
+					["id31"] = <
+						text = <"Discharge destination type">
+						description = <"The destination of a patient on completion of a hospital provder spell">
+					>
+					["id61"] = <
+						text = <"Discharge unit">
+						description = <"The department or specialty with responsibility for the patient at the time of discharge">
+					>
+					["id67"] = <
+						text = <"Discharge location">
+						description = <"The ward from which the patient was discharged">
+					>
+					["id72"] = <
+						text = <"Discharge description">
+						description = <"Details about the Discharge destination">
+					>
+					["id75"] = <
+						text = <"Discharge details">
+						description = <"*">
+					>
+					["id78"] = <
+						text = <"Outcome">
+						description = <"*">
+					>
+					["id79"] = <
+						text = <"Condition">
+						description = <"*">
+					>
+					["id80"] = <
+						text = <"Discharge Type">
+						description = <"*">
+					>
+					["id81"] = <
+						text = <"Event Identifier">
+						description = <"*">
+					>
+					["at82"] = <
+						text = <"Principal doctor">
+						description = <"Doctor responsible for discharge">
+					>
+					["at84"] = <
+						text = <"Discharging organisation">
+						description = <"Organisation from which the subject was discharged.">
+					>
+					["id85"] = <
+						text = <"Discharging doctor">
+						description = <"Doctor responsible for discharge">
+					>
+					["id86"] = <
+						text = <"Discharging organisation">
+						description = <"Organisation from which the subject was discharged.">
+					>
+					["id87"] = <
+						text = <"Other care provider">
+						description = <"Any other care provider involved in the admission">
+					>
+					["id1.1"] = <
+						text = <"Discharge event end information - Simple discharge summary">
+						description = <"The administrative information at discharge of a patient from a period of care">
+					>
+					["id5.1"] = <
+						text = <"Event end datetime">
+						description = <"*">
+					>
+					["id61.1"] = <
+						text = <"Discharge from service/specialty">
+						description = <"*">
+					>
+					["id78.1"] = <
+						text = <"Discharge outcome">
+						description = <"*">
+					>
+					["id80.1"] = <
+						text = <"Discharge status/type">
+						description = <"*">
+					>
+					["id85.1"] = <
+						text = <"Responsible clinician on discharge">
+						description = <"Clinician responsible for discharge">
+					>
+				>
+			>
+		>
+		["openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-1.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Adverse reaction">
+						description = <"Recording the presence of a harmful or undesirable response to an agent or substance including food, as determined by the clinician - excluding poisoning and abnormal use">
+					>
+					["id4"] = <
+						text = <"Agent">
+						description = <"The agent or substance or class that caused the adverse reaction.">
+					>
+					["id5"] = <
+						text = <"Probability of causation">
+						description = <"Degree of certainty that the agent was the cause of the reaction.">
+					>
+					["at6"] = <
+						text = <"Certain/Highly likely">
+						description = <"A reaction to the agent is deemed to be or have been present by the clinician.">
+					>
+					["at7"] = <
+						text = <"Probable">
+						description = <"The reaction is deemed to be the probable cause of the reaction.">
+					>
+					["at8"] = <
+						text = <"Possible">
+						description = <"The agent is deemed to be a possible cause of the reaction.">
+					>
+					["id11"] = <
+						text = <"Agent category">
+						description = <"The category of the agent.">
+					>
+					["at12"] = <
+						text = <"Food">
+						description = <"A substance taken as part of the diet.">
+					>
+					["at13"] = <
+						text = <"Animal">
+						description = <"A living organism or its venom or produce.">
+					>
+					["at14"] = <
+						text = <"Medication">
+						description = <"A substance taken or applied  for medicinal purposes.">
+					>
+					["at15"] = <
+						text = <"Other chemical or substance">
+						description = <"Non-medicinal chemicals or substances.">
+					>
+					["id16"] = <
+						text = <"Reaction category">
+						description = <"The type of reaction experience by the person as determined by the clinician.">
+					>
+					["at17"] = <
+						text = <"Intolerance">
+						description = <"Leads to unpleasant symptoms which are sufficient to avoid use in the future.">
+					>
+					["at18"] = <
+						text = <"Sensitivity">
+						description = <"Leads to morbidity which is potentially threatening to the wellbeing of the person.">
+					>
+					["at19"] = <
+						text = <"Allergy">
+						description = <"Leads to an IgE mediated reaction.">
+					>
+					["id20"] = <
+						text = <"Exposure and reaction detail">
+						description = <"Details of the reaction experienced by the person.">
+					>
+					["id21"] = <
+						text = <"Date of exposure">
+						description = <"The date (+/- time) when the person became exposed to the agent.">
+					>
+					["id22"] = <
+						text = <"Duration of the exposure">
+						description = <"The duration of the exposure to the agent.">
+					>
+					["id23"] = <
+						text = <"Reaction description">
+						description = <"A description of the reaction to this agent as experienced by the person.">
+					>
+					["id24"] = <
+						text = <"Reaction severity">
+						description = <"The category of the reaction.">
+					>
+					["at25"] = <
+						text = <"Mild">
+						description = <"A reaction which causes little distress and no loss of work/school.">
+					>
+					["at26"] = <
+						text = <"Disabling">
+						description = <"A reaction which causes morbidity and/or loss of function.">
+					>
+					["at27"] = <
+						text = <"Life threatening">
+						description = <"A reaction which was or could be lifethreatening.">
+					>
+					["id28"] = <
+						text = <"Date of onset of reaction">
+						description = <"The date/time the reaction commenced.">
+					>
+					["id29"] = <
+						text = <"Duration of the reaction">
+						description = <"The duration of the reaction.">
+					>
+					["at31"] = <
+						text = <"No reaction">
+						description = <"Person has been exposed with no reaction.">
+					>
+					["at32"] = <
+						text = <"Non-active ingredient of medication">
+						description = <"A non-medicinal ingredient of medication such as colouring, preservative, etc.(subtype of other chemical)">
+					>
+					["id33"] = <
+						text = <"Specific substance">
+						description = <"The specific substance that caused the reaction if different from the agent (e.g. brands or members of a class).">
+					>
+					["at34"] = <
+						text = <"Imaging dye or media">
+						description = <"A dye or media used in diagnostic imaging (subtype of other chemical).">
+					>
+					["at35"] = <
+						text = <"Environmental">
+						description = <"An agent present in the environment.">
+					>
+					["ac1"] = <
+						text = <"Agent category (synthesised)">
+						description = <"The category of the agent. (synthesised)">
+					>
+					["ac2"] = <
+						text = <"Reaction category (synthesised)">
+						description = <"The type of reaction experience by the person as determined by the clinician. (synthesised)">
+					>
+					["ac3"] = <
+						text = <"Probability of causation (synthesised)">
+						description = <"Degree of certainty that the agent was the cause of the reaction. (synthesised)">
+					>
+					["ac4"] = <
+						text = <"Reaction severity (synthesised)">
+						description = <"The category of the reaction. (synthesised)">
+					>
+					["id1.1"] = <
+						text = <"Adverse reaction details for episode of care">
+						description = <"Adverse reaction details for episode of care">
+					>
+				>
+			>
+			value_sets = <
+				["ac1"] = <
+					id = <"ac1">
+					members = <"at12", "at13", "at14", "at15", "at32", "at34", "at35">
+				>
+				["ac2"] = <
+					id = <"ac2">
+					members = <"at17", "at18", "at19", "at31">
+				>
+				["ac3"] = <
+					id = <"ac3">
+					members = <"at6", "at7", "at8">
+				>
+				["ac4"] = <
+					id = <"ac4">
+					members = <"at25", "at26", "at27">
+				>
+			>
+		>
+		["openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-2.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Alert">
+						description = <"Information pertaining to a subject of care that may need special consideration by a healthcare provider before making a decision about his/her actions in order to avert an unfavourable healthcare event, or relate to the safety of subject or providers, or pertain to special circumstances relevant to the delivery of care">
+					>
+					["id3"] = <
+						text = <"Category">
+						description = <"The category of alert">
+					>
+					["id4"] = <
+						text = <"Description">
+						description = <"Details of the alert">
+					>
+					["id5"] = <
+						text = <"Start of alert">
+						description = <"The date/time tat the issue or event commenced">
+					>
+					["id6"] = <
+						text = <"Certainty">
+						description = <"An indication of confidence concerning the existence of the alert">
+					>
+					["at7"] = <
+						text = <"Confirmed">
+						description = <"The event or alert has been confirmed">
+					>
+					["at8"] = <
+						text = <"Suspected">
+						description = <"The issue or event is suspected to be present">
+					>
+					["at9"] = <
+						text = <"Discounted">
+						description = <"The issue or event has been discounted">
+					>
+					["id10"] = <
+						text = <"Status">
+						description = <"An indication of whether the alert is considered to be an active or inactive issue">
+					>
+					["id11"] = <
+						text = <"Review on">
+						description = <"The date and time the alert requires review">
+					>
+					["at12"] = <
+						text = <"Active">
+						description = <"The alert is active">
+					>
+					["at13"] = <
+						text = <"Inactive">
+						description = <"The alert is not active at present">
+					>
+					["at14"] = <
+						text = <"Resolved">
+						description = <"The alert has resolved">
+					>
+					["id15"] = <
+						text = <"End of alert">
+						description = <"The end of the alert period if known">
+					>
+					["ac2"] = <
+						text = <"A category of alert based">
+						description = <"Coded categories of alerts based on a domain vocabulary">
+					>
+					["ac3"] = <
+						text = <"Certainty (synthesised)">
+						description = <"An indication of confidence concerning the existence of the alert (synthesised)">
+					>
+					["ac4"] = <
+						text = <"Status (synthesised)">
+						description = <"An indication of whether the alert is considered to be an active or inactive issue (synthesised)">
+					>
+					["id1.1"] = <
+						text = <"Alerts">
+						description = <"Alert details">
+					>
+				>
+			>
+			value_sets = <
+				["ac3"] = <
+					id = <"ac3">
+					members = <"at7", "at8", "at9">
+				>
+				["ac4"] = <
+					id = <"ac4">
+					members = <"at12", "at13", "at14">
+				>
+			>
+		>
+		["openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-3.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Clinical Synopsis - SG">
+						description = <"Narrative summary or overview about a patient, specifically from the perspective of a healthcare provider, and with or without associated interpretations.">
+					>
+					["id3"] = <
+						text = <"Synopsis">
+						description = <"The summary, assessment, conclusions or evaluation of the clinical findings.">
+					>
+					["id4"] = <
+						text = <"Synopsis type">
+						description = <"*">
+					>
+					["id1.1"] = <
+						text = <"Clinical synopsis">
+						description = <"Clinical synopsis">
+					>
+					["id3.1"] = <
+						text = <"Description">
+						description = <"Clinical synopsis description">
+					>
+					["at0.1"] = <
+						text = <"Admission">
+						description = <"Admission">
+					>
+					["at0.2"] = <
+						text = <"Clinical note">
+						description = <"Clinical note">
+					>
+					["at0.3"] = <
+						text = <"Post discharge care">
+						description = <"Post discharge care">
+					>
+					["at0.4"] = <
+						text = <"Inpatient episode">
+						description = <"Inpatient episode">
+					>
+					["at0.5"] = <
+						text = <"Main complaints">
+						description = <"Main complaints">
+					>
+					["at0.6"] = <
+						text = <"Past medical summary">
+						description = <"Past medical summary">
+					>
+					["at0.7"] = <
+						text = <"Clinical progress">
+						description = <"Clinical progress">
+					>
+					["at0.8"] = <
+						text = <"Suggested treatments">
+						description = <"Suggested treatments">
+					>
+					["at0.9"] = <
+						text = <"Social history">
+						description = <"Social history">
+					>
+					["at0.10"] = <
+						text = <"Past medical history">
+						description = <"Past medical history">
+					>
+					["at0.11"] = <
+						text = <"Presenting complaints/physical findings">
+						description = <"Presenting complaints/physical findings">
+					>
+					["at0.12"] = <
+						text = <"Progress summary">
+						description = <"Progress summary">
+					>
+					["at0.13"] = <
+						text = <"Significant physical findings">
+						description = <"Significant physical findings">
+					>
+					["ac0.1"] = <
+						text = <"Description (synthesised)">
+						description = <"Clinical synopsis description (synthesised)">
+					>
+				>
+			>
+			value_sets = <
+				["ac0.1"] = <
+					id = <"ac0.1">
+					members = <"at0.1", "at0.2", "at0.3", "at0.4", "at0.5", "at0.6", "at0.7", "at0.8", "at0.9", "at0.10", "at0.11", "at0.12", "at0.13">
+				>
+			>
+		>
+		["openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-4.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Problem">
+						description = <"An issue or obstacle which adversely impacts on the physical, mental and/or social well-being of an individual. The definition of a problem is deliberately kept rather loose so as to capture any real or perceived concerns that may adversely affect an individual's wellbeing to any degree.  ">
+					>
+					["id3"] = <
+						text = <"Problem">
+						description = <"Identification of the index problem.">
+					>
+					["id4"] = <
+						text = <"Date of initial onset">
+						description = <"The date when the problem was first identified by the individual.">
+					>
+					["id5"] = <
+						text = <"Age at initial onset">
+						description = <"The age of the individual when the problem was first identified by the individual.">
+					>
+					["id6"] = <
+						text = <"Severity">
+						description = <"The assessed overall severity of the index problem.">
+					>
+					["at7"] = <
+						text = <"Mild">
+						description = <"The severity of the index problem is mild, not affecting life or longevity.">
+					>
+					["at8"] = <
+						text = <"Moderate">
+						description = <"The severity of the index problem is such as to cause significant morbidity.">
+					>
+					["at9"] = <
+						text = <"Severe">
+						description = <"The severity of the index problem has had a major effect on life and/or longevity.">
+					>
+					["id10"] = <
+						text = <"Clinical description">
+						description = <"Description of the clinical aspects of the problem.">
+					>
+					["id11"] = <
+						text = <"Date clinically recognised">
+						description = <"Date the problem was recognised by a healthcare provider.">
+					>
+					["id12"] = <
+						text = <"Location">
+						description = <"Location of the problem in terms of body site.">
+					>
+					["id13"] = <
+						text = <"Body site">
+						description = <"The body site affected.">
+					>
+					["id14"] = <
+						text = <"Location description">
+						description = <"Description of the location.">
+					>
+					["id15"] = <
+						text = <"Aetiology">
+						description = <"Agents or Factors known to have been of aetiological significance.">
+					>
+					["id16"] = <
+						text = <"Agent">
+						description = <"Agent or other factor known to have caused this problem.">
+					>
+					["id17"] = <
+						text = <"Complication of">
+						description = <"Identification of a problem, injury or condition as text,coded text or link within the EHR.">
+					>
+					["id18"] = <
+						text = <"Description">
+						description = <"Description of aetiological process.">
+					>
+					["id19"] = <
+						text = <"Occurrences or exacerbations">
+						description = <"Grouping of information about individual occurrences or exacerbations.">
+					>
+					["id20"] = <
+						text = <"Frequency of reccurrence">
+						description = <"The frequency of individual occurrences of the problem.">
+					>
+					["id21"] = <
+						text = <"Date of last occurrence">
+						description = <"The date of the last occurrence of the problem.">
+					>
+					["id22"] = <
+						text = <"Occurrence/exacerbation">
+						description = <"Information about one occurrence or exacerbation.">
+					>
+					["id23"] = <
+						text = <"Clinical description">
+						description = <"A description of the exacerbation or occurrence.">
+					>
+					["id24"] = <
+						text = <"Outcome">
+						description = <"Outcome of the occurrence or exacerbation.">
+					>
+					["id25"] = <
+						text = <"Date of onset of occurrence">
+						description = <"Date of onset of occurrence or exacerbation.">
+					>
+					["id26"] = <
+						text = <"Number of occurrences">
+						description = <"Number of times this problem has occurred or been apparent.">
+					>
+					["id27"] = <
+						text = <"Related problems">
+						description = <"Further problems that are related in some way to the index problem.">
+					>
+					["id28"] = <
+						text = <"Related problem">
+						description = <"A group of characteristics of the problem complicating the index problem.">
+					>
+					["id29"] = <
+						text = <"Related problem">
+						description = <"Identification of a related problem as text,coded text or link within the EHR.">
+					>
+					["id30"] = <
+						text = <"Clinical description">
+						description = <"Decription of the related problem.">
+					>
+					["id31"] = <
+						text = <"Date of resolution">
+						description = <"The date that the problem resolved or went into remission.">
+					>
+					["id32"] = <
+						text = <"Age at resolution">
+						description = <"The age of the person at the resolution of the problem.">
+					>
+					["id34"] = <
+						text = <"References">
+						description = <"Useful information about this condition.">
+					>
+					["id35"] = <
+						text = <"Reference">
+						description = <"Reference to material about this condition.">
+					>
+					["id36"] = <
+						text = <"Web link">
+						description = <"Useful information on the internet about this condition.">
+					>
+					["id37"] = <
+						text = <"Date of resolution of occurrence">
+						description = <"Date of the resolution of the occurrence or exacerbation.">
+					>
+					["id38"] = <
+						text = <"Age when clinically recognised">
+						description = <"Age at which the problem was recognised by a healthcare provider.">
+					>
+					["id39"] = <
+						text = <"Clinical significance">
+						description = <"Description of the clinical significance of the problem in terms of impact of the problem on the patient.">
+					>
+					["ac1"] = <
+						text = <"Severity (synthesised)">
+						description = <"The assessed overall severity of the index problem. (synthesised)">
+					>
+					["id0.32"] = <
+						text = <"Status">
+						description = <"The status of the diagnosis">
+					>
+					["at0.33"] = <
+						text = <"provisional">
+						description = <"provisional diagnosis considered likely and a basis for proceeding with management">
+					>
+					["at0.34"] = <
+						text = <"working">
+						description = <"working diagnosis considered very likely but not yet confirmed">
+					>
+					["id0.35"] = <
+						text = <"Diagnostic criteria">
+						description = <"The criteria on which the diagnosis is based">
+					>
+					["id0.36"] = <
+						text = <"Criterion">
+						description = <"A basis for the diagnosis">
+					>
+					["id1.1"] = <
+						text = <"Diagnosis">
+						description = <"A diagnosis defined by a clinician which is coded in an accepted terminology and may include the stage of the condition and the diagnostic criteria">
+					>
+					["id3.1"] = <
+						text = <"Diagnosis">
+						description = <"The index diagnosis">
+					>
+					["ac0.1"] = <
+						text = <"Any term that 'is_a' diagnosis">
+						description = <"Any term that is a diagnosis in an accepted terminology">
+					>
+					["ac0.2"] = <
+						text = <"Status (synthesised)">
+						description = <"The status of the diagnosis (synthesised)">
+					>
+					["id0.0.55"] = <
+						text = <"Diagnosis type">
+						description = <"Type (reporting category) of diagnosis.">
+					>
+					["at0.0.56"] = <
+						text = <"Primary diagnosis">
+						description = <"*">
+					>
+					["at0.0.57"] = <
+						text = <"Secondary diagnosis">
+						description = <"*">
+					>
+					["at0.0.58"] = <
+						text = <"Pre-existing condition">
+						description = <"*">
+					>
+					["id1.1.1"] = <
+						text = <"Diagnosis - Singapore">
+						description = <"A diagnosis defined by a clinician which is coded in an accepted terminology and may include the stage of the condition and the diagnostic criteria!">
+					>
+					["ac0.0.1"] = <
+						text = <"Diagnosis type (synthesised)">
+						description = <"Type (reporting category) of diagnosis. (synthesised)">
+					>
+					["id1.1.1.1"] = <
+						text = <"Simple problem / diagnosis summary">
+						description = <"Simple problem / diagnosis summary">
+					>
+					["id3.1.0.1"] = <
+						text = <"Diagnosis">
+						description = <"Diagnosis">
+					>
+					["id10.0.0.1"] = <
+						text = <"Additional remarks">
+						description = <"Diagnosis/problem additional remarks">
+					>
+					["id0.0.55.1"] = <
+						text = <"Diagnosis type">
+						description = <"Diagnosis type">
+					>
+				>
+			>
+			value_sets = <
+				["ac1"] = <
+					id = <"ac1">
+					members = <"at7", "at8", "at9">
+				>
+				["ac0.2"] = <
+					id = <"ac0.2">
+					members = <"at0.33", "at0.34">
+				>
+				["ac0.0.1"] = <
+					id = <"ac0.0.1">
+					members = <"at0.0.56", "at0.0.57", "at0.0.58">
+				>
+			>
+		>
+		["openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-5.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Clinical Synopsis - SG">
+						description = <"Narrative summary or overview about a patient, specifically from the perspective of a healthcare provider, and with or without associated interpretations.">
+					>
+					["id3"] = <
+						text = <"Synopsis">
+						description = <"The summary, assessment, conclusions or evaluation of the clinical findings.">
+					>
+					["id4"] = <
+						text = <"Synopsis type">
+						description = <"*">
+					>
+					["id1.1"] = <
+						text = <"Investigations summary">
+						description = <"Summary of investigations undertaken during stay">
+					>
+					["id3.1"] = <
+						text = <"Description">
+						description = <"Summary of investigations description">
+					>
+				>
+			>
+		>
+		["openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-6.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Clinical Synopsis - SG">
+						description = <"Narrative summary or overview about a patient, specifically from the perspective of a healthcare provider, and with or without associated interpretations.">
+					>
+					["id3"] = <
+						text = <"Synopsis">
+						description = <"The summary, assessment, conclusions or evaluation of the clinical findings.">
+					>
+					["id4"] = <
+						text = <"Synopsis type">
+						description = <"*">
+					>
+					["id1.1"] = <
+						text = <"Medication orders summary">
+						description = <"Summary of medication orders">
+					>
+					["id3.1"] = <
+						text = <"Description">
+						description = <"Summary of medications description">
+					>
+				>
+			>
+		>
+		["openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-7.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Clinical Synopsis - SG">
+						description = <"Narrative summary or overview about a patient, specifically from the perspective of a healthcare provider, and with or without associated interpretations.">
+					>
+					["id3"] = <
+						text = <"Synopsis">
+						description = <"The summary, assessment, conclusions or evaluation of the clinical findings.">
+					>
+					["id4"] = <
+						text = <"Synopsis type">
+						description = <"*">
+					>
+					["id1.1"] = <
+						text = <"Procedures summary">
+						description = <"Summary of procedures">
+					>
+					["id3.1"] = <
+						text = <"Description">
+						description = <"Summary of procedures undertaken during episode of care">
+					>
+				>
+			>
+		>
+		["openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-8.v1.0.0"] = <
+			term_definitions = <
+				["en"] = <
+					["id1"] = <
+						text = <"Medical Certificate">
+						description = <"Only used for Discharge Summary Document">
+					>
+					["id3"] = <
+						text = <"Status">
+						description = <"Status of fitness for duties e.g. unfit for duty, fit for light duty">
+					>
+					["id4"] = <
+						text = <"Start Date">
+						description = <"*">
+					>
+					["id5"] = <
+						text = <"End Date">
+						description = <"*">
+					>
+					["id6"] = <
+						text = <"Description">
+						description = <"Textual description of the medical certificate.">
+					>
+					["id1.1"] = <
+						text = <"Simple Discharge Summary Medical Certificate">
+						description = <"Only used for Discharge Summary Document">
+					>
+				>
+			>
+		>
+	>
+

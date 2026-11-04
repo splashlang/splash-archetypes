@@ -1,0 +1,18 @@
+	PERSON[id1.1] matches {	-- Patient demographic data
+		/details[id2]/items matches {
+			use_archetype CLUSTER[id11.1, openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-1.v1] occurrences matches {0..1} 
+			use_archetype CLUSTER[id11.2, openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-2.v1] occurrences matches {0..1} 
+			use_archetype CLUSTER[id11.3, openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-3.v1] occurrences matches {0..1} 
+			allow_archetype CLUSTER[id11] closed 	-- Other details - closed slot
+		}
+		/identities matches {
+			use_archetype PARTY_IDENTITY[id3.1, openEHR-DEMOGRAPHIC-PARTY_IDENTITY.t_patient_ds_sf-4.v1] 
+			allow_archetype PARTY_IDENTITY[id3] closed 	-- Party identity - closed slot
+		}
+		/contacts[id4]/addresses matches {
+			use_archetype ADDRESS[id31.1, openEHR-DEMOGRAPHIC-ADDRESS.t_patient_ds_sf-5.v1] 
+			allow_archetype ADDRESS[id31] closed 	-- Address - closed slot
+		}
+		/relationships existence matches {0} 
+	}
+

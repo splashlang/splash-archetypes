@@ -1,0 +1,20 @@
+	OBSERVATION[id1.1] matches {	
+		/data/events[id3]/data/items matches {
+			ELEMENT[id6.1] occurrences matches {0..1} matches {
+				value matches {
+					DV_QUANTITY[id13] 
+				}
+			}
+			ELEMENT[id6.2] occurrences matches {2..*} matches {
+				value matches {
+					DV_QUANTITY[id13] 
+				}
+			}
+			ELEMENT[id6.3] occurrences matches {2..*} matches {
+				value matches {
+					DV_QUANTITY[id13] 
+				}
+			}
+		}
+	}
+

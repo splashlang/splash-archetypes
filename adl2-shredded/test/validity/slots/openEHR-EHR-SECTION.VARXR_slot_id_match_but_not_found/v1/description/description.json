@@ -1,0 +1,12 @@
+{
+    "original_author": {
+        "name": "Thomas Beale",
+        "organisation": "openehR Foundation",
+        "email": "thomas.beale@openehr.org",
+        "date": "14/07/2010"
+    },
+    "other_details": {
+        "regression": "VARXR"
+    },
+    "lifecycle_state": "unmanaged"
+}

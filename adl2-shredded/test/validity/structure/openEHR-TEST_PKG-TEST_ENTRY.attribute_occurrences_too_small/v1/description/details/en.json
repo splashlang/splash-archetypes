@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test what happens when an object's occurrences is less than the attribute's cardinality.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "validation",
+        "test"
+    ]
+}

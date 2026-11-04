@@ -1,0 +1,14 @@
+{
+    "id1.1": {
+        "text": "PathologyTest Request",
+        "description": "Generic request for a pathology request."
+    },
+    "id122.1": {
+        "text": "Pathology Test Requested",
+        "description": "Identification of the pathology test requested. This is often coded with an external terminology."
+    },
+    "id136.1": {
+        "text": "Description of Test",
+        "description": "A detailed narrative description of the pathology test requested."
+    }
+}

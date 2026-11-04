@@ -1,0 +1,19 @@
+{
+    "language": "[ISO_639-1::fr]",
+    "purpose": "a quoi ça sert",
+    "use": "ceçi explique la fonction de l'archetype",
+    "keywords": [
+        "ceçi",
+        "est",
+        "une",
+        "liste",
+        "de",
+        "mots",
+        "clés"
+    ],
+    "misuse": "les interdictions de l'utilisation de cet archetype",
+    "original_resource_uri": {
+        "ligne guide": "http://guidelines.are.us/wherever/fr",
+        "medline": "http://some%20medline%20ref"
+    }
+}

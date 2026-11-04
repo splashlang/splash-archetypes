@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VOLT validity check, triggered when the terminology has term definitions of another language, but not of the original language.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "validation",
+        "test"
+    ],
+    "copyright": "copyright (c) 2008 The openEHR Foundation"
+}

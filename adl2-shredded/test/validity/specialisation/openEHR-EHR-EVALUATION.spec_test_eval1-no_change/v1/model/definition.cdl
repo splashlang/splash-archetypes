@@ -1,0 +1,6 @@
+	EVALUATION[id1.1] matches {	-- Evaluation
+		data matches {
+			ITEM_TREE[id2] occurrences matches {1} 
+		}
+	}
+

@@ -1,0 +1,18 @@
+{
+    "id1": {
+        "text": "Healthcare service request",
+        "description": "Request for a range of different healthcare services, for example, a referral, lab request, equipment request."
+    },
+    "id2": {
+        "text": "Request",
+        "description": "Current Activity."
+    },
+    "id122": {
+        "text": "Service requested",
+        "description": "Identification of the service requested. This is often coded with an external terminology."
+    },
+    "id136": {
+        "text": "Description of service",
+        "description": "A detailed narrative description of the service requested."
+    }
+}

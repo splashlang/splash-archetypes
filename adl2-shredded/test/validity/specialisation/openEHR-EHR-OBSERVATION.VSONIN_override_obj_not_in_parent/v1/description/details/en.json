@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VSONIN check, triggered by reference to a path that is legal in the RM, but not mentioned in the parent archetype",
+    "use": "Regression testing"
+}

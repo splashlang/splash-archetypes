@@ -1,0 +1,66 @@
+{
+    "id1": {
+        "text": "Substance Use",
+        "description": "Generic archetype to record the actual use or consumption of a defined substance at the present time, a specific time or over a period of time. "
+    },
+    "id3": {
+        "text": "Any event",
+        "description": "Any event"
+    },
+    "id5": {
+        "text": "Substance",
+        "description": "Identification of substance "
+    },
+    "id6": {
+        "text": "Frequency",
+        "description": "Frequency of use of substance"
+    },
+    "at7": {
+        "text": "Daily use",
+        "description": "Used every day"
+    },
+    "at8": {
+        "text": "Weekly use",
+        "description": "Used at least weekly"
+    },
+    "at9": {
+        "text": "Irregular use",
+        "description": "Used irregularly"
+    },
+    "at10": {
+        "text": "No use",
+        "description": "Not used at all"
+    },
+    "id11": {
+        "text": "Consumption details",
+        "description": "Details about the consumption of the substance"
+    },
+    "id12": {
+        "text": "Form",
+        "description": "Form of the substance used"
+    },
+    "id13": {
+        "text": "Amount",
+        "description": "Amount of substance consumed.  Data type can be further specified in specialised archetypes or in templates"
+    },
+    "id14": {
+        "text": "Triggers",
+        "description": "Identified triggers which stimulate or cause use"
+    },
+    "id15": {
+        "text": "Readiness for change",
+        "description": "Details about the readiness to change use or consumption of substance"
+    },
+    "id17": {
+        "text": "Evidence of dependence",
+        "description": "Description of any evidence of dependence on the substance"
+    },
+    "id19": {
+        "text": "Method of use",
+        "description": "Method of use or consumption of the substance"
+    },
+    "ac1": {
+        "text": "Frequency (synthesised)",
+        "description": "Frequency of use of substance (synthesised)"
+    }
+}

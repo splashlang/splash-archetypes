@@ -1,0 +1,11 @@
+	EVALUATION[id1.1] matches {
+		/data[id2]/items[id3]/value matches {
+			DV_CODED_TEXT[id4.1] matches {
+				defining_code matches {[ac0.1]}
+			}
+			DV_TEXT[id4.2] matches {
+				value matches {/.+/}
+			}
+		}
+	}
+

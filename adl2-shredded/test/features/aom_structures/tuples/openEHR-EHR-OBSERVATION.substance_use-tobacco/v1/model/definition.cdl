@@ -1,0 +1,25 @@
+	OBSERVATION[id1.1] matches {	-- Tobacco Use
+		/data[id2]/events[id3]/data[id4]/items[id5]/value matches {
+			DV_CODED_TEXT[id20.1] matches {
+				defining_code matches {[at0.2]}
+			}
+		}
+		/data[id2]/events[id3]/data[id4]/items[id11]/items[id12]/value matches {
+			DV_CODED_TEXT[id21.1] matches {
+				defining_code matches {[ac0.1]}		-- Form (synthesised)
+			}
+		}
+		/data[id2]/events[id3]/data[id4]/items[id11]/items matches {
+			ELEMENT[id13.1] matches {	-- Number smoked
+				value matches {
+					DV_QUANTITY[id0.1] matches {
+						[property, units] matches {
+							[{[at0.7]}, {"/h", "/d", "/wk"}],
+							[{[at0.8]}, {"gm/d", "gm/wk"}]
+						}
+					}
+				}
+			}
+		}
+	}
+

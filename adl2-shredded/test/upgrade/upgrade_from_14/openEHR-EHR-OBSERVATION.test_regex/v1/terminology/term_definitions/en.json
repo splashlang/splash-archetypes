@@ -1,0 +1,14 @@
+{
+    "id1": {
+        "text": "Blood Pressure",
+        "description": "The local measurement of arterial blood pressure which is a surrogate for arterial pressure in the systemic circulation.  Most commonly, use of the term 'blood pressure' refers to measurement of brachial artery pressure in the upper arm."
+    },
+    "id12": {
+        "text": "Tree",
+        "description": "List structure."
+    },
+    "id1058": {
+        "text": "Structured measurement location",
+        "description": "Structured anatomical location of where the measurement was taken."
+    }
+}

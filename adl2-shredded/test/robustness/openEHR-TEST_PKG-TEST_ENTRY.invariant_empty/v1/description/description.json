@@ -1,0 +1,10 @@
+{
+    "original_author": {
+        "name": "Peter Gummer"
+    },
+    "lifecycle_state": "unmanaged",
+    "other_details": {
+        "regression": "PASS"
+    },
+    "copyright": "copyright (c) 2008 The openEHR Foundation"
+}

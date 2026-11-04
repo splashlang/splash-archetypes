@@ -1,0 +1,26 @@
+{
+    "id1": {
+        "text": "Blood Pressure",
+        "description": "The local measurement of arterial blood pressure which is a surrogate for arterial. pressure in the systemic circulation.  Most commonly, use of the term 'blood pressure' refers to measurement of brachial artery pressure in the upper arm."
+    },
+    "id7": {
+        "text": "any event",
+        "description": "Default event"
+    },
+    "id9": {
+        "text": "Position",
+        "description": "The position of the subject at the time of measurement."
+    },
+    "id10": {
+        "text": "Sleep status",
+        "description": "Sleep status - supports interpretation of 24 hour ambulatory blood pressure records. "
+    },
+    "at11": {
+        "text": "Standing",
+        "description": "Standing at the time of blood pressure measurement."
+    },
+    "at12": {
+        "text": "Alert & awake",
+        "description": "Subject is fully conscious."
+    }
+}

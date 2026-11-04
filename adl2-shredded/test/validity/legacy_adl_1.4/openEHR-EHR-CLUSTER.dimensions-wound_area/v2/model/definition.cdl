@@ -1,0 +1,13 @@
+	CLUSTER[id1.1] matches {	-- Area of wound
+		/items matches {
+			ELEMENT[id0.7] occurrences matches {0..1} matches {	-- Way of measurement
+				value matches {
+					DV_CODED_TEXT[id0.8] matches {
+						defining_code matches {[ac0.1]}		-- Way of measurement (synthesised)
+					}
+				}
+			}
+		}
+		/items[id6]/value[id12]/units matches {"mm2", "cm2"}
+	}
+

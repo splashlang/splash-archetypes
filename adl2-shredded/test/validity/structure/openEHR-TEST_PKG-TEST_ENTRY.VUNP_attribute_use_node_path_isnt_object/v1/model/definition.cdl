@@ -1,0 +1,7 @@
+	TEST_ENTRY[id1] matches {	-- 
+		element_attr matches {
+			use_node TEST_ELEMENT[id2] /value[id11]
+		}
+		value matches {[at2]}
+	}
+

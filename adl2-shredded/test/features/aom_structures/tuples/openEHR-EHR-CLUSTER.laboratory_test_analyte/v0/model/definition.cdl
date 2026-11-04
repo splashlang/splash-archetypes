@@ -1,0 +1,6 @@
+	CLUSTER[id1] matches {	-- Laboratory test analyte
+		items matches {
+			ELEMENT[id2] occurrences matches {0..1} 	-- Analyte result
+		}
+	}
+

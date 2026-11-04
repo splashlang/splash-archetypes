@@ -1,0 +1,7 @@
+{
+    "id": "openEHR-EHR-EVALUATION.problem-diagnosis.v1.0.0",
+    "artefact_type": "archetype",
+    "specialise": "openEHR-EHR-EVALUATION.problem.v1",
+    "adl_version": "2.3.0",
+    "rm_release": "1.1.0"
+}

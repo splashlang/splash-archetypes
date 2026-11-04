@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test basic structure hierarchy",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "structure",
+        "test"
+    ]
+}

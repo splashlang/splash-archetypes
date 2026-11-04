@@ -1,0 +1,10 @@
+{
+    "id1.1": {
+        "text": "Person additional demographic data",
+        "description": "*"
+    },
+    "id2.1": {
+        "text": "Sex",
+        "description": "*"
+    }
+}

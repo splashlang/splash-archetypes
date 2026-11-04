@@ -1,0 +1,14 @@
+	OBSERVATION[id1] matches {	-- an Observation
+		data matches {
+			HISTORY<ITEM_LIST>[id4] matches {
+				events cardinality matches {1..*; unordered} matches {
+					EVENT<ITEM_LIST>[id3] occurrences matches {0..*} matches {	-- some Event
+						data matches {
+							ITEM_LIST[id5] 
+						}
+					}
+				}
+			}
+		}
+	}
+

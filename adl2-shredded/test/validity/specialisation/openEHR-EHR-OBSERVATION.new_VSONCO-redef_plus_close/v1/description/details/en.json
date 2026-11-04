@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Redefine a multiple occurrences node and also remove the original parent",
+    "use": "Regression testing"
+}

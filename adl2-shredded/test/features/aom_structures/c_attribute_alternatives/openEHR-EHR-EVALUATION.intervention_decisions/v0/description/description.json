@@ -1,0 +1,12 @@
+{
+    "lifecycle_state": "unmanaged",
+    "original_author": {
+        "name": "Ian McNicoll",
+        "organisation": "openEHR International",
+        "email": "ian.mcnicoll@openEHR.org",
+        "date": "2021-03-31"
+    },
+    "other_details": {
+        "regression": "PASS"
+    }
+}

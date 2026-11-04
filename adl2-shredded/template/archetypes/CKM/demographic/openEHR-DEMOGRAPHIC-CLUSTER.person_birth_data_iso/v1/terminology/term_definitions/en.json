@@ -1,0 +1,42 @@
+{
+    "id1": {
+        "text": "Birth data",
+        "description": "Birth demographic data"
+    },
+    "id2": {
+        "text": "Birth date",
+        "description": "The date of birth of a person"
+    },
+    "id3": {
+        "text": "Country of birth",
+        "description": "The country where a person was born"
+    },
+    "id4": {
+        "text": "Birth plurality",
+        "description": "An indicator of multiple birth, showing the total number of births resulting from a single pregnancy"
+    },
+    "id5": {
+        "text": "Birth order",
+        "description": "The sequential order of this person in a multiple birth regardless of live or still birth"
+    },
+    "id6": {
+        "text": "Date of birth follow-up indicator",
+        "description": "Flag that indicates when the current date of birth requires follow-up to obtain a more accurate date"
+    },
+    "id7": {
+        "text": "Country specific data",
+        "description": "Additional birth data that are country specific"
+    },
+    "ac1": {
+        "text": "Country codes",
+        "description": "valid codes for countries"
+    },
+    "ac2": {
+        "text": "Birth plurality codes",
+        "description": "valid codes for birth plurality"
+    },
+    "ac3": {
+        "text": "Birth order codes",
+        "description": "valid codes for birth order"
+    }
+}

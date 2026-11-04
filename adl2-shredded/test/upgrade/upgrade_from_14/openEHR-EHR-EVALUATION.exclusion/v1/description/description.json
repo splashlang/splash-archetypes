@@ -1,0 +1,13 @@
+{
+    "lifecycle_state": "unmanaged",
+    "original_author": {
+        "name": "Heather Leslie",
+        "organisation": "Ocean Informatics",
+        "email": "heather.leslie@oceaninformatics.com",
+        "date": "2010-02-03"
+    },
+    "copyright": "© openEHR Foundation",
+    "other_details": {
+        "regression": "PASS"
+    }
+}

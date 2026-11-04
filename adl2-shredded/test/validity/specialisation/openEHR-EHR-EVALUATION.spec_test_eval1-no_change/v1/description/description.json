@@ -1,0 +1,11 @@
+{
+    "lifecycle_state": "unmanaged",
+    "original_author": {
+        "organisation": "openEHR Foundation",
+        "name": "Thomas Beale",
+        "date": "11/6/2010"
+    },
+    "other_details": {
+        "regression": "PASS"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Basic discharge summary",
+    "use": "test use",
+    "keywords": [
+        "discharge",
+        "admin"
+    ],
+    "copyright": "copyright (c) 2011 openEHR Foundation"
+}

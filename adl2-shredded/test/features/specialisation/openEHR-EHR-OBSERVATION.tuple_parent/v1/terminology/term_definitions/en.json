@@ -1,0 +1,46 @@
+{
+    "id1": {
+        "text": "Intravascular pressure",
+        "description": "The pressure in a specific location, blood vessel or heart cavity, at a specific phase of the heart or an average over the heart cycle."
+    },
+    "id3": {
+        "text": "Any event",
+        "description": "Generic event."
+    },
+    "id6": {
+        "text": "Pressure",
+        "description": "The mean pressure measured."
+    },
+    "id16": {
+        "text": "Ordinal",
+        "description": "Ordinal value."
+    },
+    "at17": {
+        "text": "Markedly reduced",
+        "description": "The pressure is much lower than normal or expected."
+    },
+    "at18": {
+        "text": "Lowered",
+        "description": "The pressure is reduced."
+    },
+    "at19": {
+        "text": "Normal/expected",
+        "description": "The pressure is normal or as expected."
+    },
+    "at20": {
+        "text": "raised",
+        "description": "The pressure is raised."
+    },
+    "at21": {
+        "text": "Markedly increased",
+        "description": "The pressure is much higher than normal or expected."
+    },
+    "at29": {
+        "text": "Pressure",
+        "description": "Pressure"
+    },
+    "ac1": {
+        "text": "Ordinal (synthesised)",
+        "description": "Ordinal value. (synthesised)"
+    }
+}

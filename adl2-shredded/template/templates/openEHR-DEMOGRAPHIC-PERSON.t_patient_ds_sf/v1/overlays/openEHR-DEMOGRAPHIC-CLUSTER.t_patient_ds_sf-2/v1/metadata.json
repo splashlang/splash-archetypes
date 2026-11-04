@@ -1,0 +1,5 @@
+{
+    "id": "openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-2.v1.0.0",
+    "artefact_type": "template_overlay",
+    "specialise": "openEHR-DEMOGRAPHIC-CLUSTER.person_additional_data_iso.v1"
+}

@@ -1,0 +1,16 @@
+{
+    "custodian_namespace": "org.openehr",
+    "custodian_organisation": "openEHR Foundation <http://www.openEHR.org>",
+    "original_author": {
+        "name": "Thomas Beale",
+        "email": "thomas.beale@openEHR.org",
+        "organisation": "openEHR Foundation <http://www.openEHR.org>",
+        "date": "2017-02-20"
+    },
+    "lifecycle_state": "published",
+    "other_details": {
+        "regression": "PASS"
+    },
+    "copyright": "Copyright © 2017 openEHR Foundation <http://www.openEHR.org>",
+    "licence": "Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>"
+}

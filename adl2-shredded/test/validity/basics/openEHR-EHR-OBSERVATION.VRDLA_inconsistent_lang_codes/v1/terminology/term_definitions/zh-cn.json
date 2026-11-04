@@ -1,0 +1,10 @@
+{
+    "id1": {
+        "description": "血压测量",
+        "text": "血压测量"
+    },
+    "id7": {
+        "description": "任意事件",
+        "text": "任意事件"
+    }
+}

@@ -1,0 +1,19 @@
+	CLUSTER[id1] matches {	-- unknown
+		items matches {
+			ELEMENT[id2] occurrences matches {0..1} matches {	-- a\b
+				value matches {
+					DV_CODED_TEXT[id4] matches {
+						defining_code matches {[ac1]}		-- a\b
+					}
+				}
+			}
+			ELEMENT[id3] occurrences matches {0..1} matches {	-- \a\
+				value matches {
+					DV_TEXT[id5] matches {
+						value matches {"No quoting should happen here"}
+					}
+				}
+			}
+		}
+	}
+

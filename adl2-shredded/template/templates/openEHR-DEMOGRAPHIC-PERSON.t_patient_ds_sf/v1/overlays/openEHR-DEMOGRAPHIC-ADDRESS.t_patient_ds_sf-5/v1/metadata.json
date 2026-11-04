@@ -1,0 +1,5 @@
+{
+    "id": "openEHR-DEMOGRAPHIC-ADDRESS.t_patient_ds_sf-5.v1.0.0",
+    "artefact_type": "template_overlay",
+    "specialise": "openEHR-DEMOGRAPHIC-ADDRESS.address.v1"
+}

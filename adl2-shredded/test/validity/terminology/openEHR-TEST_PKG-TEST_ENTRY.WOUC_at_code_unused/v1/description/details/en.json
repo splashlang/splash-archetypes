@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test WOUC validity check, triggered when an at-code in the ontology is not used anywhere in the archetype.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "validation",
+        "test"
+    ]
+}

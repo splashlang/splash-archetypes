@@ -1,0 +1,7 @@
+{
+    "id": "openEHR-EHR-OBSERVATION.body_temp_narrow_dv_quantity.v1.0.0",
+    "artefact_type": "archetype",
+    "specialise": "openEHR-EHR-OBSERVATION.body_temp_test.v1",
+    "adl_version": "2.0.5",
+    "rm_release": "1.0.2"
+}

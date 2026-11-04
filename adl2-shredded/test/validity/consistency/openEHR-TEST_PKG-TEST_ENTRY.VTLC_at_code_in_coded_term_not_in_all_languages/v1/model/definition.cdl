@@ -1,0 +1,8 @@
+	TEST_ENTRY[id1] matches {	-- 
+		coded_text_value matches {
+			DV_CODED_TEXT[id2] matches {
+				defining_code matches {[ac1]}		-- (empty string found in original archetype)
+			}
+		}
+	}
+

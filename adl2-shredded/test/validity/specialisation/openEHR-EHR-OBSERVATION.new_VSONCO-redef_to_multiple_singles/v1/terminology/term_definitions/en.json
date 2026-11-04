@@ -1,0 +1,18 @@
+{
+    "id1.1": {
+        "text": "top-level archetype",
+        "description": "top level test archetype for specialisation lineage"
+    },
+    "id4.1": {
+        "text": "Coded text field 1",
+        "description": "coded text field"
+    },
+    "id4.2": {
+        "text": "Coded text field 2",
+        "description": "coded text field"
+    },
+    "id4.3": {
+        "text": "Coded text field 3",
+        "description": "coded text field"
+    }
+}

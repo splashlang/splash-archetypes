@@ -1,0 +1,16 @@
+	WHOLE[id1.1] matches {
+		any_attr_1 matches {
+			String [id2] matches {"match me"}
+		}
+		any_attr_2 matches {
+			Iso8601_duration [id3] matches {PT1S}
+		}
+		any_attr_3 matches {
+			Integer [id4] matches {|1..23|,|40..77|}
+		}
+		any_attr_4 matches {
+			Real [id5] matches {3.1415926}
+		}
+		any_attr_5 matches {yyyy-mm-ddThh:??:??}
+	}
+

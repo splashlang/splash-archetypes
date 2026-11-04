@@ -1,0 +1,57 @@
+	OBSERVATION[id1] matches {	-- Laboratory test
+		data matches {
+			HISTORY[id2] matches {
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[id3] occurrences matches {0..*} matches {	-- Any event
+						data matches {
+							ITEM_TREE[id4] matches {
+								items matches {
+									ELEMENT[id6] occurrences matches {0..1} matches {	-- Test name
+										value matches {
+											DV_TEXT[id20] 
+										}
+									}
+									ELEMENT[id7] occurrences matches {0..1} matches {	-- Diagnostic service
+										value matches {
+											DV_TEXT[id21] 
+										}
+									}
+									ELEMENT[id8] occurrences matches {0..1} matches {	-- Test status
+										value matches {
+											DV_CODED_TEXT[id22] matches {
+												defining_code matches {[ac1]}		-- Test status (synthesised)
+											}
+										}
+									}
+									allow_archetype CLUSTER[id9] occurrences matches {0..*} matches {	-- Specimen detail
+										include
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.specimen\.v1/}
+										exclude
+											archetype_id/value matches {/.*/}
+									}
+									ITEM[id10] occurrences matches {0..*} 	-- Result
+									allow_archetype CLUSTER[id11] occurrences matches {0..*} matches {	-- Per-result annotation
+										include
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.lab_result_annotation(-a-zA-Z0-9_]+)*\.v1/}
+										exclude
+											archetype_id/value matches {/.*/}
+									}
+									ELEMENT[id12] occurrences matches {0..1} matches {	-- Overall interpretation
+										value matches {
+											DV_TEXT[id23] 
+										}
+									}
+									ELEMENT[id13] occurrences matches {0..*} matches {	-- Multimedia representation
+										value matches {
+											DV_MULTIMEDIA[id24] 
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

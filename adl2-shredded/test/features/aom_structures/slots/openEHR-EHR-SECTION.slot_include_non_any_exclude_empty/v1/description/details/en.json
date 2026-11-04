@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Archetype with non-any include and no excludes, which means the includes are taken as recommendations.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "slots"
+    ]
+}

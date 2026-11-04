@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Redefine a DV_TEXT to a DV_CODED_TEXT.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "specialisation"
+    ]
+}

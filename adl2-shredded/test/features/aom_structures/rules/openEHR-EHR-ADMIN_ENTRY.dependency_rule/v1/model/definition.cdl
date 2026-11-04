@@ -1,0 +1,25 @@
+	ADMIN_ENTRY[id1] matches {	-- Orientacion de alta
+		data matches {
+			ITEM_TREE[id2] matches {
+				items matches {
+					CLUSTER[id21] occurrences matches {0..1} matches {	-- saida
+						items matches {
+							ELEMENT[id15] matches {	-- tipo de saido
+								value matches {
+									DV_CODED_TEXT[id50] matches {
+										defining_code matches {[ac1]}		-- tipo de saido (synthesised)
+									}
+								}
+							}
+							ELEMENT[id20] occurrences matches {0..1} matches {	-- transferencia externo para
+								value matches {
+									DV_TEXT[id51] 
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

@@ -1,0 +1,6 @@
+	TEST_ENTRY[id1] matches {	-- 
+		element_attr_2 matches {
+			TEST_ELEMENT[id2] 
+		}
+	}
+

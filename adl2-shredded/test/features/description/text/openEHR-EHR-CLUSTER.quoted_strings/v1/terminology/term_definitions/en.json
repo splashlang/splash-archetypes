@@ -1,0 +1,26 @@
+{
+    "id1": {
+        "text": "unknown",
+        "description": "unknown"
+    },
+    "id2": {
+        "text": "a\\b",
+        "description": "a\"b"
+    },
+    "id3": {
+        "text": "\\a\\",
+        "description": "\"a\""
+    },
+    "at11": {
+        "text": "\\",
+        "description": "xxx"
+    },
+    "at12": {
+        "text": "\\\\",
+        "description": "xxx"
+    },
+    "ac1": {
+        "text": "a\\b",
+        "description": "a\"b"
+    }
+}

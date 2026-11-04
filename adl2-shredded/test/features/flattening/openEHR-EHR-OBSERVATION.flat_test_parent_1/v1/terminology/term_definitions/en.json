@@ -1,0 +1,14 @@
+{
+    "id1": {
+        "text": "Pathology Test Result",
+        "description": "The findings and interpretation of pathology tests performed on patient-related specimens."
+    },
+    "id3": {
+        "text": "Any event",
+        "description": "Any event."
+    },
+    "id6": {
+        "text": "Test Result Name",
+        "description": "Identification of the pathology test performed, sometimes including specimen type and patient state."
+    }
+}

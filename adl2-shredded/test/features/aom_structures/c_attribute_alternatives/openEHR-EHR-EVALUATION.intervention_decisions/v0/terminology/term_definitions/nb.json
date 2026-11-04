@@ -1,0 +1,218 @@
+{
+    "id1": {
+        "text": "Behandlingsbegrensning",
+        "description": "Forhåndsbeslutning om fremtidig hensiktsmessig behandling, vanligvis bestemt av en autorisert kliniker."
+    },
+    "id3": {
+        "text": "Intensjon med behandling",
+        "description": "Beskrivelse av den overordnede intensjonen med fremtidig behandling og omsorg for individet."
+    },
+    "id4": {
+        "text": "Begrunnelse",
+        "description": "Fritekstlig begrunnelse om rasjonale og berettigelse for utsagnet om \"Intensjon med behandling\"."
+    },
+    "id5": {
+        "text": "HLR-beslutning",
+        "description": "Bestemmelse om fremtidig Hjerte- og Lungeredning (HLR)."
+    },
+    "at6": {
+        "text": "Full HLR",
+        "description": "Alle relevante tiltak innen hjerte-lunge-redning bør forsøkes for å redde eller forlenge livet."
+    },
+    "at7": {
+        "text": "Begrenset HLR",
+        "description": "Hjerte-lungeredning bør forsøkes, slik det er nærmere spesifisert i som fritekst i elementet \"Beskrivelse\", eller som strukturerte data i det interne Clusteret \"Per intervensjon\"."
+    },
+    "at8": {
+        "text": "HLR minus",
+        "description": "Ingen tiltak innen hjerte-lunge-redning bør utføres for å redde eller forlenge livet. All behandling skal være fokusert på symptomlindring og livskvalitet. Også kjent som \"Res minus\", \"Do not resuscitate (DNR)\", \"Do not attempt resuscitation (DNAR)\" eller lignende."
+    },
+    "at9": {
+        "text": "Ukjent",
+        "description": "Beslutning om Hjerte-lungeredning (HLR) er ikke kjent."
+    },
+    "id10": {
+        "text": "Beskrivelse",
+        "description": "Fritekstbeskrivelse av bestemmelser i Behandlingsbegrensning."
+    },
+    "id11": {
+        "text": "Per intervensjon",
+        "description": "Detaljer om bestemmelser om mulige behandlinger eller tiltak som kan være livreddende, livsforlengende eller føre til uønskede konsekvenser for individet."
+    },
+    "id12": {
+        "text": "Intervensjon",
+        "description": "Navn på intervensjonen."
+    },
+    "at13": {
+        "text": "Intubering",
+        "description": "Plassering av et fleksibelt plastikkrør i luftrøret for å opprettholde åpne luftveier. Inkluderer tracheostomi."
+    },
+    "at14": {
+        "text": "Invasiv ventulasjon",
+        "description": "Kunstig åndedrett, der invasive tiltak er brukt for å assistere eller erstatte spontant åndedrett."
+    },
+    "at15": {
+        "text": "Non-invasiv ventilasjon",
+        "description": "Kunstig ventilasjon der ikke-invasive tiltak brukes for å assistere eller erstatte spontant åndedrett."
+    },
+    "at16": {
+        "text": "Sirkulasjonsregulerende",
+        "description": "Medikamenter som støtter hjertets funksjon, inkludert men er ikke begrenset til vasopressorer, inotrope- og chronotrope medikamenter."
+    },
+    "at17": {
+        "text": "Dialyse",
+        "description": "Prosess som fjerne overskuddsvæske, avfallsstoffer og toksiner fra blodet."
+    },
+    "at18": {
+        "text": "Blodprodukter",
+        "description": "Terapeutisk substans framstilt av humant blod. Inkluderer, men er ikke begrenset til: fullblod, blodkomponenter og plasmaderivater."
+    },
+    "at19": {
+        "text": "Antibiotika, antiviralia og soppdrepende middel.",
+        "description": "Medisiner for å behandle infeksjoner."
+    },
+    "at20": {
+        "text": "Parenteral eller kunstig ernæring",
+        "description": "Tilførsel av næringsstoffer via andre metoder enn spising og drikking."
+    },
+    "at21": {
+        "text": "Overflytting til intensiv",
+        "description": "Overflytting og innleggelse på en intensiv- eller overvåkingsenhet."
+    },
+    "at22": {
+        "text": "Overflytting til sykehus",
+        "description": "Overflytting til sykehus for vurdering eller innleggelse."
+    },
+    "at23": {
+        "text": "Væskebehandling",
+        "description": "Opprettholdelse av væskebalanse via andre metoder enn spising og drikking."
+    },
+    "at24": {
+        "text": "Perifer venekanyle",
+        "description": "Innleggelse av perifer intravenøs veneport."
+    },
+    "id25": {
+        "text": "Beslutning",
+        "description": "Beslutning om den identifiserte intervensjonen."
+    },
+    "at26": {
+        "text": "Anbefalt",
+        "description": "Intervensjonen er anbefalt."
+    },
+    "at27": {
+        "text": "Betinget anbefaling",
+        "description": "Intervensjonen er anbefalt bare i bestemte tilfeller."
+    },
+    "at28": {
+        "text": "Ikke anbefalt",
+        "description": "Intervensjonen er ikke anbefalt."
+    },
+    "at29": {
+        "text": "Ukjent",
+        "description": "Beslutning om intervensjonen er ikke kjent."
+    },
+    "id30": {
+        "text": "Betingelser",
+        "description": "Fritekstlig beskrivelse av i hvilke omstendigheter en \"Betinget anbefaling\" er aktuell."
+    },
+    "id31": {
+        "text": "Kommentar",
+        "description": "Ytterligere fritekst om beslutning om intervensjon, som ikke er fanget opp i andre felt."
+    },
+    "id32": {
+        "text": "Ytterligere detaljer",
+        "description": "Ytterligere strukturerte detaljer om behandlingsbegrensning."
+    },
+    "id33": {
+        "text": "Pasient informert",
+        "description": "Beskrivelse om individet er klar over beslutningene om behandlingbegrensning."
+    },
+    "id34": {
+        "text": "Pårørende informert",
+        "description": "Beskrivelse om individets pårørende, omsorgsgivere eller verge er klar over beslutningene om behandlingbegrensning."
+    },
+    "id35": {
+        "text": "Digital representasjon",
+        "description": "Digitalt dokument, bilde eller video som representerer det behandlingsbegrensningen."
+    },
+    "id36": {
+        "text": "Overordnet kommentar",
+        "description": "Ytterligere fritekstlig beskrivelse om avgjørelser om begrensning av behandling, og som ikke er fanget opp i andre felter."
+    },
+    "id38": {
+        "text": "Sist oppdatert",
+        "description": "Dato og/eller tid da oppføringer i behandlingsbegrensningen sist ble oppdatert."
+    },
+    "id39": {
+        "text": "Gyldighetsperiode start",
+        "description": "Dato/Tid som markerer når gyldighetsperioden av behandlingsbegrensningen starter."
+    },
+    "id40": {
+        "text": "Gyldighetsperiode slutt",
+        "description": "Dato/Tid som markerer når gyldighetsperioden av behandlingsbegrensningen opphører."
+    },
+    "id41": {
+        "text": "Dato for fornyelse",
+        "description": "Dato når behandlingsbegrensningen må fornyes."
+    },
+    "id42": {
+        "text": "Grunnlag",
+        "description": "Beskrivelse av hvilken lovgivning eller annen autorativ retningslinje som gjelder for det behandlingsbegrensningen."
+    },
+    "id43": {
+        "text": "Dokumentets plassering",
+        "description": "Informasjon om hvor behandlingsbegrensningen er lagret (dersom det er et separat dokument eller i et annet system), samt hvem som har en kopi av det."
+    },
+    "id44": {
+        "text": "Plassering",
+        "description": "Den fysiske eller digitale lokaliseringen av behandlingsbegrensningen."
+    },
+    "id45": {
+        "text": "Kopiholder",
+        "description": "Detaljer om person som har en kopi av behandlingsbegrensningen."
+    },
+    "id46": {
+        "text": "Tilleggsinformasjon",
+        "description": "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer."
+    },
+    "at47": {
+        "text": "Defibrillering",
+        "description": "Bruk av elektrisk støt for i normalisere hjerterytmen."
+    },
+    "at48": {
+        "text": "Nålthoracocentese",
+        "description": "Innsetting av en nål i pleurahulen eller i perikardhulen."
+    },
+    "at49": {
+        "text": "Thoraxdren",
+        "description": "Innleggelse av plastikkrør inn i lungesekken."
+    },
+    "at50": {
+        "text": "Sentralt venekateter eller arteriekran",
+        "description": "Innlegging av sentralvenøst kateter eller arteriekran."
+    },
+    "at51": {
+        "text": "Brystkompresjoner",
+        "description": "Teknikk for å manuelt pumpe blod rundt i kroppen under hjertestans."
+    },
+    "at52": {
+        "text": "Pacemaker",
+        "description": "Innleggelse av pacemaker for å regulere hjerterytmen."
+    },
+    "at53": {
+        "text": "Hjertestansmedisin",
+        "description": "Medikamenter som kan bli brukt under recusitering. For eksempel adrenalin, atropin, natriumbikarbonat, kalsium, andre vasoaktive stoffer."
+    },
+    "ac1": {
+        "text": "HLR-beslutning (synthesised)",
+        "description": "Bestemmelse om fremtidig Hjerte- og Lungeredning (HLR). (synthesised)"
+    },
+    "ac2": {
+        "text": "Intervensjon (synthesised)",
+        "description": "Navn på intervensjonen. (synthesised)"
+    },
+    "ac3": {
+        "text": "Beslutning (synthesised)",
+        "description": "Beslutning om den identifiserte intervensjonen. (synthesised)"
+    }
+}

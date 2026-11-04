@@ -1,0 +1,13 @@
+{
+    "original_author": {
+        "name": "Thomas Beale",
+        "organisation": "openEHR Foundation <http://www.openEHR.org>",
+        "email": "thomas.beale@openEHR.org",
+        "date": "2004-05-01"
+    },
+    "lifecycle_state": "published",
+    "other_details": {
+        "regression": "PASS"
+    },
+    "copyright": "copyright © 2004 openEHR Foundation <http://www.openEHR.org>"
+}

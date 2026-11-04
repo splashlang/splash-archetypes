@@ -1,0 +1,32 @@
+	CAR[id1] matches {	-- car
+		wheels matches {
+			WHEEL[id2] matches {	-- front left hand wheel
+				description matches {"front left hand wheel"}
+				parts matches {
+					RIM[id3] matches {	-- wheel part
+						nuts matches {|>=4|}
+						hubcap matches {/metal|plastic/}
+					}
+				}
+			}
+			WHEEL[id4] matches {	-- front right hand wheel
+				description matches {"front right hand wheel"}
+				parts matches {
+					use_node RIM[id10] /wheels[id2]/parts[id3]	-- /wheels[front left hand wheel]/parts[wheel part]
+				}
+			}
+			WHEEL[id5] matches {	-- rear left hand wheel
+				description matches {"rear left hand wheel"}
+				parts matches {
+					use_node RIM[id11] /wheels[id2]/parts[id3]	-- /wheels[front left hand wheel]/parts[wheel part]
+				}
+			}
+			WHEEL[id6] matches {	-- rear right hand wheel
+				description matches {"rear right hand wheel"}
+				parts matches {
+					use_node RIM[id12] /engine[id2]/parts[id3]	-- /engine[front left hand wheel]/parts[wheel part]
+				}
+			}
+		}
+	}
+

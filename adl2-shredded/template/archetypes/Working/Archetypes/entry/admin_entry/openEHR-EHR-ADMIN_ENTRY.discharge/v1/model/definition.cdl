@@ -1,0 +1,77 @@
+	ADMIN_ENTRY[id1] matches {	-- Discharge information - Simple discharge summary
+		other_participations matches {
+			PARTICIPATION[id85] occurrences matches {0..1} matches {	-- Discharging doctor
+				function matches {
+					DV_CODED_TEXT[id88] matches {
+						defining_code matches {[at82]}
+					}
+				}
+			}
+			PARTICIPATION[id86] occurrences matches {0..1} matches {	-- Discharging organisation
+				function matches {
+					DV_CODED_TEXT[id89] matches {
+						defining_code matches {[at84]}
+					}
+				}
+			}
+			PARTICIPATION[id87] occurrences matches {0..1} 	-- Other care provider
+		}
+		data matches {
+			ITEM_TREE[id4] matches {
+				items matches {
+					ELEMENT[id5] occurrences matches {0..1} matches {	-- Date of discharge
+						value matches {
+							DV_DATE_TIME[id90] 
+						}
+					}
+					ELEMENT[id81] occurrences matches {0..*} matches {	-- Event Identifier
+						value matches {
+							DV_TEXT[id91] 
+						}
+					}
+					ELEMENT[id67] occurrences matches {0..1} matches {	-- Discharge location
+						value matches {
+							DV_TEXT[id92] 
+						}
+					}
+					ELEMENT[id61] occurrences matches {0..1} matches {	-- Discharge unit
+						value matches {
+							DV_TEXT[id93] 
+						}
+					}
+					ELEMENT[id31] occurrences matches {0..1} matches {	-- Discharge destination type
+						value matches {
+							DV_TEXT[id94] 
+						}
+					}
+					ELEMENT[id72] occurrences matches {0..1} matches {	-- Discharge description
+						value matches {
+							DV_TEXT[id95] 
+						}
+					}
+					allow_archetype CLUSTER[id75] occurrences matches {0..*} matches {	-- Discharge details
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.organisation\.v1|openEHR-EHR-CLUSTER\.individual_professional\.v1|openEHR-EHR-CLUSTER\.address\.v1|openEHR-EHR-CLUSTER\.individual_personal\.v1/}
+						exclude
+							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[id78] occurrences matches {0..1} matches {	-- Outcome
+						value matches {
+							DV_TEXT[id96] 
+						}
+					}
+					ELEMENT[id79] occurrences matches {0..1} matches {	-- Condition
+						value matches {
+							DV_TEXT[id97] 
+						}
+					}
+					ELEMENT[id80] occurrences matches {0..1} matches {	-- Discharge Type
+						value matches {
+							DV_TEXT[id98] 
+						}
+					}
+				}
+			}
+		}
+	}
+

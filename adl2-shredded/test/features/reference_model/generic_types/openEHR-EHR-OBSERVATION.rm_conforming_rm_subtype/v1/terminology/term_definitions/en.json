@@ -1,0 +1,18 @@
+{
+    "id1": {
+        "text": "An Observation",
+        "description": "An Observation"
+    },
+    "id2": {
+        "text": "A Point_event",
+        "description": "A Point_event"
+    },
+    "id3": {
+        "text": "Element #1",
+        "description": "Element #1"
+    },
+    "id4": {
+        "text": "Element #2",
+        "description": "Element #2"
+    }
+}

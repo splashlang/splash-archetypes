@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Illustrate redefinition of tuple to narrower tuple consisting of one item only.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "specialisation",
+        "tuple"
+    ]
+}

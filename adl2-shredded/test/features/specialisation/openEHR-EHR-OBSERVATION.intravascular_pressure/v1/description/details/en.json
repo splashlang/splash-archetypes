@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Intravascular venous, arterial, pulmonary or cardiac pressure measurement. Commonly specialised for specific common pressures such as JVP and CCP.",
+    "use": "Regression testing",
+    "keywords": [
+        "pressure",
+        "intravascular"
+    ],
+    "misuse": "Not to be used for systemic blood pressure. Use 'observation.blood_pressure' for this."
+}

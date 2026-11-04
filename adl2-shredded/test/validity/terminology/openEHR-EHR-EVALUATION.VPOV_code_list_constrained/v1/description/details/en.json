@@ -1,0 +1,6 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "To verify VPOV; test constraining of list of codes; it is done illegally here, because the codes should be from the parent",
+    "use": "Regression testing",
+    "copyright": "copyright (c) 2013 openEHR Foundation"
+}

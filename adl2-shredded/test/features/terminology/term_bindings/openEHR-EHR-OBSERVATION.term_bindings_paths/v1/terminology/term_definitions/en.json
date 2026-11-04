@@ -1,0 +1,18 @@
+{
+    "id1": {
+        "text": "Apgar score",
+        "description": "Clinical score derived from assessment of respiratory effort, heart rate, reflex irritability, muscle tone and skin colour."
+    },
+    "id4": {
+        "text": "1 minute",
+        "description": "Apgar score 1 minute after birth"
+    },
+    "id5": {
+        "text": "Total",
+        "description": "The sum of the 5 ordinal scores for each component parameter."
+    },
+    "id7": {
+        "text": "5 minute",
+        "description": "Apgar score 5 minutes after birth"
+    }
+}

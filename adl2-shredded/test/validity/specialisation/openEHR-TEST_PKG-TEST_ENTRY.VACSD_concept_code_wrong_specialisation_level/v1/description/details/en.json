@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VACSD validity check, triggered when the concept code has a specialisation level in a non-specialised archetype.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "validation",
+        "test"
+    ],
+    "copyright": "copyright (c) 2008 The openEHR Foundation"
+}

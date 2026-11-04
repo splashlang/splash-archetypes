@@ -1,0 +1,20 @@
+{
+    "original_author": {
+        "name": "Sergio Miranda Freire & Rigoleta Dutra Mediano Dias",
+        "organisation": "Universidade do Estado do Rio de Janeiro - UERJ",
+        "email": "sergio@lampada.uerj.br",
+        "date": "22/05/2009"
+    },
+    "lifecycle_state": "unmanaged",
+    "other_contributors": [
+        "Ian McNiccol, Ocean Informatics, Scotland",
+        "Rong Chen, Cambio Healthcare Systems, Sweden",
+        "Ricardo Correia, SBIM/FMUP, Portugal",
+        "Grahame Grieve, Australia",
+        "Heather Grain, Llewelyn Grain Informatics, Australia",
+        "Heath Frankel, Ocean Informatics, Australia"
+    ],
+    "other_details": {
+        "references": "ISO/TS 22220:2008(E) - Identification of Subject of Care - Technical Specification - International Organization for Standardization."
+    }
+}

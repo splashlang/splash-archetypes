@@ -1,0 +1,56 @@
+	PERSON[id1] matches {	-- -
+		name matches {
+			DV_TEXT[id2] 
+		}
+		identities matches {
+			PARTY_IDENTITY[id3] occurrences matches {1} matches {	-- Legal name
+				details matches {
+					ITEM_TREE[id8] occurrences matches {0..1} 
+				}
+				name matches {
+					DV_CODED_TEXT[id13] 
+				}
+			}
+		}
+		details matches {
+			ITEM_TREE[id4] matches {
+				items matches {
+					CLUSTER[id5] 	-- Project
+					ELEMENT[id6] occurrences matches {0..1} matches {	-- Rating
+						value matches {
+							DV_QUANTITY[id14] matches {
+								normal_range matches {
+									DV_INTERVAL[id15] 
+								}
+								magnitude matches {|0.0..1.0|}
+								units matches {/.*/}
+							}
+						}
+					}
+					ELEMENT[id16] occurrences matches {1} matches {	-- asdf
+						value matches {
+							DV_COUNT[id17] matches {
+								magnitude matches {|0..1|}
+							}
+						}
+					}
+				}
+				name matches {
+					DV_TEXT[id7] 
+				}
+			}
+		}
+		contacts matches {
+			CONTACT[id9] 	-- Work
+			CONTACT[id10] occurrences matches {0..1} matches {	-- Home
+				addresses matches {
+					ADDRESS[id11] occurrences matches {1} matches {	-- Home address
+						details matches {
+							ITEM_TREE[id12] 
+						}
+					}
+				}
+			}
+		}
+	}
+

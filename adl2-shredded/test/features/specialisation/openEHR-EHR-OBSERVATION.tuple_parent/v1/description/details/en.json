@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Example archetype containing tuple constraints for the types DV_QUANTITY and DV_ORDINAL.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "specialisation",
+        "tuples"
+    ]
+}

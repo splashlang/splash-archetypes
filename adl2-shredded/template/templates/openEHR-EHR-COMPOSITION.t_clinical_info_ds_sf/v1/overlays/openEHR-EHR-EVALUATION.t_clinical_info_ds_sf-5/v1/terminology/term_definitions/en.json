@@ -1,0 +1,10 @@
+{
+    "id1.1": {
+        "text": "Investigations summary",
+        "description": "Summary of investigations undertaken during stay"
+    },
+    "id3.1": {
+        "text": "Description",
+        "description": "Summary of investigations description"
+    }
+}

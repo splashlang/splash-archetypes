@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VSANCE validity check, triggered by non-conformant redefinition of existence from {1} to {0}.",
+    "use": "Regression testing"
+}

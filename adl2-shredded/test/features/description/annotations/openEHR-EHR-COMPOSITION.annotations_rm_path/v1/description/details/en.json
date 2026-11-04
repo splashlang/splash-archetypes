@@ -1,0 +1,9 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Demonstrate annotations on pure Reference Model paths, i.e. paths that must be valid, but have not been archetyped. They are thus still valid for annotations.",
+    "use": "The typical use is to add design notes about RM data items that are not archetyped (i.e. don't specifically need to be constrained) but whose meaning is specific to the archetype.",
+    "keywords": [
+        "ADL",
+        "test"
+    ]
+}

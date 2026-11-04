@@ -1,0 +1,32 @@
+	CAR[id1] matches {	-- car
+		body matches {
+			CAR_BODY[id2] matches {	-- car body
+				model existence matches {1} matches {"aston martin"}
+			}
+		}
+		engine_parts existence matches {1} matches {
+			ENGINE_PART[id3] matches {	-- gearbox
+				items existence matches {1} matches {
+					ENGINE_PART_ITEM[id13] 	-- exhaust manifold
+				}
+			}
+			ENGINE_PART[id4] matches {	-- block
+				items cardinality matches {1..*; ordered} matches {
+					ENGINE_PART_ITEM[id5] 	-- Timing chain
+					ENGINE_PART_ITEM[id6] occurrences matches {0..1} 	-- Valves
+					ENGINE_PART_ITEM[id7] occurrences matches {1} 	-- Head
+					ENGINE_PART_ITEM[id8] occurrences matches {6..12} 	-- Piston
+					ENGINE_PART_ITEM[id9] occurrences matches {12} 	-- Con rod
+					ENGINE_PART_ITEM[id10] occurrences matches {4} 	-- Valve cam
+					ENGINE_PART_ITEM[id11] occurrences matches {1..5} 	-- ECI chip
+					ENGINE_PART_ITEM[id12] occurrences matches {10..20} 	-- Valve spring
+				}
+			}
+			ENGINE_PART[id13] matches {	-- exhaust manifold
+				items cardinality matches {2..5; ordered} matches {
+					ENGINE_PART_ITEM[id14] 	-- exhaust manifold gasket
+				}
+			}
+		}
+	}
+

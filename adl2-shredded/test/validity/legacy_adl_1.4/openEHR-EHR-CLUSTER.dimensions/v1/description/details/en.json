@@ -1,0 +1,13 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "To record the dimensions of a body part examined or viewed.",
+    "use": "Use as a re-useable cluster in Entry archetypes and other cluster archetypes that record measurment of body parts.",
+    "keywords": [
+        "size",
+        "volume",
+        "area",
+        "width",
+        "length"
+    ],
+    "misuse": ""
+}

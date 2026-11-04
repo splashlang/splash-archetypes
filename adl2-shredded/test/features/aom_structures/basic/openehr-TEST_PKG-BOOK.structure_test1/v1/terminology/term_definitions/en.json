@@ -1,0 +1,18 @@
+{
+    "id1": {
+        "text": "Work of fiction",
+        "description": "Novel"
+    },
+    "id2": {
+        "text": "1st chapter of the book",
+        "description": "Chapter 1"
+    },
+    "id3": {
+        "text": "2nd chapter of the book",
+        "description": "Chapter 2"
+    },
+    "id4": {
+        "text": "3rd chapter of the book",
+        "description": "Chapter 3"
+    }
+}

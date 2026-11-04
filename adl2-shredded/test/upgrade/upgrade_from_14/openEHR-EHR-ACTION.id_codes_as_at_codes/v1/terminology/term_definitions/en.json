@@ -1,0 +1,26 @@
+{
+    "id1": {
+        "text": "Imaging investigation",
+        "description": "An action related to an investigation by an imaging technique."
+    },
+    "id2": {
+        "text": "Planned",
+        "description": "Imaging investigation is planned."
+    },
+    "id5": {
+        "text": "Requested",
+        "description": "Imaging investigation has been requested."
+    },
+    "at2": {
+        "text": "Planned",
+        "description": "Imaging investigation is planned."
+    },
+    "at5": {
+        "text": "Requested",
+        "description": "Imaging investigation has been requested."
+    },
+    "at6": {
+        "text": "initial",
+        "description": "initial"
+    }
+}

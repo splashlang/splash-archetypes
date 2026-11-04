@@ -1,0 +1,226 @@
+{
+    "id1": {
+        "text": "Procedimiento",
+        "description": "Una actividad clínica llevada a cabo para la detección, investigación, diagnóstico, curativos, terapéuticos, de evaluación o con fines paliativos."
+    },
+    "id3": {
+        "text": "Nombre del procedimiento",
+        "description": "Nombre del procedimiento"
+    },
+    "id4": {
+        "text": "Detalles",
+        "description": "Información estructurada de los detalles del procedimiento"
+    },
+    "id5": {
+        "text": "*Procedure planned (en)",
+        "description": "*"
+    },
+    "id6": {
+        "text": "Comentario",
+        "description": "Comentario narrativo adicional acerca de las actividades llevadas a cabo en la ejecución del procedimiento y que no son capturadas por otros campos"
+    },
+    "id7": {
+        "text": "Complicación",
+        "description": "Detalles de cualquier complicación surgida durante la ejecución del procedimiento"
+    },
+    "id8": {
+        "text": "*Procedure request sent (en)",
+        "description": "*"
+    },
+    "id15": {
+        "text": "Motivo",
+        "description": "Motivo por el cual una actividad o paso de la vía clínica del arquetipo fue ejecutado como parte del procedimiento"
+    },
+    "id35": {
+        "text": "Procedimiento planificado",
+        "description": "Está previsto que el procedimiento que se ha llevado a cabo."
+    },
+    "id36": {
+        "text": "Solicitud de procedimiento enviada",
+        "description": "Solicitud de procedimiento enviada"
+    },
+    "id37": {
+        "text": "Procedimiento coordinado",
+        "description": "Procedimiento coordinado"
+    },
+    "id39": {
+        "text": "Procedimiento pospuesto",
+        "description": "Procedimiento pospuesto"
+    },
+    "id40": {
+        "text": "Procedimiento cancelado",
+        "description": "Procedimiento cancelado antes de comenzar"
+    },
+    "id41": {
+        "text": "Procedimiento suspendido",
+        "description": "Procedimiento suspendido"
+    },
+    "id42": {
+        "text": "Procedimiento interrumpido",
+        "description": "Procedimiento interrumpido"
+    },
+    "id44": {
+        "text": "Procedimiento completado",
+        "description": "Procedimiento completado"
+    },
+    "id48": {
+        "text": "Procedimiento realizado",
+        "description": "Procedimiento realizado"
+    },
+    "id49": {
+        "text": "Resultado",
+        "description": "Resultado del procedimiento realizado"
+    },
+    "id50": {
+        "text": "Descripción",
+        "description": "Descripción narrativa del procedimiento"
+    },
+    "id55": {
+        "text": "*Requestor order identifier(en)",
+        "description": "*The local ID assigned to the order by the healthcare provider or organisation requesting the service.(en)"
+    },
+    "id56": {
+        "text": "Solicitante",
+        "description": "Detalles del proveedor de salud que solicita la realización del procedimiento"
+    },
+    "id57": {
+        "text": "*Receiver order identifier(en)",
+        "description": "*The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.(en)"
+    },
+    "id58": {
+        "text": "Receptor",
+        "description": "Detalles sobre el profesional, departamento u organización que debe realizar el procedimiento"
+    },
+    "id59": {
+        "text": "Urgencia",
+        "description": "Urgencia del procedimiento"
+    },
+    "id61": {
+        "text": "Fecha de finalización",
+        "description": "Fecha y hora cuando el procedimiento fue finalizado en su totalidad"
+    },
+    "id62": {
+        "text": "Duración",
+        "description": "Cantidad total de tiempo que tomó la ejecución del procedimiento."
+    },
+    "id63": {
+        "text": "Multimedia",
+        "description": "Representación multimedia del procedimiento realizado"
+    },
+    "id64": {
+        "text": "Zona corporal",
+        "description": "Identificación de la zona del cuerpo para el procedimiento."
+    },
+    "id65": {
+        "text": "Extensión",
+        "description": "Información adicional requerida para capturar contenido local o alinear el arquetipo a otros modelos o formalismos"
+    },
+    "id66": {
+        "text": "Método",
+        "description": "Identificación del método o técnica específica para el procedimiento"
+    },
+    "id67": {
+        "text": "Fecha coordinada",
+        "description": "Fecha y hora en el cual se coordinó la realización del procedimiento"
+    },
+    "id68": {
+        "text": "*Procedure type(en)",
+        "description": "*The type of procedure.(en)"
+    },
+    "id69": {
+        "text": "Procedimiento iniciado",
+        "description": "Procedimiento iniciado"
+    },
+    "id70": {
+        "text": "*Procedural difficulty(en)",
+        "description": "*Difficulties or issues encountered during the procedure.(en)"
+    },
+    "id71": {
+        "text": "*Indication (en)",
+        "description": "*The clinical or process-related reason for the procedure. (en)"
+    },
+    "at5": {
+        "text": "*Procedure planned (en)",
+        "description": "*"
+    },
+    "at35": {
+        "text": "Procedimiento planificado",
+        "description": "Está previsto que el procedimiento que se ha llevado a cabo."
+    },
+    "at8": {
+        "text": "*Procedure request sent (en)",
+        "description": "*"
+    },
+    "at36": {
+        "text": "Solicitud de procedimiento enviada",
+        "description": "Solicitud de procedimiento enviada"
+    },
+    "at39": {
+        "text": "Procedimiento pospuesto",
+        "description": "Procedimiento pospuesto"
+    },
+    "at40": {
+        "text": "Procedimiento cancelado",
+        "description": "Procedimiento cancelado antes de comenzar"
+    },
+    "at37": {
+        "text": "Procedimiento coordinado",
+        "description": "Procedimiento coordinado"
+    },
+    "at69": {
+        "text": "Procedimiento iniciado",
+        "description": "Procedimiento iniciado"
+    },
+    "at48": {
+        "text": "Procedimiento realizado",
+        "description": "Procedimiento realizado"
+    },
+    "at41": {
+        "text": "Procedimiento suspendido",
+        "description": "Procedimiento suspendido"
+    },
+    "at42": {
+        "text": "Procedimiento interrumpido",
+        "description": "Procedimiento interrumpido"
+    },
+    "at44": {
+        "text": "Procedimiento completado",
+        "description": "Procedimiento completado"
+    },
+    "at70": {
+        "text": "*planned (en)",
+        "description": "*planned (en)"
+    },
+    "at71": {
+        "text": "*initial (en)",
+        "description": "*initial (en)"
+    },
+    "at72": {
+        "text": "*postponed (en)",
+        "description": "*postponed (en)"
+    },
+    "at73": {
+        "text": "*cancelled (en)",
+        "description": "*cancelled (en)"
+    },
+    "at74": {
+        "text": "*scheduled (en)",
+        "description": "*scheduled (en)"
+    },
+    "at75": {
+        "text": "*active (en)",
+        "description": "*active (en)"
+    },
+    "at76": {
+        "text": "*suspended (en)",
+        "description": "*suspended (en)"
+    },
+    "at77": {
+        "text": "*aborted (en)",
+        "description": "*aborted (en)"
+    },
+    "at78": {
+        "text": "*complete (en)",
+        "description": "*complete (en)"
+    }
+}

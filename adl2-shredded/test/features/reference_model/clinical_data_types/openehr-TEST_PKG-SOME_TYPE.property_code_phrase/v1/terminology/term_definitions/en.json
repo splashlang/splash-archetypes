@@ -1,0 +1,18 @@
+{
+    "id1": {
+        "text": "root item",
+        "description": "xxxx"
+    },
+    "id2": {
+        "text": "quantity in celcius",
+        "description": "quantity in celcius"
+    },
+    "id3": {
+        "text": "quantity in fahrenheit",
+        "description": "quantity in fahrenheit"
+    },
+    "at1": {
+        "text": "Temperature",
+        "description": "Temperature"
+    }
+}

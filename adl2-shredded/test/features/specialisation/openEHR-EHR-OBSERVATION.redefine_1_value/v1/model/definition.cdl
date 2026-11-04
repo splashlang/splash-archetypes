@@ -1,0 +1,12 @@
+	OBSERVATION[id1.1] matches {	-- first level specialisation archetype
+		/data/events[id3]/data/items matches {
+			ELEMENT[id4.1] matches {	-- Redefined text field
+				value matches {
+					DV_CODED_TEXT[id0.6] matches {
+						defining_code matches {[ac0.1]}		-- (added by post-parse processor)
+					}
+				}
+			}
+		}
+	}
+

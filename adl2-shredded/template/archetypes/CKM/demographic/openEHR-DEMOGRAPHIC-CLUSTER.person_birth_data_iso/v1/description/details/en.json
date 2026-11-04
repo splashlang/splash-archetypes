@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Representation of a person's birth data",
+    "use": "Used in demographic services to collect a person's birth data",
+    "keywords": [
+        "demographic service",
+        "birth demographic data"
+    ],
+    "misuse": "",
+    "copyright": "copyright (c) 2010 openEHR foundation"
+}

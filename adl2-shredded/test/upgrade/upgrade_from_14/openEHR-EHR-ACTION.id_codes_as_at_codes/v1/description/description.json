@@ -1,0 +1,13 @@
+{
+    "lifecycle_state": "unmanaged",
+    "original_author": {
+        "name": "Sam Heard",
+        "organisation": "Ocean Informatics",
+        "email": "sam.heard@oceaninformatics.com",
+        "date": "2006-04-17"
+    },
+    "copyright": "© openEHR Foundation",
+    "other_details": {
+        "regression": "PASS"
+    }
+}

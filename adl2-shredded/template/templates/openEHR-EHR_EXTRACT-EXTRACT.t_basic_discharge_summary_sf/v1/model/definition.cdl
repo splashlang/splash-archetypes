@@ -1,0 +1,29 @@
+	EXTRACT[id1.1] matches {	-- Discharge summary
+		/chapters[id3]/items[id4]/item matches {
+			use_archetype PERSON[id101.1, openEHR-DEMOGRAPHIC-PERSON.t_patient_ds_sf.v1] 
+			allow_archetype PERSON[id101] closed 	-- Patient demographics slot - closed
+		}
+		/chapters[id3]/items[id5]/item matches {
+			use_archetype ORGANISATION[id102.1, openEHR-DEMOGRAPHIC-ORGANISATION.healthcare_establishment.v1] 
+			allow_archetype ORGANISATION[id102] closed 	-- Healthcare establishment demographics slot - closed
+		}
+		/chapters[id3]/items[id6]/item matches {
+			use_archetype PERSON[id103.1, openEHR-DEMOGRAPHIC-PERSON.healthcare_professional.v1] 
+			allow_archetype PERSON[id103] closed 	-- Healthcare individual provider demographics slot - closed
+		}
+		/chapters[id2]/items matches {
+			GENERIC_CONTENT_ITEM[id7.1] matches {	-- Clinical data
+				version_set_id existence matches {1} 
+				item_status existence matches {1} 
+				item_type existence matches {1} 
+				item_type_version existence matches {1} 
+				creation_time existence matches {1} 
+				author existence matches {1} 
+				item matches {
+					use_archetype COMPOSITION[id104.1, openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1] 
+					allow_archetype COMPOSITION[id104] closed 	-- Patient discharge data slot - closed
+				}
+			}
+		}
+	}
+

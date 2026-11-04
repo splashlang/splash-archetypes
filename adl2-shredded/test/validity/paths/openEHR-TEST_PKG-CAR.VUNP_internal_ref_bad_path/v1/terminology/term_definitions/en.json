@@ -1,0 +1,38 @@
+{
+    "id1": {
+        "text": "car",
+        "description": "car"
+    },
+    "id2": {
+        "text": "front left hand wheel",
+        "description": "front left hand wheel"
+    },
+    "id3": {
+        "text": "wheel part",
+        "description": "wheel part"
+    },
+    "id4": {
+        "text": "front right hand wheel",
+        "description": "front right hand wheel"
+    },
+    "id5": {
+        "text": "rear left hand wheel",
+        "description": "rear left hand wheel"
+    },
+    "id6": {
+        "text": "rear right hand wheel",
+        "description": "rear right hand wheel"
+    },
+    "id10": {
+        "text": "ref to wheel part",
+        "description": "ref to wheel part"
+    },
+    "id11": {
+        "text": "ref to wheel part",
+        "description": "ref to wheel part"
+    },
+    "id12": {
+        "text": "ref to wheel part",
+        "description": "ref to wheel part"
+    }
+}

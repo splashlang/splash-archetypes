@@ -1,0 +1,11 @@
+{
+    "lifecycle_state": "unmanaged",
+    "original_author": {
+        "name": "Thomas Beale",
+        "organisation": "openEHR Foundation",
+        "email": "thomas.beale@openehr.org",
+        "date": "2017-01-16"
+    },
+    "copyright": "© 2017 openEHR Foundation",
+    "licence": "This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/."
+}

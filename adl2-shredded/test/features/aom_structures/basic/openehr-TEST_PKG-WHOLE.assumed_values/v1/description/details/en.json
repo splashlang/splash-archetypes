@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test constraints on primitive types that have added 'assumed values' as defined by the AOM",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "assumed types",
+        "test"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VACDF validity check, should be triggered when an ac-code used in the definition is not in the terminology.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "validation",
+        "test"
+    ],
+    "copyright": "copyright (c) 2008 The openEHR Foundation"
+}

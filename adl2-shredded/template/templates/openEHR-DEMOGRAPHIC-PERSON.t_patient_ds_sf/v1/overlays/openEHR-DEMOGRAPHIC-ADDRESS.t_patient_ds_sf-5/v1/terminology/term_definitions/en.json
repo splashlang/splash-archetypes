@@ -1,0 +1,10 @@
+{
+    "id1.1": {
+        "text": "Address",
+        "description": "Address based on ISO22220 standard."
+    },
+    "id3.1": {
+        "text": "Address lines",
+        "description": "Address lines"
+    }
+}

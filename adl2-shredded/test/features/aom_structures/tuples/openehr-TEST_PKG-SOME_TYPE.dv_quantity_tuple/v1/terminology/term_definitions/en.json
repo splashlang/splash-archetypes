@@ -1,0 +1,10 @@
+{
+    "id1": {
+        "text": "root item",
+        "description": "xxxx"
+    },
+    "at1": {
+        "text": "Temperature",
+        "description": "Temperature"
+    }
+}

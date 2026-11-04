@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Verify VETDF warning, caused by a code ('temperature') that does not exist in an available terminology (('openehr')",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "terminology"
+    ]
+}

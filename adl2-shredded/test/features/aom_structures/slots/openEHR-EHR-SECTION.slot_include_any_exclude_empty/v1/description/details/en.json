@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Demonstrate 'open' slot.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "slots"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Illustrate rules that express a dependency of one part of an archetype on the valu of another.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "rules"
+    ]
+}

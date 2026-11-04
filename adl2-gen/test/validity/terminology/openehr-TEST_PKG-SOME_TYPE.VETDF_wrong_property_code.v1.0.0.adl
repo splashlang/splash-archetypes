@@ -1,0 +1,56 @@
+archetype (adl_version=2.3.0; rm_release=1.0.2; generated)
+	openehr-TEST_PKG-SOME_TYPE.VETDF_wrong_property_code.v1.0.0
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"unmanaged">
+	original_author = <
+		["name"] = <"Thomas Beale">
+	>
+	copyright = <"copyright (c) 2005 The openEHR Foundation">
+	other_details = <
+		["regression"] = <"VETDF">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Verify VETDF warning, caused by a code ('temperature') that does not exist in an available terminology (('openehr')">
+			use = <"Regression testing">
+			keywords = <"ADL", "test", "terminology">
+		>
+	>
+
+definition
+	SOME_TYPE[id1] matches {
+		clinical_quantity_attr_1 matches {
+			DV_QUANTITY[id2] matches {
+				property matches {[at1]}
+				[units, magnitude] matches {
+					[{"C"}, {|37.0..|}],
+					[{"F"}, {|96.0..|}]
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"root item">
+				description = <"xxxx">
+			>
+			["at1"] = <
+				text = <"(added by post-parse processor)">
+				description = <"(added by post-parse processor)">
+			>
+		>
+	>
+	term_bindings = <
+		["openehr"] = <
+			["at1"] = <http://openehr.org/id/temperature>
+		>
+	>
+

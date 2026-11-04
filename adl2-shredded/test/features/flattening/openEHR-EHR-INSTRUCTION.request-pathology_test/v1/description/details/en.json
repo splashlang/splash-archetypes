@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test flattening when child archetype contains a differential path that contains an overridden id code midway through (id122.1).",
+    "use": "Regression testing"
+}

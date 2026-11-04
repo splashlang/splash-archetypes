@@ -1,0 +1,46 @@
+{
+    "id1": {
+        "text": "Discharge",
+        "description": "A summarising communication about at the time of discharge from an institution or an episode of care"
+    },
+    "id4": {
+        "text": "Report identifier",
+        "description": "Identification information about the report"
+    },
+    "id5": {
+        "text": "Status",
+        "description": "The status of the report"
+    },
+    "at6": {
+        "text": "Final",
+        "description": "The report is the final Report"
+    },
+    "at7": {
+        "text": "Interim",
+        "description": "This report is an interim report and a final or further interim report is to be expected"
+    },
+    "at8": {
+        "text": "Supplementary",
+        "description": "This report is supplementary to a previous report"
+    },
+    "at9": {
+        "text": "Corrected/Amended",
+        "description": "This report is a correction or amendment of a previous report"
+    },
+    "id10": {
+        "text": "Date/time of status",
+        "description": "The date and time the report was officially issued"
+    },
+    "id28": {
+        "text": "Details",
+        "description": "*"
+    },
+    "at10": {
+        "text": "event",
+        "description": "event"
+    },
+    "ac1": {
+        "text": "Status (synthesised)",
+        "description": "The status of the report (synthesised)"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Parent of flattening example archetypes.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "flattening",
+        "test"
+    ]
+}

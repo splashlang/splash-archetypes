@@ -1,0 +1,18 @@
+{
+    "id1": {
+        "text": "Healthcare professional demographic data",
+        "description": "Healthcare professional demographic data"
+    },
+    "id2": {
+        "text": "Identification",
+        "description": "Identification - the names the professional is known by"
+    },
+    "id4": {
+        "text": "Name",
+        "description": "Healthcare professional name"
+    },
+    "id5": {
+        "text": "Identifier",
+        "description": "Healthcare professional Identifier"
+    }
+}

@@ -1,0 +1,109 @@
+archetype (adl_version=2.3.0; rm_release=1.0.2; generated)
+	openEHR-EHR-OBSERVATION.new_VSONCO-redef_plus_close.v1.0.0
+
+specialize
+	openEHR-EHR-OBSERVATION.test_new_VSONCO_parent.v1.0.0
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"unmanaged">
+	original_author = <
+		["name"] = <"Thomas Beale">
+		["organisation"] = <"openEHR International">
+		["date"] = <"08/11/2022">
+	>
+	other_details = <
+		["regression"] = <"PASS">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Redefine a multiple occurrences node and also remove the original parent">
+			use = <"Regression testing">
+		>
+	>
+
+definition
+	OBSERVATION[id1.1] occurrences matches {0..*} matches {
+		data existence matches {1} matches {
+			HISTORY[id9] occurrences matches {0..1} matches {
+				events existence matches {0..1} cardinality matches {2..*; unordered} matches {
+					EVENT[id3] occurrences matches {0..*} matches {
+						data existence matches {1} matches {
+							ITEM_TREE[id10] occurrences matches {0..1} matches {
+								items existence matches {0..1} cardinality matches {2..*; ordered} matches {
+									ELEMENT[id4.1] occurrences matches {1..*} matches {
+										value existence matches {0..1} matches {
+											DV_CODED_TEXT[id11] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id5] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_BOOLEAN[id12] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id6] occurrences matches {1..3} matches {
+										value existence matches {0..1} matches {
+											DV_QUANTITY[id13] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id7] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_MULTIMEDIA[id14] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id8] occurrences matches {0..*} 
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol existence matches {1} 
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"top-level archetype">
+				description = <"top level test archetype for specialisation lineage">
+			>
+			["id3"] = <
+				text = <"any event">
+				description = <"*">
+			>
+			["id4"] = <
+				text = <"Text field">
+				description = <"test text field">
+			>
+			["id5"] = <
+				text = <"Boolean field">
+				description = <"test boolean field">
+			>
+			["id6"] = <
+				text = <"Quantity field">
+				description = <"test quantity field">
+			>
+			["id7"] = <
+				text = <"Multimedia field">
+				description = <"test multimedia field">
+			>
+			["id8"] = <
+				text = <"Any field">
+				description = <"test any-value field">
+			>
+			["id1.1"] = <
+				text = <"top-level archetype">
+				description = <"top level test archetype for specialisation lineage">
+			>
+			["id4.1"] = <
+				text = <"Coded text field">
+				description = <"coded text field">
+			>
+		>
+	>
+

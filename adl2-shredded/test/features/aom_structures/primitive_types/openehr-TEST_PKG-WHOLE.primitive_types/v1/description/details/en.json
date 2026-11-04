@@ -1,0 +1,9 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test constraints on built-in types assumed by ADL / AOM. These types include: \n\t\t\t\tInteger, Real, Boolean, String (including regular expressions, delimited with //), \n\t\t\t\tDate, DateTime, Time, Duration, \n\t\t\t\tInterval ranges of ordered types above,\n\t\t\t\tLists of all atomic types above.\n\t\t\t",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test"
+    ]
+}

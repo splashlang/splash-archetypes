@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "A parent archetype for testing various child refinements, including occurrences matches {0}.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "specialisation"
+    ]
+}

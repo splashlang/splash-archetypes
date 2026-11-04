@@ -1,0 +1,38 @@
+{
+    "id1": {
+        "text": "Person",
+        "description": "Personal demographic data"
+    },
+    "id2": {
+        "text": "Demographic details",
+        "description": "A person's demographic details."
+    },
+    "id3": {
+        "text": "Name",
+        "description": "A person's name."
+    },
+    "id4": {
+        "text": "Contacts",
+        "description": "A person's contacts."
+    },
+    "id5": {
+        "text": "Relationships",
+        "description": "A person's relationships, especially family ties."
+    },
+    "id11": {
+        "text": "Birth, death, documentation and other demographic data",
+        "description": "Allows the collection of data about birth and death data, documentation and other person's demographic data."
+    },
+    "id31": {
+        "text": "Addresses",
+        "description": "Addresses linked to a single contact, i.e., with the same time validity."
+    },
+    "id41": {
+        "text": "Relationship type",
+        "description": "Defines the type of relationship between related persons."
+    },
+    "ac1": {
+        "text": "Codes for type of relationship",
+        "description": "Valid codes for type of relationship."
+    }
+}

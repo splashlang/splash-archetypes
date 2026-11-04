@@ -1,0 +1,11 @@
+{
+    "original_author": {
+        "name": "Thomas Beale",
+        "email": "thomas.beale@openehr.org",
+        "date": "8/04/2007"
+    },
+    "lifecycle_state": "unmanaged",
+    "other_details": {
+        "regression": "PASS"
+    }
+}

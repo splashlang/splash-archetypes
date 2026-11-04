@@ -1,0 +1,5 @@
+{
+    "id": "openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-2.v1.0.0",
+    "artefact_type": "template_overlay",
+    "specialise": "openEHR-EHR-ADMIN_ENTRY.discharge.v1"
+}

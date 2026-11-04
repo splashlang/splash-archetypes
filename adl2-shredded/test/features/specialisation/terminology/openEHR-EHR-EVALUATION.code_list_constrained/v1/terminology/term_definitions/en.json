@@ -1,0 +1,10 @@
+{
+    "id1.1": {
+        "text": "Adverse reaction exclusions",
+        "description": "A category of conditions or states which have been excluded as cause of adverse reaction"
+    },
+    "ac1.1": {
+        "text": "Specific exclusions",
+        "description": "Reduced set of exclusions"
+    }
+}

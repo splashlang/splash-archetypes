@@ -1,0 +1,26 @@
+{
+    "id1.1": {
+        "text": "Discharge event end information - Simple discharge summary",
+        "description": "The administrative information at discharge of a patient from a period of care"
+    },
+    "id5.1": {
+        "text": "Event end datetime",
+        "description": "*"
+    },
+    "id61.1": {
+        "text": "Discharge from service/specialty",
+        "description": "*"
+    },
+    "id78.1": {
+        "text": "Discharge outcome",
+        "description": "*"
+    },
+    "id80.1": {
+        "text": "Discharge status/type",
+        "description": "*"
+    },
+    "id85.1": {
+        "text": "Responsible clinician on discharge",
+        "description": "Clinician responsible for discharge"
+    }
+}

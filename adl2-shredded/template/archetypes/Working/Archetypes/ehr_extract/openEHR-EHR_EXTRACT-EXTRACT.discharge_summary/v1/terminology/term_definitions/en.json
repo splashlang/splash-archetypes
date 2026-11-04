@@ -1,0 +1,46 @@
+{
+    "id1": {
+        "text": "Simple discharge summary",
+        "description": "Discharge summary document for patient leaving a hospital"
+    },
+    "id2": {
+        "text": "Subject",
+        "description": "Chapter containing subject discharge information"
+    },
+    "id3": {
+        "text": "Participations",
+        "description": "Chapter containing participations information"
+    },
+    "id4": {
+        "text": "Patient demographic content",
+        "description": "Patient demographic content"
+    },
+    "id5": {
+        "text": "Healthcare establishment demographic content",
+        "description": "Healthcare establishment demographic content"
+    },
+    "id6": {
+        "text": "Healthcare professional demographic content",
+        "description": "Healthcare professional demographic content"
+    },
+    "id7": {
+        "text": "Clinical data",
+        "description": "Clinical discharge data for patient"
+    },
+    "id101": {
+        "text": "Patient demographics slot",
+        "description": "Patient demographics slot"
+    },
+    "id102": {
+        "text": "Healthcare establishment demographics slot",
+        "description": "Healthcare establishment demographics slot"
+    },
+    "id103": {
+        "text": "Healthcare individual provider demographics slot",
+        "description": "Healthcare individual provider demographics slot"
+    },
+    "id104": {
+        "text": "Patient discharge data slot",
+        "description": "Patient discharge data slot"
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "To test redefinition of an RM type into a RM subtype",
+    "use": "Regression testing"
+}

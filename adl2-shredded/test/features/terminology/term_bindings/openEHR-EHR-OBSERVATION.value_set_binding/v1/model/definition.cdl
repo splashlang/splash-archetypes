@@ -1,0 +1,24 @@
+	OBSERVATION[id1] matches {	-- Cough - ZN
+		data matches {
+			HISTORY[id2] matches {
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[id3] occurrences matches {0..1} matches {	-- Any event
+						data matches {
+							ITEM_TREE[id4] matches {
+								items matches {
+									ELEMENT[id5] occurrences matches {0..1} matches {	-- Character
+										value matches {
+											DV_CODED_TEXT[id6] matches {
+												defining_code matches {[ac2]}		-- MZN-SIF-Dihanje-Kašelj
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

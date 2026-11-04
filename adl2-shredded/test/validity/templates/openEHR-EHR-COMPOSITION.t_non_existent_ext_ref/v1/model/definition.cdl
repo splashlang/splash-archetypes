@@ -1,0 +1,6 @@
+	COMPOSITION[id1] matches {
+		content matches {
+			use_archetype OBSERVATION[id2, openEHR-EHR-OBSERVATION.doesnt_exist.v1]
+		}
+	}
+

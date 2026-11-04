@@ -1,0 +1,5 @@
+{
+    "id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-3.v1.0.0",
+    "artefact_type": "template_overlay",
+    "specialise": "openEHR-EHR-EVALUATION.clinical_synopsis.v1"
+}

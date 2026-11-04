@@ -1,0 +1,53 @@
+	COMPOSITION[id1] matches {	-- Prescription
+		category matches {
+			DV_CODED_TEXT[id10] matches {
+				defining_code matches {[at1]}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT[id11] matches {
+				other_context matches {
+					ITEM_TREE[id2] matches {
+						items matches {
+							CLUSTER[id3] occurrences matches {0..*} matches {	-- Qualification
+								items matches {
+									ELEMENT[id4] occurrences matches {0..1} matches {	-- OrderID
+										value matches {
+											DV_EHR_URI[id12] 
+											DV_IDENTIFIER[id13] 
+										}
+									}
+									ELEMENT[id5] occurrences matches {0..*} matches {	-- Endorsement
+										value matches {
+											DV_TEXT[id14] 
+										}
+									}
+									ELEMENT[id6] occurrences matches {0..*} matches {	-- AuthorisationID
+										value matches {
+											DV_IDENTIFIER[id15] 
+										}
+									}
+									ELEMENT[id7] occurrences matches {0..*} matches {	-- Comment
+										value matches {
+											DV_TEXT[id16] 
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		content cardinality matches {1..*; unordered} matches {
+			allow_archetype INSTRUCTION[id8] occurrences matches {1..*} matches {	-- Medication instruction
+				include
+					archetype_id/value matches {/openEHR-EHR-INSTRUCTION\.medication\.v1/}
+			}
+			allow_archetype ENTRY[id9] occurrences matches {0..*} matches {	-- Other data
+				include
+					archetype_id/value matches {/.*/}
+			}
+		}
+	}
+

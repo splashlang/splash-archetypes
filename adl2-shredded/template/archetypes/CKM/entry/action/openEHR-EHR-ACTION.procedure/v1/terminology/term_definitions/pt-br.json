@@ -1,0 +1,226 @@
+{
+    "id1": {
+        "text": "Procedimento",
+        "description": "A atividade clínica realizada para rastreamento , investigação , diagnóstico , cura , terapêutica, avaliação ou finalidade paliativos."
+    },
+    "id3": {
+        "text": "Nome do procedimento",
+        "description": "Identificação do procedimento pelo nome."
+    },
+    "id4": {
+        "text": "Detalhes do Procedimento",
+        "description": "São as informações estruturadas sobre o procedimento."
+    },
+    "id5": {
+        "text": "*Procedure planned (en)",
+        "description": "*"
+    },
+    "id6": {
+        "text": "Comentários",
+        "description": "Comentários adicionais sobre a atividade ou etapas não informados em outros campos."
+    },
+    "id7": {
+        "text": "Complicações",
+        "description": "Detalhes sobre alguma complicação decorrente do procedimento"
+    },
+    "id8": {
+        "text": "*Procedure request sent (en)",
+        "description": "*"
+    },
+    "id15": {
+        "text": "Justificativa",
+        "description": "Razão pela qual a atividade ou cuidado foi identificada para que o procedimento fosse realizado."
+    },
+    "id35": {
+        "text": "Plano de procedimento",
+        "description": "O procedimento a ser realizado é planejado"
+    },
+    "id36": {
+        "text": "Procedimento pedido enviado",
+        "description": "Pedido de procedimento enviado."
+    },
+    "id37": {
+        "text": "Procedimento agendado",
+        "description": "O procedimento foi agendado."
+    },
+    "id39": {
+        "text": "Procedimento adiado",
+        "description": "O procedimento foi adiado."
+    },
+    "id40": {
+        "text": "Procedimento cancelado",
+        "description": "O procedimento planejado foi cancelado antes do início."
+    },
+    "id41": {
+        "text": "Procedimento suspenso",
+        "description": "O procedimento foi suspenso."
+    },
+    "id42": {
+        "text": "Procedimento abortado",
+        "description": "O procedimento foi abortado."
+    },
+    "id44": {
+        "text": "Procedimento concluído",
+        "description": "O procedimento foi realizado e todas as atividades clínicas associadas concluídas."
+    },
+    "id48": {
+        "text": "Procedimento realizado",
+        "description": "O procedimento, ou procedimento secundário no caso de procedimentos sequenciado, foi realizado."
+    },
+    "id49": {
+        "text": "Resultado",
+        "description": "Resultado do procedimento realizado."
+    },
+    "id50": {
+        "text": "Descrição",
+        "description": "Descrição narrativa sobre o procedimento, conforme apropriado para a etapa."
+    },
+    "id55": {
+        "text": "Identificador do pedido do solicitante",
+        "description": "O ID local atribuído ao pedido realizado pelo profissional de saúde ou organização solicitando o serviço."
+    },
+    "id56": {
+        "text": "Solicitante",
+        "description": "Detalhes sobre o profissional ou organização de saúde que solicitou o serviço."
+    },
+    "id57": {
+        "text": "Identificador do pedido do destinatário",
+        "description": "O ID atribuído ao pedido pelo provedor de cuidados de saúde ou organização que recebe o pedido de serviço. Isto é também relacionado ao preenchimento da identificação do pedido."
+    },
+    "id58": {
+        "text": "Destinatário",
+        "description": "Detalhes sobre o profissional ou organização de saúde que recebeu o requerimento para o serviço."
+    },
+    "id59": {
+        "text": "Urgência",
+        "description": "Urgência do procedimento."
+    },
+    "id61": {
+        "text": "Data final / hora",
+        "description": "A data e/ou hora , quando todo o processo , ou o último componente de um procedimento de múltiplas etapas , foi finalizada."
+    },
+    "id62": {
+        "text": "Duração Total",
+        "description": "A quantidade total de tempo necessária para concluir o procedimento, o que pode incluir o tempo gasto durante a fase ativa do procedimento mais o tempo durante o qual o procedimento foi suspenso."
+    },
+    "id63": {
+        "text": "Multimidia",
+        "description": "Representação multimídia de um procedimento realizado."
+    },
+    "id64": {
+        "text": "Localização no corpo",
+        "description": "Identificação do local no corpo onde será realizado o procedimento."
+    },
+    "id65": {
+        "text": "Extensão",
+        "description": "Informações adicionais necessárias para capturar o conteúdo local ou para se alinhar com outros modelos / formalismos de referência"
+    },
+    "id66": {
+        "text": "Método",
+        "description": "Identificação do método específico ou técnica do procedimento."
+    },
+    "id67": {
+        "text": "Agendamento data/hora",
+        "description": "A data e /ou hora em que o processo está previsto para ocorrer."
+    },
+    "id68": {
+        "text": "Tipo do procedimento",
+        "description": "O tipo do procedimento."
+    },
+    "id69": {
+        "text": "Procedimento Iniciou",
+        "description": "O procedimento, ou procedimento secundário, no caso de procedimentos sequenciados, foi iniciado."
+    },
+    "id70": {
+        "text": "*Procedural difficulty(en)",
+        "description": "*Difficulties or issues encountered during the procedure.(en)"
+    },
+    "id71": {
+        "text": "*Indication (en)",
+        "description": "*The clinical or process-related reason for the procedure. (en)"
+    },
+    "at5": {
+        "text": "*Procedure planned (en)",
+        "description": "*"
+    },
+    "at35": {
+        "text": "Plano de procedimento",
+        "description": "O procedimento a ser realizado é planejado"
+    },
+    "at8": {
+        "text": "*Procedure request sent (en)",
+        "description": "*"
+    },
+    "at36": {
+        "text": "Procedimento pedido enviado",
+        "description": "Pedido de procedimento enviado."
+    },
+    "at39": {
+        "text": "Procedimento adiado",
+        "description": "O procedimento foi adiado."
+    },
+    "at40": {
+        "text": "Procedimento cancelado",
+        "description": "O procedimento planejado foi cancelado antes do início."
+    },
+    "at37": {
+        "text": "Procedimento agendado",
+        "description": "O procedimento foi agendado."
+    },
+    "at69": {
+        "text": "Procedimento Iniciou",
+        "description": "O procedimento, ou procedimento secundário, no caso de procedimentos sequenciados, foi iniciado."
+    },
+    "at48": {
+        "text": "Procedimento realizado",
+        "description": "O procedimento, ou procedimento secundário no caso de procedimentos sequenciado, foi realizado."
+    },
+    "at41": {
+        "text": "Procedimento suspenso",
+        "description": "O procedimento foi suspenso."
+    },
+    "at42": {
+        "text": "Procedimento abortado",
+        "description": "O procedimento foi abortado."
+    },
+    "at44": {
+        "text": "Procedimento concluído",
+        "description": "O procedimento foi realizado e todas as atividades clínicas associadas concluídas."
+    },
+    "at70": {
+        "text": "*planned (en)",
+        "description": "*planned (en)"
+    },
+    "at71": {
+        "text": "*initial (en)",
+        "description": "*initial (en)"
+    },
+    "at72": {
+        "text": "*postponed (en)",
+        "description": "*postponed (en)"
+    },
+    "at73": {
+        "text": "*cancelled (en)",
+        "description": "*cancelled (en)"
+    },
+    "at74": {
+        "text": "*scheduled (en)",
+        "description": "*scheduled (en)"
+    },
+    "at75": {
+        "text": "*active (en)",
+        "description": "*active (en)"
+    },
+    "at76": {
+        "text": "*suspended (en)",
+        "description": "*suspended (en)"
+    },
+    "at77": {
+        "text": "*aborted (en)",
+        "description": "*aborted (en)"
+    },
+    "at78": {
+        "text": "*complete (en)",
+        "description": "*complete (en)"
+    }
+}

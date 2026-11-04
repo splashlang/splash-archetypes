@@ -1,0 +1,6 @@
+	OBSERVATION[id1.1] matches {	-- specialised archetype
+		data matches {
+			HISTORY[id0.3] 
+		}
+	}
+

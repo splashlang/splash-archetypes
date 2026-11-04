@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Demonstrate simple RM structure hierarchy in an archetype.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "structure",
+        "test"
+    ]
+}

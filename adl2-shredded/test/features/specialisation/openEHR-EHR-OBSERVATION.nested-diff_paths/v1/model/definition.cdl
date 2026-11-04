@@ -1,0 +1,10 @@
+	OBSERVATION[id1.1] matches {	-- observation
+		/protocol matches { 
+			ITEM_TREE[id2.1] matches {
+				/items[id6]/value matches {
+					DV_QUANTITY[id7.1]
+				}
+			}
+		}
+	}
+

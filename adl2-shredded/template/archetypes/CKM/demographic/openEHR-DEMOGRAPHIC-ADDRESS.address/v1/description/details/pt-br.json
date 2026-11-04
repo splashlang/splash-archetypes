@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::pt-br]",
+    "purpose": "Representação dos detalhes do endereço de uma pessoa/organização com base na norma ISO 22220.",
+    "use": "Usado para comunicação, identificar requisitos para provimento de serviços e tendências, e proporcionar serviços diretos.",
+    "keywords": [
+        "serviço demográfico",
+        "endereço"
+    ],
+    "copyright": "copyright (c) 2010 openEHR foundation"
+}

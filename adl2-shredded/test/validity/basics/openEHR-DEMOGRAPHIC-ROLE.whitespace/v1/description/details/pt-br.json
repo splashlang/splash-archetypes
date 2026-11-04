@@ -1,0 +1,9 @@
+{
+    "language": "[ISO_639-1::pt-br]",
+    "purpose": "Representação dos dados de uma Organização ao exercer o papel de um prestador de assistência à saúde",
+    "use": "Usado em serviços de demografia para coletar dados demográficos sobre uma organização no papel de prestador de assistência à saúde",
+    "keywords": [
+        "serviço demográfico",
+        "organização prestadora de assistência à saúde"
+    ]
+}

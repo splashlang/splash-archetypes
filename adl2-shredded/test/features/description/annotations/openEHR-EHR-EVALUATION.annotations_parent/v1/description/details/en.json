@@ -1,0 +1,9 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Archetype containing various kinds of annotation, including notes, requirements and UI processing hints.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test"
+    ]
+}

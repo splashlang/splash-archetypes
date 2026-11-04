@@ -1,0 +1,11 @@
+	ADMIN_ENTRY[id1.1] matches {	-- Admission event start information
+		/other_participations existence matches {0} 
+		/data[id4]/items matches {
+			ELEMENT[id5.1] occurrences matches {1} 	-- Event start date/time
+			ELEMENT[id12] occurrences matches {0} 
+			ELEMENT[id6] occurrences matches {0} 
+			ELEMENT[id58.1] occurrences matches {1..*} 	-- Event identifier - mandatory
+			ELEMENT[id59] occurrences matches {0} 
+		}
+	}
+

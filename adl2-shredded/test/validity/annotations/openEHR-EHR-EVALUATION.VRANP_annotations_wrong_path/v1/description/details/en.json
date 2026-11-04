@@ -1,0 +1,6 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Archetype containing an annotation, on a non-existing archetype path.",
+    "use": "Regression testing",
+    "copyright": "copyright (c) 2011 openEHR Foundation"
+}

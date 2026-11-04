@@ -1,0 +1,85 @@
+archetype (adl_version=2.3.0; rm_release=1.0.2; generated)
+	openEHR-EHR-OBSERVATION.value_set_binding.v1.0.0
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"published">
+	original_author = <
+		["name"] = <"Thomas Beale">
+		["email"] = <"thomas.beale@openEHR.org">
+		["organisation"] = <"openEHR Foundation <http://www.openEHR.org>">
+		["date"] = <"2012-10-21">
+	>
+	custodian_namespace = <"org.openehr">
+	custodian_organisation = <"openEHR Foundation <http://www.openEHR.org>">
+	copyright = <"Copyright © 2012 openEHR Foundation <http://www.openEHR.org>">
+	licence = <"Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>">
+	other_details = <
+		["regression"] = <"PASS">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Example of bindings to value sets (signified by ac codes) rather than individual codes.">
+			use = <"Regression testing">
+			keywords = <"ADL", "test", "terminology bindings">
+		>
+	>
+
+definition
+	OBSERVATION[id1] matches {
+		data matches {
+			HISTORY[id2] matches {
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[id3] occurrences matches {0..1} matches {
+						data matches {
+							ITEM_TREE[id4] matches {
+								items matches {
+									ELEMENT[id5] occurrences matches {0..1} matches {
+										value matches {
+											DV_CODED_TEXT[id6] matches {
+												defining_code matches {[ac2]}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Cough - ZN">
+				description = <"Documenting cough assessment as needed for nursing care">
+			>
+			["id3"] = <
+				text = <"Any event">
+				description = <"*">
+			>
+			["id5"] = <
+				text = <"Character">
+				description = <"The character of the cough.">
+			>
+			["ac2"] = <
+				text = <"MZN-SIF-Dihanje-Kašelj">
+				description = <"Link to ISPEK termset.">
+			>
+		>
+	>
+	term_bindings = <
+		["AIR93"] = <
+			["ac2"] = <http://air93.org/MZN-SIF-Dihanje-Kašelj>
+		>
+		["AIR93(1.0.0)"] = <
+			["ac2"] = <http://air93.org/MZN-SIF-Dihanje-Kašelj>
+		>
+	>
+

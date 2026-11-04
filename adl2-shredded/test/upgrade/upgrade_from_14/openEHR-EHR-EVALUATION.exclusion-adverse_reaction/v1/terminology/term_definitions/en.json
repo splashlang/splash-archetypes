@@ -1,0 +1,14 @@
+{
+    "id1.1": {
+        "text": "Exclusion of an Adverse Reaction",
+        "description": "Positive statement/s about adverse reactions that need to be recorded as clinically excluded from the health record at a specific point in time."
+    },
+    "id4.1": {
+        "text": "Substance/Agent",
+        "description": "Identification of the specific substance or agent to which the Exclusion Statement applies."
+    },
+    "ac0.1": {
+        "text": "Substances or Agents",
+        "description": "All substances or agents that may be responsible for an adverse reaction."
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "id1": {
+        "text": "Laboratory test analyte",
+        "description": "The result of a laboratory test for a single analyte value."
+    },
+    "id2": {
+        "text": "Analyte result",
+        "description": "Actual value of the analyte result. The name of this element is normally replaced in a specialisation, in a template or at run-time to reflect the actual analyte e.g. Serum sodium and will often be coded."
+    }
+}

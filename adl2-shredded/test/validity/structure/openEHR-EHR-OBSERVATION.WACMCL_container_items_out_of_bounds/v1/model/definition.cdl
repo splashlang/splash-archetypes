@@ -1,0 +1,30 @@
+	OBSERVATION[id1] matches {	-- aaa
+		data matches {
+			HISTORY[id2] matches {
+				events cardinality matches {1; unordered} matches {
+					EVENT[id3] matches {	-- bbbb
+						data matches {
+							ITEM_TREE[id4] matches {
+								items matches {
+									CLUSTER[id5] matches {	-- xxx
+										items cardinality matches {1; unordered} matches {
+											ELEMENT[id6] occurrences matches {0..1} 	-- cccc
+											ELEMENT[id7] occurrences matches {0..1} 	-- ddd
+										}
+									}
+									CLUSTER[id8] matches {	
+										items cardinality matches {1..2} matches {
+											ELEMENT[id9] occurrences matches {1}
+											ELEMENT[id10] occurrences matches {2..*}
+											ELEMENT[id11] occurrences matches {0..1}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

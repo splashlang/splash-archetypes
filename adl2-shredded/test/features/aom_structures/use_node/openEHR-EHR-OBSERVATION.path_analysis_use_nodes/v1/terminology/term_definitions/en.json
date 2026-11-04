@@ -1,0 +1,38 @@
+{
+    "id1": {
+        "text": "Laboratory result",
+        "description": "Generic laboratory result archetype to allow terminology driven results on a generic framework"
+    },
+    "id3": {
+        "text": "Any event",
+        "description": "Any event in a time series"
+    },
+    "id12": {
+        "text": "level 1",
+        "description": "A cluster to enable level one battery labels"
+    },
+    "id13": {
+        "text": "level 2",
+        "description": "A cluster to enable level 2 battery labels"
+    },
+    "id14": {
+        "text": "Any result",
+        "description": "Generic result - data type is not set"
+    },
+    "id21": {
+        "text": "ref 1",
+        "description": "Use node ref #1"
+    },
+    "id22": {
+        "text": "ref 2",
+        "description": "Use node ref #2"
+    },
+    "ac1": {
+        "text": "=LOINC::Battery_name",
+        "description": "Any name for a set of tests from the LOINC set of battery names"
+    },
+    "ac2": {
+        "text": "=LOINC::Battery_name",
+        "description": "Any name for a set of tests from the LOINC set of battery names"
+    }
+}

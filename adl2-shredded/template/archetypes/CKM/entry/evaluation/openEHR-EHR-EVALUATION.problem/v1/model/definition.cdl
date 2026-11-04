@@ -1,0 +1,181 @@
+	EVALUATION[id1] matches {	-- Problem
+		data matches {
+			ITEM_TREE[id2] matches {
+				items cardinality matches {1..*; ordered} matches {
+					ELEMENT[id3] matches {	-- Problem
+						value matches {
+							DV_TEXT[id40] 
+						}
+					}
+					ELEMENT[id10] occurrences matches {0..1} matches {	-- Clinical description
+						value matches {
+							DV_TEXT[id41] 
+						}
+					}
+					ELEMENT[id4] occurrences matches {0..1} matches {	-- Date of initial onset
+						value matches {
+							DV_DATE[id42] 
+						}
+					}
+					ELEMENT[id5] occurrences matches {0..1} matches {	-- Age at initial onset
+						value matches {
+							DV_DURATION[id43] 
+						}
+					}
+					ELEMENT[id6] occurrences matches {0..1} matches {	-- Severity
+						value matches {
+							DV_CODED_TEXT[id44] matches {
+								defining_code matches {[ac1]}		-- Severity (synthesised)
+							}
+						}
+					}
+					ELEMENT[id39] occurrences matches {0..1} matches {	-- Clinical significance
+						value matches {
+							DV_TEXT[id45] 
+						}
+					}
+					ELEMENT[id11] occurrences matches {0..1} matches {	-- Date clinically recognised
+						value matches {
+							DV_DATE[id46] matches {
+								value matches {yyyy-??-XX}
+							}
+						}
+					}
+					ELEMENT[id38] occurrences matches {0..1} matches {	-- Age when clinically recognised
+						value matches {
+							DV_DURATION[id47] 
+						}
+					}
+					CLUSTER[id12] occurrences matches {0..*} matches {	-- Location
+						items cardinality matches {1..2; ordered} matches {
+							ELEMENT[id13] occurrences matches {0..1} matches {	-- Body site
+								value matches {
+									DV_TEXT[id48] 
+								}
+							}
+							ELEMENT[id14] occurrences matches {0..1} matches {	-- Location description
+								value matches {
+									DV_TEXT[id49] 
+								}
+							}
+						}
+					}
+					CLUSTER[id15] occurrences matches {0..*} matches {	-- Aetiology
+						items matches {
+							ELEMENT[id16] occurrences matches {0..*} matches {	-- Agent
+								value matches {
+									DV_TEXT[id50] 
+								}
+							}
+							ELEMENT[id17] occurrences matches {0..1} matches {	-- Complication of
+								value matches {
+									DV_TEXT[id51] 
+									DV_URI[id52] 
+								}
+							}
+							ELEMENT[id18] occurrences matches {0..1} matches {	-- Description
+								value matches {
+									DV_TEXT[id53] 
+								}
+							}
+						}
+					}
+					CLUSTER[id19] occurrences matches {0..1} matches {	-- Occurrences or exacerbations
+						items matches {
+							ELEMENT[id20] occurrences matches {0..1} matches {	-- Frequency of reccurrence
+								value matches {
+									DV_QUANTITY[id54] 
+								}
+							}
+							ELEMENT[id21] occurrences matches {0..1} matches {	-- Date of last occurrence
+								value matches {
+									DV_DATE[id55] 
+								}
+							}
+							CLUSTER[id22] occurrences matches {0..*} matches {	-- Occurrence/exacerbation
+								items matches {
+									ELEMENT[id23] occurrences matches {0..1} matches {	-- Clinical description
+										value matches {
+											DV_TEXT[id56] 
+										}
+									}
+									ELEMENT[id24] occurrences matches {0..1} matches {	-- Outcome
+										value matches {
+											DV_TEXT[id57] 
+										}
+									}
+									ELEMENT[id25] occurrences matches {0..1} matches {	-- Date of onset of occurrence
+										value matches {
+											DV_DATE[id58] 
+										}
+									}
+									ELEMENT[id37] occurrences matches {0..1} matches {	-- Date of resolution of occurrence
+										value matches {
+											DV_DATE[id59] 
+										}
+									}
+								}
+							}
+							ELEMENT[id26] occurrences matches {0..1} matches {	-- Number of occurrences
+								value matches {
+									DV_COUNT[id60] matches {
+										magnitude matches {|>=1|}
+									}
+								}
+							}
+						}
+					}
+					CLUSTER[id27] occurrences matches {0..1} matches {	-- Related problems
+						items matches {
+							CLUSTER[id28] occurrences matches {0..*} matches {	-- Related problem
+								items matches {
+									ELEMENT[id29] occurrences matches {0..1} matches {	-- Related problem
+										value matches {
+											DV_TEXT[id61] 
+											DV_URI[id62] 
+										}
+									}
+									ELEMENT[id30] occurrences matches {0..1} matches {	-- Clinical description
+										value matches {
+											DV_TEXT[id63] 
+										}
+									}
+								}
+							}
+						}
+					}
+					ELEMENT[id31] occurrences matches {0..1} matches {	-- Date of resolution
+						value matches {
+							DV_DATE[id64] 
+						}
+					}
+					ELEMENT[id32] occurrences matches {0..1} matches {	-- Age at resolution
+						value matches {
+							DV_DURATION[id65] 
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[id33] matches {
+				items matches {
+					CLUSTER[id34] occurrences matches {0..1} matches {	-- References
+						items matches {
+							ELEMENT[id35] occurrences matches {0..*} matches {	-- Reference
+								value matches {
+									DV_TEXT[id66] 
+								}
+							}
+							ELEMENT[id36] occurrences matches {0..*} matches {	-- Web link
+								value matches {
+									DV_URI[id67] 
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

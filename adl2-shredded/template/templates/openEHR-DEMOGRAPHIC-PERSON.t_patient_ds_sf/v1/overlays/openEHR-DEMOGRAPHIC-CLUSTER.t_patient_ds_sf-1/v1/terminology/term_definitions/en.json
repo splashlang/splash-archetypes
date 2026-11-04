@@ -1,0 +1,10 @@
+{
+    "id1.1": {
+        "text": "Person additional demographic data",
+        "description": "Person additional demographic data"
+    },
+    "id3.1": {
+        "text": "Race",
+        "description": "The person's race classifier"
+    }
+}

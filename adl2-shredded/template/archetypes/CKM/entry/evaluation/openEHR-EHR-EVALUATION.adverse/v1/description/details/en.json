@@ -1,0 +1,14 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "For recording all adverse reaction(s) to a particular 'Agent', whether an individual agent or substance, or a class.  \nRecordings may be added for subsequent exposures to the same Agent and the type of reaction on each occasion, building up a persisting record over time.",
+    "use": "Use to record exposure to agents and the adverse reaction that occurs. \nIf recording an adverse event to a class or grouping of 'Agent', then exposure to different specific components of the class can be recorded as well.  For example, recording against the class of Penicillin it is possible to record the reaction (or absence) to specific types or brands of Penicillin. ",
+    "keywords": [
+        "reaction",
+        "allergic",
+        "allergy",
+        "intolerance",
+        "adverse"
+    ],
+    "misuse": "Not to be used for recording the exclusion of a history of a reaction to a substance. Use openEHR-EVALUATION.excluded-adverse for this purpose.",
+    "copyright": "copyright (c) 2010 openEHR Foundation"
+}

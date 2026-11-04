@@ -1,0 +1,13 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "For recording details about an issue or obstacle that impacts on the physical, mental and/or social well-being of an individual.",
+    "use": "Use for recording any information about general health-related problems.  \nThe archetype contains multiple dates, so can record present and/or past problems. \nA problem can be determined by either the individual themselves or a healthcare provider. \nSome examples: \n- A range of symptoms that are under investigation but pre-diagnosis\n- Desire to lose weight, without formal diagnosis of Obesity\n- Desire to quit smoking by individual\n- Relationship problem with family member.",
+    "keywords": [
+        "issue",
+        "condition",
+        "problem",
+        "obstacle"
+    ],
+    "misuse": "Not to be used for recording formal Diagnoses - use the specialisation of this archetype, EVALUATION.problem-diagnosis. ",
+    "copyright": "copyright (c) 2010 openEHR Foundation"
+}

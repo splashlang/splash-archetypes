@@ -1,0 +1,12 @@
+{
+    "original_author": {
+        "name": "Thomas Beale",
+        "organisation": "openEHR Foundation",
+        "email": "thomas.beale@openehr.org",
+        "date": "10/03/2009"
+    },
+    "other_details": {
+        "regression": "VSAM"
+    },
+    "lifecycle_state": "unmanaged"
+}

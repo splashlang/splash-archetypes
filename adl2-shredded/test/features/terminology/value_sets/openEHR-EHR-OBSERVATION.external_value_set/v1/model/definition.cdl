@@ -1,0 +1,16 @@
+	OBSERVATION[id1] matches {	-- Test Obs
+		protocol matches {
+			ITEM_TREE[id2] matches {
+				items matches {
+					ELEMENT[id3] occurrences matches {0..1} matches {	-- document state
+						value matches {
+							DV_CODED_TEXT[id4] matches {
+								defining_code matches {[ac1; at1]}		-- document state
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

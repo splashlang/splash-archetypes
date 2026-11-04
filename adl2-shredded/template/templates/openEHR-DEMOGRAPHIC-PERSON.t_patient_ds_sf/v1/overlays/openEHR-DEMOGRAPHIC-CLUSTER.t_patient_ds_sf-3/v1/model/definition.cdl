@@ -1,0 +1,9 @@
+	CLUSTER[id1.1] matches {	-- Birth data
+		items matches {
+			ELEMENT[id3] occurrences matches {0} 
+			ELEMENT[id5] occurrences matches {0} 
+			ELEMENT[id6] occurrences matches {0} 
+			allow_archetype CLUSTER[id7] closed 	-- Country specific data - closed slot
+		}
+	}
+

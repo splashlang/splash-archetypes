@@ -1,0 +1,14 @@
+{
+    "id1.1.1": {
+        "text": "Triglycerides test result",
+        "description": "-"
+    },
+    "id2.0.1": {
+        "text": "Triglycerides, blood",
+        "description": "-"
+    },
+    "at0.0.1": {
+        "text": "concentration",
+        "description": "-"
+    }
+}

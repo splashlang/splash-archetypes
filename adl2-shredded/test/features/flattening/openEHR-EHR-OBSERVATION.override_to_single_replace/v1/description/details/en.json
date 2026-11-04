@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test specialised node that replaces its parent. This is done by not specialising the code.",
+    "use": "Regression testing"
+}

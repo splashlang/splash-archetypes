@@ -1,0 +1,66 @@
+archetype (adl_version=2.3.0; rm_release=1.0.2; generated)
+	openEHR-EHR-OBSERVATION.external_code_single.v1.0.0
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"unmanaged">
+	original_author = <
+		["name"] = <"Sam Heard">
+		["organisation"] = <"Ocean Informatics">
+		["email"] = <"sam.heard@oceaninformatics.com">
+		["date"] = <"22/03/2006">
+	>
+	copyright = <"© openEHR Foundation">
+	other_details = <
+		["regression"] = <"PASS">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To test rewriting of single external code into new at-code, plus binding to external code">
+			use = <"Regression testing">
+		>
+	>
+
+definition
+	OBSERVATION[id1] occurrences matches {0..*} matches {
+		protocol existence matches {0..1} matches {
+			ITEM_TREE[id4] occurrences matches {0..1} matches {
+				items existence matches {0..1} cardinality matches {0..*; ordered} matches {
+					ELEMENT[id3] occurrences matches {0..1} matches {
+						value existence matches {0..1} matches {
+							DV_CODED_TEXT[id5] occurrences matches {0..1} matches {
+								defining_code existence matches {1} matches {[at1]}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Test Obs">
+				description = <"Test Obs">
+			>
+			["id3"] = <
+				text = <"document state">
+				description = <"document state">
+			>
+			["at1"] = <
+				text = <"creation">
+				description = <"creation">
+			>
+		>
+	>
+	term_bindings = <
+		["openehr"] = <
+			["at1"] = <http://openehr.org/id/249>
+		>
+	>
+

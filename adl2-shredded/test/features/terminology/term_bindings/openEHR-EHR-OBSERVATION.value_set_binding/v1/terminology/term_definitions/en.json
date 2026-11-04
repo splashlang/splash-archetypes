@@ -1,0 +1,18 @@
+{
+    "id1": {
+        "text": "Cough - ZN",
+        "description": "Documenting cough assessment as needed for nursing care"
+    },
+    "id3": {
+        "text": "Any event",
+        "description": "*"
+    },
+    "id5": {
+        "text": "Character",
+        "description": "The character of the cough."
+    },
+    "ac2": {
+        "text": "MZN-SIF-Dihanje-Kašelj",
+        "description": "Link to ISPEK termset."
+    }
+}

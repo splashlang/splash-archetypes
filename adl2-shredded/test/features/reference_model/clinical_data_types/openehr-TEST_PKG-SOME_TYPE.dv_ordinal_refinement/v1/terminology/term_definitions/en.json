@@ -1,0 +1,14 @@
+{
+    "id1": {
+        "text": "root item",
+        "description": "xxxx"
+    },
+    "id6": {
+        "text": "ordinal 2",
+        "description": "ordinal 2"
+    },
+    "at3": {
+        "text": ">3 L/min",
+        "description": ">3 L/min flow-rate"
+    }
+}

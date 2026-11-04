@@ -1,0 +1,39 @@
+	CLUSTER[id1] matches {	-- Ambient oxygen
+		items matches {
+			ELEMENT[id52] occurrences matches {0..1} matches {	-- Oxygen flow rate
+				value matches {
+					DV_QUANTITY[id55] matches {
+						property matches {[at1]}
+						[magnitude, units, precision] matches {
+							[{|0.0..50.0|}, {"l/m"}, {1}],
+							[{|0.0..50000.0|}, {"ml/min"}, {1}]
+						}
+					}
+				}
+			}
+			ELEMENT[id54] occurrences matches {0..1} matches {	-- un
+				value matches {
+					DV_PROPORTION[id56] matches {
+						numerator matches {|0.0..1.0|; 0.21}
+						is_integral matches {False}
+						type matches {1}
+					}
+					DV_PROPORTION[id57] matches {
+						numerator matches {|0.0..100.0|; 21.0}
+						is_integral matches {False}
+						type matches {2}
+					}
+				}
+			}
+			ELEMENT[id55] occurrences matches {0..1} matches {	-- un
+				value matches {
+					DV_PROPORTION[id58] matches {
+						[numerator, is_integral, type] matches 
+							{[{|0.0..1.0|; 0.21}, {False}, {1}],
+							[{|0.0..100.0|; 21.0}, {False}, {2}]}
+					}
+				}
+			}
+		}
+	}
+

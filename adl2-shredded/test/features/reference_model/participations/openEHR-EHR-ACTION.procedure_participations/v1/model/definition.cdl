@@ -1,0 +1,282 @@
+	ACTION[id1] matches {	-- Procedure undertaken
+		ism_transition matches {
+			ISM_TRANSITION[id35] matches {	-- Request initiated
+				current_state matches {
+					DV_CODED_TEXT[id60] matches {
+						defining_code matches {[at49]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id61] matches {
+						defining_code matches {[at35]}
+					}
+				}
+			}
+			ISM_TRANSITION[id36] matches {	-- Request sent
+				current_state matches {
+					DV_CODED_TEXT[id62] matches {
+						defining_code matches {[at49]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id63] matches {
+						defining_code matches {[at36]}
+					}
+				}
+			}
+			ISM_TRANSITION[id39] matches {	-- Request postponed
+				current_state matches {
+					DV_CODED_TEXT[id64] matches {
+						defining_code matches {[at50]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id65] matches {
+						defining_code matches {[at39]}
+					}
+				}
+			}
+			ISM_TRANSITION[id40] matches {	-- Request cancelled
+				current_state matches {
+					DV_CODED_TEXT[id66] matches {
+						defining_code matches {[at51]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id67] matches {
+						defining_code matches {[at40]}
+					}
+				}
+			}
+			ISM_TRANSITION[id37] matches {	-- Procedure scheduled
+				current_state matches {
+					DV_CODED_TEXT[id68] matches {
+						defining_code matches {[at52]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id69] matches {
+						defining_code matches {[at37]}
+					}
+				}
+			}
+			ISM_TRANSITION[id48] matches {	-- In progress
+				current_state matches {
+					DV_CODED_TEXT[id70] matches {
+						defining_code matches {[at53]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id71] matches {
+						defining_code matches {[at48]}
+					}
+				}
+			}
+			ISM_TRANSITION[id41] matches {	-- Procedure suspended
+				current_state matches {
+					DV_CODED_TEXT[id72] matches {
+						defining_code matches {[at54]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id73] matches {
+						defining_code matches {[at41]}
+					}
+				}
+			}
+			ISM_TRANSITION[id42] matches {	-- Procedure aborted
+				current_state matches {
+					DV_CODED_TEXT[id74] matches {
+						defining_code matches {[at55]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id75] matches {
+						defining_code matches {[at42]}
+					}
+				}
+			}
+			ISM_TRANSITION[id44] matches {	-- Completed
+				current_state matches {
+					DV_CODED_TEXT[id76] matches {
+						defining_code matches {[at56]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id77] matches {
+						defining_code matches {[at44]}
+					}
+				}
+			}
+			ISM_TRANSITION[id45] matches {	-- Report authored
+				current_state matches {
+					DV_CODED_TEXT[id78] matches {
+						defining_code matches {[at56]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id79] matches {
+						defining_code matches {[at45]}
+					}
+				}
+			}
+			ISM_TRANSITION[id46] matches {	-- Report attested
+				current_state matches {
+					DV_CODED_TEXT[id80] matches {
+						defining_code matches {[at56]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id81] matches {
+						defining_code matches {[at46]}
+					}
+				}
+			}
+			ISM_TRANSITION[id47] matches {	-- Report sent
+				current_state matches {
+					DV_CODED_TEXT[id82] matches {
+						defining_code matches {[at56]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id83] matches {
+						defining_code matches {[at47]}
+					}
+				}
+			}
+		}
+		description matches {
+			ITEM_TREE[id2] matches {
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[id3] matches {	-- Procedure
+						value matches {
+							DV_TEXT[id84] 
+						}
+					}
+					ELEMENT[id15] matches {	-- Reason/s for procedure
+						value matches {
+							DV_TEXT[id85] 
+						}
+					}
+					ELEMENT[id52] matches {	-- Method/Technique
+						value matches {
+							DV_TEXT[id86] 
+						}
+					}
+					ELEMENT[id50] occurrences matches {0..1} matches {	-- Description
+						value matches {
+							DV_TEXT[id87] 
+						}
+					}
+					allow_archetype CLUSTER[id4] occurrences matches {0..1} matches {	-- Procedure Details
+						include
+							archetype_id/value matches {/.*/}
+					}
+					allow_archetype CLUSTER[id51] occurrences matches {0..1} matches {	-- Anatomical site details
+						include
+							archetype_id/value matches {/.*/}
+					}
+					CLUSTER[id31] occurrences matches {0..1} matches {	-- Additional tasks
+						items matches {
+							ELEMENT[id53] occurrences matches {0..1} matches {	-- Task
+								value matches {
+									DV_TEXT[id88] 
+								}
+							}
+							ELEMENT[id32] matches {	-- Task description
+								value matches {
+									DV_TEXT[id89] 
+								}
+							}
+							ELEMENT[id33] matches {	-- Record of additional task
+								value matches {
+									DV_EHR_URI[id90] 
+								}
+							}
+						}
+					}
+					ELEMENT[id49] occurrences matches {0..1} matches {	-- Outcome
+						value matches {
+							DV_TEXT[id91] 
+						}
+					}
+					ELEMENT[id5] occurrences matches {0..1} matches {	-- Procedure unsuccessful
+						value matches {
+							DV_BOOLEAN[id92] matches {
+								value matches {True}
+							}
+						}
+					}
+					ELEMENT[id19] occurrences matches {0..1} 	-- Failed attempts
+					ELEMENT[id16] matches {	-- Unplanned event
+						value matches {
+							DV_TEXT[id93] 
+						}
+					}
+					ELEMENT[id7] matches {	-- Complication
+						value matches {
+							DV_TEXT[id94] 
+						}
+					}
+					ELEMENT[id59] occurrences matches {0..1} matches {	-- Emergency?
+						value matches {
+							DV_BOOLEAN[id95] matches {
+								value matches {True, False}
+							}
+						}
+					}
+					ELEMENT[id6] occurrences matches {0..1} matches {	-- Comments
+						value matches {
+							DV_TEXT[id96] 
+						}
+					}
+					ELEMENT[id14] matches {	-- Multimedia
+						value matches {
+							DV_MULTIMEDIA[id97]
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[id54] matches {
+				items matches {
+					ELEMENT[id55] occurrences matches {0..1} matches {	-- Requestor order identifier
+						value matches {
+							DV_TEXT[id98] 
+						}
+					}
+					allow_archetype CLUSTER[id56] occurrences matches {0..1} matches {	-- Requestor
+						include
+							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[id57] occurrences matches {0..1} matches {	-- Receiver order identifier
+						value matches {
+							DV_TEXT[id99] 
+						}
+					}
+					allow_archetype CLUSTER[id58] occurrences matches {0..1} matches {	-- Receiver
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+		other_participations matches {
+			PARTICIPATION[id100] occurrences matches {0..1} matches {	-- assistant #1
+				function matches {
+					DV_CODED_TEXT[id102]  matches {
+                        defining_code matches {[at1]}
+                    }
+				}
+			}
+			PARTICIPATION[id101] occurrences matches {0..1} matches {	-- assistant #2
+				function matches {
+					DV_CODED_TEXT[id103] matches {
+                        defining_code matches {[at2]}
+                    }
+				}
+			}
+		}
+	}
+

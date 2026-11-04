@@ -1,0 +1,98 @@
+{
+    "id1": {
+        "text": "Orientacion de alta",
+        "description": "xxxxxxxxxxxxxxx ddddddd vvvvv"
+    },
+    "id15": {
+        "text": "tipo de saido",
+        "description": "*"
+    },
+    "at16": {
+        "text": "alta",
+        "description": "xxxxxx"
+    },
+    "at17": {
+        "text": "obito",
+        "description": "xxxx"
+    },
+    "at19": {
+        "text": "transferencia",
+        "description": "xxxx"
+    },
+    "id20": {
+        "text": "transferencia externo para",
+        "description": "*"
+    },
+    "id21": {
+        "text": "saida",
+        "description": "*"
+    },
+    "at23": {
+        "text": "curado",
+        "description": "xxxx"
+    },
+    "at24": {
+        "text": "melhorado",
+        "description": "xxxx"
+    },
+    "at25": {
+        "text": "inalterado",
+        "description": "xxx"
+    },
+    "at26": {
+        "text": "a pedido",
+        "description": "xxx"
+    },
+    "at27": {
+        "text": "assistencia domiciliar",
+        "description": "xxxx"
+    },
+    "at33": {
+        "text": "acamado",
+        "description": "*"
+    },
+    "at34": {
+        "text": "restrito a cadeira",
+        "description": "*"
+    },
+    "at35": {
+        "text": "deambula occasionalmente",
+        "description": "*"
+    },
+    "at36": {
+        "text": "deambula frequentemente",
+        "description": "*"
+    },
+    "at37": {
+        "text": "Mass",
+        "description": "Mass"
+    },
+    "at38": {
+        "text": "image/cgm",
+        "description": "image/cgm"
+    },
+    "at39": {
+        "text": "image/png",
+        "description": "image/png"
+    },
+    "at40": {
+        "text": "image/jpeg",
+        "description": "image/jpeg"
+    },
+    "ac1": {
+        "text": "tipo de saido (synthesised)",
+        "description": "* (synthesised)"
+    },
+    "ac2": {
+        "text": "motivo de saida (synthesised)",
+        "description": "* (synthesised)"
+    },
+    "ac3": {
+        "text": "facebook picture (synthesised)",
+        "description": "* (synthesised)"
+    },
+    "ac4": {
+        "text": "atividade fisica (synthesised)",
+        "description": "* (synthesised)"
+    }
+}

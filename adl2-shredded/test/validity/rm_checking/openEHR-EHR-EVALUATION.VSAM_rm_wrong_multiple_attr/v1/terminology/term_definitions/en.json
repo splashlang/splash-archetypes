@@ -1,0 +1,14 @@
+{
+    "id1": {
+        "description": "Some evaluation",
+        "text": "Some evaluation"
+    },
+    "id2": {
+        "description": "Structure",
+        "text": "Structure"
+    },
+    "id3": {
+        "description": "An Element",
+        "text": "An Element"
+    }
+}

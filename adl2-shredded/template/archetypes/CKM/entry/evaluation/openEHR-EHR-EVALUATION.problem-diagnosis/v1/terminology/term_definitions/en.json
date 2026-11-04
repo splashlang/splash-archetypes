@@ -1,0 +1,38 @@
+{
+    "id0.32": {
+        "text": "Status",
+        "description": "The status of the diagnosis"
+    },
+    "at0.33": {
+        "text": "provisional",
+        "description": "provisional diagnosis considered likely and a basis for proceeding with management"
+    },
+    "at0.34": {
+        "text": "working",
+        "description": "working diagnosis considered very likely but not yet confirmed"
+    },
+    "id0.35": {
+        "text": "Diagnostic criteria",
+        "description": "The criteria on which the diagnosis is based"
+    },
+    "id0.36": {
+        "text": "Criterion",
+        "description": "A basis for the diagnosis"
+    },
+    "id1.1": {
+        "text": "Diagnosis",
+        "description": "A diagnosis defined by a clinician which is coded in an accepted terminology and may include the stage of the condition and the diagnostic criteria"
+    },
+    "id3.1": {
+        "text": "Diagnosis",
+        "description": "The index diagnosis"
+    },
+    "ac0.1": {
+        "text": "Any term that 'is_a' diagnosis",
+        "description": "Any term that is a diagnosis in an accepted terminology"
+    },
+    "ac0.2": {
+        "text": "Status (synthesised)",
+        "description": "The status of the diagnosis (synthesised)"
+    }
+}

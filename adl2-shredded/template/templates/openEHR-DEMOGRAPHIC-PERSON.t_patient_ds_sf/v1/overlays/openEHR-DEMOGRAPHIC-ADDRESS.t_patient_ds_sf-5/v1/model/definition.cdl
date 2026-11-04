@@ -1,0 +1,25 @@
+	ADDRESS[id1.1] matches {	-- Address
+		/details[id2]/items matches {
+			CLUSTER[id3.1] occurrences matches {1..3} matches {	-- Address lines
+				items matches {
+					ELEMENT[id22] occurrences matches {0} 
+					ELEMENT[id23] occurrences matches {0} 
+					ELEMENT[id24] occurrences matches {0} 
+					ELEMENT[id25] occurrences matches {0} 
+					ELEMENT[id26] occurrences matches {0} 
+					ELEMENT[id27] occurrences matches {0} 
+					ELEMENT[id28] occurrences matches {0} 
+					ELEMENT[id29] occurrences matches {0} 
+					ELEMENT[id30] occurrences matches {0} 
+					ELEMENT[id31] occurrences matches {0} 
+					allow_archetype CLUSTER[id33] closed 	-- Slot closed
+				}
+			}
+			ELEMENT[id4] occurrences matches {0} 
+			ELEMENT[id7] occurrences matches {0} 
+			ELEMENT[id9] occurrences matches {0} 
+			ELEMENT[id10] occurrences matches {0} 
+			allow_archetype CLUSTER[id11] closed 	-- Slot closed
+		}
+	}
+

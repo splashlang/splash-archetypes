@@ -1,0 +1,42 @@
+{
+    "at0.2": {
+        "text": "Tobacco",
+        "description": "Tobacco used"
+    },
+    "at0.3": {
+        "text": "Cigarettes - manufactured",
+        "description": "Commercial, manufactured cigarettes"
+    },
+    "at0.4": {
+        "text": "Cigarettes - roll-your-own",
+        "description": "Home-made, roll-your-own cigarettes"
+    },
+    "at0.5": {
+        "text": "Cigars",
+        "description": "Commercial cigars"
+    },
+    "at0.6": {
+        "text": "Pipe",
+        "description": "Tobacco smoked within a pipe"
+    },
+    "id1.1": {
+        "text": "Tobacco Use",
+        "description": "Archetype to record the actual use or consumption of a tobacco at the present time, a specific time or over a period of time. "
+    },
+    "id13.1": {
+        "text": "Amount of tobacco",
+        "description": "Amount of tobacco"
+    },
+    "at0.7": {
+        "text": "Frequency",
+        "description": "Frequency"
+    },
+    "at0.8": {
+        "text": "Flow rate, mass",
+        "description": "Flow rate, mass"
+    },
+    "ac0.1": {
+        "text": "Form (synthesised)",
+        "description": "Form of tobacco used (synthesised)"
+    }
+}

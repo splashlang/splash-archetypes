@@ -1,0 +1,12 @@
+{
+    "original_author": {
+        "name": "Thomas Beale",
+        "organisation": "openEHR Foundation",
+        "email": "thomas.beale@openehr.org",
+        "date": "14/07/2010"
+    },
+    "lifecycle_state": "initial",
+    "other_details": {
+        "regression": "VARXID"
+    }
+}

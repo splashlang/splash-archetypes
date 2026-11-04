@@ -1,0 +1,21 @@
+	EVALUATION[id1] matches {	-- Some evaluation
+		data matches {
+			ITEM_TREE[id5] matches {
+				items matches {
+					ELEMENT[id3] matches {	-- An Element
+						value matches {
+							DV_TEXT[id6] 
+						}
+					}
+					ELEMENT[id4] occurrences matches {0..1} matches {	-- Another Element
+						value matches {
+							CODED_TEXT[id7] matches {
+								defining_code matches {[ac1]}		-- Another Element
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

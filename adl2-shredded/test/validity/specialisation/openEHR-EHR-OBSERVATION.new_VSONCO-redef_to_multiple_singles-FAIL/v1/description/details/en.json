@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Redefine a multiple occurrences node in a way that cannot be satisfied",
+    "use": "Regression testing"
+}

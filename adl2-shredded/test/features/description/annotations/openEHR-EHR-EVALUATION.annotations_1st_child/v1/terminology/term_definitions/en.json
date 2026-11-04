@@ -1,0 +1,22 @@
+{
+    "id1.1": {
+        "text": "Exclusion statement - Adverse Reaction",
+        "description": "Statements about Adverse Reactions that need to be positively recorded as absent or excluded."
+    },
+    "id0.10": {
+        "text": "No known intolerance to",
+        "description": "Positive statement about intolerances to substances that are explicitly known to have not been identified at the time of recording."
+    },
+    "id0.7": {
+        "text": "No known adverse reaction to",
+        "description": "Positive statement about adverse reactions to substances that are explicitly known to have not been identified at the time of recording."
+    },
+    "id0.8": {
+        "text": "No known allergic reaction to",
+        "description": "Positive statement about allergic reactions to substances that are explicitly known to have not been identified at the time of recording."
+    },
+    "id0.9": {
+        "text": "No known hypersensitivity reaction to",
+        "description": "Positive statement about hypersensitivity reactions to substances that are explicitly known to have not been identified at the time of recording."
+    }
+}

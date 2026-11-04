@@ -1,0 +1,20 @@
+	OBSERVATION[id1.1] matches {	-- multi-level redefinition archetype
+		/data/events[id3]/data/items matches {
+			ELEMENT[id8.1] matches {	-- 1st redefine of at0007 node
+				value matches {
+					DV_QUANTITY[id0.7] 
+				}
+			}
+			ELEMENT[id8.2] matches {	-- 2nd redefine of at0007 node
+				value matches {
+					DV_QUANTITY[id0.8] 
+				}
+			}
+			ELEMENT[id8.3] matches {	-- 3rd redefine of at0007 node
+				value matches {
+					DV_QUANTITY[id0.9] 
+				}
+			}
+		}
+	}
+

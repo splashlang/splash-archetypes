@@ -1,0 +1,58 @@
+	OBSERVATION[id1] matches {	-- Substance Use
+		data matches {
+			HISTORY[id2] matches {
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[id3] occurrences matches {0..1} matches {	-- Any event
+						data matches {
+							ITEM_TREE[id4] matches {
+								items matches {
+									ELEMENT[id5] occurrences matches {0..1} matches {	-- Substance
+										value matches {
+											DV_TEXT[id20] 
+										}
+									}
+									CLUSTER[id11] occurrences matches {0..1} matches {	-- Consumption details
+										items matches {
+											ELEMENT[id12] occurrences matches {0..1} matches {	-- Form
+												value matches {
+													DV_TEXT[id21] 
+												}
+											}
+											ELEMENT[id19] occurrences matches {0..1} matches {	-- Method of use
+												value matches {
+													DV_TEXT[id22] 
+												}
+											}
+											ELEMENT[id6] occurrences matches {0..1} matches {	-- Frequency
+												value matches {
+													DV_CODED_TEXT[id23] matches {
+														defining_code matches {[ac1]}		-- Frequency (synthesised)
+													}
+												}
+											}
+											ELEMENT[id13] 	-- Amount
+										}
+									}
+									ELEMENT[id14] occurrences matches {0..1} matches {	-- Triggers
+										value matches {
+											DV_TEXT[id24] 
+										}
+									}
+									allow_archetype CLUSTER[id15] matches {	-- Readiness for change
+										include
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.change\.v1/}
+									}
+									ELEMENT[id17] occurrences matches {0..1} matches {	-- Evidence of dependence
+										value matches {
+											DV_TEXT[id25] 
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

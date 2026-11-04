@@ -1,0 +1,16 @@
+{
+    "custodian_namespace": "org.openehr",
+    "custodian_organisation": "openEHR Foundation <http://www.openEHR.org>",
+    "original_author": {
+        "name": "Ian McNicoll",
+        "organisation": "Ocean Informatics UK <http://www.oceaninformatics.com>",
+        "email": "ian.mcnicoll@oceaninformatics.com",
+        "date": "2009-11-07"
+    },
+    "lifecycle_state": "unmanaged",
+    "other_details": {
+        "regression": "PASS"
+    },
+    "copyright": "Copyright © 2009 openEHR Foundation <http://www.openEHR.org>",
+    "licence": "Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>"
+}

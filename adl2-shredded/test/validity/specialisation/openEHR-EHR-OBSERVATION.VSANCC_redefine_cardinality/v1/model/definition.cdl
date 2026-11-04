@@ -1,0 +1,4 @@
+	OBSERVATION[id1.1] matches {	-- specialised archetype
+		/data/events cardinality matches {1..*; ordered} 
+	}
+

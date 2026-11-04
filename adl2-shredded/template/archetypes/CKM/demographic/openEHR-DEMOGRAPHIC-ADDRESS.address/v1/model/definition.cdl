@@ -1,0 +1,131 @@
+	ADDRESS[id1] matches {	-- Address
+		name matches {
+			DV_TEXT[id34] 
+			DV_CODED_TEXT[id35] matches {
+				defining_code matches {[ac6]}		-- Address (synthesised)
+			}
+		}
+		details matches {
+			ITEM_TREE[id2] occurrences matches {0..1} matches {	-- Items
+				items cardinality matches {1..*; ordered} matches {
+					CLUSTER[id3] occurrences matches {0..*} matches {	-- Address lines
+						items matches {
+							ELEMENT[id22] occurrences matches {0..1} matches {	-- Building/complex sub-unit type—abbreviation
+								value matches {
+									DV_CODED_TEXT[id36] matches {
+										defining_code matches {[ac1]}		-- Building type codes
+									}
+								}
+							}
+							ELEMENT[id23] occurrences matches {0..1} matches {	-- Building/complex sub-unit number
+								value matches {
+									DV_TEXT[id37] 
+								}
+							}
+							ELEMENT[id24] occurrences matches {0..1} matches {	-- Address site name
+								value matches {
+									DV_TEXT[id38] 
+								}
+							}
+							ELEMENT[id25] occurrences matches {0..1} matches {	-- Floor/level number
+								value matches {
+									DV_TEXT[id39] 
+								}
+							}
+							ELEMENT[id26] occurrences matches {0..1} matches {	-- Floor/level type
+								value matches {
+									DV_TEXT[id40] 
+								}
+							}
+							ELEMENT[id27] occurrences matches {0..1} matches {	-- Lot number
+								value matches {
+									DV_TEXT[id41] 
+								}
+							}
+							ELEMENT[id28] occurrences matches {0..1} matches {	-- Street type code
+								value matches {
+									DV_CODED_TEXT[id42] matches {
+										defining_code matches {[ac2]}		-- Street type codes
+									}
+								}
+							}
+							ELEMENT[id29] occurrences matches {0..1} matches {	-- Street name
+								value matches {
+									DV_TEXT[id43] 
+								}
+							}
+							ELEMENT[id30] occurrences matches {0..1} matches {	-- Street number
+								value matches {
+									DV_TEXT[id44] 
+								}
+							}
+							ELEMENT[id31] occurrences matches {0..1} matches {	-- Street suffix code
+								value matches {
+									DV_CODED_TEXT[id45] matches {
+										defining_code matches {[ac3]}		-- Street suffix codes
+									}
+								}
+							}
+							ELEMENT[id32] occurrences matches {0..1} matches {	-- Address line
+								value matches {
+									DV_TEXT[id46] 
+								}
+							}
+							allow_archetype CLUSTER[id33] occurrences matches {0..*} matches {	-- Local address line components
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.local_address_line(-?a-zA-Z0-9_]+)*\.v1/}
+							}
+						}
+					}
+					ELEMENT[id4] occurrences matches {0..1} matches {	-- Delivery point identifier
+						value matches {
+							DV_TEXT[id47] 
+						}
+					}
+					ELEMENT[id5] occurrences matches {0..1} matches {	-- Postal code (ZIP code)
+						value matches {
+							DV_TEXT[id48] 
+						}
+					}
+					ELEMENT[id6] occurrences matches {0..1} matches {	-- Suburb/town/locality
+						value matches {
+							DV_TEXT[id49] 
+						}
+					}
+					ELEMENT[id7] occurrences matches {0..1} matches {	-- State/territory/province identifier
+						value matches {
+							DV_CODED_TEXT[id50] matches {
+								defining_code matches {[ac4]}		-- State codes
+							}
+						}
+					}
+					ELEMENT[id8] occurrences matches {0..1} matches {	-- Country identifier
+						value matches {
+							DV_CODED_TEXT[id51] matches {
+								defining_code matches {[ac5]}		-- Country codes
+							}
+						}
+					}
+					ELEMENT[id9] occurrences matches {0..1} matches {	-- Address type start date accuracy indicator
+						value matches {
+							DV_TEXT[id52] matches {
+								value matches {/AEU]AEU]AEU]/}
+							}
+						}
+					}
+					ELEMENT[id10] occurrences matches {0..1} matches {	-- Address type end date accuracy indicator
+						value matches {
+							DV_TEXT[id53] matches {
+								value matches {/AEU]AEU]AEU]/}
+							}
+						}
+					}
+					allow_archetype CLUSTER[id11] occurrences matches {0..*} matches {	-- Local high level address components
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.local_high_level_address(-?a-zA-Z0-9_]+)*\.v1/}
+					}
+				}
+			}
+		}
+	}
+

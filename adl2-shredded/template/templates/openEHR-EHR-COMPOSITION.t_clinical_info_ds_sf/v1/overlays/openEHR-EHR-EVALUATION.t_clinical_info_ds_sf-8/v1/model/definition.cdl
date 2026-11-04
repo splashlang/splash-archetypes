@@ -1,0 +1,8 @@
+	EVALUATION[id1.1] matches {	-- Simple Discharge Summary Medical Certificate
+		/data[id2]/items matches {
+			ELEMENT[id3] occurrences matches {0} 
+			ELEMENT[id4] occurrences matches {0} 
+			ELEMENT[id5] occurrences matches {0} 
+		}
+	}
+

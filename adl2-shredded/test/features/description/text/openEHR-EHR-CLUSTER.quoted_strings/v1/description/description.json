@@ -1,0 +1,18 @@
+{
+    "custodian_namespace": "org.openehr",
+    "custodian_organisation": "openEHR Foundation <http://www.openEHR.org>",
+    "original_author": {
+        "organisation": "a\"x'c\\d",
+        "name": "Peter Gummer",
+        "email": "a\"x'c\\d"
+    },
+    "lifecycle_state": "published",
+    "other_contributors": [
+        "a\"x'c\\d"
+    ],
+    "other_details": {
+        "regression": "PASS"
+    },
+    "copyright": "Copyright © 2012 openEHR Foundation <http://www.openEHR.org>",
+    "licence": "Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>"
+}

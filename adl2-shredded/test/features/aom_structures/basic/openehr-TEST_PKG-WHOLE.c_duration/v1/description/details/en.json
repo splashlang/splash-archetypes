@@ -1,0 +1,9 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Simple test to demonstrate C_DURAITON constraints in two forms: the basic ISO8601 form, and the augmented openEHR form allowing weeks and days (typical to constrain pregnancy) as an alternative.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test"
+    ]
+}

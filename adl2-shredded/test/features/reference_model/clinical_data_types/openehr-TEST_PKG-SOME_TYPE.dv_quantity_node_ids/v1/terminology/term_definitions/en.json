@@ -1,0 +1,30 @@
+{
+    "id1": {
+        "text": "root item",
+        "description": "xxxx"
+    },
+    "at2": {
+        "text": "Centigrade temperature",
+        "description": "Centigrade temperature"
+    },
+    "at3": {
+        "text": "Fahrenheit temperature",
+        "description": "Fahrenheit temperature"
+    },
+    "id4": {
+        "text": "first instance",
+        "description": "first instance"
+    },
+    "id5": {
+        "text": "second instance",
+        "description": "second instance"
+    },
+    "at4": {
+        "text": "Temperature",
+        "description": "Temperature"
+    },
+    "at5": {
+        "text": "Temperature",
+        "description": "Temperature"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Representation of a person's additional demographic data,based on ISO standards.",
+    "use": "Used in demographic service to collect a person's additional demographic data",
+    "keywords": [
+        "demographic service",
+        "person's demographic data"
+    ],
+    "copyright": "copyright (c) 2010 openEHR foundation"
+}

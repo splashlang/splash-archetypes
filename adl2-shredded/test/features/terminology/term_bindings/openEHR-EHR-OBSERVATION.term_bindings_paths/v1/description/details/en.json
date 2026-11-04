@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Simple example of a term binding to a path rather than a code. The meaning of this is that the binding only relates to the node at the path, whereas with a code-only binding, it relates to every location where that node appears (e.g. due to use_node internal references) or that the code appears (due to static definition).",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "terminology bindings"
+    ]
+}

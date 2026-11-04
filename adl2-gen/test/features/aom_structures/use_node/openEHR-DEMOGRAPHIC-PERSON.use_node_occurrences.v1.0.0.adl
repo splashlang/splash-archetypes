@@ -1,0 +1,92 @@
+archetype (adl_version=2.3.0; rm_release=1.0.2; generated)
+	openEHR-DEMOGRAPHIC-PERSON.use_node_occurrences.v1.0.0
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"published">
+	original_author = <
+		["name"] = <"Thomas Beale">
+		["email"] = <"thomas.beale@openEHR.org">
+		["organisation"] = <"openEHR Foundation <http://www.openEHR.org>">
+		["date"] = <"2004-06-01">
+	>
+	custodian_namespace = <"org.openehr">
+	custodian_organisation = <"openEHR Foundation <http://www.openEHR.org>">
+	copyright = <"Copyright © 2004 openEHR Foundation <http://www.openEHR.org>">
+	licence = <"Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>">
+	other_details = <
+		["regression"] = <"PASS">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Example showing override of occurrences at source end of use_node. With no occurrences stated on a use_node node, the occurrences at target of the reference are used. This can be overridden as in this example with an occurrences at the source end.">
+			use = <"Regression testing">
+			keywords = <"ADL", "test", "use_node", "occurrences">
+		>
+	>
+
+definition
+	PERSON[id1] matches {
+		contacts matches {
+			CONTACT[id6] matches {
+				addresses matches {
+					ADDRESS[id7] occurrences matches {0..1} 
+					ADDRESS[id8] occurrences matches {0..2} 
+					ADDRESS[id9] 
+				}
+			}
+			CONTACT[id10] matches {
+				addresses matches {
+					ADDRESS[id7] occurrences matches {0..1} 
+					ADDRESS[id8] occurrences matches {0..2} 
+					ADDRESS[id9] occurrences matches {1..3} 
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"person demographics">
+				description = <"demographic person details">
+			>
+			["id6"] = <
+				text = <"home contact">
+				description = <"person's home contact details">
+			>
+			["id7"] = <
+				text = <"home phone number">
+				description = <"person's home phone number">
+			>
+			["id8"] = <
+				text = <"home fax number">
+				description = <"person's home fax number">
+			>
+			["id9"] = <
+				text = <"home email address">
+				description = <"person's home email address">
+			>
+			["id10"] = <
+				text = <"work contact">
+				description = <"person's home contact details">
+			>
+			["id11"] = <
+				text = <"work fax number">
+				description = <"person's work fax number">
+			>
+			["id12"] = <
+				text = <"work email address">
+				description = <"person's work email address">
+			>
+			["id13"] = <
+				text = <"work contact">
+				description = <"person's work contact details">
+			>
+		>
+	>
+

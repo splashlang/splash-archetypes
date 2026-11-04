@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Demonstrate constraint binding of individual terms to multiple terminologies, using URI references.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "terminology bindings"
+    ]
+}

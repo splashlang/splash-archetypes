@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test STCNT validity check, triggered when the terminology's term definitions are completely empty.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "validation",
+        "test"
+    ],
+    "copyright": "copyright (c) 2008 The openEHR Foundation"
+}

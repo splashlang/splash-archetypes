@@ -1,0 +1,7 @@
+{
+    "id": "openehr-TEST_PKG-SOME_TYPE.dv_ordinal_child.v1.0.0",
+    "artefact_type": "archetype",
+    "specialise": "openehr-TEST_PKG-SOME_TYPE.dv_ordinal_refinement.v1",
+    "adl_version": "2.0.5",
+    "rm_release": "1.0.2"
+}

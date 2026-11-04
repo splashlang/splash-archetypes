@@ -1,0 +1,68 @@
+{
+    "original_language": "en",
+    "translations": {
+        "de": {
+            "language": "de",
+            "author": {
+                "name": "Kim Sommer, Natalia Strauch",
+                "organisation": "MHH, Medizinische Hochschule Hannover",
+                "email": "sommer.kimkatrin@mh-hannover.de, Strauch.Natalia@mh-hannover.de"
+            }
+        },
+        "ru": {
+            "language": "ru",
+            "author": {
+                "name": "Art Latyp; Латыпов Артур",
+                "organisation": "RusBITech; РусБИТех, Москва"
+            },
+            "accreditation": "hmm"
+        },
+        "sv": {
+            "language": "sv",
+            "author": {
+                "name": "Sofia Lång Janstad, Sofia Janstad",
+                "organisation": "SLL",
+                "email": "sofia.lang-janstad@sll.se"
+            }
+        },
+        "nb": {
+            "language": "nb",
+            "author": {
+                "name": "John Tore Valand / Silje Ljosland Bakke",
+                "organisation": "Helse Bergen HF / Nasjonal IKT HF",
+                "email": "john.tore.valand@helse-bergen.no"
+            }
+        },
+        "pt-br": {
+            "language": "pt-br",
+            "author": {
+                "name": "Osmeire Chamelette Sanzovo",
+                "organisation": "Hospital Sírio Libanês",
+                "email": "osmeire.acsanzovo@hsl.org.br"
+            }
+        },
+        "ar-sy": {
+            "language": "ar-sy",
+            "author": {
+                "name": "Mona Saleh"
+            }
+        },
+        "sl": {
+            "language": "sl",
+            "author": {
+                "name": "Uroš Rajkovič, Biljana Prinčič",
+                "organisation": "Slovenia"
+            }
+        },
+        "es": {
+            "language": "es",
+            "author": {
+                "name": "Pablo Pazos",
+                "organisation": "CaboLabs",
+                "email": "pablo.pazos@cabolabs.com",
+                "pablo.pazos@cabolabs.com": "pablo.pazos@cabolabs.com"
+            },
+            "accreditation": "Computer Engineer"
+        }
+    }
+}

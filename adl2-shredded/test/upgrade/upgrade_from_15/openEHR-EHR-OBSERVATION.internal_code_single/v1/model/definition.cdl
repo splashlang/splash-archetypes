@@ -1,0 +1,31 @@
+	OBSERVATION[id1] matches {	-- Blood Pressure
+		data matches {
+			HISTORY[id2] matches {
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[id7] occurrences matches {0..*} matches {	-- any event
+						state matches {
+							ITEM_TREE[id8] matches {
+								items matches {
+									ELEMENT[id9] occurrences matches {0..1} matches {	-- Position
+										value matches {
+											DV_CODED_TEXT[id11] matches {
+												defining_code matches {[at11]}
+											}
+										}
+									}
+									ELEMENT[id10] occurrences matches {0..1} matches {	-- Sleep status
+										value matches {
+											DV_CODED_TEXT[id12] matches {
+												defining_code matches {[at12]}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

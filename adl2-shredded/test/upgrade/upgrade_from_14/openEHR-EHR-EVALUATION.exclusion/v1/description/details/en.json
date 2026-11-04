@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test redef of DV_TEXT into DV_TEXT and DV_CODED_TEXT",
+    "use": "Regression testing"
+}

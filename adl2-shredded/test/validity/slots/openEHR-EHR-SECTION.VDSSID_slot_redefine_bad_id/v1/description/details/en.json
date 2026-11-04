@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VDSSID validity check, triggered by slot redefinition that does not have same node id as in parent",
+    "use": "Regression testing"
+}

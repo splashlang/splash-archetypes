@@ -1,0 +1,14 @@
+{
+    "id0.34": {
+        "text": "Bodily fluid findings",
+        "description": "Findings related to a bodily fluid specimen."
+    },
+    "id0.36": {
+        "text": "Red cell count",
+        "description": "Red blood cell count in the bodily fluid.."
+    },
+    "id1.1": {
+        "text": "Microbiolology",
+        "description": "Generic laboratory test archetype for microbiology testing."
+    }
+}

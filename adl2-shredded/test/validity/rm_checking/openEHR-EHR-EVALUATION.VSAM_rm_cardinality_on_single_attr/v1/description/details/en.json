@@ -1,0 +1,9 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VSAM validity check, triggered by cardinality constraint defined on a single-valued attribute",
+    "use": "Regression testing",
+    "keywords": [
+        "test",
+        "RM checker"
+    ]
+}

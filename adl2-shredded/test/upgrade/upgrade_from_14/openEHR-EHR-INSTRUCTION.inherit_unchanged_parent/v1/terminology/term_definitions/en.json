@@ -1,0 +1,30 @@
+{
+    "id1": {
+        "text": "Healthcare service request",
+        "description": "Generic request for a range of different healthcare services e.g referral, lab request, equipment request."
+    },
+    "id2": {
+        "text": "Request",
+        "description": "Current Activity."
+    },
+    "id69": {
+        "text": "Urgency",
+        "description": "Urgency of the request."
+    },
+    "at137": {
+        "text": "Emergency",
+        "description": "The request is an emergency."
+    },
+    "at138": {
+        "text": "Urgent",
+        "description": "The request is urgent."
+    },
+    "at139": {
+        "text": "Routine",
+        "description": "The request is routine."
+    },
+    "ac1": {
+        "text": "Urgency (synthesised)",
+        "description": "Urgency of the request. (synthesised)"
+    }
+}

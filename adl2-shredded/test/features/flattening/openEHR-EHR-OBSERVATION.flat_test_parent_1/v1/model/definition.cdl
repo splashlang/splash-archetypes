@@ -1,0 +1,22 @@
+	OBSERVATION[id1] matches {	-- Pathology Test Result
+		data matches {
+			HISTORY[id2] matches {
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[id3] matches {	-- Any event
+						data matches {
+							ITEM_TREE[id4] matches {
+								items cardinality matches {2..*; unordered} matches {
+									ELEMENT[id6] matches {	-- Test Result Name
+										value matches {
+											DV_TEXT[id112] 
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

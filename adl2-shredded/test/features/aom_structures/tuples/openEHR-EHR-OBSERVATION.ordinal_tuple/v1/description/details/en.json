@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Example of a tuple used to model an 'ordinal' reference model concept. The latter is one in which there is logically a 2-column list of {value, symbol} pairs (the value is typically an Integer). The tuple constraint provides a nice way to model this, by limiting the possible pairs (mostly meaningless) to just those that make sense in the domain.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "tuples",
+        "ordinals"
+    ]
+}

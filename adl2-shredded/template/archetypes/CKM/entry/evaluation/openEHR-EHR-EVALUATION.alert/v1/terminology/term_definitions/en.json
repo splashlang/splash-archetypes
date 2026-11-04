@@ -1,0 +1,70 @@
+{
+    "id1": {
+        "text": "Alert",
+        "description": "Information pertaining to a subject of care that may need special consideration by a healthcare provider before making a decision about his/her actions in order to avert an unfavourable healthcare event, or relate to the safety of subject or providers, or pertain to special circumstances relevant to the delivery of care"
+    },
+    "id3": {
+        "text": "Category",
+        "description": "The category of alert"
+    },
+    "id4": {
+        "text": "Description",
+        "description": "Details of the alert"
+    },
+    "id5": {
+        "text": "Start of alert",
+        "description": "The date/time tat the issue or event commenced"
+    },
+    "id6": {
+        "text": "Certainty",
+        "description": "An indication of confidence concerning the existence of the alert"
+    },
+    "at7": {
+        "text": "Confirmed",
+        "description": "The event or alert has been confirmed"
+    },
+    "at8": {
+        "text": "Suspected",
+        "description": "The issue or event is suspected to be present"
+    },
+    "at9": {
+        "text": "Discounted",
+        "description": "The issue or event has been discounted"
+    },
+    "id10": {
+        "text": "Status",
+        "description": "An indication of whether the alert is considered to be an active or inactive issue"
+    },
+    "id11": {
+        "text": "Review on",
+        "description": "The date and time the alert requires review"
+    },
+    "at12": {
+        "text": "Active",
+        "description": "The alert is active"
+    },
+    "at13": {
+        "text": "Inactive",
+        "description": "The alert is not active at present"
+    },
+    "at14": {
+        "text": "Resolved",
+        "description": "The alert has resolved"
+    },
+    "id15": {
+        "text": "End of alert",
+        "description": "The end of the alert period if known"
+    },
+    "ac2": {
+        "text": "A category of alert based",
+        "description": "Coded categories of alerts based on a domain vocabulary"
+    },
+    "ac3": {
+        "text": "Certainty (synthesised)",
+        "description": "An indication of confidence concerning the existence of the alert (synthesised)"
+    },
+    "ac4": {
+        "text": "Status (synthesised)",
+        "description": "An indication of whether the alert is considered to be an active or inactive issue (synthesised)"
+    }
+}

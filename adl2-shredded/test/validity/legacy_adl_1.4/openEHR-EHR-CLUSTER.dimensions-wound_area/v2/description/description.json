@@ -1,0 +1,9 @@
+{
+    "lifecycle_state": "unmanaged",
+    "original_author": {
+        "name": "unknown"
+    },
+    "other_details": {
+        "regression": "PASS"
+    }
+}

@@ -1,0 +1,136 @@
+archetype (adl_version=2.3.0; rm_release=1.0.2; generated)
+	openEHR-EHR-OBSERVATION.VPOV_redef_ac_code_node_to_local_codes.v1.0.0
+
+specialize
+	openEHR-EHR-OBSERVATION.spec_test_obs2.v1
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"unmanaged">
+	original_author = <
+		["name"] = <"Thomas Beale">
+		["organisation"] = <"openEHR Foundation">
+		["date"] = <"11/6/2010">
+	>
+	other_details = <
+		["regression"] = <"VPOV">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Trigger VPOV error with illegal redefinition value-set redefinition">
+			use = <"Regression testing">
+		>
+	>
+
+definition
+	OBSERVATION[id1.1] matches {
+		data matches {
+			HISTORY[id12] matches {
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[id3] matches {
+						data matches {
+							ITEM_TREE[id13] matches {
+								items cardinality matches {2..*; ordered} matches {
+									ELEMENT[id4] matches {
+										value matches {
+											DV_TEXT[id14] 
+										}
+									}
+									ELEMENT[id5] matches {
+										value matches {
+											DV_CODED_TEXT[id15] matches {
+												defining_code matches {[ac3.1]}
+											}
+										}
+									}
+									ELEMENT[id11] occurrences matches {0..1} matches {
+										value matches {
+											DV_CODED_TEXT[id16] matches {
+												defining_code matches {[ac2]}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Observation">
+				description = <"Observation">
+			>
+			["id3"] = <
+				text = <"event">
+				description = <"event">
+			>
+			["id4"] = <
+				text = <"element 1">
+				description = <"element 1">
+			>
+			["id5"] = <
+				text = <"element 2">
+				description = <"element 2">
+			>
+			["at6"] = <
+				text = <"term 1">
+				description = <"term 1">
+			>
+			["at7"] = <
+				text = <"term 2">
+				description = <"term 2">
+			>
+			["at8"] = <
+				text = <"term 3">
+				description = <"term 3">
+			>
+			["at9"] = <
+				text = <"term 4">
+				description = <"term 4">
+			>
+			["at10"] = <
+				text = <"term 5">
+				description = <"term 5">
+			>
+			["id11"] = <
+				text = <"element 3">
+				description = <"element 3">
+			>
+			["ac2"] = <
+				text = <"ref set X">
+				description = <"ref set X">
+			>
+			["ac3"] = <
+				text = <"element 2">
+				description = <"element 2">
+			>
+			["id1.1"] = <
+				text = <"Observation">
+				description = <"Observation">
+			>
+			["ac3.1"] = <
+				text = <"value set 1">
+				description = <"value set 1">
+			>
+			["at0.1"] = <
+				text = <"new code">
+				description = <"new code">
+			>
+		>
+	>
+	value_sets = <
+		["ac3.1"] = <
+			id = <"ac3.1">
+			members = <"at6", "at7", "at8", "at9", "at10", "at0.1">
+		>
+	>
+

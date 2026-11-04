@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::de]",
+    "purpose": "Zur Dokumentation beliebiger Warnungen in der Patientenakte",
+    "use": "test use",
+    "keywords": [
+        "notabene",
+        "Warnung"
+    ],
+    "misuse": "",
+    "copyright": "copyright (c) 2010 openEHR Foundation"
+}

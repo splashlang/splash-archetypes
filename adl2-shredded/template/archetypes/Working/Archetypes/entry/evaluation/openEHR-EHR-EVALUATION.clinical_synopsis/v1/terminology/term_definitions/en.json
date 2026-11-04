@@ -1,0 +1,14 @@
+{
+    "id1": {
+        "text": "Clinical Synopsis - SG",
+        "description": "Narrative summary or overview about a patient, specifically from the perspective of a healthcare provider, and with or without associated interpretations."
+    },
+    "id3": {
+        "text": "Synopsis",
+        "description": "The summary, assessment, conclusions or evaluation of the clinical findings."
+    },
+    "id4": {
+        "text": "Synopsis type",
+        "description": "*"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Illustrates behaviour of workbench when DV_QUANTITY field of wrong type - magnitudes are wrongly integers not reals - these are silently converted",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "tuples",
+        "quantity"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Illustrates variationns on DV_QUANTITY constraints",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "quantities"
+    ]
+}

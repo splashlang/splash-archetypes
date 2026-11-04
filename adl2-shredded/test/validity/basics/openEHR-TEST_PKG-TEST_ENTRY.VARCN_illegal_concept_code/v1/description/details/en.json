@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VARCN validity check, triggered when illegal concept code is used in the definition - id2 should be id1.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "validation",
+        "test"
+    ],
+    "copyright": "copyright (c) 2008 The openEHR Foundation"
+}

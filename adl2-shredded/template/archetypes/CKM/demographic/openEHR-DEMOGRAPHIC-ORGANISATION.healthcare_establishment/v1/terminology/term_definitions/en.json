@@ -1,0 +1,18 @@
+{
+    "id1": {
+        "text": "Organisation",
+        "description": "Organisation demographic data"
+    },
+    "id2": {
+        "text": "Identification",
+        "description": "Identification - the names the organisation is known by"
+    },
+    "id4": {
+        "text": "Name",
+        "description": "An organisation name"
+    },
+    "id5": {
+        "text": "Identifier",
+        "description": "An organisation Identifier"
+    }
+}

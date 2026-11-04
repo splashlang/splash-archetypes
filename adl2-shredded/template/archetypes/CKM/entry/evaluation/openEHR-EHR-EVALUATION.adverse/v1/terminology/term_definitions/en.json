@@ -1,0 +1,138 @@
+{
+    "id1": {
+        "text": "Adverse reaction",
+        "description": "Recording the presence of a harmful or undesirable response to an agent or substance including food, as determined by the clinician - excluding poisoning and abnormal use"
+    },
+    "id4": {
+        "text": "Agent",
+        "description": "The agent or substance or class that caused the adverse reaction."
+    },
+    "id5": {
+        "text": "Probability of causation",
+        "description": "Degree of certainty that the agent was the cause of the reaction."
+    },
+    "at6": {
+        "text": "Certain/Highly likely",
+        "description": "A reaction to the agent is deemed to be or have been present by the clinician."
+    },
+    "at7": {
+        "text": "Probable",
+        "description": "The reaction is deemed to be the probable cause of the reaction."
+    },
+    "at8": {
+        "text": "Possible",
+        "description": "The agent is deemed to be a possible cause of the reaction."
+    },
+    "id11": {
+        "text": "Agent category",
+        "description": "The category of the agent."
+    },
+    "at12": {
+        "text": "Food",
+        "description": "A substance taken as part of the diet."
+    },
+    "at13": {
+        "text": "Animal",
+        "description": "A living organism or its venom or produce."
+    },
+    "at14": {
+        "text": "Medication",
+        "description": "A substance taken or applied  for medicinal purposes."
+    },
+    "at15": {
+        "text": "Other chemical or substance",
+        "description": "Non-medicinal chemicals or substances."
+    },
+    "id16": {
+        "text": "Reaction category",
+        "description": "The type of reaction experience by the person as determined by the clinician."
+    },
+    "at17": {
+        "text": "Intolerance",
+        "description": "Leads to unpleasant symptoms which are sufficient to avoid use in the future."
+    },
+    "at18": {
+        "text": "Sensitivity",
+        "description": "Leads to morbidity which is potentially threatening to the wellbeing of the person."
+    },
+    "at19": {
+        "text": "Allergy",
+        "description": "Leads to an IgE mediated reaction."
+    },
+    "id20": {
+        "text": "Exposure and reaction detail",
+        "description": "Details of the reaction experienced by the person."
+    },
+    "id21": {
+        "text": "Date of exposure",
+        "description": "The date (+/- time) when the person became exposed to the agent."
+    },
+    "id22": {
+        "text": "Duration of the exposure",
+        "description": "The duration of the exposure to the agent."
+    },
+    "id23": {
+        "text": "Reaction description",
+        "description": "A description of the reaction to this agent as experienced by the person."
+    },
+    "id24": {
+        "text": "Reaction severity",
+        "description": "The category of the reaction."
+    },
+    "at25": {
+        "text": "Mild",
+        "description": "A reaction which causes little distress and no loss of work/school."
+    },
+    "at26": {
+        "text": "Disabling",
+        "description": "A reaction which causes morbidity and/or loss of function."
+    },
+    "at27": {
+        "text": "Life threatening",
+        "description": "A reaction which was or could be lifethreatening."
+    },
+    "id28": {
+        "text": "Date of onset of reaction",
+        "description": "The date/time the reaction commenced."
+    },
+    "id29": {
+        "text": "Duration of the reaction",
+        "description": "The duration of the reaction."
+    },
+    "at31": {
+        "text": "No reaction",
+        "description": "Person has been exposed with no reaction."
+    },
+    "at32": {
+        "text": "Non-active ingredient of medication",
+        "description": "A non-medicinal ingredient of medication such as colouring, preservative, etc.(subtype of other chemical)"
+    },
+    "id33": {
+        "text": "Specific substance",
+        "description": "The specific substance that caused the reaction if different from the agent (e.g. brands or members of a class)."
+    },
+    "at34": {
+        "text": "Imaging dye or media",
+        "description": "A dye or media used in diagnostic imaging (subtype of other chemical)."
+    },
+    "at35": {
+        "text": "Environmental",
+        "description": "An agent present in the environment."
+    },
+    "ac1": {
+        "text": "Agent category (synthesised)",
+        "description": "The category of the agent. (synthesised)"
+    },
+    "ac2": {
+        "text": "Reaction category (synthesised)",
+        "description": "The type of reaction experience by the person as determined by the clinician. (synthesised)"
+    },
+    "ac3": {
+        "text": "Probability of causation (synthesised)",
+        "description": "Degree of certainty that the agent was the cause of the reaction. (synthesised)"
+    },
+    "ac4": {
+        "text": "Reaction severity (synthesised)",
+        "description": "The category of the reaction. (synthesised)"
+    }
+}

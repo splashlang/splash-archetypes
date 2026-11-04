@@ -1,0 +1,13 @@
+{
+    "language": "[ISO_639-1::de]",
+    "purpose": "Zur Dokumentation von Nebenwirkungen auf einen bestimmten Wirkstoff. Die Art dieses Stoffes kann ebenfalls Dokumentiert werden. Früherer Aufzeichnungen können hinzugefügt werden und auch die Art der Reaktion beim jeweiligen Ereignis.",
+    "use": "test use",
+    "keywords": [
+        "Reaktion",
+        "allergisch",
+        "Allergie",
+        "Intoleranz"
+    ],
+    "misuse": "Nicht zur Dokumentation keines Verlaufs einer Reaktion auf eine Substanz. Für diesen Zweck openEHR-EVALUATION.excluded-adverse  benutzen. Für unbekannte Reaktionen auf beliebige Wirkstoffe openEHR-EVALUATION.excluded benutzen.",
+    "copyright": "copyright (c) 2010 openEHR Foundation"
+}

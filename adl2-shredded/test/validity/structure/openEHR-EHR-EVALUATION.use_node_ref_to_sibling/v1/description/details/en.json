@@ -1,0 +1,9 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Use node ref (object proxy) whose target at-code is same as at-code of a sibling node of the proxy",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test"
+    ]
+}

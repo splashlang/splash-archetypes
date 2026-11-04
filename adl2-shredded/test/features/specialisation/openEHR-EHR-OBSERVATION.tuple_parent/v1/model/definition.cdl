@@ -1,0 +1,41 @@
+	OBSERVATION[id1] matches {	-- Intravascular pressure
+		data matches {
+			HISTORY[id2] matches {
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[id3] occurrences matches {0..*} matches {	-- Any event
+						data matches {
+							ITEM_TREE[id4] matches {
+								items cardinality matches {1; ordered} matches {
+									ELEMENT[id6] occurrences matches {0..1} matches {	-- Pressure
+										value matches {
+											DV_QUANTITY[id42] matches {
+												property matches {[at29]}
+												[magnitude, units, precision] matches {
+													[{|>=0.0|}, {"mm[Hg]"}, {2}],
+													[{|>=0.0|}, {"cm[H20]"}, {2}]
+												}
+											}
+										}
+									}
+									ELEMENT[id16] occurrences matches {0..1} matches {	-- Ordinal
+										value matches {
+											DV_ORDINAL[id43] matches {
+												[value, symbol] matches {
+													[{0}, {[at17]}],
+													[{2}, {[at18]}],
+													[{4}, {[at19]}],
+													[{6}, {[at20]}],
+													[{8}, {[at21]}]
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

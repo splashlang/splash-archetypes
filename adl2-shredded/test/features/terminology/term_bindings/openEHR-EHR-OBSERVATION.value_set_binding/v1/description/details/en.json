@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Example of bindings to value sets (signified by ac codes) rather than individual codes.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "terminology bindings"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "id1.1": {
+        "text": "Adverse reaction exclusions",
+        "description": "A category of conditions or states which have been excluded as cause of adverse reaction"
+    },
+    "at0.3": {
+        "text": "No known adverse reactions",
+        "description": "No known adverse reactions to any substance."
+    },
+    "at0.4": {
+        "text": "No known allergic reactions",
+        "description": "No known allergic reactions to any substance."
+    },
+    "at0.5": {
+        "text": "No known hypersensitivity reactions",
+        "description": "No known hypersensitivity reaction to any substance."
+    },
+    "at0.6": {
+        "text": "No known intolerances",
+        "description": "*"
+    },
+    "ac1.1": {
+        "text": "(added by post-parse processor)",
+        "description": "(added by post-parse processor)"
+    }
+}

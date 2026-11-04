@@ -1,0 +1,153 @@
+	EVALUATION[id1] matches {	-- Risk of condition based on family history
+		data matches {
+			ITEM_TREE[id2] matches {
+				items cardinality matches {1..*; ordered} matches {
+					ELEMENT[id3] matches {	-- Index condition
+						value matches {
+							DV_TEXT[id131] 
+						}
+					}
+					ELEMENT[id5] occurrences matches {0..1} matches {	-- Assessed risk
+						value matches {
+							DV_CODED_TEXT[id132] matches {
+								defining_code matches {[ac2]}		-- Assessed risk
+							}
+						}
+					}
+					CLUSTER[id102] occurrences matches {0..1} matches {	-- Affected relatives
+						items matches {
+							CLUSTER[id103] occurrences matches {0..*} matches {	-- Relative
+								name matches {
+									DV_CODED_TEXT[id133] matches {
+										defining_code matches {[ac1]}		-- Relationship
+									}
+								}
+								items matches {
+									ELEMENT[id104] occurrences matches {0..1} matches {	-- Name
+										value matches {
+											DV_TEXT[id134] 
+										}
+									}
+									ELEMENT[id105] occurrences matches {0..1} matches {	-- Age at onset
+										value matches {
+											DV_QUANTITY[id135] matches {
+												property matches {[at127]}
+												[units, magnitude] matches {
+													[{"yr"}, {|0.0..200.0|}],
+													[{"mth"}, {|0.0..36.0|}],
+													[{"wk"}, {|0.0..52.0|}],
+													[{"day"}, {|0.0..56.0|}]
+												}
+											}
+										}
+									}
+									ELEMENT[id128] occurrences matches {0..1} matches {	-- Date of onset
+										value matches {
+											DV_DATE[id136] matches {
+												value matches {yyyy-??-??}
+											}
+										}
+									}
+									ELEMENT[id106] occurrences matches {0..1} matches {	-- Age at death
+										value matches {
+											DV_QUANTITY[id137] matches {
+												property matches {[at128]}
+												units matches {"yr"}
+												magnitude matches {|0.0..200.0|}
+											}
+										}
+									}
+									ELEMENT[id107] occurrences matches {0..1} matches {	-- Date of death
+										value matches {
+											DV_DATE[id138] matches {
+												value matches {yyyy-??-??}
+											}
+										}
+									}
+									ELEMENT[id108] occurrences matches {0..1} matches {	-- Index condition was cause of death
+										value matches {
+											DV_BOOLEAN[id139] matches {
+												value matches {True, False}
+											}
+										}
+									}
+									ELEMENT[id109] occurrences matches {0..1} matches {	-- Severity
+										value matches {
+											DV_ORDINAL[id140] matches {
+												[value, symbol] matches {
+													[{1}, {[at110]}],
+													[{4}, {[at111]}],
+													[{7}, {[at112]}]
+												}
+											}
+										}
+									}
+									ELEMENT[id129] occurrences matches {0..1} matches {	-- More specific condition
+										value matches {
+											DV_TEXT[id141] 
+										}
+									}
+									ELEMENT[id113] occurrences matches {0..1} matches {	-- Clinical description
+										value matches {
+											DV_TEXT[id142] 
+										}
+									}
+									ELEMENT[id114] occurrences matches {0..1} matches {	-- Genetic relative
+										value matches {
+											DV_BOOLEAN[id143] matches {
+												value matches {True, False}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					CLUSTER[id115] occurrences matches {0..*} matches {	-- Affected ratio
+						items cardinality matches {1..4; ordered} matches {
+							ELEMENT[id116] occurrences matches {0..1} matches {	-- Degree
+								value matches {
+									DV_CODED_TEXT[id144] matches {
+										defining_code matches {[ac3]}		-- Degree
+									}
+								}
+							}
+							ELEMENT[id123] occurrences matches {0..1} matches {	-- Gender
+								value matches {
+									DV_CODED_TEXT[id145] matches {
+										defining_code matches {[ac4]}		-- Gender
+									}
+								}
+							}
+							ELEMENT[id127] occurrences matches {0..1} matches {	-- Number unaffected
+								value matches {
+									DV_COUNT[id146] matches {
+										magnitude matches {|0..100|}
+									}
+								}
+							}
+							ELEMENT[id130] matches {	-- Number affected
+								value matches {
+									DV_COUNT[id147] matches {
+										magnitude matches {|0..100|}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_LIST[id11] matches {
+				items matches {
+					ELEMENT[id12] occurrences matches {0..1} matches {	-- Risk calculation
+						value matches {
+							DV_TEXT[id148] 
+						}
+					}
+				}
+			}
+		}
+	}
+

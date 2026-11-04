@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test slot archetype with non-any include and exclude = any, which corresponds to 'hard' includes.",
+    "use": "Regression testing"
+}

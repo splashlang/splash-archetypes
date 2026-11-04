@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Trigger VPOV error with illegal redefinition value-set redefinition",
+    "use": "Regression testing"
+}

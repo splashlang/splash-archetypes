@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Example of rewriting of external value set, designated by ac-code in an ADL 1.4 archetype, to an ADL 2.0 value set.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "value sets"
+    ]
+}

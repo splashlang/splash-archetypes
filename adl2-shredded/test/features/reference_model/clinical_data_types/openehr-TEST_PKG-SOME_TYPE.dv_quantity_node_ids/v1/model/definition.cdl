@@ -1,0 +1,13 @@
+	SOME_TYPE[id1] matches {	-- root item
+		clinical_quantity_attr_2 matches {
+			DV_QUANTITY[id4] matches {	-- first instance
+				property matches {[at4]}
+				units matches {"C", "F"}
+			}
+			DV_QUANTITY[id5] matches {	-- second instance
+				property matches {[at5]}
+				units matches {"K", "F"}
+			}
+		}
+	}
+

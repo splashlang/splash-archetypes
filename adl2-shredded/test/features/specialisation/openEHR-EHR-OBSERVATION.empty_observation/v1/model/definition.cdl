@@ -1,0 +1,10 @@
+    OBSERVATION[id1] matches {                -- observation
+        protocol matches {                    -- existence not changed from reference model
+            ITEM_TREE[id2]  matches {
+                items cardinality matches {5..10} matches {
+				    ELEMENT[id6]
+			    }
+            }
+        }
+   }
+

@@ -1,0 +1,54 @@
+archetype (adl_version=2.3.0; rm_release=1.0.2; generated)
+	org.openehr::openEHR-EHR-OBSERVATION.ns_inherit_ns.v1.3.15-alpha.47
+
+specialize
+	org.openehr::openEHR-EHR-OBSERVATION.full_id_1.v1
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"published">
+	original_author = <
+		["name"] = <"Thomas Beale">
+		["email"] = <"thomas.beale@openEHR.org">
+		["organisation"] = <"openEHR Foundation <http://www.openEHR.org>">
+		["date"] = <"2008-08-11">
+	>
+	custodian_namespace = <"org.openehr">
+	custodian_organisation = <"openEHR Foundation <http://www.openEHR.org>">
+	copyright = <"Copyright © 2008 openEHR Foundation <http://www.openEHR.org>">
+	licence = <"Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>">
+	other_details = <
+		["regression"] = <"PASS">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Test full namespaced and versioned id that includes semver.org style 'alpha' qualifier at the end.">
+			use = <"Regression testing">
+			keywords = <"ADL", "identifiers", "test">
+		>
+	>
+
+definition
+	OBSERVATION[id1.1] matches {
+		data matches {
+			HISTORY[id0.3] 
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"top-level archetype">
+				description = <"top level test archetype for specialisation lineage">
+			>
+			["id1.1"] = <
+				text = <"specialised archetype">
+				description = <"specialised child archetype">
+			>
+		>
+	>
+

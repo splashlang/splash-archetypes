@@ -1,0 +1,53 @@
+	EXTRACT[id1] matches {	-- Simple discharge summary
+		chapters matches {
+			EXTRACT_CHAPTER[id3] matches {	-- Participations
+				items matches {
+					GENERIC_CONTENT_ITEM[id4] occurrences matches {1} matches {	-- Patient demographic content
+						item matches {
+							allow_archetype PERSON[id101] matches {	-- Patient demographics slot
+								include
+									archetype_id/value matches {/openEHR-DEMOGRAPHIC-PERSON\..*/}
+								exclude
+									archetype_id/value matches {/.*/}
+							}
+						}
+					}
+					GENERIC_CONTENT_ITEM[id5] occurrences matches {1} matches {	-- Healthcare establishment demographic content
+						item matches {
+							allow_archetype ORGANISATION[id102] matches {	-- Healthcare establishment demographics slot
+								include
+									archetype_id/value matches {/openEHR-DEMOGRAPHIC-ORGANISATION\..*/}
+								exclude
+									archetype_id/value matches {/.*/}
+							}
+						}
+					}
+					GENERIC_CONTENT_ITEM[id6] occurrences matches {1..*} matches {	-- Healthcare professional demographic content
+						item matches {
+							allow_archetype PERSON[id103] matches {	-- Healthcare individual provider demographics slot
+								include
+									archetype_id/value matches {/openEHR-DEMOGRAPHIC-PERSON\..*/}
+								exclude
+									archetype_id/value matches {/.*/}
+							}
+						}
+					}
+				}
+			}
+			EXTRACT_CHAPTER[id2] matches {	-- Subject
+				items matches {
+					GENERIC_CONTENT_ITEM[id7] occurrences matches {1} matches {	-- Clinical data
+						item matches {
+							allow_archetype COMPOSITION[id104] matches {	-- Patient discharge data slot
+								include
+									archetype_id/value matches {/openEHR-EHR-COMPOSITION\..*/}
+								exclude
+									archetype_id/value matches {/.*/}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

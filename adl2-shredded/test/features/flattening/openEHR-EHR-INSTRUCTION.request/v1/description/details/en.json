@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Parent archetype for archetypes testing flattening when child archetype contains a differential path with an overridden id code.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "flattening",
+        "test"
+    ]
+}

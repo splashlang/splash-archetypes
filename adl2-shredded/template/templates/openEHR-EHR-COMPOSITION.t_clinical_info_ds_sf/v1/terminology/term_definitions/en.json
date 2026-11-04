@@ -1,0 +1,42 @@
+{
+    "id1.1": {
+        "text": "Clinical detail",
+        "description": "Clinical detail of Simple discharge summary"
+    },
+    "id0.1": {
+        "text": "Event data",
+        "description": "Event data"
+    },
+    "id0.2": {
+        "text": "Allergies & adverse reactions",
+        "description": "Allergies & adverse reactions"
+    },
+    "id0.3": {
+        "text": "Alerts",
+        "description": "Alerts"
+    },
+    "id0.4": {
+        "text": "Clinical synopsis",
+        "description": "Clinical synopsis"
+    },
+    "id0.5": {
+        "text": "Diagnosis",
+        "description": "Diagnosis"
+    },
+    "id0.6": {
+        "text": "Investigations",
+        "description": "Investigations"
+    },
+    "id0.7": {
+        "text": "Medications",
+        "description": "Medications"
+    },
+    "id0.8": {
+        "text": "Procedures",
+        "description": "Procedures"
+    },
+    "id0.9": {
+        "text": "Medical certificate",
+        "description": "Medical certificate"
+    }
+}

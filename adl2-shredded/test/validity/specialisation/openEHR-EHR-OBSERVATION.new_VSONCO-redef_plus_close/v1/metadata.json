@@ -1,0 +1,7 @@
+{
+    "id": "openEHR-EHR-OBSERVATION.new_VSONCO-redef_plus_close.v1.0.0",
+    "artefact_type": "archetype",
+    "specialise": "openEHR-EHR-OBSERVATION.test_new_VSONCO_parent.v1.0.0",
+    "adl_version": "2.0.5",
+    "rm_release": "1.0.2"
+}

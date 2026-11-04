@@ -1,0 +1,6 @@
+	OBSERVATION[id1.1] matches {	-- Observation
+		/data/events[id3]/data/items matches {
+			ELEMENT[id11.1] 	-- Element that has no corresponding parent
+		}
+	}
+

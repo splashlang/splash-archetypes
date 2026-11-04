@@ -1,0 +1,142 @@
+{
+    "id1": {
+        "text": "Endereço",
+        "description": "Endereço."
+    },
+    "id2": {
+        "text": "Itens do endereço",
+        "description": "Itens do endereço."
+    },
+    "id3": {
+        "text": "Linhas de endereço",
+        "description": "Uma composição de um ou mais componentes padrões do endereço que fornece uma descrição geográfica/física de uma localização e que, usada em conjunto com outros componentes de nível mais alto do endereço, isto é, 'Subúrbio/cidade/nome da localidade', 'Código Postal', 'Estado/território/província', e 'País', formam um endereço geográfico/físico completo."
+    },
+    "id4": {
+        "text": "Caixa Postal",
+        "description": "Um número único atribuído a um endereço postal conforme designado pelo serviço postal."
+    },
+    "id5": {
+        "text": "CEP",
+        "description": "O código para uma área de entrega postal, alinhada com a localidade, subúrbio ou local para o endereço, conforme definido pelo serviço postal."
+    },
+    "id6": {
+        "text": "Município",
+        "description": "O nome completo da localidade que contém o endereço específico de uma pessoa/organização."
+    },
+    "id7": {
+        "text": "Estado",
+        "description": "Um identificador da Província, Estado ou Território que contém o endereço."
+    },
+    "id8": {
+        "text": "País",
+        "description": "Um código que representa o país componente de um endereço."
+    },
+    "id9": {
+        "text": "Indicador de acurácia da data de início de validade do endereço",
+        "description": "Uma indicação da acurácia da data de início de validade do endereço. Ela é expressa por meio de uma sequência de três caracteres com os valores possíveis A (acurada), E (estimada) ou U (desconhecida) cada um. Os caracteres representam a acurácia para o ano, mês e ano respectivamente. Este elemento foi introduzido para permitir a representação da acurácia de acordo com a norma ISO 22220, mas o modelo de referência do openEHR representa a acurácia da data de modo diferente (veja a especificação dos tipos de dados)."
+    },
+    "id10": {
+        "text": "Indicador de acurácia da data final de validade do endereço",
+        "description": "Uma indicação da acurácia da data final de validade do endereço. Ela é expressa por meio de uma sequência de três caracteres com os valores possíveis A (acurada), E (estimada) ou U (desconhecida) cada um. Os caracteres representam a acurácia para o ano, mês e ano respectivamente. Este elemento foi introduzido para permitir a representação da acurácia de acordo com a norma ISO 22220, mas o modelo de referência do openEHR representa a acurácia da data de modo diferente (veja a especificação dos tipos de dados)."
+    },
+    "id11": {
+        "text": "Componentes locais de alto nível do endereço",
+        "description": "Componentes locais de alto nível do endereço. Arquétipos que incluem outros elementos não presentes na ISO/TS22220 para satisfazer a requisitos locais como bairro, setor censitário, etc."
+    },
+    "id22": {
+        "text": "Abreviação do tipo de sub-unidade",
+        "description": "A especificação do tipo de uma parte identificada separadamente em um edifício/complexo, marina, etc, para distinguí-la de outras."
+    },
+    "id23": {
+        "text": "Número da sub-unidade",
+        "description": "A especificação do número do identificador de um edifício/complexo, marina, etc, para distinguí-lo de outros."
+    },
+    "id24": {
+        "text": "Nome do edifício/propriedade",
+        "description": "O nome completo usado para identificar a propriedade física ou o edifício como parte de sua localização."
+    },
+    "id25": {
+        "text": "Número do andar/nível",
+        "description": "Descritor usado para identificar o andar ou nível de um complexo/edifício de múltiplos andares."
+    },
+    "id26": {
+        "text": "Tipo do andar/nível",
+        "description": "Descritor usado para classificar o tipo de andar ou nível de um complexo/edifício de múltiplos andares."
+    },
+    "id27": {
+        "text": "Número do lote",
+        "description": "Seção, Número no Loteamento."
+    },
+    "id28": {
+        "text": "Tipo do Logradouro",
+        "description": "Um código que identifica o tipo de logradouro público."
+    },
+    "id29": {
+        "text": "Logradouro",
+        "description": "O nome que identifica um logradouro público e o diferencia de outros no mesmo subúrbio/cidade/localidade."
+    },
+    "id30": {
+        "text": "Número",
+        "description": "O número de referência (numérico ou string) da residência ou propriedade que é único em um nome de logradouro, subúrbio."
+    },
+    "id31": {
+        "text": "Sufixo do logradouro",
+        "description": "Termo usado para qualificar um nome de logradouro adequado para uma referência direcional."
+    },
+    "id32": {
+        "text": "Linha de endereço",
+        "description": "Linha de endereço completa."
+    },
+    "id33": {
+        "text": "Componentes locais da linha de endereço",
+        "description": "Componentes locais da linha de endereço. Arquétipos que incluem outros elementos não presentes na ISO/TS22220 para satisfazer a requisitos locais."
+    },
+    "at462": {
+        "text": "Comercial",
+        "description": "Usado para indicar um endereço que é a localização física de um escritório ou de um negócio no qual uma entidade pode ser contactada."
+    },
+    "at463": {
+        "text": "Correio ou postal",
+        "description": "Usado para indicar um endereço que é somente para correspondência e/ou cobrança."
+    },
+    "at464": {
+        "text": "Acomodação temporária",
+        "description": "Acomodação temporária (tal como um endereço de uma pessoa que usualmente reside no exterior ou onde o fornecedor do endereço está em uma acomodação temporária devido a renovação ou tratamento)."
+    },
+    "at465": {
+        "text": "Residencial",
+        "description": "Usado para indicar onde a pessoa está morando. Observe que este código não é válido para organizações."
+    },
+    "at466": {
+        "text": "Sem endereço fixo",
+        "description": "Usado onde a pessoa não possui endereço fixo."
+    },
+    "at467": {
+        "text": "Desconhecido/Não declarado/Descrito inadequadamente",
+        "description": "Desconhecido/Não declarado/Descrito inadequadamente pode também ser usado onde a pessoa não possui endereço fixo ou não deseja ter o seu endereço residencial ou para correspondência registrado."
+    },
+    "ac1": {
+        "text": "Códigos de tipos de edifício",
+        "description": "Códigos válidos para tipo de edifício"
+    },
+    "ac2": {
+        "text": "Códigos de logradouros",
+        "description": "Códigos válidos para tipo de logradouro"
+    },
+    "ac3": {
+        "text": "Códigos de sufixos de logradouro",
+        "description": "Códigos válidos para sufixos de logradouro"
+    },
+    "ac4": {
+        "text": "Códigos de estados",
+        "description": "Códigos válidos para estados"
+    },
+    "ac5": {
+        "text": "Códigos de países",
+        "description": "Códigos válidos para países"
+    },
+    "ac6": {
+        "text": "Endereço (synthesised)",
+        "description": "Endereço. (synthesised)"
+    }
+}

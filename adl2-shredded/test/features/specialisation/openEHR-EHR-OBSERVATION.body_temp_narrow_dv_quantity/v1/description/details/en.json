@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Specialised archetype illustrating constraint narrowing of a DV_QUANTITY. In this example, the two logical possibilities from the parent, i.e. deg F and deg C are reduced to just the deg C constraint.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "specialisation",
+        "constraint narrowing"
+    ]
+}

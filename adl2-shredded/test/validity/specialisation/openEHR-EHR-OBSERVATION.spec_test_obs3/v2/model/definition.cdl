@@ -1,0 +1,30 @@
+	OBSERVATION[id1] matches {	-- obs
+		data matches {
+			HISTORY[id3] matches {	-- history
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[id4] occurrences matches {0..*} matches {	-- event
+						data matches {
+							ITEM_TREE[id2] matches {	-- tree
+								items matches {
+									CLUSTER[id6] occurrences matches {0..1} matches {	-- cluster
+										items cardinality matches {1..8; ordered} matches {
+											ELEMENT[id5] occurrences matches {0..1} matches {	-- element
+												value matches {
+													DV_QUANTITY[id7] matches {
+														property matches {[at1]}
+														units matches {"kPa"}
+														magnitude matches {|>=0.0|}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

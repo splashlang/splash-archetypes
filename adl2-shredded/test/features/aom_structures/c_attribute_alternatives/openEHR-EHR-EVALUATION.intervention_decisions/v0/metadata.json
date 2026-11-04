@@ -1,0 +1,8 @@
+{
+    "id": "openEHR-EHR-EVALUATION.intervention_decisions.v0.0.0",
+    "artefact_type": "archetype",
+    "adl_version": "2.0.6",
+    "rm_release": "1.0.3",
+    "generated": true,
+    "uid": "b283becd-5dc5-49ea-867d-4666fb0c5957"
+}

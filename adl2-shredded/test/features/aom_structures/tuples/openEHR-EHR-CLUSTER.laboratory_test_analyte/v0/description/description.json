@@ -1,0 +1,16 @@
+{
+    "lifecycle_state": "unmanaged",
+    "original_author": {
+        "name": "Thomas Beale",
+        "organisation": "openEHR Foundation",
+        "email": "thomas.beale@openEHR.org",
+        "date": "2018-03-01"
+    },
+    "original_namespace": "org.openehr",
+    "original_publisher": "openEHR Foundation",
+    "copyright": "© 2018 openEHR Foundation",
+    "licence": "This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.",
+    "other_details": {
+        "regression": "PASS"
+    }
+}

@@ -1,0 +1,7 @@
+	OBSERVATION[id1.1] matches {	-- Body temperature new GP
+		/data[id3]/events[id4]/state existence matches {0} 
+		/protocol[id21]/items matches {
+			allow_archetype CLUSTER[id60] occurrences matches {0} 
+		}
+	}
+

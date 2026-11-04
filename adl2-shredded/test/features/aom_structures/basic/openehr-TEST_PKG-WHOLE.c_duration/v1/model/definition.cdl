@@ -1,0 +1,5 @@
+	WHOLE[id1] matches {	-- test entry
+		duration_attr1 matches {PT0S}
+		duration_attr2 matches {PWD/PT0S}
+	}
+

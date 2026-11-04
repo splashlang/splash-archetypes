@@ -1,0 +1,16 @@
+{
+    "original_author": {
+        "name": "Sam Heard",
+        "organisation": "Ocean Informatics",
+        "email": "sam.heard@oceaninformatics.com",
+        "date": "23/04/2006"
+    },
+    "lifecycle_state": "unmanaged",
+    "other_contributors": [
+        "General Practice Computing Group (Australia)"
+    ],
+    "other_details": {
+        "MD5-CAM-1.0.1": "643632AD102F4F87F4DD118BAF96406A",
+        "references": "Adverse Reactions (Data Specifications) Version 1.0 [Internet]. Sydney, Australia: National E-Health Transition Authority; 2007 Jun 29 [cited 2009 Jul 03]; Available at http://www.nehta.gov.au/DGL/Resources/Downloads/Adverse%20Reaction%20v1.0.pdf"
+    }
+}

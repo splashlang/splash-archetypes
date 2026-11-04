@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Illustrates DV_QUANTITY tuple constraints",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "tuples",
+        "quantities"
+    ]
+}

@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Example of merging child nodes into parent in a specific order.",
+    "use": "Regression testing"
+}

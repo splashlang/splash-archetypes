@@ -1,0 +1,22 @@
+{
+    "original_language": "en",
+    "translations": {
+        "fr": {
+            "language": "fr",
+            "author": {
+                "name": "Frederik Tyler",
+                "email": "freddy@something.somewhere.co.uk"
+            },
+            "accreditation": "British Medical Translator id 00400595"
+        },
+        "ru": {
+            "language": "ru",
+            "author": {
+                "name": "Nina Alexandrovna",
+                "organisation": "Dostoevsky Media Services",
+                "email": "nina@translation.dms.ru"
+            },
+            "accreditation": "Russian Translator id 892230-3A"
+        }
+    }
+}

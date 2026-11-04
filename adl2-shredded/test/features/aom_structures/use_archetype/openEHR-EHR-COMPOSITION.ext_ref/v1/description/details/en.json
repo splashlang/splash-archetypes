@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Example of an external reference, expressed using the 'use_archetype' keyword. This defines a direct association between the archetypes, without the need for a slot, and a corresponding association (which may be an aggregation or composition) of Reference Model structures. The constraint below says concretely that the COMPOSITION object contains SECTION and OBSERVATION objects under its content attribute.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "external reference"
+    ]
+}

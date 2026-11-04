@@ -1,0 +1,134 @@
+	EVALUATION[id1] matches {	-- Advance intervention decisions
+		data matches {
+			ITEM_TREE[id2] matches {
+				items matches {
+					ELEMENT[id3] occurrences matches {0..1} matches {	-- Intent of care
+						value matches {
+							DV_TEXT[id47] 
+						}
+					}
+					ELEMENT[id4] occurrences matches {0..1} matches {	-- Rationale
+						value matches {
+							DV_TEXT[id48] 
+						}
+					}
+					ELEMENT[id5] occurrences matches {0..1} matches {	-- CPR decision
+						value matches {
+							DV_TEXT[id49] 
+							DV_CODED_TEXT[id50] matches {
+								defining_code matches {[ac1]}		-- CPR decision (synthesised)
+							}
+						}
+					}
+					ELEMENT[id10] occurrences matches {0..1} matches {	-- Description
+						value matches {
+							DV_TEXT[id51] 
+						}
+					}
+					CLUSTER[id11] matches {	-- Per intervention
+						items matches {
+							ELEMENT[id12] matches {	-- Intervention
+								value matches {
+									DV_CODED_TEXT[id52] matches {
+										defining_code matches {[ac2]}		-- Intervention (synthesised)
+									}
+									DV_TEXT[id53] 
+								}
+							}
+							ELEMENT[id25] occurrences matches {0..1} matches {	-- Decision
+								value matches {
+									DV_CODED_TEXT[id54] matches {
+										defining_code matches {[ac3]}		-- Decision (synthesised)
+									}
+								}
+							}
+							ELEMENT[id30] occurrences matches {0..1} matches {	-- Conditions
+								value matches {
+									DV_TEXT[id55] 
+								}
+							}
+							ELEMENT[id31] occurrences matches {0..1} matches {	-- Comment
+								value matches {
+									DV_TEXT[id56] 
+								}
+							}
+						}
+					}
+					allow_archetype CLUSTER[id32] matches {	-- Additional details
+						include
+							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[id33] occurrences matches {0..1} matches {	-- Patient awareness
+						value matches {
+							DV_TEXT[id57] 
+						}
+					}
+					ELEMENT[id34] occurrences matches {0..1} matches {	-- Carer awareness
+						value matches {
+							DV_TEXT[id58] 
+						}
+					}
+					ELEMENT[id36] occurrences matches {0..1} matches {	-- Overall comment
+						value matches {
+							DV_TEXT[id59] 
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[id37] matches {
+				items matches {
+					ELEMENT[id38] occurrences matches {0..1} matches {	-- Last updated
+						value matches {
+							DV_DATE_TIME[id60] 
+						}
+					}
+					ELEMENT[id39] occurrences matches {0..1} matches {	-- Valid period start
+						value matches {
+							DV_DATE_TIME[id61] 
+						}
+					}
+					ELEMENT[id40] occurrences matches {0..1} matches {	-- Valid period end
+						value matches {
+							DV_DATE_TIME[id62] 
+						}
+					}
+					ELEMENT[id41] occurrences matches {0..1} matches {	-- Review due
+						value matches {
+							DV_DATE_TIME[id63] 
+						}
+					}
+					ELEMENT[id42] occurrences matches {0..1} matches {	-- Mandate
+						value matches {
+							DV_TEXT[id64] 
+							DV_EHR_URI[id65] 
+						}
+					}
+					allow_archetype CLUSTER[id35] matches {	-- Digital representation
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.multimedia_source\.v0/}
+					}
+					CLUSTER[id43] occurrences matches {0..1} matches {	-- Document location
+						items matches {
+							ELEMENT[id44] occurrences matches {0..1} matches {	-- Location
+								value matches {
+									DV_TEXT[id66] 
+									DV_URI[id67] 
+								}
+							}
+							allow_archetype CLUSTER[id45] matches {	-- Copy holder
+								include
+									archetype_id/value matches {/.*/}
+							}
+						}
+					}
+					allow_archetype CLUSTER[id46] matches {	-- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+

@@ -1,0 +1,38 @@
+{
+    "id1": {
+        "text": "person demographics",
+        "description": "demographic person details"
+    },
+    "id6": {
+        "text": "home contact",
+        "description": "person's home contact details"
+    },
+    "id7": {
+        "text": "home phone number",
+        "description": "person's home phone number"
+    },
+    "id8": {
+        "text": "home fax number",
+        "description": "person's home fax number"
+    },
+    "id9": {
+        "text": "home email address",
+        "description": "person's home email address"
+    },
+    "id10": {
+        "text": "work contact",
+        "description": "person's home contact details"
+    },
+    "id11": {
+        "text": "work fax number",
+        "description": "person's work fax number"
+    },
+    "id12": {
+        "text": "work email address",
+        "description": "person's work email address"
+    },
+    "id13": {
+        "text": "work contact",
+        "description": "person's work contact details"
+    }
+}

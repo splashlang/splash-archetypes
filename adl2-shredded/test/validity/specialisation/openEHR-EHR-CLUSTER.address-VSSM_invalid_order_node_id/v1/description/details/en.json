@@ -1,0 +1,7 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VSSM validity check, triggered by invalid node_id in order marker",
+    "use": "Regression testing",
+    "misuse": "",
+    "copyright": "copyright (c) 2010 openEHR foundation"
+}

@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Simple example of LOINC terminology bindings to id-codes. In this case, the bound terms define the meaning, i.e. say what each node 'is-about'.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "terminology bindings"
+    ]
+}

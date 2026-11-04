@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test tuple constraint in a specialisation is overlaid properly during flattening process.",
+    "use": "Regression testing"
+}

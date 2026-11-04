@@ -1,0 +1,6 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Parent of specialised archetype(s) that test use of attribute paths",
+    "use": "Regression testing",
+    "misuse": ""
+}

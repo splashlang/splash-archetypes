@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VARXID validity check, triggered by slot filler with node id that is not specialised",
+    "use": "Regression testing"
+}

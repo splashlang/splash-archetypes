@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Administrative information for the admission of a patient to the care of a hospital/institution",
+    "use": "test use",
+    "keywords": [
+        "admission",
+        "admin"
+    ],
+    "misuse": ""
+}

@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VDSEV validity check triggered by both include and exclude set to non- 'any' constraint",
+    "use": "Regression testing"
+}

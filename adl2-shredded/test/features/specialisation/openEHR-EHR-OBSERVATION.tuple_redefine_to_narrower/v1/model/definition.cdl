@@ -1,0 +1,12 @@
+	OBSERVATION[id1.1] matches {	-- Intravascular pressure redefined
+		/data[id2]/events[id3]/data[id4]/items[id16]/value matches {
+			DV_ORDINAL[id43] matches {
+				[value, symbol] matches {
+					[{0}, {[at17]}],
+					[{6}, {[at20]}],
+					[{8}, {[at21]}]
+				}
+			}
+		}
+	}
+

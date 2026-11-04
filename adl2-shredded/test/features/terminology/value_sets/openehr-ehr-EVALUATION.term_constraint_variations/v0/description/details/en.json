@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "An altered version of the openEHR Adverse Reaction archetype designed to show various kinds of terminology constraint.",
+    "use": "Regression testing"
+}

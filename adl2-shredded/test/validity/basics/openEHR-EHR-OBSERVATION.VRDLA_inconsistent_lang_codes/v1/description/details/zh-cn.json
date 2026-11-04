@@ -1,0 +1,9 @@
+{
+    "language": "[ISO_639-1::zh]",
+    "purpose": "描述系统性血压测量的结果和协议",
+    "keywords": [
+        "血压"
+    ],
+    "use": "Regression testing",
+    "misuse": ""
+}

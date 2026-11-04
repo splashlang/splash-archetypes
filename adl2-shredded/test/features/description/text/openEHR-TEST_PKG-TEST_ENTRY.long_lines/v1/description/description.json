@@ -1,0 +1,19 @@
+{
+    "custodian_namespace": "org.openehr",
+    "custodian_organisation": "openEHR Foundation <http://www.openEHR.org>",
+    "original_author": {
+        "name": "Thomas Beale",
+        "email": "thomas.beale@openEHR.org",
+        "organisation": "openEHR Foundation <http://www.openEHR.org>",
+        "date": "2003-06-01"
+    },
+    "lifecycle_state": "published",
+    "other_contributors": [
+        "friend 1"
+    ],
+    "other_details": {
+        "regression": "PASS"
+    },
+    "copyright": "Copyright © 2012 openEHR Foundation <http://www.openEHR.org> ... this is mine, mine, mine I tell you! Since 2003. \nAnd another thing.\nAnd another",
+    "licence": "Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>"
+}

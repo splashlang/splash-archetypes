@@ -1,0 +1,68 @@
+archetype (adl_version=2.3.0; rm_release=1.1.0; generated)
+	openEHR-DEMOGRAPHIC-PERSON.healthcare_professional.v1.0.0
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"unmanaged">
+	original_author = <
+		["name"] = <"Thomas Beale">
+		["organisation"] = <"Ocean Informatics">
+		["email"] = <"thomas.beale@oceaninformatics.com">
+		["date"] = <"01/04/2011">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Healthcare professional demographic identifier">
+			use = <"test use">
+		>
+	>
+
+definition
+	PERSON[id1] matches {
+		identities cardinality matches {1..*; ordered} matches {
+			PARTY_IDENTITY[id2] occurrences matches {1..*} matches {
+				details matches {
+					ITEM_LIST[id6] matches {
+						items cardinality matches {2..*; ordered} matches {
+							ELEMENT[id4] occurrences matches {1} matches {
+								value matches {
+									DV_TEXT[id7] 
+								}
+							}
+							ELEMENT[id5] occurrences matches {1..*} matches {
+								value matches {
+									DV_IDENTIFIER[id8] 
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Healthcare professional demographic data">
+				description = <"Healthcare professional demographic data">
+			>
+			["id2"] = <
+				text = <"Identification">
+				description = <"Identification - the names the professional is known by">
+			>
+			["id4"] = <
+				text = <"Name">
+				description = <"Healthcare professional name">
+			>
+			["id5"] = <
+				text = <"Identifier">
+				description = <"Healthcare professional Identifier">
+			>
+		>
+	>
+

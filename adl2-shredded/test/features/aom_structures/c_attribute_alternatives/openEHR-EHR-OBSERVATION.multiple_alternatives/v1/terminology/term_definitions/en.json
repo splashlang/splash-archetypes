@@ -1,0 +1,14 @@
+{
+    "id1": {
+        "text": "top-level archetype",
+        "description": "top level test archetype for specialisation lineage"
+    },
+    "id2": {
+        "text": "protocol #1",
+        "description": "protocol #1"
+    },
+    "id3": {
+        "text": "protocol #2",
+        "description": "protocol #2"
+    }
+}

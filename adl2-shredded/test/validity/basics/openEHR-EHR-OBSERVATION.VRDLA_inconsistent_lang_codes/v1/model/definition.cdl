@@ -1,0 +1,10 @@
+	OBSERVATION[id1] matches {	-- Blood pressure
+		data matches {
+			HISTORY[id2] matches {	-- history
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[id7] occurrences matches {0..*}
+				}
+			}
+		}
+	}
+

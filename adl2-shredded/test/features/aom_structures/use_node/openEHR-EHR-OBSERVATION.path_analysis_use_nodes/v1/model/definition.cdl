@@ -1,0 +1,38 @@
+	OBSERVATION[id1] matches {	-- Laboratory result
+		data matches {
+			HISTORY[id2] matches {
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[id3] occurrences matches {0..*} matches {	-- Any event
+						data matches {
+							ITEM_TREE[id4] matches {
+								items matches {
+									CLUSTER[id12] matches {	-- level 1
+										name matches {
+											DV_CODED_TEXT[id23] matches {
+												defining_code matches {[ac1]}		-- =LOINC::Battery_name
+											}
+										}
+										items matches {
+											CLUSTER[id13] matches {	-- level 2
+												name matches {
+													DV_CODED_TEXT[id24] matches {
+														defining_code matches {[ac2]}		-- =LOINC::Battery_name
+													}
+												}
+												items matches {
+													use_node ELEMENT[id21] /data[id2]/events[id3]/data[id4]/items[id14]	-- /data[id2]/events[Any event]/data[id4]/items[Any result]
+												}
+											}
+											use_node ELEMENT[id22] /data[id2]/events[id3]/data[id4]/items[id14]	-- /data[id2]/events[Any event]/data[id4]/items[Any result]
+										}
+									}
+									ELEMENT[id14] 	-- Any result
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

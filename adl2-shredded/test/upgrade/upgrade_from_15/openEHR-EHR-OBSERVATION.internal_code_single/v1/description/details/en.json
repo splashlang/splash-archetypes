@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "To test rewriting of a single internal code into a new at-code plus binding to external code",
+    "use": "Regression testing"
+}

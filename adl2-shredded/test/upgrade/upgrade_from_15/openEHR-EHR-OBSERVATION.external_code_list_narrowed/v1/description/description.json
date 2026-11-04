@@ -1,0 +1,12 @@
+{
+    "original_author": {
+        "name": "Thomas Beale <thomas.beale@openEHR.org>",
+        "organisation": "openEHR Foundation <http://www.openEHR.org>",
+        "date": "22/01/2014"
+    },
+    "lifecycle_state": "unmanaged",
+    "other_details": {
+        "regression": "PASS"
+    },
+    "copyright": "© 2014 openEHR Foundation"
+}

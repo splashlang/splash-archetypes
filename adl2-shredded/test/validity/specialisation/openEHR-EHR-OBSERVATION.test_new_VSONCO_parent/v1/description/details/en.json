@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Parent archetype for testing improved VSONCO rule that addresses redefinitions into multiple children properly",
+    "use": "Regression testing"
+}

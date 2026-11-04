@@ -1,0 +1,23 @@
+	ORGANISATION[id1] matches {	-- Organisation
+		identities cardinality matches {1..*; ordered} matches {
+			PARTY_IDENTITY[id2] occurrences matches {1..*} matches {	-- Identification
+				details matches {
+					ITEM_LIST[id6] matches {
+						items cardinality matches {2..*; ordered} matches {
+							ELEMENT[id4] occurrences matches {1} matches {	-- Name
+								value matches {
+									DV_TEXT[id7] 
+								}
+							}
+							ELEMENT[id5] occurrences matches {1..*} matches {	-- Identifier
+								value matches {
+									DV_IDENTIFIER[id8]									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

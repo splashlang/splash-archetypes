@@ -1,0 +1,17 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "what this is for",
+    "use": "this is what it is used for, this could be a really long line or even\n\t\t\t\t\tmultiple lines, just like \n\t\t\t\t\twhat you are reading now",
+    "keywords": [
+        "this",
+        "is",
+        "a",
+        "list",
+        "keywords"
+    ],
+    "misuse": "this is not what it is used for",
+    "original_resource_uri": {
+        "guideline": "http://guidelines.are.us/wherever/en",
+        "medline": "http://some%20medline%20ref"
+    }
+}

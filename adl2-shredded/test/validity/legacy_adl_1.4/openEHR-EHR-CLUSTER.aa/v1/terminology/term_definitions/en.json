@@ -1,0 +1,26 @@
+{
+    "id1": {
+        "text": "unknown",
+        "description": "unknown"
+    },
+    "id2": {
+        "text": "New element",
+        "description": "*"
+    },
+    "at1": {
+        "text": "unknown",
+        "description": "unknown"
+    },
+    "at2": {
+        "text": "no information",
+        "description": "no information"
+    },
+    "at3": {
+        "text": "not applicable",
+        "description": "not applicable"
+    },
+    "ac1": {
+        "text": "New element (synthesised)",
+        "description": "* (synthesised)"
+    }
+}

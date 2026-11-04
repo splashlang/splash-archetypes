@@ -1,0 +1,226 @@
+{
+    "id1": {
+        "text": "Procedur",
+        "description": "En klinisk aktivitet utförd för screening, undersökande, diagnostiska, botande, terapeutiska, utvärderande eller palliativa ändamål."
+    },
+    "id3": {
+        "text": "Namn på procedur",
+        "description": "Identifiering av procedur med namn."
+    },
+    "id4": {
+        "text": "Prodedur detaljer",
+        "description": "Strukturerad information om proceduren.\n"
+    },
+    "id5": {
+        "text": "Procedur planerad",
+        "description": "Proceduren som ska genomföras är planerad"
+    },
+    "id6": {
+        "text": "Kommentar",
+        "description": "Ytterligare beskrivning om aktiviteten eller vårdsteget som inte fångas i andra fält."
+    },
+    "id7": {
+        "text": "Komplikation",
+        "description": "Detaljer om eventuella komplikationer som uppstår från proceduren"
+    },
+    "id8": {
+        "text": "Förfrågan om procedur skickad",
+        "description": "Förfrågan om procedur är skickad\n"
+    },
+    "id15": {
+        "text": "Anledning",
+        "description": "Anledning att aktivitets- eller vårdsteget för det identifierade förfarandet genomfördes."
+    },
+    "id35": {
+        "text": "X - Procedur planerad",
+        "description": "Detta vägsteg har upphört att gälla eftersom det felaktigt var associerat med \"initial\" status - använd det nya \"Procedur planerad\" (at0004) vägsteget som är korrekt associerat med \"planerat\" status. \n"
+    },
+    "id36": {
+        "text": "X - Förfrågan om procedur skickad",
+        "description": "Detta vägsteg har upphört att gälla eftersom det felaktigt var associerat med \"initial\" status - använd det nya \"Procedur förfrågan skickad\" (at0007) vägsteget som är korrekt associerat med \"planerad\" status."
+    },
+    "id37": {
+        "text": "Procedur schemalagd",
+        "description": "Proceduren har blivit schemalagd (bokad)\n"
+    },
+    "id39": {
+        "text": "Procedur uppskjuten",
+        "description": "Proceduren har skjutits upp\n"
+    },
+    "id40": {
+        "text": "Procedur avbruten",
+        "description": "Det planerade förfarandet har avbrutits före det påbörjandes."
+    },
+    "id41": {
+        "text": "Procedur pausad",
+        "description": "Proceduren har pausats\n"
+    },
+    "id42": {
+        "text": "Procedur avbruten",
+        "description": "Proceduren har blivit avbruten\n"
+    },
+    "id44": {
+        "text": "Procedur avslutad",
+        "description": "Proceduren har utförts och alla tillhörande kliniska aktiviteter har slutförts."
+    },
+    "id48": {
+        "text": "Procedur utförd",
+        "description": "Proceduren, eller delproceduren i ett multikomponentförfarande, har utförts"
+    },
+    "id49": {
+        "text": "Resultat",
+        "description": "Resultat av genomförd procedur\n"
+    },
+    "id50": {
+        "text": "Beskrivning",
+        "description": "Beskrivning av proceduren, anpassad till det aktuella steget.\n"
+    },
+    "id55": {
+        "text": "Beställare ID",
+        "description": "Det lokala ID som tilldelats beställningen av vårdgivaren eller organisationen som begär tjänsten"
+    },
+    "id56": {
+        "text": "Beställare",
+        "description": "Detaljer om vårdgivaren eller organisationen som begär tjänsten."
+    },
+    "id57": {
+        "text": "Mottagare ID",
+        "description": "ID som tilldelats beställningen, av vårdgivaren eller organisationen som tar emot begäran om service. Detta kallas också Filler Order Identifier."
+    },
+    "id58": {
+        "text": "Mottagare",
+        "description": "Detaljer om vårdgivaren eller organisationen som tar emot begäran om procedur."
+    },
+    "id59": {
+        "text": "Brådskandegrad",
+        "description": "Brådskandegrad för proceduren."
+    },
+    "id61": {
+        "text": "Datum/tid avslut av procedur",
+        "description": "Datumet och/eller tid då hela proceduren, eller den sista komponenten i ett multikomponentförfarande, avslutades."
+    },
+    "id62": {
+        "text": "Total duration",
+        "description": "Den totala tid som krävs för att utföra proceduren, vilket kan inkludera tid som tillbringats under den aktiva fasen av proceduren plus den tid under vilken proceduren pausades."
+    },
+    "id63": {
+        "text": "Multimedia",
+        "description": "Multimedia representation av en utförd procedur."
+    },
+    "id64": {
+        "text": "Kroppsplats",
+        "description": "Identifiering av kroppsplatsen för proceduren."
+    },
+    "id65": {
+        "text": "Tilläggsinformaiton",
+        "description": "Ytterligare information som krävs för att fånga lokalt innehåll eller för att anpassa sig till andra referensmodeller/formalismer."
+    },
+    "id66": {
+        "text": "Metod",
+        "description": "Identifiering av specifik metod eller teknik för proceduren."
+    },
+    "id67": {
+        "text": "Schemalagt datum/tid",
+        "description": "Datum och/eller tid då proceduren är tänkt att utföras."
+    },
+    "id68": {
+        "text": "Typ av procedur",
+        "description": "Typ av procedur"
+    },
+    "id69": {
+        "text": "Procedur påbörjad",
+        "description": "Proceduren, eller delproceduren i ett flerkomponentförfarande, har påbörjats."
+    },
+    "id70": {
+        "text": "Svårigheter med procedur",
+        "description": "Svårigheter eller problem som uppstår under genomförandet av proceduren."
+    },
+    "id71": {
+        "text": "Indikation",
+        "description": "Den kliniska eller processrelaterade orsaken till ingreppet."
+    },
+    "at5": {
+        "text": "Procedur planerad",
+        "description": "Proceduren som ska genomföras är planerad"
+    },
+    "at35": {
+        "text": "X - Procedur planerad",
+        "description": "Detta vägsteg har upphört att gälla eftersom det felaktigt var associerat med \"initial\" status - använd det nya \"Procedur planerad\" (at0004) vägsteget som är korrekt associerat med \"planerat\" status. \n"
+    },
+    "at8": {
+        "text": "Förfrågan om procedur skickad",
+        "description": "Förfrågan om procedur är skickad\n"
+    },
+    "at36": {
+        "text": "X - Förfrågan om procedur skickad",
+        "description": "Detta vägsteg har upphört att gälla eftersom det felaktigt var associerat med \"initial\" status - använd det nya \"Procedur förfrågan skickad\" (at0007) vägsteget som är korrekt associerat med \"planerad\" status."
+    },
+    "at39": {
+        "text": "Procedur uppskjuten",
+        "description": "Proceduren har skjutits upp\n"
+    },
+    "at40": {
+        "text": "Procedur avbruten",
+        "description": "Det planerade förfarandet har avbrutits före det påbörjandes."
+    },
+    "at37": {
+        "text": "Procedur schemalagd",
+        "description": "Proceduren har blivit schemalagd (bokad)\n"
+    },
+    "at69": {
+        "text": "Procedur påbörjad",
+        "description": "Proceduren, eller delproceduren i ett flerkomponentförfarande, har påbörjats."
+    },
+    "at48": {
+        "text": "Procedur utförd",
+        "description": "Proceduren, eller delproceduren i ett multikomponentförfarande, har utförts"
+    },
+    "at41": {
+        "text": "Procedur pausad",
+        "description": "Proceduren har pausats\n"
+    },
+    "at42": {
+        "text": "Procedur avbruten",
+        "description": "Proceduren har blivit avbruten\n"
+    },
+    "at44": {
+        "text": "Procedur avslutad",
+        "description": "Proceduren har utförts och alla tillhörande kliniska aktiviteter har slutförts."
+    },
+    "at70": {
+        "text": "*planned (en)",
+        "description": "*planned (en)"
+    },
+    "at71": {
+        "text": "*initial (en)",
+        "description": "*initial (en)"
+    },
+    "at72": {
+        "text": "*postponed (en)",
+        "description": "*postponed (en)"
+    },
+    "at73": {
+        "text": "*cancelled (en)",
+        "description": "*cancelled (en)"
+    },
+    "at74": {
+        "text": "*scheduled (en)",
+        "description": "*scheduled (en)"
+    },
+    "at75": {
+        "text": "*active (en)",
+        "description": "*active (en)"
+    },
+    "at76": {
+        "text": "*suspended (en)",
+        "description": "*suspended (en)"
+    },
+    "at77": {
+        "text": "*aborted (en)",
+        "description": "*aborted (en)"
+    },
+    "at78": {
+        "text": "*complete (en)",
+        "description": "*complete (en)"
+    }
+}

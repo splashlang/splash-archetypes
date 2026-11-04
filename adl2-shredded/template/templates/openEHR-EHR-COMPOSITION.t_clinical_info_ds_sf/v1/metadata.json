@@ -1,0 +1,7 @@
+{
+    "id": "openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0",
+    "artefact_type": "template",
+    "specialise": "openEHR-EHR-COMPOSITION.discharge.v1",
+    "adl_version": "2.3.0",
+    "rm_release": "1.1.0"
+}

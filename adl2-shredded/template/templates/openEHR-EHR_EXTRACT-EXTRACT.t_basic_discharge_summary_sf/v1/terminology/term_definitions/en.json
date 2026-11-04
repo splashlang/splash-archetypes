@@ -1,0 +1,10 @@
+{
+    "id1.1": {
+        "text": "Discharge summary",
+        "description": "Discharge summary document for patient leaving a hospital"
+    },
+    "id7.1": {
+        "text": "Clinical data",
+        "description": "Clinical discharge data for patient"
+    }
+}

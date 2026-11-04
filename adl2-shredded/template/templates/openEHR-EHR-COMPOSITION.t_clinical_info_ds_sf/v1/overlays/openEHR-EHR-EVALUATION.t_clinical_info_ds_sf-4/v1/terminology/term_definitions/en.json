@@ -1,0 +1,18 @@
+{
+    "id1.1.1.1": {
+        "text": "Simple problem / diagnosis summary",
+        "description": "Simple problem / diagnosis summary"
+    },
+    "id3.1.0.1": {
+        "text": "Diagnosis",
+        "description": "Diagnosis"
+    },
+    "id10.0.0.1": {
+        "text": "Additional remarks",
+        "description": "Diagnosis/problem additional remarks"
+    },
+    "id0.0.55.1": {
+        "text": "Diagnosis type",
+        "description": "Diagnosis type"
+    }
+}

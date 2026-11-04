@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test regex conversion from ADL 1.4.",
+    "use": "Regression testing"
+}

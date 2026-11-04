@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test for conformance of RM subtype (here: POINT_EVENT) to statically declared RM type (EVENT). This archetype should pass validation.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "RM checking"
+    ]
+}

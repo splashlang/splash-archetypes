@@ -1,0 +1,7 @@
+	OBSERVATION[id1.1] matches {	-- obs
+		/data[id3]/events[id4]/data[id22]/items matches {
+			after [id6]
+			CLUSTER[id0.1] occurrences matches {0..1} 	-- cluster
+		}
+	}
+

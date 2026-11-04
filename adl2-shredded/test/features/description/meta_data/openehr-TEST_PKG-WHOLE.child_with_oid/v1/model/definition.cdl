@@ -1,0 +1,4 @@
+	WHOLE[id1.1] matches {	-- Child archetype with Oid
+		string_attr1 matches {"test"}
+	}
+

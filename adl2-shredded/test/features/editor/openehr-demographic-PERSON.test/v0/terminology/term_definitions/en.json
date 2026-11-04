@@ -1,0 +1,34 @@
+{
+    "id1": {
+        "text": "-",
+        "description": "-"
+    },
+    "id3": {
+        "text": "Legal name",
+        "description": "-"
+    },
+    "id5": {
+        "text": "Project",
+        "description": "-"
+    },
+    "id6": {
+        "text": "Rating",
+        "description": "-"
+    },
+    "id9": {
+        "text": "Work",
+        "description": "-"
+    },
+    "id10": {
+        "text": "Home",
+        "description": "-"
+    },
+    "id11": {
+        "text": "Home address",
+        "description": "-"
+    },
+    "id16": {
+        "text": "asdf",
+        "description": "-"
+    }
+}

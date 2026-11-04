@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Example containing properly constraints conforming to the RM, with no RM type overrides or generic type markers, even though one type (HISTORY) is declared generic in the RM.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "RM checker"
+    ]
+}

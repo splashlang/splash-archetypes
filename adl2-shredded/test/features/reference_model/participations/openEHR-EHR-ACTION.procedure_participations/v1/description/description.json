@@ -1,0 +1,17 @@
+{
+    "lifecycle_state": "unmanaged",
+    "original_author": {
+        "name": "Ian McNicoll",
+        "organisation": "Ocean Informatics, United Kingdom",
+        "email": "ian.mcnicoll@oceaninformatics.com",
+        "date": "2009-12-03"
+    },
+    "copyright": "© openEHR Foundation",
+    "other_contributors": [
+        "Heather Leslie, Ocean Informatics, Australia (Editor)",
+        "Ian McNicoll, Ocean Informatics, United Kingdom (Editor)"
+    ],
+    "other_details": {
+        "regression": "PASS"
+    }
+}

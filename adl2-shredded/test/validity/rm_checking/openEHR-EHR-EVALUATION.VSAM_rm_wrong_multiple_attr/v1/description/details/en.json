@@ -1,0 +1,9 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VSAM validity check, triggered by attribute (EVALUATION.data) that is declared as multiple in archetype but is single-valued in RM. Note that the violation is found in the parser, not the validator",
+    "use": "Regression testing",
+    "keywords": [
+        "test",
+        "RM checker"
+    ]
+}

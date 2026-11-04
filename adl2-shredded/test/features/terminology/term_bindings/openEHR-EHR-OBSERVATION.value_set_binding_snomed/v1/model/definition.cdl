@@ -1,0 +1,96 @@
+	OBSERVATION[id1] matches {	-- Pulse
+		data matches {
+			HISTORY[id3] matches {
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[id4] occurrences matches {0..*} matches {	-- Any event
+						data matches {
+							ITEM_TREE[id2] matches {
+								items matches {
+									ELEMENT[id1006] occurrences matches {0..1} matches {	-- Pulse Presence
+										value matches {
+											DV_CODED_TEXT[id1039] matches {
+												defining_code matches {[ac1]}		-- Pulse Presence (synthesised)
+											}
+										}
+									}
+									ELEMENT[id5] occurrences matches {0..1} matches {	-- Rate
+										name matches {
+											DV_CODED_TEXT[id1040] matches {
+												defining_code matches {[ac2]}		-- Rate (synthesised)
+											}
+										}
+										value matches {
+											DV_QUANTITY[id1041] matches {
+												property matches {[at1046]}
+												magnitude matches {|>=0.0|}
+												precision matches {0}
+												units matches {"/min"}
+											}
+										}
+									}
+									ELEMENT[id6] occurrences matches {0..1} matches {	-- Regularity
+										value matches {
+											DV_CODED_TEXT[id1042] matches {
+												defining_code matches {[ac3]}		-- Regularity (synthesised)
+											}
+										}
+									}
+									ELEMENT[id1031] occurrences matches {0..*} matches {	-- Character
+										value matches {
+											DV_TEXT[id1043] 
+										}
+									}
+									ELEMENT[id1023] occurrences matches {0..1} matches {	-- Clinical Description
+										value matches {
+											DV_TEXT[id1044] 
+										}
+									}
+									ELEMENT[id1024] occurrences matches {0..*} matches {	-- Clinical Interpretation
+										value matches {
+											DV_TEXT[id1045] 
+										}
+									}
+								}
+							}
+						}
+						state matches {
+							ITEM_TREE[id13] matches {
+								items matches {
+									ELEMENT[id14] occurrences matches {0..1} matches {	-- Position
+										value matches {
+											DV_CODED_TEXT[id1046] matches {
+												defining_code matches {[ac4; at1002]}		-- Position (synthesised)
+											}
+										}
+									}
+									ELEMENT[id1019] occurrences matches {0..1} matches {	-- Confounding Factors
+										value matches {
+											DV_TEXT[id1047] 
+										}
+									}
+									allow_archetype CLUSTER[id1018] occurrences matches {0..*} matches {	-- Exertion
+										include
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.level_of_exertion(-a-zA-Z0-9_]+)*\.v1/}
+									}
+								}
+							}
+						}
+					}
+					INTERVAL_EVENT[id1037] occurrences matches {0..1} matches {	-- Maximum
+						math_function matches {
+							DV_CODED_TEXT[id1048] matches {
+								defining_code matches {[at1047]}
+							}
+						}
+						data matches {
+							use_node ITEM_TREE[id1049] /data[id3]/events[id4]/data[id2]	-- /data[id3]/events[Any event]/data[id2]
+						}
+						state matches {
+							use_node ITEM_TREE[id1050] /data[id3]/events[id4]/state[id13]	-- /data[id3]/events[Any event]/state[id13]
+						}
+					}
+				}
+			}
+		}
+	}
+

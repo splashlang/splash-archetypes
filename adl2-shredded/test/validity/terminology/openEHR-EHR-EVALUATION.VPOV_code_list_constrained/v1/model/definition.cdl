@@ -1,0 +1,12 @@
+	EVALUATION[id1.1] matches {	-- Adverse reaction exclusions
+		/data[id2]/items matches {
+			ELEMENT[id3] matches {
+				value matches {
+					DV_CODED_TEXT[id4] matches {
+						defining_code matches {[ac1.1]}		-- (added by post-parse processor)
+					}
+				}
+			}
+		}
+	}
+

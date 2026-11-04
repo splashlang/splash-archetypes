@@ -1,0 +1,7 @@
+{
+    "id": "openEHR-EHR-CLUSTER.lab_analyte-quantity.v0.0.1",
+    "artefact_type": "archetype",
+    "specialise": "openEHR-EHR-CLUSTER.laboratory_test_analyte.v0",
+    "adl_version": "2.0.6",
+    "rm_release": "1.0.3"
+}

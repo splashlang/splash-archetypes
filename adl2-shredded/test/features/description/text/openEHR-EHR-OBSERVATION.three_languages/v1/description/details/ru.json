@@ -1,0 +1,16 @@
+{
+    "language": "[ISO_639-1::ru]",
+    "purpose": "funktsiia",
+    "use": "v kakih sluchaiah ispol'zuetsia dannii arkhetip",
+    "keywords": [
+        "eto",
+        "spisok",
+        "kliuchevih",
+        "slov"
+    ],
+    "misuse": "Eto ob'iasniaet, pochemu etot arkhetip bil ispol'zovan ne po prednaznacheniiu",
+    "original_resource_uri": {
+        "guideline": "http://guidelines.are.us/wherever/ru",
+        "medline": "http://some%20medline%20ref"
+    }
+}

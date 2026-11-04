@@ -1,0 +1,4 @@
+	TEST_ENTRY[id1] matches {
+		value existence matches {1..2}
+	}
+

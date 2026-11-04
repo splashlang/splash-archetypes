@@ -1,0 +1,19 @@
+	PERSON[id1] matches {	-- person demographics
+		contacts matches {
+			CONTACT[id6] matches {	-- home contact
+				addresses matches {
+					ADDRESS[id7] occurrences matches {0..1} 	-- home phone number
+					ADDRESS[id8] occurrences matches {0..2} 	-- home fax number
+					ADDRESS[id9] 	-- home email address
+				}
+			}
+			CONTACT[id10] matches {	-- work contact
+				addresses matches {
+					use_node ADDRESS[id11] /contacts[id6]/addresses[id7]	-- /contacts[home contact]/addresses[home phone number]
+					use_node ADDRESS[id12] /contacts[id6]/addresses[id8]	-- /contacts[home contact]/addresses[home fax number]
+					use_node ADDRESS[id13] occurrences matches {1..3} /contacts[id6]/addresses[id9]	-- /contacts[home contact]/addresses[home email address]
+				}
+			}
+		}
+	}
+

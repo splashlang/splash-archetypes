@@ -1,0 +1,11 @@
+	CAR[id1] matches {	-- car
+		engine_parts existence matches {1} matches {
+			ENGINE_PART[id4] matches {	-- block
+				items cardinality matches {1..*; ordered} matches {
+					ENGINE_PART_ITEM[id5] 	-- piston
+					ENGINE_PART_ITEM[id6] 	-- head
+				}
+			}
+		}
+	}
+

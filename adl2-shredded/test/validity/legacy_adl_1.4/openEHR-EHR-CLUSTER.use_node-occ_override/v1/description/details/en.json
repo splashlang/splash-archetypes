@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test use node (C_COMPLEX_OBJECT_PROXY) that overrides its target's occurrences",
+    "use": "Regression testing"
+}

@@ -1,0 +1,23 @@
+	INSTRUCTION[id1] matches {	-- Healthcare service request
+		activities matches {
+			ACTIVITY[id2] occurrences matches {1..*} matches {	-- Request
+				description matches {
+					ITEM_TREE[id10] matches {
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[id122] matches {	-- Service requested
+								value matches {
+									DV_TEXT[id146] 
+								}
+							}
+							ELEMENT[id136] occurrences matches {0..1} matches {	-- Description of service
+								value matches {
+									DV_TEXT[id147] 
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

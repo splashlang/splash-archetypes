@@ -1,0 +1,9 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test archetye illustrating use of tuples to model ACTIONs.",
+    "use": "Regression testing",
+    "keywords": [
+        "test",
+        "tuple"
+    ]
+}

@@ -1,0 +1,10 @@
+	PARTY_IDENTITY[id1.1] matches {	-- Person name
+		/details[id2]/items matches {
+			ELEMENT[id6] occurrences matches {0} 
+			ELEMENT[id20] occurrences matches {0} 
+			ELEMENT[id21] occurrences matches {0} 
+			ELEMENT[id9] occurrences matches {0} 
+			ELEMENT[id10] occurrences matches {0} 
+		}
+	}
+

@@ -1,0 +1,75 @@
+	OBSERVATION[id1] matches {	-- Body temperature
+		data matches {
+			HISTORY[id3] matches {
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[id4] occurrences matches {0..*} matches {	-- Any event
+						data matches {
+							ITEM_TREE[id2] matches {
+								items cardinality matches {1; unordered} matches {
+									ELEMENT[id5] matches {	-- Temperature
+										value matches {
+											DV_QUANTITY[id61] matches {
+												property matches {[at57]}
+												[units, precision] matches {
+													[{"°C"}, {1}],
+													[{"°F"}, {1}]
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						state matches {
+							ITEM_TREE[id30] matches {	-- State
+								items matches {
+									ELEMENT[id31] occurrences matches {0..1} matches {	-- Body exposure
+										value matches {
+											DV_CODED_TEXT[id62] matches {
+												defining_code matches {[ac1; at34]}		-- Body exposure
+											}
+										}
+									}
+									allow_archetype CLUSTER[id57] occurrences matches {0..1} matches {	-- Environmental Conditions
+										include
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.environmental_conditions\.v1/}
+									}
+									allow_archetype CLUSTER[id58] occurrences matches {0..1} matches {	-- Exertion
+										include
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.level_of_exertion\.v1/}
+									}
+									allow_archetype ELEMENT[id59] occurrences matches {0..1} matches {	-- Menstrual Cycle
+										include
+											archetype_id/value matches {/openEHR-EHR-ELEMENT\.last_normal_menstrual_period\.v1|openEHR-EHR-ELEMENT\.menstrual_cycle_day\.v1/}
+									}
+									ELEMENT[id42] occurrences matches {0..1} matches {	-- Description of thermal stress
+										value matches {
+											DV_TEXT[id63] 
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[id21] matches {
+				items matches {
+					ELEMENT[id22] occurrences matches {0..1} matches {	-- Site of measurement
+						value matches {
+							DV_CODED_TEXT[id64] matches {
+								defining_code matches {[ac2]}		-- Site of measurement
+							}
+						}
+					}
+					allow_archetype CLUSTER[id60] occurrences matches {0..1} matches {	-- Device
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.device\.v1/}
+					}
+				}
+			}
+		}
+	}
+

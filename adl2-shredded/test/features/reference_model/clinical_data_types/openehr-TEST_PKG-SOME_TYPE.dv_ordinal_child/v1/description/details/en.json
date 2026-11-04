@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Example to show refinement of a DV_ORDINAL - child.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "ordinal",
+        "test"
+    ]
+}

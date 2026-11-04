@@ -1,0 +1,11 @@
+{
+    "original_author": {
+        "organisation": "openEHR Foundation",
+        "name": "Thomas Beale",
+        "date": "11/6/2010"
+    },
+    "lifecycle_state": "initial",
+    "other_details": {
+        "regression": "VCORMT"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "id1.1": {
+        "text": "Intravascular pressure redefined",
+        "description": "The pressure in a specific location, blood vessel or heart cavity, at a specific phase of the heart or an average over the heart cycle."
+    },
+    "ac0.1": {
+        "text": "Intravascular pressure redefined (synthesised)",
+        "description": "The pressure in a specific location, blood vessel or heart cavity, at a specific phase of the heart or an average over the heart cycle. (synthesised)"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "id1.1": {
+        "text": "Admission event start information",
+        "description": "Administrative information for the start of episode in hospital"
+    },
+    "id5.1": {
+        "text": "Event start date/time",
+        "description": "*"
+    },
+    "id58.1": {
+        "text": "Event identifier - mandatory",
+        "description": "Event identifier - mandatory"
+    }
+}

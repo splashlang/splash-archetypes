@@ -1,0 +1,9 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VCORMT validity check, triggered by non-conforming type",
+    "use": "Regression testing",
+    "keywords": [
+        "test",
+        "RM checker"
+    ]
+}

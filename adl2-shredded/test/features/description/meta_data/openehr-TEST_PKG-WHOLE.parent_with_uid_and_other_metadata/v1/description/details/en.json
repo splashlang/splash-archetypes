@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Example top-level archetype containing a uid and other meta-data that maps to AOM AUTHORED_ARCHETYPE.other_meta_data",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "meta-data",
+        "test"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "id": "openEHR-EHR-OBSERVATION.VSONIN_override_obj_not_in_parent.v1.0.0",
+    "artefact_type": "archetype",
+    "specialise": "openEHR-EHR-OBSERVATION.spec_test_obs.v1",
+    "adl_version": "2.0.6",
+    "rm_release": "1.0.2"
+}

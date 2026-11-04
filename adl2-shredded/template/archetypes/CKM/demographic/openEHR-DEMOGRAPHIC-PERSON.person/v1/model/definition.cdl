@@ -1,0 +1,51 @@
+	PERSON[id1] matches {	-- Person
+		details matches {
+			ITEM_TREE[id2] occurrences matches {0..1} matches {	-- Demographic details
+				items matches {
+					allow_archetype CLUSTER[id11] occurrences matches {0..*} matches {	-- Birth, death, documentation and other demographic data
+						include
+							archetype_id/value matches {/(person_additional_data)a-zA-Z0-9_-]*\.v1/}
+							archetype_id/value matches {/(person_birth_data)a-zA-Z0-9_-]*\.v1/}
+							archetype_id/value matches {/(person_death_data)a-zA-Z0-9_-]*\.v1/}
+							archetype_id/value matches {/(person_identifier)a-zA-Z0-9_-]*\.v1/}
+							archetype_id/value matches {/(biometric_identifier)a-zA-Z0-9_-]*\.v1/}
+					}
+				}
+			}
+		}
+		identities cardinality matches {1..*; ordered} matches {
+			allow_archetype PARTY_IDENTITY[id3] occurrences matches {1} matches {	-- Name
+				include
+					archetype_id/value matches {/(person_name)a-zA-Z0-9_-]*\.v1/}
+			}
+		}
+		contacts matches {
+			CONTACT[id4] occurrences matches {1} matches {	-- Contacts
+				addresses matches {
+					allow_archetype ADDRESS[id31] occurrences matches {1} matches {	-- Addresses
+						include
+							archetype_id/value matches {/(address)(a-zA-Z0-9_]+)*\.v1/}
+							archetype_id/value matches {/(electronic_communication)a-zA-Z0-9_-]*\.v1/}
+					}
+				}
+			}
+		}
+		relationships matches {
+			PARTY_RELATIONSHIP[id5] matches {	-- Relationships
+				details matches {
+					ITEM_SINGLE[id42] matches {
+						item matches {
+							ELEMENT[id41] matches {	-- Relationship type
+								value matches {
+									DV_CODED_TEXT[id43] matches {
+										defining_code matches {[ac1]}		-- Codes for type of relationship
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

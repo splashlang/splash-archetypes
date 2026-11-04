@@ -1,0 +1,4 @@
+	EVALUATION[id1.1] matches {	-- Adverse reaction exclusions
+		/data[id2]/items[id3]/value/defining_code matches {[ac1.1]}	
+	}
+

@@ -1,0 +1,11 @@
+{
+    "original_author": {
+        "organisation": "openEHR Foundation",
+        "name": "Thomas Beale",
+        "date": "11/8/2008"
+    },
+    "lifecycle_state": "unstable",
+    "other_details": {
+        "regression": "VSONCO"
+    }
+}

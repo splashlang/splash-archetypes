@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Illustrate path set created by multiple use_node references. Three paths should be visible that end in [id14] in the path analysis.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "internal references"
+    ]
+}

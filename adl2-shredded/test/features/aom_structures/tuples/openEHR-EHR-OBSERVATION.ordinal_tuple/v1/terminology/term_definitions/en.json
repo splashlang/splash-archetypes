@@ -1,0 +1,30 @@
+{
+    "id1": {
+        "text": "Apgar score",
+        "description": "Clinical score derived from assessment of respiratory effort, heart rate, reflex irritability, muscle tone and skin colour."
+    },
+    "id4": {
+        "text": "1 minute",
+        "description": "Apgar score 1 minute after birth."
+    },
+    "id10": {
+        "text": "Respiratory effort",
+        "description": "Observation of the infant's respiratory effort."
+    },
+    "at11": {
+        "text": "Absent",
+        "description": "No effort to breath."
+    },
+    "at12": {
+        "text": "Weak or irregular",
+        "description": "Some effort to breath, moving chest."
+    },
+    "at13": {
+        "text": "Normal",
+        "description": "Breathing normally or crying."
+    },
+    "ac1": {
+        "text": "Respiratory effort",
+        "description": "Observation of the infant's respiratory effort."
+    }
+}

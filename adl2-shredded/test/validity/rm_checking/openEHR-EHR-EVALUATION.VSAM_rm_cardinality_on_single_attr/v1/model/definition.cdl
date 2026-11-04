@@ -1,0 +1,4 @@
+	EVALUATION[id1] matches {	
+		protocol cardinality matches {1..*}
+	}
+

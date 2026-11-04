@@ -1,0 +1,109 @@
+	OBSERVATION[id1] matches {	-- Intravascular pressure
+		data matches {
+			HISTORY[id2] matches {
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[id3] occurrences matches {0..*} matches {	-- Any event
+						data matches {
+							ITEM_TREE[id4] matches {
+								items cardinality matches {1; ordered} matches {
+									allow_archetype CLUSTER[id37] occurrences matches {0..1} matches {	-- Location
+										include
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location(-a-zA-Z0-9_]+)*\.v1/}
+										exclude
+											archetype_id/value matches {/.*/}
+									}
+									ELEMENT[id6] occurrences matches {0..1} matches {	-- Pressure
+										value matches {
+											DV_QUANTITY[id42] matches {
+												property matches {[at29]}
+												[magnitude, units, precision] matches {
+													[{|>=0.0|}, {"mm[Hg]"}, {2}],
+													[{|>=0.0|}, {"cm[H20]"}, {2}]
+												}
+											}
+										}
+									}
+									ELEMENT[id16] occurrences matches {0..1} matches {	-- Relative pressure
+										value matches {
+											DV_ORDINAL[id43] matches {
+												[value, symbol] matches {
+													[{0}, {[at17]}],
+													[{2}, {[at18]}],
+													[{4}, {[at19]}],
+													[{6}, {[at20]}],
+													[{8}, {[at21]}]
+												}
+											}
+										}
+									}
+									ELEMENT[id8] occurrences matches {0..1} matches {	-- Phase of heart cycle
+										value matches {
+											DV_CODED_TEXT[id44] matches {
+												defining_code matches {[ac1]}		-- Phase of heart cycle (synthesised)
+											}
+										}
+									}
+									ELEMENT[id35] occurrences matches {0..1} matches {	-- Multimedia
+										value matches {
+											DV_MULTIMEDIA[id45] 
+										}
+									}
+									allow_archetype CLUSTER[id34] occurrences matches {0..1} matches {	-- Waveform
+										include
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.waveform(-a-zA-Z0-9_]+)*\.v1/}
+										exclude
+											archetype_id/value matches {/.*/}
+									}
+									ELEMENT[id36] occurrences matches {0..1} matches {	-- Comment
+										value matches {
+											DV_TEXT[id46] 
+										}
+									}
+								}
+							}
+						}
+						state matches {
+							ITEM_TREE[id39] matches {
+								items matches {
+									ELEMENT[id40] occurrences matches {0..1} matches {	-- Position
+										value matches {
+											DV_TEXT[id47] 
+										}
+									}
+									ELEMENT[id41] occurrences matches {0..1} matches {	-- Confounding factors
+										value matches {
+											DV_TEXT[id48] 
+										}
+									}
+								}
+							}
+						}
+					}
+					INTERVAL_EVENT[id5] occurrences matches {0..*} matches {	-- Average over heart cycle
+						math_function matches {
+							DV_CODED_TEXT[id49] matches {
+								defining_code matches {[at30]}
+							}
+						}
+						data matches {
+							use_node ITEM_TREE[id50] /data[id2]/events[id3]/data[id4]	-- /data[id2]/events[Any event]/data[id4]
+						}
+						state matches {
+							use_node ITEM_TREE[id51] /data[id2]/events[id3]/state[id39]	-- /data[id2]/events[Any event]/state[id39]
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[id22] matches {
+				items matches {
+					allow_archetype CLUSTER[id31] occurrences matches {0..1} matches {	-- Device
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-a-zA-Z0-9_]+)*\.v1/}
+					}
+				}
+			}
+		}
+	}
+

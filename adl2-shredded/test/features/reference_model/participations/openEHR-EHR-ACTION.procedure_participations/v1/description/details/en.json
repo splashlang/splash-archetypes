@@ -1,0 +1,8 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "To record details about a procedure that has been performed.",
+    "use": "Use to record detailed information about the procedure that has been carried out on an individual. \nInformation about activities related to the procedure, such as anaesthesia or administration of medications, should be recorded in separate ACTION archetypes.",
+    "keywords": [
+        "procedure"
+    ]
+}

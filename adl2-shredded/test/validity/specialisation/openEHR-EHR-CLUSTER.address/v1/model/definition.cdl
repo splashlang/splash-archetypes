@@ -1,0 +1,58 @@
+	CLUSTER[id1] matches {	-- Address
+		items matches {
+			CLUSTER[id2] occurrences matches {0..*} matches {	-- Address
+				items matches {
+					ELEMENT[id7] matches {	-- Address Type
+						value matches {
+							DV_CODED_TEXT[id17] matches {
+								defining_code matches {[ac1]}		-- Address Type
+							}
+						}
+					}
+					ELEMENT[id3] occurrences matches {0..1} matches {	-- Unstructured address
+						value matches {
+							DV_TEXT[id18] 
+						}
+					}
+					CLUSTER[id4] occurrences matches {0..1} matches {	-- Structured address
+						items matches {
+							ELEMENT[id6] occurrences matches {0..1} matches {	-- Property number
+								value matches {
+									DV_TEXT[id19] 
+								}
+							}
+							ELEMENT[id10] occurrences matches {0..4} matches {	-- Address line
+								value matches {
+									DV_TEXT[id20] 
+								}
+							}
+						}
+					}
+					ELEMENT[id5] occurrences matches {0..1} matches {	-- Post code
+						value matches {
+							DV_TEXT[id21] 
+						}
+					}
+					CLUSTER[id16] occurrences matches {0..1} matches {	-- AddressValid Period
+						items matches {
+							ELEMENT[id8] occurrences matches {0..1} matches {	-- Valid from
+								value matches {
+									DV_DATE_TIME[id22] matches {
+										value matches {yyyy-??-??T??:??:??}
+									}
+								}
+							}
+							ELEMENT[id9] occurrences matches {0..1} matches {	-- Valid to
+								value matches {
+									DV_DATE_TIME[id23] matches {
+										value matches {yyyy-??-??T??:??:??}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

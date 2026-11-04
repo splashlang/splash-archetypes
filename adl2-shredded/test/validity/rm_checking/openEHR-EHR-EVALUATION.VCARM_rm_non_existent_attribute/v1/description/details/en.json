@@ -1,0 +1,9 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VCARM validity check, triggered by non-existent object attribute refining_code (mis-spelling of 'defining')",
+    "use": "Regression testing",
+    "keywords": [
+        "test",
+        "RM checker"
+    ]
+}

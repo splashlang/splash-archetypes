@@ -1,0 +1,4 @@
+	OBSERVATION[id1.1] matches {	-- Test Obs specialised
+		/protocol[id2]/items[id3]/value/defining_code matches {[ac1.1]}		-- (added by post-parse processor)
+	}
+

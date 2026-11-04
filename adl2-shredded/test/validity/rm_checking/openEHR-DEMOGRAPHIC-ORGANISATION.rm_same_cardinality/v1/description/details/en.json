@@ -1,0 +1,9 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test cardinality same as in RM, should report WCACA warning",
+    "use": "Regression testing",
+    "keywords": [
+        "test",
+        "RM checking"
+    ]
+}

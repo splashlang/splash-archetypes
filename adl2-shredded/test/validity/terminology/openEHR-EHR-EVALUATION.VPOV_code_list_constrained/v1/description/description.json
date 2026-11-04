@@ -1,0 +1,10 @@
+{
+    "original_author": {
+        "name": "Thomas Beale",
+        "date": "20/02/2013"
+    },
+    "lifecycle_state": "unmanaged",
+    "other_details": {
+        "regression": "VPOV"
+    }
+}

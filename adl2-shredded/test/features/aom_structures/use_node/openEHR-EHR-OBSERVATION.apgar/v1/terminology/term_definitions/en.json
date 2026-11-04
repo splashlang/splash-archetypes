@@ -1,0 +1,138 @@
+{
+    "id1": {
+        "text": "Apgar score",
+        "description": "Clinical score derived from assessment of respiratory effort, heart rate, reflex irritability, muscle tone and skin colour."
+    },
+    "id4": {
+        "text": "1 minute",
+        "description": "Apgar score 1 minute after birth."
+    },
+    "id6": {
+        "text": "Heart Rate",
+        "description": "Recording of the infant's heart rate."
+    },
+    "at7": {
+        "text": "Absent",
+        "description": "No heart beat is seen, felt or heard."
+    },
+    "at8": {
+        "text": "<100 beats per minute",
+        "description": "Heart rate less than 100 beats per minute."
+    },
+    "at9": {
+        "text": "≥100 beats per minute",
+        "description": "Heart rate greater than or equal to 100 beats per minute."
+    },
+    "id10": {
+        "text": "Respiratory effort",
+        "description": "Observation of the infant's respiratory effort."
+    },
+    "at11": {
+        "text": "Absent",
+        "description": "No effort to breath."
+    },
+    "at12": {
+        "text": "Weak or irregular",
+        "description": "Some effort to breath, moving chest."
+    },
+    "at13": {
+        "text": "Normal",
+        "description": "Breathing normally or crying."
+    },
+    "id14": {
+        "text": "Muscle tone",
+        "description": "Observation of the infant's muscle tone."
+    },
+    "at15": {
+        "text": "Limp or flaccid",
+        "description": "No spontaneous movement."
+    },
+    "at16": {
+        "text": "Reduced tone",
+        "description": "Some flexion of extremities."
+    },
+    "at17": {
+        "text": "Normal tone",
+        "description": "Normal, vigorous movements."
+    },
+    "id18": {
+        "text": "Reflex irritability",
+        "description": "Observation of the response of the infant to an irritant stimulation, for example, suctioning the oropharynx and nares with a soft rubber catheter."
+    },
+    "at19": {
+        "text": "No response",
+        "description": "No response to stimulation."
+    },
+    "at20": {
+        "text": "Reduced response",
+        "description": "Grimace or feeble cry when stimulated."
+    },
+    "at21": {
+        "text": "Normal response",
+        "description": "Grimace, sneeze, cough or pulls away when stimulated."
+    },
+    "id22": {
+        "text": "Skin colour",
+        "description": "Observation of the skin colour of the infant."
+    },
+    "at23": {
+        "text": "Completely blue",
+        "description": "Body and extremities are blue."
+    },
+    "at24": {
+        "text": "Body pink; extremities blue",
+        "description": "Body is pink; extremities are blue."
+    },
+    "at25": {
+        "text": "Completely pink",
+        "description": "Body and extremities are pink; no cyanosis."
+    },
+    "id26": {
+        "text": "Total",
+        "description": "The sum of the 5 ordinal scores for each component parameter."
+    },
+    "id27": {
+        "text": "2 minute",
+        "description": "Apgar score 2 minutes after birth."
+    },
+    "id28": {
+        "text": "3 minute",
+        "description": "Apgar score 3 minutes after birth."
+    },
+    "id29": {
+        "text": "5 minute",
+        "description": "Apgar score 5 minutes after birth."
+    },
+    "id31": {
+        "text": "Notes on measurement",
+        "description": "Notes on measurement of the Apgar score."
+    },
+    "id32": {
+        "text": "10 minute",
+        "description": "Apgar score 10 minutes after birth."
+    },
+    "id38": {
+        "text": "Any event",
+        "description": "Apgar score at any additional time, as required."
+    },
+    "ac1": {
+        "text": "Respiratory effort (synthesised)",
+        "description": "Observation of the infant's respiratory effort. (synthesised)"
+    },
+    "ac2": {
+        "text": "Heart Rate (synthesised)",
+        "description": "Recording of the infant's heart rate. (synthesised)"
+    },
+    "ac3": {
+        "text": "Muscle tone (synthesised)",
+        "description": "Observation of the infant's muscle tone. (synthesised)"
+    },
+    "ac4": {
+        "text": "Reflex irritability (synthesised)",
+        "description": "Observation of the response of the infant to an irritant stimulation, for example, suctioning the oropharynx and nares with a soft rubber catheter. (synthesised)"
+    },
+    "ac5": {
+        "text": "Skin colour (synthesised)",
+        "description": "Observation of the skin colour of the infant. (synthesised)"
+    }
+}

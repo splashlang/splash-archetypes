@@ -1,0 +1,6 @@
+	SECTION[id1] matches {	-- Slot section
+		items cardinality matches {1..*; unordered} matches {
+			allow_archetype OBSERVATION[id2] occurrences matches {0..1} 	-- Vital signs
+		}
+	}
+

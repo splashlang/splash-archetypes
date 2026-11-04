@@ -1,0 +1,50 @@
+{
+    "id1": {
+        "text": "Observation",
+        "description": "Observation"
+    },
+    "id3": {
+        "text": "event",
+        "description": "event"
+    },
+    "id4": {
+        "text": "element 1",
+        "description": "element 1"
+    },
+    "id5": {
+        "text": "element 2",
+        "description": "element 2"
+    },
+    "at6": {
+        "text": "term 1",
+        "description": "term 1"
+    },
+    "at7": {
+        "text": "term 2",
+        "description": "term 2"
+    },
+    "at8": {
+        "text": "term 3",
+        "description": "term 3"
+    },
+    "at9": {
+        "text": "term 4",
+        "description": "term 4"
+    },
+    "at10": {
+        "text": "term 5",
+        "description": "term 5"
+    },
+    "id11": {
+        "text": "element 3",
+        "description": "element 3"
+    },
+    "ac2": {
+        "text": "ref set X",
+        "description": "ref set X"
+    },
+    "ac3": {
+        "text": "element 2",
+        "description": "element 2"
+    }
+}

@@ -1,0 +1,35 @@
+	OBSERVATION[id1] matches {	-- Enumeration test
+		data matches {
+			HISTORY[id2] matches {
+				events cardinality matches {1..*; unordered} matches {
+					POINT_EVENT[id3] occurrences matches {0..1} matches {	-- Any event
+						data matches {
+							ITEM_TREE[id4] matches {
+								items cardinality matches {1..*; unordered} matches {
+									ELEMENT[id5] occurrences matches {0..1} matches {	-- test enum 1
+										value matches {
+											DV_PROPORTION[id6] matches {
+												numerator matches {|0.0..1.0|; 0.0}
+												is_integral matches {False}
+												type matches {1}
+											}
+										}
+									}
+									ELEMENT[id7] occurrences matches {0..1} matches {	-- test enum 2
+										value matches {
+											DV_PROPORTION[id8] matches {
+												numerator matches {|0.0..1.0|; 0.0}
+												is_integral matches {False}
+												type matches {2, 3}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

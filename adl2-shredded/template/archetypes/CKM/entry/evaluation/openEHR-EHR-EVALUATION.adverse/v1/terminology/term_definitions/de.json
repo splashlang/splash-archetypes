@@ -1,0 +1,138 @@
+{
+    "id1": {
+        "text": "Nebenwirkung",
+        "description": "Zur Dokumentation des Vorhandenseins von schädlichen oder unerwünschten Reaktionen auf einen Wirkstoff oder eine Substanz, einschließlich Nahrung, festgestellt von einem Klinikarzt - Vergiftungen und unsachgemäßer Gebrauch ausgeschlossen"
+    },
+    "id4": {
+        "text": "Wirkstoff",
+        "description": "Der Wirkstoff, die Substanz oder die Klasse, welche die Nebenwirkung ausgelöst hat"
+    },
+    "id5": {
+        "text": "Wahrscheinlichkeit für kausalen Zusammenhang",
+        "description": "Grad an Sicherheit, dass der Wirkstoff der Auslöser der Reaktion war"
+    },
+    "at6": {
+        "text": "Sicher/ sehr wahrscheinlich",
+        "description": "Die Reaktion ist laut einem Klinikarzt auf den Wirkstoff zurückzuführen"
+    },
+    "at7": {
+        "text": "Wahrscheinlich",
+        "description": "Die Reaktion ist wahrscheinlich auf den Wirkstoff zurückzuführen"
+    },
+    "at8": {
+        "text": "Möglicherweise",
+        "description": "Die Reaktion ist möglicherweise auf den Wirkstoff zurückzuführen"
+    },
+    "id11": {
+        "text": "Wirkstoffgruppe",
+        "description": "Die Gruppe des Wirkstoffs"
+    },
+    "at12": {
+        "text": "Nahrungsmittel",
+        "description": "Eine Substanz, die als Teil der Ernährung zugeführt wurde "
+    },
+    "at13": {
+        "text": "Tier",
+        "description": "Ein lebender Organismus und dessen Gift oder produzierter Stoff"
+    },
+    "at14": {
+        "text": "Medikament",
+        "description": "Eine Substanz, die aus medizinischen Gründen eingenommen oder verabreicht wurde"
+    },
+    "at15": {
+        "text": "Andere Chemikalie oder Substanz",
+        "description": "Nicht-medizinische Chemikalie oder Substanz"
+    },
+    "id16": {
+        "text": "Reaktionsart",
+        "description": "Die Art der von der Person erfahrenen Reaktion, von einem Klinikarzt ermittelt"
+    },
+    "at17": {
+        "text": "Intoleranz",
+        "description": "Führt zu unerfreulichen Symptomen, die ausreichen um einen Gebrauch in der Zukunft zu vermeiden"
+    },
+    "at18": {
+        "text": "Empfindlichkeit",
+        "description": "Führt zu Krankhaftigkeit die eventuell zum Wohle des Patienten behandelt werden muss"
+    },
+    "at19": {
+        "text": "Allergie",
+        "description": "Führt zu einer IgE Reaktion"
+    },
+    "id20": {
+        "text": "Exposition und Einzelheiten der Reaktion",
+        "description": "Einzelheiten der von der Person erfahrenen Reaktion"
+    },
+    "id21": {
+        "text": "Datum der Exposition",
+        "description": "Das Datum (+/- Zeit) wann die Person gegenüber dem Wirkstoff exponiert wurde"
+    },
+    "id22": {
+        "text": "Dauer der Exposition",
+        "description": "Die Dauer der Exposition gegenüber dem Wirkstoff"
+    },
+    "id23": {
+        "text": "Beschreibung der Reaktion",
+        "description": "Eine Beschreibung der von einer Person erfahrenen Reaktion auf einen Wirkstoff"
+    },
+    "id24": {
+        "text": "Schweregrad der Reaktion",
+        "description": "Die Klasse der Reaktion für zukünftige Empfehlungen"
+    },
+    "at25": {
+        "text": "Gelinde",
+        "description": "Eine Reaktion, die wenig Leiden und keinen Verlust der Arbeitsfähigkeit/ Schulfähigkeit verursacht"
+    },
+    "at26": {
+        "text": "Unfähig machend",
+        "description": "Eine Reaktion, die Krankheit und/oder den Verlust Funktionen verursacht"
+    },
+    "at27": {
+        "text": "Lebensbedrohlich",
+        "description": "Eine Reaktion die lebensbedrohlich wahr oder sein kann"
+    },
+    "id28": {
+        "text": "Datum des Beginns der Reaktion",
+        "description": "Das Datum, an dem die Reaktion eintrat"
+    },
+    "id29": {
+        "text": "Dauer der Reaktion",
+        "description": "Die Dauer der Reaktion"
+    },
+    "at31": {
+        "text": "Keine Reaktion",
+        "description": "Die Person war ohne Reaktion exponiert"
+    },
+    "at32": {
+        "text": "Inaktiver Bestandteil des Medikaments",
+        "description": "Ein nicht-medizinischer Bestandteil des Medikaments, wie Farbstoff, Konservierungsstoff, usw. (Untertyp von andere Chemikalien)"
+    },
+    "id33": {
+        "text": "Charakteristische Substanz",
+        "description": "Die charakteristische Substanz, die die Reaktion verursacht, falls verschieden vom Wirkstoff (z.B. Marken oder Teile einer Klasse)"
+    },
+    "at34": {
+        "text": "Abbildender Farbstoff oder Medium",
+        "description": "Zur diagnostischen Bildgebung benutzter Farbstoff oder Medium (Untertyp von anderen Chemikalien)"
+    },
+    "at35": {
+        "text": "Umgebend",
+        "description": "Ein in der Umwelt vorhandener Wirkstoff"
+    },
+    "ac1": {
+        "text": "Wirkstoffgruppe (synthesised)",
+        "description": "Die Gruppe des Wirkstoffs (synthesised)"
+    },
+    "ac2": {
+        "text": "Reaktionsart (synthesised)",
+        "description": "Die Art der von der Person erfahrenen Reaktion, von einem Klinikarzt ermittelt (synthesised)"
+    },
+    "ac3": {
+        "text": "Wahrscheinlichkeit für kausalen Zusammenhang (synthesised)",
+        "description": "Grad an Sicherheit, dass der Wirkstoff der Auslöser der Reaktion war (synthesised)"
+    },
+    "ac4": {
+        "text": "Schweregrad der Reaktion (synthesised)",
+        "description": "Die Klasse der Reaktion für zukünftige Empfehlungen (synthesised)"
+    }
+}

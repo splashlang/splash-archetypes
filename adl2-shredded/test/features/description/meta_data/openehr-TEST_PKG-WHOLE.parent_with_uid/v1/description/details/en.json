@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Example top-level archetype containing a GUID uid field.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "meta-data",
+        "test"
+    ]
+}

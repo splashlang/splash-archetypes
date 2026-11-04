@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test flattening of differential path containing terminal attribute not in parent ('state'); test internal references to path in flat parent and path in current archetype.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "flattening",
+        "test"
+    ]
+}

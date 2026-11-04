@@ -1,0 +1,93 @@
+	OBSERVATION[id1] matches {	-- Laboratory test
+		data matches {
+			HISTORY[id2] matches {
+				events matches {
+					EVENT[id3] matches {	-- Any event
+						data matches {
+							ITEM_TREE[id4] matches {
+								items matches {
+									ELEMENT[id6] occurrences matches {0..1} matches {	-- Test name
+										value matches {
+											DV_TEXT[id92] 
+										}
+									}
+									ELEMENT[id78] occurrences matches {0..1} matches {	-- Diagnostic service
+										value matches {
+											DV_TEXT[id93] 
+										}
+									}
+									ELEMENT[id74] occurrences matches {0..1} matches {	-- Test status
+										value matches {
+											DV_CODED_TEXT[id94] matches {
+												defining_code matches {[ac1]}		-- Test status (synthesised)
+											}
+										}
+									}
+									allow_archetype CLUSTER[id66] matches {	-- Specimen detail
+										include
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.specimen\.v1/}
+										exclude
+											archetype_id/value matches {/.*/}
+									}
+									ELEMENT[id79] 	-- Result
+									allow_archetype CLUSTER[id90] matches {	-- Per-result annotation
+										include
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.lab_result_annotation(-[a-zA-Z0-9_]+)*\.v1/}
+										exclude
+											archetype_id/value matches {/.*/}
+									}
+									ELEMENT[id58] occurrences matches {0..1} matches {	-- Overall interpretation
+										value matches {
+											DV_TEXT[id95] 
+										}
+									}
+									ELEMENT[id11] matches {	-- Multimedia representation
+										value matches {
+											DV_MULTIMEDIA[id96] 
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[id5] matches {
+				items matches {
+					ELEMENT[id63] occurrences matches {0..1} matches {	-- Requestor order identifier
+						value matches {
+							DV_TEXT[id97] 
+						}
+					}
+					allow_archetype CLUSTER[id91] matches {	-- Requestor
+						include
+							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[id64] occurrences matches {0..1} matches {	-- Receiver order Identifier
+						value matches {
+							DV_TEXT[id98] 
+						}
+					}
+					allow_archetype CLUSTER[id18] matches {	-- Receiving laboratory
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.organisation\.v1/}
+						exclude
+							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[id69] occurrences matches {0..1} matches {	-- Laboratory test result identifier
+						value matches {
+							DV_TEXT[id99] 
+						}
+					}
+					ELEMENT[id76] occurrences matches {0..1} matches {	-- Datetime result issued
+						value matches {
+							DV_DATE_TIME[id100] 
+						}
+					}
+				}
+			}
+		}
+	}
+

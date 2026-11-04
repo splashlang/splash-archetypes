@@ -1,0 +1,218 @@
+{
+    "id1": {
+        "text": "Advance intervention decisions",
+        "description": "Anticipatory decisions about possible treatments or activities, usually asserted by an authorised clinician."
+    },
+    "id3": {
+        "text": "Intent of care",
+        "description": "Description of the overall intent for future care and treatment for the individual."
+    },
+    "id4": {
+        "text": "Rationale",
+        "description": "Narrative description about the logic and justification for the 'Intent of care' statement."
+    },
+    "id5": {
+        "text": "CPR decision",
+        "description": "Directive for future cardiopulmonary resuscitation (CPR) intervention."
+    },
+    "at6": {
+        "text": "Full CPR",
+        "description": "All appropriate cardiopulmonary resuscitation treatments should be attempted to save or prolong life."
+    },
+    "at7": {
+        "text": "Limited CPR",
+        "description": "Cardiopulmonary resuscitation treatments should be attempted, as specified in the 'Description' narrative or as structured data in the 'Per intervention' cluster."
+    },
+    "at8": {
+        "text": "No CPR",
+        "description": "No cardiopulmonary resuscitation treatments should be attempted to save or prolong life. All treatments to be focused on symptom relief and quality of life. Also known as 'Do not resuscitate (DNR)'; 'Do not attempt resuscitation (DNAR)'; 'Not for resuscitation (NFR)' or similar."
+    },
+    "at9": {
+        "text": "Unknown",
+        "description": "The CPR decision is not known."
+    },
+    "id10": {
+        "text": "Description",
+        "description": "Narrative description of the advance intervention decisions."
+    },
+    "id11": {
+        "text": "Per intervention",
+        "description": "Details of the decision about possible treatments or activities that may be life-saving, life-prolonging or cause undesirable side effects."
+    },
+    "id12": {
+        "text": "Intervention",
+        "description": "Name of the possible treatment or activity."
+    },
+    "at13": {
+        "text": "Intubation",
+        "description": "Placement of a tube into the trachea to maintain an open airway, including a tracheostomy."
+    },
+    "at14": {
+        "text": "Invasive ventilation",
+        "description": "Artificial ventilation where invasive means are used to assist or replace spontaneous breathing."
+    },
+    "at15": {
+        "text": "Non-invasive ventilation",
+        "description": "Artificial ventilation where non-invasive means are used to assist or replace spontaneous breathing."
+    },
+    "at16": {
+        "text": "Circulatory regulation",
+        "description": "Medication that supports heart function, including but not limited to: vasopressors, inotropes and chronotropes."
+    },
+    "at17": {
+        "text": "Dialysis",
+        "description": "Process of removing excess water, solutes, and toxins from the blood."
+    },
+    "at18": {
+        "text": "Blood products",
+        "description": "Therapeutic substance prepared from human blood including, but not limited to: whole blood; blood components; and plasma derivatives."
+    },
+    "at19": {
+        "text": "Antibiotics, antiviral or antifungal agents",
+        "description": "Medications to treat infections."
+    },
+    "at20": {
+        "text": "Parenteral or artificial nutrition",
+        "description": "Provision of nutrients by means other than eating or drinking."
+    },
+    "at21": {
+        "text": "Transfer to Intensive Care",
+        "description": "Transfer and admission to an intensive care or high dependency unit."
+    },
+    "at22": {
+        "text": "Transfer to hospital",
+        "description": "Transfer to hospital for assessment or admission."
+    },
+    "at23": {
+        "text": "Parenteral fluids",
+        "description": "Maintenance of hydration by means other than eating or drinking."
+    },
+    "at24": {
+        "text": "Peripheral intravenous line",
+        "description": "Insertion of a peripheral intravenous line."
+    },
+    "id25": {
+        "text": "Decision",
+        "description": "Decision about the identified intervention."
+    },
+    "at26": {
+        "text": "Recommended",
+        "description": "The intervention is recommended."
+    },
+    "at27": {
+        "text": "Conditional recommendation",
+        "description": "The intervention is recommended only in specific circumstances, captured using the 'Conditions' data element."
+    },
+    "at28": {
+        "text": "Not recommended",
+        "description": "The intervention is not recommended."
+    },
+    "at29": {
+        "text": "Unknown",
+        "description": "The intervention decision is not known."
+    },
+    "id30": {
+        "text": "Conditions",
+        "description": "Narrative description of the circumstances in which a Conditional recommendation is applicable."
+    },
+    "id31": {
+        "text": "Comment",
+        "description": "Additional narrative about the intervention decision, not captured in other fields."
+    },
+    "id32": {
+        "text": "Additional details",
+        "description": "Additional structured details about advance intervention decisions."
+    },
+    "id33": {
+        "text": "Patient awareness",
+        "description": "Narrative description about awareness of the Advance intervention decisions by the individual."
+    },
+    "id34": {
+        "text": "Carer awareness",
+        "description": "Narrative description about awareness of the Advance intervention decisions by family, carers or legal proxy."
+    },
+    "id35": {
+        "text": "Digital representation",
+        "description": "Digital document, image or video representing these Advance intervention decisions."
+    },
+    "id36": {
+        "text": "Overall comment",
+        "description": "Additional narrative about all advance intervention decisions, not captured in other fields."
+    },
+    "id38": {
+        "text": "Last updated",
+        "description": "The date and/or time when the Advance intervention decisions were last updated."
+    },
+    "id39": {
+        "text": "Valid period start",
+        "description": "The date/time that marks the beginning of the valid period of time for the Advance intervention decisions."
+    },
+    "id40": {
+        "text": "Valid period end",
+        "description": "The date/time that marks the conclusion of the valid period of time for the Advance intervention decisions."
+    },
+    "id41": {
+        "text": "Review due",
+        "description": "The date when review of the Advance intervention decisions are due."
+    },
+    "id42": {
+        "text": "Mandate",
+        "description": "Description of any legislation or other authoritative guidance that apply."
+    },
+    "id43": {
+        "text": "Document location",
+        "description": "Information about the physical or digital location of the advance intervention decisions record."
+    },
+    "id44": {
+        "text": "Location",
+        "description": "Physical or digital location of the Advance intervention decisions record."
+    },
+    "id45": {
+        "text": "Copy holder",
+        "description": "Details of a person who has a copy of the Advance intervention decisions record."
+    },
+    "id46": {
+        "text": "Extension",
+        "description": "Additional information required to extend the model with local content or to align with other reference models or formalisms."
+    },
+    "at47": {
+        "text": "Defibrillation",
+        "description": "Use of electric shock to reset the electrical state of the heart."
+    },
+    "at48": {
+        "text": "Needle thoracocentesis",
+        "description": "Insertion of a needle into the pleural or pericardial space."
+    },
+    "at49": {
+        "text": "Chest tube insertion",
+        "description": "Insertion of a tube into the pleural space."
+    },
+    "at50": {
+        "text": "Central venous line or any arterial line",
+        "description": "Insertion of a central venous line or any arterial line."
+    },
+    "at51": {
+        "text": "Chest compressions",
+        "description": "Technique used to manually pump blood around the body during a cardiac arrest."
+    },
+    "at52": {
+        "text": "Cardiac pacemaker",
+        "description": "Insertion of an artificial pacemaker to control the heart beat."
+    },
+    "at53": {
+        "text": "Arrest medications",
+        "description": "Medications used during an emergency resuscitation to prolong life. For example: adrenaline, atropine, sodium bicarbonate, calcium, other vasoactive medications."
+    },
+    "ac1": {
+        "text": "CPR decision (synthesised)",
+        "description": "Directive for future cardiopulmonary resuscitation (CPR) intervention. (synthesised)"
+    },
+    "ac2": {
+        "text": "Intervention (synthesised)",
+        "description": "Name of the possible treatment or activity. (synthesised)"
+    },
+    "ac3": {
+        "text": "Decision (synthesised)",
+        "description": "Decision about the identified intervention. (synthesised)"
+    }
+}

@@ -1,0 +1,4 @@
+	WHOLE[id1.1] matches {	-- Specialised duration
+		duration_attr36 matches {P1D}
+	}
+

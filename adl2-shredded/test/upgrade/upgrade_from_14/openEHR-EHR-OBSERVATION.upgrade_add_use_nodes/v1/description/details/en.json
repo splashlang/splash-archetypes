@@ -1,0 +1,16 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Recording blood glucose measurements with a full history and state model to allow the patient state to be recorded.",
+    "use": "For BSL measurements, GTTs and following other challenges.",
+    "keywords": [
+        "lab",
+        "pathology",
+        "biochemistry",
+        "laboratory",
+        "GTT",
+        "glucose tolerance",
+        "BSL",
+        "blood sugar"
+    ],
+    "misuse": ""
+}

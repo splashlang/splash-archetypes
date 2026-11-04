@@ -1,0 +1,14 @@
+{
+    "id1": {
+        "text": "Exclusion Statement",
+        "description": "Generic, positive statement/s that need to be recorded as clinically excluded from the health record at a specific point in time."
+    },
+    "at3": {
+        "text": "Exclusion Statement",
+        "description": "The statement about an exclusion in the health record."
+    },
+    "id4": {
+        "text": "Specific Object",
+        "description": "Identification of the specific object/s to which the Exclusion Statement applies."
+    }
+}

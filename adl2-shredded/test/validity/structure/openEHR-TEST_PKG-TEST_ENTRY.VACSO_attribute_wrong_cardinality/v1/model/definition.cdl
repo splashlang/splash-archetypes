@@ -1,0 +1,6 @@
+	TEST_ENTRY[id1] matches {
+		element_attr matches {
+			TEST_ELEMENT[id2] occurrences matches {1..2}
+		}
+	}
+

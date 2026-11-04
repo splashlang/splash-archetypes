@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VARXS validity check, triggered by slot filler with archetype id that does not match the definition",
+    "use": "Regression testing"
+}

@@ -1,0 +1,10 @@
+	OBSERVATION[id1.1] matches {	-- Intravascular pressure redefined
+		/data[id2]/events[id3]/data[id4]/items[id6]/value matches {
+			DV_QUANTITY[id42] matches {
+				[magnitude, units, precision] matches {
+					[{|>=0.0|}, {"cm[H20]"}, {2}]
+				}
+			}
+		}
+	}
+

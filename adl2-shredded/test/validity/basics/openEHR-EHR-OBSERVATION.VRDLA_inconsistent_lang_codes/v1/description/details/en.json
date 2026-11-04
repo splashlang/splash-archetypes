@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VDRLA validity check, triggered when language code in a ODIN block (e.g. this 'details' block) does not match the code used in the 'language' attribute within the block; see the following block where 'zh-cn' does not match 'zh'.",
+    "use": "Regression testing"
+}

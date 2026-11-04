@@ -1,0 +1,58 @@
+{
+    "id1": {
+        "text": "General statement of exclusions or states",
+        "description": "A category of conditions or states which have been excluded"
+    },
+    "id3": {
+        "text": "Statement",
+        "description": "The statement about what is excluded"
+    },
+    "at4": {
+        "text": "No significant illness",
+        "description": "The person has no significant medical condition"
+    },
+    "at5": {
+        "text": "No significant past history",
+        "description": "The person has no significant past medical history"
+    },
+    "at6": {
+        "text": "No significant family history",
+        "description": "The person has no relatives with significant health problems"
+    },
+    "at7": {
+        "text": "No known adverse reactions",
+        "description": "The person has had no adverse reactions, including intolerances, sensitivities or allergies, to medications, food, animals or chemicals"
+    },
+    "at8": {
+        "text": "No known sensitivities",
+        "description": "No sensitivity to any medications, foods or substances"
+    },
+    "at9": {
+        "text": "No known intolerances",
+        "description": "No known or recorded intolerances to medications, foods or other substances"
+    },
+    "at10": {
+        "text": "No relevant past history",
+        "description": "No past problems or procedures relevant to the current situation"
+    },
+    "at11": {
+        "text": "No hospitalisations",
+        "description": "No admissions to hospital"
+    },
+    "at12": {
+        "text": "No major surgery",
+        "description": "No major operations or procedures"
+    },
+    "at13": {
+        "text": "No relevant family history",
+        "description": "No family history relevant to the current situation"
+    },
+    "at14": {
+        "text": "No known allergies",
+        "description": "No allergies known to any medications, foods or substances"
+    },
+    "ac1": {
+        "text": "Statement",
+        "description": "The statement about what is excluded"
+    }
+}

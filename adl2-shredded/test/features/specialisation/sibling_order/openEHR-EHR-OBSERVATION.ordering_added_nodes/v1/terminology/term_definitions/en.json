@@ -1,0 +1,18 @@
+{
+    "id0.1": {
+        "text": "Text field 2",
+        "description": "*"
+    },
+    "id0.2": {
+        "text": "Quantity 2",
+        "description": "*"
+    },
+    "id0.3": {
+        "text": "Text field 3",
+        "description": "*"
+    },
+    "id1.1": {
+        "text": "specialisation containing ordered extension nodes",
+        "description": "specialisation containing ordered extension nodes"
+    }
+}

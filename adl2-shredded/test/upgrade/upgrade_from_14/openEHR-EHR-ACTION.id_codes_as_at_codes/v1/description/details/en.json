@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Show how at-codes used as ids and values are converted to id-codes and distinct at-codes",
+    "use": "Regression testing"
+}

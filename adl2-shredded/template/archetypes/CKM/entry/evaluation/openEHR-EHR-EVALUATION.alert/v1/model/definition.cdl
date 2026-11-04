@@ -1,0 +1,56 @@
+	EVALUATION[id1] matches {	-- Alert
+		data matches {
+			ITEM_LIST[id2] matches {
+				items matches {
+					ELEMENT[id3] occurrences matches {0..1} matches {	-- Category
+						value matches {
+							DV_CODED_TEXT[id16] matches {
+								defining_code matches {[ac2]}		-- A category of alert based
+							}
+						}
+					}
+					ELEMENT[id4] occurrences matches {1} matches {	-- Description
+						value matches {
+							DV_TEXT[id17] 
+						}
+					}
+					ELEMENT[id5] occurrences matches {0..1} matches {	-- Start of alert
+						value matches {
+							DV_DATE_TIME[id18] matches {
+								value matches {yyyy-??-??T??:??:??}
+							}
+						}
+					}
+					ELEMENT[id6] occurrences matches {0..1} matches {	-- Certainty
+						value matches {
+							DV_CODED_TEXT[id19] matches {
+								defining_code matches {[ac3]}		-- Certainty (synthesised)
+							}
+						}
+					}
+					ELEMENT[id10] occurrences matches {0..1} matches {	-- Status
+						value matches {
+							DV_CODED_TEXT[id20] matches {
+								defining_code matches {[ac4]}		-- Status (synthesised)
+							}
+						}
+					}
+					ELEMENT[id11] occurrences matches {0..1} matches {	-- Review on
+						value matches {
+							DV_DATE_TIME[id21] matches {
+								value matches {yyyy-??-??T??:??:??}
+							}
+						}
+					}
+					ELEMENT[id15] occurrences matches {0..1} matches {	-- End of alert
+						value matches {
+							DV_DATE_TIME[id22] matches {
+								value matches {yyyy-??-??T??:??:??}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

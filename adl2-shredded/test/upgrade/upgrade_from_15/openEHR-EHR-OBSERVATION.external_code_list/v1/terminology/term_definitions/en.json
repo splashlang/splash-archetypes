@@ -1,0 +1,38 @@
+{
+    "id1": {
+        "text": "Test Obs",
+        "description": "Test Obs"
+    },
+    "id3": {
+        "text": "document state",
+        "description": "document state"
+    },
+    "ac1": {
+        "text": "document state",
+        "description": "document state"
+    },
+    "at1": {
+        "text": "modification",
+        "description": "modification"
+    },
+    "at2": {
+        "text": "creation",
+        "description": "creation"
+    },
+    "at3": {
+        "text": "synthesis",
+        "description": "synthesis"
+    },
+    "at4": {
+        "text": "unknown",
+        "description": "unknown"
+    },
+    "at5": {
+        "text": "deleted",
+        "description": "deleted"
+    },
+    "at6": {
+        "text": "attestation",
+        "description": "attestation"
+    }
+}

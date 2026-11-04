@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Lab result expressed as a quantity.",
+    "use": "Regression testing"
+}

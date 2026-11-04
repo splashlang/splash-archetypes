@@ -1,0 +1,9 @@
+	EVALUATION[id1.1] matches {	-- Alerts
+		/data[id2]/items matches {
+			ELEMENT[id3] occurrences matches {0} 
+			ELEMENT[id6] occurrences matches {0} 
+			ELEMENT[id10] occurrences matches {0} 
+			ELEMENT[id15] occurrences matches {0} 
+		}
+	}
+

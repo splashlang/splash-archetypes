@@ -1,0 +1,26 @@
+{
+    "id1": {
+        "text": "Some evaluation",
+        "description": "Some evaluation"
+    },
+    "id3": {
+        "text": "An Element",
+        "description": "An Element"
+    },
+    "id4": {
+        "text": "Another Element",
+        "description": "Another Element"
+    },
+    "at5": {
+        "text": "coded item #1",
+        "description": "coded item #1"
+    },
+    "at6": {
+        "text": "coded item #2",
+        "description": "coded item #2"
+    },
+    "ac1": {
+        "text": "Another Element",
+        "description": "Another Element"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test visual rendering of existence, cardinality and occurrences in the ADL Workbench.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "occurrences"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "id1": {
+        "description": "an Observation",
+        "text": "an Observation"
+    },
+    "id3": {
+        "description": "some Event",
+        "text": "some Event"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "id1.1": {
+        "text": "Patient demographic data",
+        "description": "Simple patient personal demographic data"
+    },
+    "id11.1": {
+        "text": "race data",
+        "description": "race data"
+    },
+    "id11.2": {
+        "text": "other data",
+        "description": "other data"
+    },
+    "id11.3": {
+        "text": "birth data",
+        "description": "birth data"
+    },
+    "id3.1": {
+        "text": "Person name",
+        "description": "Person name"
+    },
+    "id31.1": {
+        "text": "Address",
+        "description": "Address"
+    }
+}

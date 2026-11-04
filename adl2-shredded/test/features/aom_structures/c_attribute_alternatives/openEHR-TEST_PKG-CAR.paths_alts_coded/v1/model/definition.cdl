@@ -1,0 +1,13 @@
+	CAR[id1] matches {	-- car
+		body matches {
+			CAR_BODY[id2] matches {	-- hatchback body
+				description matches {"hatchback body"}
+				model matches {"xxxx"}
+			}
+			CAR_BODY[id3] matches {	-- coupe body
+				description matches {"coupe body"}
+				model matches {"xxxx"}
+			}
+		}
+	}
+

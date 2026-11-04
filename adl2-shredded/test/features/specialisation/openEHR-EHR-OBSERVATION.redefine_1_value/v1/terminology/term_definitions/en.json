@@ -1,0 +1,22 @@
+{
+    "at0.1": {
+        "text": "internal code A",
+        "description": "internal code A description"
+    },
+    "at0.2": {
+        "text": "internal code B",
+        "description": "internal code B description"
+    },
+    "id1.1": {
+        "text": "first level specialisation archetype",
+        "description": "first level specialisation test archetype"
+    },
+    "id4.1": {
+        "text": "Redefined text field",
+        "description": "redefined text field"
+    },
+    "ac0.1": {
+        "text": "(added by post-parse processor)",
+        "description": "(added by post-parse processor)"
+    }
+}

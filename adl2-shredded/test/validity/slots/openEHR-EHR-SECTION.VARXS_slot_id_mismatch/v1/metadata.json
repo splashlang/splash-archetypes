@@ -1,0 +1,7 @@
+{
+    "id": "openEHR-EHR-SECTION.VARXS_slot_id_mismatch.v1.0.0",
+    "artefact_type": "archetype",
+    "specialise": "openEHR-EHR-SECTION.slot_parent.v1",
+    "adl_version": "2.0.7",
+    "rm_release": "1.0.2"
+}

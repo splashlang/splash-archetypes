@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VCORMT validity check, triggered by illegal refinement of RM type",
+    "use": "Regression testing"
+}

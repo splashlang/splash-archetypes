@@ -1,0 +1,22 @@
+{
+    "id1": {
+        "text": "Dados demográficos adicionais da pessoa",
+        "description": "Dados demográficos adicionais da pessoa além daqueles especificados pela ISO 22220"
+    },
+    "id2": {
+        "text": "Estado Civil",
+        "description": "Estado Civil"
+    },
+    "id3": {
+        "text": "Etnia",
+        "description": "Grupo étnico ao qual a pessoa pertence"
+    },
+    "ac2": {
+        "text": "Códigos para Estado Civil",
+        "description": "Códigos válidos para Estado Civil"
+    },
+    "ac3": {
+        "text": "Códigos para grupos étnicos",
+        "description": "códigos válidos para grupos étnicos"
+    }
+}

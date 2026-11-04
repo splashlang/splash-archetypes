@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::sl]",
+    "purpose": "Za beleženje podrobnosti o izvedeni aktivnosti",
+    "use": "Za beleženje podrobnosto o izvedeni aktivnosti, ki zadeva posameznega pacienta/subjekt",
+    "keywords": [
+        "aktivnosti",
+        "postopek"
+    ],
+    "misuse": "Podrobnosti o aktivnostih povezani z opisano kativnostjo, kot npr. dajanje zdravil, se zabeleži v arhetipih tipa ACTION"
+}

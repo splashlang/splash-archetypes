@@ -1,0 +1,18 @@
+{
+    "id1.1": {
+        "text": "top-level archetype",
+        "description": "top level test archetype for specialisation lineage"
+    },
+    "id6.1": {
+        "text": "Quantity field 1",
+        "description": "quantity field"
+    },
+    "id6.2": {
+        "text": "Quantity field 2",
+        "description": "quantity field"
+    },
+    "id6.3": {
+        "text": "Quantity field 3",
+        "description": "quantity field"
+    }
+}

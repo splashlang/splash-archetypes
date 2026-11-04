@@ -1,0 +1,13 @@
+	OBSERVATION[id1] matches {	-- Blood Pressure
+		protocol matches {
+			ITEM_TREE[id12] matches {	-- Tree
+				items matches {
+					allow_archetype CLUSTER[id1058] matches {	-- Structured measurement location
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location(-[a-zA-Z0-9_]+)*\.v1/}
+					}
+				}
+			}
+		}
+	}
+

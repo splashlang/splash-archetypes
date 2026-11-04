@@ -1,0 +1,30 @@
+{
+    "id1": {
+        "text": "Prestador de assistência à saúde",
+        "description": "Organização no papel de um prestador de assistência à saúde"
+    },
+    "id2": {
+        "text": "Identificadores",
+        "description": "Identificadores utilizados pela organização quando atua como prestador de assistência à saúde"
+    },
+    "id3": {
+        "text": "Nome do prestador",
+        "description": "Especifica como a organização prestadora de assistência à saúde é conhecida"
+    },
+    "id4": {
+        "text": "Relacionamento com fonte pagadora",
+        "description": "Relacionamento entre a organização prestadora de assistência e uma fonte pagadora"
+    },
+    "id11": {
+        "text": "Identificador",
+        "description": "Identificador utilizado pelo prestador de assistência à saúde"
+    },
+    "id31": {
+        "text": "Detalhes",
+        "description": "Detalhes do relacionamento"
+    },
+    "id32": {
+        "text": "Identificador",
+        "description": "Identificador utilizado pelo prestador no relacionamento com a fonte pagadora"
+    }
+}

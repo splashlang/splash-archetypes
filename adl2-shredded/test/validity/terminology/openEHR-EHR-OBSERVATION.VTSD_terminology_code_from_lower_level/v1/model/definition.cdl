@@ -1,0 +1,10 @@
+	OBSERVATION[id1.1] matches {	-- specialisation containing ordered extension nodes
+		/data/events[id3]/data/items cardinality matches {2..*; ordered} matches {
+			ELEMENT[id0.1] matches {	-- Text field 2
+				value matches {
+					DV_TEXT[id0.16] 
+				}
+			}
+		}
+	}
+

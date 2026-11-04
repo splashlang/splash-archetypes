@@ -1,0 +1,42 @@
+{
+    "id1": {
+        "text": "Dados do nascimento",
+        "description": "Dados demográficos do nascimento"
+    },
+    "id2": {
+        "text": "Data do nascimento",
+        "description": "A data do nascimento da pessoa"
+    },
+    "id3": {
+        "text": "país de nascimento",
+        "description": "O país onde a pessoa nasceu"
+    },
+    "id4": {
+        "text": "Nascimento multiplo",
+        "description": "Um indicador de nascimento múltiplo, mostrando o número total de nascimentos resultantes de uma única gestação"
+    },
+    "id5": {
+        "text": "Ordem de Nascimento",
+        "description": "A ordem seqüencial desta pessoa em um nascimento múltiplo, não importando se foi um nascido vivo ou morto"
+    },
+    "id6": {
+        "text": "Indicador de seguimento da data de nascimento",
+        "description": "Indicador que informa quando a data de nascimento corrente precisa de ser acompanhada para obter uma data mais acurada."
+    },
+    "id7": {
+        "text": "Dados específicos de um país",
+        "description": "Dados adicionais do nascimento que são específicos de cada país"
+    },
+    "ac1": {
+        "text": "Códigos de países",
+        "description": "códigos válidos para paises"
+    },
+    "ac2": {
+        "text": "Códigos para nascimento múltiplo",
+        "description": "códigos válidos para nascimento múltiplo"
+    },
+    "ac3": {
+        "text": "Códigos para ordem de nascimento",
+        "description": "códigos válidos para  ordem de nascimento"
+    }
+}

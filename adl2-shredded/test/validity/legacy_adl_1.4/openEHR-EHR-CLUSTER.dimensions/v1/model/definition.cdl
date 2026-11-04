@@ -1,0 +1,53 @@
+	CLUSTER[id1] matches {	-- Dimensions
+		items matches {
+			ELEMENT[id2] occurrences matches {0..1} matches {	-- Circumference
+				value matches {
+					DV_QUANTITY[id8] matches {
+						property matches {[at1]}
+						units matches {"µm", "mm", "cm", "m", "ft", "in", "yd"}
+					}
+				}
+			}
+			ELEMENT[id3] occurrences matches {0..1} matches {	-- Length
+				value matches {
+					DV_QUANTITY[id9] matches {
+						property matches {[at1]}
+						units matches {"µm", "mm", "cm", "m", "ft", "in", "yd"}
+					}
+				}
+			}
+			ELEMENT[id4] occurrences matches {0..1} matches {	-- Breadth
+				value matches {
+					DV_QUANTITY[id10] matches {
+						property matches {[at1]}
+						units matches {"µm", "mm", "cm", "m", "ft", "in", "yd"}
+					}
+				}
+			}
+			ELEMENT[id5] occurrences matches {0..1} matches {	-- Depth
+				value matches {
+					DV_QUANTITY[id11] matches {
+						property matches {[at1]}
+						units matches {"µm", "mm", "cm", "m", "in", "ft"}
+					}
+				}
+			}
+			ELEMENT[id6] occurrences matches {0..1} matches {	-- Area
+				value matches {
+					DV_QUANTITY[id12] matches {
+						property matches {[at2]}
+						units matches {"mm2", "cm2", "% body", "% head, neck", "% lower limb", "% trunk", "% upper limb", "m2", "in2", "ft2"}
+					}
+				}
+			}
+			ELEMENT[id7] occurrences matches {0..1} matches {	-- Volume
+				value matches {
+					DV_QUANTITY[id13] matches {
+						property matches {[at3]}
+						units matches {"mm3", "ml", "in3", "cc", "ft3"}
+					}
+				}
+			}
+		}
+	}
+

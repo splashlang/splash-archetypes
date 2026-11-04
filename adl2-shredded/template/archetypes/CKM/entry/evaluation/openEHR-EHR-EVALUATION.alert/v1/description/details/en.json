@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "For recording alerts of any kind in the health record",
+    "use": "test use",
+    "keywords": [
+        "nota bene",
+        "warning"
+    ],
+    "misuse": "",
+    "copyright": "copyright (c) 2010 openEHR Foundation"
+}

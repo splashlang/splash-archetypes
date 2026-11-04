@@ -1,0 +1,68 @@
+	SOME_TYPE[id1] matches {	-- Test
+		standard_coded_text_attr matches {
+			DV_CODED_TEXT[id7] matches {
+				defining_code matches {
+					CODE_PHRASE[id2] matches {	-- coded node
+						terminology_id matches {
+							TERMINOLOGY_ID[id8] matches {
+								value matches {"local"}
+							}
+						}
+						code_string matches {"at112"}
+					}
+					CODE_PHRASE[id3] matches {	-- coded node
+						terminology_id matches {
+							TERMINOLOGY_ID[id9] matches {
+								value matches {"local"}
+							}
+						}
+						code_string matches {"at113"}
+					}
+					CODE_PHRASE[id4] matches {	-- coded node
+						terminology_id matches {
+							TERMINOLOGY_ID[id10] matches {
+								value matches {"local"}
+							}
+						}
+						code_string matches {"at114"}
+					}
+					CODE_PHRASE[id5] matches {	-- coded node
+						terminology_id matches {
+							TERMINOLOGY_ID[id11] matches {
+								value matches {"local"}
+							}
+						}
+						code_string matches {"at115"}
+					}
+					CODE_PHRASE[id6] matches {	-- coded node
+						terminology_id matches {
+							TERMINOLOGY_ID[id12] matches {
+								value matches {"local"}
+							}
+						}
+						code_string matches {"at116"}
+					}
+				}
+			}
+		}
+		standard_coded_text_attr_2 matches {
+			DV_CODED_TEXT[id13] matches {
+				defining_code matches {
+					CODE_PHRASE[id2] matches {	-- coded node
+						terminology_id matches {
+							TERMINOLOGY_ID[id14] matches {
+								value matches {"local"}
+							}
+						}
+						code_string matches {"at112", "at113", "at114", "at115", "at116"}
+					}
+				}
+			}
+		}
+		clinical_coded_text_attr_1 matches {
+			DV_CODED_TEXT[id15] matches {
+				defining_code matches {[ac1; at112]}		-- Test (synthesised)
+			}
+		}
+	}
+

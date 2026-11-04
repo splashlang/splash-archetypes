@@ -1,0 +1,6 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Annotation on non-existent (mis-spelled) RM path",
+    "use": "Regression testing",
+    "copyright": "©2011 openEHR Foundation"
+}

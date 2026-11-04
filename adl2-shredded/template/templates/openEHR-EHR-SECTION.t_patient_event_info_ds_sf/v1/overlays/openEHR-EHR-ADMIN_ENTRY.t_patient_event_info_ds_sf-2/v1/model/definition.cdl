@@ -1,0 +1,20 @@
+	ADMIN_ENTRY[id1.1] matches {	-- Discharge event end information - Simple discharge summary
+		/other_participations matches {
+			PARTICIPATION[id85.1] occurrences matches {1} matches {	-- Responsible clinician on discharge
+				performer existence matches {1} 
+			}
+			PARTICIPATION[id86] occurrences matches {0} 
+			PARTICIPATION[id87] occurrences matches {0} 
+		}
+		/data[id4]/items matches {
+			ELEMENT[id5.1] occurrences matches {1} 	-- Event end datetime
+			ELEMENT[id81] occurrences matches {0} 
+			ELEMENT[id61.1] 	-- Discharge from service/specialty
+			ELEMENT[id72] occurrences matches {0} 
+			allow_archetype CLUSTER[id75] closed 	-- Slot closed
+			ELEMENT[id78.1] 	-- Discharge outcome
+			ELEMENT[id79] occurrences matches {0} 
+			ELEMENT[id80.1] occurrences matches {1} 	-- Discharge status/type
+		}
+	}
+

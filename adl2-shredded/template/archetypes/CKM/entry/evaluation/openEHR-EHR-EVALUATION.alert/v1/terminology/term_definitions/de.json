@@ -1,0 +1,70 @@
+{
+    "id1": {
+        "text": "Warnung",
+        "description": "Informationen, die eine zu behandelnde Person betreffen und besondere Betrachtung eines Klinikers benötigen, bevor über seine/ihre Handlungen entschieden wird, um ein ungewolltes Ereignis zu verhindern, oder Informationen bezüglich der Sicherheit der zu behandelnden Person oder der Gesundheitsdienstleister oder bezüglich besonderer Umstände, die für die Leistungserbringung von Bedeutung sind."
+    },
+    "id3": {
+        "text": "Kategorie",
+        "description": "Die Kategorie der Warnung"
+    },
+    "id4": {
+        "text": "Beschreibung",
+        "description": "Einzelheiten der Warnung"
+    },
+    "id5": {
+        "text": "Start der Warnung",
+        "description": "Datum und Zeitpunkt, zu dem das Problem oder Ereignis begonnen hat"
+    },
+    "id6": {
+        "text": "Sicherheit",
+        "description": "Ein Hinweis auf das Vertrauen bezüglich des Vorliegens der Warnung"
+    },
+    "at7": {
+        "text": "Bestätigt",
+        "description": "Das Ereignis oder die Warnung wurde bestätigt"
+    },
+    "at8": {
+        "text": "Vermuted",
+        "description": "Das Problem oder Ereignis wird vermutet"
+    },
+    "at9": {
+        "text": "Unwahrscheinlich",
+        "description": "Das Problem oder Ereignis ist unwahrscheinlich"
+    },
+    "id10": {
+        "text": "Zustand",
+        "description": "Ein Hinweis, ob die Warnung als aktives oder inaktives Problem angesehen wird"
+    },
+    "id11": {
+        "text": "Kontrollzeitpunkt",
+        "description": "Das Datum und der Zeitpunkt, wann die Warnung eine Kontrolle erfordert"
+    },
+    "at12": {
+        "text": "Aktiv",
+        "description": "Die Warnung ist aktiv"
+    },
+    "at13": {
+        "text": "Inaktiv",
+        "description": "Die Warnung ist momentan inaktiv"
+    },
+    "at14": {
+        "text": "Aufgehoben",
+        "description": "Die Warnung wurde aufgehoben"
+    },
+    "id15": {
+        "text": "Ende der Warnung",
+        "description": "Das Ende das Warnzeitraumes, falls bekannt"
+    },
+    "ac2": {
+        "text": "Eine Kategorie von Warnungen",
+        "description": "Kodierte Kategorien von Warnungen, basierend auf einem Domänenvokabular"
+    },
+    "ac3": {
+        "text": "Sicherheit (synthesised)",
+        "description": "Ein Hinweis auf das Vertrauen bezüglich des Vorliegens der Warnung (synthesised)"
+    },
+    "ac4": {
+        "text": "Zustand (synthesised)",
+        "description": "Ein Hinweis, ob die Warnung als aktives oder inaktives Problem angesehen wird (synthesised)"
+    }
+}

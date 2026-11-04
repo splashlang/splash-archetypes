@@ -1,0 +1,36 @@
+	OBSERVATION[id1] matches {	-- Observation
+		data matches {
+			HISTORY[id12] matches {
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[id3] matches {	-- event
+						data matches {
+							ITEM_TREE[id13] matches {
+								items cardinality matches {2..*; ordered} matches {
+									ELEMENT[id4] matches {	-- element 1
+										value matches {
+											DV_TEXT[id14] 
+										}
+									}
+									ELEMENT[id5] matches {	-- element 2
+										value matches {
+											DV_CODED_TEXT[id15] matches {
+												defining_code matches {[ac3]}		-- element 2
+											}
+										}
+									}
+									ELEMENT[id11] occurrences matches {0..1} matches {	-- element 3
+										value matches {
+											DV_CODED_TEXT[id16] matches {
+												defining_code matches {[ac2]}		-- ref set X
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

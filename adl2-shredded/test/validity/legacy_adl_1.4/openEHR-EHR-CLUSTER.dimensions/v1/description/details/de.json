@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::de]",
+    "purpose": "Zur Beschreibung der Ausmaße eines betrachteten Teils.",
+    "use": "Regression testing",
+    "keywords": [
+        "Größe",
+        "Volumen"
+    ],
+    "misuse": ""
+}

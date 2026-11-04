@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test WACMCL warning, triggered by occurrences of container attributes being outside of cardinality bounds.",
+    "use": "Regression testing"
+}

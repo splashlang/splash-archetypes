@@ -1,0 +1,14 @@
+{
+    "id1.1": {
+        "text": "Observation",
+        "description": "Observation"
+    },
+    "ac3.1": {
+        "text": "value set 1",
+        "description": "value set 1"
+    },
+    "at0.1": {
+        "text": "new code",
+        "description": "new code"
+    }
+}

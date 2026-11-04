@@ -1,0 +1,8 @@
+	OBSERVATION[id1.1] matches {	-- Observation
+		/data/events[id3]/data/items[id11]/value matches {
+			DV_CODED_TEXT[id16] matches {
+				defining_code matches {"string value"}
+			}
+		}
+	}
+

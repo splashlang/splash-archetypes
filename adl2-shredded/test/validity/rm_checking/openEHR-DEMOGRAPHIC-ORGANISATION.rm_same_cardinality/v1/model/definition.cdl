@@ -1,0 +1,6 @@
+	ORGANISATION[id1] matches {	-- An organisation
+		identities matches {
+			PARTY_IDENTITY[id2] occurrences matches {1..*} 	-- A party identity
+		}
+	}
+

@@ -1,0 +1,29 @@
+	ACTION[id1] matches {	-- Imaging investigation
+		ism_transition matches {
+			ISM_TRANSITION[id2] matches {	-- Planned
+				current_state matches {
+					DV_CODED_TEXT[id6] matches {
+						defining_code matches {[at6]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id7] matches {
+						defining_code matches {[at2]}
+					}
+				}
+			}
+			ISM_TRANSITION[id5] matches {	-- Requested
+				current_state matches {
+					DV_CODED_TEXT[id8] matches {
+						defining_code matches {[at6]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id9] matches {
+						defining_code matches {[at5]}
+					}
+				}
+			}
+		}
+	}
+

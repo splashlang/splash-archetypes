@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Example showing openEHR DV_ORDINAL modelled with and without tuples.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "ordinal",
+        "test"
+    ]
+}

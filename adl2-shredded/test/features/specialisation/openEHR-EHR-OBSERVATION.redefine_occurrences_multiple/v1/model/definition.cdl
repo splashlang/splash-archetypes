@@ -1,0 +1,9 @@
+	OBSERVATION[id1.1] matches {
+		/data[id9]/events matches {
+			EVENT[id3.1] occurrences matches {0..2}
+			EVENT[id3.2] occurrences matches {1..2}
+			EVENT[id3.3] occurrences matches {0..4}
+			EVENT[id3.4] occurrences matches {0..*}
+		}
+	}
+

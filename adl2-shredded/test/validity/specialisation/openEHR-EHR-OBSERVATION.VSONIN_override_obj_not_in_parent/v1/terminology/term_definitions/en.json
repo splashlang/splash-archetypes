@@ -1,0 +1,10 @@
+{
+    "id1.1": {
+        "text": "Observation",
+        "description": "Observation"
+    },
+    "id11.1": {
+        "text": "Element that has no corresponding parent",
+        "description": "Element that has no corresponding parent"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "lifecycle_state": "unmanaged",
+    "original_author": {
+        "name": "Dr Ian McNicoll",
+        "organisation": "openEHR Archetype Editorial Group / Ocean Informatics",
+        "email": "ian.mcnicoll@oceaninformatics.com",
+        "date": "27/01/2009"
+    },
+    "copyright": "copyright (c) 2010 openEHR Foundation.",
+    "other_details": {
+        "regression": "PASS"
+    }
+}

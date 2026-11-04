@@ -1,0 +1,409 @@
+	ACTION[id1] matches {	-- Medication
+		ism_transition matches {
+			ISM_TRANSITION[id110] matches {	-- Medication recommended
+				current_state matches {
+					DV_CODED_TEXT[id146] matches {
+						defining_code matches {[at141]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id147] matches {
+						defining_code matches {[at110]}
+					}
+				}
+			}
+			ISM_TRANSITION[id14] matches {	-- Scheduled medication postponed
+				current_state matches {
+					DV_CODED_TEXT[id148] matches {
+						defining_code matches {[at142]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id149] matches {
+						defining_code matches {[at14]}
+					}
+				}
+			}
+			ISM_TRANSITION[id13] matches {	-- Medication course cancelled
+				current_state matches {
+					DV_CODED_TEXT[id150] matches {
+						defining_code matches {[at143]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id151] matches {
+						defining_code matches {[at13]}
+					}
+				}
+			}
+			ISM_TRANSITION[id17] matches {	-- Medication start date/condition set
+				current_state matches {
+					DV_CODED_TEXT[id152] matches {
+						defining_code matches {[at144]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id153] matches {
+						defining_code matches {[at17]}
+					}
+				}
+			}
+			ISM_TRANSITION[id138] matches {	-- Medication restart date/condition set
+				current_state matches {
+					DV_CODED_TEXT[id154] matches {
+						defining_code matches {[at144]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id155] matches {
+						defining_code matches {[at138]}
+					}
+				}
+			}
+			ISM_TRANSITION[id3] matches {	-- Prescription first issued
+				current_state matches {
+					DV_CODED_TEXT[id156] matches {
+						defining_code matches {[at145]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id157] matches {
+						defining_code matches {[at3]}
+					}
+				}
+			}
+			ISM_TRANSITION[id4] matches {	-- Medication dispensed
+				current_state matches {
+					DV_CODED_TEXT[id158] matches {
+						defining_code matches {[at145]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id159] matches {
+						defining_code matches {[at4]}
+					}
+				}
+			}
+			ISM_TRANSITION[id5] matches {	-- Medication course commenced
+				current_state matches {
+					DV_CODED_TEXT[id160] matches {
+						defining_code matches {[at145]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id161] matches {
+						defining_code matches {[at5]}
+					}
+				}
+			}
+			ISM_TRANSITION[id6] matches {	-- Medication course reviewed
+				current_state matches {
+					DV_CODED_TEXT[id162] matches {
+						defining_code matches {[at145]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id163] matches {
+						defining_code matches {[at6]}
+					}
+				}
+			}
+			ISM_TRANSITION[id42] matches {	-- Minor change to order
+				current_state matches {
+					DV_CODED_TEXT[id164] matches {
+						defining_code matches {[at145]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id165] matches {
+						defining_code matches {[at42]}
+					}
+				}
+			}
+			ISM_TRANSITION[id7] matches {	-- Dose administered
+				current_state matches {
+					DV_CODED_TEXT[id166] matches {
+						defining_code matches {[at145]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id167] matches {
+						defining_code matches {[at7]}
+					}
+				}
+			}
+			ISM_TRANSITION[id107] matches {	-- Medication re-authorised
+				current_state matches {
+					DV_CODED_TEXT[id168] matches {
+						defining_code matches {[at145]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id169] matches {
+						defining_code matches {[at107]}
+					}
+				}
+			}
+			ISM_TRANSITION[id11] matches {	-- Prescription re-issued
+				current_state matches {
+					DV_CODED_TEXT[id170] matches {
+						defining_code matches {[at145]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id171] matches {
+						defining_code matches {[at11]}
+					}
+				}
+			}
+			ISM_TRANSITION[id19] matches {	-- Dose administration omitted
+				current_state matches {
+					DV_CODED_TEXT[id172] matches {
+						defining_code matches {[at145]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id173] matches {
+						defining_code matches {[at19]}
+					}
+				}
+			}
+			ISM_TRANSITION[id45] matches {	-- Dose administration deferred
+				current_state matches {
+					DV_CODED_TEXT[id174] matches {
+						defining_code matches {[at145]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id175] matches {
+						defining_code matches {[at45]}
+					}
+				}
+			}
+			ISM_TRANSITION[id36] matches {	-- Dispensed medication returned.
+				current_state matches {
+					DV_CODED_TEXT[id176] matches {
+						defining_code matches {[at145]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id177] matches {
+						defining_code matches {[at36]}
+					}
+				}
+			}
+			ISM_TRANSITION[id9] matches {	-- Medication course supply delayed
+				current_state matches {
+					DV_CODED_TEXT[id178] matches {
+						defining_code matches {[at146]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id179] matches {
+						defining_code matches {[at9]}
+					}
+				}
+			}
+			ISM_TRANSITION[id10] matches {	-- Medication course suspended
+				current_state matches {
+					DV_CODED_TEXT[id180] matches {
+						defining_code matches {[at146]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id181] matches {
+						defining_code matches {[at10]}
+					}
+				}
+			}
+			ISM_TRANSITION[id12] matches {	-- Prescription re-issue suspended
+				current_state matches {
+					DV_CODED_TEXT[id182] matches {
+						defining_code matches {[at146]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id183] matches {
+						defining_code matches {[at12]}
+					}
+				}
+			}
+			ISM_TRANSITION[id16] matches {	-- Medication course stopped
+				current_state matches {
+					DV_CODED_TEXT[id184] matches {
+						defining_code matches {[at147]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id185] matches {
+						defining_code matches {[at16]}
+					}
+				}
+			}
+			ISM_TRANSITION[id40] matches {	-- Major change to order.
+				current_state matches {
+					DV_CODED_TEXT[id186] matches {
+						defining_code matches {[at147]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id187] matches {
+						defining_code matches {[at40]}
+					}
+				}
+			}
+			ISM_TRANSITION[id8] matches {	-- Medication course completed
+				current_state matches {
+					DV_CODED_TEXT[id188] matches {
+						defining_code matches {[at148]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT[id189] matches {
+						defining_code matches {[at8]}
+					}
+				}
+			}
+		}
+		description matches {
+			ITEM_TREE[id18] matches {
+				items matches {
+					ELEMENT[id21] occurrences matches {0..1} matches {	-- Medication
+						value matches {
+							DV_TEXT[id190] 
+						}
+					}
+					CLUSTER[id83] matches {	-- Product
+						items matches {
+							allow_archetype CLUSTER[id105] occurrences matches {0..1} matches {	-- Preparation details
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.medication_substance(-a-zA-Z0-9_]+)*\.v0/}
+							}
+							ELEMENT[id131] occurrences matches {0..1} matches {	-- Manufacturer
+								value matches {
+									DV_TEXT[id191] 
+								}
+							}
+							ELEMENT[id84] occurrences matches {0..1} matches {	-- Batch ID
+								value matches {
+									DV_TEXT[id192] 
+								}
+							}
+							ELEMENT[id85] occurrences matches {0..1} matches {	-- Expiry date
+								value matches {
+									DV_DATE[id193] 
+								}
+							}
+							allow_archetype CLUSTER[id132] occurrences matches {0..1} matches {	-- Amount
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.medication_supply_amount(-a-zA-Z0-9_]+)*\.v0/}
+							}
+							ELEMENT[id106] occurrences matches {0..1} matches {	-- Max class dose administered
+								value matches {
+									DV_PROPORTION[id194] matches {
+										numerator matches {|0.0..100.0|}
+										is_integral matches {False}
+										type matches {2}
+									}
+								}
+							}
+							ELEMENT[id133] occurrences matches {0..1} matches {	-- Dispensing substitution
+								value matches {
+									DV_CODED_TEXT[id195] matches {
+										defining_code matches {[ac1]}		-- Dispensing substitution (synthesised)
+									}
+								}
+							}
+							ELEMENT[id134] occurrences matches {0..1} matches {	-- Dispensing substitution reason
+								value matches {
+									DV_TEXT[id196] 
+								}
+							}
+						}
+					}
+					ELEMENT[id44] occurrences matches {0..1} matches {	-- Order scheduled datetime
+						value matches {
+							DV_DATE_TIME[id197] 
+						}
+					}
+					ELEMENT[id22] matches {	-- Reason
+						value matches {
+							DV_TEXT[id198] 
+						}
+					}
+					ELEMENT[id118] matches {	-- Reason course amended/stopped
+						value matches {
+							DV_CODED_TEXT[id199] matches {
+								defining_code matches {[ac2]}		-- Reason course amended/stopped (synthesised)
+							}
+							DV_TEXT[id200] 
+						}
+					}
+					ELEMENT[id117] matches {	-- Reason dose not administered
+						value matches {
+							DV_CODED_TEXT[id201] matches {
+								defining_code matches {[ac3]}		-- Reason dose not administered (synthesised)
+							}
+						}
+					}
+					CLUSTER[id141] occurrences matches {0..1} matches {	-- Delivery details
+						items matches {
+							ELEMENT[id142] occurrences matches {0..1} matches {	-- Body site
+								value matches {
+									DV_TEXT[id202] 
+								}
+							}
+							allow_archetype CLUSTER[id143] occurrences matches {0..1} matches {	-- Structured body site
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location(-a-zA-Z0-9_]+)*\.v1|openEHR-EHR-CLUSTER\.anatomical_location_clock(-a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.anatomical_location_relative(-a-zA-Z0-9_]+)*\.v1/}
+							}
+							ELEMENT[id144] matches {	-- Delivery method
+								value matches {
+									DV_TEXT[id203] 
+								}
+							}
+							allow_archetype CLUSTER[id145] matches {	-- Delivery device details
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-a-zA-Z0-9_]+)*\.v1/}
+							}
+						}
+					}
+					allow_archetype CLUSTER[id54] matches {	-- Details
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.medication_authorisation(-a-zA-Z0-9_]+)*\.v0/}
+					}
+					ELEMENT[id34] matches {	-- Patient guidance
+						value matches {
+							DV_TEXT[id204] 
+						}
+					}
+					ELEMENT[id26] occurrences matches {0..1} matches {	-- Sequence number
+						value matches {
+							DV_COUNT[id205] 
+						}
+					}
+					ELEMENT[id25] occurrences matches {0..1} matches {	-- Comment
+						value matches {
+							DV_TEXT[id206] 
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[id31] matches {
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[id104] occurrences matches {0..1} matches {	-- Order ID
+						value matches {
+							DV_IDENTIFIER[id207] 
+						}
+					}
+					allow_archetype CLUSTER[id86] matches {	-- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+

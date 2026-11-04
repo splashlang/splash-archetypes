@@ -1,0 +1,8 @@
+	OBSERVATION[id1.1] matches {	-- obs
+		/data/events[id3]/data/items[id4]/value matches {
+			DV_CODED_TEXT[id14] matches {
+				defining_code matches {[ac0.1]}		-- (added by post-parse processor)
+			}
+		}
+	}
+

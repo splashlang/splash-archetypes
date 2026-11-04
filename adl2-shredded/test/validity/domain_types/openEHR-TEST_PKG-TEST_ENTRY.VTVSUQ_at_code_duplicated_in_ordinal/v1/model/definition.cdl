@@ -1,0 +1,13 @@
+	TEST_ENTRY[id1] matches {	-- 
+		value matches {
+			DV_ORDINAL[id2] matches {
+				[value, symbol] matches {
+					[{0}, {[at2]}],
+					[{1}, {[at3]}],
+					[{2}, {[at3]}],
+					[{3}, {[at4]}]
+				}
+			}
+		}
+	}
+

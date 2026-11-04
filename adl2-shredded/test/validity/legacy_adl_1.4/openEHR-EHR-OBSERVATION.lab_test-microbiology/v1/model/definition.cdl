@@ -1,0 +1,15 @@
+	OBSERVATION[id1.1] matches {	-- Microbiolology
+		/data[id2]/events[id3]/data[id4]/items matches {
+			after [id6]
+			CLUSTER[id0.34] occurrences matches {0..1} matches {	-- Bodily fluid findings
+				items matches {
+					ELEMENT[id0.36] occurrences matches {0..1} matches {	-- Red cell count
+						value matches {
+							DV_QUANTITY[id0.37] 
+						}
+					}
+				}
+			}
+		}
+	}
+

@@ -1,0 +1,4 @@
+	OBSERVATION[id1.1] matches {	-- Observation
+		/protocol existence matches {0} 
+	}
+

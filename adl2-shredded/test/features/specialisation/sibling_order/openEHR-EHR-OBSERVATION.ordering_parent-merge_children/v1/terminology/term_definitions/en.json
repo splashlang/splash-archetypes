@@ -1,0 +1,22 @@
+{
+    "id1.1": {
+        "text": "Blood matching",
+        "description": "Blood group information including ABO, Rhesus and antibodies etc."
+    },
+    "id0.1": {
+        "text": "Antibodies detected",
+        "description": "Antibodies have been detected."
+    },
+    "id0.2": {
+        "text": "Antibodies",
+        "description": "Group of findings relating to one antibody."
+    },
+    "id10.1": {
+        "text": "Rhesus",
+        "description": "Rhesus blood group information."
+    },
+    "id10.2": {
+        "text": "ABO",
+        "description": "ABO blood group information."
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Illustrate constraining of fields whose types in the RM are a generic type parameter, i.e. typically 'T', 'U' etc. In this example, the upper and lower fields are of type 'T' in the RM definition of DV_INTERVAL.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "generic types"
+    ]
+}

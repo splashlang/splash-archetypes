@@ -1,0 +1,29 @@
+	EVALUATION[id1] matches {	-- Medical Certificate
+		data matches {
+			ITEM_TREE[id2] matches {
+				items matches {
+					ELEMENT[id3] occurrences matches {0..1} matches {	-- Status
+						value matches {
+							DV_TEXT[id7] 
+						}
+					}
+					ELEMENT[id6] occurrences matches {0..1} matches {	-- Description
+						value matches {
+							DV_TEXT[id8] 
+						}
+					}
+					ELEMENT[id4] occurrences matches {0..1} matches {	-- Start Date
+						value matches {
+							DV_DATE[id9] 
+						}
+					}
+					ELEMENT[id5] occurrences matches {0..1} matches {	-- End Date
+						value matches {
+							DV_DATE[id10] 
+						}
+					}
+				}
+			}
+		}
+	}
+

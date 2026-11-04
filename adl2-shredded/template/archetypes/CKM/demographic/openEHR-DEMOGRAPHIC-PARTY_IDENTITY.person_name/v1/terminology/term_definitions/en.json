@@ -1,0 +1,114 @@
+{
+    "id1": {
+        "text": "Person name",
+        "description": "Person name details."
+    },
+    "id2": {
+        "text": "Name",
+        "description": "Components of a person name."
+    },
+    "id3": {
+        "text": "Given name",
+        "description": "The person's identifying name(s) within the family group or by which he/she is uniquely socially identified."
+    },
+    "id4": {
+        "text": "Family name",
+        "description": "The part of a name a person usually has in common with some other members of his/her family, as distinguished from his/her given names."
+    },
+    "id5": {
+        "text": "Title",
+        "description": "An honorific form of address commencing a name, used when addressing a person by name, whether by mail, by phone, or depending upon cultural situation in person."
+    },
+    "id6": {
+        "text": "Suffix",
+        "description": "Additional term used following a person name."
+    },
+    "id8": {
+        "text": "Alternative name representations",
+        "description": "Details of alternative representations such as local codesets or language variations."
+    },
+    "id9": {
+        "text": "Preferred name",
+        "description": "Indicates that this is the name by which a person chooses to be identified."
+    },
+    "id10": {
+        "text": "Issues of accuracy and privacy",
+        "description": "An indicator of specific conditions or rules that should be applied to the use of the person name."
+    },
+    "id11": {
+        "text": "Full Name",
+        "description": "The person's full name as a concatenation of its name parts."
+    },
+    "id20": {
+        "text": "Usage interval",
+        "description": "The period of time for which the name usage applies."
+    },
+    "id21": {
+        "text": "Usage identifier",
+        "description": "The combination of identifier type, identifier issuer and identifier name that specify the link between this name and reporting or other unique identifier usage."
+    },
+    "id22": {
+        "text": "Representation usage",
+        "description": "Name of the representational form used."
+    },
+    "id23": {
+        "text": "Alternative representation",
+        "description": "Alternative Representation of this subject of care name using alternative styles of representation such as characters or language character set variations for local display."
+    },
+    "at24": {
+        "text": "Reporting name",
+        "description": "The subject’s name as it is to be used for reporting, when used with a specific identifier."
+    },
+    "at25": {
+        "text": "Newborn name",
+        "description": "A type reserved for the identification of unnamed newborn babies."
+    },
+    "at26": {
+        "text": "Professional or business name",
+        "description": "The name used by the subject for business or professional purposes."
+    },
+    "at27": {
+        "text": "Maiden name",
+        "description": "The name used by the subject of care prior to marriage."
+    },
+    "at28": {
+        "text": "Legal name",
+        "description": "Registered name (Legal name)."
+    },
+    "at29": {
+        "text": "Other name",
+        "description": "Any other name by which the subject is known, or has been known by in the past."
+    },
+    "at32": {
+        "text": "Unreliable information",
+        "description": "The name recorded is a fictitious or partial name."
+    },
+    "at33": {
+        "text": "Known misspelling",
+        "description": "This is a misspelling, but should be retained for potential future matching."
+    },
+    "at34": {
+        "text": "Name not to be used",
+        "description": "This name should not be used when referring to this subject."
+    },
+    "at35": {
+        "text": "Name linkage forbidden by law",
+        "description": "By Law, this name and all names prior to it in the name sequence are not to be displayed or indicated in any way when searching for or dealing with information and events associated with a name that is subsequent to this one in the name sequence."
+    },
+    "at36": {
+        "text": "Special privacy/security requirements",
+        "description": "A name for which episodes are attached that should only be accessible to specified authorised persons."
+    },
+    "at37": {
+        "text": "Temporary name",
+        "description": "A temporary name issued where the subject's name has not been determined."
+    },
+    "ac1": {
+        "text": "Person name (synthesised)",
+        "description": "Person name details. (synthesised)"
+    },
+    "ac2": {
+        "text": "Issues of accuracy and privacy (synthesised)",
+        "description": "An indicator of specific conditions or rules that should be applied to the use of the person name. (synthesised)"
+    }
+}

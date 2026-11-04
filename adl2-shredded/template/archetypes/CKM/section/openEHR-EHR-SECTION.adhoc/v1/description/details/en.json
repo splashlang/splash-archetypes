@@ -1,0 +1,7 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "A generic section header which is normally renamed locally at template level.",
+    "use": "To construct and name a section within a local template.",
+    "misuse": "",
+    "copyright": "copyright (c) 2010 openEHR Foundation"
+}

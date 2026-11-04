@@ -1,0 +1,12 @@
+{
+    "original_author": {
+        "name": "Ian McNicoll",
+        "organisation": "Ocean Informatics",
+        "email": "ian.mcnicoll@oceaninformatics.com",
+        "date": "12/03/2010"
+    },
+    "other_details": {
+        "regression": "VARXR"
+    },
+    "lifecycle_state": "unstable"
+}

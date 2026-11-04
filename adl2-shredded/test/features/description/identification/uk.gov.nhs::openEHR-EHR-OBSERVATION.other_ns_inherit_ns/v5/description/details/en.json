@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test specialisation of an archetype that has a namespaced and versioned  identifier, by another archetype which has a different namespace.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "identifiers",
+        "test"
+    ]
+}

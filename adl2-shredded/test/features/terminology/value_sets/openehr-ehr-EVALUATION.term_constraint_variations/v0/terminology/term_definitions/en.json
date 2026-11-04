@@ -1,0 +1,90 @@
+{
+    "id1": {
+        "text": "Adverse Reaction",
+        "description": "A harmful or undesirable, unexpected effect associated with exposure to any substance or agent, including food, plants, animals, venom from animal stings, or a medication at therapeutic or sub-therapeutic doses."
+    },
+    "id3": {
+        "text": "Substance/Agent",
+        "description": "Identification of a substance, agent, or a class of substance, that is considered to be responsible for the Adverse Reaction."
+    },
+    "id5": {
+        "text": "Absolute Contraindication?",
+        "description": "Is administration of this Substance/Agent absolutely contraindicated in this individual?"
+    },
+    "id10": {
+        "text": "Reaction Event",
+        "description": "Details about each Adverse Reaction Event."
+    },
+    "id11": {
+        "text": "Specific Substance/Agent",
+        "description": "Specific identification of the actual Substance/Agent considered to be responsible for the Adverse Reaction event."
+    },
+    "id12": {
+        "text": "Manifestation",
+        "description": "Clinical manifestation of the Adverse Reaction expressed as a single word, phrase or brief description, e.g. nausea or rash."
+    },
+    "id13": {
+        "text": "Reaction Description",
+        "description": "Narrative description of the Adverse Reaction."
+    },
+    "id17": {
+        "text": "Reaction Type",
+        "description": "The type of Adverse Reaction as determined by the clinician."
+    },
+    "id22": {
+        "text": "Certainty",
+        "description": "Degree of certainty, as assessed by a clinician, that the specific Substance/Agent was the cause of the Adverse Reaction."
+    },
+    "at5": {
+        "text": "Substance",
+        "description": "Physical substance."
+    },
+    "at23": {
+        "text": "Suspected",
+        "description": "Possibly the causative agent."
+    },
+    "at24": {
+        "text": "Probable",
+        "description": "Likely to be the causative agent, but not confirmed by testing or rechallenge."
+    },
+    "at25": {
+        "text": "Confirmed",
+        "description": "Confirmed as the causative agent, by testing or rechallenge."
+    },
+    "id41": {
+        "text": "Clinical Management Description",
+        "description": "Narrative description of the clinical management provided."
+    },
+    "id50": {
+        "text": "Future Use",
+        "description": "Narrative description of clinician instructions or advice related to future exposure to, or administration of, the Substance/Agent."
+    },
+    "ac1": {
+        "text": "Type of substance",
+        "description": "Type of substance that was the cause of the Adverse Reaction"
+    },
+    "ac2": {
+        "text": "Certainty",
+        "description": "Degree of certainty, as assessed by a clinician, that the specific Substance/Agent was the cause of the Adverse Reaction."
+    },
+    "at10": {
+        "text": "Pollen",
+        "description": "Pollen"
+    },
+    "at11": {
+        "text": "Insect allergen",
+        "description": "Insect allergen"
+    },
+    "at12": {
+        "text": "Animal protein",
+        "description": "Animal protein."
+    },
+    "at13": {
+        "text": "Plant material",
+        "description": "Plant material."
+    },
+    "at14": {
+        "text": "Dust",
+        "description": "Dust."
+    }
+}

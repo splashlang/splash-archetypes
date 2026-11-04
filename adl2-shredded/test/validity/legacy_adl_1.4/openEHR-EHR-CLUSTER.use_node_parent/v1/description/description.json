@@ -1,0 +1,13 @@
+{
+    "lifecycle_state": "unmanaged",
+    "original_author": {
+        "name": "Ian McNicoll",
+        "organisation": "freshEHR Clinical Informatics, UK",
+        "email": "ian@freshehr.com",
+        "date": "2014-04-18"
+    },
+    "copyright": "openEHR Foundation",
+    "other_details": {
+        "regression": "PASS"
+    }
+}

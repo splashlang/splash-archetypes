@@ -1,0 +1,4 @@
+	OBSERVATION[id1.1] matches {	-- Blood Pressure specialised
+		/data[id2]/events[id7]/state[id8]/items[id9]/value/defining_code matches {[ac1.1; at1002]}		-- (added by post-parse processor)
+	}
+

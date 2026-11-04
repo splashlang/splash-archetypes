@@ -1,0 +1,22 @@
+{
+    "id1.1": {
+        "text": "specialised archetype",
+        "description": "specialised archetype"
+    },
+    "id3.1": {
+        "text": "any event - occurrences specialised A",
+        "description": "any event - occurrences specialised A"
+    },
+    "id3.2": {
+        "text": "any event - occurrences specialised B",
+        "description": "any event - occurrences specialised B"
+    },
+    "id3.3": {
+        "text": "any event - occurrences specialised C",
+        "description": "any event - occurrences specialised C"
+    },
+    "id3.4": {
+        "text": "any event - occurrences specialised D",
+        "description": "any event - occurrences specialised D"
+    }
+}

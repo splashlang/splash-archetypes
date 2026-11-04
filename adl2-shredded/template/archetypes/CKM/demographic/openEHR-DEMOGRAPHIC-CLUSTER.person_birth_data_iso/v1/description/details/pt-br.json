@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::pt-br]",
+    "purpose": "Coleta de dados demográficos do nascimento",
+    "use": "Usado em serviços de demografia para coletar dados do nascimento de uma pessoa",
+    "keywords": [
+        "serviço demográfico",
+        "dados do nascimento"
+    ],
+    "misuse": "",
+    "copyright": "copyright (c) 2010 openEHR foundation"
+}

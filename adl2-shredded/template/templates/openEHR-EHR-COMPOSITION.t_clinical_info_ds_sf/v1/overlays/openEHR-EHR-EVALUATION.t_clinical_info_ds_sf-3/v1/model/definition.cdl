@@ -1,0 +1,13 @@
+	EVALUATION[id1.1] matches {	-- Clinical synopsis
+		/data[id2]/items matches {
+			ELEMENT[id3.1] occurrences matches {1} matches {	-- Description
+				name matches {
+					DV_TEXT[id0.1] 
+					DV_CODED_TEXT[id0.2] matches {
+						defining_code matches {[ac0.1]}		-- Description (synthesised)
+					}
+				}
+			}
+		}
+	}
+

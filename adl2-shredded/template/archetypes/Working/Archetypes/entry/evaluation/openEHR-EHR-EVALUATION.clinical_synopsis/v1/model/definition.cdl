@@ -1,0 +1,19 @@
+	EVALUATION[id1] matches {	-- Clinical Synopsis - SG
+		data matches {
+			ITEM_TREE[id2] matches {
+				items cardinality matches {1..*; ordered} matches {
+					ELEMENT[id3] matches {	-- Synopsis
+						value matches {
+							DV_TEXT[id5] 
+						}
+					}
+					ELEMENT[id4] occurrences matches {0..1} matches {	-- Synopsis type
+						value matches {
+							DV_TEXT[id6] 
+						}
+					}
+				}
+			}
+		}
+	}
+

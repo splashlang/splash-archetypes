@@ -1,0 +1,34 @@
+{
+    "at0.10": {
+        "text": "*manual tracing and manual square counting(en)",
+        "description": "*wound area has been approximated by counting squares on a tracing foil(en)"
+    },
+    "at0.11": {
+        "text": "*digital tracing based on digital photo(en)",
+        "description": "*wound area has been approximated by a digital tracing based on a digital photo(en)"
+    },
+    "at0.12": {
+        "text": "*digital tracing based on (scanned) manual trace(en)",
+        "description": "*wound area has been approximated by digitally tracing of a scanned manual tracing foil(en)"
+    },
+    "id0.7": {
+        "text": "*Way of measurement(en)",
+        "description": "*The way of how area measure has been determined(en)"
+    },
+    "at0.8": {
+        "text": "*estimated(en)",
+        "description": "*wound area has been estimated by eye(en)"
+    },
+    "at0.9": {
+        "text": "*approximated using greatest length times greatest width(en)",
+        "description": "*wound area approximation by multiplying greatest length (head to toe) with greatest width (side to side)(en)"
+    },
+    "id1.1": {
+        "text": "*Area of wound(en)",
+        "description": "*The physical dimensions of a part examined!(en)"
+    },
+    "ac0.1": {
+        "text": "*Way of measurement(en) (synthesised)",
+        "description": "*The way of how area measure has been determined(en) (synthesised)"
+    }
+}

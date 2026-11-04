@@ -1,0 +1,226 @@
+{
+    "id1": {
+        "text": "Prozedur",
+        "description": "Eine klinische Aktivität, die zur Früherkennung, Untersuchung, Diagnose, Heilung, Therapie, Bewertung oder in Hinsicht auf palliative Maßnahmen durchgeführt wird."
+    },
+    "id3": {
+        "text": "Name der Prozedur",
+        "description": "Identifizierung der Prozedur über den Namen."
+    },
+    "id4": {
+        "text": "Details zur Prozedur",
+        "description": "Strukturierte Informationen über die Prozedur."
+    },
+    "id5": {
+        "text": "Geplante Prozedur",
+        "description": "Die Prozedur, die durchgeführt werden soll, ist geplant."
+    },
+    "id6": {
+        "text": "Kommentar",
+        "description": "Zusätzliche Beschreibung der Aktivität oder der \"Pathway\"-Verlaufsschritte, die in anderen Bereichen nicht erfasst wurden."
+    },
+    "id7": {
+        "text": "Komplikationen",
+        "description": "Details zu allen Komplikationen, die sich aus der Prozedur ergeben haben."
+    },
+    "id8": {
+        "text": "Auftrag für Prozedur versendet",
+        "description": "Der Auftrag für die Prozedur wurde versendet."
+    },
+    "id15": {
+        "text": "Grund",
+        "description": "Grund, warum die angegebene Aktivität für diese Prozedur durchgeführt wurde."
+    },
+    "id35": {
+        "text": "X - Prozedur geplant",
+        "description": "Dieses Element ist veraltet, da es fälschlicherweise mit dem Status \"initial\" verknüpft war - verwenden Sie das neue Element \"Prozedur geplant\" (at0004), das korrekt mit dem Status \"geplant\" verknüpft ist."
+    },
+    "id36": {
+        "text": "X - Auftrag für Prozedur versendet",
+        "description": "Dieses Element ist veraltet, da es fälschlicherweise mit dem Status \"initial\" verknüpft war - verwenden Sie das neue Element \"Geplante Prozedur\" (at0007), das korrekt mit dem Status \"geplant\" verknüpft ist."
+    },
+    "id37": {
+        "text": "geplanter Termin der Prozedur",
+        "description": "Ein Termin für die Prozedur wurde geplant."
+    },
+    "id39": {
+        "text": "Prozedur verschoben",
+        "description": "Die Prozedur wurde verschoben."
+    },
+    "id40": {
+        "text": "Prozedur storniert",
+        "description": "Die geplante Prozedur wurde vor Beginn storniert."
+    },
+    "id41": {
+        "text": "Prozedur unterbrochen",
+        "description": "Die Prozedur wurde unterbrochen."
+    },
+    "id42": {
+        "text": "Prozedur abgebrochen",
+        "description": "Die Prozedur wurde abgebrochen."
+    },
+    "id44": {
+        "text": "Prozedur beendet",
+        "description": "Die Prozedur wurde durchgeführt und alle damit verbundenen klinischen Aktivitäten wurden beendet."
+    },
+    "id48": {
+        "text": "Prozedur durchgeführt",
+        "description": "Die Prozedur, oder eine Subprozedur in einem mehrstufigen Vorgehen, wurde durchgeführt."
+    },
+    "id49": {
+        "text": "Ausgang",
+        "description": "Ausgang der durchgeführten Prozedur."
+    },
+    "id50": {
+        "text": "Beschreibung",
+        "description": "Beschreibung der Prozedur, angepasst an den \"Pathway\"-Verlaufsschritt."
+    },
+    "id55": {
+        "text": "Auftragskennung des Antragstellers",
+        "description": "Die lokale ID, die dem Auftrag vom Gesundheitsdienstleister oder der Organisation, die die Leistung anfordert, zugewiesen wurde."
+    },
+    "id56": {
+        "text": "Antragsteller",
+        "description": "Angaben über den Gesundheitsdienstleister oder die Organisation, die die Leistung anfordert."
+    },
+    "id57": {
+        "text": "Auftragskennung des Empfängers",
+        "description": "Die ID, die dem Auftrag von dem Gesundheitsdienstleister oder der Organisation, die die Leistungsanforderung erhält, zugewiesen wurde. Dies wird auch als \"Filler Order Identifier\" bezeichnet."
+    },
+    "id58": {
+        "text": "Empfänger",
+        "description": "Angaben über den Gesundheitsdienstleister oder die Organisation, die die Leistungsanforderung erhält."
+    },
+    "id59": {
+        "text": "Dringlichkeit",
+        "description": "Dringlichkeit der Prozedur."
+    },
+    "id61": {
+        "text": "Enddatum/-uhrzeit",
+        "description": "Das Datum und/oder die Uhrzeit, an dem die gesamte Prozedur, oder die letzte Komponente einer mehrstufigen Prozedur, beendet wurde."
+    },
+    "id62": {
+        "text": "Gesamtdauer",
+        "description": "Die Gesamtdauer der Prozedur - diese kann sich aus der aktiven Phase und der Phase, in der die Prozedur unterbrochen wurde, ergeben."
+    },
+    "id63": {
+        "text": "Multimedia",
+        "description": "Multimediale Darstellung der durchgeführten Prozedur."
+    },
+    "id64": {
+        "text": "Körperstelle",
+        "description": "Anatomische Lokalisation, an der die Prozedur durchgeführt wird."
+    },
+    "id65": {
+        "text": "Erweiterung",
+        "description": "Zusätzliche Informationen, die erforderlich sind, um lokale Inhalte zu erfassen oder mit anderen Referenzmodellen/Formalismen abzugleichen."
+    },
+    "id66": {
+        "text": "Methode",
+        "description": "Identifizierung der spezifischen Prozedurmethode oder -technik."
+    },
+    "id67": {
+        "text": "Geplantes Datum/Uhrzeit",
+        "description": "Das Datum und/oder die Uhrzeit für die die Prozedur angesetzt ist."
+    },
+    "id68": {
+        "text": "Art der Prozedur",
+        "description": "Die Art der Prozedur."
+    },
+    "id69": {
+        "text": "Prozedur begonnen",
+        "description": "Die Prozedur, oder eine Subprozedur in einem mehrstufigen Vorgehen, wurde begonnen."
+    },
+    "id70": {
+        "text": "Schwierigkeiten bei der Durchführung der Prozedur",
+        "description": "Schwierigkeiten oder Probleme, die während der Durchführung der Prozedur aufgetreten sind."
+    },
+    "id71": {
+        "text": "Indikation",
+        "description": "Der klinische oder prozessbezogene Grund für die Prozedur."
+    },
+    "at5": {
+        "text": "Geplante Prozedur",
+        "description": "Die Prozedur, die durchgeführt werden soll, ist geplant."
+    },
+    "at35": {
+        "text": "X - Prozedur geplant",
+        "description": "Dieses Element ist veraltet, da es fälschlicherweise mit dem Status \"initial\" verknüpft war - verwenden Sie das neue Element \"Prozedur geplant\" (at0004), das korrekt mit dem Status \"geplant\" verknüpft ist."
+    },
+    "at8": {
+        "text": "Auftrag für Prozedur versendet",
+        "description": "Der Auftrag für die Prozedur wurde versendet."
+    },
+    "at36": {
+        "text": "X - Auftrag für Prozedur versendet",
+        "description": "Dieses Element ist veraltet, da es fälschlicherweise mit dem Status \"initial\" verknüpft war - verwenden Sie das neue Element \"Geplante Prozedur\" (at0007), das korrekt mit dem Status \"geplant\" verknüpft ist."
+    },
+    "at39": {
+        "text": "Prozedur verschoben",
+        "description": "Die Prozedur wurde verschoben."
+    },
+    "at40": {
+        "text": "Prozedur storniert",
+        "description": "Die geplante Prozedur wurde vor Beginn storniert."
+    },
+    "at37": {
+        "text": "geplanter Termin der Prozedur",
+        "description": "Ein Termin für die Prozedur wurde geplant."
+    },
+    "at69": {
+        "text": "Prozedur begonnen",
+        "description": "Die Prozedur, oder eine Subprozedur in einem mehrstufigen Vorgehen, wurde begonnen."
+    },
+    "at48": {
+        "text": "Prozedur durchgeführt",
+        "description": "Die Prozedur, oder eine Subprozedur in einem mehrstufigen Vorgehen, wurde durchgeführt."
+    },
+    "at41": {
+        "text": "Prozedur unterbrochen",
+        "description": "Die Prozedur wurde unterbrochen."
+    },
+    "at42": {
+        "text": "Prozedur abgebrochen",
+        "description": "Die Prozedur wurde abgebrochen."
+    },
+    "at44": {
+        "text": "Prozedur beendet",
+        "description": "Die Prozedur wurde durchgeführt und alle damit verbundenen klinischen Aktivitäten wurden beendet."
+    },
+    "at70": {
+        "text": "*planned (en)",
+        "description": "*planned (en)"
+    },
+    "at71": {
+        "text": "*initial (en)",
+        "description": "*initial (en)"
+    },
+    "at72": {
+        "text": "*postponed (en)",
+        "description": "*postponed (en)"
+    },
+    "at73": {
+        "text": "*cancelled (en)",
+        "description": "*cancelled (en)"
+    },
+    "at74": {
+        "text": "*scheduled (en)",
+        "description": "*scheduled (en)"
+    },
+    "at75": {
+        "text": "*active (en)",
+        "description": "*active (en)"
+    },
+    "at76": {
+        "text": "*suspended (en)",
+        "description": "*suspended (en)"
+    },
+    "at77": {
+        "text": "*aborted (en)",
+        "description": "*aborted (en)"
+    },
+    "at78": {
+        "text": "*complete (en)",
+        "description": "*complete (en)"
+    }
+}

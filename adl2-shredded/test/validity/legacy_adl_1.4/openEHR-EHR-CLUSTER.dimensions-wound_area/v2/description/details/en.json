@@ -1,0 +1,9 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "To describe the dimensions of a part examined or viewed",
+    "use": "Regression testing",
+    "keywords": [
+        "size",
+        "volume"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "id": "openEHR-EHR-EVALUATION.spec_test_eval1-no_change.v1.0.0",
+    "artefact_type": "archetype",
+    "specialise": "openEHR-EHR-EVALUATION.spec_test_eval1.v1",
+    "adl_version": "2.0.6",
+    "rm_release": "1.0.2"
+}

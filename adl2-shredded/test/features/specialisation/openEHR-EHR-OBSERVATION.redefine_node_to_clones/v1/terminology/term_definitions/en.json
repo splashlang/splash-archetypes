@@ -1,0 +1,18 @@
+{
+    "id1.1": {
+        "text": "multi-level redefinition archetype",
+        "description": "specialisation containing multiple redefine of a single parent node"
+    },
+    "id8.1": {
+        "text": "1st redefine of at0007 node",
+        "description": "1st redefine of at0007 node"
+    },
+    "id8.2": {
+        "text": "2nd redefine of at0007 node",
+        "description": "1st redefine of at0007 node"
+    },
+    "id8.3": {
+        "text": "3rd redefine of at0007 node",
+        "description": "1st redefine of at0007 node"
+    }
+}

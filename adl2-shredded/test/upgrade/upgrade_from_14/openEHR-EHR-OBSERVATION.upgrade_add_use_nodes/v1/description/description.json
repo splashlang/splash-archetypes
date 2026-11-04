@@ -1,0 +1,17 @@
+{
+    "lifecycle_state": "unmanaged",
+    "original_author": {
+        "name": "Dr Ian McNicoll",
+        "organisation": "Ocean Informatics, United Kingdom",
+        "email": "ian.mcnicoll@oceaninformatics.com",
+        "date": "27/01/2009"
+    },
+    "copyright": "© openEHR Foundation",
+    "other_contributors": [
+        "Heather Leslie AEG / Ocean Infomatics",
+        "Sam Heard Ocean Informatics"
+    ],
+    "other_details": {
+        "MD5-CAM-1.0.1": "52C1B996A12C2F159FF839326341D9B4"
+    }
+}

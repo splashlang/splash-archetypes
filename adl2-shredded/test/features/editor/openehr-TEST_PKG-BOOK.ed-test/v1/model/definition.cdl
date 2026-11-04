@@ -1,0 +1,16 @@
+	BOOK[id1] matches {	-- Work of fiction
+		title matches {"Devils"}
+		author matches {"Fyodor Dostoyevsky"}
+		chapters matches {
+			CHAPTER[id2] matches {	-- 1st chapter of the book
+				title matches {"By way of introductoin"}
+			}
+			CHAPTER[id3] matches {	-- 2nd chapter of the book
+				title matches {"Prince Harry, matchmaking"}
+			}
+			CHAPTER[id4] matches {	-- 3rd chapter of the book
+				title matches {"Another man's sins"}
+			}
+		}
+	}
+

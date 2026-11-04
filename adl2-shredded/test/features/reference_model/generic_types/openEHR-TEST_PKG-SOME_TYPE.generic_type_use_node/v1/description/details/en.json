@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Illustrates the use of generic RM types in ADL constraints. The syntax is standard UML, i.e. using '<>' markers.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "generic types"
+    ]
+}

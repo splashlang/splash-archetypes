@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VDIFP validity check, triggered when a differential path is mentioned that does not occur in the parent archetype, even if the path is valid in the RM. To state this constraint correctly, it should be done as a normal constraint structure, as if it were being defined in a top-level archetype.",
+    "use": "Regression testing"
+}

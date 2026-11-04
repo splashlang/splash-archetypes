@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test external reference that is lexically legal but archetype doesn't exist",
+    "use": "Regression testing"
+}

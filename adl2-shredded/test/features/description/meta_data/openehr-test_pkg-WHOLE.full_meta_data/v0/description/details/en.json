@@ -1,0 +1,14 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "This archetype demonstrates the use of governance meta-data.",
+    "use": "This archetype should be used on a clear day with no wind.",
+    "misuse": "This archetype should not be used around children or dogs.",
+    "keywords": [
+        "governance",
+        "test"
+    ],
+    "original_resource_uri": {
+        "resource A": "Some resource available in the English language <http://aaa.bbb/path/to/resource>",
+        "resource B": "Some other resource available in the English language <http://aaa.bbb/path/to/resource>"
+    }
+}

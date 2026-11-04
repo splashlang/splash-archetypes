@@ -1,0 +1,22 @@
+	SOME_TYPE[id1] matches {	-- root item
+		standard_quantity_attr matches {
+			DV_QUANTITY[id2] matches {	-- quantity in celcius
+				units matches {"C"}
+				magnitude matches {|>=4.0|}
+			}
+			DV_QUANTITY[id3] matches {	-- quantity in fahrenheit
+				units matches {"F"}
+				magnitude matches {|>=40.0|}
+			}
+		}
+		clinical_quantity_attr_1 matches {
+			DV_QUANTITY[id4] matches {
+				property matches {[at1]}
+				[units, magnitude] matches {
+					[{"C"}, {|>=4.0|}],
+					[{"F"}, {|>=40.0|}]
+				}
+			}
+		}
+	}
+

@@ -1,0 +1,7 @@
+	SECTION[id1.1] matches {	-- Patient event information
+		items matches {
+			use_archetype ADMIN_ENTRY[id0.1, openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-1.v1] occurrences matches {1} 
+			use_archetype ADMIN_ENTRY[id0.2, openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-2.v1] occurrences matches {1} 
+		}
+	}
+

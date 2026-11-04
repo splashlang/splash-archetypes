@@ -1,0 +1,218 @@
+{
+    "id1": {
+        "text": "*Advance intervention decisions (en)",
+        "description": "*Anticipatory decisions about possible treatments or activities, usually asserted by an authorised clinician. (en)"
+    },
+    "id3": {
+        "text": "Intention der Versorgung",
+        "description": "Beschreibung der allgemeinen Intention für die zukünftige Pflege und Behandlung der Person."
+    },
+    "id4": {
+        "text": "Begründung",
+        "description": "Narrative Beschreibung über die Argumentation und Begründung für die Aussage 'Intention der Pflege'."
+    },
+    "id5": {
+        "text": "*CPR decision (en)",
+        "description": "*Directive for future cardiopulmonary resuscitation (CPR) intervention. (en)"
+    },
+    "at6": {
+        "text": "*Full CPR (en)",
+        "description": "Es sollten alle geeigneten kardiopulmonalen Wiederbelebungsmaßnahmen versucht werden, um Leben zu retten oder zu verlängern.\n"
+    },
+    "at7": {
+        "text": "*Limited CPR (en)",
+        "description": "*Cardiopulmonary resuscitation treatments should be attempted, as specified in the 'Description' narrative or as structured data in the 'Per intervention' cluster. (en)"
+    },
+    "at8": {
+        "text": "*No CPR (en)",
+        "description": "Es sollten keine kardiopulmonalen Wiederbelebungsmaßnahmen versucht werden, um Leben zu retten oder zu verlängern. Alle Behandlungen sollen sich auf die Linderung von Symptomen und die Lebensqualität konzentrieren. Auch bekannt als 'Do not resuscitate (DNR)'; 'Do not attempt resuscitation (DNAR)'; 'Not for resuscitation (NFR)' oder ähnlich."
+    },
+    "at9": {
+        "text": "Unbekannt",
+        "description": "*The CPR decision is not known. (en)"
+    },
+    "id10": {
+        "text": "*Description (en)",
+        "description": "*Narrative description of the advance intervention decisions. (en)"
+    },
+    "id11": {
+        "text": "Pro Intervention",
+        "description": "*Details of the decision about a life-saving, life-prolonging treatment or activity. (en)"
+    },
+    "id12": {
+        "text": "Intervention",
+        "description": "Name der Intervention"
+    },
+    "at13": {
+        "text": "Intubation",
+        "description": "*Placement of a tube into the trachea to maintain an open airway, including a tracheostomy. (en)"
+    },
+    "at14": {
+        "text": "*Invasive ventilation (en)",
+        "description": "*Artificial ventilation where invasive means are used to replace spontaneous breathing. (en)"
+    },
+    "at15": {
+        "text": "Nicht-invasive Beatmung",
+        "description": "Künstliche Beatmung, bei der nicht-invasive Mittel zur Unterstützung oder zum Ersatz der natürlichen Atmung eingesetzt werden."
+    },
+    "at16": {
+        "text": "Kreislaufregulierung",
+        "description": "Medikamente, die die Herzfunktion unterstützen, wie z. B.: Vasopressoren, Inotrope und Chronotrope."
+    },
+    "at17": {
+        "text": "Dialyse",
+        "description": "Prozess der Entfernung von überschüssigem Wasser, gelösten Stoffen und Giftstoffen aus dem Blut."
+    },
+    "at18": {
+        "text": "Blutkonserven",
+        "description": "Therapeutische Substanz, die aus menschlichem Blut hergestellt wird, z. B.: Vollblut, Blutbestandteile und Plasmaderivate."
+    },
+    "at19": {
+        "text": "Antibiotika, antivirale oder antifungale Mittel",
+        "description": "Medikamente zur Behandlung von Infektionen.\n"
+    },
+    "at20": {
+        "text": "Parenterale oder künstliche Ernährung",
+        "description": "Zufuhr von Nährstoffen durch andere Mittel als Essen oder Trinken."
+    },
+    "at21": {
+        "text": "Verlegung auf die Intensivstation",
+        "description": "Verlegung und Aufnahme auf eine Intensivstation oder eine Station für Intensivpflegepatienten."
+    },
+    "at22": {
+        "text": "Verlegung ins Krankenhaus",
+        "description": "Verlegung ins Krankenhaus zur Beurteilung oder Aufnahme."
+    },
+    "at23": {
+        "text": "Parenterale Flüssigkeiten",
+        "description": "Aufrechterhaltung der Hydratation durch andere Mittel als Essen oder Trinken."
+    },
+    "at24": {
+        "text": "Infusionszugang",
+        "description": "Einsetzen eines Infusionszugangs."
+    },
+    "id25": {
+        "text": "Entscheidung",
+        "description": "*Decision about the identified intervention. (en)"
+    },
+    "at26": {
+        "text": "Empfohlen",
+        "description": "*The intervention is recommended. (en)"
+    },
+    "at27": {
+        "text": "*Conditional recommendation (en)",
+        "description": "*The intervention is recommended only in specific circumstances. (en)"
+    },
+    "at28": {
+        "text": "Nicht empfohlen",
+        "description": "*The intervention is not recommended. (en)"
+    },
+    "at29": {
+        "text": "Unbekannt",
+        "description": "*The intervention decision is not known. (en)"
+    },
+    "id30": {
+        "text": "*Conditions (en)",
+        "description": "*Narraive description of the circumstances in which a Conditional recommendation is applicable. (en)"
+    },
+    "id31": {
+        "text": "*Comment (en)",
+        "description": "Zusätzliche Informationen über die Interventionsentscheidung, der nicht in anderen Feldern erfasst wird."
+    },
+    "id32": {
+        "text": "Zusätzliche Details",
+        "description": "*Additional structured details about advance intervention decisions. (en)"
+    },
+    "id33": {
+        "text": "Kenntnis des Patienten",
+        "description": "*Narrative description about awareness of the Advance intervention decisions by the individual. (en)"
+    },
+    "id34": {
+        "text": "Kenntnis der Betreuer",
+        "description": "*Narrative description about awareness of the Advance intervention decisions by family, carers or legal proxy. (en)"
+    },
+    "id35": {
+        "text": "Digitale Darstellung",
+        "description": "Digitales Dokument, Bild oder Video, das die Pflegerichtlinie darstellt.\n"
+    },
+    "id36": {
+        "text": "*Overall comment (en)",
+        "description": "*Additional narrative about all advance intervention decisions, not captured in other fields. (en)"
+    },
+    "id38": {
+        "text": "Zuletzt aktualisiert",
+        "description": "*The date and/or time when the Advance intervention decisions were last updated. (en)"
+    },
+    "id39": {
+        "text": "Beginn des Gültigkeitszeitraums",
+        "description": "*The date/time that marks the beginning of the valid period of time for the Advance intervention decisions. (en)"
+    },
+    "id40": {
+        "text": "Ende des Gültigkeitszeitraums",
+        "description": "*The date/time that marks the conclusion of the valid period of time for the Advance intervention decisions. (en)"
+    },
+    "id41": {
+        "text": "Fälligkeit der Überprüfung",
+        "description": "*The date when review of the Advance intervention decisions are due. (en)"
+    },
+    "id42": {
+        "text": "Mandat",
+        "description": "Beschreibung aller geltenden Gesetze oder anderer maßgeblicher Richtlinien."
+    },
+    "id43": {
+        "text": "*Document location (en)",
+        "description": "*Information about the physical or digital location of the advance intervention decisions record. (en)"
+    },
+    "id44": {
+        "text": "Standort",
+        "description": "*Physical or digital location of the Advance intervention decisions record. (en)"
+    },
+    "id45": {
+        "text": "Kopienhalter",
+        "description": "*Details of a person who has a copy of the Advance intervention decisions record. (en)"
+    },
+    "id46": {
+        "text": "Erweiterung",
+        "description": "Zusätzliche Informationen, die erforderlich sind, um das Modell um lokale Inhalte zu erweitern oder mit anderen Referenzmodellen oder Formalismen abzugleichen.\n"
+    },
+    "at47": {
+        "text": "*Defibrillation (en)",
+        "description": "*Use of electric shock to reset the electrical state of the heart. (en)"
+    },
+    "at48": {
+        "text": "*Needle thoracocentesis (en)",
+        "description": "*Insertion of a needle into the pleural or pericardial space. (en)"
+    },
+    "at49": {
+        "text": "*Chest tube insertion (en)",
+        "description": "*Insertion of a tube into the pleural space. (en)"
+    },
+    "at50": {
+        "text": "*Invasive monitoring (en)",
+        "description": "*Insertion of central venous or arterial lines, or similar. (en)"
+    },
+    "at51": {
+        "text": "*Chest compressions (en)",
+        "description": "*Technique used to manually pump blood around the body during a cardiac arrest. (en)"
+    },
+    "at52": {
+        "text": "*Cardiac pacemaker (en)",
+        "description": "*Insertion of an artificial pacemaker to control the heart beat. (en)"
+    },
+    "at53": {
+        "text": "*Arrest medications (en)",
+        "description": "*Medications used during an emergency resuscitation to prolong life. For example: adrenaline, atropine, sodium bicarbonate, calcium, other vasoactive medications. (en)"
+    },
+    "ac1": {
+        "text": "*CPR decision (en) (synthesised)",
+        "description": "*Directive for future cardiopulmonary resuscitation (CPR) intervention. (en) (synthesised)"
+    },
+    "ac2": {
+        "text": "Intervention (synthesised)",
+        "description": "Name der Intervention (synthesised)"
+    },
+    "ac3": {
+        "text": "Entscheidung (synthesised)",
+        "description": "*Decision about the identified intervention. (en) (synthesised)"
+    }
+}

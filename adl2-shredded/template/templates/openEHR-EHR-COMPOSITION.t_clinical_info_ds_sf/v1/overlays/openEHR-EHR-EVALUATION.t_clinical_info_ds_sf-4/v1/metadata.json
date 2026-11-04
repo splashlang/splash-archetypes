@@ -1,0 +1,5 @@
+{
+    "id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-4.v1.0.0",
+    "artefact_type": "template_overlay",
+    "specialise": "openEHR-EHR-EVALUATION.problem-diagnosis-simple.v1"
+}

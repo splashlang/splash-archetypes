@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::pt-br]",
+    "purpose": "Representação do nome de uma pessoa com base na norma ISO/TS 22220.",
+    "use": "Utilizado para representar os nomes que uma pessoa pode ter. A norma ISO 22220 permite que um mesmo nome possa ter vários usos. O modelo de referência do openEHR somente permite um único uso por nome (indicado pelo attribute name da classe LoCATABLE. Este atributo não deve ser confundido com o nome da pessoa). Além disso, dois nomes diferentes não podem possuir o mesmo uso. Caso seja necessário representar dois ou mais usos para o mesmo nome, é necessário criar dois PARTY_IDENTITYs para o mesmo nome da pessoa (diferindo no atributo 'name' e possivelmente nos elementos intervalo de utilização e identificador). Caso uma pessoa possua dois nomes com o mesmo uso (por exemplo, dois apelidos), e o sistema precisar armazená-los, então o sistema deverá usar em cada atributo 'name' valores diferentes para cada uso ('apelido1', 'apelido2' ..., por exemplo). Neste caso, a lista de valores permitidos para o uso do nome da norma da ISO22220 não poderá ser usada. A aplicação deve garantir que o nome completo ou o sobrenome da pessoa esteja presente.",
+    "keywords": [
+        "serviço demográfico",
+        "nome de uma pessoa"
+    ],
+    "misuse": "",
+    "copyright": "copyright (c) 2010 openEHR foundation"
+}

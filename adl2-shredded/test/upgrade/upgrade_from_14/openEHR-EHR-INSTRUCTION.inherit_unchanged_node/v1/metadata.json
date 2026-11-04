@@ -1,0 +1,8 @@
+{
+    "id": "openEHR-EHR-INSTRUCTION.inherit_unchanged_node.v1.0.0",
+    "artefact_type": "archetype",
+    "specialise": "openEHR-EHR-INSTRUCTION.inherit_unchanged_parent.v1",
+    "adl_version": "2.0.6",
+    "rm_release": "1.0.3",
+    "generated": true
+}

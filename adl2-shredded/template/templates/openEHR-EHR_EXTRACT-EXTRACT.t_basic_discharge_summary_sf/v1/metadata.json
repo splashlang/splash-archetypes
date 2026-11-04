@@ -1,0 +1,7 @@
+{
+    "id": "openEHR-EHR_EXTRACT-EXTRACT.t_basic_discharge_summary_sf.v1.0.0",
+    "artefact_type": "template",
+    "specialise": "openEHR-EHR_EXTRACT-EXTRACT.discharge_summary.v1",
+    "adl_version": "2.3.0",
+    "rm_release": "1.1.0"
+}

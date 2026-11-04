@@ -1,0 +1,14 @@
+{
+    "id1": {
+        "text": "Composition",
+        "description": "Composition"
+    },
+    "id2": {
+        "text": "Section",
+        "description": "Section"
+    },
+    "id3": {
+        "text": "Observation",
+        "description": "Observation"
+    }
+}

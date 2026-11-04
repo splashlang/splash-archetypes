@@ -1,0 +1,12 @@
+	EVALUATION[id1.1] matches {	-- Adverse reaction details for episode of care
+		/data[id3]/items matches {
+			ELEMENT[id11] occurrences matches {0} 
+		}
+		/data[id3]/items[id20]/items matches {
+			ELEMENT[id33] occurrences matches {0} 
+			ELEMENT[id16] occurrences matches {0} 
+			ELEMENT[id5] occurrences matches {0} 
+			ELEMENT[id21] occurrences matches {0} 
+		}
+	}
+

@@ -1,0 +1,42 @@
+{
+    "id1": {
+        "text": "Dimensions",
+        "description": "The physical dimensions of a part examined."
+    },
+    "id2": {
+        "text": "Circumference",
+        "description": "The circumference of the part examined."
+    },
+    "id3": {
+        "text": "Length",
+        "description": "The length of the part examined (longitudinal anatomical axis)."
+    },
+    "id4": {
+        "text": "Breadth",
+        "description": "The width or breadth (transverse anatomical axis)."
+    },
+    "id5": {
+        "text": "Depth",
+        "description": "The depth of the part examined (dorso-ventral anatomical axis)."
+    },
+    "id6": {
+        "text": "Area",
+        "description": "The area of the part examined."
+    },
+    "id7": {
+        "text": "Volume",
+        "description": "The volume of the part examined."
+    },
+    "at1": {
+        "text": "Length",
+        "description": "Length"
+    },
+    "at2": {
+        "text": "Area",
+        "description": "Area"
+    },
+    "at3": {
+        "text": "Volume",
+        "description": "Volume"
+    }
+}

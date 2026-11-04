@@ -1,0 +1,19 @@
+	EVALUATION[id1] matches {	-- Evaluation
+		data matches {
+			ITEM_TREE[id6] matches {
+				items matches {
+					CLUSTER[id2] matches {	-- cluster
+						items matches {
+							use_node ELEMENT[id5] /data[id6]/items[id2]/items[id3]	-- /data[id6]/items[cluster]/items[element]
+							allow_archetype CLUSTER[id4] matches {	-- element
+								include
+									archetype_id/value matches {/.*/}
+							}
+							ELEMENT[id3] 	-- element
+						}
+					}
+				}
+			}
+		}
+	}
+

@@ -1,0 +1,79 @@
+	OBSERVATION[id1] matches {	-- Blood Pressure
+		data matches {
+			HISTORY[id2] matches {	-- history
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[id7] occurrences matches {0..*} matches {	-- any event
+						state matches {
+							ITEM_TREE[id8] matches {
+								items matches {
+									ELEMENT[id9] occurrences matches {0..1} matches {	-- Position
+										value matches {
+											DV_CODED_TEXT[id1045] matches {
+												defining_code matches {[ac1; at1002]}		-- Position
+											}
+										}
+									}
+									ELEMENT[id1044] occurrences matches {0..1} matches {	-- Sleep status
+										value matches {
+											DV_CODED_TEXT[id1046] matches {
+												defining_code matches {[ac2; at1045]}		-- Sleep status
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[id12] matches {	-- list structure
+				items matches {
+					ELEMENT[id14] occurrences matches {0..1} matches {	-- Cuff size
+						value matches {
+							DV_CODED_TEXT[id1047] matches {
+								defining_code matches {[ac3]}		-- Cuff size
+							}
+						}
+					}
+					CLUSTER[id1034] occurrences matches {0..1} matches {	-- Location
+						items matches {
+							ELEMENT[id15] occurrences matches {0..1} matches {	-- Location of measurement
+								value matches {
+									DV_CODED_TEXT[id1048] matches {
+										defining_code matches {[ac4]}		-- Location of measurement
+									}
+								}
+							}
+							ELEMENT[id1035] occurrences matches {0..1} matches {	-- Specific location
+								value matches {
+									DV_TEXT[id1049] 
+								}
+							}
+						}
+					}
+					ELEMENT[id1036] occurrences matches {0..1} matches {	-- Method
+						value matches {
+							DV_CODED_TEXT[id1050] matches {
+								defining_code matches {[ac5]}		-- Method
+							}
+						}
+					}
+					ELEMENT[id1039] occurrences matches {0..1} matches {	-- Mean Arterial Pressure Formula
+						value matches {
+							DV_TEXT[id1051] 
+						}
+					}
+					ELEMENT[id1011] occurrences matches {0..1} matches {	-- Diastolic endpoint
+						value matches {
+							DV_CODED_TEXT[id1052] matches {
+								defining_code matches {[ac6]}		-- Diastolic endpoint
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

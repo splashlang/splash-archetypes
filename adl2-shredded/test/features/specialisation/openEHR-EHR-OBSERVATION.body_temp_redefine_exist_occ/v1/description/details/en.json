@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Specialised archetype showing the use of constraints for existence and occurrences matches {0}. These are used to remove attributes and objects respectively.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "specialisation",
+        "occurrences"
+    ]
+}

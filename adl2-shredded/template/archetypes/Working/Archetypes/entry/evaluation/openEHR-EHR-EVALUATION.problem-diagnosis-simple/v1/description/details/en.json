@@ -1,0 +1,14 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "For recording medical diagnoses with optional diagnostic criteria and staging. Requires coded entry of diagnosis. ",
+    "use": "Used for recording any diagnosis, present or past - so is used for recording past history as well as current diagnoses. Used with changed 'Subject of care' for recording diagnoses in relatives and so for family history.",
+    "keywords": [
+        "past",
+        "history",
+        "family",
+        "history",
+        "condition"
+    ],
+    "misuse": "",
+    "copyright": "copyright (c) 2010 openEHR Foundation"
+}

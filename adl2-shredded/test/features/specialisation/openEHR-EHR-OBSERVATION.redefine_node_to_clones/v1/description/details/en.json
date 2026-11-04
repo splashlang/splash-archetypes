@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Example of redefinition of a single node into multiple clones. Each of the ELEMENT[id8.x] nodes is a distinct clone of the ELEMENT[id8] node from the parent archetype.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "specialisation"
+    ]
+}

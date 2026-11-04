@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Illustrate enumerated type constraints. In this archetype, the DV_PROPORTION.type field has integer values that are actually the values of a declared enumeration type PROPORTION_KIND based on the Integer primitive type.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "enumerated types"
+    ]
+}

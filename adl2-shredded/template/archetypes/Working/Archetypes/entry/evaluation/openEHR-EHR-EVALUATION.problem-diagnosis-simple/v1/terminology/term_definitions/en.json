@@ -1,0 +1,26 @@
+{
+    "id0.0.55": {
+        "text": "Diagnosis type",
+        "description": "Type (reporting category) of diagnosis."
+    },
+    "at0.0.56": {
+        "text": "Primary diagnosis",
+        "description": "*"
+    },
+    "at0.0.57": {
+        "text": "Secondary diagnosis",
+        "description": "*"
+    },
+    "at0.0.58": {
+        "text": "Pre-existing condition",
+        "description": "*"
+    },
+    "id1.1.1": {
+        "text": "Diagnosis - Singapore",
+        "description": "A diagnosis defined by a clinician which is coded in an accepted terminology and may include the stage of the condition and the diagnostic criteria!"
+    },
+    "ac0.0.1": {
+        "text": "Diagnosis type (synthesised)",
+        "description": "Type (reporting category) of diagnosis. (synthesised)"
+    }
+}

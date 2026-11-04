@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VTSD validity check, triggered by at-code from a lower level in the ontology",
+    "use": "Regression testing"
+}

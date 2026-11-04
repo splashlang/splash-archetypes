@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VSONCO validity check triggered by illegal refinement of occurrences from {0..1} to {1..*}",
+    "use": "Regression testing"
+}

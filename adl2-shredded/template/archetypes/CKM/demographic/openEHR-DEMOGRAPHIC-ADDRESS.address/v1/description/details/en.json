@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Representation of data about a personal/organizational address, based on ISO 22220 standard.",
+    "use": "used to communicate with, identify service provision demograph requirements and trends, and to provide direct services.",
+    "keywords": [
+        "demographic service",
+        "address"
+    ],
+    "copyright": "copyright (c) 2010 openEHR foundation"
+}

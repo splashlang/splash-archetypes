@@ -1,0 +1,13 @@
+	TEST_ENTRY[id1] matches {	-- 
+		ordinal_attr_1 matches {
+			DV_ORDINAL[id2] matches {
+				[value, symbol] matches {
+					[{0}, {[at2]}],
+					[{1}, {[at3]}],
+					[{1}, {[at4]}],
+					[{2}, {[at5]}]
+				}
+			}
+		}
+	}
+

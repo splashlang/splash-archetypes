@@ -1,0 +1,8 @@
+	ORGANISATION[id1] matches {	-- An organisation
+		identities cardinality matches {1..5; ordered} matches {
+			PARTY_IDENTITY[id2] occurrences matches {1..5} matches {	-- A party identity
+				details existence matches {0} 
+			}
+		}
+	}
+

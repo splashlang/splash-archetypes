@@ -1,0 +1,24 @@
+	OBSERVATION[id1] matches {	-- An Observation
+		data matches {
+			HISTORY[id5] matches {
+				events cardinality matches {1..*; unordered} matches {
+					POINT_EVENT[id2] occurrences matches {0..1} matches {	-- A Point_event
+						offset matches {
+							DV_DURATION[id6] matches {
+								value matches {PT1M}
+							}
+						}
+						data matches {
+							ITEM_LIST[id7] matches {
+								items cardinality matches {1..6; ordered} matches {
+									ELEMENT[id3] occurrences matches {0..1} 	-- Element #1
+									ELEMENT[id4] occurrences matches {0..1} 	-- Element #2
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+

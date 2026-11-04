@@ -1,0 +1,14 @@
+{
+    "id1.1": {
+        "text": "root item - specialised",
+        "description": "xxxx"
+    },
+    "id6.1": {
+        "text": "ordinal 2 - refined",
+        "description": "ordinal 2 - refined"
+    },
+    "at3.1": {
+        "text": ">5 L/min",
+        "description": ">5 L/min flow-rate"
+    }
+}

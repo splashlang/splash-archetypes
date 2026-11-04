@@ -1,0 +1,128 @@
+template (adl_version=2.3.0; rm_release=1.1.0; generated)
+	openEHR-DEMOGRAPHIC-PERSON.t_patient_ds_sf.v1.0.0
+
+specialize
+	openEHR-DEMOGRAPHIC-PERSON.person.v1
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"Sergio Miranda Freire">
+				["organisation"] = <"Universidade do Estado do Rio de Janeiro - UERJ">
+				["email"] = <"sergio@lampada.uerj.br">
+			>
+		>
+	>
+
+description
+	lifecycle_state = <"unmanaged">
+	original_author = <
+		["name"] = <"Thomas Beale">
+		["organisation"] = <"Ocean Informatics">
+		["email"] = <"thomas.beale@oceaninformatics.com">
+		["date"] = <"01/04/2011">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Templated PERSON object to describe patient in Simple discharge summary">
+			use = <"test use">
+		>
+	>
+
+definition
+	PERSON[id1.1] matches {
+		details matches {
+			ITEM_TREE[id2] occurrences matches {0..1} matches {
+				items matches {
+					use_archetype CLUSTER[id11.1, openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-1.v1] occurrences matches {0..1} 
+					use_archetype CLUSTER[id11.2, openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-2.v1] occurrences matches {0..1} 
+					use_archetype CLUSTER[id11.3, openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-3.v1] occurrences matches {0..1} 
+					allow_archetype CLUSTER[id11] closed 
+				}
+			}
+		}
+		identities cardinality matches {1..*; ordered} matches {
+			use_archetype PARTY_IDENTITY[id3.1, openEHR-DEMOGRAPHIC-PARTY_IDENTITY.t_patient_ds_sf-4.v1] 
+			allow_archetype PARTY_IDENTITY[id3] closed 
+		}
+		contacts matches {
+			CONTACT[id4] occurrences matches {1} matches {
+				addresses matches {
+					use_archetype ADDRESS[id31.1, openEHR-DEMOGRAPHIC-ADDRESS.t_patient_ds_sf-5.v1] 
+					allow_archetype ADDRESS[id31] closed 
+				}
+			}
+		}
+		relationships existence matches {0} 
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Person">
+				description = <"Personal demographic data">
+			>
+			["id2"] = <
+				text = <"Demographic details">
+				description = <"A person's demographic details.">
+			>
+			["id3"] = <
+				text = <"Name">
+				description = <"A person's name.">
+			>
+			["id4"] = <
+				text = <"Contacts">
+				description = <"A person's contacts.">
+			>
+			["id5"] = <
+				text = <"Relationships">
+				description = <"A person's relationships, especially family ties.">
+			>
+			["id11"] = <
+				text = <"Birth, death, documentation and other demographic data">
+				description = <"Allows the collection of data about birth and death data, documentation and other person's demographic data.">
+			>
+			["id31"] = <
+				text = <"Addresses">
+				description = <"Addresses linked to a single contact, i.e., with the same time validity.">
+			>
+			["id41"] = <
+				text = <"Relationship type">
+				description = <"Defines the type of relationship between related persons.">
+			>
+			["ac1"] = <
+				text = <"Codes for type of relationship">
+				description = <"Valid codes for type of relationship.">
+			>
+			["id1.1"] = <
+				text = <"Patient demographic data">
+				description = <"Simple patient personal demographic data">
+			>
+			["id11.1"] = <
+				text = <"race data">
+				description = <"race data">
+			>
+			["id11.2"] = <
+				text = <"other data">
+				description = <"other data">
+			>
+			["id11.3"] = <
+				text = <"birth data">
+				description = <"birth data">
+			>
+			["id3.1"] = <
+				text = <"Person name">
+				description = <"Person name">
+			>
+			["id31.1"] = <
+				text = <"Address">
+				description = <"Address">
+			>
+		>
+	>
+

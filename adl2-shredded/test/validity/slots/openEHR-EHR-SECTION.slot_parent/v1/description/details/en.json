@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test slot archetype for testing redefnitions and filling",
+    "use": "Regression testing"
+}

@@ -1,0 +1,15 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test archetype that includes all possible ADL 1.4 extension meta-data, in 'other_details' section",
+    "use": "some use",
+    "keywords": [
+        "lab",
+        "pathology",
+        "biochemistry",
+        "haematology",
+        "microbiology",
+        "immunology",
+        "laboratory"
+    ],
+    "misuse": "some misuse"
+}

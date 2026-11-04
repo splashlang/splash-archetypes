@@ -1,0 +1,7 @@
+{
+    "id": "openEHR-DEMOGRAPHIC-PERSON.t_patient_ds_sf.v1.0.0",
+    "artefact_type": "template",
+    "specialise": "openEHR-DEMOGRAPHIC-PERSON.person.v1",
+    "adl_version": "2.3.0",
+    "rm_release": "1.1.0"
+}

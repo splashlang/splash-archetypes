@@ -1,0 +1,42 @@
+{
+    "id1": {
+        "text": "Ausmaße",
+        "description": "Die Ausmaße eines betrachteten Teils."
+    },
+    "id2": {
+        "text": "Umfang",
+        "description": "Der Umfang des betrachteten Teils"
+    },
+    "id3": {
+        "text": "Länge",
+        "description": "Die Länge des betrachteten Teils (longidudinale Körperachse)."
+    },
+    "id4": {
+        "text": "Breite",
+        "description": "Die Breite oder Weite (transversale Körperachse)."
+    },
+    "id5": {
+        "text": "Tiefe",
+        "description": "Die Tiefe des betrachteten Teils (dorsal-ventrale Körperachse)."
+    },
+    "id6": {
+        "text": "Fläche",
+        "description": "Die Fläche des betrachteten Teils."
+    },
+    "id7": {
+        "text": "Volumen",
+        "description": "Das Volumen des betrachteten Teils."
+    },
+    "at1": {
+        "text": "*Length (en)",
+        "description": "*Length (en)"
+    },
+    "at2": {
+        "text": "*Area (en)",
+        "description": "*Area (en)"
+    },
+    "at3": {
+        "text": "*Volume (en)",
+        "description": "*Volume (en)"
+    }
+}

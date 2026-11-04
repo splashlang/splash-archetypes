@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Example of bindings to paths that traverse use_node references, i.e. paths that are computed when taking a use_node internal reference into account.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "terminology bindings"
+    ]
+}

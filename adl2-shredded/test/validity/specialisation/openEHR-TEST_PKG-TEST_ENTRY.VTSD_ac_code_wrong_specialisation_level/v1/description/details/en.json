@@ -1,0 +1,10 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VTSD validation test, triggered when a constraint code has a specialisation level in a non-specialised archetype.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test"
+    ],
+    "copyright": "copyright (c) 2008 The openEHR Foundation"
+}

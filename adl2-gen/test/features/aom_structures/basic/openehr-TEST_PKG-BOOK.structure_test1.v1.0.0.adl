@@ -1,0 +1,66 @@
+archetype (adl_version=2.3.0; rm_release=1.0.2; generated)
+	openehr-TEST_PKG-BOOK.structure_test1.v1.0.0
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"published">
+	original_author = <
+		["name"] = <"Thomas Beale">
+		["organisation"] = <"openEHR Foundation <http://www.openEHR.org>">
+		["email"] = <"thomas.beale@openEHR.org">
+		["date"] = <"2004-05-01">
+	>
+	copyright = <"copyright © 2004 openEHR Foundation <http://www.openEHR.org>">
+	other_details = <
+		["regression"] = <"PASS">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Demonstrate simple RM structure hierarchy in an archetype.">
+			use = <"Regression testing">
+			keywords = <"ADL", "structure", "test">
+		>
+	>
+
+definition
+	BOOK[id1] matches {
+		title matches {"Devils"}
+		author matches {"Fyodor Dostoyevsky"}
+		chapters matches {
+			CHAPTER[id2] matches {
+				title matches {"By way of introductoin"}
+			}
+			CHAPTER[id3] matches {
+				title matches {"Prince Harry, matchmaking"}
+			}
+			CHAPTER[id4] matches {
+				title matches {"Another man's sins"}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Work of fiction">
+				description = <"Novel">
+			>
+			["id2"] = <
+				text = <"1st chapter of the book">
+				description = <"Chapter 1">
+			>
+			["id3"] = <
+				text = <"2nd chapter of the book">
+				description = <"Chapter 2">
+			>
+			["id4"] = <
+				text = <"3rd chapter of the book">
+				description = <"Chapter 3">
+			>
+		>
+	>
+

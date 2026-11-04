@@ -1,0 +1,10 @@
+{
+    "lifecycle_state": "in_development",
+    "original_author": {
+        "name": "Thomas Beale"
+    },
+    "copyright": "copyright (c) 2004 The openEHR Foundation",
+    "other_details": {
+        "regression": "PASS"
+    }
+}

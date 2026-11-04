@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "To test narrowing of external code list",
+    "use": "Regression testing"
+}

@@ -1,0 +1,12 @@
+{
+    "original_author": {
+        "name": "Thomas Beale",
+        "organisation": "openEHR Foundation",
+        "date": "05/06/2011"
+    },
+    "lifecycle_state": "unmanaged",
+    "other_details": {
+        "regression": "WACMCL"
+    },
+    "copyright": "copyright 2011 openEHR Foundation"
+}

@@ -1,0 +1,14 @@
+	EVALUATION[id1] matches {	
+		data cardinality matches {0..*} matches {
+			ITEM_TREE[id2] matches {
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[id3] matches {
+						value matches {
+							DV_TEXT[id5]
+						}
+					}
+				}
+			}
+		}
+	}
+

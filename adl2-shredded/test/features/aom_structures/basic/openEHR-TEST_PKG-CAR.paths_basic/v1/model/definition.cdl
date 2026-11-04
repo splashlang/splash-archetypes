@@ -1,0 +1,43 @@
+	CAR[id1] matches {	-- car
+		body matches {
+			CAR_BODY[id2] matches {	-- car body
+				description matches {"principal car body"}
+				model matches {"xxxx"}
+			}
+		}
+		engine_parts matches {
+			ENGINE_PART[id4] matches {	-- block
+				items matches {
+					ENGINE_PART_ITEM[id5] matches {	-- head
+						model matches {"xxx"}
+						type matches {"xxx"}
+					}
+					ENGINE_PART_ITEM[id6] matches {	-- body
+						model matches {"xxx"}
+						type matches {"xxx"}
+					}
+					ENGINE_PART_ITEM[id7] matches {	-- pistons
+						model matches {"xxx"}
+						type matches {"xxx"}
+					}
+					ENGINE_PART_ITEM[id8] matches {	-- cam shaft
+						model matches {"xxx"}
+						type matches {"xxx"}
+					}
+					ENGINE_PART_ITEM[id9] matches {	-- sump
+						model matches {"xxx"}
+						type matches {"xxx"}
+					}
+				}
+			}
+			ENGINE_PART[id10] matches {	-- exhaust manifold
+				items matches {
+					ENGINE_PART_ITEM[id11] matches {	-- exhaust manifold gasket
+						model matches {"xxx"}
+						type matches {"xxx"}
+					}
+				}
+			}
+		}
+	}
+

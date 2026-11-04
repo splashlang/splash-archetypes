@@ -1,0 +1,30 @@
+{
+    "id1": {
+        "text": "Healthcare Provider Organisation",
+        "description": "Organisation in the role of a healthcare provider"
+    },
+    "id2": {
+        "text": "Identifiers",
+        "description": "The identifiers used by the organisation acting as a healthcare provider organisation"
+    },
+    "id3": {
+        "text": "Provider name",
+        "description": "Indicates how the healthcare provider organisation is known by"
+    },
+    "id4": {
+        "text": "Third-party payer relationship",
+        "description": "relationship between the healthcare provider organisation and a third-party payer"
+    },
+    "id11": {
+        "text": "Identifier",
+        "description": "The identifier used by the organisation in the role of a healthcare provider organisation"
+    },
+    "id31": {
+        "text": "Details",
+        "description": "Relationship details"
+    },
+    "id32": {
+        "text": "identifier used in the relationship",
+        "description": "Identifier used by the healthcare provider in the relationship with the third-party payer"
+    }
+}

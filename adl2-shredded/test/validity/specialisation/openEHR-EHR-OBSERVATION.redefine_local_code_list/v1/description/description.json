@@ -1,0 +1,11 @@
+{
+    "original_author": {
+        "organisation": "Ocean Informatics",
+        "name": "Thomas Beale",
+        "date": "19/6/2008"
+    },
+    "lifecycle_state": "unmanaged",
+    "other_details": {
+        "regression": "PASS"
+    }
+}

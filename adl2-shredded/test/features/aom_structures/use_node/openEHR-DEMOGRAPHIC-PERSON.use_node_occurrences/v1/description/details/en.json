@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Example showing override of occurrences at source end of use_node. With no occurrences stated on a use_node node, the occurrences at target of the reference are used. This can be overridden as in this example with an occurrences at the source end.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "use_node",
+        "occurrences"
+    ]
+}

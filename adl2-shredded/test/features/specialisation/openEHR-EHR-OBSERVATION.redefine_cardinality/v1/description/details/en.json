@@ -1,0 +1,11 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Example showing narrowing of cardinality in specialised archetype. The narrower cardinality replaces the cardinality from the parent in the computed flat form.",
+    "use": "Regression testing",
+    "keywords": [
+        "ADL",
+        "test",
+        "specialisation",
+        "cardinality"
+    ]
+}

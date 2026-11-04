@@ -1,0 +1,13 @@
+	EVALUATION[id1.1.1] matches {	-- Diagnosis - Singapore
+		/data[id2]/items matches {
+			before [id0.32]
+			ELEMENT[id0.0.55] occurrences matches {0..1} matches {	-- Diagnosis type
+				value matches {
+					DV_CODED_TEXT[id0.0.56] matches {
+						defining_code matches {[ac0.0.1]}		-- Diagnosis type (synthesised)
+					}
+				}
+			}
+		}
+	}
+

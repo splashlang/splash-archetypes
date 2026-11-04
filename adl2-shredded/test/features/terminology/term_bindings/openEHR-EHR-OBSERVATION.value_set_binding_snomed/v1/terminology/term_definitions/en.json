@@ -1,0 +1,126 @@
+{
+    "id1": {
+        "text": "Pulse",
+        "description": "Measurement of the pulse rate, or heart rate, and description of associated characteristics."
+    },
+    "id4": {
+        "text": "Any event",
+        "description": "Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."
+    },
+    "id5": {
+        "text": "Rate",
+        "description": "The rate, measured in beats per minute."
+    },
+    "id6": {
+        "text": "Regularity",
+        "description": "The observed regularity of the pulse or heart beat."
+    },
+    "id14": {
+        "text": "Position",
+        "description": "The body position of the subject during the observation."
+    },
+    "at7": {
+        "text": "Regular",
+        "description": "The rhythm is regular."
+    },
+    "at8": {
+        "text": "Regularly Irregular",
+        "description": "The rhythm is regularly irregular."
+    },
+    "at9": {
+        "text": "Irregularly Irregular",
+        "description": "The rhythm is irregular in a chaotic manner."
+    },
+    "id1006": {
+        "text": "Pulse Presence",
+        "description": "Identification of a pulse or heart beat."
+    },
+    "id1014": {
+        "text": "Device",
+        "description": "Details about the device used to observe the pulse or heart beat."
+    },
+    "id1018": {
+        "text": "Exertion",
+        "description": "Details about physical exertion being undertaken during the examination."
+    },
+    "id1019": {
+        "text": "Confounding Factors",
+        "description": "Narrative description about any incidental factors that may be affect interpretation of the physical findings."
+    },
+    "id1023": {
+        "text": "Clinical Description",
+        "description": "Narrative description about the findings."
+    },
+    "id1024": {
+        "text": "Clinical Interpretation",
+        "description": "Single word, phrase or brief description represents the clinical meaning and significance of the pulse or heart beat findings."
+    },
+    "at1001": {
+        "text": "Lying",
+        "description": "The subject was lying flat."
+    },
+    "at1002": {
+        "text": "Sitting",
+        "description": "The subject was sitting (for example on bed or chair)."
+    },
+    "at1003": {
+        "text": "Reclining",
+        "description": "The subject was reclining."
+    },
+    "at1004": {
+        "text": "Standing",
+        "description": "The subject was standing."
+    },
+    "at1025": {
+        "text": "Present",
+        "description": "A pulse or heart beat can be detected."
+    },
+    "at1026": {
+        "text": "Absent",
+        "description": "A pulse or heart beat cannot be detected."
+    },
+    "at1027": {
+        "text": "Pulse Rate",
+        "description": "The pulse rate, measured in beats per minute."
+    },
+    "at1028": {
+        "text": "Heart Rate",
+        "description": "The heart rate, measured in beats per minute."
+    },
+    "at1029": {
+        "text": "Irregular",
+        "description": "The rhythm is irregular."
+    },
+    "id1031": {
+        "text": "Character",
+        "description": "Description of the character of the pulse or heart beat."
+    },
+    "id1037": {
+        "text": "Maximum",
+        "description": "Maximum rate of the pulse or heart beat observed during a period of exertion."
+    },
+    "at1046": {
+        "text": "Frequency",
+        "description": "Frequency"
+    },
+    "at1047": {
+        "text": "maximum",
+        "description": "maximum"
+    },
+    "ac1": {
+        "text": "Pulse Presence (synthesised)",
+        "description": "Identification of a pulse or heart beat. (synthesised)"
+    },
+    "ac2": {
+        "text": "Rate (synthesised)",
+        "description": "The rate, measured in beats per minute. (synthesised)"
+    },
+    "ac3": {
+        "text": "Regularity (synthesised)",
+        "description": "The observed regularity of the pulse or heart beat. (synthesised)"
+    },
+    "ac4": {
+        "text": "Position (synthesised)",
+        "description": "The body position of the subject during the observation. (synthesised)"
+    }
+}

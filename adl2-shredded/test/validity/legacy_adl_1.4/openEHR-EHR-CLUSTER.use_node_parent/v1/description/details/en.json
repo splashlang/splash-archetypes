@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Parent archetype for use-node redefinition",
+    "use": "Regression testing"
+}

@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VSANCC validity check, triggered by cardinality redefinition that is legal against RM but not against parent archetype",
+    "use": "Regression testing"
+}

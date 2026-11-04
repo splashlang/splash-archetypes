@@ -1,0 +1,30 @@
+{
+    "at0.1": {
+        "text": "term A",
+        "description": "term A"
+    },
+    "at0.2": {
+        "text": "term B",
+        "description": "term B"
+    },
+    "at0.3": {
+        "text": "term C",
+        "description": "term C"
+    },
+    "at0.4": {
+        "text": "term D",
+        "description": "term D"
+    },
+    "at0.5": {
+        "text": "term E",
+        "description": "term E"
+    },
+    "id1.1": {
+        "text": "obs",
+        "description": "obs"
+    },
+    "ac0.1": {
+        "text": "(added by post-parse processor)",
+        "description": "(added by post-parse processor)"
+    }
+}

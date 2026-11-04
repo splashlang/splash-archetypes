@@ -1,0 +1,140 @@
+	OBSERVATION[id1] matches {	-- Apgar score
+		data matches {
+			HISTORY[id3] matches {
+				events cardinality matches {1..*; unordered} matches {
+					POINT_EVENT[id4] occurrences matches {0..1} matches {	-- 1 minute
+						offset matches {
+							DV_DURATION[id46] matches {
+								value matches {PT1M}
+							}
+						}
+						data matches {
+							ITEM_LIST[id2] matches {
+								items cardinality matches {1..6; ordered} matches {
+									ELEMENT[id10] occurrences matches {0..1} matches {	-- Respiratory effort
+										value matches {
+											DV_ORDINAL[id47] matches {
+												[value, symbol] matches {
+													[{0}, {[at11]}],
+													[{1}, {[at12]}],
+													[{2}, {[at13]}]
+												}
+											}
+										}
+									}
+									ELEMENT[id6] occurrences matches {0..1} matches {	-- Heart Rate
+										value matches {
+											DV_ORDINAL[id48] matches {
+												[value, symbol] matches {
+													[{0}, {[at7]}],
+													[{1}, {[at8]}],
+													[{2}, {[at9]}]
+												}
+											}
+										}
+									}
+									ELEMENT[id14] occurrences matches {0..1} matches {	-- Muscle tone
+										value matches {
+											DV_ORDINAL[id49] matches {
+												[value, symbol] matches {
+													[{0}, {[at15]}],
+													[{1}, {[at16]}],
+													[{2}, {[at17]}]
+												}
+											}
+										}
+									}
+									ELEMENT[id18] occurrences matches {0..1} matches {	-- Reflex irritability
+										value matches {
+											DV_ORDINAL[id50] matches {
+												[value, symbol] matches {
+													[{0}, {[at19]}],
+													[{1}, {[at20]}],
+													[{2}, {[at21]}]
+												}
+											}
+										}
+									}
+									ELEMENT[id22] occurrences matches {0..1} matches {	-- Skin colour
+										value matches {
+											DV_ORDINAL[id51] matches {
+												[value, symbol] matches {
+													[{0}, {[at23]}],
+													[{1}, {[at24]}],
+													[{2}, {[at25]}]
+												}
+											}
+										}
+									}
+									ELEMENT[id26] occurrences matches {0..1} matches {	-- Total
+										value matches {
+											DV_COUNT[id52] matches {
+												magnitude matches {|0..10|}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					POINT_EVENT[id27] occurrences matches {0..1} matches {	-- 2 minute
+						offset matches {
+							DV_DURATION[id53] matches {
+								value matches {PT2M}
+							}
+						}
+						data matches {
+							use_node ITEM_LIST[id41] /data[id3]/events[id4]/data[id2]	-- /data[id3]/events[1 minute]/data[id2]
+						}
+					}
+					POINT_EVENT[id28] occurrences matches {0..1} matches {	-- 3 minute
+						offset matches {
+							DV_DURATION[id54] matches {
+								value matches {PT3M}
+							}
+						}
+						data matches {
+							use_node ITEM_LIST[id42] /data[id3]/events[id4]/data[id2]	-- /data[id3]/events[1 minute]/data[id2]
+						}
+					}
+					POINT_EVENT[id29] occurrences matches {0..1} matches {	-- 5 minute
+						offset matches {
+							DV_DURATION[id55] matches {
+								value matches {PT5M}
+							}
+						}
+						data matches {
+							use_node ITEM_LIST[id43] /data[id3]/events[id4]/data[id2]	-- /data[id3]/events[1 minute]/data[id2]
+						}
+					}
+					POINT_EVENT[id32] occurrences matches {0..1} matches {	-- 10 minute
+						offset matches {
+							DV_DURATION[id56] matches {
+								value matches {PT10M}
+							}
+						}
+						data matches {
+							use_node ITEM_LIST[id44] /data[id3]/events[id4]/data[id2]	-- /data[id3]/events[1 minute]/data[id2]
+						}
+					}
+					EVENT[id38] occurrences matches {0..*} matches {	-- Any event
+						data matches {
+							use_node ITEM_LIST[id45] /data[id3]/events[id4]/data[id2]	-- /data[id3]/events[1 minute]/data[id2]
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_LIST[id30] matches {
+				items matches {
+					ELEMENT[id31] occurrences matches {0..1} matches {	-- Notes on measurement
+						value matches {
+							DV_TEXT[id57] 
+						}
+					}
+				}
+			}
+		}
+	}
+

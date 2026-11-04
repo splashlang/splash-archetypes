@@ -1,0 +1,143 @@
+	OBSERVATION[id1.1] matches {	-- Blood glucose
+		/data[id2]/events matches {
+			EVENT[id3] occurrences matches {0..1} matches {
+				data matches {
+					ITEM_TREE[id4] matches {
+						items matches {
+							ELEMENT[id79.2] occurrences matches {0..1} matches {	-- Blood glucose
+								value matches {
+									DV_QUANTITY[id0.112] matches {
+										property matches {[at0.114]}
+										[magnitude, units] matches {
+											[{|>=0.0|}, {"mmol/l"}],
+											[{0.0}, {"mg/dl"}]
+										}
+									}
+								}
+							}
+							ELEMENT[id79] 
+						}
+					}
+				}
+				state matches {
+					ITEM_TREE[id0.89] matches {
+						items matches {
+							CLUSTER[id0.90] occurrences matches {0..1} matches {	-- Diet
+								items matches {
+									ELEMENT[id0.91] occurrences matches {0..1} matches {	-- Intake
+										value matches {
+											DV_CODED_TEXT[id0.113] matches {
+												defining_code matches {[ac0.1; at0.95]}		-- Intake (synthesised)
+											}
+										}
+									}
+									ELEMENT[id0.96] occurrences matches {0..1} matches {	-- Duration
+										value matches {
+											DV_DURATION[id0.114] matches {
+												value matches {PDTHMS}
+											}
+										}
+									}
+									ELEMENT[id0.97] occurrences matches {0..1} matches {	-- Description
+										value matches {
+											DV_TEXT[id0.115] 
+										}
+									}
+								}
+							}
+							CLUSTER[id0.98] occurrences matches {0..1} matches {	-- Glucose challenge
+								items matches {
+									ELEMENT[id0.100] occurrences matches {0..1} matches {	-- Dose
+										value matches {
+											DV_QUANTITY[id0.116] matches {
+												property matches {[at0.115]}
+												magnitude matches {|>=0.0|}
+												units matches {"gm"}
+											}
+										}
+									}
+									ELEMENT[id0.101] occurrences matches {0..1} matches {	-- Route
+										value matches {
+											DV_CODED_TEXT[id0.117] matches {
+												defining_code matches {[ac0.2; at0.105]}		-- Route (synthesised)
+											}
+										}
+									}
+									ELEMENT[id0.99] occurrences matches {0..1} matches {	-- Timing
+										value matches {
+											DV_CODED_TEXT[id0.118] matches {
+												defining_code matches {[ac0.3; at0.104]}		-- Timing (synthesised)
+											}
+										}
+									}
+									use_node ELEMENT[id0.119] occurrences matches {0..1} /data[id2]/events[id3]/state[id0.89]/items[id0.90]/items[id0.96]	-- /data[id2]/events[id3]/state[id0.89]/items[Diet]/items[Duration]
+								}
+							}
+							CLUSTER[id0.107] occurrences matches {0..1} matches {	-- Insulin challenge
+								items matches {
+									ELEMENT[id0.110] occurrences matches {0..1} matches {	-- Dose
+										value matches {
+											DV_QUANTITY[id0.120] matches {
+												property matches {[at0.116]}
+												magnitude matches {|>=0.0|}
+												units matches {"U"}
+											}
+										}
+									}
+									ELEMENT[id0.111] occurrences matches {0..1} matches {	-- Route
+										value matches {
+											DV_CODED_TEXT[id0.121] matches {
+												defining_code matches {[ac0.4; at0.113]}		-- Route (synthesised)
+											}
+										}
+									}
+									use_node ELEMENT[id0.122] occurrences matches {0..1} /data[id2]/events[id3]/state[id0.89]/items[id0.98]/items[id0.99]	-- /data[id2]/events[id3]/state[id0.89]/items[Glucose challenge]/items[Timing]
+									use_node ELEMENT[id0.123] occurrences matches {0..1} /data[id2]/events[id3]/state[id0.89]/items[id0.90]/items[id0.96]	-- /data[id2]/events[id3]/state[id0.89]/items[Diet]/items[Duration]
+								}
+							}
+							CLUSTER[id0.108] occurrences matches {0..1} matches {	-- Event
+								items matches {
+									ELEMENT[id0.109] occurrences matches {0..1} matches {	-- Event name
+										value matches {
+											DV_TEXT[id0.124] 
+										}
+									}
+									use_node ELEMENT[id0.125] occurrences matches {0..1} /data[id2]/events[id3]/state[id0.89]/items[id0.98]/items[id0.99]	-- /data[id2]/events[id3]/state[id0.89]/items[Glucose challenge]/items[Timing]
+									use_node ELEMENT[id0.126] occurrences matches {0..1} /data[id2]/events[id3]/state[id0.89]/items[id0.90]/items[id0.96]	-- /data[id2]/events[id3]/state[id0.89]/items[Diet]/items[Duration]
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		/protocol[id5]/items matches {
+			before [id76]
+			CLUSTER[id14] occurrences matches {0..1} matches {
+				items matches {
+					ELEMENT[id63] occurrences matches {0..1} matches {
+						value matches {
+							DV_TEXT[id0.127] 
+						}
+					}
+					ELEMENT[id64] occurrences matches {0..1} matches {
+						value matches {
+							DV_TEXT[id0.128] 
+						}
+					}
+					ELEMENT[id69] occurrences matches {0..1} matches {
+						value matches {
+							DV_TEXT[id0.129] 
+						}
+					}
+					allow_archetype CLUSTER[id18] matches {
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.organisation\.v1/}
+						exclude
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+

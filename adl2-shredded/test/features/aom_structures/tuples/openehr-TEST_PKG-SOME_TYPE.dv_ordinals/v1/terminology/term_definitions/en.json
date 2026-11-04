@@ -1,0 +1,34 @@
+{
+    "id1": {
+        "text": "root item",
+        "description": "xxxx"
+    },
+    "at2": {
+        "text": "+",
+        "description": "mild"
+    },
+    "at3": {
+        "text": "++",
+        "description": "medium"
+    },
+    "at4": {
+        "text": "+++",
+        "description": "severe"
+    },
+    "id5": {
+        "text": "ordinal 1",
+        "description": "ordinal 1"
+    },
+    "id6": {
+        "text": "ordinal 2",
+        "description": "ordinal 2"
+    },
+    "id7": {
+        "text": "ordinal 3",
+        "description": "ordinal 3"
+    },
+    "ac1": {
+        "text": "root item",
+        "description": "xxxx"
+    }
+}

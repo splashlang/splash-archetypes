@@ -1,0 +1,15 @@
+	COMPOSITION[id1.1] matches {	-- Clinical detail
+		context existence matches {0} 
+		content matches {
+			use_archetype SECTION[id0.1, openEHR-EHR-SECTION.t_patient_event_info_ds_sf.v1] occurrences matches {1} 
+			use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-1.v1] occurrences matches {0..1} 
+			use_archetype EVALUATION[id0.3, openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-2.v1] 
+			use_archetype EVALUATION[id0.4, openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-3.v1] 
+			use_archetype EVALUATION[id0.5, openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-4.v1] occurrences matches {1..*} 
+			use_archetype EVALUATION[id0.6, openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-5.v1] occurrences matches {0..1} 
+			use_archetype EVALUATION[id0.7, openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-6.v1] occurrences matches {0..1} 
+			use_archetype EVALUATION[id0.8, openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-7.v1] occurrences matches {0..*} 
+			use_archetype EVALUATION[id0.9, openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-8.v1] 
+		}
+	}
+

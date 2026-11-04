@@ -1,0 +1,13 @@
+{
+    "lifecycle_state": "unmanaged",
+    "original_author": {
+        "name": "Heather Leslie",
+        "organisation": "Ocean Informatics",
+        "email": "heather.leslie@oceaninformatics.com"
+    },
+    "copyright": "copyright (c) 2010 openEHR Foundation",
+    "other_details": {
+        "MD5-CAM-1.0.1": "B14424CBA9C103AF726A1081BCA771B4",
+        "regression": "PASS"
+    }
+}

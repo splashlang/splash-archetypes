@@ -1,0 +1,16 @@
+{
+    "custodian_namespace": "org.openehr",
+    "custodian_organisation": "openEHR Foundation <http://www.openEHR.org>",
+    "original_author": {
+        "name": "Ian McNicoll",
+        "email": "ian@freshehr.com",
+        "organisation": "freshEHR Clinical Informatics, UK",
+        "date": "2014-04-18"
+    },
+    "lifecycle_state": "published",
+    "other_details": {
+        "regression": "PASS"
+    },
+    "copyright": "Copyright © 2014 openEHR Foundation <http://www.openEHR.org>",
+    "licence": "Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>"
+}

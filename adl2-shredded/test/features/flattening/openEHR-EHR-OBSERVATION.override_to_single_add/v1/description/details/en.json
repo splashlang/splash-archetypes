@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test specialised node that adds a sibling, and retains the original parent. This is done by specialising the relevant id code.",
+    "use": "Regression testing"
+}

@@ -1,0 +1,59 @@
+	ADMIN_ENTRY[id1] matches {	-- Admission Short Singapore
+		other_participations matches {
+			PARTICIPATION[id41] occurrences matches {0..1} matches {	-- Referring doctor participation
+				function matches {
+					DV_CODED_TEXT[id60] matches {
+						defining_code matches {[at60]}
+					}
+				}
+			}
+			PARTICIPATION[id42] occurrences matches {0..1} matches {	-- Admitting doctor participation
+				function matches {
+					DV_CODED_TEXT[id61] matches {
+						defining_code matches {[at61]}
+					}
+				}
+			}
+			PARTICIPATION[id43] occurrences matches {0..1} matches {	-- Admitting organisation participation
+				function matches {
+					DV_CODED_TEXT[id62] matches {
+						defining_code matches {[at62]}
+					}
+				}
+			}
+		}
+		data matches {
+			ITEM_TREE[id4] matches {
+				items matches {
+					ELEMENT[id5] occurrences matches {0..1} matches {	-- Date of admission
+						value matches {
+							DV_DATE_TIME[id63] 
+						}
+					}
+					ELEMENT[id58] occurrences matches {0..*} matches {	-- Event Identifier
+						value matches {
+							DV_TEXT[id64] 
+						}
+					}
+					ELEMENT[id12] occurrences matches {0..1} matches {	-- Source of admission
+						value matches {
+							DV_TEXT[id65] 
+						}
+					}
+					ELEMENT[id6] occurrences matches {0..1} matches {	-- Admission type
+						value matches {
+							DV_CODED_TEXT[id66] matches {
+								defining_code matches {[ac1]}		-- Admission type (synthesised)
+							}
+						}
+					}
+					ELEMENT[id59] occurrences matches {0..1} matches {	-- Admitting unit
+						value matches {
+							DV_TEXT[id67] 
+						}
+					}
+				}
+			}
+		}
+	}
+

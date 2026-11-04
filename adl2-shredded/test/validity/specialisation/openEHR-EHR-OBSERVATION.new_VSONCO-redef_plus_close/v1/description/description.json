@@ -1,0 +1,11 @@
+{
+    "original_author": {
+        "organisation": "openEHR International",
+        "name": "Thomas Beale",
+        "date": "08/11/2022"
+    },
+    "lifecycle_state": "unmanaged",
+    "other_details": {
+        "regression": "PASS"
+    }
+}

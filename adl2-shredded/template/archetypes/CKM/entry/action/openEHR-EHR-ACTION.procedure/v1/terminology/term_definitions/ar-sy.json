@@ -1,0 +1,226 @@
+{
+    "id1": {
+        "text": "*Procedure(en)",
+        "description": "*A clinical activity carried out for screening, investigative, diagnostic, curative, therapeutic, evaluative or palliative purposes.(en)"
+    },
+    "id3": {
+        "text": "*Procedure name(en)",
+        "description": "*Identification of the procedure by name.(en)"
+    },
+    "id4": {
+        "text": "*Procedure detail(en)",
+        "description": "*Structured information about the procedure. Use to capture detailed, structured information about anatomical location, method & technique, equipment used, devices implanted, results, findings etc.(en)"
+    },
+    "id5": {
+        "text": "*Procedure planned (en)",
+        "description": "*"
+    },
+    "id6": {
+        "text": "*Comment(en)",
+        "description": "*Additional narrative about the activity or care pathway step not captured in other fields.(en)"
+    },
+    "id7": {
+        "text": "*Complication(en)",
+        "description": "*Details about any complication arising from the procedure.(en)"
+    },
+    "id8": {
+        "text": "*Procedure request sent (en)",
+        "description": "*"
+    },
+    "id15": {
+        "text": "*Reason(en)",
+        "description": "*Reason that the activity or care pathway step for the identified procedure was carried out.(en)"
+    },
+    "id35": {
+        "text": "*Procedure planned(en)",
+        "description": "*The procedure to be undertaken is planned.(en)"
+    },
+    "id36": {
+        "text": "*Procedure request sent(en)",
+        "description": "*Request for procedure sent.(en)"
+    },
+    "id37": {
+        "text": "*Procedure scheduled(en)",
+        "description": "*The procedure has been scheduled.(en)"
+    },
+    "id39": {
+        "text": "*Procedure postponed(en)",
+        "description": "*The procedure has been postponed.(en)"
+    },
+    "id40": {
+        "text": "*Procedure cancelled(en)",
+        "description": "*The planned procedure has been cancelled prior to commencement.(en)"
+    },
+    "id41": {
+        "text": "*Procedure suspended(en)",
+        "description": "*The procedure has been suspended.(en)"
+    },
+    "id42": {
+        "text": "*Procedure aborted(en)",
+        "description": "*The procedure has been aborted.(en)"
+    },
+    "id44": {
+        "text": "*Procedure completed(en)",
+        "description": "*The procedure has been performed and all associated clinical activities completed.(en)"
+    },
+    "id48": {
+        "text": "*Procedure performed(en)",
+        "description": "*The procedure, or subprocedure in a multicomponent procedure, has been performed.(en)"
+    },
+    "id49": {
+        "text": "*Outcome(en)",
+        "description": "*Outcome of procedure performed.(en)"
+    },
+    "id50": {
+        "text": "*Description(en)",
+        "description": "*Narrative description about the procedure, as appropriate for the pathway step.(en)"
+    },
+    "id55": {
+        "text": "*Requestor order identifier(en)",
+        "description": "*The local ID assigned to the order by the healthcare provider or organisation requesting the service.(en)"
+    },
+    "id56": {
+        "text": "الطالب",
+        "description": "تفاصيل حول مقدم الخدمة الصحية أو المؤسسة التي تطلب الخدمة"
+    },
+    "id57": {
+        "text": "*Receiver order identifier(en)",
+        "description": "*The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.(en)"
+    },
+    "id58": {
+        "text": "المستقبِل",
+        "description": "تفاصيل حول مقدم الخدمة الصحية أو المؤسسة التي تستقبل طلب الخدمة."
+    },
+    "id59": {
+        "text": "*Urgency(en)",
+        "description": "*Urgency of the procedure.(en)"
+    },
+    "id61": {
+        "text": "*Final end date/time(en)",
+        "description": "*The date and/or time when the entire procedure, or the last component of a multicomponent procedure,  was finished.(en)"
+    },
+    "id62": {
+        "text": "*Total duration(en)",
+        "description": "*The total amount of time taken to complete the procedure, which may include time spent during the active phase of the procedure plus time during which the procedure was suspended.(en)"
+    },
+    "id63": {
+        "text": "*Multimedia(en)",
+        "description": "*Mulitimedia representation of a performed procedure.(en)"
+    },
+    "id64": {
+        "text": "*Body site(en)",
+        "description": "*Identification of the body site for the procedure.(en)"
+    },
+    "id65": {
+        "text": "*Extension(en)",
+        "description": "*Additional information required to capture local content or to align with other reference models/formalisms.(en)"
+    },
+    "id66": {
+        "text": "*Method(en)",
+        "description": "*Identification of specific method or technique for the procedure.(en)"
+    },
+    "id67": {
+        "text": "*Scheduled date/time(en)",
+        "description": "*The date and/or time on which the procedure is intended to be performed.(en)"
+    },
+    "id68": {
+        "text": "*Procedure type(en)",
+        "description": "*The type of procedure.(en)"
+    },
+    "id69": {
+        "text": "*Procedure commenced(en)",
+        "description": "*The procedure, or subprocedure in a multicomponent procedure, has been commenced.(en)"
+    },
+    "id70": {
+        "text": "*Procedural difficulty(en)",
+        "description": "*Difficulties or issues encountered during the procedure.(en)"
+    },
+    "id71": {
+        "text": "*Indication (en)",
+        "description": "*The clinical or process-related reason for the procedure. (en)"
+    },
+    "at5": {
+        "text": "*Procedure planned (en)",
+        "description": "*"
+    },
+    "at35": {
+        "text": "*Procedure planned(en)",
+        "description": "*The procedure to be undertaken is planned.(en)"
+    },
+    "at8": {
+        "text": "*Procedure request sent (en)",
+        "description": "*"
+    },
+    "at36": {
+        "text": "*Procedure request sent(en)",
+        "description": "*Request for procedure sent.(en)"
+    },
+    "at39": {
+        "text": "*Procedure postponed(en)",
+        "description": "*The procedure has been postponed.(en)"
+    },
+    "at40": {
+        "text": "*Procedure cancelled(en)",
+        "description": "*The planned procedure has been cancelled prior to commencement.(en)"
+    },
+    "at37": {
+        "text": "*Procedure scheduled(en)",
+        "description": "*The procedure has been scheduled.(en)"
+    },
+    "at69": {
+        "text": "*Procedure commenced(en)",
+        "description": "*The procedure, or subprocedure in a multicomponent procedure, has been commenced.(en)"
+    },
+    "at48": {
+        "text": "*Procedure performed(en)",
+        "description": "*The procedure, or subprocedure in a multicomponent procedure, has been performed.(en)"
+    },
+    "at41": {
+        "text": "*Procedure suspended(en)",
+        "description": "*The procedure has been suspended.(en)"
+    },
+    "at42": {
+        "text": "*Procedure aborted(en)",
+        "description": "*The procedure has been aborted.(en)"
+    },
+    "at44": {
+        "text": "*Procedure completed(en)",
+        "description": "*The procedure has been performed and all associated clinical activities completed.(en)"
+    },
+    "at70": {
+        "text": "*planned (en)",
+        "description": "*planned (en)"
+    },
+    "at71": {
+        "text": "*initial (en)",
+        "description": "*initial (en)"
+    },
+    "at72": {
+        "text": "*postponed (en)",
+        "description": "*postponed (en)"
+    },
+    "at73": {
+        "text": "*cancelled (en)",
+        "description": "*cancelled (en)"
+    },
+    "at74": {
+        "text": "*scheduled (en)",
+        "description": "*scheduled (en)"
+    },
+    "at75": {
+        "text": "*active (en)",
+        "description": "*active (en)"
+    },
+    "at76": {
+        "text": "*suspended (en)",
+        "description": "*suspended (en)"
+    },
+    "at77": {
+        "text": "*aborted (en)",
+        "description": "*aborted (en)"
+    },
+    "at78": {
+        "text": "*complete (en)",
+        "description": "*complete (en)"
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "language": "[ISO_639-1::en]",
+    "purpose": "Test VSSM validity check, triggered when order marker contains node id not found in parent archetype",
+    "use": "Regression testing"
+}
