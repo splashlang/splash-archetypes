@@ -53,7 +53,7 @@ definition
 										value existence matches {0..1} matches {
 											DV_QUANTITY[id1041] occurrences matches {0..1} matches {
 												property matches {[at1046]}
-												magnitude existence matches {1} matches {|0.0..|}
+												magnitude existence matches {1} matches {|>=0.0|}
 												precision existence matches {0..1} matches {0}
 												units existence matches {1} matches {"/min"}
 											}
@@ -132,7 +132,7 @@ definition
 										value existence matches {0..1} matches {
 											DV_QUANTITY[id1041] occurrences matches {0..1} matches {
 												property matches {[at1046]}
-												magnitude existence matches {1} matches {|0.0..|}
+												magnitude existence matches {1} matches {|>=0.0|}
 												precision existence matches {0..1} matches {0}
 												units existence matches {1} matches {"/min"}
 											}

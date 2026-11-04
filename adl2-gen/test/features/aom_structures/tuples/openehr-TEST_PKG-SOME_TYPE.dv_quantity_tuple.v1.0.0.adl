@@ -34,8 +34,8 @@ definition
 			DV_QUANTITY[id2] matches {
 				property matches {[at1]}
 				[units, magnitude] matches {
-					[{"C"}, {|4.0..|}],
-					[{"F"}, {|40.0..|}]
+					[{"C"}, {|>=4.0|}],
+					[{"F"}, {|>=40.0|}]
 				}
 			}
 		}

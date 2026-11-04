@@ -35,13 +35,13 @@ definition
 				lower matches {
 					DV_QUANTITY[id3] matches {
 						units matches {"C"}
-						magnitude matches {|37.0..|}
+						magnitude matches {|>=37.0|}
 					}
 				}
 				upper matches {
 					DV_QUANTITY[id4] matches {
 						units matches {"C"}
-						magnitude matches {|39.0..|}
+						magnitude matches {|>=39.0|}
 					}
 				}
 				lower_included matches {true}

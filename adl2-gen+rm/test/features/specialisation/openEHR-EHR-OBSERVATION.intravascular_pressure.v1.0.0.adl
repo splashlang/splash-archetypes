@@ -47,8 +47,8 @@ definition
 											DV_QUANTITY[id42] occurrences matches {0..1} matches {
 												property matches {[at29]}
 												[magnitude, units, precision] matches {
-													[{|0.0..|}, {"mm[Hg]"}, {2}],
-													[{|0.0..|}, {"cm[H20]"}, {2}]
+													[{|>=0.0|}, {"mm[Hg]"}, {2}],
+													[{|>=0.0|}, {"cm[H20]"}, {2}]
 												}
 											}
 										}
@@ -129,8 +129,8 @@ definition
 											DV_QUANTITY[id42] occurrences matches {0..1} matches {
 												property matches {[at29]}
 												[magnitude, units, precision] matches {
-													[{|0.0..|}, {"mm[Hg]"}, {2}],
-													[{|0.0..|}, {"cm[H20]"}, {2}]
+													[{|>=0.0|}, {"mm[Hg]"}, {2}],
+													[{|>=0.0|}, {"cm[H20]"}, {2}]
 												}
 											}
 										}

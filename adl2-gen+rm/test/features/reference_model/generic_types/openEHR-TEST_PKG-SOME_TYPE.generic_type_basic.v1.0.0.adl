@@ -35,13 +35,13 @@ definition
 				lower existence matches {0..1} matches {
 					DV_QUANTITY[id3] occurrences matches {0..1} matches {
 						units existence matches {1} matches {"C"}
-						magnitude existence matches {1} matches {|37.0..|}
+						magnitude existence matches {1} matches {|>=37.0|}
 					}
 				}
 				upper existence matches {0..1} matches {
 					DV_QUANTITY[id4] occurrences matches {0..1} matches {
 						units existence matches {1} matches {"C"}
-						magnitude existence matches {1} matches {|39.0..|}
+						magnitude existence matches {1} matches {|>=39.0|}
 					}
 				}
 				lower_included existence matches {1} matches {true}

@@ -36,19 +36,19 @@ definition
 		integer_attr1 existence matches {0..1} matches {55}
 		integer_attr2 existence matches {0..1} matches {10, 20, 30; 10}
 		integer_attr3 existence matches {0..1} matches {|0..100|; 10}
-		integer_attr4 existence matches {0..1} matches {|>10..|; 11}
-		integer_attr5 existence matches {0..1} matches {|..<10|; 9}
-		integer_attr6 existence matches {0..1} matches {|10..|; 10}
-		integer_attr7 existence matches {0..1} matches {|..10|; 5}
+		integer_attr4 existence matches {0..1} matches {|>10|; 11}
+		integer_attr5 existence matches {0..1} matches {|<10|; 9}
+		integer_attr6 existence matches {0..1} matches {|>=10|; 10}
+		integer_attr7 existence matches {0..1} matches {|<=10|; 5}
 		integer_attr8 existence matches {0..1} matches {|-10..-5|; -8}
 		integer_attr9 existence matches {0..1} matches {10}
 		real_attr1 existence matches {0..1} matches {100.0}
 		real_attr2 existence matches {0..1} matches {10.0, 20.0, 30.0; 20.0}
 		real_attr3 existence matches {0..1} matches {|0.0..100.0|; 20.4}
-		real_attr4 existence matches {0..1} matches {|10.0..|; 20.0}
-		real_attr5 existence matches {0..1} matches {|..10.0|; 9.5}
-		real_attr6 existence matches {0..1} matches {|10.0..|; 20.3}
-		real_attr7 existence matches {0..1} matches {|..10.0|; 8.0}
+		real_attr4 existence matches {0..1} matches {|>=10.0|; 20.0}
+		real_attr5 existence matches {0..1} matches {|<=10.0|; 9.5}
+		real_attr6 existence matches {0..1} matches {|>=10.0|; 20.3}
+		real_attr7 existence matches {0..1} matches {|<=10.0|; 8.0}
 		real_attr8 existence matches {0..1} matches {|-10.0..-5.0|; -9.8}
 		real_attr9 existence matches {0..1} matches {10.0}
 		date_attr1 existence matches {0..1} matches {yyyy-mm-dd; 1995-03-17}

@@ -33,19 +33,19 @@ definition
 		standard_quantity_attr existence matches {0..1} matches {
 			DV_QUANTITY[id2] occurrences matches {0..1} matches {
 				units existence matches {1} matches {"C"}
-				magnitude existence matches {1} matches {|4.0..|}
+				magnitude existence matches {1} matches {|>=4.0|}
 			}
 			DV_QUANTITY[id3] occurrences matches {0..1} matches {
 				units existence matches {1} matches {"F"}
-				magnitude existence matches {1} matches {|40.0..|}
+				magnitude existence matches {1} matches {|>=40.0|}
 			}
 		}
 		clinical_quantity_attr_1 existence matches {0..1} matches {
 			DV_QUANTITY[id4] occurrences matches {0..1} matches {
 				property matches {[at1]}
 				[units, magnitude] matches {
-					[{"C"}, {|4.0..|}],
-					[{"F"}, {|40.0..|}]
+					[{"C"}, {|>=4.0|}],
+					[{"F"}, {|>=40.0|}]
 				}
 			}
 		}
@@ -57,12 +57,12 @@ definition
 		}
 		clinical_quantity_attr_4 existence matches {0..1} matches {
 			DV_COUNT[id6] occurrences matches {0..1} matches {
-				magnitude existence matches {1} matches {|0..|}
+				magnitude existence matches {1} matches {|>=0|}
 			}
 		}
 		clinical_quantity_attr_5 existence matches {0..1} matches {
 			DV_COUNT[id7] occurrences matches {0..1} matches {
-				magnitude existence matches {1} matches {|0..|}
+				magnitude existence matches {1} matches {|>=0|}
 			}
 		}
 		clinical_quantity_attr_6 existence matches {0..1} matches {

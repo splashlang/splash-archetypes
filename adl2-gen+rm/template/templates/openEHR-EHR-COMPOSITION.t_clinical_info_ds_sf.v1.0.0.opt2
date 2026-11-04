@@ -286,7 +286,7 @@ definition
 									ELEMENT[id26] occurrences matches {0..1} matches {
 										value existence matches {0..1} matches {
 											DV_COUNT[id60] occurrences matches {0..1} matches {
-												magnitude existence matches {1} matches {|1..|}
+												magnitude existence matches {1} matches {|>=1|}
 											}
 										}
 									}

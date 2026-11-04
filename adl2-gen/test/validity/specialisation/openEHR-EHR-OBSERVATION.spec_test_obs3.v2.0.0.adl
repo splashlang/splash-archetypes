@@ -39,7 +39,7 @@ definition
 													DV_QUANTITY[id7] matches {
 														property matches {[at1]}
 														units matches {"kPa"}
-														magnitude matches {|0.0..|}
+														magnitude matches {|>=0.0|}
 													}
 												}
 											}

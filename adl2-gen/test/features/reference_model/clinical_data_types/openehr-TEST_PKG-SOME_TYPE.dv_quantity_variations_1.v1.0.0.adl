@@ -33,19 +33,19 @@ definition
 		standard_quantity_attr matches {
 			DV_QUANTITY[id2] matches {
 				units matches {"C"}
-				magnitude matches {|4.0..|}
+				magnitude matches {|>=4.0|}
 			}
 			DV_QUANTITY[id3] matches {
 				units matches {"F"}
-				magnitude matches {|40.0..|}
+				magnitude matches {|>=40.0|}
 			}
 		}
 		clinical_quantity_attr_1 matches {
 			DV_QUANTITY[id4] matches {
 				property matches {[at1]}
 				[units, magnitude] matches {
-					[{"C"}, {|4.0..|}],
-					[{"F"}, {|40.0..|}]
+					[{"C"}, {|>=4.0|}],
+					[{"F"}, {|>=40.0|}]
 				}
 			}
 		}
@@ -57,12 +57,12 @@ definition
 		}
 		clinical_quantity_attr_4 matches {
 			DV_COUNT[id6] matches {
-				magnitude matches {|0..|}
+				magnitude matches {|>=0|}
 			}
 		}
 		clinical_quantity_attr_5 matches {
 			DV_COUNT[id7] matches {
-				magnitude matches {|0..|}
+				magnitude matches {|>=0|}
 			}
 		}
 		clinical_quantity_attr_6 matches {

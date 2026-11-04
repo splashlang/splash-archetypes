@@ -67,7 +67,7 @@ definition
 						value existence matches {0..1} matches {
 							DV_QUANTITY[id0.1] occurrences matches {0..1} matches {
 								property matches {[at0.1]}
-								magnitude existence matches {1} matches {|0.0..|}
+								magnitude existence matches {1} matches {|>=0.0|}
 								units existence matches {1} matches {"mmol/l"}
 							}
 						}
@@ -102,7 +102,7 @@ definition
 						value existence matches {0..1} matches {
 							DV_QUANTITY[id0.2] occurrences matches {0..1} matches {
 								property matches {[at0.1]}
-								magnitude existence matches {1} matches {|0.0..|}
+								magnitude existence matches {1} matches {|>=0.0|}
 								units existence matches {1} matches {"mmol/l"}
 							}
 						}
@@ -137,7 +137,7 @@ definition
 						value existence matches {0..1} matches {
 							DV_QUANTITY[id0.3] occurrences matches {0..1} matches {
 								property matches {[at0.1]}
-								magnitude existence matches {1} matches {|0.0..|}
+								magnitude existence matches {1} matches {|>=0.0|}
 								units existence matches {1} matches {"mmol/l"}
 							}
 						}
@@ -172,7 +172,7 @@ definition
 						value existence matches {0..1} matches {
 							DV_QUANTITY[id0.4] occurrences matches {0..1} matches {
 								property matches {[at0.1]}
-								magnitude existence matches {1} matches {|0.0..|}
+								magnitude existence matches {1} matches {|>=0.0|}
 								units existence matches {1} matches {"mosmol/l"}
 							}
 						}
@@ -207,7 +207,7 @@ definition
 						value existence matches {0..1} matches {
 							DV_QUANTITY[id0.5] occurrences matches {0..1} matches {
 								property matches {[at0.1]}
-								magnitude existence matches {1} matches {|0.0..|}
+								magnitude existence matches {1} matches {|>=0.0|}
 								units existence matches {1} matches {"mosmol/l"}
 							}
 						}

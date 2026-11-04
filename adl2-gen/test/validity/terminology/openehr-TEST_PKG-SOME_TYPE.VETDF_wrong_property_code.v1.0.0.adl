@@ -28,8 +28,8 @@ definition
 			DV_QUANTITY[id2] matches {
 				property matches {[at1]}
 				[units, magnitude] matches {
-					[{"C"}, {|37.0..|}],
-					[{"F"}, {|96.0..|}]
+					[{"C"}, {|>=37.0|}],
+					[{"F"}, {|>=96.0|}]
 				}
 			}
 		}

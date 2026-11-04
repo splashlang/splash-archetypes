@@ -39,7 +39,7 @@ definition
 													DV_QUANTITY[id7] occurrences matches {0..1} matches {
 														property matches {[at1]}
 														units existence matches {1} matches {"kPa"}
-														magnitude existence matches {1} matches {|0.0..|}
+														magnitude existence matches {1} matches {|>=0.0|}
 													}
 												}
 											}

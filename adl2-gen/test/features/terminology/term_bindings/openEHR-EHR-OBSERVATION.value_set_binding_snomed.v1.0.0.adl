@@ -53,7 +53,7 @@ definition
 										value matches {
 											DV_QUANTITY[id1041] matches {
 												property matches {[at1046]}
-												magnitude matches {|0.0..|}
+												magnitude matches {|>=0.0|}
 												precision matches {0}
 												units matches {"/min"}
 											}
@@ -132,7 +132,7 @@ definition
 										value matches {
 											DV_QUANTITY[id1041] matches {
 												property matches {[at1046]}
-												magnitude matches {|0.0..|}
+												magnitude matches {|>=0.0|}
 												precision matches {0}
 												units matches {"/min"}
 											}
