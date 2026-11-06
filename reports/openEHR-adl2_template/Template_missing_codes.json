@@ -1,0 +1,709 @@
+{
+    "openEHR-DEMOGRAPHIC-PERSON.t_patient_ds_sf.v1.0.0": {
+        "/details[id2]/items[id11.1]": {
+            "archetype_id": "openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-1.v1.0.0",
+            "missing_id_code_bindings": {
+                "/items[id3]": "Ethnic background",
+                "/items[id3.1]": "Race"
+            },
+            "missing_value_sets": {
+                "id3|Ethnic background|": {
+                    "c_terminology_node_ac_code": "ac3|Ethnic background codes|"
+                },
+                "id3.1|Race|": {
+                    "c_terminology_node_ac_code": "ac3|Ethnic background codes|"
+                }
+            }
+        },
+        "/details[id2]/items[id11.2]": {
+            "archetype_id": "openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-2.v1.0.0",
+            "missing_id_code_bindings": {
+                "/items[id2.1]": "Sex"
+            },
+            "missing_value_sets": {
+                "id2.1|Sex|": {
+                    "c_terminology_node_ac_code": "ac1|Sex (synthesised)|",
+                    "value_set": [
+                        "at11|Male|",
+                        "at12|Female|",
+                        "at13|Intersex or indeterminate|",
+                        "at14|Not declared/inadequately described|"
+                    ]
+                }
+            }
+        },
+        "/details[id2]/items[id11.3]": {
+            "archetype_id": "openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-3.v1.0.0",
+            "missing_id_code_bindings": {
+                "/items[id2]": "Birth date",
+                "/items[id4]": "Birth plurality",
+                "/items[id7]": "Country specific data"
+            },
+            "missing_value_sets": {
+                "id4|Birth plurality|": {
+                    "c_terminology_node_ac_code": "ac2|Birth plurality codes|"
+                }
+            }
+        },
+        "/identities[id3.1]": {
+            "archetype_id": "openEHR-DEMOGRAPHIC-PARTY_IDENTITY.t_patient_ds_sf-4.v1.0.0",
+            "missing_id_code_bindings": {
+                "/details[id2]": "Name",
+                "/details[id2]/items[id3]": "Given name",
+                "/details[id2]/items[id4]": "Family name",
+                "/details[id2]/items[id5]": "Title",
+                "/details[id2]/items[id8]": "Alternative name representations",
+                "/details[id2]/items[id8]/items[id22]": "Representation usage",
+                "/details[id2]/items[id8]/items[id23]": "Alternative representation",
+                "/details[id2]/items[id11]": "Full Name"
+            },
+            "missing_value_sets": {
+                "id1.1|Person name|": {
+                    "c_terminology_node_ac_code": "ac1|Person name (synthesised)|",
+                    "value_set": [
+                        "at24|Reporting name|",
+                        "at25|Newborn name|",
+                        "at26|Professional or business name|",
+                        "at27|Maiden name|",
+                        "at28|Legal name|",
+                        "at29|Other name|"
+                    ]
+                }
+            }
+        },
+        "/contacts[id4]/addresses[id31.1]": {
+            "archetype_id": "openEHR-DEMOGRAPHIC-ADDRESS.t_patient_ds_sf-5.v1.0.0",
+            "missing_id_code_bindings": {
+                "/details[id2]": "Items",
+                "/details[id2]/items[id3]": "Address lines",
+                "/details[id2]/items[id3]/items[id22]": "Building/complex sub-unit type—abbreviation",
+                "/details[id2]/items[id3]/items[id23]": "Building/complex sub-unit number",
+                "/details[id2]/items[id3]/items[id24]": "Address site name",
+                "/details[id2]/items[id3]/items[id25]": "Floor/level number",
+                "/details[id2]/items[id3]/items[id26]": "Floor/level type",
+                "/details[id2]/items[id3]/items[id27]": "Lot number",
+                "/details[id2]/items[id3]/items[id28]": "Street type code",
+                "/details[id2]/items[id3]/items[id29]": "Street name",
+                "/details[id2]/items[id3]/items[id30]": "Street number",
+                "/details[id2]/items[id3]/items[id31]": "Street suffix code",
+                "/details[id2]/items[id3]/items[id32]": "Address line",
+                "/details[id2]/items[id3]/items[id33]": "Local address line components",
+                "/details[id2]/items[id3.1]": "Address lines",
+                "/details[id2]/items[id3.1]/items[id32]": "Address line",
+                "/details[id2]/items[id3.1]/items[id33]": "Local address line components",
+                "/details[id2]/items[id5]": "Postal code (ZIP code)",
+                "/details[id2]/items[id6]": "Suburb/town/locality",
+                "/details[id2]/items[id8]": "Country identifier",
+                "/details[id2]/items[id11]": "Local high level address components"
+            },
+            "missing_value_sets": {
+                "id1.1|Address|": {
+                    "c_terminology_node_ac_code": "ac6|Address (synthesised)|",
+                    "value_set": [
+                        "at462|Business|",
+                        "at463|Mailing or postal|",
+                        "at464|Temporary accomodation|",
+                        "at465|Residential|",
+                        "at466|No fixed address|",
+                        "at467|Unknown/not stated/inadequately described|"
+                    ]
+                },
+                "id22|Building/complex sub-unit type—abbreviation|": {
+                    "c_terminology_node_ac_code": "ac1|Building type codes|"
+                },
+                "id28|Street type code|": {
+                    "c_terminology_node_ac_code": "ac2|Street type codes|"
+                },
+                "id31|Street suffix code|": {
+                    "c_terminology_node_ac_code": "ac3|Street suffix codes|"
+                },
+                "id8|Country identifier|": {
+                    "c_terminology_node_ac_code": "ac5|Country codes|"
+                }
+            }
+        },
+        "/": {
+            "archetype_id": "openEHR-DEMOGRAPHIC-PERSON.t_patient_ds_sf.v1.0.0",
+            "missing_id_code_bindings": {
+                "/": "Patient demographic data",
+                "/details[id2]": "Demographic details",
+                "/details[id2]/items[id11.1]": "race data",
+                "/details[id2]/items[id11.2]": "other data",
+                "/details[id2]/items[id11.3]": "birth data",
+                "/details[id2]/items[id11]": "Birth, death, documentation and other demographic data",
+                "/identities[id3.1]": "Person name",
+                "/identities[id3]": "Name",
+                "/contacts[id4]": "Contacts",
+                "/contacts[id4]/addresses[id31.1]": "Address",
+                "/contacts[id4]/addresses[id31]": "Addresses"
+            },
+            "missing_value_sets": {}
+        }
+    },
+    "openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0": {
+        "/content[id0.1]/items[id0.1:openEHR-EHR-SECTION.t_patient_event_info_ds_sf.v1.0.0]": {
+            "archetype_id": "openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-1.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id4]/items[id5.1]": "Event start date/time",
+                "/data[id4]/items[id58]": "Event Identifier",
+                "/data[id4]/items[id58.1]": "Event identifier - mandatory"
+            },
+            "missing_value_sets": {}
+        },
+        "/content[id0.1]/items[id0.2:openEHR-EHR-SECTION.t_patient_event_info_ds_sf.v1.0.0]": {
+            "archetype_id": "openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-2.v1.0.0",
+            "missing_id_code_bindings": {
+                "/other_participations[id85.1]": "Responsible clinician on discharge",
+                "/data[id4]/items[id5.1]": "Event end datetime",
+                "/data[id4]/items[id67]": "Discharge location",
+                "/data[id4]/items[id61.1]": "Discharge from service/specialty",
+                "/data[id4]/items[id31]": "Discharge destination type",
+                "/data[id4]/items[id75]": "Discharge details",
+                "/data[id4]/items[id78.1]": "Discharge outcome",
+                "/data[id4]/items[id80.1]": "Discharge status/type"
+            },
+            "missing_value_sets": {}
+        },
+        "/content[id0.1]": {
+            "archetype_id": "openEHR-EHR-SECTION.t_patient_event_info_ds_sf.v1.0.0",
+            "missing_id_code_bindings": {
+                "/items[id0.1]": "Event start",
+                "/items[id0.2]": "Event end"
+            },
+            "missing_value_sets": {}
+        },
+        "/content[id0.2]": {
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-1.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id3]/items[id4]": "Agent",
+                "/data[id3]/items[id20]": "Exposure and reaction detail",
+                "/data[id3]/items[id20]/items[id22]": "Duration of the exposure",
+                "/data[id3]/items[id20]/items[id24]": "Reaction severity",
+                "/data[id3]/items[id20]/items[id23]": "Reaction description",
+                "/data[id3]/items[id20]/items[id28]": "Date of onset of reaction",
+                "/data[id3]/items[id20]/items[id29]": "Duration of the reaction"
+            },
+            "missing_value_sets": {
+                "id24|Reaction severity|": {
+                    "c_terminology_node_ac_code": "ac4|Reaction severity (synthesised)|",
+                    "value_set": [
+                        "at25|Mild|",
+                        "at26|Disabling|",
+                        "at27|Life threatening|"
+                    ]
+                }
+            }
+        },
+        "/content[id0.3]": {
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-2.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id2]/items[id4]": "Description",
+                "/data[id2]/items[id5]": "Start of alert",
+                "/data[id2]/items[id11]": "Review on"
+            },
+            "missing_value_sets": {}
+        },
+        "/content[id0.4]": {
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-3.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id2]/items[id3.1]": "Description",
+                "/data[id2]/items[id4]": "Synopsis type"
+            },
+            "missing_value_sets": {
+                "id3.1|Description|": {
+                    "c_terminology_node_ac_code": "ac0.1|Description (synthesised)|",
+                    "value_set": [
+                        "at0.1|Admission|",
+                        "at0.2|Clinical note|",
+                        "at0.3|Post discharge care|",
+                        "at0.4|Inpatient episode|",
+                        "at0.5|Main complaints|",
+                        "at0.6|Past medical summary|",
+                        "at0.7|Clinical progress|",
+                        "at0.8|Suggested treatments|",
+                        "at0.9|Social history|",
+                        "at0.10|Past medical history|",
+                        "at0.11|Presenting complaints/physical findings|",
+                        "at0.12|Progress summary|",
+                        "at0.13|Significant physical findings|"
+                    ]
+                }
+            }
+        },
+        "/content[id0.5]": {
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-4.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id2]/items[id3.1.0.1]": "Diagnosis",
+                "/data[id2]/items[id10.0.0.1]": "Additional remarks",
+                "/data[id2]/items[id0.0.55.1]": "Diagnosis type",
+                "/data[id2]/items[id15]": "Aetiology",
+                "/data[id2]/items[id15]/items[id16]": "Agent",
+                "/data[id2]/items[id15]/items[id17]": "Complication of",
+                "/data[id2]/items[id15]/items[id18]": "Description",
+                "/data[id2]/items[id19]": "Occurrences or exacerbations",
+                "/data[id2]/items[id19]/items[id20]": "Frequency of reccurrence",
+                "/data[id2]/items[id19]/items[id21]": "Date of last occurrence",
+                "/data[id2]/items[id19]/items[id22]": "Occurrence/exacerbation",
+                "/data[id2]/items[id19]/items[id22]/items[id23]": "Clinical description",
+                "/data[id2]/items[id19]/items[id22]/items[id24]": "Outcome",
+                "/data[id2]/items[id19]/items[id22]/items[id25]": "Date of onset of occurrence",
+                "/data[id2]/items[id19]/items[id22]/items[id37]": "Date of resolution of occurrence",
+                "/data[id2]/items[id19]/items[id26]": "Number of occurrences",
+                "/data[id2]/items[id27]": "Related problems",
+                "/data[id2]/items[id27]/items[id28]": "Related problem",
+                "/data[id2]/items[id27]/items[id28]/items[id29]": "Related problem",
+                "/data[id2]/items[id27]/items[id28]/items[id30]": "Clinical description",
+                "/data[id2]/items[id31]": "Date of resolution"
+            },
+            "missing_value_sets": {
+                "id3.1.0.1|Diagnosis|": {
+                    "c_terminology_node_ac_code": "ac0.1|Any term that 'is_a' diagnosis|"
+                },
+                "id0.0.55.1|Diagnosis type|": {
+                    "c_terminology_node_ac_code": "ac0.0.1|Diagnosis type (synthesised)|",
+                    "value_set": [
+                        "at0.0.56|Primary diagnosis|",
+                        "at0.0.57|Secondary diagnosis|",
+                        "at0.0.58|Pre-existing condition|"
+                    ]
+                }
+            }
+        },
+        "/content[id0.6]": {
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-5.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id2]/items[id3]": "Synopsis",
+                "/data[id2]/items[id3.1]": "Description",
+                "/data[id2]/items[id4]": "Synopsis type"
+            },
+            "missing_value_sets": {}
+        },
+        "/content[id0.7]": {
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-6.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id2]/items[id3]": "Synopsis",
+                "/data[id2]/items[id3.1]": "Description",
+                "/data[id2]/items[id4]": "Synopsis type"
+            },
+            "missing_value_sets": {}
+        },
+        "/content[id0.8]": {
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-7.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id2]/items[id3]": "Synopsis",
+                "/data[id2]/items[id3.1]": "Description",
+                "/data[id2]/items[id4]": "Synopsis type"
+            },
+            "missing_value_sets": {}
+        },
+        "/content[id0.9]": {
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-8.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id2]/items[id6]": "Description"
+            },
+            "missing_value_sets": {}
+        },
+        "/": {
+            "archetype_id": "openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0",
+            "missing_id_code_bindings": {
+                "/": "Clinical detail",
+                "/content[id0.1]": "Event data",
+                "/content[id0.2]": "Allergies & adverse reactions",
+                "/content[id0.3]": "Alerts",
+                "/content[id0.4]": "Clinical synopsis",
+                "/content[id0.5]": "Diagnosis",
+                "/content[id0.6]": "Investigations",
+                "/content[id0.7]": "Medications",
+                "/content[id0.8]": "Procedures",
+                "/content[id0.9]": "Medical certificate"
+            },
+            "missing_value_sets": {}
+        }
+    },
+    "openEHR-EHR-SECTION.t_patient_event_info_ds_sf.v1.0.0": {
+        "/items[id0.1]": {
+            "archetype_id": "openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-1.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id4]/items[id5.1]": "Event start date/time",
+                "/data[id4]/items[id58]": "Event Identifier",
+                "/data[id4]/items[id58.1]": "Event identifier - mandatory"
+            },
+            "missing_value_sets": {}
+        },
+        "/items[id0.2]": {
+            "archetype_id": "openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-2.v1.0.0",
+            "missing_id_code_bindings": {
+                "/other_participations[id85.1]": "Responsible clinician on discharge",
+                "/data[id4]/items[id5.1]": "Event end datetime",
+                "/data[id4]/items[id67]": "Discharge location",
+                "/data[id4]/items[id61.1]": "Discharge from service/specialty",
+                "/data[id4]/items[id31]": "Discharge destination type",
+                "/data[id4]/items[id75]": "Discharge details",
+                "/data[id4]/items[id78.1]": "Discharge outcome",
+                "/data[id4]/items[id80.1]": "Discharge status/type"
+            },
+            "missing_value_sets": {}
+        },
+        "/": {
+            "archetype_id": "openEHR-EHR-SECTION.t_patient_event_info_ds_sf.v1.0.0",
+            "missing_id_code_bindings": {
+                "/": "Patient event information",
+                "/items[id0.1]": "Event start",
+                "/items[id0.2]": "Event end"
+            },
+            "missing_value_sets": {}
+        }
+    },
+    "openEHR-EHR_EXTRACT-EXTRACT.t_basic_discharge_summary_sf.v1.0.0": {
+        "/chapters[id3]/items[id4]/item[id101.1]/details[id2:openEHR-DEMOGRAPHIC-PERSON.t_patient_ds_sf.v1.0.0]/items[id11.1]": {
+            "archetype_id": "openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-1.v1.0.0",
+            "missing_id_code_bindings": {
+                "/items[id3]": "Ethnic background",
+                "/items[id3.1]": "Race"
+            },
+            "missing_value_sets": {
+                "id3|Ethnic background|": {
+                    "c_terminology_node_ac_code": "ac3|Ethnic background codes|"
+                },
+                "id3.1|Race|": {
+                    "c_terminology_node_ac_code": "ac3|Ethnic background codes|"
+                }
+            }
+        },
+        "/chapters[id3]/items[id4]/item[id101.1]/details[id2:openEHR-DEMOGRAPHIC-PERSON.t_patient_ds_sf.v1.0.0]/items[id11.2]": {
+            "archetype_id": "openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-2.v1.0.0",
+            "missing_id_code_bindings": {
+                "/items[id2.1]": "Sex"
+            },
+            "missing_value_sets": {
+                "id2.1|Sex|": {
+                    "c_terminology_node_ac_code": "ac1|Sex (synthesised)|",
+                    "value_set": [
+                        "at11|Male|",
+                        "at12|Female|",
+                        "at13|Intersex or indeterminate|",
+                        "at14|Not declared/inadequately described|"
+                    ]
+                }
+            }
+        },
+        "/chapters[id3]/items[id4]/item[id101.1]/details[id2:openEHR-DEMOGRAPHIC-PERSON.t_patient_ds_sf.v1.0.0]/items[id11.3]": {
+            "archetype_id": "openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-3.v1.0.0",
+            "missing_id_code_bindings": {
+                "/items[id2]": "Birth date",
+                "/items[id4]": "Birth plurality",
+                "/items[id7]": "Country specific data"
+            },
+            "missing_value_sets": {
+                "id4|Birth plurality|": {
+                    "c_terminology_node_ac_code": "ac2|Birth plurality codes|"
+                }
+            }
+        },
+        "/chapters[id3]/items[id4]/item[id101.1]/identities[id3.1:openEHR-DEMOGRAPHIC-PERSON.t_patient_ds_sf.v1.0.0]": {
+            "archetype_id": "openEHR-DEMOGRAPHIC-PARTY_IDENTITY.t_patient_ds_sf-4.v1.0.0",
+            "missing_id_code_bindings": {
+                "/details[id2]": "Name",
+                "/details[id2]/items[id3]": "Given name",
+                "/details[id2]/items[id4]": "Family name",
+                "/details[id2]/items[id5]": "Title",
+                "/details[id2]/items[id8]": "Alternative name representations",
+                "/details[id2]/items[id8]/items[id22]": "Representation usage",
+                "/details[id2]/items[id8]/items[id23]": "Alternative representation",
+                "/details[id2]/items[id11]": "Full Name"
+            },
+            "missing_value_sets": {
+                "id4|Family name|": {
+                    "c_terminology_node_ac_code": "ac1|Person name (synthesised)|",
+                    "value_set": [
+                        "at24|Reporting name|",
+                        "at25|Newborn name|",
+                        "at26|Professional or business name|",
+                        "at27|Maiden name|",
+                        "at28|Legal name|",
+                        "at29|Other name|"
+                    ]
+                }
+            }
+        },
+        "/chapters[id3]/items[id4]/item[id101.1]/contacts[id4:openEHR-DEMOGRAPHIC-PERSON.t_patient_ds_sf.v1.0.0]/addresses[id31.1]": {
+            "archetype_id": "openEHR-DEMOGRAPHIC-ADDRESS.t_patient_ds_sf-5.v1.0.0",
+            "missing_id_code_bindings": {
+                "/details[id2]": "Items",
+                "/details[id2]/items[id3]": "Address lines",
+                "/details[id2]/items[id3]/items[id22]": "Building/complex sub-unit type—abbreviation",
+                "/details[id2]/items[id3]/items[id23]": "Building/complex sub-unit number",
+                "/details[id2]/items[id3]/items[id24]": "Address site name",
+                "/details[id2]/items[id3]/items[id25]": "Floor/level number",
+                "/details[id2]/items[id3]/items[id26]": "Floor/level type",
+                "/details[id2]/items[id3]/items[id27]": "Lot number",
+                "/details[id2]/items[id3]/items[id28]": "Street type code",
+                "/details[id2]/items[id3]/items[id29]": "Street name",
+                "/details[id2]/items[id3]/items[id30]": "Street number",
+                "/details[id2]/items[id3]/items[id31]": "Street suffix code",
+                "/details[id2]/items[id3]/items[id32]": "Address line",
+                "/details[id2]/items[id3]/items[id33]": "Local address line components",
+                "/details[id2]/items[id3.1]": "Address lines",
+                "/details[id2]/items[id3.1]/items[id32]": "Address line",
+                "/details[id2]/items[id3.1]/items[id33]": "Local address line components",
+                "/details[id2]/items[id5]": "Postal code (ZIP code)",
+                "/details[id2]/items[id6]": "Suburb/town/locality",
+                "/details[id2]/items[id8]": "Country identifier",
+                "/details[id2]/items[id11]": "Local high level address components"
+            },
+            "missing_value_sets": {
+                "id3|Address lines|": {
+                    "c_terminology_node_ac_code": "ac6|Address (synthesised)|",
+                    "value_set": [
+                        "at462|Business|",
+                        "at463|Mailing or postal|",
+                        "at464|Temporary accomodation|",
+                        "at465|Residential|",
+                        "at466|No fixed address|",
+                        "at467|Unknown/not stated/inadequately described|"
+                    ]
+                },
+                "id22|Building/complex sub-unit type—abbreviation|": {
+                    "c_terminology_node_ac_code": "ac1|Building type codes|"
+                },
+                "id28|Street type code|": {
+                    "c_terminology_node_ac_code": "ac2|Street type codes|"
+                },
+                "id31|Street suffix code|": {
+                    "c_terminology_node_ac_code": "ac3|Street suffix codes|"
+                },
+                "id8|Country identifier|": {
+                    "c_terminology_node_ac_code": "ac5|Country codes|"
+                }
+            }
+        },
+        "/chapters[id3]/items[id4]/item[id101.1]": {
+            "archetype_id": "openEHR-DEMOGRAPHIC-PERSON.t_patient_ds_sf.v1.0.0",
+            "missing_id_code_bindings": {
+                "/details[id2]": "Demographic details",
+                "/details[id2]/items[id11.1]": "race data",
+                "/details[id2]/items[id11.2]": "other data",
+                "/details[id2]/items[id11.3]": "birth data",
+                "/details[id2]/items[id11]": "Birth, death, documentation and other demographic data",
+                "/identities[id3.1]": "Person name",
+                "/identities[id3]": "Name",
+                "/contacts[id4]": "Contacts",
+                "/contacts[id4]/addresses[id31.1]": "Address",
+                "/contacts[id4]/addresses[id31]": "Addresses"
+            },
+            "missing_value_sets": {}
+        },
+        "/chapters[id3]/items[id5]/item[id102.1]": {
+            "archetype_id": "openEHR-DEMOGRAPHIC-ORGANISATION.healthcare_establishment.v1.0.0",
+            "missing_id_code_bindings": {
+                "/identities[id2]": "Identification",
+                "/identities[id2]/details[id6]/items[id4]": "Name",
+                "/identities[id2]/details[id6]/items[id5]": "Identifier"
+            },
+            "missing_value_sets": {}
+        },
+        "/chapters[id3]/items[id6]/item[id103.1]": {
+            "archetype_id": "openEHR-DEMOGRAPHIC-PERSON.healthcare_professional.v1.0.0",
+            "missing_id_code_bindings": {
+                "/identities[id2]": "Identification",
+                "/identities[id2]/details[id6]/items[id4]": "Name",
+                "/identities[id2]/details[id6]/items[id5]": "Identifier"
+            },
+            "missing_value_sets": {}
+        },
+        "/chapters[id2]/items[id7.1]/item[id104.1]/content[id0.1:openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0]/items[id0.1:openEHR-EHR-SECTION.t_patient_event_info_ds_sf.v1.0.0]": {
+            "archetype_id": "openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-1.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id4]/items[id5.1]": "Event start date/time",
+                "/data[id4]/items[id58]": "Event Identifier",
+                "/data[id4]/items[id58.1]": "Event identifier - mandatory"
+            },
+            "missing_value_sets": {}
+        },
+        "/chapters[id2]/items[id7.1]/item[id104.1]/content[id0.1:openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0]/items[id0.2:openEHR-EHR-SECTION.t_patient_event_info_ds_sf.v1.0.0]": {
+            "archetype_id": "openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-2.v1.0.0",
+            "missing_id_code_bindings": {
+                "/other_participations[id85.1]": "Responsible clinician on discharge",
+                "/data[id4]/items[id5.1]": "Event end datetime",
+                "/data[id4]/items[id67]": "Discharge location",
+                "/data[id4]/items[id61.1]": "Discharge from service/specialty",
+                "/data[id4]/items[id31]": "Discharge destination type",
+                "/data[id4]/items[id75]": "Discharge details",
+                "/data[id4]/items[id78.1]": "Discharge outcome",
+                "/data[id4]/items[id80.1]": "Discharge status/type"
+            },
+            "missing_value_sets": {}
+        },
+        "/chapters[id2]/items[id7.1]/item[id104.1]/content[id0.1:openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0]": {
+            "archetype_id": "openEHR-EHR-SECTION.t_patient_event_info_ds_sf.v1.0.0",
+            "missing_id_code_bindings": {
+                "/items[id0.1]": "Event start",
+                "/items[id0.2]": "Event end"
+            },
+            "missing_value_sets": {}
+        },
+        "/chapters[id2]/items[id7.1]/item[id104.1]/content[id0.2:openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0]": {
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-1.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id3]/items[id4]": "Agent",
+                "/data[id3]/items[id20]": "Exposure and reaction detail",
+                "/data[id3]/items[id20]/items[id22]": "Duration of the exposure",
+                "/data[id3]/items[id20]/items[id24]": "Reaction severity",
+                "/data[id3]/items[id20]/items[id23]": "Reaction description",
+                "/data[id3]/items[id20]/items[id28]": "Date of onset of reaction",
+                "/data[id3]/items[id20]/items[id29]": "Duration of the reaction"
+            },
+            "missing_value_sets": {
+                "id24|Reaction severity|": {
+                    "c_terminology_node_ac_code": "ac4|Reaction severity (synthesised)|",
+                    "value_set": [
+                        "at25|Mild|",
+                        "at26|Disabling|",
+                        "at27|Life threatening|"
+                    ]
+                }
+            }
+        },
+        "/chapters[id2]/items[id7.1]/item[id104.1]/content[id0.3:openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0]": {
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-2.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id2]/items[id4]": "Description",
+                "/data[id2]/items[id5]": "Start of alert",
+                "/data[id2]/items[id11]": "Review on"
+            },
+            "missing_value_sets": {}
+        },
+        "/chapters[id2]/items[id7.1]/item[id104.1]/content[id0.4:openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0]": {
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-3.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id2]/items[id3.1]": "Description",
+                "/data[id2]/items[id4]": "Synopsis type"
+            },
+            "missing_value_sets": {
+                "id3.1|Description|": {
+                    "c_terminology_node_ac_code": "ac0.1|Description (synthesised)|",
+                    "value_set": [
+                        "at0.1|Admission|",
+                        "at0.2|Clinical note|",
+                        "at0.3|Post discharge care|",
+                        "at0.4|Inpatient episode|",
+                        "at0.5|Main complaints|",
+                        "at0.6|Past medical summary|",
+                        "at0.7|Clinical progress|",
+                        "at0.8|Suggested treatments|",
+                        "at0.9|Social history|",
+                        "at0.10|Past medical history|",
+                        "at0.11|Presenting complaints/physical findings|",
+                        "at0.12|Progress summary|",
+                        "at0.13|Significant physical findings|"
+                    ]
+                }
+            }
+        },
+        "/chapters[id2]/items[id7.1]/item[id104.1]/content[id0.5:openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0]": {
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-4.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id2]/items[id3.1.0.1]": "Diagnosis",
+                "/data[id2]/items[id10.0.0.1]": "Additional remarks",
+                "/data[id2]/items[id0.0.55.1]": "Diagnosis type",
+                "/data[id2]/items[id15]": "Aetiology",
+                "/data[id2]/items[id15]/items[id16]": "Agent",
+                "/data[id2]/items[id15]/items[id17]": "Complication of",
+                "/data[id2]/items[id15]/items[id18]": "Description",
+                "/data[id2]/items[id19]": "Occurrences or exacerbations",
+                "/data[id2]/items[id19]/items[id20]": "Frequency of reccurrence",
+                "/data[id2]/items[id19]/items[id21]": "Date of last occurrence",
+                "/data[id2]/items[id19]/items[id22]": "Occurrence/exacerbation",
+                "/data[id2]/items[id19]/items[id22]/items[id23]": "Clinical description",
+                "/data[id2]/items[id19]/items[id22]/items[id24]": "Outcome",
+                "/data[id2]/items[id19]/items[id22]/items[id25]": "Date of onset of occurrence",
+                "/data[id2]/items[id19]/items[id22]/items[id37]": "Date of resolution of occurrence",
+                "/data[id2]/items[id19]/items[id26]": "Number of occurrences",
+                "/data[id2]/items[id27]": "Related problems",
+                "/data[id2]/items[id27]/items[id28]": "Related problem",
+                "/data[id2]/items[id27]/items[id28]/items[id29]": "Related problem",
+                "/data[id2]/items[id27]/items[id28]/items[id30]": "Clinical description",
+                "/data[id2]/items[id31]": "Date of resolution"
+            },
+            "missing_value_sets": {
+                "id3.1.0.1|Diagnosis|": {
+                    "c_terminology_node_ac_code": "ac0.1|Any term that 'is_a' diagnosis|"
+                },
+                "id0.0.55.1|Diagnosis type|": {
+                    "c_terminology_node_ac_code": "ac0.0.1|Diagnosis type (synthesised)|",
+                    "value_set": [
+                        "at0.0.56|Primary diagnosis|",
+                        "at0.0.57|Secondary diagnosis|",
+                        "at0.0.58|Pre-existing condition|"
+                    ]
+                }
+            }
+        },
+        "/chapters[id2]/items[id7.1]/item[id104.1]/content[id0.6:openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0]": {
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-5.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id2]/items[id3]": "Synopsis",
+                "/data[id2]/items[id3.1]": "Description",
+                "/data[id2]/items[id4]": "Synopsis type"
+            },
+            "missing_value_sets": {}
+        },
+        "/chapters[id2]/items[id7.1]/item[id104.1]/content[id0.7:openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0]": {
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-6.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id2]/items[id3]": "Synopsis",
+                "/data[id2]/items[id3.1]": "Description",
+                "/data[id2]/items[id4]": "Synopsis type"
+            },
+            "missing_value_sets": {}
+        },
+        "/chapters[id2]/items[id7.1]/item[id104.1]/content[id0.8:openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0]": {
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-7.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id2]/items[id3]": "Synopsis",
+                "/data[id2]/items[id3.1]": "Description",
+                "/data[id2]/items[id4]": "Synopsis type"
+            },
+            "missing_value_sets": {}
+        },
+        "/chapters[id2]/items[id7.1]/item[id104.1]/content[id0.9:openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0]": {
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-8.v1.0.0",
+            "missing_id_code_bindings": {
+                "/data[id2]/items[id6]": "Description"
+            },
+            "missing_value_sets": {}
+        },
+        "/chapters[id2]/items[id7.1]/item[id104.1]": {
+            "archetype_id": "openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0",
+            "missing_id_code_bindings": {
+                "/content[id0.1]": "Event data",
+                "/content[id0.2]": "Allergies & adverse reactions",
+                "/content[id0.3]": "Alerts",
+                "/content[id0.4]": "Clinical synopsis",
+                "/content[id0.5]": "Diagnosis",
+                "/content[id0.6]": "Investigations",
+                "/content[id0.7]": "Medications",
+                "/content[id0.8]": "Procedures",
+                "/content[id0.9]": "Medical certificate"
+            },
+            "missing_value_sets": {}
+        },
+        "/": {
+            "archetype_id": "openEHR-EHR_EXTRACT-EXTRACT.t_basic_discharge_summary_sf.v1.0.0",
+            "missing_id_code_bindings": {
+                "/": "Discharge summary",
+                "/chapters[id3]": "Participations",
+                "/chapters[id3]/items[id4]": "Patient demographic content",
+                "/chapters[id3]/items[id4]/item[id101]": "Patient demographics slot",
+                "/chapters[id3]/items[id5]": "Healthcare establishment demographic content",
+                "/chapters[id3]/items[id5]/item[id102]": "Healthcare establishment demographics slot",
+                "/chapters[id3]/items[id6]": "Healthcare professional demographic content",
+                "/chapters[id3]/items[id6]/item[id103]": "Healthcare individual provider demographics slot",
+                "/chapters[id2]": "Subject",
+                "/chapters[id2]/items[id7.1]": "Clinical data",
+                "/chapters[id2]/items[id7.1]/item[id104]": "Patient discharge data slot"
+            },
+            "missing_value_sets": {}
+        }
+    }
+}

@@ -1,0 +1,11 @@
+snomed_code,arch_id,id_code,path,use_ref,description
+http://SNOMED-CT.info/id/246153002,openEHR-EHR-OBSERVATION.internal_code_lists.v1.0.0,id14,/protocol[id12]/items[id14],,Blood Pressure/list structure/Cuff size
+http://SNOMED-CT.info/id/163020007,openEHR-EHR-OBSERVATION.internal_code_lists.v1.0.0,id1,/,,Blood Pressure
+http://SNOMED-CT.info/id/246153002,openEHR-EHR-OBSERVATION.internal_value_set.v1.0.0,id14,/protocol[id12]/items[id14],,Blood Pressure/list structure/Cuff size
+http://SNOMED-CT.info/id/163020007,openEHR-EHR-OBSERVATION.internal_value_set.v1.0.0,id1,/,,Blood Pressure
+http://snomedct.info/id/249228009,openEHR-EHR-OBSERVATION.term_bindings_paths_use_refs.v1.0.0,id26,/data[id3]/events[id4]/data[id2]/items[id26],,Apgar score/data/1 minute/data/Total
+http://snomedct.info/id/249228009,openEHR-EHR-OBSERVATION.term_bindings_paths_use_refs.v1.0.0,id26,/data[id3]/events[id27]/data[id2]/items[id26],,Apgar score/data/2 minute/data/Total
+http://snomedct.info/id/249228009,openEHR-EHR-OBSERVATION.term_bindings_paths_use_refs.v1.0.0,id26,/data[id3]/events[id28]/data[id2]/items[id26],,Apgar score/data/3 minute/data/Total
+http://snomedct.info/id/249228009,openEHR-EHR-OBSERVATION.term_bindings_paths_use_refs.v1.0.0,id26,/data[id3]/events[id29]/data[id2]/items[id26],,Apgar score/data/5 minute/data/Total
+http://snomedct.info/id/249228009,openEHR-EHR-OBSERVATION.term_bindings_paths_use_refs.v1.0.0,id26,/data[id3]/events[id32]/data[id2]/items[id26],,Apgar score/data/10 minute/data/Total
+http://snomedct.info/id/249228009,openEHR-EHR-OBSERVATION.term_bindings_paths_use_refs.v1.0.0,id26,/data[id3]/events[id38]/data[id2]/items[id26],,Apgar score/data/Any event/data/Total

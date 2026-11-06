@@ -1,0 +1,354 @@
+{
+    "id": "Arch_lib_stats_report",
+    "library_name": "openEHR-adl2_template",
+    "compilation_statistics": {
+        "Valid archetypes": 40,
+        "Specialised archetypes": 21,
+        "Client archetypes": 12,
+        "Supplier archetypes": 16,
+        "Total archetypes": 40
+    },
+    "terminology_bindings": {
+        "openehr": [
+            "openEHR-EHR-ACTION.procedure.v1.4.3",
+            "openEHR-EHR-COMPOSITION.discharge.v1.0.0"
+        ]
+    },
+    "models_reports": {
+        "org.openehr:healthcare": {
+            "library_name": "openEHR-adl2_template",
+            "component_name": "org.openehr:healthcare",
+            "model_statistics": {
+                "Archetypable nodes": {
+                    "name": "Archetypable nodes",
+                    "total": 327,
+                    "minimum": 1,
+                    "maximum": 36,
+                    "average": 8
+                },
+                "Data value nodes": {
+                    "name": "Data value nodes",
+                    "total": 173,
+                    "minimum": 1,
+                    "maximum": 43,
+                    "average": 4
+                },
+                "Id-codes (semantic)": {
+                    "name": "Id-codes (semantic)",
+                    "total": 265,
+                    "minimum": 1,
+                    "maximum": 35,
+                    "average": 6
+                },
+                "Ac-codes (value-sets)": {
+                    "name": "Ac-codes (value-sets)",
+                    "total": 29,
+                    "minimum": 1,
+                    "maximum": 6,
+                    "average": 0
+                },
+                "At-codes (coded values)": {
+                    "name": "At-codes (coded values)",
+                    "total": 99,
+                    "minimum": 2,
+                    "maximum": 21,
+                    "average": 2
+                },
+                "Id-code bindings": {
+                    "name": "Id-code bindings",
+                    "total": 0,
+                    "minimum": 0,
+                    "maximum": 0,
+                    "average": 0
+                },
+                "Ac-code bindings": {
+                    "name": "Ac-code bindings",
+                    "total": 0,
+                    "minimum": 0,
+                    "maximum": 0,
+                    "average": 0
+                },
+                "At-code bindings": {
+                    "name": "At-code bindings",
+                    "total": 10,
+                    "minimum": 1,
+                    "maximum": 1,
+                    "average": 1
+                },
+                "Total nodes": {
+                    "name": "Total nodes",
+                    "total": 589,
+                    "minimum": 1,
+                    "maximum": 105,
+                    "average": 14
+                }
+            },
+            "rm_class_groups": {
+                "LOCATABLE": {
+                    "ACTION": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "description": 1,
+                            "ism_transition": 1,
+                            "protocol": 1
+                        }
+                    },
+                    "ADDRESS": {
+                        "rm_class_count": 5,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "details": 1,
+                            "name": 1
+                        }
+                    },
+                    "ADMIN_ENTRY": {
+                        "rm_class_count": 8,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "data": 2,
+                            "other_participations": 4
+                        }
+                    },
+                    "CLUSTER": {
+                        "rm_class_count": 42,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "items": 19
+                        }
+                    },
+                    "COMPOSITION": {
+                        "rm_class_count": 5,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "category": 1,
+                            "content": 1,
+                            "context": 2
+                        }
+                    },
+                    "CONTACT": {
+                        "rm_class_count": 2,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "addresses": 2
+                        }
+                    },
+                    "ELEMENT": {
+                        "rm_class_count": 198,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "name": 1,
+                            "value": 132
+                        }
+                    },
+                    "EVALUATION": {
+                        "rm_class_count": 24,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "data": 5,
+                            "protocol": 2
+                        }
+                    },
+                    "EXTRACT": {
+                        "rm_class_count": 2,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "chapters": 1
+                        }
+                    },
+                    "EXTRACT_CHAPTER": {
+                        "rm_class_count": 3,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "items": 3
+                        }
+                    },
+                    "GENERIC_CONTENT_ITEM": {
+                        "rm_class_count": 8,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "author": 1,
+                            "creation_time": 1,
+                            "item": 8,
+                            "item_status": 1,
+                            "item_type": 1,
+                            "item_type_version": 1,
+                            "version_set_id": 1
+                        }
+                    },
+                    "ITEM_LIST": {
+                        "rm_class_count": 4,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "items": 4
+                        }
+                    },
+                    "ITEM_SINGLE": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "item": 1
+                        }
+                    },
+                    "ITEM_TREE": {
+                        "rm_class_count": 27,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "items": 27
+                        }
+                    },
+                    "ORGANISATION": {
+                        "rm_class_count": 4,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "identities": 1
+                        }
+                    },
+                    "PARTY_IDENTITY": {
+                        "rm_class_count": 7,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "details": 3,
+                            "name": 1
+                        }
+                    },
+                    "PARTY_RELATIONSHIP": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "details": 1
+                        }
+                    },
+                    "PERSON": {
+                        "rm_class_count": 11,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "contacts": 1,
+                            "details": 1,
+                            "identities": 3,
+                            "relationships": 2
+                        }
+                    },
+                    "SECTION": {
+                        "rm_class_count": 3,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "items": 1
+                        }
+                    }
+                },
+                "DATA_VALUE": {
+                    "DV_BOOLEAN": {
+                        "rm_class_count": 2,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "DV_CODED_TEXT": {
+                        "rm_class_count": 59,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "defining_code": 59
+                        }
+                    },
+                    "DV_COUNT": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "magnitude": 1
+                        }
+                    },
+                    "DV_DATE": {
+                        "rm_class_count": 9,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "value": 1
+                        }
+                    },
+                    "DV_DATE_TIME": {
+                        "rm_class_count": 10,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "value": 3
+                        }
+                    },
+                    "DV_DURATION": {
+                        "rm_class_count": 6,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "value": 1
+                        }
+                    },
+                    "DV_IDENTIFIER": {
+                        "rm_class_count": 5,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "DV_INTERVAL<DV_DATE>": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "DV_QUANTITY": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "DV_TEXT": {
+                        "rm_class_count": 76,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "value": 2
+                        }
+                    },
+                    "DV_URI": {
+                        "rm_class_count": 3,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    }
+                },
+                "Primitive": {
+                    "Integer": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "String": {
+                        "rm_class_count": 7,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    }
+                },
+                "Any": {
+                    "CODE_PHRASE": {
+                        "rm_class_count": 59,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "EVENT_CONTEXT": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "other_context": 1
+                        }
+                    },
+                    "ISM_TRANSITION": {
+                        "rm_class_count": 12,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "careflow_step": 12,
+                            "current_state": 12
+                        }
+                    },
+                    "PARTICIPATION": {
+                        "rm_class_count": 9,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "function": 5,
+                            "performer": 1
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

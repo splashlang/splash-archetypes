@@ -1,0 +1,1016 @@
+{
+    "id": "Value_sets_report",
+    "items": {
+        "openEHR-DEMOGRAPHIC-ADDRESS.address.v1.0.0": {
+            "id": "openEHR-DEMOGRAPHIC-ADDRESS.address.v1.0.0",
+            "items": {
+                "ac1": {
+                    "id": "ac1",
+                    "attributes": {
+                        "definition": {
+                            "text": "Building type codes",
+                            "description": "Valid codes for types of buildings."
+                        }
+                    }
+                },
+                "ac2": {
+                    "id": "ac2",
+                    "attributes": {
+                        "definition": {
+                            "text": "Street type codes",
+                            "description": "Valid codes for street types."
+                        }
+                    }
+                },
+                "ac3": {
+                    "id": "ac3",
+                    "attributes": {
+                        "definition": {
+                            "text": "Street suffix codes",
+                            "description": "Valid codes for street suffixes."
+                        }
+                    }
+                },
+                "ac4": {
+                    "id": "ac4",
+                    "attributes": {
+                        "definition": {
+                            "text": "State codes",
+                            "description": "valid codes for state/territory/province."
+                        }
+                    }
+                },
+                "ac5": {
+                    "id": "ac5",
+                    "attributes": {
+                        "definition": {
+                            "text": "Country codes",
+                            "description": "valid codes for countries."
+                        }
+                    }
+                },
+                "ac6": {
+                    "id": "ac6",
+                    "attributes": {
+                        "definition": {
+                            "text": "Address (synthesised)",
+                            "description": "Address based on ISO22220 standard. (synthesised)"
+                        }
+                    },
+                    "items": {
+                        "at462": {
+                            "id": "at462",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Business",
+                                    "description": "Used to indicate an address that is the physical location of a business or office at which an entity can be contacted."
+                                }
+                            }
+                        },
+                        "at463": {
+                            "id": "at463",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Mailing or postal",
+                                    "description": "Used to indicate an address that is only for correspondence and/or billing purposes."
+                                }
+                            }
+                        },
+                        "at464": {
+                            "id": "at464",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Temporary accomodation",
+                                    "description": "Temporary accomodation address (such as for a person who usually resides overseas or where the provider of the address is in temporary accomodation due to renovation or treatment)."
+                                }
+                            }
+                        },
+                        "at465": {
+                            "id": "at465",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Residential",
+                                    "description": "Used to indicate where a person is living. Note that this code is not valid for organisations."
+                                }
+                            }
+                        },
+                        "at466": {
+                            "id": "at466",
+                            "attributes": {
+                                "definition": {
+                                    "text": "No fixed address",
+                                    "description": "Used where a person has no fixed address."
+                                }
+                            }
+                        },
+                        "at467": {
+                            "id": "at467",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Unknown/not stated/inadequately described",
+                                    "description": "Unknown/not stated/inadequately described may also be used where the person has no fixed address or does not wish to have their residential or correspondence address recorded."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "openEHR-DEMOGRAPHIC-CLUSTER.person_additional_data_br.v1.0.0": {
+            "id": "openEHR-DEMOGRAPHIC-CLUSTER.person_additional_data_br.v1.0.0",
+            "items": {
+                "ac2": {
+                    "id": "ac2",
+                    "attributes": {
+                        "definition": {
+                            "text": "Marital status codes",
+                            "description": "Valid codes for marital status"
+                        }
+                    }
+                },
+                "ac3": {
+                    "id": "ac3",
+                    "attributes": {
+                        "definition": {
+                            "text": "Ethnic background codes",
+                            "description": "Valid codes for ethnic background"
+                        }
+                    }
+                }
+            }
+        },
+        "openEHR-DEMOGRAPHIC-CLUSTER.person_additional_data_iso.v1.0.0": {
+            "id": "openEHR-DEMOGRAPHIC-CLUSTER.person_additional_data_iso.v1.0.0",
+            "items": {
+                "ac1": {
+                    "id": "ac1",
+                    "attributes": {
+                        "definition": {
+                            "text": "Sex (synthesised)",
+                            "description": "The sex of the subject. (synthesised)"
+                        }
+                    },
+                    "items": {
+                        "at11": {
+                            "id": "at11",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Male",
+                                    "description": "Male"
+                                }
+                            }
+                        },
+                        "at12": {
+                            "id": "at12",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Female",
+                                    "description": "Female"
+                                }
+                            }
+                        },
+                        "at13": {
+                            "id": "at13",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Intersex or indeterminate",
+                                    "description": "is normally used for babies for whom sex has not been determined for whatever reason, should not generally be used on data collection forms completed by the respondent and should only be used if the person or respondent volunteers that the person is intersex or where it otherwise becomes clear during the collection process that the individual is neither male nor female"
+                                }
+                            }
+                        },
+                        "at14": {
+                            "id": "at14",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Not declared/inadequately described",
+                                    "description": "is not to be used on primary collection forms. It is primarily for use in administrative collections when transferring data from data sets where the item has not been collected."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "openEHR-DEMOGRAPHIC-CLUSTER.person_birth_data_iso.v1.0.0": {
+            "id": "openEHR-DEMOGRAPHIC-CLUSTER.person_birth_data_iso.v1.0.0",
+            "items": {
+                "ac1": {
+                    "id": "ac1",
+                    "attributes": {
+                        "definition": {
+                            "text": "Country codes",
+                            "description": "valid codes for countries"
+                        }
+                    }
+                },
+                "ac2": {
+                    "id": "ac2",
+                    "attributes": {
+                        "definition": {
+                            "text": "Birth plurality codes",
+                            "description": "valid codes for birth plurality"
+                        }
+                    }
+                },
+                "ac3": {
+                    "id": "ac3",
+                    "attributes": {
+                        "definition": {
+                            "text": "Birth order codes",
+                            "description": "valid codes for birth order"
+                        }
+                    }
+                }
+            }
+        },
+        "openEHR-DEMOGRAPHIC-PERSON.person.v1.0.0": {
+            "id": "openEHR-DEMOGRAPHIC-PERSON.person.v1.0.0",
+            "items": {
+                "ac1": {
+                    "id": "ac1",
+                    "attributes": {
+                        "definition": {
+                            "text": "Codes for type of relationship",
+                            "description": "Valid codes for type of relationship."
+                        }
+                    }
+                }
+            }
+        },
+        "openEHR-DEMOGRAPHIC-PARTY_IDENTITY.person_name.v1.0.0": {
+            "id": "openEHR-DEMOGRAPHIC-PARTY_IDENTITY.person_name.v1.0.0",
+            "items": {
+                "ac1": {
+                    "id": "ac1",
+                    "attributes": {
+                        "definition": {
+                            "text": "Person name (synthesised)",
+                            "description": "Person name details. (synthesised)"
+                        }
+                    },
+                    "items": {
+                        "at24": {
+                            "id": "at24",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Reporting name",
+                                    "description": "The subject’s name as it is to be used for reporting, when used with a specific identifier."
+                                }
+                            }
+                        },
+                        "at25": {
+                            "id": "at25",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Newborn name",
+                                    "description": "A type reserved for the identification of unnamed newborn babies."
+                                }
+                            }
+                        },
+                        "at26": {
+                            "id": "at26",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Professional or business name",
+                                    "description": "The name used by the subject for business or professional purposes."
+                                }
+                            }
+                        },
+                        "at27": {
+                            "id": "at27",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Maiden name",
+                                    "description": "The name used by the subject of care prior to marriage."
+                                }
+                            }
+                        },
+                        "at28": {
+                            "id": "at28",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Legal name",
+                                    "description": "Registered name (Legal name)."
+                                }
+                            }
+                        },
+                        "at29": {
+                            "id": "at29",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Other name",
+                                    "description": "Any other name by which the subject is known, or has been known by in the past."
+                                }
+                            }
+                        }
+                    }
+                },
+                "ac2": {
+                    "id": "ac2",
+                    "attributes": {
+                        "definition": {
+                            "text": "Issues of accuracy and privacy (synthesised)",
+                            "description": "An indicator of specific conditions or rules that should be applied to the use of the person name. (synthesised)"
+                        }
+                    },
+                    "items": {
+                        "at32": {
+                            "id": "at32",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Unreliable information",
+                                    "description": "The name recorded is a fictitious or partial name."
+                                }
+                            }
+                        },
+                        "at33": {
+                            "id": "at33",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Known misspelling",
+                                    "description": "This is a misspelling, but should be retained for potential future matching."
+                                }
+                            }
+                        },
+                        "at34": {
+                            "id": "at34",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Name not to be used",
+                                    "description": "This name should not be used when referring to this subject."
+                                }
+                            }
+                        },
+                        "at35": {
+                            "id": "at35",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Name linkage forbidden by law",
+                                    "description": "By Law, this name and all names prior to it in the name sequence are not to be displayed or indicated in any way when searching for or dealing with information and events associated with a name that is subsequent to this one in the name sequence."
+                                }
+                            }
+                        },
+                        "at36": {
+                            "id": "at36",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Special privacy/security requirements",
+                                    "description": "A name for which episodes are attached that should only be accessible to specified authorised persons."
+                                }
+                            }
+                        },
+                        "at37": {
+                            "id": "at37",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Temporary name",
+                                    "description": "A temporary name issued where the subject's name has not been determined."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "openEHR-EHR-COMPOSITION.discharge.v1.0.0": {
+            "id": "openEHR-EHR-COMPOSITION.discharge.v1.0.0",
+            "items": {
+                "ac1": {
+                    "id": "ac1",
+                    "attributes": {
+                        "definition": {
+                            "text": "Status (synthesised)",
+                            "description": "The status of the report (synthesised)"
+                        }
+                    },
+                    "items": {
+                        "at6": {
+                            "id": "at6",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Final",
+                                    "description": "The report is the final Report"
+                                }
+                            }
+                        },
+                        "at7": {
+                            "id": "at7",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Interim",
+                                    "description": "This report is an interim report and a final or further interim report is to be expected"
+                                }
+                            }
+                        },
+                        "at8": {
+                            "id": "at8",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Supplementary",
+                                    "description": "This report is supplementary to a previous report"
+                                }
+                            }
+                        },
+                        "at9": {
+                            "id": "at9",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Corrected/Amended",
+                                    "description": "This report is a correction or amendment of a previous report"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "openEHR-EHR-ADMIN_ENTRY.admission_short.v1.0.0": {
+            "id": "openEHR-EHR-ADMIN_ENTRY.admission_short.v1.0.0",
+            "items": {
+                "ac1": {
+                    "id": "ac1",
+                    "attributes": {
+                        "definition": {
+                            "text": "Admission type (synthesised)",
+                            "description": "* (synthesised)"
+                        }
+                    },
+                    "items": {
+                        "at47": {
+                            "id": "at47",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Emergency",
+                                    "description": "*"
+                                }
+                            }
+                        },
+                        "at48": {
+                            "id": "at48",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Elective",
+                                    "description": "*"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "openEHR-EHR-EVALUATION.adverse.v1.0.0": {
+            "id": "openEHR-EHR-EVALUATION.adverse.v1.0.0",
+            "items": {
+                "ac1": {
+                    "id": "ac1",
+                    "attributes": {
+                        "definition": {
+                            "text": "Agent category (synthesised)",
+                            "description": "The category of the agent. (synthesised)"
+                        }
+                    },
+                    "items": {
+                        "at12": {
+                            "id": "at12",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Food",
+                                    "description": "A substance taken as part of the diet."
+                                }
+                            }
+                        },
+                        "at13": {
+                            "id": "at13",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Animal",
+                                    "description": "A living organism or its venom or produce."
+                                }
+                            }
+                        },
+                        "at14": {
+                            "id": "at14",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Medication",
+                                    "description": "A substance taken or applied  for medicinal purposes."
+                                }
+                            }
+                        },
+                        "at15": {
+                            "id": "at15",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Other chemical or substance",
+                                    "description": "Non-medicinal chemicals or substances."
+                                }
+                            }
+                        },
+                        "at32": {
+                            "id": "at32",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Non-active ingredient of medication",
+                                    "description": "A non-medicinal ingredient of medication such as colouring, preservative, etc.(subtype of other chemical)"
+                                }
+                            }
+                        },
+                        "at34": {
+                            "id": "at34",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Imaging dye or media",
+                                    "description": "A dye or media used in diagnostic imaging (subtype of other chemical)."
+                                }
+                            }
+                        },
+                        "at35": {
+                            "id": "at35",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Environmental",
+                                    "description": "An agent present in the environment."
+                                }
+                            }
+                        }
+                    }
+                },
+                "ac2": {
+                    "id": "ac2",
+                    "attributes": {
+                        "definition": {
+                            "text": "Reaction category (synthesised)",
+                            "description": "The type of reaction experience by the person as determined by the clinician. (synthesised)"
+                        }
+                    },
+                    "items": {
+                        "at17": {
+                            "id": "at17",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Intolerance",
+                                    "description": "Leads to unpleasant symptoms which are sufficient to avoid use in the future."
+                                }
+                            }
+                        },
+                        "at18": {
+                            "id": "at18",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Sensitivity",
+                                    "description": "Leads to morbidity which is potentially threatening to the wellbeing of the person."
+                                }
+                            }
+                        },
+                        "at19": {
+                            "id": "at19",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Allergy",
+                                    "description": "Leads to an IgE mediated reaction."
+                                }
+                            }
+                        },
+                        "at31": {
+                            "id": "at31",
+                            "attributes": {
+                                "definition": {
+                                    "text": "No reaction",
+                                    "description": "Person has been exposed with no reaction."
+                                }
+                            }
+                        }
+                    }
+                },
+                "ac3": {
+                    "id": "ac3",
+                    "attributes": {
+                        "definition": {
+                            "text": "Probability of causation (synthesised)",
+                            "description": "Degree of certainty that the agent was the cause of the reaction. (synthesised)"
+                        }
+                    },
+                    "items": {
+                        "at6": {
+                            "id": "at6",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Certain/Highly likely",
+                                    "description": "A reaction to the agent is deemed to be or have been present by the clinician."
+                                }
+                            }
+                        },
+                        "at7": {
+                            "id": "at7",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Probable",
+                                    "description": "The reaction is deemed to be the probable cause of the reaction."
+                                }
+                            }
+                        },
+                        "at8": {
+                            "id": "at8",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Possible",
+                                    "description": "The agent is deemed to be a possible cause of the reaction."
+                                }
+                            }
+                        }
+                    }
+                },
+                "ac4": {
+                    "id": "ac4",
+                    "attributes": {
+                        "definition": {
+                            "text": "Reaction severity (synthesised)",
+                            "description": "The category of the reaction. (synthesised)"
+                        }
+                    },
+                    "items": {
+                        "at25": {
+                            "id": "at25",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Mild",
+                                    "description": "A reaction which causes little distress and no loss of work/school."
+                                }
+                            }
+                        },
+                        "at26": {
+                            "id": "at26",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Disabling",
+                                    "description": "A reaction which causes morbidity and/or loss of function."
+                                }
+                            }
+                        },
+                        "at27": {
+                            "id": "at27",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Life threatening",
+                                    "description": "A reaction which was or could be lifethreatening."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "openEHR-EHR-EVALUATION.alert.v1.0.0": {
+            "id": "openEHR-EHR-EVALUATION.alert.v1.0.0",
+            "items": {
+                "ac2": {
+                    "id": "ac2",
+                    "attributes": {
+                        "definition": {
+                            "text": "A category of alert based",
+                            "description": "Coded categories of alerts based on a domain vocabulary"
+                        }
+                    }
+                },
+                "ac3": {
+                    "id": "ac3",
+                    "attributes": {
+                        "definition": {
+                            "text": "Certainty (synthesised)",
+                            "description": "An indication of confidence concerning the existence of the alert (synthesised)"
+                        }
+                    },
+                    "items": {
+                        "at7": {
+                            "id": "at7",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Confirmed",
+                                    "description": "The event or alert has been confirmed"
+                                }
+                            }
+                        },
+                        "at8": {
+                            "id": "at8",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Suspected",
+                                    "description": "The issue or event is suspected to be present"
+                                }
+                            }
+                        },
+                        "at9": {
+                            "id": "at9",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Discounted",
+                                    "description": "The issue or event has been discounted"
+                                }
+                            }
+                        }
+                    }
+                },
+                "ac4": {
+                    "id": "ac4",
+                    "attributes": {
+                        "definition": {
+                            "text": "Status (synthesised)",
+                            "description": "An indication of whether the alert is considered to be an active or inactive issue (synthesised)"
+                        }
+                    },
+                    "items": {
+                        "at12": {
+                            "id": "at12",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Active",
+                                    "description": "The alert is active"
+                                }
+                            }
+                        },
+                        "at13": {
+                            "id": "at13",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Inactive",
+                                    "description": "The alert is not active at present"
+                                }
+                            }
+                        },
+                        "at14": {
+                            "id": "at14",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Resolved",
+                                    "description": "The alert has resolved"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-3.v1.0.0": {
+            "id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-3.v1.0.0",
+            "items": {
+                "ac0.1": {
+                    "id": "ac0.1",
+                    "attributes": {
+                        "definition": {
+                            "text": "Description (synthesised)",
+                            "description": "Clinical synopsis description (synthesised)"
+                        }
+                    },
+                    "items": {
+                        "at0.1": {
+                            "id": "at0.1",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Admission",
+                                    "description": "Admission"
+                                }
+                            }
+                        },
+                        "at0.2": {
+                            "id": "at0.2",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Clinical note",
+                                    "description": "Clinical note"
+                                }
+                            }
+                        },
+                        "at0.3": {
+                            "id": "at0.3",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Post discharge care",
+                                    "description": "Post discharge care"
+                                }
+                            }
+                        },
+                        "at0.4": {
+                            "id": "at0.4",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Inpatient episode",
+                                    "description": "Inpatient episode"
+                                }
+                            }
+                        },
+                        "at0.5": {
+                            "id": "at0.5",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Main complaints",
+                                    "description": "Main complaints"
+                                }
+                            }
+                        },
+                        "at0.6": {
+                            "id": "at0.6",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Past medical summary",
+                                    "description": "Past medical summary"
+                                }
+                            }
+                        },
+                        "at0.7": {
+                            "id": "at0.7",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Clinical progress",
+                                    "description": "Clinical progress"
+                                }
+                            }
+                        },
+                        "at0.8": {
+                            "id": "at0.8",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Suggested treatments",
+                                    "description": "Suggested treatments"
+                                }
+                            }
+                        },
+                        "at0.9": {
+                            "id": "at0.9",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Social history",
+                                    "description": "Social history"
+                                }
+                            }
+                        },
+                        "at0.10": {
+                            "id": "at0.10",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Past medical history",
+                                    "description": "Past medical history"
+                                }
+                            }
+                        },
+                        "at0.11": {
+                            "id": "at0.11",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Presenting complaints/physical findings",
+                                    "description": "Presenting complaints/physical findings"
+                                }
+                            }
+                        },
+                        "at0.12": {
+                            "id": "at0.12",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Progress summary",
+                                    "description": "Progress summary"
+                                }
+                            }
+                        },
+                        "at0.13": {
+                            "id": "at0.13",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Significant physical findings",
+                                    "description": "Significant physical findings"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "openEHR-EHR-EVALUATION.problem.v1.0.0": {
+            "id": "openEHR-EHR-EVALUATION.problem.v1.0.0",
+            "items": {
+                "ac1": {
+                    "id": "ac1",
+                    "attributes": {
+                        "definition": {
+                            "text": "Severity (synthesised)",
+                            "description": "The assessed overall severity of the index problem. (synthesised)"
+                        }
+                    },
+                    "items": {
+                        "at7": {
+                            "id": "at7",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Mild",
+                                    "description": "The severity of the index problem is mild, not affecting life or longevity."
+                                }
+                            }
+                        },
+                        "at8": {
+                            "id": "at8",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Moderate",
+                                    "description": "The severity of the index problem is such as to cause significant morbidity."
+                                }
+                            }
+                        },
+                        "at9": {
+                            "id": "at9",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Severe",
+                                    "description": "The severity of the index problem has had a major effect on life and/or longevity."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "openEHR-EHR-EVALUATION.problem-diagnosis.v1.0.0": {
+            "id": "openEHR-EHR-EVALUATION.problem-diagnosis.v1.0.0",
+            "items": {
+                "ac0.1": {
+                    "id": "ac0.1",
+                    "attributes": {
+                        "definition": {
+                            "text": "Any term that 'is_a' diagnosis",
+                            "description": "Any term that is a diagnosis in an accepted terminology"
+                        }
+                    }
+                },
+                "ac0.2": {
+                    "id": "ac0.2",
+                    "attributes": {
+                        "definition": {
+                            "text": "Status (synthesised)",
+                            "description": "The status of the diagnosis (synthesised)"
+                        }
+                    },
+                    "items": {
+                        "at0.33": {
+                            "id": "at0.33",
+                            "attributes": {
+                                "definition": {
+                                    "text": "provisional",
+                                    "description": "provisional diagnosis considered likely and a basis for proceeding with management"
+                                }
+                            }
+                        },
+                        "at0.34": {
+                            "id": "at0.34",
+                            "attributes": {
+                                "definition": {
+                                    "text": "working",
+                                    "description": "working diagnosis considered very likely but not yet confirmed"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "openEHR-EHR-EVALUATION.problem-diagnosis-simple.v1.0.0": {
+            "id": "openEHR-EHR-EVALUATION.problem-diagnosis-simple.v1.0.0",
+            "items": {
+                "ac0.0.1": {
+                    "id": "ac0.0.1",
+                    "attributes": {
+                        "definition": {
+                            "text": "Diagnosis type (synthesised)",
+                            "description": "Type (reporting category) of diagnosis. (synthesised)"
+                        }
+                    },
+                    "items": {
+                        "at0.0.56": {
+                            "id": "at0.0.56",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Primary diagnosis",
+                                    "description": "*"
+                                }
+                            }
+                        },
+                        "at0.0.57": {
+                            "id": "at0.0.57",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Secondary diagnosis",
+                                    "description": "*"
+                                }
+                            }
+                        },
+                        "at0.0.58": {
+                            "id": "at0.0.58",
+                            "attributes": {
+                                "definition": {
+                                    "text": "Pre-existing condition",
+                                    "description": "*"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

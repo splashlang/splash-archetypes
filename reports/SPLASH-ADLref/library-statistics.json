@@ -1,0 +1,901 @@
+{
+    "id": "Arch_lib_stats_report",
+    "library_name": "SPLASH-ADLref",
+    "compilation_statistics": {
+        "Valid archetypes": 168,
+        "Specialised archetypes": 75,
+        "Client archetypes": 26,
+        "Supplier archetypes": 106,
+        "Total archetypes": 235
+    },
+    "terminology_bindings": {
+        "AIR93": [
+            "openEHR-EHR-OBSERVATION.value_set_binding.v1.0.0"
+        ],
+        "AIR93(1.0.0)": [
+            "openEHR-EHR-OBSERVATION.value_set_binding.v1.0.0"
+        ],
+        "LNC205": [
+            "openEHR-EHR-OBSERVATION.body_temp_test.v1.0.0",
+            "openEHR-EHR-OBSERVATION.term_bindings_basic.v1.0.0",
+            "openEHR-EHR-OBSERVATION.term_bindings_paths.v1.0.0"
+        ],
+        "LOINC": [
+            "openEHR-EHR-OBSERVATION.term_bindings_paths_use_refs.v1.0.0"
+        ],
+        "SNOMED-CT": [
+            "openEHR-EHR-EVALUATION.intervention_decisions.v0.0.0",
+            "openEHR-EHR-OBSERVATION.internal_code_lists.v1.0.0",
+            "openEHR-EHR-OBSERVATION.internal_value_set.v1.0.0",
+            "openEHR-EHR-OBSERVATION.term_bindings_paths_use_refs.v1.0.0"
+        ],
+        "loinc": [
+            "openEHR-EHR-EVALUATION.ref_set_parent.v1.0.0",
+            "openEHR-EHR-EVALUATION.ref_set_redefine_to_code.v1.0.0"
+        ],
+        "openehr": [
+            "openEHR-EHR-ACTION.id_codes_as_at_codes.v1.0.0",
+            "openEHR-EHR-ACTION.medication.v1.0.0",
+            "openEHR-EHR-ADMIN_ENTRY.dependency_rule.v1.0.0",
+            "openEHR-EHR-CLUSTER.dimensions.v1.0.0",
+            "openEHR-EHR-CLUSTER.quantity_altenatives.v1.0.0",
+            "openEHR-EHR-CLUSTER.use_node-occ_override.v1.0.0",
+            "openEHR-EHR-COMPOSITION.annotations_rm_path.v1.0.0",
+            "openEHR-EHR-EVALUATION.unicode_farsi.v1.0.0",
+            "openEHR-EHR-OBSERVATION.body_temp_test.v1.0.0",
+            "openEHR-EHR-OBSERVATION.external_code_list.v1.0.0",
+            "openEHR-EHR-OBSERVATION.external_code_single.v1.0.0",
+            "openEHR-EHR-OBSERVATION.external_value_set.v1.0.0",
+            "openEHR-EHR-OBSERVATION.intravascular_pressure.v1.0.0",
+            "openEHR-EHR-OBSERVATION.override_to_multiple.v1.0.0",
+            "openEHR-EHR-OBSERVATION.spec_test_obs3.v2.0.0",
+            "openEHR-EHR-OBSERVATION.substance_use-tobacco.v1.0.0",
+            "openEHR-EHR-OBSERVATION.tuple_parent.v1.0.0",
+            "openEHR-EHR-OBSERVATION.value_set_binding_snomed.v1.0.0",
+            "openehr-TEST_PKG-SOME_TYPE.VETDF_wrong_property_code.v1.0.0",
+            "openehr-TEST_PKG-SOME_TYPE.c_dv_quantity.v1.0.0",
+            "openehr-TEST_PKG-SOME_TYPE.dv_quantity_magnitude_type_conv.v1.0.0",
+            "openehr-TEST_PKG-SOME_TYPE.dv_quantity_node_ids.v1.0.0",
+            "openehr-TEST_PKG-SOME_TYPE.dv_quantity_tuple.v1.0.0",
+            "openehr-TEST_PKG-SOME_TYPE.dv_quantity_variations_1.v1.0.0",
+            "openehr-TEST_PKG-SOME_TYPE.property_code_phrase.v1.0.0"
+        ],
+        "snomedct": [
+            "openEHR-EHR-OBSERVATION.value_set_binding_snomed.v1.0.0",
+            "openehr-ehr-EVALUATION.term_constraint_variations.v0.0.1"
+        ]
+    },
+    "models_reports": {
+        "org.openehr:healthcare": {
+            "library_name": "SPLASH-ADLref",
+            "component_name": "org.openehr:healthcare",
+            "model_statistics": {
+                "Archetypable nodes": {
+                    "name": "Archetypable nodes",
+                    "total": 727,
+                    "minimum": 1,
+                    "maximum": 28,
+                    "average": 5
+                },
+                "Data value nodes": {
+                    "name": "Data value nodes",
+                    "total": 449,
+                    "minimum": 1,
+                    "maximum": 62,
+                    "average": 3
+                },
+                "Id-codes (semantic)": {
+                    "name": "Id-codes (semantic)",
+                    "total": 651,
+                    "minimum": 1,
+                    "maximum": 48,
+                    "average": 5
+                },
+                "Ac-codes (value-sets)": {
+                    "name": "Ac-codes (value-sets)",
+                    "total": 88,
+                    "minimum": 1,
+                    "maximum": 6,
+                    "average": 0
+                },
+                "At-codes (coded values)": {
+                    "name": "At-codes (coded values)",
+                    "total": 429,
+                    "minimum": 1,
+                    "maximum": 44,
+                    "average": 3
+                },
+                "Id-code bindings": {
+                    "name": "Id-code bindings",
+                    "total": 7,
+                    "minimum": 1,
+                    "maximum": 1,
+                    "average": 1
+                },
+                "Ac-code bindings": {
+                    "name": "Ac-code bindings",
+                    "total": 6,
+                    "minimum": 1,
+                    "maximum": 1,
+                    "average": 1
+                },
+                "At-code bindings": {
+                    "name": "At-code bindings",
+                    "total": 99,
+                    "minimum": 1,
+                    "maximum": 1,
+                    "average": 1
+                },
+                "Total nodes": {
+                    "name": "Total nodes",
+                    "total": 1564,
+                    "minimum": 1,
+                    "maximum": 162,
+                    "average": 12
+                }
+            },
+            "rm_class_groups": {
+                "LOCATABLE": {
+                    "ACTION": {
+                        "rm_class_count": 3,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "description": 2,
+                            "ism_transition": 3,
+                            "other_participations": 1,
+                            "protocol": 2
+                        }
+                    },
+                    "ACTIVITY": {
+                        "rm_class_count": 2,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "description": 2
+                        }
+                    },
+                    "ADDRESS": {
+                        "rm_class_count": 10,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "details": 2,
+                            "name": 1
+                        }
+                    },
+                    "ADMIN_ENTRY": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "data": 1
+                        }
+                    },
+                    "CLUSTER": {
+                        "rm_class_count": 98,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "items": 50,
+                            "name": 3
+                        }
+                    },
+                    "COMPOSITION": {
+                        "rm_class_count": 2,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "category": 1,
+                            "content": 2,
+                            "context": 1
+                        }
+                    },
+                    "CONTACT": {
+                        "rm_class_count": 7,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "addresses": 5
+                        }
+                    },
+                    "ELEMENT": {
+                        "rm_class_count": 316,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "name": 2,
+                            "value": 285
+                        }
+                    },
+                    "ENTRY": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "EVALUATION": {
+                        "rm_class_count": 23,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "data": 13,
+                            "protocol": 2
+                        }
+                    },
+                    "EVENT": {
+                        "rm_class_count": 34,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "data": 22,
+                            "state": 8
+                        }
+                    },
+                    "EVENT<ITEM_LIST>": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "data": 1
+                        }
+                    },
+                    "HISTORY": {
+                        "rm_class_count": 39,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "events": 36
+                        }
+                    },
+                    "HISTORY<ITEM_LIST>": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "events": 1
+                        }
+                    },
+                    "INSTRUCTION": {
+                        "rm_class_count": 5,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "activities": 2
+                        }
+                    },
+                    "INTERVAL_EVENT": {
+                        "rm_class_count": 2,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "data": 2,
+                            "math_function": 2,
+                            "state": 2
+                        }
+                    },
+                    "ITEM": {
+                        "rm_class_count": 3,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "name": 2
+                        }
+                    },
+                    "ITEM_LIST": {
+                        "rm_class_count": 23,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "items": 9
+                        }
+                    },
+                    "ITEM_TREE": {
+                        "rm_class_count": 84,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "items": 72,
+                            "name": 1
+                        }
+                    },
+                    "OBSERVATION": {
+                        "rm_class_count": 77,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "data": 35,
+                            "protocol": 16
+                        }
+                    },
+                    "ORGANISATION": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "identities": 1
+                        }
+                    },
+                    "PARTY_IDENTITY": {
+                        "rm_class_count": 4,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "details": 1,
+                            "name": 2
+                        }
+                    },
+                    "PARTY_RELATIONSHIP": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "details": 1
+                        }
+                    },
+                    "PERSON": {
+                        "rm_class_count": 3,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "contacts": 3,
+                            "details": 1,
+                            "identities": 2,
+                            "name": 2
+                        }
+                    },
+                    "POINT_EVENT": {
+                        "rm_class_count": 18,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "data": 18,
+                            "offset": 12,
+                            "state": 1
+                        }
+                    },
+                    "ROLE": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "details": 1,
+                            "identities": 1,
+                            "relationships": 1
+                        }
+                    },
+                    "SECTION": {
+                        "rm_class_count": 10,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "items": 8
+                        }
+                    }
+                },
+                "DATA_VALUE": {
+                    "DV_BOOLEAN": {
+                        "rm_class_count": 10,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "value": 6
+                        }
+                    },
+                    "DV_CODED_TEXT": {
+                        "rm_class_count": 212,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "defining_code": 152
+                        }
+                    },
+                    "DV_COUNT": {
+                        "rm_class_count": 6,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "magnitude": 5
+                        }
+                    },
+                    "DV_DATE": {
+                        "rm_class_count": 3,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "value": 2
+                        }
+                    },
+                    "DV_DATE_TIME": {
+                        "rm_class_count": 13,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "value": 2
+                        }
+                    },
+                    "DV_DURATION": {
+                        "rm_class_count": 12,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "value": 12
+                        }
+                    },
+                    "DV_EHR_URI": {
+                        "rm_class_count": 3,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "DV_ENCAPSULATED": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "DV_IDENTIFIER": {
+                        "rm_class_count": 3,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "DV_INTERVAL": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "DV_INTERVAL<DV_DATE_TIME>": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "lower": 1,
+                            "upper": 1
+                        }
+                    },
+                    "DV_INTERVAL<DV_QUANTITY>": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "DV_MULTIMEDIA": {
+                        "rm_class_count": 9,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "DV_ORDINAL": {
+                        "rm_class_count": 15,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "symbol": 15,
+                            "value": 15
+                        }
+                    },
+                    "DV_PROPORTION": {
+                        "rm_class_count": 6,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "is_integral": 6,
+                            "numerator": 6,
+                            "type": 6
+                        }
+                    },
+                    "DV_QUANTITY": {
+                        "rm_class_count": 38,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "magnitude": 16,
+                            "normal_range": 2,
+                            "other_reference_ranges": 1,
+                            "precision": 7,
+                            "property": 25,
+                            "units": 28
+                        }
+                    },
+                    "DV_TEXT": {
+                        "rm_class_count": 120,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "value": 2
+                        }
+                    },
+                    "DV_URI": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    }
+                },
+                "Primitive": {
+                    "Boolean": {
+                        "rm_class_count": 13,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "Integer": {
+                        "rm_class_count": 72,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "Real": {
+                        "rm_class_count": 30,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "String": {
+                        "rm_class_count": 55,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    }
+                },
+                "Any": {
+                    "CODE_PHRASE": {
+                        "rm_class_count": 178,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "EVENT_CONTEXT": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "other_context": 1
+                        }
+                    },
+                    "ISM_TRANSITION": {
+                        "rm_class_count": 36,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "careflow_step": 36,
+                            "current_state": 36
+                        }
+                    },
+                    "PARTICIPATION": {
+                        "rm_class_count": 2,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "function": 2
+                        }
+                    },
+                    "REFERENCE_RANGE<DV_QUANTITY>": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    }
+                }
+            }
+        },
+        "org.openehr:test": {
+            "library_name": "SPLASH-ADLref",
+            "component_name": "org.openehr:test",
+            "model_statistics": {
+                "Archetypable nodes": {
+                    "name": "Archetypable nodes",
+                    "total": 75,
+                    "minimum": 1,
+                    "maximum": 15,
+                    "average": 1
+                },
+                "Data value nodes": {
+                    "name": "Data value nodes",
+                    "total": 56,
+                    "minimum": 1,
+                    "maximum": 10,
+                    "average": 1
+                },
+                "Id-codes (semantic)": {
+                    "name": "Id-codes (semantic)",
+                    "total": 98,
+                    "minimum": 1,
+                    "maximum": 14,
+                    "average": 2
+                },
+                "Ac-codes (value-sets)": {
+                    "name": "Ac-codes (value-sets)",
+                    "total": 6,
+                    "minimum": 1,
+                    "maximum": 1,
+                    "average": 0
+                },
+                "At-codes (coded values)": {
+                    "name": "At-codes (coded values)",
+                    "total": 32,
+                    "minimum": 1,
+                    "maximum": 5,
+                    "average": 0
+                },
+                "Id-code bindings": {
+                    "name": "Id-code bindings",
+                    "total": 0,
+                    "minimum": 0,
+                    "maximum": 0,
+                    "average": 0
+                },
+                "Ac-code bindings": {
+                    "name": "Ac-code bindings",
+                    "total": 0,
+                    "minimum": 0,
+                    "maximum": 0,
+                    "average": 0
+                },
+                "At-code bindings": {
+                    "name": "At-code bindings",
+                    "total": 10,
+                    "minimum": 1,
+                    "maximum": 1,
+                    "average": 1
+                },
+                "Total nodes": {
+                    "name": "Total nodes",
+                    "total": 457,
+                    "minimum": 1,
+                    "maximum": 104,
+                    "average": 11
+                }
+            },
+            "rm_class_groups": {
+                "LOCATABLE": {
+                    "BOOK": {
+                        "rm_class_count": 2,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "author": 2,
+                            "chapters": 2,
+                            "title": 2
+                        }
+                    },
+                    "CAR": {
+                        "rm_class_count": 4,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "body": 3,
+                            "engine_parts": 3
+                        }
+                    },
+                    "CAR_BODY": {
+                        "rm_class_count": 4,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "description": 3,
+                            "model": 4
+                        }
+                    },
+                    "CHAPTER": {
+                        "rm_class_count": 6,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "title": 6
+                        }
+                    },
+                    "ENGINE_PART": {
+                        "rm_class_count": 6,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "items": 6
+                        }
+                    },
+                    "ENGINE_PART_ITEM": {
+                        "rm_class_count": 18,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "model": 6,
+                            "type": 6
+                        }
+                    },
+                    "SOME_TYPE": {
+                        "rm_class_count": 14,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "clinical_coded_text_attr_1": 2,
+                            "clinical_ordinal_attr_1": 3,
+                            "clinical_quantity_attr_1": 6,
+                            "clinical_quantity_attr_2": 3,
+                            "clinical_quantity_attr_4": 2,
+                            "clinical_quantity_attr_5": 2,
+                            "clinical_quantity_attr_6": 2,
+                            "qty_interval_attr_1": 2,
+                            "qty_interval_attr_2": 1,
+                            "standard_coded_text_attr": 2,
+                            "standard_coded_text_attr_2": 2,
+                            "standard_ordinal_attr": 3,
+                            "standard_quantity_attr": 3
+                        }
+                    },
+                    "TEST_ELEMENT": {
+                        "rm_class_count": 1,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "TEST_ENTRY": {
+                        "rm_class_count": 7,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "element_attr_2": 1,
+                            "ordinal_attr_1": 1,
+                            "value": 1
+                        }
+                    },
+                    "WHOLE": {
+                        "rm_class_count": 13,
+                        "is_archetype_root_class": true,
+                        "rm_attributes": {
+                            "any_attr_1": 1,
+                            "any_attr_2": 1,
+                            "any_attr_3": 1,
+                            "any_attr_4": 1,
+                            "any_attr_5": 1,
+                            "boolean_attr1": 2,
+                            "boolean_attr2": 2,
+                            "boolean_attr3": 2,
+                            "date_attr1": 2,
+                            "date_attr10": 1,
+                            "date_attr11": 1,
+                            "date_attr2": 2,
+                            "date_attr3": 2,
+                            "date_attr4": 2,
+                            "date_attr5": 2,
+                            "date_attr6": 2,
+                            "date_attr7": 1,
+                            "date_attr8": 1,
+                            "date_attr9": 1,
+                            "date_time_attr1": 2,
+                            "date_time_attr10": 1,
+                            "date_time_attr11": 1,
+                            "date_time_attr12": 1,
+                            "date_time_attr13": 1,
+                            "date_time_attr2": 2,
+                            "date_time_attr3": 2,
+                            "date_time_attr4": 2,
+                            "date_time_attr5": 2,
+                            "date_time_attr6": 2,
+                            "date_time_attr7": 2,
+                            "date_time_attr8": 2,
+                            "date_time_attr9": 1,
+                            "duration_attr1": 3,
+                            "duration_attr10": 1,
+                            "duration_attr11": 1,
+                            "duration_attr12": 1,
+                            "duration_attr13": 1,
+                            "duration_attr14": 1,
+                            "duration_attr15": 1,
+                            "duration_attr16": 1,
+                            "duration_attr17": 1,
+                            "duration_attr18": 1,
+                            "duration_attr19": 1,
+                            "duration_attr2": 3,
+                            "duration_attr20": 1,
+                            "duration_attr21": 1,
+                            "duration_attr22": 1,
+                            "duration_attr23": 1,
+                            "duration_attr24": 1,
+                            "duration_attr25": 1,
+                            "duration_attr26": 1,
+                            "duration_attr27": 1,
+                            "duration_attr28": 1,
+                            "duration_attr29": 1,
+                            "duration_attr3": 2,
+                            "duration_attr30": 1,
+                            "duration_attr31": 1,
+                            "duration_attr32": 1,
+                            "duration_attr33": 1,
+                            "duration_attr34": 1,
+                            "duration_attr35": 1,
+                            "duration_attr36": 1,
+                            "duration_attr4": 2,
+                            "duration_attr5": 2,
+                            "duration_attr6": 2,
+                            "duration_attr7": 1,
+                            "duration_attr8": 1,
+                            "duration_attr9": 1,
+                            "integer_attr1": 2,
+                            "integer_attr10": 1,
+                            "integer_attr11": 1,
+                            "integer_attr12": 1,
+                            "integer_attr2": 2,
+                            "integer_attr3": 2,
+                            "integer_attr4": 2,
+                            "integer_attr5": 2,
+                            "integer_attr6": 2,
+                            "integer_attr7": 2,
+                            "integer_attr8": 2,
+                            "integer_attr9": 2,
+                            "real_attr1": 2,
+                            "real_attr10": 1,
+                            "real_attr11": 1,
+                            "real_attr12": 1,
+                            "real_attr2": 2,
+                            "real_attr3": 2,
+                            "real_attr4": 2,
+                            "real_attr5": 2,
+                            "real_attr6": 2,
+                            "real_attr7": 2,
+                            "real_attr8": 2,
+                            "real_attr9": 2,
+                            "string_attr1": 4,
+                            "string_attr2": 2,
+                            "string_attr3": 2,
+                            "string_attr5": 1,
+                            "time_attr1": 2,
+                            "time_attr10": 1,
+                            "time_attr11": 1,
+                            "time_attr12": 1,
+                            "time_attr2": 2,
+                            "time_attr3": 2,
+                            "time_attr4": 2,
+                            "time_attr5": 2,
+                            "time_attr6": 2,
+                            "time_attr7": 2,
+                            "time_attr8": 1,
+                            "time_attr9": 1
+                        }
+                    }
+                },
+                "DATA_VALUE": {
+                    "DV_CODED_TEXT": {
+                        "rm_class_count": 20,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "defining_code": 11
+                        }
+                    },
+                    "DV_COUNT": {
+                        "rm_class_count": 4,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "magnitude": 4
+                        }
+                    },
+                    "DV_INTERVAL<DV_QUANTITY>": {
+                        "rm_class_count": 3,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "lower": 1,
+                            "lower_included": 1,
+                            "upper": 1,
+                            "upper_included": 1
+                        }
+                    },
+                    "DV_ORDINAL": {
+                        "rm_class_count": 9,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "symbol": 9,
+                            "value": 9
+                        }
+                    },
+                    "DV_QUANTITY": {
+                        "rm_class_count": 20,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "magnitude": 14,
+                            "precision": 2,
+                            "property": 12,
+                            "units": 18
+                        }
+                    }
+                },
+                "Primitive": {
+                    "Boolean": {
+                        "rm_class_count": 8,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "Integer": {
+                        "rm_class_count": 44,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "Real": {
+                        "rm_class_count": 40,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "String": {
+                        "rm_class_count": 87,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    }
+                },
+                "Any": {
+                    "CODE_PHRASE": {
+                        "rm_class_count": 32,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "code_string": 12,
+                            "terminology_id": 12
+                        }
+                    },
+                    "Iso8601_date": {
+                        "rm_class_count": 17,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "Iso8601_date_time": {
+                        "rm_class_count": 22,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "Iso8601_duration": {
+                        "rm_class_count": 45,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "Iso8601_time": {
+                        "rm_class_count": 19,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {}
+                    },
+                    "TERMINOLOGY_ID": {
+                        "rm_class_count": 12,
+                        "is_archetype_root_class": false,
+                        "rm_attributes": {
+                            "value": 12
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
