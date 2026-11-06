@@ -1,0 +1,82 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "src",
+    "created": "2026-11-06T20:07:43.668405317Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-OBSERVATION.override_to_single_add.v1.0.0",
+        "parent_archetype_id": "openEHR-EHR-OBSERVATION.flattening_parent_1.v1",
+        "adl_version": "2.0.5",
+        "rm_release": "1.1.0",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Thomas Beale <thomas.beale@openEHR.org>",
+                "organisation": "openEHR Foundation <http://www.openEHR.org>"
+            },
+            "copyright": "Copyright (c) 2014 openEHR Foundation",
+            "licence": "Creative Commons CC-BY 4.0 unported <http://creativecommons.org/>",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Test specialised node that adds a sibling, and retains the original parent. This is done by specialising the relevant id code.",
+                    "use": "Regression testing"
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "OBSERVATION",
+            "node_id": "id1.1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "value",
+                    "differential_path": "/data[id2]/events[id3]/data[id4]/items[id5.1]",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "DV_CODED_TEXT",
+                            "node_id": "id20.1",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "defining_code",
+                                    "children": [
+                                        {
+                                            "_type": "C_terminology_code",
+                                            "constraint": "at0.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1.1",
+            "term_definitions": {
+                "en": {
+                    "id1.1": {
+                        "text": "Single override child",
+                        "description": "-"
+                    },
+                    "id5.1": {
+                        "text": "Medication substance type",
+                        "description": "-"
+                    },
+                    "at0.1": {
+                        "text": "Medication",
+                        "description": "-"
+                    }
+                }
+            }
+        }
+    }
+}

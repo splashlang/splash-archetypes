@@ -1,0 +1,357 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "src",
+    "created": "2026-11-06T20:07:43.677544494Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-CLUSTER.address.v1.0.0",
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Ian McNicoll",
+                "organisation": "Ocean Informatics",
+                "date": "11/11/2007"
+            },
+            "copyright": "copyright (c) 2010 openEHR Foundation",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "To record details of one or more personal addresses for an individual",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "address"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "CLUSTER",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "items",
+                    "is_multiple": true,
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "CLUSTER",
+                            "node_id": "id2",
+                            "occurrences": {
+                                "lower": 0
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "items",
+                                    "is_multiple": true,
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id7",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_CODED_TEXT",
+                                                            "node_id": "id17",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "defining_code",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_terminology_code",
+                                                                            "constraint": "ac1"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id3",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_TEXT",
+                                                            "node_id": "id18"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "CLUSTER",
+                                            "node_id": "id4",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "items",
+                                                    "is_multiple": true,
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id6",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id19"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id10",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 4
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id20"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id5",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_TEXT",
+                                                            "node_id": "id21"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "CLUSTER",
+                                            "node_id": "id16",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "items",
+                                                    "is_multiple": true,
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id8",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_DATE_TIME",
+                                                                            "node_id": "id22",
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_date_time",
+                                                                                            "pattern": "yyyy-??-??T??:??:??"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id9",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_DATE_TIME",
+                                                                            "node_id": "id23",
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_date_time",
+                                                                                            "pattern": "yyyy-??-??T??:??:??"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "Address",
+                        "description": "To record details of one or more personal addresses"
+                    },
+                    "id2": {
+                        "text": "Address",
+                        "description": "One or more adresses for an individual"
+                    },
+                    "id3": {
+                        "text": "Unstructured address",
+                        "description": "A postal address expressed in an unstructured format. ENV 13606 - 4:2000 7.11.15"
+                    },
+                    "id4": {
+                        "text": "Structured address",
+                        "description": "The structure of a postal address representing the residence of a patient or the physical location of an organisation.  ENV 13606-4:2000 7.11.1"
+                    },
+                    "id5": {
+                        "text": "Post code",
+                        "description": "Post code"
+                    },
+                    "id6": {
+                        "text": "Property number",
+                        "description": "The number of the property"
+                    },
+                    "id7": {
+                        "text": "Address Type",
+                        "description": "The type of address"
+                    },
+                    "id8": {
+                        "text": "Valid from",
+                        "description": "The start of the period for which this address is valid"
+                    },
+                    "id9": {
+                        "text": "Valid to",
+                        "description": "Date from which the Address is no longer valid"
+                    },
+                    "id10": {
+                        "text": "Address line",
+                        "description": "A series of address lines"
+                    },
+                    "at12": {
+                        "text": "Residential",
+                        "description": "*"
+                    },
+                    "at13": {
+                        "text": "Correspondence",
+                        "description": "*"
+                    },
+                    "at14": {
+                        "text": "Business",
+                        "description": "*"
+                    },
+                    "at15": {
+                        "text": "Temporary",
+                        "description": "*"
+                    },
+                    "id16": {
+                        "text": "AddressValid Period",
+                        "description": "The period during which the associated address is applicable to the person / organisation.  ENV 13606 - 4:2000 7.11.11.  This describes the actual period."
+                    },
+                    "ac1": {
+                        "text": "Address Type",
+                        "description": "The type of address"
+                    }
+                }
+            },
+            "value_sets": {
+                "ac1": {
+                    "id": "ac1",
+                    "members": [
+                        "at12",
+                        "at13",
+                        "at14",
+                        "at15"
+                    ]
+                }
+            }
+        }
+    }
+}

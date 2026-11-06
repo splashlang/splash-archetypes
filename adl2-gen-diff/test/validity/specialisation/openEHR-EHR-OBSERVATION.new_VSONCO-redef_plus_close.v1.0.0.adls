@@ -1,0 +1,53 @@
+archetype (adl_version=2.0.5; rm_release=1.0.2)
+	openEHR-EHR-OBSERVATION.new_VSONCO-redef_plus_close.v1.0.0
+
+specialize
+	openEHR-EHR-OBSERVATION.test_new_VSONCO_parent.v1.0.0
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"unmanaged">
+	original_author = <
+		["name"] = <"Thomas Beale">
+		["organisation"] = <"openEHR International">
+		["date"] = <"08/11/2022">
+	>
+	other_details = <
+		["regression"] = <"PASS">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Redefine a multiple occurrences node and also remove the original parent">
+			use = <"Regression testing">
+		>
+	>
+
+definition
+	OBSERVATION[id1.1] matches {
+		/data/events[id3]/data/items matches {
+			ELEMENT[id4.1] matches {
+				value matches {
+					DV_CODED_TEXT[id11] 
+				}
+			}
+			ELEMENT[id4] occurrences matches {0} 
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1.1"] = <
+				text = <"top-level archetype">
+				description = <"top level test archetype for specialisation lineage">
+			>
+			["id4.1"] = <
+				text = <"Coded text field">
+				description = <"coded text field">
+			>
+		>
+	>
+

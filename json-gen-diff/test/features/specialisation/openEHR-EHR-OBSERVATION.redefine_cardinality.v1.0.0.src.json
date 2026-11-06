@@ -1,0 +1,73 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "src",
+    "created": "2026-11-06T20:07:43.672155740Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-OBSERVATION.redefine_cardinality.v1.0.0",
+        "parent_archetype_id": "openEHR-EHR-OBSERVATION.spec_test_parent.v1",
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "published",
+            "original_author": {
+                "name": "Thomas Beale",
+                "email": "thomas.beale@openEHR.org",
+                "organisation": "openEHR Foundation <http://www.openEHR.org>",
+                "date": "2008-08-11"
+            },
+            "custodian_namespace": "org.openehr",
+            "custodian_organisation": "openEHR Foundation <http://www.openEHR.org>",
+            "copyright": "Copyright © 2008 openEHR Foundation <http://www.openEHR.org>",
+            "licence": "Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Example showing narrowing of cardinality in specialised archetype. The narrower cardinality replaces the cardinality from the parent in the computed flat form.",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "ADL",
+                        "test",
+                        "specialisation",
+                        "cardinality"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "OBSERVATION",
+            "node_id": "id1.1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "events",
+                    "is_multiple": true,
+                    "cardinality": {
+                        "interval": {
+                            "lower": 2,
+                            "upper": 8
+                        }
+                    },
+                    "differential_path": "/data"
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1.1",
+            "term_definitions": {
+                "en": {
+                    "id1.1": {
+                        "text": "specialised archetype",
+                        "description": "specialised archetype"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,439 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-06T20:07:43.695024622Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openehr-ehr-EVALUATION.term_constraint_variations.v0.0.1",
+        "is_generated": true,
+        "adl_version": "2.0.5",
+        "rm_release": "1.1.0",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Thomas Beale <thomas.beale@openEHR.org>",
+                "organisation": "openEHR Foundation <http://www.openEHR.org>"
+            },
+            "copyright": "Copyright (c) 2014 openEHR Foundation",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "An altered version of the openEHR Adverse Reaction archetype designed to show various kinds of terminology constraint.",
+                    "use": "Regression testing"
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "EVALUATION",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "data",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ITEM_TREE",
+                            "node_id": "id2",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "items",
+                                    "is_multiple": true,
+                                    "cardinality": {
+                                        "interval": {
+                                            "lower": 1
+                                        },
+                                        "is_ordered": false
+                                    },
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id3",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_TEXT",
+                                                            "node_id": "id51"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id5",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_BOOLEAN",
+                                                            "node_id": "id52",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_boolean",
+                                                                            "constraint": [
+                                                                                true
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id50",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_TEXT",
+                                                            "node_id": "id53"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "CLUSTER",
+                                            "node_id": "id10",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "items",
+                                                    "is_multiple": true,
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id11",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "name",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_CODED_TEXT",
+                                                                            "node_id": "id8",
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "defining_code",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_terminology_code",
+                                                                                            "constraint": "at5"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_CODED_TEXT",
+                                                                            "node_id": "id55",
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "defining_code",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_terminology_code",
+                                                                                            "constraint": "ac1",
+                                                                                            "value_set_terms": [
+                                                                                                "at10",
+                                                                                                "at11",
+                                                                                                "at12",
+                                                                                                "at13",
+                                                                                                "at14"
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id22",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_CODED_TEXT",
+                                                                            "node_id": "id58",
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "defining_code",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_terminology_code",
+                                                                                            "constraint": "ac2",
+                                                                                            "assumed_value": "at23"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id12",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id56"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id17",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id57"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id13",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id59"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id41",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id65"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "Adverse Reaction",
+                        "description": "A harmful or undesirable, unexpected effect associated with exposure to any substance or agent, including food, plants, animals, venom from animal stings, or a medication at therapeutic or sub-therapeutic doses."
+                    },
+                    "id3": {
+                        "text": "Substance/Agent",
+                        "description": "Identification of a substance, agent, or a class of substance, that is considered to be responsible for the Adverse Reaction."
+                    },
+                    "id5": {
+                        "text": "Absolute Contraindication?",
+                        "description": "Is administration of this Substance/Agent absolutely contraindicated in this individual?"
+                    },
+                    "id10": {
+                        "text": "Reaction Event",
+                        "description": "Details about each Adverse Reaction Event."
+                    },
+                    "id11": {
+                        "text": "Specific Substance/Agent",
+                        "description": "Specific identification of the actual Substance/Agent considered to be responsible for the Adverse Reaction event."
+                    },
+                    "id12": {
+                        "text": "Manifestation",
+                        "description": "Clinical manifestation of the Adverse Reaction expressed as a single word, phrase or brief description, e.g. nausea or rash."
+                    },
+                    "id13": {
+                        "text": "Reaction Description",
+                        "description": "Narrative description of the Adverse Reaction."
+                    },
+                    "id17": {
+                        "text": "Reaction Type",
+                        "description": "The type of Adverse Reaction as determined by the clinician."
+                    },
+                    "id22": {
+                        "text": "Certainty",
+                        "description": "Degree of certainty, as assessed by a clinician, that the specific Substance/Agent was the cause of the Adverse Reaction."
+                    },
+                    "at5": {
+                        "text": "Substance",
+                        "description": "Physical substance."
+                    },
+                    "at23": {
+                        "text": "Suspected",
+                        "description": "Possibly the causative agent."
+                    },
+                    "at24": {
+                        "text": "Probable",
+                        "description": "Likely to be the causative agent, but not confirmed by testing or rechallenge."
+                    },
+                    "at25": {
+                        "text": "Confirmed",
+                        "description": "Confirmed as the causative agent, by testing or rechallenge."
+                    },
+                    "id41": {
+                        "text": "Clinical Management Description",
+                        "description": "Narrative description of the clinical management provided."
+                    },
+                    "id50": {
+                        "text": "Future Use",
+                        "description": "Narrative description of clinician instructions or advice related to future exposure to, or administration of, the Substance/Agent."
+                    },
+                    "ac1": {
+                        "text": "Type of substance",
+                        "description": "Type of substance that was the cause of the Adverse Reaction"
+                    },
+                    "ac2": {
+                        "text": "Certainty",
+                        "description": "Degree of certainty, as assessed by a clinician, that the specific Substance/Agent was the cause of the Adverse Reaction."
+                    },
+                    "at10": {
+                        "text": "Pollen",
+                        "description": "Pollen"
+                    },
+                    "at11": {
+                        "text": "Insect allergen",
+                        "description": "Insect allergen"
+                    },
+                    "at12": {
+                        "text": "Animal protein",
+                        "description": "Animal protein."
+                    },
+                    "at13": {
+                        "text": "Plant material",
+                        "description": "Plant material."
+                    },
+                    "at14": {
+                        "text": "Dust",
+                        "description": "Dust."
+                    }
+                }
+            },
+            "term_bindings": {
+                "snomedct": {
+                    "ac1": "http://snomedct.info/id/123456789",
+                    "at10": "http://snomed.info/id/406464007",
+                    "at11": "http://snomed.info/id/406470001",
+                    "at12": "http://snomed.info/id/406472009",
+                    "at13": "http://snomed.info/id/410981007",
+                    "at14": "http://snomed.info/id/410980008"
+                }
+            },
+            "value_sets": {
+                "ac1": {
+                    "id": "ac1",
+                    "members": [
+                        "at10",
+                        "at11",
+                        "at12",
+                        "at13",
+                        "at14"
+                    ]
+                }
+            }
+        }
+    }
+}

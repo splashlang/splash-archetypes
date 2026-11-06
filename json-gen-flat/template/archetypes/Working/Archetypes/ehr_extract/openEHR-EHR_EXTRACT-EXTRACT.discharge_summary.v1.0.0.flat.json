@@ -1,0 +1,251 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-06T20:07:43.727167871Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR_EXTRACT-EXTRACT.discharge_summary.v1.0.0",
+        "is_generated": true,
+        "adl_version": "2.3.0",
+        "rm_release": "1.1.0",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Thomas Beale",
+                "organisation": "Ocean Informatics",
+                "date": "01/04/2011"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Basic acute care establishment discharge summary",
+                    "use": "test use"
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "EXTRACT",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "chapters",
+                    "is_multiple": true,
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "EXTRACT_CHAPTER",
+                            "node_id": "id3",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "items",
+                                    "is_multiple": true,
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "GENERIC_CONTENT_ITEM",
+                                            "node_id": "id4",
+                                            "occurrences": {
+                                                "lower": 1,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "item",
+                                                    "children": [
+                                                        {
+                                                            "_type": "Archetype_slot",
+                                                            "rm_type_name": "PERSON",
+                                                            "node_id": "id101",
+                                                            "includes": [
+                                                                {
+                                                                    "source_text": "archetype_id/value matches {/openEHR-DEMOGRAPHIC-PERSON\\..*/}",
+                                                                    "tag": "archetype_id/value"
+                                                                }
+                                                            ],
+                                                            "excludes": [
+                                                                {
+                                                                    "source_text": "archetype_id/value matches {/.*/}",
+                                                                    "tag": "archetype_id/value"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "GENERIC_CONTENT_ITEM",
+                                            "node_id": "id5",
+                                            "occurrences": {
+                                                "lower": 1,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "item",
+                                                    "children": [
+                                                        {
+                                                            "_type": "Archetype_slot",
+                                                            "rm_type_name": "ORGANISATION",
+                                                            "node_id": "id102",
+                                                            "includes": [
+                                                                {
+                                                                    "source_text": "archetype_id/value matches {/openEHR-DEMOGRAPHIC-ORGANISATION\\..*/}",
+                                                                    "tag": "archetype_id/value"
+                                                                }
+                                                            ],
+                                                            "excludes": [
+                                                                {
+                                                                    "source_text": "archetype_id/value matches {/.*/}",
+                                                                    "tag": "archetype_id/value"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "GENERIC_CONTENT_ITEM",
+                                            "node_id": "id6",
+                                            "occurrences": {
+                                                "lower": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "item",
+                                                    "children": [
+                                                        {
+                                                            "_type": "Archetype_slot",
+                                                            "rm_type_name": "PERSON",
+                                                            "node_id": "id103",
+                                                            "includes": [
+                                                                {
+                                                                    "source_text": "archetype_id/value matches {/openEHR-DEMOGRAPHIC-PERSON\\..*/}",
+                                                                    "tag": "archetype_id/value"
+                                                                }
+                                                            ],
+                                                            "excludes": [
+                                                                {
+                                                                    "source_text": "archetype_id/value matches {/.*/}",
+                                                                    "tag": "archetype_id/value"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "EXTRACT_CHAPTER",
+                            "node_id": "id2",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "items",
+                                    "is_multiple": true,
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "GENERIC_CONTENT_ITEM",
+                                            "node_id": "id7",
+                                            "occurrences": {
+                                                "lower": 1,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "item",
+                                                    "children": [
+                                                        {
+                                                            "_type": "Archetype_slot",
+                                                            "rm_type_name": "COMPOSITION",
+                                                            "node_id": "id104",
+                                                            "includes": [
+                                                                {
+                                                                    "source_text": "archetype_id/value matches {/openEHR-EHR-COMPOSITION\\..*/}",
+                                                                    "tag": "archetype_id/value"
+                                                                }
+                                                            ],
+                                                            "excludes": [
+                                                                {
+                                                                    "source_text": "archetype_id/value matches {/.*/}",
+                                                                    "tag": "archetype_id/value"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "Simple discharge summary",
+                        "description": "Discharge summary document for patient leaving a hospital"
+                    },
+                    "id2": {
+                        "text": "Subject",
+                        "description": "Chapter containing subject discharge information"
+                    },
+                    "id3": {
+                        "text": "Participations",
+                        "description": "Chapter containing participations information"
+                    },
+                    "id4": {
+                        "text": "Patient demographic content",
+                        "description": "Patient demographic content"
+                    },
+                    "id5": {
+                        "text": "Healthcare establishment demographic content",
+                        "description": "Healthcare establishment demographic content"
+                    },
+                    "id6": {
+                        "text": "Healthcare professional demographic content",
+                        "description": "Healthcare professional demographic content"
+                    },
+                    "id7": {
+                        "text": "Clinical data",
+                        "description": "Clinical discharge data for patient"
+                    },
+                    "id101": {
+                        "text": "Patient demographics slot",
+                        "description": "Patient demographics slot"
+                    },
+                    "id102": {
+                        "text": "Healthcare establishment demographics slot",
+                        "description": "Healthcare establishment demographics slot"
+                    },
+                    "id103": {
+                        "text": "Healthcare individual provider demographics slot",
+                        "description": "Healthcare individual provider demographics slot"
+                    },
+                    "id104": {
+                        "text": "Patient discharge data slot",
+                        "description": "Patient discharge data slot"
+                    }
+                }
+            }
+        }
+    }
+}

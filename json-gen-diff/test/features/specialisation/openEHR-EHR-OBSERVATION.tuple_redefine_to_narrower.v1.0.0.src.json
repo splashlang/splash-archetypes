@@ -1,0 +1,148 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "src",
+    "created": "2026-11-06T20:07:43.675240623Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-OBSERVATION.tuple_redefine_to_narrower.v1.0.0",
+        "parent_archetype_id": "openEHR-EHR-OBSERVATION.tuple_parent.v1",
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "published",
+            "original_author": {
+                "name": "Thomas Beale",
+                "email": "thomas.beale@openEHR.org",
+                "organisation": "openEHR Foundation <http://www.openEHR.org>",
+                "date": "2014-02-28"
+            },
+            "custodian_namespace": "org.openehr",
+            "custodian_organisation": "openEHR Foundation <http://www.openEHR.org>",
+            "copyright": "Copyright © 2014 openEHR Foundation <http://www.openEHR.org>",
+            "licence": "Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Illustrate redefinition of tuple to narrower tuple.",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "ADL",
+                        "test",
+                        "specialisation",
+                        "tuples"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "OBSERVATION",
+            "node_id": "id1.1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "value",
+                    "differential_path": "/data[id2]/events[id3]/data[id4]/items[id16]",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "DV_ORDINAL",
+                            "node_id": "id43",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "value",
+                                    "children": [
+                                        {
+                                            "_type": "C_integer",
+                                            "constraint": [
+                                                {
+                                                    "lower": 0,
+                                                    "upper": 0
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_integer",
+                                            "node_id": "id99992",
+                                            "constraint": [
+                                                {
+                                                    "lower": 6,
+                                                    "upper": 6
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_integer",
+                                            "node_id": "id99993",
+                                            "constraint": [
+                                                {
+                                                    "lower": 8,
+                                                    "upper": 8
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "symbol",
+                                    "children": [
+                                        {
+                                            "_type": "C_terminology_code",
+                                            "constraint": "at17"
+                                        },
+                                        {
+                                            "_type": "C_terminology_code",
+                                            "node_id": "id99992",
+                                            "constraint": "at20"
+                                        },
+                                        {
+                                            "_type": "C_terminology_code",
+                                            "node_id": "id99993",
+                                            "constraint": "at21"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "attribute_tuples": [
+                                [
+                                    "value",
+                                    "symbol"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1.1",
+            "term_definitions": {
+                "en": {
+                    "id1.1": {
+                        "text": "Intravascular pressure redefined",
+                        "description": "The pressure in a specific location, blood vessel or heart cavity, at a specific phase of the heart or an average over the heart cycle."
+                    },
+                    "ac0.1": {
+                        "text": "Intravascular pressure redefined (synthesised)",
+                        "description": "The pressure in a specific location, blood vessel or heart cavity, at a specific phase of the heart or an average over the heart cycle. (synthesised)"
+                    }
+                }
+            },
+            "value_sets": {
+                "ac0.1": {
+                    "id": "ac0.1",
+                    "members": [
+                        "at17",
+                        "at20",
+                        "at21"
+                    ]
+                }
+            }
+        }
+    }
+}

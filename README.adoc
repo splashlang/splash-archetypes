@@ -1,0 +1,99 @@
+= SPLASH test archetype repo
+
+This repository contains two libraries:
+
+* *test*: reference test archetypes originally created for the ADL Workbench;
+* *template*: demonstration ADL2 templates and archetypes for a discharge summary.
+
+It follows the SPLASH repository structure: one source directory, a shredded (multi-file) 
+form derived from it, and a set of generated directories, each in a form intended for a particular use.
+
+The SPLASH archetype tools produce the shredded and generated directories. They
+create the shredded form when they load the repository. They write the generated directories
+after compiling the libraries in it. Only valid archetypes appear in the generated directories.
+
+== Pipeline
+
+[source,mermaid]
+----
+flowchart LR
+    adl2["<b>adl2/</b><br/><i>ADL2 single files<br/>from CKM</i>"]
+    shredded["<b>adl2-shredded/</b><br/><i>multi-file form,<br/>Compiler source</i>"]
+
+    gendiff["<b>adl2-gen-diff/</b><br/><i>differential ADL2 (.adls):<br/>round-trip testing</i>"]
+    jsondiff["<b>json-gen-diff/</b><br/><i>differential JSON:<br/>tool cache</i>"]
+    jsonflat["<b>json-gen-flat/</b><br/><i>flat JSON:<br/>operational use</i>"]
+    adl2opt["<b>adl2-opt/</b><br/><i>OPTs in ADL2:<br/>tool use</i>"]
+    jsonopt["<b>json-opt/</b><br/><i>OPTs in JSON:<br/>operational use</i>"]
+    reports["<b>reports/</b><br/><i>library reports and statistics:<br/>review and QA</i>"]
+
+    adl2 -- shred --> shredded
+    shredded -- export --> gendiff
+    shredded -- export --> jsondiff
+    shredded -- export --> jsonflat
+    shredded -- export --> adl2opt
+    shredded -- export --> jsonopt
+    shredded -- report --> reports
+----
+
+== Directories
+
+[cols="1,3,2", options="header"]
+|===
+| Directory | Contents | Use
+
+| `adl2/`
+| The source: one ADL2 file (`.adls`) per archetype, obtained from an archetype repository 
+such as CKM. The archetypes are under `local/archetypes/`, by RM class. Several versions of 
+an archetype may be present.
+| The input to the pipeline; legacy in future.
+
+| `adl2-shredded/`
+| Each archetype from `adl2/` in shredded form: a directory
+`<archetype id root>/v<major version>/`. It contains the meta-data, description, definition
+(`model/definition.cdl`) and terminology as separate files. Where `adl2/` has several versions
+with the same major version, only the newest is shredded. This directory also contains the
+library definition files (`_repo_lib.json`).
+| The form the tools read archetypes from. It is easier to diff and edit than single files.
+
+| `adl2-gen-diff/`
+| Each valid archetype in differential (source) form, serialised to ADL2 (`.adls`) by the tools.
+| Round-trip checks: comparing these files with `adl2/` shows what is lost or changed when
+archetypes are read and written.
+
+| `json-gen-diff/`
+| Each valid archetype in differential form, as JSON (`.src.json`), without RM multiplicities.
+| A persistent cache for tools, which can load these files without recompiling the archetypes.
+
+| `json-gen-flat/`
+| Each valid archetype in flat form, as JSON (`.flat.json`), without RM multiplicities. The flat
+form includes the content of the archetype's specialisation parents. The operational templates
+of any templates are also included (`.opt.json`).
+| Operational systems, which need the complete definition of each archetype.
+
+| `adl2-opt/`
+| The operational template of each valid template, in ADL2 (`.opt2`).
+| Operational systems. Empty in this repository: the CKM templates are in the `.oet` format
+(under `adl2/local/templates/`), which the tools do not read.
+
+| `json-opt/`
+| The operational template of each valid template, as JSON (`.opt.json`).
+| Operational systems. Empty in this repository, as for `adl2-opt/`.
+
+| `reports/`
+a| Reports on each library, as CSV and JSON files in `reports/<library>/`:
+
+* archetype elements and their paths;
+* SNOMED CT bindings;
+* value sets;
+* the specialisation graph;
+* missing codes in templates;
+* archetypes used in templates.
+
+It also holds the library statistics (`library-statistics.md` and `library-statistics.json`).
+| Review and quality assurance of the library contents.
+|===
+
+Each generated directory mirrors the structure of `adl2/`. The tools delete and regenerate a
+directory each time they produce it, so it never contains files of archetypes that have since
+been removed or renamed.

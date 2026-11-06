@@ -1,0 +1,165 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "src",
+    "created": "2026-11-06T20:07:43.676073295Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-OBSERVATION.value_set_binding.v1.0.0",
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "published",
+            "original_author": {
+                "name": "Thomas Beale",
+                "email": "thomas.beale@openEHR.org",
+                "organisation": "openEHR Foundation <http://www.openEHR.org>",
+                "date": "2012-10-21"
+            },
+            "custodian_namespace": "org.openehr",
+            "custodian_organisation": "openEHR Foundation <http://www.openEHR.org>",
+            "copyright": "Copyright © 2012 openEHR Foundation <http://www.openEHR.org>",
+            "licence": "Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Example of bindings to value sets (signified by ac codes) rather than individual codes.",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "ADL",
+                        "test",
+                        "terminology bindings"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "OBSERVATION",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "data",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "HISTORY",
+                            "node_id": "id2",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "events",
+                                    "is_multiple": true,
+                                    "cardinality": {
+                                        "interval": {
+                                            "lower": 1
+                                        },
+                                        "is_ordered": false
+                                    },
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "EVENT",
+                                            "node_id": "id3",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "data",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ITEM_TREE",
+                                                            "node_id": "id4",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "items",
+                                                                    "is_multiple": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id5",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_CODED_TEXT",
+                                                                                            "node_id": "id6",
+                                                                                            "attributes": [
+                                                                                                {
+                                                                                                    "rm_attribute_name": "defining_code",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "constraint": "ac2"
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "Cough - ZN",
+                        "description": "Documenting cough assessment as needed for nursing care"
+                    },
+                    "id3": {
+                        "text": "Any event",
+                        "description": "*"
+                    },
+                    "id5": {
+                        "text": "Character",
+                        "description": "The character of the cough."
+                    },
+                    "ac2": {
+                        "text": "MZN-SIF-Dihanje-Kašelj",
+                        "description": "Link to ISPEK termset."
+                    }
+                }
+            },
+            "term_bindings": {
+                "AIR93": {
+                    "ac2": "http://air93.org/MZN-SIF-Dihanje-Kašelj"
+                },
+                "AIR93(1.0.0)": {
+                    "ac2": "http://air93.org/MZN-SIF-Dihanje-Kašelj"
+                }
+            }
+        }
+    }
+}

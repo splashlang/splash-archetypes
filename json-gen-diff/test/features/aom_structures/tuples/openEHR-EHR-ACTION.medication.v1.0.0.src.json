@@ -1,0 +1,2123 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "src",
+    "created": "2026-11-06T20:07:43.660031765Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-ACTION.medication.v1.0.0",
+        "adl_version": "2.0.6",
+        "rm_release": "1.0.2",
+        "uid": "f1875ab8-c67a-4915-9bbb-5e4817700414",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Thomas Beale",
+                "organisation": "openEHR Foundation",
+                "email": "thomas.beale@openehr.org",
+                "date": "2017-01-16"
+            },
+            "copyright": "© 2017 openEHR Foundation",
+            "licence": "This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.",
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Test archetye illustrating use of tuples to model ACTIONs.",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "test",
+                        "tuple"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "ACTION",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "ism_transition",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id110",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id146",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at141"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id147",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at110"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id14",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id148",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at142"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id149",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at14"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id13",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id150",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at143"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id151",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at13"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id17",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id152",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at144"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id153",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at17"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id138",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id154",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at144"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id155",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at138"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id3",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id156",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at145"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id157",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at3"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id4",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id158",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at145"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id159",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at4"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id5",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id160",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at145"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id161",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at5"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id6",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id162",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at145"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id163",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at6"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id42",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id164",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at145"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id165",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at42"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id7",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id166",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at145"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id167",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at7"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id107",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id168",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at145"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id169",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at107"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id11",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id170",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at145"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id171",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at11"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id19",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id172",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at145"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id173",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at19"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id45",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id174",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at145"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id175",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at45"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id36",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id176",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at145"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id177",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at36"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id9",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id178",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at146"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id179",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at9"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id10",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id180",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at146"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id181",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at10"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id12",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id182",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at146"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id183",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at12"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id16",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id184",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at147"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id185",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at16"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id40",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id186",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at147"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id187",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at40"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ISM_TRANSITION",
+                            "node_id": "id8",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "current_state",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id188",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at148"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "careflow_step",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id189",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at8"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "rm_attribute_name": "description",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ITEM_TREE",
+                            "node_id": "id18",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "items",
+                                    "is_multiple": true,
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id21",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_TEXT",
+                                                            "node_id": "id190"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "CLUSTER",
+                                            "node_id": "id83",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "items",
+                                                    "is_multiple": true,
+                                                    "children": [
+                                                        {
+                                                            "_type": "Archetype_slot",
+                                                            "rm_type_name": "CLUSTER",
+                                                            "node_id": "id105",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "includes": [
+                                                                {
+                                                                    "source_text": "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.medication_substance(-a-zA-Z0-9_]+)*\\.v0/}",
+                                                                    "tag": "archetype_id/value"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id131",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id191"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id84",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id192"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id85",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_DATE",
+                                                                            "node_id": "id193"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "Archetype_slot",
+                                                            "rm_type_name": "CLUSTER",
+                                                            "node_id": "id132",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "includes": [
+                                                                {
+                                                                    "source_text": "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.medication_supply_amount(-a-zA-Z0-9_]+)*\\.v0/}",
+                                                                    "tag": "archetype_id/value"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id106",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_PROPORTION",
+                                                                            "node_id": "id194",
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "numerator",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_real",
+                                                                                            "constraint": [
+                                                                                                {
+                                                                                                    "lower": "0.0",
+                                                                                                    "upper": "100.0"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "rm_attribute_name": "is_integral",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_boolean",
+                                                                                            "constraint": [
+                                                                                                false
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "rm_attribute_name": "type",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_integer",
+                                                                                            "constraint": [
+                                                                                                {
+                                                                                                    "lower": 2,
+                                                                                                    "upper": 2
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id133",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_CODED_TEXT",
+                                                                            "node_id": "id195",
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "defining_code",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_terminology_code",
+                                                                                            "constraint": "ac1"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id134",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id196"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id44",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_DATE_TIME",
+                                                            "node_id": "id197"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id22",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_TEXT",
+                                                            "node_id": "id198"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id118",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_CODED_TEXT",
+                                                            "node_id": "id199",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "defining_code",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_terminology_code",
+                                                                            "constraint": "ac2"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_TEXT",
+                                                            "node_id": "id200"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id117",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_CODED_TEXT",
+                                                            "node_id": "id201",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "defining_code",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_terminology_code",
+                                                                            "constraint": "ac3"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "CLUSTER",
+                                            "node_id": "id141",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "items",
+                                                    "is_multiple": true,
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id142",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id202"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "Archetype_slot",
+                                                            "rm_type_name": "CLUSTER",
+                                                            "node_id": "id143",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "includes": [
+                                                                {
+                                                                    "source_text": "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.anatomical_location(-a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.anatomical_location_clock(-a-zA-Z0-9_]+)*\\.v0|openEHR-EHR-CLUSTER\\.anatomical_location_relative(-a-zA-Z0-9_]+)*\\.v1/}",
+                                                                    "tag": "archetype_id/value"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id144",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id203"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "Archetype_slot",
+                                                            "rm_type_name": "CLUSTER",
+                                                            "node_id": "id145",
+                                                            "includes": [
+                                                                {
+                                                                    "source_text": "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.device(-a-zA-Z0-9_]+)*\\.v1/}",
+                                                                    "tag": "archetype_id/value"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "Archetype_slot",
+                                            "rm_type_name": "CLUSTER",
+                                            "node_id": "id54",
+                                            "includes": [
+                                                {
+                                                    "source_text": "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.medication_authorisation(-a-zA-Z0-9_]+)*\\.v0/}",
+                                                    "tag": "archetype_id/value"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id34",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_TEXT",
+                                                            "node_id": "id204"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id26",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_COUNT",
+                                                            "node_id": "id205"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id25",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_TEXT",
+                                                            "node_id": "id206"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "rm_attribute_name": "protocol",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ITEM_TREE",
+                            "node_id": "id31",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "items",
+                                    "is_multiple": true,
+                                    "cardinality": {
+                                        "interval": {
+                                            "lower": 1
+                                        },
+                                        "is_ordered": false
+                                    },
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id104",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_IDENTIFIER",
+                                                            "node_id": "id207"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "Archetype_slot",
+                                            "rm_type_name": "CLUSTER",
+                                            "node_id": "id86",
+                                            "includes": [
+                                                {
+                                                    "source_text": "archetype_id/value matches {/.*/}",
+                                                    "tag": "archetype_id/value"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "Medication",
+                        "description": "Details of use, administration, dispensing or other care step relating to a medicine, vaccine or other therapeutic good which may arise from an instruction from a clinician."
+                    },
+                    "id3": {
+                        "text": "Prescription first issued",
+                        "description": "The instruction has issued as an item on a prescription."
+                    },
+                    "id4": {
+                        "text": "Medication dispensed",
+                        "description": "The medication has been dispensed."
+                    },
+                    "id5": {
+                        "text": "Medication course commenced",
+                        "description": "The medication has been taken by, or administered to, the patient for the first time."
+                    },
+                    "id6": {
+                        "text": "Medication course reviewed",
+                        "description": "The medication has been reviewed."
+                    },
+                    "id7": {
+                        "text": "Dose administered",
+                        "description": "A single administration of the medication has taken place."
+                    },
+                    "id8": {
+                        "text": "Medication course completed",
+                        "description": "The medication course has been completed as planned."
+                    },
+                    "id9": {
+                        "text": "Medication course supply delayed",
+                        "description": "The medication course has not been dispensed as supply is not yet available."
+                    },
+                    "id10": {
+                        "text": "Medication course suspended",
+                        "description": "The administration of the medication has been suspended. No further doses should be given until further notice, or when the restart date or conditions have been met."
+                    },
+                    "id11": {
+                        "text": "Prescription re-issued",
+                        "description": "A prescription token has been re-issued for an existing medication order."
+                    },
+                    "id12": {
+                        "text": "Prescription re-issue suspended",
+                        "description": "Reissuing of this prescription is not available without some intervention."
+                    },
+                    "id13": {
+                        "text": "Medication course cancelled",
+                        "description": "The planned administration has been cancelled prior to any administration."
+                    },
+                    "id14": {
+                        "text": "Scheduled medication postponed",
+                        "description": "A scheduled medication has been postponed prior to any administration."
+                    },
+                    "id16": {
+                        "text": "Medication course stopped",
+                        "description": "The administration of this medication has been ceased before anticipated completion."
+                    },
+                    "id17": {
+                        "text": "Medication start date/condition set",
+                        "description": "The time to start this medication, or other starting condition, has been set."
+                    },
+                    "id19": {
+                        "text": "Dose administration omitted",
+                        "description": "The administration of a medication has been withheld and not given. There is no expectation that it will be given later, though the next dose (if any) should be administered according to the original order."
+                    },
+                    "id21": {
+                        "text": "Medication",
+                        "description": "The medicine, vaccine or other therapeutic good which was the focus of the action. This element will normally be coded with a medicines terminology but free text may be required in some cases."
+                    },
+                    "id22": {
+                        "text": "Reason",
+                        "description": "The reason(s) the specific action or step was carried out. Note: This is not the reason for the medication instruction, rather the specific reason e.g. for administration."
+                    },
+                    "id25": {
+                        "text": "Comment",
+                        "description": "A comment on the action taken including details of any variance between the intended action and the action actually performed."
+                    },
+                    "id26": {
+                        "text": "Sequence number",
+                        "description": "The sequence number specific to the action being recorded."
+                    },
+                    "id34": {
+                        "text": "Patient guidance",
+                        "description": "Any guidance, instructions or advice given to the subject of care or carer at the time of the action."
+                    },
+                    "id36": {
+                        "text": "Dispensed medication returned.",
+                        "description": "A dispensed medication is returned, or not collected, without being used."
+                    },
+                    "id40": {
+                        "text": "Major change to order.",
+                        "description": "A major change to the order was required, resulting in this order being stopped and a replacement order being started."
+                    },
+                    "id42": {
+                        "text": "Minor change to order",
+                        "description": "The medication order has been changed in a manner which does not require a new instruction/order to be issued, according to local clinical rules."
+                    },
+                    "id44": {
+                        "text": "Order scheduled datetime",
+                        "description": "The datetime at which the medication order was scheduled to occur."
+                    },
+                    "id45": {
+                        "text": "Dose administration deferred",
+                        "description": "Administration of a dose of mediciation has been delayed but is expected to be given as soon as possible."
+                    },
+                    "id54": {
+                        "text": "Details",
+                        "description": "Further structured details of the action, possibly specific to a pathway step."
+                    },
+                    "id83": {
+                        "text": "Product",
+                        "description": "Details of the product dispensed, authorised or administered."
+                    },
+                    "id84": {
+                        "text": "Batch ID",
+                        "description": "Assigned by the manufacturer to identify the manufacturing batch of the item."
+                    },
+                    "id85": {
+                        "text": "Expiry date",
+                        "description": "The expiry date of the medicine administered as documented by the manufacturer."
+                    },
+                    "id86": {
+                        "text": "Extension",
+                        "description": "Additional information required to capture local content or to align with other reference models/formalisms."
+                    },
+                    "id104": {
+                        "text": "Order ID",
+                        "description": "The identifier assigned with the original order."
+                    },
+                    "id105": {
+                        "text": "Preparation details",
+                        "description": "Details of the medication preparation."
+                    },
+                    "id106": {
+                        "text": "Max class dose administered",
+                        "description": "The proportion of the maximum allowed dose equivalent administered."
+                    },
+                    "id107": {
+                        "text": "Medication re-authorised",
+                        "description": "A repeat prescription or dispense has been re-authorised."
+                    },
+                    "id110": {
+                        "text": "Medication recommended",
+                        "description": "The medication has been recommended but no steps have been taken to initiate prescribing."
+                    },
+                    "id117": {
+                        "text": "Reason dose not administered",
+                        "description": "The reason(s) why a particular dose administration did not take place, including complte omission of the dose and deferral of the dose."
+                    },
+                    "id118": {
+                        "text": "Reason course amended/stopped",
+                        "description": "The reason(s) for amending or stopping a course of medication."
+                    },
+                    "at119": {
+                        "text": "Allergy/Adverse Reaction/ Intolerance",
+                        "description": "The patient experienced an adverse reaction."
+                    },
+                    "at120": {
+                        "text": "Inadequate clinical response",
+                        "description": "The clinical response to the medication was inadequate."
+                    },
+                    "at121": {
+                        "text": "Patient choice / difficulty",
+                        "description": "The course was changed because of patient preference or difficulty."
+                    },
+                    "at122": {
+                        "text": "Prescribed in error",
+                        "description": "The medication was prescribed in error."
+                    },
+                    "at123": {
+                        "text": "Additional information available",
+                        "description": "Addiotnal information informed the amendment."
+                    },
+                    "at124": {
+                        "text": "Temporarily suspended",
+                        "description": "The medication was suspended for a temporary period only."
+                    },
+                    "at125": {
+                        "text": "Change to dose form/ strength /route",
+                        "description": "The dose form/strength and or route were changed."
+                    },
+                    "at126": {
+                        "text": "Patient refused",
+                        "description": "The patient refused to take the medication."
+                    },
+                    "at127": {
+                        "text": "Nil by mouth",
+                        "description": "The patient is on a nil-by-mouth regime."
+                    },
+                    "at128": {
+                        "text": "Medicine unavailable",
+                        "description": "The medicine was unavailable."
+                    },
+                    "at129": {
+                        "text": "Patient unavailable",
+                        "description": "The patient was not available."
+                    },
+                    "at130": {
+                        "text": "Clinical reason",
+                        "description": "The medication administration was withheld/deferred for a clinical reason."
+                    },
+                    "id131": {
+                        "text": "Manufacturer",
+                        "description": "The manufacturer of the medication."
+                    },
+                    "id132": {
+                        "text": "Amount",
+                        "description": "Details of the amount of medication supplied i.e. authorised, dispensed or administered."
+                    },
+                    "id133": {
+                        "text": "Dispensing substitution",
+                        "description": "Subsitution action taken by the dispenser."
+                    },
+                    "id134": {
+                        "text": "Dispensing substitution reason",
+                        "description": "The reason or justification for the substitution action taken."
+                    },
+                    "id138": {
+                        "text": "Medication restart date/condition set",
+                        "description": "A  suspended medication has had its restart date or condition set."
+                    },
+                    "at139": {
+                        "text": "Substitute product dispensed",
+                        "description": "A medication was dispensed which is bioequivalent to that ordered."
+                    },
+                    "at140": {
+                        "text": "Substitute product not dispensed",
+                        "description": "Although allowed by the medication order a substitute bioequvalent medication was not dispensed."
+                    },
+                    "id141": {
+                        "text": "Delivery details",
+                        "description": "Details of body site and delivery of the medication."
+                    },
+                    "id142": {
+                        "text": "Body site",
+                        "description": "Identification of the site of administration of the medication, vaccine or therapeutic good."
+                    },
+                    "id143": {
+                        "text": "Structured body site",
+                        "description": "Structured description of the site of administration  of the medication, vaccine or therapeutic good."
+                    },
+                    "id144": {
+                        "text": "Delivery method",
+                        "description": "The method by which the medication is to be delivered."
+                    },
+                    "id145": {
+                        "text": "Delivery device details",
+                        "description": "Details of the medical device used to assist delivery of the medication."
+                    },
+                    "at110": {
+                        "text": "Medication recommended",
+                        "description": "The medication has been recommended but no steps have been taken to initiate prescribing."
+                    },
+                    "at14": {
+                        "text": "Scheduled medication postponed",
+                        "description": "A scheduled medication has been postponed prior to any administration."
+                    },
+                    "at13": {
+                        "text": "Medication course cancelled",
+                        "description": "The planned administration has been cancelled prior to any administration."
+                    },
+                    "at17": {
+                        "text": "Medication start date/condition set",
+                        "description": "The time to start this medication, or other starting condition, has been set."
+                    },
+                    "at138": {
+                        "text": "Medication restart date/condition set",
+                        "description": "A  suspended medication has had its restart date or condition set."
+                    },
+                    "at3": {
+                        "text": "Prescription first issued",
+                        "description": "The instruction has issued as an item on a prescription."
+                    },
+                    "at4": {
+                        "text": "Medication dispensed",
+                        "description": "The medication has been dispensed."
+                    },
+                    "at5": {
+                        "text": "Medication course commenced",
+                        "description": "The medication has been taken by, or administered to, the patient for the first time."
+                    },
+                    "at6": {
+                        "text": "Medication course reviewed",
+                        "description": "The medication has been reviewed."
+                    },
+                    "at42": {
+                        "text": "Minor change to order",
+                        "description": "The medication order has been changed in a manner which does not require a new instruction/order to be issued, according to local clinical rules."
+                    },
+                    "at7": {
+                        "text": "Dose administered",
+                        "description": "A single administration of the medication has taken place."
+                    },
+                    "at107": {
+                        "text": "Medication re-authorised",
+                        "description": "A repeat prescription or dispense has been re-authorised."
+                    },
+                    "at11": {
+                        "text": "Prescription re-issued",
+                        "description": "A prescription token has been re-issued for an existing medication order."
+                    },
+                    "at19": {
+                        "text": "Dose administration omitted",
+                        "description": "The administration of a medication has been withheld and not given. There is no expectation that it will be given later, though the next dose (if any) should be administered according to the original order."
+                    },
+                    "at45": {
+                        "text": "Dose administration deferred",
+                        "description": "Administration of a dose of mediciation has been delayed but is expected to be given as soon as possible."
+                    },
+                    "at36": {
+                        "text": "Dispensed medication returned.",
+                        "description": "A dispensed medication is returned, or not collected, without being used."
+                    },
+                    "at9": {
+                        "text": "Medication course supply delayed",
+                        "description": "The medication course has not been dispensed as supply is not yet available."
+                    },
+                    "at10": {
+                        "text": "Medication course suspended",
+                        "description": "The administration of the medication has been suspended. No further doses should be given until further notice, or when the restart date or conditions have been met."
+                    },
+                    "at12": {
+                        "text": "Prescription re-issue suspended",
+                        "description": "Reissuing of this prescription is not available without some intervention."
+                    },
+                    "at16": {
+                        "text": "Medication course stopped",
+                        "description": "The administration of this medication has been ceased before anticipated completion."
+                    },
+                    "at40": {
+                        "text": "Major change to order.",
+                        "description": "A major change to the order was required, resulting in this order being stopped and a replacement order being started."
+                    },
+                    "at8": {
+                        "text": "Medication course completed",
+                        "description": "The medication course has been completed as planned."
+                    },
+                    "at141": {
+                        "text": "planned",
+                        "description": "planned"
+                    },
+                    "at142": {
+                        "text": "postponed",
+                        "description": "postponed"
+                    },
+                    "at143": {
+                        "text": "cancelled",
+                        "description": "cancelled"
+                    },
+                    "at144": {
+                        "text": "scheduled",
+                        "description": "scheduled"
+                    },
+                    "at145": {
+                        "text": "active",
+                        "description": "active"
+                    },
+                    "at146": {
+                        "text": "suspended",
+                        "description": "suspended"
+                    },
+                    "at147": {
+                        "text": "aborted",
+                        "description": "aborted"
+                    },
+                    "at148": {
+                        "text": "complete",
+                        "description": "complete"
+                    },
+                    "ac1": {
+                        "text": "Dispensing substitution (synthesised)",
+                        "description": "Subsitution action taken by the dispenser. (synthesised)"
+                    },
+                    "ac2": {
+                        "text": "Reason course amended/stopped (synthesised)",
+                        "description": "The reason(s) for amending or stopping a course of medication. (synthesised)"
+                    },
+                    "ac3": {
+                        "text": "Reason dose not administered (synthesised)",
+                        "description": "The reason(s) why a particular dose administration did not take place, including complte omission of the dose and deferral of the dose. (synthesised)"
+                    }
+                }
+            },
+            "term_bindings": {
+                "openehr": {
+                    "at141": "http://openehr.org/id/526",
+                    "at142": "http://openehr.org/id/527",
+                    "at143": "http://openehr.org/id/528",
+                    "at144": "http://openehr.org/id/529",
+                    "at145": "http://openehr.org/id/245",
+                    "at146": "http://openehr.org/id/530",
+                    "at147": "http://openehr.org/id/531",
+                    "at148": "http://openehr.org/id/532"
+                }
+            },
+            "value_sets": {
+                "ac1": {
+                    "id": "ac1",
+                    "members": [
+                        "at139",
+                        "at140"
+                    ]
+                },
+                "ac2": {
+                    "id": "ac2",
+                    "members": [
+                        "at119",
+                        "at120",
+                        "at121",
+                        "at122",
+                        "at123",
+                        "at124",
+                        "at125"
+                    ]
+                },
+                "ac3": {
+                    "id": "ac3",
+                    "members": [
+                        "at126",
+                        "at127",
+                        "at128",
+                        "at129",
+                        "at130"
+                    ]
+                }
+            }
+        }
+    }
+}

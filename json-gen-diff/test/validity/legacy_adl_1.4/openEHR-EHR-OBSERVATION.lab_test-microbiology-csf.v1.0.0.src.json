@@ -1,0 +1,92 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "src",
+    "created": "2026-11-06T20:07:43.670189883Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-OBSERVATION.lab_test-microbiology-csf.v1.0.0",
+        "parent_archetype_id": "openEHR-EHR-OBSERVATION.lab_test-microbiology.v1",
+        "adl_version": "2.0.6",
+        "rm_release": "1.0.3",
+        "other_metadata": {
+            "generated": "true"
+        },
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Dr Ian McNicoll",
+                "organisation": "openEHR Archetype Editorial Group / Ocean Informatics",
+                "email": "ian.mcnicoll@oceaninformatics.com",
+                "date": "27/01/2009"
+            },
+            "copyright": "copyright (c) 2010 openEHR Foundation",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Test for anomaly in generation of differential archetypes",
+                    "use": "Regression testing"
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "OBSERVATION",
+            "node_id": "id1.1.1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "items",
+                    "is_multiple": true,
+                    "differential_path": "/data[id2]/events[id3]/data[id4]/items[id0.34]",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ELEMENT",
+                            "node_id": "id0.0.39",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "sibling_order": {
+                                "sibling_node_id": "id0.36",
+                                "is_before": false
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "value",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_QUANTITY",
+                                            "node_id": "id0.0.40"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1.1.1",
+            "term_definitions": {
+                "en": {
+                    "id0.0.39": {
+                        "text": "Lymphocyte count",
+                        "description": "Count of lymphocytes found in cerebro-spinal fluid."
+                    },
+                    "id1.1.1": {
+                        "text": "Microbiolology of cerebro-spinal fluid",
+                        "description": "Cerebro-spinal fluid microbiology test result."
+                    }
+                }
+            }
+        }
+    }
+}

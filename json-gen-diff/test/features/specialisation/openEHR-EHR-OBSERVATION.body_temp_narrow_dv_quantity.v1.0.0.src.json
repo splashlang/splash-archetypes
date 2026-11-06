@@ -1,0 +1,115 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "src",
+    "created": "2026-11-06T20:07:43.667327074Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-OBSERVATION.body_temp_narrow_dv_quantity.v1.0.0",
+        "parent_archetype_id": "openEHR-EHR-OBSERVATION.body_temp_test.v1",
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "published",
+            "original_author": {
+                "name": "Rong Chen",
+                "email": "rong.chen@cambio.se",
+                "organisation": "Cambio Healthcare Systems <http://www.cambio.se/>",
+                "date": "2012-04-18"
+            },
+            "custodian_namespace": "org.openehr",
+            "custodian_organisation": "openEHR Foundation <http://www.openEHR.org>",
+            "copyright": "Copyright © 2012 openEHR Foundation <http://www.openEHR.org>",
+            "licence": "Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Specialised archetype illustrating constraint narrowing of a DV_QUANTITY. In this example, the two logical possibilities from the parent, i.e. deg F and deg C are reduced to just the deg C constraint.",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "ADL",
+                        "test",
+                        "specialisation",
+                        "constraint narrowing"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "OBSERVATION",
+            "node_id": "id1.1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "value",
+                    "differential_path": "/data[id3]/events[id4]/data[id2]/items[id5]",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "DV_QUANTITY",
+                            "node_id": "id61",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "property",
+                                    "children": [
+                                        {
+                                            "_type": "C_terminology_code",
+                                            "constraint": "at57"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "units",
+                                    "children": [
+                                        {
+                                            "_type": "C_string",
+                                            "constraint": [
+                                                "°C"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "precision",
+                                    "children": [
+                                        {
+                                            "_type": "C_integer",
+                                            "constraint": [
+                                                {
+                                                    "lower": 1,
+                                                    "upper": 1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "attribute_tuples": [
+                                [
+                                    "units",
+                                    "precision"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1.1",
+            "term_definitions": {
+                "en": {
+                    "id1.1": {
+                        "text": "Body temperature new GP",
+                        "description": "A measurement of the body temperature, which is a surrogate for the whole body temperature of the person."
+                    }
+                }
+            }
+        }
+    }
+}

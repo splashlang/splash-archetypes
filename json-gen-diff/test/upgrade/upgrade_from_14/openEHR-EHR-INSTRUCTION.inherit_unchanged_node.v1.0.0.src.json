@@ -1,0 +1,57 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "src",
+    "created": "2026-11-06T20:07:43.665783527Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-INSTRUCTION.inherit_unchanged_node.v1.0.0",
+        "parent_archetype_id": "openEHR-EHR-INSTRUCTION.inherit_unchanged_parent.v1",
+        "adl_version": "2.0.6",
+        "rm_release": "1.0.3",
+        "other_metadata": {
+            "generated": "true"
+        },
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Dr Ian McNicoll",
+                "organisation": "Ocean Informatics, United Kingdom",
+                "email": "ian.mcnicoll@oceaninformatics.com",
+                "date": "2009-12-08"
+            },
+            "other_contributors": [
+                "Heather Leslie, Ocean Informatics, Australia"
+            ],
+            "copyright": "© openEHR Foundation",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Child archetype to test detection of identical DV_CODED_TEXT that AOM_151_CONVERTER should detect, and ARCHETYPE_COMPARATOR should remove",
+                    "use": "Regression testing"
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "INSTRUCTION",
+            "node_id": "id1.1"
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1.1",
+            "term_definitions": {
+                "en": {
+                    "id1.1": {
+                        "text": "Imaging Examination Request",
+                        "description": "Generic request for an imaging examination request."
+                    }
+                }
+            }
+        }
+    }
+}

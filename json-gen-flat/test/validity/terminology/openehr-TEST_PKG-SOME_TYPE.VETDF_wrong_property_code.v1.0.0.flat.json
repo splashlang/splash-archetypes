@@ -1,0 +1,131 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-06T20:07:43.710508026Z",
+    "rm_id": "org.openehr:test",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openehr-TEST_PKG-SOME_TYPE.VETDF_wrong_property_code.v1.0.0",
+        "is_generated": true,
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Thomas Beale"
+            },
+            "copyright": "copyright (c) 2005 The openEHR Foundation",
+            "other_details": {
+                "regression": "VETDF"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Verify VETDF warning, caused by a code ('temperature') that does not exist in an available terminology (('openehr')",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "ADL",
+                        "test",
+                        "terminology"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "SOME_TYPE",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "clinical_quantity_attr_1",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "DV_QUANTITY",
+                            "node_id": "id2",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "property",
+                                    "children": [
+                                        {
+                                            "_type": "C_terminology_code",
+                                            "constraint": "at1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "units",
+                                    "children": [
+                                        {
+                                            "_type": "C_string",
+                                            "constraint": [
+                                                "C"
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_string",
+                                            "node_id": "id99992",
+                                            "constraint": [
+                                                "F"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "magnitude",
+                                    "children": [
+                                        {
+                                            "_type": "C_real",
+                                            "constraint": [
+                                                {
+                                                    "lower": "37.0"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_real",
+                                            "node_id": "id99992",
+                                            "constraint": [
+                                                {
+                                                    "lower": "96.0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "attribute_tuples": [
+                                [
+                                    "units",
+                                    "magnitude"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "root item",
+                        "description": "xxxx"
+                    },
+                    "at1": {
+                        "text": "(added by post-parse processor)",
+                        "description": "(added by post-parse processor)"
+                    }
+                }
+            },
+            "term_bindings": {
+                "openehr": {
+                    "at1": "http://openehr.org/id/temperature"
+                }
+            }
+        }
+    }
+}

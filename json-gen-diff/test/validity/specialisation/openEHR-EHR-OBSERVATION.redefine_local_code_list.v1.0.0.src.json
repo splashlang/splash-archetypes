@@ -1,0 +1,109 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "src",
+    "created": "2026-11-06T20:07:43.671739898Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-OBSERVATION.redefine_local_code_list.v1.0.0",
+        "parent_archetype_id": "openEHR-EHR-OBSERVATION.spec_test_obs2.v1.0.0",
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Thomas Beale",
+                "organisation": "Ocean Informatics",
+                "date": "19/6/2008"
+            },
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "To test redefinition of an RM type into a RM subtype",
+                    "use": "Regression testing"
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "OBSERVATION",
+            "node_id": "id1.1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "value",
+                    "differential_path": "/data/events[id3]/data/items[id4]",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "DV_CODED_TEXT",
+                            "node_id": "id14",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "defining_code",
+                                    "children": [
+                                        {
+                                            "_type": "C_terminology_code",
+                                            "constraint": "ac0.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1.1",
+            "term_definitions": {
+                "en": {
+                    "at0.1": {
+                        "text": "term A",
+                        "description": "term A"
+                    },
+                    "at0.2": {
+                        "text": "term B",
+                        "description": "term B"
+                    },
+                    "at0.3": {
+                        "text": "term C",
+                        "description": "term C"
+                    },
+                    "at0.4": {
+                        "text": "term D",
+                        "description": "term D"
+                    },
+                    "at0.5": {
+                        "text": "term E",
+                        "description": "term E"
+                    },
+                    "id1.1": {
+                        "text": "obs",
+                        "description": "obs"
+                    },
+                    "ac0.1": {
+                        "text": "(added by post-parse processor)",
+                        "description": "(added by post-parse processor)"
+                    }
+                }
+            },
+            "value_sets": {
+                "ac0.1": {
+                    "id": "ac0.1",
+                    "members": [
+                        "at0.1",
+                        "at0.2",
+                        "at0.3",
+                        "at0.4",
+                        "at0.5"
+                    ]
+                }
+            }
+        }
+    }
+}

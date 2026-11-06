@@ -1,0 +1,77 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "src",
+    "created": "2026-11-06T20:07:43.668819265Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-OBSERVATION.internal_code_list_narrowed.v1.0.0",
+        "parent_archetype_id": "openEHR-EHR-OBSERVATION.internal_code_lists.v1",
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Thomas Beale <thomas.beale@openEHR.org>",
+                "organisation": "openEHR Foundation <http://www.openEHR.org>",
+                "date": "22/01/2014"
+            },
+            "copyright": "© openEHR Foundation",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "To test redefinition of an internal code list",
+                    "use": "Regression testing"
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "OBSERVATION",
+            "node_id": "id1.1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "defining_code",
+                    "differential_path": "/data[id2]/events[id7]/state[id8]/items[id9]/value",
+                    "children": [
+                        {
+                            "_type": "C_terminology_code",
+                            "constraint": "ac1.1",
+                            "assumed_value": "at1002"
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1.1",
+            "term_definitions": {
+                "en": {
+                    "id1.1": {
+                        "text": "Blood Pressure specialised",
+                        "description": "BP specialised"
+                    },
+                    "ac1.1": {
+                        "text": "(added by post-parse processor)",
+                        "description": "(added by post-parse processor)"
+                    }
+                }
+            },
+            "value_sets": {
+                "ac1.1": {
+                    "id": "ac1.1",
+                    "members": [
+                        "at1001",
+                        "at1002",
+                        "at1004"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "src",
+    "created": "2026-11-06T20:07:43.690027027Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-EVALUATION.problem-diagnosis-simple.v1.0.0",
+        "parent_archetype_id": "openEHR-EHR-EVALUATION.problem-diagnosis.v1",
+        "adl_version": "2.3.0",
+        "rm_release": "1.1.0",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Sam Heard",
+                "organisation": "Ocean Informatics",
+                "email": "sam.heard@oceaninformatics.com",
+                "date": "23/04/2006"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "For recording medical diagnoses with optional diagnostic criteria and staging. Requires coded entry of diagnosis. ",
+                    "use": "Used for recording any diagnosis, present or past - so is used for recording past history as well as current diagnoses. Used with changed 'Subject of care' for recording diagnoses in relatives and so for family history.",
+                    "keywords": [
+                        "past",
+                        "history",
+                        "family",
+                        "condition"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "EVALUATION",
+            "node_id": "id1.1.1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "items",
+                    "is_multiple": true,
+                    "differential_path": "/data[id2]",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ELEMENT",
+                            "node_id": "id0.0.55",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "sibling_order": {
+                                "sibling_node_id": "id0.32"
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "value",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id0.0.56",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "ac0.0.1"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1.1.1",
+            "term_definitions": {
+                "en": {
+                    "id0.0.55": {
+                        "text": "Diagnosis type",
+                        "description": "Type (reporting category) of diagnosis."
+                    },
+                    "at0.0.56": {
+                        "text": "Primary diagnosis",
+                        "description": "*"
+                    },
+                    "at0.0.57": {
+                        "text": "Secondary diagnosis",
+                        "description": "*"
+                    },
+                    "at0.0.58": {
+                        "text": "Pre-existing condition",
+                        "description": "*"
+                    },
+                    "id1.1.1": {
+                        "text": "Diagnosis - Singapore",
+                        "description": "A diagnosis defined by a clinician which is coded in an accepted terminology and may include the stage of the condition and the diagnostic criteria!"
+                    },
+                    "ac0.0.1": {
+                        "text": "Diagnosis type (synthesised)",
+                        "description": "Type (reporting category) of diagnosis. (synthesised)"
+                    }
+                }
+            },
+            "value_sets": {
+                "ac0.0.1": {
+                    "id": "ac0.0.1",
+                    "members": [
+                        "at0.0.56",
+                        "at0.0.57",
+                        "at0.0.58"
+                    ]
+                }
+            }
+        }
+    }
+}

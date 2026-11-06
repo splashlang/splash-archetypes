@@ -1,0 +1,94 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "src",
+    "created": "2026-11-06T20:07:43.671674863Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-OBSERVATION.VPOV_redef_ac_code_node_to_local_codes.v1.0.0",
+        "parent_archetype_id": "openEHR-EHR-OBSERVATION.spec_test_obs2.v1",
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Thomas Beale",
+                "organisation": "openEHR Foundation",
+                "date": "11/6/2010"
+            },
+            "other_details": {
+                "regression": "VPOV"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Trigger VPOV error with illegal redefinition value-set redefinition",
+                    "use": "Regression testing"
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "OBSERVATION",
+            "node_id": "id1.1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "value",
+                    "differential_path": "/data/events[id3]/data/items[id5]",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "DV_CODED_TEXT",
+                            "node_id": "id15",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "defining_code",
+                                    "children": [
+                                        {
+                                            "_type": "C_terminology_code",
+                                            "constraint": "ac3.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1.1",
+            "term_definitions": {
+                "en": {
+                    "id1.1": {
+                        "text": "Observation",
+                        "description": "Observation"
+                    },
+                    "ac3.1": {
+                        "text": "value set 1",
+                        "description": "value set 1"
+                    },
+                    "at0.1": {
+                        "text": "new code",
+                        "description": "new code"
+                    }
+                }
+            },
+            "value_sets": {
+                "ac3.1": {
+                    "id": "ac3.1",
+                    "members": [
+                        "at6",
+                        "at7",
+                        "at8",
+                        "at9",
+                        "at10",
+                        "at0.1"
+                    ]
+                }
+            }
+        }
+    }
+}

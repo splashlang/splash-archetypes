@@ -1,0 +1,76 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-06T20:07:43.707825292Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "org.openehr::openEHR-EHR-OBSERVATION.ns_inherit_ns.v1.3.15-alpha.47",
+        "parent_archetype_id": "org.openehr::openEHR-EHR-OBSERVATION.full_id_1.v1",
+        "is_generated": true,
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "published",
+            "original_author": {
+                "name": "Thomas Beale",
+                "email": "thomas.beale@openEHR.org",
+                "organisation": "openEHR Foundation <http://www.openEHR.org>",
+                "date": "2008-08-11"
+            },
+            "custodian_namespace": "org.openehr",
+            "custodian_organisation": "openEHR Foundation <http://www.openEHR.org>",
+            "copyright": "Copyright © 2008 openEHR Foundation <http://www.openEHR.org>",
+            "licence": "Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Test full namespaced and versioned id that includes semver.org style 'alpha' qualifier at the end.",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "ADL",
+                        "identifiers",
+                        "test"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "OBSERVATION",
+            "node_id": "id1.1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "data",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "HISTORY",
+                            "node_id": "id0.3"
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1.1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "top-level archetype",
+                        "description": "top level test archetype for specialisation lineage"
+                    },
+                    "id1.1": {
+                        "text": "specialised archetype",
+                        "description": "specialised child archetype"
+                    }
+                }
+            }
+        }
+    }
+}

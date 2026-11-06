@@ -1,0 +1,603 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "src",
+    "created": "2026-11-06T20:07:43.684899914Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Template",
+        "archetype_id": "openEHR-DEMOGRAPHIC-PERSON.t_patient_ds_sf.v1.0.0",
+        "parent_archetype_id": "openEHR-DEMOGRAPHIC-PERSON.person.v1",
+        "adl_version": "2.3.0",
+        "rm_release": "1.1.0",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Thomas Beale",
+                "organisation": "Ocean Informatics",
+                "email": "thomas.beale@oceaninformatics.com",
+                "date": "01/04/2011"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Templated PERSON object to describe patient in Simple discharge summary",
+                    "use": "test use"
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "PERSON",
+            "node_id": "id1.1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "items",
+                    "is_multiple": true,
+                    "differential_path": "/details[id2]",
+                    "children": [
+                        {
+                            "_type": "C_archetype_root",
+                            "rm_type_name": "CLUSTER",
+                            "node_id": "id11.1",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "archetype_ref": "openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-1.v1"
+                        },
+                        {
+                            "_type": "C_archetype_root",
+                            "rm_type_name": "CLUSTER",
+                            "node_id": "id11.2",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "archetype_ref": "openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-2.v1"
+                        },
+                        {
+                            "_type": "C_archetype_root",
+                            "rm_type_name": "CLUSTER",
+                            "node_id": "id11.3",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "archetype_ref": "openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-3.v1"
+                        },
+                        {
+                            "_type": "Archetype_slot",
+                            "rm_type_name": "CLUSTER",
+                            "node_id": "id11",
+                            "is_closed": true
+                        }
+                    ]
+                },
+                {
+                    "rm_attribute_name": "identities",
+                    "is_multiple": true,
+                    "differential_path": "/",
+                    "children": [
+                        {
+                            "_type": "C_archetype_root",
+                            "rm_type_name": "PARTY_IDENTITY",
+                            "node_id": "id3.1",
+                            "archetype_ref": "openEHR-DEMOGRAPHIC-PARTY_IDENTITY.t_patient_ds_sf-4.v1"
+                        },
+                        {
+                            "_type": "Archetype_slot",
+                            "rm_type_name": "PARTY_IDENTITY",
+                            "node_id": "id3",
+                            "is_closed": true
+                        }
+                    ]
+                },
+                {
+                    "rm_attribute_name": "addresses",
+                    "is_multiple": true,
+                    "differential_path": "/contacts[id4]",
+                    "children": [
+                        {
+                            "_type": "C_archetype_root",
+                            "rm_type_name": "ADDRESS",
+                            "node_id": "id31.1",
+                            "archetype_ref": "openEHR-DEMOGRAPHIC-ADDRESS.t_patient_ds_sf-5.v1"
+                        },
+                        {
+                            "_type": "Archetype_slot",
+                            "rm_type_name": "ADDRESS",
+                            "node_id": "id31",
+                            "is_closed": true
+                        }
+                    ]
+                },
+                {
+                    "rm_attribute_name": "relationships",
+                    "is_multiple": true,
+                    "existence": {
+                        "lower": 0,
+                        "upper": 0
+                    },
+                    "differential_path": "/"
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1.1",
+            "term_definitions": {
+                "en": {
+                    "id1.1": {
+                        "text": "Patient demographic data",
+                        "description": "Simple patient personal demographic data"
+                    },
+                    "id11.1": {
+                        "text": "race data",
+                        "description": "race data"
+                    },
+                    "id11.2": {
+                        "text": "other data",
+                        "description": "other data"
+                    },
+                    "id11.3": {
+                        "text": "birth data",
+                        "description": "birth data"
+                    },
+                    "id3.1": {
+                        "text": "Person name",
+                        "description": "Person name"
+                    },
+                    "id31.1": {
+                        "text": "Address",
+                        "description": "Address"
+                    }
+                }
+            }
+        },
+        "overlay_ids": [
+            "openEHR-DEMOGRAPHIC-ADDRESS.t_patient_ds_sf-5.v1.0.0",
+            "openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-1.v1.0.0",
+            "openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-2.v1.0.0",
+            "openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-3.v1.0.0",
+            "openEHR-DEMOGRAPHIC-PARTY_IDENTITY.t_patient_ds_sf-4.v1.0.0"
+        ]
+    },
+    "overlays": [
+        {
+            "_type": "Template_overlay",
+            "archetype_id": "openEHR-DEMOGRAPHIC-ADDRESS.t_patient_ds_sf-5.v1.0.0",
+            "parent_archetype_id": "openEHR-DEMOGRAPHIC-ADDRESS.address.v1",
+            "definition": {
+                "rm_type_name": "ADDRESS",
+                "node_id": "id1.1",
+                "attributes": [
+                    {
+                        "rm_attribute_name": "items",
+                        "is_multiple": true,
+                        "differential_path": "/details[id2]",
+                        "children": [
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "CLUSTER",
+                                "node_id": "id3.1",
+                                "occurrences": {
+                                    "lower": 1,
+                                    "upper": 3
+                                },
+                                "attributes": [
+                                    {
+                                        "rm_attribute_name": "items",
+                                        "is_multiple": true,
+                                        "children": [
+                                            {
+                                                "_type": "C_complex_object",
+                                                "rm_type_name": "ELEMENT",
+                                                "node_id": "id22",
+                                                "occurrences": {
+                                                    "lower": 0,
+                                                    "upper": 0
+                                                }
+                                            },
+                                            {
+                                                "_type": "C_complex_object",
+                                                "rm_type_name": "ELEMENT",
+                                                "node_id": "id23",
+                                                "occurrences": {
+                                                    "lower": 0,
+                                                    "upper": 0
+                                                }
+                                            },
+                                            {
+                                                "_type": "C_complex_object",
+                                                "rm_type_name": "ELEMENT",
+                                                "node_id": "id24",
+                                                "occurrences": {
+                                                    "lower": 0,
+                                                    "upper": 0
+                                                }
+                                            },
+                                            {
+                                                "_type": "C_complex_object",
+                                                "rm_type_name": "ELEMENT",
+                                                "node_id": "id25",
+                                                "occurrences": {
+                                                    "lower": 0,
+                                                    "upper": 0
+                                                }
+                                            },
+                                            {
+                                                "_type": "C_complex_object",
+                                                "rm_type_name": "ELEMENT",
+                                                "node_id": "id26",
+                                                "occurrences": {
+                                                    "lower": 0,
+                                                    "upper": 0
+                                                }
+                                            },
+                                            {
+                                                "_type": "C_complex_object",
+                                                "rm_type_name": "ELEMENT",
+                                                "node_id": "id27",
+                                                "occurrences": {
+                                                    "lower": 0,
+                                                    "upper": 0
+                                                }
+                                            },
+                                            {
+                                                "_type": "C_complex_object",
+                                                "rm_type_name": "ELEMENT",
+                                                "node_id": "id28",
+                                                "occurrences": {
+                                                    "lower": 0,
+                                                    "upper": 0
+                                                }
+                                            },
+                                            {
+                                                "_type": "C_complex_object",
+                                                "rm_type_name": "ELEMENT",
+                                                "node_id": "id29",
+                                                "occurrences": {
+                                                    "lower": 0,
+                                                    "upper": 0
+                                                }
+                                            },
+                                            {
+                                                "_type": "C_complex_object",
+                                                "rm_type_name": "ELEMENT",
+                                                "node_id": "id30",
+                                                "occurrences": {
+                                                    "lower": 0,
+                                                    "upper": 0
+                                                }
+                                            },
+                                            {
+                                                "_type": "C_complex_object",
+                                                "rm_type_name": "ELEMENT",
+                                                "node_id": "id31",
+                                                "occurrences": {
+                                                    "lower": 0,
+                                                    "upper": 0
+                                                }
+                                            },
+                                            {
+                                                "_type": "Archetype_slot",
+                                                "rm_type_name": "CLUSTER",
+                                                "node_id": "id33",
+                                                "is_closed": true
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id4",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id7",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id9",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id10",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "Archetype_slot",
+                                "rm_type_name": "CLUSTER",
+                                "node_id": "id11",
+                                "is_closed": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            "terminology": {
+                "original_language": "en",
+                "concept_code": "id1.1",
+                "term_definitions": {
+                    "en": {
+                        "id1.1": {
+                            "text": "Address",
+                            "description": "Address based on ISO22220 standard."
+                        },
+                        "id3.1": {
+                            "text": "Address lines",
+                            "description": "Address lines"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "_type": "Template_overlay",
+            "archetype_id": "openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-1.v1.0.0",
+            "parent_archetype_id": "openEHR-DEMOGRAPHIC-CLUSTER.person_additional_data_br.v1",
+            "definition": {
+                "rm_type_name": "CLUSTER",
+                "node_id": "id1.1",
+                "attributes": [
+                    {
+                        "rm_attribute_name": "items",
+                        "is_multiple": true,
+                        "differential_path": "/",
+                        "children": [
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id2",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id3.1"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "terminology": {
+                "original_language": "en",
+                "concept_code": "id1.1",
+                "term_definitions": {
+                    "en": {
+                        "id1.1": {
+                            "text": "Person additional demographic data",
+                            "description": "Person additional demographic data"
+                        },
+                        "id3.1": {
+                            "text": "Race",
+                            "description": "The person's race classifier"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "_type": "Template_overlay",
+            "archetype_id": "openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-2.v1.0.0",
+            "parent_archetype_id": "openEHR-DEMOGRAPHIC-CLUSTER.person_additional_data_iso.v1",
+            "definition": {
+                "rm_type_name": "CLUSTER",
+                "node_id": "id1.1",
+                "attributes": [
+                    {
+                        "rm_attribute_name": "items",
+                        "is_multiple": true,
+                        "differential_path": "/",
+                        "children": [
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id2.1",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 1
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id3",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id4",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "terminology": {
+                "original_language": "en",
+                "concept_code": "id1.1",
+                "term_definitions": {
+                    "en": {
+                        "id1.1": {
+                            "text": "Person additional demographic data",
+                            "description": "*"
+                        },
+                        "id2.1": {
+                            "text": "Sex",
+                            "description": "*"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "_type": "Template_overlay",
+            "archetype_id": "openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-3.v1.0.0",
+            "parent_archetype_id": "openEHR-DEMOGRAPHIC-CLUSTER.person_birth_data_iso.v1",
+            "definition": {
+                "rm_type_name": "CLUSTER",
+                "node_id": "id1.1",
+                "attributes": [
+                    {
+                        "rm_attribute_name": "items",
+                        "is_multiple": true,
+                        "children": [
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id3",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id5",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id6",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "Archetype_slot",
+                                "rm_type_name": "CLUSTER",
+                                "node_id": "id7",
+                                "is_closed": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            "terminology": {
+                "original_language": "en",
+                "concept_code": "id1.1",
+                "term_definitions": {
+                    "en": {
+                        "id1.1": {
+                            "text": "Birth data",
+                            "description": "Singapore birth demographic data"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "_type": "Template_overlay",
+            "archetype_id": "openEHR-DEMOGRAPHIC-PARTY_IDENTITY.t_patient_ds_sf-4.v1.0.0",
+            "parent_archetype_id": "openEHR-DEMOGRAPHIC-PARTY_IDENTITY.person_name.v1",
+            "definition": {
+                "rm_type_name": "PARTY_IDENTITY",
+                "node_id": "id1.1",
+                "attributes": [
+                    {
+                        "rm_attribute_name": "items",
+                        "is_multiple": true,
+                        "differential_path": "/details[id2]",
+                        "children": [
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id6",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id20",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id21",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id9",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id10",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "terminology": {
+                "original_language": "en",
+                "concept_code": "id1.1",
+                "term_definitions": {
+                    "en": {
+                        "id1.1": {
+                            "text": "Person name",
+                            "description": "Person name for Simple discharge summary"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

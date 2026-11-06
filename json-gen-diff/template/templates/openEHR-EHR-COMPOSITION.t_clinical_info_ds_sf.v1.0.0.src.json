@@ -1,0 +1,818 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "src",
+    "created": "2026-11-06T20:07:43.687419398Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Template",
+        "archetype_id": "openEHR-EHR-COMPOSITION.t_clinical_info_ds_sf.v1.0.0",
+        "parent_archetype_id": "openEHR-EHR-COMPOSITION.discharge.v1",
+        "adl_version": "2.3.0",
+        "rm_release": "1.1.0",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Ian McNicoll",
+                "organisation": "Ocean Informatics",
+                "email": "ian.mcnicoll@oceaninformatics.com",
+                "date": "01/04/2011"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Templated clinical COMPOSITION for Simple discharge summary",
+                    "use": "test use"
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "COMPOSITION",
+            "node_id": "id1.1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "context",
+                    "existence": {
+                        "lower": 0,
+                        "upper": 0
+                    }
+                },
+                {
+                    "rm_attribute_name": "content",
+                    "is_multiple": true,
+                    "children": [
+                        {
+                            "_type": "C_archetype_root",
+                            "rm_type_name": "SECTION",
+                            "node_id": "id0.1",
+                            "occurrences": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "archetype_ref": "openEHR-EHR-SECTION.t_patient_event_info_ds_sf.v1"
+                        },
+                        {
+                            "_type": "C_archetype_root",
+                            "rm_type_name": "EVALUATION",
+                            "node_id": "id0.2",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "archetype_ref": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-1.v1"
+                        },
+                        {
+                            "_type": "C_archetype_root",
+                            "rm_type_name": "EVALUATION",
+                            "node_id": "id0.3",
+                            "archetype_ref": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-2.v1"
+                        },
+                        {
+                            "_type": "C_archetype_root",
+                            "rm_type_name": "EVALUATION",
+                            "node_id": "id0.4",
+                            "archetype_ref": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-3.v1"
+                        },
+                        {
+                            "_type": "C_archetype_root",
+                            "rm_type_name": "EVALUATION",
+                            "node_id": "id0.5",
+                            "occurrences": {
+                                "lower": 1
+                            },
+                            "archetype_ref": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-4.v1"
+                        },
+                        {
+                            "_type": "C_archetype_root",
+                            "rm_type_name": "EVALUATION",
+                            "node_id": "id0.6",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "archetype_ref": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-5.v1"
+                        },
+                        {
+                            "_type": "C_archetype_root",
+                            "rm_type_name": "EVALUATION",
+                            "node_id": "id0.7",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "archetype_ref": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-6.v1"
+                        },
+                        {
+                            "_type": "C_archetype_root",
+                            "rm_type_name": "EVALUATION",
+                            "node_id": "id0.8",
+                            "occurrences": {
+                                "lower": 0
+                            },
+                            "archetype_ref": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-7.v1"
+                        },
+                        {
+                            "_type": "C_archetype_root",
+                            "rm_type_name": "EVALUATION",
+                            "node_id": "id0.9",
+                            "archetype_ref": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-8.v1"
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1.1",
+            "term_definitions": {
+                "en": {
+                    "id1.1": {
+                        "text": "Clinical detail",
+                        "description": "Clinical detail of Simple discharge summary"
+                    },
+                    "id0.1": {
+                        "text": "Event data",
+                        "description": "Event data"
+                    },
+                    "id0.2": {
+                        "text": "Allergies & adverse reactions",
+                        "description": "Allergies & adverse reactions"
+                    },
+                    "id0.3": {
+                        "text": "Alerts",
+                        "description": "Alerts"
+                    },
+                    "id0.4": {
+                        "text": "Clinical synopsis",
+                        "description": "Clinical synopsis"
+                    },
+                    "id0.5": {
+                        "text": "Diagnosis",
+                        "description": "Diagnosis"
+                    },
+                    "id0.6": {
+                        "text": "Investigations",
+                        "description": "Investigations"
+                    },
+                    "id0.7": {
+                        "text": "Medications",
+                        "description": "Medications"
+                    },
+                    "id0.8": {
+                        "text": "Procedures",
+                        "description": "Procedures"
+                    },
+                    "id0.9": {
+                        "text": "Medical certificate",
+                        "description": "Medical certificate"
+                    }
+                }
+            }
+        },
+        "overlay_ids": [
+            "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-1.v1.0.0",
+            "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-2.v1.0.0",
+            "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-3.v1.0.0",
+            "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-4.v1.0.0",
+            "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-5.v1.0.0",
+            "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-6.v1.0.0",
+            "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-7.v1.0.0",
+            "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-8.v1.0.0"
+        ]
+    },
+    "overlays": [
+        {
+            "_type": "Template_overlay",
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-1.v1.0.0",
+            "parent_archetype_id": "openEHR-EHR-EVALUATION.adverse.v1",
+            "definition": {
+                "rm_type_name": "EVALUATION",
+                "node_id": "id1.1",
+                "attributes": [
+                    {
+                        "rm_attribute_name": "items",
+                        "is_multiple": true,
+                        "differential_path": "/data[id3]",
+                        "children": [
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id11",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "rm_attribute_name": "items",
+                        "is_multiple": true,
+                        "differential_path": "/data[id3]/items[id20]",
+                        "children": [
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id33",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id16",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id5",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id21",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "terminology": {
+                "original_language": "en",
+                "concept_code": "id1.1",
+                "term_definitions": {
+                    "en": {
+                        "id1.1": {
+                            "text": "Adverse reaction details for episode of care",
+                            "description": "Adverse reaction details for episode of care"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "_type": "Template_overlay",
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-2.v1.0.0",
+            "parent_archetype_id": "openEHR-EHR-EVALUATION.alert.v1",
+            "definition": {
+                "rm_type_name": "EVALUATION",
+                "node_id": "id1.1",
+                "attributes": [
+                    {
+                        "rm_attribute_name": "items",
+                        "is_multiple": true,
+                        "differential_path": "/data[id2]",
+                        "children": [
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id3",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id6",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id10",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id15",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "terminology": {
+                "original_language": "en",
+                "concept_code": "id1.1",
+                "term_definitions": {
+                    "en": {
+                        "id1.1": {
+                            "text": "Alerts",
+                            "description": "Alert details"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "_type": "Template_overlay",
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-3.v1.0.0",
+            "parent_archetype_id": "openEHR-EHR-EVALUATION.clinical_synopsis.v1",
+            "definition": {
+                "rm_type_name": "EVALUATION",
+                "node_id": "id1.1",
+                "attributes": [
+                    {
+                        "rm_attribute_name": "items",
+                        "is_multiple": true,
+                        "differential_path": "/data[id2]",
+                        "children": [
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id3.1",
+                                "occurrences": {
+                                    "lower": 1,
+                                    "upper": 1
+                                },
+                                "attributes": [
+                                    {
+                                        "rm_attribute_name": "name",
+                                        "children": [
+                                            {
+                                                "_type": "C_complex_object",
+                                                "rm_type_name": "DV_TEXT",
+                                                "node_id": "id0.1"
+                                            },
+                                            {
+                                                "_type": "C_complex_object",
+                                                "rm_type_name": "DV_CODED_TEXT",
+                                                "node_id": "id0.2",
+                                                "attributes": [
+                                                    {
+                                                        "rm_attribute_name": "defining_code",
+                                                        "children": [
+                                                            {
+                                                                "_type": "C_terminology_code",
+                                                                "constraint": "ac0.1"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "terminology": {
+                "original_language": "en",
+                "concept_code": "id1.1",
+                "term_definitions": {
+                    "en": {
+                        "id1.1": {
+                            "text": "Clinical synopsis",
+                            "description": "Clinical synopsis"
+                        },
+                        "id3.1": {
+                            "text": "Description",
+                            "description": "Clinical synopsis description"
+                        },
+                        "at0.1": {
+                            "text": "Admission",
+                            "description": "Admission"
+                        },
+                        "at0.2": {
+                            "text": "Clinical note",
+                            "description": "Clinical note"
+                        },
+                        "at0.3": {
+                            "text": "Post discharge care",
+                            "description": "Post discharge care"
+                        },
+                        "at0.4": {
+                            "text": "Inpatient episode",
+                            "description": "Inpatient episode"
+                        },
+                        "at0.5": {
+                            "text": "Main complaints",
+                            "description": "Main complaints"
+                        },
+                        "at0.6": {
+                            "text": "Past medical summary",
+                            "description": "Past medical summary"
+                        },
+                        "at0.7": {
+                            "text": "Clinical progress",
+                            "description": "Clinical progress"
+                        },
+                        "at0.8": {
+                            "text": "Suggested treatments",
+                            "description": "Suggested treatments"
+                        },
+                        "at0.9": {
+                            "text": "Social history",
+                            "description": "Social history"
+                        },
+                        "at0.10": {
+                            "text": "Past medical history",
+                            "description": "Past medical history"
+                        },
+                        "at0.11": {
+                            "text": "Presenting complaints/physical findings",
+                            "description": "Presenting complaints/physical findings"
+                        },
+                        "at0.12": {
+                            "text": "Progress summary",
+                            "description": "Progress summary"
+                        },
+                        "at0.13": {
+                            "text": "Significant physical findings",
+                            "description": "Significant physical findings"
+                        },
+                        "ac0.1": {
+                            "text": "Description (synthesised)",
+                            "description": "Clinical synopsis description (synthesised)"
+                        }
+                    }
+                },
+                "value_sets": {
+                    "ac0.1": {
+                        "id": "ac0.1",
+                        "members": [
+                            "at0.1",
+                            "at0.2",
+                            "at0.3",
+                            "at0.4",
+                            "at0.5",
+                            "at0.6",
+                            "at0.7",
+                            "at0.8",
+                            "at0.9",
+                            "at0.10",
+                            "at0.11",
+                            "at0.12",
+                            "at0.13"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "_type": "Template_overlay",
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-4.v1.0.0",
+            "parent_archetype_id": "openEHR-EHR-EVALUATION.problem-diagnosis-simple.v1",
+            "definition": {
+                "rm_type_name": "EVALUATION",
+                "node_id": "id1.1.1.1",
+                "attributes": [
+                    {
+                        "rm_attribute_name": "items",
+                        "is_multiple": true,
+                        "differential_path": "/data[id2]",
+                        "children": [
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id3.1.0.1",
+                                "occurrences": {
+                                    "lower": 1,
+                                    "upper": 1
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id0.32",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id4",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id5",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id6",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id10.0.0.1"
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id39",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id11",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id38",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "CLUSTER",
+                                "node_id": "id12",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id32",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "CLUSTER",
+                                "node_id": "id0.35",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id0.0.55.1",
+                                "occurrences": {
+                                    "lower": 1,
+                                    "upper": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "rm_attribute_name": "protocol",
+                        "existence": {
+                            "lower": 0,
+                            "upper": 0
+                        },
+                        "differential_path": "/"
+                    }
+                ]
+            },
+            "terminology": {
+                "original_language": "en",
+                "concept_code": "id1.1.1.1",
+                "term_definitions": {
+                    "en": {
+                        "id1.1.1.1": {
+                            "text": "Simple problem / diagnosis summary",
+                            "description": "Simple problem / diagnosis summary"
+                        },
+                        "id3.1.0.1": {
+                            "text": "Diagnosis",
+                            "description": "Diagnosis"
+                        },
+                        "id10.0.0.1": {
+                            "text": "Additional remarks",
+                            "description": "Diagnosis/problem additional remarks"
+                        },
+                        "id0.0.55.1": {
+                            "text": "Diagnosis type",
+                            "description": "Diagnosis type"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "_type": "Template_overlay",
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-5.v1.0.0",
+            "parent_archetype_id": "openEHR-EHR-EVALUATION.clinical_synopsis.v1",
+            "definition": {
+                "rm_type_name": "EVALUATION",
+                "node_id": "id1.1",
+                "attributes": [
+                    {
+                        "rm_attribute_name": "items",
+                        "is_multiple": true,
+                        "differential_path": "/data[id2]",
+                        "children": [
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id3.1"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "terminology": {
+                "original_language": "en",
+                "concept_code": "id1.1",
+                "term_definitions": {
+                    "en": {
+                        "id1.1": {
+                            "text": "Investigations summary",
+                            "description": "Summary of investigations undertaken during stay"
+                        },
+                        "id3.1": {
+                            "text": "Description",
+                            "description": "Summary of investigations description"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "_type": "Template_overlay",
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-6.v1.0.0",
+            "parent_archetype_id": "openEHR-EHR-EVALUATION.clinical_synopsis.v1",
+            "definition": {
+                "rm_type_name": "EVALUATION",
+                "node_id": "id1.1",
+                "attributes": [
+                    {
+                        "rm_attribute_name": "items",
+                        "is_multiple": true,
+                        "differential_path": "/data[id2]",
+                        "children": [
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id3.1"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "terminology": {
+                "original_language": "en",
+                "concept_code": "id1.1",
+                "term_definitions": {
+                    "en": {
+                        "id1.1": {
+                            "text": "Medication orders summary",
+                            "description": "Summary of medication orders"
+                        },
+                        "id3.1": {
+                            "text": "Description",
+                            "description": "Summary of medications description"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "_type": "Template_overlay",
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-7.v1.0.0",
+            "parent_archetype_id": "openEHR-EHR-EVALUATION.clinical_synopsis.v1",
+            "definition": {
+                "rm_type_name": "EVALUATION",
+                "node_id": "id1.1",
+                "attributes": [
+                    {
+                        "rm_attribute_name": "items",
+                        "is_multiple": true,
+                        "differential_path": "/data[id2]",
+                        "children": [
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id3.1"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "terminology": {
+                "original_language": "en",
+                "concept_code": "id1.1",
+                "term_definitions": {
+                    "en": {
+                        "id1.1": {
+                            "text": "Procedures summary",
+                            "description": "Summary of procedures"
+                        },
+                        "id3.1": {
+                            "text": "Description",
+                            "description": "Summary of procedures undertaken during episode of care"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "_type": "Template_overlay",
+            "archetype_id": "openEHR-EHR-EVALUATION.t_clinical_info_ds_sf-8.v1.0.0",
+            "parent_archetype_id": "openEHR-EHR-EVALUATION.medical_certificate.v1",
+            "definition": {
+                "rm_type_name": "EVALUATION",
+                "node_id": "id1.1",
+                "attributes": [
+                    {
+                        "rm_attribute_name": "items",
+                        "is_multiple": true,
+                        "differential_path": "/data[id2]",
+                        "children": [
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id3",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id4",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            },
+                            {
+                                "_type": "C_complex_object",
+                                "rm_type_name": "ELEMENT",
+                                "node_id": "id5",
+                                "occurrences": {
+                                    "lower": 0,
+                                    "upper": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "terminology": {
+                "original_language": "en",
+                "concept_code": "id1.1",
+                "term_definitions": {
+                    "en": {
+                        "id1.1": {
+                            "text": "Simple Discharge Summary Medical Certificate",
+                            "description": "Only used for Discharge Summary Document"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

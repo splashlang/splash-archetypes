@@ -1,0 +1,79 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "src",
+    "created": "2026-11-06T20:07:43.674410243Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-OBSERVATION.new_VSONCO-redef_open.v1.0.0",
+        "parent_archetype_id": "openEHR-EHR-OBSERVATION.test_new_VSONCO_parent.v1.0.0",
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Thomas Beale",
+                "organisation": "openEHR International",
+                "date": "08/11/2022"
+            },
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Redefine a multiple occurrences node",
+                    "use": "Regression testing"
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "OBSERVATION",
+            "node_id": "id1.1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "items",
+                    "is_multiple": true,
+                    "differential_path": "/data/events[id3]/data",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ELEMENT",
+                            "node_id": "id4.1",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "value",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id11"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1.1",
+            "term_definitions": {
+                "en": {
+                    "id1.1": {
+                        "text": "top-level archetype",
+                        "description": "top level test archetype for specialisation lineage"
+                    },
+                    "id4.1": {
+                        "text": "Coded text field",
+                        "description": "coded text field"
+                    }
+                }
+            }
+        }
+    }
+}

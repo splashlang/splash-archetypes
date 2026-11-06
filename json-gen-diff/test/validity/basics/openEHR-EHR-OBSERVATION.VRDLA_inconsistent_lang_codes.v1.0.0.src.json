@@ -1,0 +1,111 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "src",
+    "created": "2026-11-06T20:07:43.666051079Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-OBSERVATION.VRDLA_inconsistent_lang_codes.v1.0.0",
+        "adl_version": "2.0.6",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Sam Heard"
+            },
+            "other_details": {
+                "regression": "VRDLA"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Test VDRLA validity check, triggered when language code in a ODIN block (e.g. this 'details' block) does not match the code used in the 'language' attribute within the block; see the following block where 'zh-cn' does not match 'zh'.",
+                    "use": "Regression testing"
+                },
+                "zh-cn": {
+                    "language": "zh-cn",
+                    "purpose": "描述系统性血压测量的结果和协议",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "血压"
+                    ]
+                }
+            }
+        },
+        "translations": {
+            "zh-cn": {
+                "language": "zh-cn",
+                "author": {
+                    "name": "Rong Chen",
+                    "organisation": "A-code"
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "OBSERVATION",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "data",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "HISTORY",
+                            "node_id": "id2",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "events",
+                                    "is_multiple": true,
+                                    "cardinality": {
+                                        "interval": {
+                                            "lower": 1
+                                        },
+                                        "is_ordered": false
+                                    },
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "EVENT",
+                                            "node_id": "id7",
+                                            "occurrences": {
+                                                "lower": 0
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "Blood pressure",
+                        "description": "Blood pressure"
+                    },
+                    "id7": {
+                        "text": "any event",
+                        "description": "any event"
+                    }
+                },
+                "zh-cn": {
+                    "id1": {
+                        "text": "血压测量",
+                        "description": "血压测量"
+                    },
+                    "id7": {
+                        "text": "任意事件",
+                        "description": "任意事件"
+                    }
+                }
+            }
+        }
+    }
+}
