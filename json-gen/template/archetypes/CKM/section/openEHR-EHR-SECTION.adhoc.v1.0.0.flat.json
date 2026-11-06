@@ -1,0 +1,47 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-06T14:50:29.508028236Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-SECTION.adhoc.v1.0.0",
+        "is_generated": true,
+        "adl_version": "2.3.0",
+        "rm_release": "1.1.0",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Dr Ian McNicoll",
+                "organisation": "Ocean Informatics, United Kingdom",
+                "email": "ian.mcnicoll@oceaninformatics.com",
+                "date": "17/03/2010"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "A generic section header which is normally renamed locally at template level.",
+                    "use": "To construct and name a section within a local template."
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "SECTION",
+            "node_id": "id1"
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "Adhoc heading",
+                        "description": "A generic section header."
+                    }
+                }
+            }
+        }
+    }
+}

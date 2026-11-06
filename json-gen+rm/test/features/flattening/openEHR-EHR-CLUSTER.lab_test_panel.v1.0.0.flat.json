@@ -1,0 +1,268 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-06T14:50:29.598852992Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-CLUSTER.lab_test_panel.v1.0.0",
+        "is_generated": true,
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "published",
+            "original_author": {
+                "name": "Ian McNicoll",
+                "email": "ian@freshehr.com",
+                "organisation": "freshEHR Clinical Informatics, UK",
+                "date": "2014-04-18"
+            },
+            "custodian_namespace": "org.openehr",
+            "custodian_organisation": "openEHR Foundation <http://www.openEHR.org>",
+            "copyright": "Copyright © 2014 openEHR Foundation <http://www.openEHR.org>",
+            "licence": "Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Parent for flattening tests on lab-style archetypes",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "ADL",
+                        "flattening",
+                        "test"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "CLUSTER",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "items",
+                    "is_multiple": true,
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "CLUSTER",
+                            "node_id": "id3",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "items",
+                                    "is_multiple": true,
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id2",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            }
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id4",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_TEXT",
+                                                            "node_id": "id15"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id5",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_TEXT",
+                                                            "node_id": "id16"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id6",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_CODED_TEXT",
+                                                            "node_id": "id17",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "defining_code",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_terminology_code",
+                                                                            "constraint": "ac1",
+                                                                            "value_set_terms": [
+                                                                                "at8",
+                                                                                "at9",
+                                                                                "at10",
+                                                                                "at11",
+                                                                                "at12",
+                                                                                "at13"
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id7",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_DATE_TIME",
+                                                            "node_id": "id18"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "Archetype_slot",
+                            "rm_type_name": "CLUSTER",
+                            "node_id": "id14",
+                            "includes": [
+                                {
+                                    "source_text": "archetype_id/value matches {/.*/}",
+                                    "tag": "archetype_id/value"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "Laboratory test panel",
+                        "description": "Laboratory test results as a single value or in a panel/battery format common to clinical pathology testing."
+                    },
+                    "id2": {
+                        "text": "Result Value",
+                        "description": "Actual value of the result."
+                    },
+                    "id3": {
+                        "text": "Laboratory Result",
+                        "description": "Specific detailed result, including both the value of the result item, and additional information that may be useful for clinical interpretation."
+                    },
+                    "id4": {
+                        "text": "Result Comment",
+                        "description": "Comment about the Result."
+                    },
+                    "id5": {
+                        "text": "Reference Range Guidance",
+                        "description": "Additional advice on the applicability of the reference range."
+                    },
+                    "id6": {
+                        "text": "Result Value Status",
+                        "description": "The status of the result value."
+                    },
+                    "id7": {
+                        "text": "DateTime Result Value Status",
+                        "description": "The date and/or time that the entire result was issued for the recorded ‘Result value status’."
+                    },
+                    "at8": {
+                        "text": "Registered",
+                        "description": "No result yet available."
+                    },
+                    "at9": {
+                        "text": "Interim",
+                        "description": "This is an initial or interim result: data may be missing or verification not been performed."
+                    },
+                    "at10": {
+                        "text": "Final",
+                        "description": "The result is complete and verified by the responsible pathologist."
+                    },
+                    "at11": {
+                        "text": "Amended",
+                        "description": "The result has been modified subsequent to being Final, and is complete and verified by the responsible pathologist."
+                    },
+                    "at12": {
+                        "text": "Cancelled/Aborted",
+                        "description": "The result is unavailable because the test was not started or not completed."
+                    },
+                    "at13": {
+                        "text": "Not requested",
+                        "description": "The result is not available as the test was not requested."
+                    },
+                    "id14": {
+                        "text": "Other Detail",
+                        "description": "Further details including the specimen for the panel or a further nested panel."
+                    },
+                    "ac1": {
+                        "text": "Result Value Status (synthesised)",
+                        "description": "The status of the result value. (synthesised)"
+                    }
+                }
+            },
+            "value_sets": {
+                "ac1": {
+                    "id": "ac1",
+                    "members": [
+                        "at8",
+                        "at9",
+                        "at10",
+                        "at11",
+                        "at12",
+                        "at13"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,567 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-06T14:50:29.598646328Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-CLUSTER.dimensions-wound_area.v2.0.0",
+        "parent_archetype_id": "openEHR-EHR-CLUSTER.dimensions.v1",
+        "is_generated": true,
+        "adl_version": "2.0.6",
+        "rm_release": "1.0.3",
+        "other_metadata": {
+            "generated": "true"
+        },
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "unknown"
+            },
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "de": {
+                    "language": "de",
+                    "purpose": "Zur Beschreibung der Ausmaße eines betrachteten Teils.",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "Größe",
+                        "Volumen"
+                    ]
+                },
+                "en": {
+                    "language": "en",
+                    "purpose": "To describe the dimensions of a part examined or viewed",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "size",
+                        "volume"
+                    ]
+                }
+            }
+        },
+        "translations": {
+            "de": {
+                "language": "de",
+                "author": {
+                    "name": "Jasmin Buck, Sebastian Garde",
+                    "organisation": "University of Heidelberg, Central Queensland University"
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "CLUSTER",
+            "node_id": "id1.1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "items",
+                    "is_multiple": true,
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ELEMENT",
+                            "node_id": "id2",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "value",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_QUANTITY",
+                                            "node_id": "id8",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "property",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at1"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "rm_attribute_name": "units",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_string",
+                                                            "constraint": [
+                                                                "µm",
+                                                                "mm",
+                                                                "cm",
+                                                                "m",
+                                                                "ft",
+                                                                "in",
+                                                                "yd"
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ELEMENT",
+                            "node_id": "id3",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "value",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_QUANTITY",
+                                            "node_id": "id9",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "property",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at1"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "rm_attribute_name": "units",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_string",
+                                                            "constraint": [
+                                                                "µm",
+                                                                "mm",
+                                                                "cm",
+                                                                "m",
+                                                                "ft",
+                                                                "in",
+                                                                "yd"
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ELEMENT",
+                            "node_id": "id4",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "value",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_QUANTITY",
+                                            "node_id": "id10",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "property",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at1"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "rm_attribute_name": "units",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_string",
+                                                            "constraint": [
+                                                                "µm",
+                                                                "mm",
+                                                                "cm",
+                                                                "m",
+                                                                "ft",
+                                                                "in",
+                                                                "yd"
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ELEMENT",
+                            "node_id": "id5",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "value",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_QUANTITY",
+                                            "node_id": "id11",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "property",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at1"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "rm_attribute_name": "units",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_string",
+                                                            "constraint": [
+                                                                "µm",
+                                                                "mm",
+                                                                "cm",
+                                                                "m",
+                                                                "in",
+                                                                "ft"
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ELEMENT",
+                            "node_id": "id6",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "value",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_QUANTITY",
+                                            "node_id": "id12",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "property",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at2"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "rm_attribute_name": "units",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_string",
+                                                            "constraint": [
+                                                                "mm2",
+                                                                "cm2"
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ELEMENT",
+                            "node_id": "id7",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "value",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_QUANTITY",
+                                            "node_id": "id13",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "property",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at3"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "rm_attribute_name": "units",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_string",
+                                                            "constraint": [
+                                                                "mm3",
+                                                                "ml",
+                                                                "in3",
+                                                                "cc",
+                                                                "ft3"
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ELEMENT",
+                            "node_id": "id0.7",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "value",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id0.8",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "ac0.1",
+                                                            "value_set_terms": [
+                                                                "at0.8",
+                                                                "at0.9",
+                                                                "at0.10",
+                                                                "at0.11",
+                                                                "at0.12"
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1.1",
+            "term_definitions": {
+                "de": {
+                    "id1": {
+                        "text": "Ausmaße",
+                        "description": "Die Ausmaße eines betrachteten Teils."
+                    },
+                    "id2": {
+                        "text": "Umfang",
+                        "description": "Der Umfang des betrachteten Teils"
+                    },
+                    "id3": {
+                        "text": "Länge",
+                        "description": "Die Länge des betrachteten Teils (longidudinale Körperachse)."
+                    },
+                    "id4": {
+                        "text": "Breite",
+                        "description": "Die Breite oder Weite (transversale Körperachse)."
+                    },
+                    "id5": {
+                        "text": "Tiefe",
+                        "description": "Die Tiefe des betrachteten Teils (dorsal-ventrale Körperachse)."
+                    },
+                    "id6": {
+                        "text": "Fläche",
+                        "description": "Die Fläche des betrachteten Teils."
+                    },
+                    "id7": {
+                        "text": "Volumen",
+                        "description": "Das Volumen des betrachteten Teils."
+                    },
+                    "at1": {
+                        "text": "*Length (en)",
+                        "description": "*Length (en)"
+                    },
+                    "at2": {
+                        "text": "*Area (en)",
+                        "description": "*Area (en)"
+                    },
+                    "at3": {
+                        "text": "*Volume (en)",
+                        "description": "*Volume (en)"
+                    },
+                    "at0.10": {
+                        "text": "*manual tracing and manual square counting(en)",
+                        "description": "*wound area has been approximated by counting squares on a tracing foil(en)"
+                    },
+                    "at0.11": {
+                        "text": "*digital tracing based on digital photo(en)",
+                        "description": "*wound area has been approximated by a digital tracing based on a digital photo(en)"
+                    },
+                    "at0.12": {
+                        "text": "*digital tracing based on (scanned) manual trace(en)",
+                        "description": "*wound area has been approximated by digitally tracing of a scanned manual tracing foil(en)"
+                    },
+                    "id0.7": {
+                        "text": "*Way of measurement(en)",
+                        "description": "*The way of how area measure has been determined(en)"
+                    },
+                    "at0.8": {
+                        "text": "*estimated(en)",
+                        "description": "*wound area has been estimated by eye(en)"
+                    },
+                    "at0.9": {
+                        "text": "*approximated using greatest length times greatest width(en)",
+                        "description": "*wound area approximation by multiplying greatest length (head to toe) with greatest width (side to side)(en)"
+                    },
+                    "id1.1": {
+                        "text": "*Area of wound(en)",
+                        "description": "*The physical dimensions of a part examined!(en)"
+                    },
+                    "ac0.1": {
+                        "text": "*Way of measurement(en) (synthesised)",
+                        "description": "*The way of how area measure has been determined(en) (synthesised)"
+                    }
+                },
+                "en": {
+                    "id1": {
+                        "text": "Dimensions",
+                        "description": "The physical dimensions of a part examined."
+                    },
+                    "id2": {
+                        "text": "Circumference",
+                        "description": "The circumference of the part examined."
+                    },
+                    "id3": {
+                        "text": "Length",
+                        "description": "The length of the part examined (longitudinal anatomical axis)."
+                    },
+                    "id4": {
+                        "text": "Breadth",
+                        "description": "The width or breadth (transverse anatomical axis)."
+                    },
+                    "id5": {
+                        "text": "Depth",
+                        "description": "The depth of the part examined (dorso-ventral anatomical axis)."
+                    },
+                    "id6": {
+                        "text": "Area",
+                        "description": "The area of the part examined."
+                    },
+                    "id7": {
+                        "text": "Volume",
+                        "description": "The volume of the part examined."
+                    },
+                    "at1": {
+                        "text": "Length",
+                        "description": "Length"
+                    },
+                    "at2": {
+                        "text": "Area",
+                        "description": "Area"
+                    },
+                    "at3": {
+                        "text": "Volume",
+                        "description": "Volume"
+                    },
+                    "at0.10": {
+                        "text": "manual tracing and manual square counting",
+                        "description": "wound area has been approximated by counting squares on a tracing foil"
+                    },
+                    "at0.11": {
+                        "text": "digital tracing based on digital photo",
+                        "description": "wound area has been approximated by a digital tracing based on a digital photo"
+                    },
+                    "at0.12": {
+                        "text": "digital tracing based on (scanned) manual trace",
+                        "description": "wound area has been approximated by digitally tracing of a scanned manual tracing foil"
+                    },
+                    "id0.7": {
+                        "text": "Way of measurement",
+                        "description": "The way of how area measure has been determined"
+                    },
+                    "at0.8": {
+                        "text": "estimated",
+                        "description": "wound area has been estimated by eye"
+                    },
+                    "at0.9": {
+                        "text": "approximated using greatest length times greatest width",
+                        "description": "wound area approximation by multiplying greatest length (head to toe) with greatest width (side to side)"
+                    },
+                    "id1.1": {
+                        "text": "Area of wound",
+                        "description": "The physical dimensions of a part examined!"
+                    },
+                    "ac0.1": {
+                        "text": "Way of measurement (synthesised)",
+                        "description": "The way of how area measure has been determined (synthesised)"
+                    }
+                }
+            },
+            "term_bindings": {
+                "openehr": {
+                    "at1": "http://openehr.org/id/122",
+                    "at2": "http://openehr.org/id/335",
+                    "at3": "http://openehr.org/id/129"
+                }
+            },
+            "value_sets": {
+                "ac0.1": {
+                    "id": "ac0.1",
+                    "members": [
+                        "at0.8",
+                        "at0.9",
+                        "at0.10",
+                        "at0.11",
+                        "at0.12"
+                    ]
+                }
+            }
+        }
+    }
+}

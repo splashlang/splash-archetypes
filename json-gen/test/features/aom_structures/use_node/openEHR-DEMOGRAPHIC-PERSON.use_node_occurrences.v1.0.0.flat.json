@@ -1,0 +1,176 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-06T14:50:29.428832476Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-DEMOGRAPHIC-PERSON.use_node_occurrences.v1.0.0",
+        "is_generated": true,
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "published",
+            "original_author": {
+                "name": "Thomas Beale",
+                "email": "thomas.beale@openEHR.org",
+                "organisation": "openEHR Foundation <http://www.openEHR.org>",
+                "date": "2004-06-01"
+            },
+            "custodian_namespace": "org.openehr",
+            "custodian_organisation": "openEHR Foundation <http://www.openEHR.org>",
+            "copyright": "Copyright © 2004 openEHR Foundation <http://www.openEHR.org>",
+            "licence": "Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Example showing override of occurrences at source end of use_node. With no occurrences stated on a use_node node, the occurrences at target of the reference are used. This can be overridden as in this example with an occurrences at the source end.",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "ADL",
+                        "test",
+                        "use_node",
+                        "occurrences"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "PERSON",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "contacts",
+                    "is_multiple": true,
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "CONTACT",
+                            "node_id": "id6",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "addresses",
+                                    "is_multiple": true,
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ADDRESS",
+                                            "node_id": "id7",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            }
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ADDRESS",
+                                            "node_id": "id8",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 2
+                                            }
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ADDRESS",
+                                            "node_id": "id9"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "CONTACT",
+                            "node_id": "id10",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "addresses",
+                                    "is_multiple": true,
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ADDRESS",
+                                            "node_id": "id7",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            }
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ADDRESS",
+                                            "node_id": "id8",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 2
+                                            }
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ADDRESS",
+                                            "node_id": "id9",
+                                            "occurrences": {
+                                                "lower": 1,
+                                                "upper": 3
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "person demographics",
+                        "description": "demographic person details"
+                    },
+                    "id6": {
+                        "text": "home contact",
+                        "description": "person's home contact details"
+                    },
+                    "id7": {
+                        "text": "home phone number",
+                        "description": "person's home phone number"
+                    },
+                    "id8": {
+                        "text": "home fax number",
+                        "description": "person's home fax number"
+                    },
+                    "id9": {
+                        "text": "home email address",
+                        "description": "person's home email address"
+                    },
+                    "id10": {
+                        "text": "work contact",
+                        "description": "person's home contact details"
+                    },
+                    "id11": {
+                        "text": "work fax number",
+                        "description": "person's work fax number"
+                    },
+                    "id12": {
+                        "text": "work email address",
+                        "description": "person's work email address"
+                    },
+                    "id13": {
+                        "text": "work contact",
+                        "description": "person's work contact details"
+                    }
+                }
+            }
+        }
+    }
+}

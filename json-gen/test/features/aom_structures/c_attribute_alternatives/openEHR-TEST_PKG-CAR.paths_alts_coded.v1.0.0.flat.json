@@ -1,0 +1,131 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-06T14:50:29.446875586Z",
+    "rm_id": "org.openehr:test",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-TEST_PKG-CAR.paths_alts_coded.v1.0.0",
+        "is_generated": true,
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "published",
+            "original_author": {
+                "name": "Thomas Beale",
+                "email": "thomas.beale@openEHR.org",
+                "organisation": "openEHR Foundation <http://www.openEHR.org>",
+                "date": "2006-06-22"
+            },
+            "custodian_namespace": "org.openehr",
+            "custodian_organisation": "openEHR Foundation <http://www.openEHR.org>",
+            "copyright": "Copyright © 2006 openEHR Foundation <http://www.openEHR.org>",
+            "licence": "Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Test paths in archetypes. This archetype contains a single-valed attribute 'wheels', with multiple identified alternatives.",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "ADL",
+                        "test"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "CAR",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "body",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "CAR_BODY",
+                            "node_id": "id2",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "description",
+                                    "children": [
+                                        {
+                                            "_type": "C_string",
+                                            "constraint": [
+                                                "hatchback body"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "model",
+                                    "children": [
+                                        {
+                                            "_type": "C_string",
+                                            "constraint": [
+                                                "xxxx"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "CAR_BODY",
+                            "node_id": "id3",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "description",
+                                    "children": [
+                                        {
+                                            "_type": "C_string",
+                                            "constraint": [
+                                                "coupe body"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "model",
+                                    "children": [
+                                        {
+                                            "_type": "C_string",
+                                            "constraint": [
+                                                "xxxx"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "car",
+                        "description": "car"
+                    },
+                    "id2": {
+                        "text": "hatchback body",
+                        "description": "hatchback body"
+                    },
+                    "id3": {
+                        "text": "coupe body",
+                        "description": "coupe body"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,237 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-06T14:50:29.438880161Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-OBSERVATION.ordinal_tuple.v1.0.0",
+        "is_generated": true,
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "published",
+            "original_author": {
+                "name": "Thomas Beale",
+                "email": "thomas.beale@openEHR.org",
+                "organisation": "openEHR Foundation <http://www.openEHR.org>",
+                "date": "2013-08-14"
+            },
+            "custodian_namespace": "org.openehr",
+            "custodian_organisation": "openEHR Foundation <http://www.openEHR.org>",
+            "copyright": "Copyright © 2013 openEHR Foundation <http://www.openEHR.org>",
+            "licence": "Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Example of a tuple used to model an 'ordinal' reference model concept. The latter is one in which there is logically a 2-column list of {value, symbol} pairs (the value is typically an Integer). The tuple constraint provides a nice way to model this, by limiting the possible pairs (mostly meaningless) to just those that make sense in the domain.",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "ADL",
+                        "test",
+                        "tuples",
+                        "ordinals"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "OBSERVATION",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "data",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "HISTORY",
+                            "node_id": "id3",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "events",
+                                    "is_multiple": true,
+                                    "cardinality": {
+                                        "interval": {
+                                            "lower": 1
+                                        },
+                                        "is_ordered": false
+                                    },
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "POINT_EVENT",
+                                            "node_id": "id4",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "data",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ITEM_LIST",
+                                                            "node_id": "id2",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "items",
+                                                                    "is_multiple": true,
+                                                                    "cardinality": {
+                                                                        "interval": {
+                                                                            "lower": 1,
+                                                                            "upper": 6
+                                                                        }
+                                                                    },
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id10",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_ORDINAL",
+                                                                                            "node_id": "id11",
+                                                                                            "attributes": [
+                                                                                                {
+                                                                                                    "rm_attribute_name": "value",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "_type": "C_integer",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": 0,
+                                                                                                                    "upper": 0
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_integer",
+                                                                                                            "node_id": "id99992",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": 1,
+                                                                                                                    "upper": 1
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_integer",
+                                                                                                            "node_id": "id99993",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": 2,
+                                                                                                                    "upper": 2
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "rm_attribute_name": "symbol",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "constraint": "at11"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "node_id": "id99992",
+                                                                                                            "constraint": "at12"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "node_id": "id99993",
+                                                                                                            "constraint": "at13"
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ],
+                                                                                            "attribute_tuples": [
+                                                                                                [
+                                                                                                    "value",
+                                                                                                    "symbol"
+                                                                                                ]
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "Apgar score",
+                        "description": "Clinical score derived from assessment of respiratory effort, heart rate, reflex irritability, muscle tone and skin colour."
+                    },
+                    "id4": {
+                        "text": "1 minute",
+                        "description": "Apgar score 1 minute after birth."
+                    },
+                    "id10": {
+                        "text": "Respiratory effort",
+                        "description": "Observation of the infant's respiratory effort."
+                    },
+                    "at11": {
+                        "text": "Absent",
+                        "description": "No effort to breath."
+                    },
+                    "at12": {
+                        "text": "Weak or irregular",
+                        "description": "Some effort to breath, moving chest."
+                    },
+                    "at13": {
+                        "text": "Normal",
+                        "description": "Breathing normally or crying."
+                    },
+                    "ac1": {
+                        "text": "Respiratory effort",
+                        "description": "Observation of the infant's respiratory effort."
+                    }
+                }
+            },
+            "value_sets": {
+                "ac1": {
+                    "id": "ac1",
+                    "members": [
+                        "at11",
+                        "at12",
+                        "at13"
+                    ]
+                }
+            }
+        }
+    }
+}

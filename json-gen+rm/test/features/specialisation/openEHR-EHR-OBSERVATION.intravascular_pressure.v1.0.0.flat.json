@@ -1,0 +1,1152 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-06T14:50:29.592107545Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-OBSERVATION.intravascular_pressure.v1.0.0",
+        "is_generated": true,
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "other_metadata": {
+            "generated": "true"
+        },
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Sam Heard",
+                "organisation": "Ocean Informatics",
+                "email": "sam.heard@oceaninformatics.com",
+                "date": "28/06/2006"
+            },
+            "other_contributors": [
+                "Ian McNicoll, Ocean Informatics, UK"
+            ],
+            "copyright": "© openEHR Foundation",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Intravascular venous, arterial, pulmonary or cardiac pressure measurement. Commonly specialised for specific common pressures such as JVP and CCP.",
+                    "use": "Regression testing",
+                    "misuse": "Not to be used for systemic blood pressure. Use 'observation.blood_pressure' for this.",
+                    "keywords": [
+                        "pressure",
+                        "intravascular"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "OBSERVATION",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "data",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "HISTORY",
+                            "node_id": "id2",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "events",
+                                    "is_multiple": true,
+                                    "cardinality": {
+                                        "interval": {
+                                            "lower": 1
+                                        },
+                                        "is_ordered": false
+                                    },
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "EVENT",
+                                            "node_id": "id3",
+                                            "occurrences": {
+                                                "lower": 0
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "data",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ITEM_TREE",
+                                                            "node_id": "id4",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "items",
+                                                                    "is_multiple": true,
+                                                                    "cardinality": {
+                                                                        "interval": {
+                                                                            "lower": 1,
+                                                                            "upper": 1
+                                                                        }
+                                                                    },
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "Archetype_slot",
+                                                                            "rm_type_name": "CLUSTER",
+                                                                            "node_id": "id37",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "includes": [
+                                                                                {
+                                                                                    "source_text": "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.anatomical_location(-a-zA-Z0-9_]+)*\\.v1/}",
+                                                                                    "tag": "archetype_id/value"
+                                                                                }
+                                                                            ],
+                                                                            "excludes": [
+                                                                                {
+                                                                                    "source_text": "archetype_id/value matches {/.*/}",
+                                                                                    "tag": "archetype_id/value"
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id6",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_QUANTITY",
+                                                                                            "node_id": "id42",
+                                                                                            "attributes": [
+                                                                                                {
+                                                                                                    "rm_attribute_name": "property",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "constraint": "at29"
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "rm_attribute_name": "magnitude",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "_type": "C_real",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": "0.0"
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_real",
+                                                                                                            "node_id": "id99992",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": "0.0"
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "rm_attribute_name": "units",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "_type": "C_string",
+                                                                                                            "constraint": [
+                                                                                                                "mm[Hg]"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_string",
+                                                                                                            "node_id": "id99992",
+                                                                                                            "constraint": [
+                                                                                                                "cm[H20]"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "rm_attribute_name": "precision",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "_type": "C_integer",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": 2,
+                                                                                                                    "upper": 2
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_integer",
+                                                                                                            "node_id": "id99992",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": 2,
+                                                                                                                    "upper": 2
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ],
+                                                                                            "attribute_tuples": [
+                                                                                                [
+                                                                                                    "magnitude",
+                                                                                                    "units",
+                                                                                                    "precision"
+                                                                                                ]
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id16",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_ORDINAL",
+                                                                                            "node_id": "id43",
+                                                                                            "attributes": [
+                                                                                                {
+                                                                                                    "rm_attribute_name": "value",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "_type": "C_integer",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": 0,
+                                                                                                                    "upper": 0
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_integer",
+                                                                                                            "node_id": "id99992",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": 2,
+                                                                                                                    "upper": 2
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_integer",
+                                                                                                            "node_id": "id99993",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": 4,
+                                                                                                                    "upper": 4
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_integer",
+                                                                                                            "node_id": "id99994",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": 6,
+                                                                                                                    "upper": 6
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_integer",
+                                                                                                            "node_id": "id99995",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": 8,
+                                                                                                                    "upper": 8
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "rm_attribute_name": "symbol",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "constraint": "at17"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "node_id": "id99992",
+                                                                                                            "constraint": "at18"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "node_id": "id99993",
+                                                                                                            "constraint": "at19"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "node_id": "id99994",
+                                                                                                            "constraint": "at20"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "node_id": "id99995",
+                                                                                                            "constraint": "at21"
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ],
+                                                                                            "attribute_tuples": [
+                                                                                                [
+                                                                                                    "value",
+                                                                                                    "symbol"
+                                                                                                ]
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id8",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_CODED_TEXT",
+                                                                                            "node_id": "id44",
+                                                                                            "attributes": [
+                                                                                                {
+                                                                                                    "rm_attribute_name": "defining_code",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "constraint": "ac1",
+                                                                                                            "value_set_terms": [
+                                                                                                                "at9",
+                                                                                                                "at10",
+                                                                                                                "at24",
+                                                                                                                "at25",
+                                                                                                                "at28"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id35",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_MULTIMEDIA",
+                                                                                            "node_id": "id45"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_type": "Archetype_slot",
+                                                                            "rm_type_name": "CLUSTER",
+                                                                            "node_id": "id34",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "includes": [
+                                                                                {
+                                                                                    "source_text": "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.waveform(-a-zA-Z0-9_]+)*\\.v1/}",
+                                                                                    "tag": "archetype_id/value"
+                                                                                }
+                                                                            ],
+                                                                            "excludes": [
+                                                                                {
+                                                                                    "source_text": "archetype_id/value matches {/.*/}",
+                                                                                    "tag": "archetype_id/value"
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id36",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_TEXT",
+                                                                                            "node_id": "id46"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "rm_attribute_name": "state",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ITEM_TREE",
+                                                            "node_id": "id39",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "items",
+                                                                    "is_multiple": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id40",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_TEXT",
+                                                                                            "node_id": "id47"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id41",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_TEXT",
+                                                                                            "node_id": "id48"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "INTERVAL_EVENT",
+                                            "node_id": "id5",
+                                            "occurrences": {
+                                                "lower": 0
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "math_function",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_CODED_TEXT",
+                                                            "node_id": "id49",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "defining_code",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_terminology_code",
+                                                                            "constraint": "at30"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "rm_attribute_name": "data",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ITEM_TREE",
+                                                            "node_id": "id4",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "items",
+                                                                    "is_multiple": true,
+                                                                    "cardinality": {
+                                                                        "interval": {
+                                                                            "lower": 1,
+                                                                            "upper": 1
+                                                                        }
+                                                                    },
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "Archetype_slot",
+                                                                            "rm_type_name": "CLUSTER",
+                                                                            "node_id": "id37",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "includes": [
+                                                                                {
+                                                                                    "source_text": "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.anatomical_location(-a-zA-Z0-9_]+)*\\.v1/}",
+                                                                                    "tag": "archetype_id/value"
+                                                                                }
+                                                                            ],
+                                                                            "excludes": [
+                                                                                {
+                                                                                    "source_text": "archetype_id/value matches {/.*/}",
+                                                                                    "tag": "archetype_id/value"
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id6",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_QUANTITY",
+                                                                                            "node_id": "id42",
+                                                                                            "attributes": [
+                                                                                                {
+                                                                                                    "rm_attribute_name": "property",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "constraint": "at29"
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "rm_attribute_name": "magnitude",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "_type": "C_real",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": "0.0"
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_real",
+                                                                                                            "node_id": "id99992",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": "0.0"
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "rm_attribute_name": "units",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "_type": "C_string",
+                                                                                                            "constraint": [
+                                                                                                                "mm[Hg]"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_string",
+                                                                                                            "node_id": "id99992",
+                                                                                                            "constraint": [
+                                                                                                                "cm[H20]"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "rm_attribute_name": "precision",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "_type": "C_integer",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": 2,
+                                                                                                                    "upper": 2
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_integer",
+                                                                                                            "node_id": "id99992",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": 2,
+                                                                                                                    "upper": 2
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ],
+                                                                                            "attribute_tuples": [
+                                                                                                [
+                                                                                                    "magnitude",
+                                                                                                    "units",
+                                                                                                    "precision"
+                                                                                                ]
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id16",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_ORDINAL",
+                                                                                            "node_id": "id43",
+                                                                                            "attributes": [
+                                                                                                {
+                                                                                                    "rm_attribute_name": "value",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "_type": "C_integer",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": 0,
+                                                                                                                    "upper": 0
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_integer",
+                                                                                                            "node_id": "id99992",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": 2,
+                                                                                                                    "upper": 2
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_integer",
+                                                                                                            "node_id": "id99993",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": 4,
+                                                                                                                    "upper": 4
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_integer",
+                                                                                                            "node_id": "id99994",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": 6,
+                                                                                                                    "upper": 6
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_integer",
+                                                                                                            "node_id": "id99995",
+                                                                                                            "constraint": [
+                                                                                                                {
+                                                                                                                    "lower": 8,
+                                                                                                                    "upper": 8
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "rm_attribute_name": "symbol",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "constraint": "at17"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "node_id": "id99992",
+                                                                                                            "constraint": "at18"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "node_id": "id99993",
+                                                                                                            "constraint": "at19"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "node_id": "id99994",
+                                                                                                            "constraint": "at20"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "node_id": "id99995",
+                                                                                                            "constraint": "at21"
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ],
+                                                                                            "attribute_tuples": [
+                                                                                                [
+                                                                                                    "value",
+                                                                                                    "symbol"
+                                                                                                ]
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id8",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_CODED_TEXT",
+                                                                                            "node_id": "id44",
+                                                                                            "attributes": [
+                                                                                                {
+                                                                                                    "rm_attribute_name": "defining_code",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "_type": "C_terminology_code",
+                                                                                                            "constraint": "ac1",
+                                                                                                            "value_set_terms": [
+                                                                                                                "at9",
+                                                                                                                "at10",
+                                                                                                                "at24",
+                                                                                                                "at25",
+                                                                                                                "at28"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id35",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_MULTIMEDIA",
+                                                                                            "node_id": "id45"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_type": "Archetype_slot",
+                                                                            "rm_type_name": "CLUSTER",
+                                                                            "node_id": "id34",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "includes": [
+                                                                                {
+                                                                                    "source_text": "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.waveform(-a-zA-Z0-9_]+)*\\.v1/}",
+                                                                                    "tag": "archetype_id/value"
+                                                                                }
+                                                                            ],
+                                                                            "excludes": [
+                                                                                {
+                                                                                    "source_text": "archetype_id/value matches {/.*/}",
+                                                                                    "tag": "archetype_id/value"
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id36",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_TEXT",
+                                                                                            "node_id": "id46"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "rm_attribute_name": "state",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ITEM_TREE",
+                                                            "node_id": "id39",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "items",
+                                                                    "is_multiple": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id40",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_TEXT",
+                                                                                            "node_id": "id47"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id41",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_TEXT",
+                                                                                            "node_id": "id48"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "rm_attribute_name": "protocol",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ITEM_TREE",
+                            "node_id": "id22",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "items",
+                                    "is_multiple": true,
+                                    "children": [
+                                        {
+                                            "_type": "Archetype_slot",
+                                            "rm_type_name": "CLUSTER",
+                                            "node_id": "id31",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "includes": [
+                                                {
+                                                    "source_text": "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.device(-a-zA-Z0-9_]+)*\\.v1/}",
+                                                    "tag": "archetype_id/value"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "Intravascular pressure",
+                        "description": "The pressure in a specific location, blood vessel or heart cavity, at a specific phase of the heart or an average over the heart cycle."
+                    },
+                    "id3": {
+                        "text": "Any event",
+                        "description": "Generic event."
+                    },
+                    "id5": {
+                        "text": "Average over heart cycle",
+                        "description": "The average over one heart cycle."
+                    },
+                    "id6": {
+                        "text": "Pressure",
+                        "description": "The mean pressure measured."
+                    },
+                    "id8": {
+                        "text": "Phase of heart cycle",
+                        "description": "The phase of the heart cycle at the time of the measurement"
+                    },
+                    "at9": {
+                        "text": "Systolic",
+                        "description": "During contraction of the heart."
+                    },
+                    "at10": {
+                        "text": "Diastolic",
+                        "description": "During relaxation of the heart."
+                    },
+                    "id16": {
+                        "text": "Relative pressure",
+                        "description": "The pressure in relative terms."
+                    },
+                    "at17": {
+                        "text": "Markedly reduced",
+                        "description": "The pressure is much lower than normal or expected."
+                    },
+                    "at18": {
+                        "text": "Lowered",
+                        "description": "The pressure is reduced."
+                    },
+                    "at19": {
+                        "text": "Normal/expected",
+                        "description": "The pressure is normal or as expected."
+                    },
+                    "at20": {
+                        "text": "raised",
+                        "description": "The pressure is raised."
+                    },
+                    "at21": {
+                        "text": "Markedly increased",
+                        "description": "The pressure is much higher than normal or expected."
+                    },
+                    "at24": {
+                        "text": "Pre-systolic",
+                        "description": "Phase of the heart immediately prior to contraction of the heart."
+                    },
+                    "at25": {
+                        "text": "Pre-diastolic",
+                        "description": "The phase of the heart immediately prior to filling of the ventricle."
+                    },
+                    "at28": {
+                        "text": "Whole cycle",
+                        "description": "The pressure measueerd is over the whole heart cycle."
+                    },
+                    "id31": {
+                        "text": "Device",
+                        "description": "The device used to record the measurement."
+                    },
+                    "id34": {
+                        "text": "Waveform",
+                        "description": "A waveform representation of the pressure"
+                    },
+                    "id35": {
+                        "text": "Multimedia",
+                        "description": "A multimedia representation of the pressure reading, other than waveforms."
+                    },
+                    "id36": {
+                        "text": "Comment",
+                        "description": "A text comment on the reading."
+                    },
+                    "id37": {
+                        "text": "Location",
+                        "description": "The location of the pressure measurement."
+                    },
+                    "id40": {
+                        "text": "Position",
+                        "description": "Position of patient during measurement."
+                    },
+                    "id41": {
+                        "text": "Confounding factors",
+                        "description": "Other factors that may interfere with interpretation of the measurement."
+                    },
+                    "ac1": {
+                        "text": "Phase of heart cycle (synthesised)",
+                        "description": "The phase of the heart cycle at the time of the measurement (synthesised)"
+                    },
+                    "at29": {
+                        "text": "Pressure",
+                        "description": "Pressure"
+                    },
+                    "at30": {
+                        "text": "mean",
+                        "description": "mean"
+                    },
+                    "ac2": {
+                        "text": "Relative pressure",
+                        "description": "The pressure in relative terms."
+                    },
+                    "ac3": {
+                        "text": "Relative pressure (synthesised)",
+                        "description": "The pressure in relative terms. (synthesised)"
+                    }
+                }
+            },
+            "term_bindings": {
+                "openehr": {
+                    "at29": "http://openehr.org/id/125",
+                    "at30": "http://openehr.org/id/146"
+                }
+            },
+            "value_sets": {
+                "ac1": {
+                    "id": "ac1",
+                    "members": [
+                        "at9",
+                        "at10",
+                        "at24",
+                        "at25",
+                        "at28"
+                    ]
+                },
+                "ac2": {
+                    "id": "ac2",
+                    "members": [
+                        "at17",
+                        "at18",
+                        "at19",
+                        "at20",
+                        "at21"
+                    ]
+                },
+                "ac3": {
+                    "id": "ac3",
+                    "members": [
+                        "at17",
+                        "at18",
+                        "at19",
+                        "at20",
+                        "at21"
+                    ]
+                }
+            }
+        }
+    }
+}

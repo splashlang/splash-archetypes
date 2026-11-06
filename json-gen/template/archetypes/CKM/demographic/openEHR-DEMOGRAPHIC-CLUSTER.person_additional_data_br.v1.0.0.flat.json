@@ -1,0 +1,182 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-06T14:50:29.497773441Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-DEMOGRAPHIC-CLUSTER.person_additional_data_br.v1.0.0",
+        "is_generated": true,
+        "adl_version": "2.3.0",
+        "rm_release": "1.1.0",
+        "description": {
+            "original_language": "pt-br",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Sergio Miranda Freire & Rigoleta Dutra Mediano Dias",
+                "organisation": "Universidade do Estado do Rio de Janeiro - UERJ",
+                "email": "sergio@lampada.uerj.br",
+                "date": "22/05/2009"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Representation of other person's data besides those specified in ISO 22220",
+                    "use": "Used in demographic service to collect a person's data",
+                    "keywords": [
+                        "demographic service",
+                        "person's demographic data"
+                    ]
+                },
+                "pt-br": {
+                    "language": "pt-br",
+                    "purpose": "Representação de outros dados de uma pessoa além daqueles especificados pela ISO 22220",
+                    "use": "Usado em serviço demográficos para coletar os dados de uma pessoa",
+                    "keywords": [
+                        "serviço demográfico",
+                        "dados demográficos de uma pessoa"
+                    ]
+                }
+            }
+        },
+        "translations": {
+            "en": {
+                "language": "en",
+                "author": {
+                    "name": "Sergio Miranda Freire",
+                    "organisation": "Universidade do Estado do Rio de Janeiro - UERJ",
+                    "email": "sergio@lampada.uerj.br"
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "CLUSTER",
+            "node_id": "id1",
+            "occurrences": {
+                "lower": 0,
+                "upper": 1
+            },
+            "attributes": [
+                {
+                    "rm_attribute_name": "items",
+                    "is_multiple": true,
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ELEMENT",
+                            "node_id": "id2",
+                            "occurrences": {
+                                "lower": 0
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "value",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id4",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "ac2"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ELEMENT",
+                            "node_id": "id3",
+                            "occurrences": {
+                                "lower": 0
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "value",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id5",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "ac3"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "pt-br",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "Extended personal demographics",
+                        "description": "Personal demographic data extended beyond those specified by ISO 22220."
+                    },
+                    "id2": {
+                        "text": "Marital status",
+                        "description": "Marital status."
+                    },
+                    "id3": {
+                        "text": "Ethnic background",
+                        "description": "The person's ethnic background."
+                    },
+                    "ac2": {
+                        "text": "Marital status codes",
+                        "description": "Valid codes for marital status"
+                    },
+                    "ac3": {
+                        "text": "Ethnic background codes",
+                        "description": "Valid codes for ethnic background"
+                    }
+                },
+                "pt-br": {
+                    "id1": {
+                        "text": "Dados demográficos adicionais da pessoa",
+                        "description": "Dados demográficos adicionais da pessoa além daqueles especificados pela ISO 22220"
+                    },
+                    "id2": {
+                        "text": "Estado Civil",
+                        "description": "Estado Civil"
+                    },
+                    "id3": {
+                        "text": "Etnia",
+                        "description": "Grupo étnico ao qual a pessoa pertence"
+                    },
+                    "ac2": {
+                        "text": "Códigos para Estado Civil",
+                        "description": "Códigos válidos para Estado Civil"
+                    },
+                    "ac3": {
+                        "text": "Códigos para grupos étnicos",
+                        "description": "códigos válidos para grupos étnicos"
+                    }
+                }
+            }
+        }
+    }
+}

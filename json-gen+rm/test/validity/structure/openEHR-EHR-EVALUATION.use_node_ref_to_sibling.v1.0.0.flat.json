@@ -1,0 +1,124 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-06T14:50:29.587483143Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-EVALUATION.use_node_ref_to_sibling.v1.0.0",
+        "is_generated": true,
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Thomas Beale",
+                "submission": "01/05/2004",
+                "organisation": "openEHR Foundation"
+            },
+            "copyright": "copyright (c) 2010 The openEHR Foundation",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Use node ref (object proxy) whose target at-code is same as at-code of a sibling node of the proxy",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "ADL",
+                        "test"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "EVALUATION",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "data",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ITEM_TREE",
+                            "node_id": "id6",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "items",
+                                    "is_multiple": true,
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "CLUSTER",
+                                            "node_id": "id2",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "items",
+                                                    "is_multiple": true,
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id5"
+                                                        },
+                                                        {
+                                                            "_type": "Archetype_slot",
+                                                            "rm_type_name": "CLUSTER",
+                                                            "node_id": "id4",
+                                                            "includes": [
+                                                                {
+                                                                    "source_text": "archetype_id/value matches {/.*/}",
+                                                                    "tag": "archetype_id/value"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id3"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "Evaluation",
+                        "description": "Evaluation"
+                    },
+                    "id2": {
+                        "text": "cluster",
+                        "description": "cluster"
+                    },
+                    "id3": {
+                        "text": "element",
+                        "description": "element"
+                    },
+                    "id4": {
+                        "text": "element",
+                        "description": "element"
+                    },
+                    "id5": {
+                        "text": "use node element",
+                        "description": "use node element"
+                    }
+                }
+            }
+        }
+    }
+}

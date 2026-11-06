@@ -1,0 +1,312 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-06T14:50:29.584114689Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openehr-demographic-PERSON.test2.v0.0.1",
+        "is_generated": true,
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Thomas Beale <thomas.beale@openEHR.org>",
+                "organisation": "openEHR Foundation <http://www.openEHR.org>"
+            },
+            "copyright": "Copyright (c) 2012 openEHR Foundation ",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "???",
+                    "use": "Regression testing"
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "PERSON",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "contacts",
+                    "is_multiple": true,
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "CONTACT",
+                            "node_id": "id2",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "addresses",
+                                    "is_multiple": true,
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ADDRESS",
+                                            "node_id": "id7",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "name",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_CODED_TEXT",
+                                                            "node_id": "id8"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "CONTACT",
+                            "node_id": "id3",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "addresses",
+                                    "is_multiple": true,
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ADDRESS",
+                                            "node_id": "id4",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "details",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ITEM_TREE",
+                                                            "node_id": "id12",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "items",
+                                                                    "is_multiple": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id13",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_TEXT",
+                                                                                            "node_id": "id15"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id14",
+                                                                            "occurrences": {
+                                                                                "lower": 1,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_TEXT",
+                                                                                            "node_id": "id16"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id17",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_ENCAPSULATED",
+                                                                                            "node_id": "id18"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id19",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            },
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "rm_attribute_name": "value",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "_type": "C_complex_object",
+                                                                                            "rm_type_name": "DV_MULTIMEDIA",
+                                                                                            "node_id": "id20"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "Archetype_slot",
+                                            "rm_type_name": "ADDRESS",
+                                            "node_id": "id5"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "CONTACT",
+                            "node_id": "id6"
+                        }
+                    ]
+                },
+                {
+                    "rm_attribute_name": "identities",
+                    "is_multiple": true,
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "PARTY_IDENTITY",
+                            "node_id": "id9",
+                            "occurrences": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "name",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id10"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "rm_attribute_name": "name",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "DV_CODED_TEXT",
+                            "node_id": "id11"
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "-",
+                        "description": "-"
+                    },
+                    "id2": {
+                        "text": "home",
+                        "description": "-"
+                    },
+                    "id3": {
+                        "text": "work",
+                        "description": "-"
+                    },
+                    "id4": {
+                        "text": "Postal",
+                        "description": "-"
+                    },
+                    "id5": {
+                        "text": "Delivery",
+                        "description": "-"
+                    },
+                    "id6": {
+                        "text": "Holiday",
+                        "description": "-"
+                    },
+                    "id7": {
+                        "text": "Primary",
+                        "description": "-"
+                    },
+                    "id9": {
+                        "text": "Primary name",
+                        "description": "-"
+                    },
+                    "id13": {
+                        "text": "Appartment",
+                        "description": "-"
+                    },
+                    "id14": {
+                        "text": "Street",
+                        "description": "-"
+                    },
+                    "id17": {
+                        "text": "Test DV_ENCAPSULATED type",
+                        "description": "-"
+                    },
+                    "id19": {
+                        "text": "Test 2",
+                        "description": "-"
+                    }
+                }
+            }
+        }
+    }
+}

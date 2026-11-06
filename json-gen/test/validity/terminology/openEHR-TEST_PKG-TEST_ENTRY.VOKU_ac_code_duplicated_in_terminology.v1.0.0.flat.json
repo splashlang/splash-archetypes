@@ -1,0 +1,67 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-06T14:50:29.448237164Z",
+    "rm_id": "org.openehr:test",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-TEST_PKG-TEST_ENTRY.VOKU_ac_code_duplicated_in_terminology.v1.0.0",
+        "is_generated": true,
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Peter Gummer"
+            },
+            "other_details": {
+                "regression": "VOKU"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Test VOKU validity check: should be triggered when an ac-code is duplicated in the terminology.",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "ADL",
+                        "validation",
+                        "test"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "TEST_ENTRY",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "value",
+                    "children": [
+                        {
+                            "_type": "C_terminology_code",
+                            "constraint": "ac2"
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "",
+                        "description": ""
+                    },
+                    "ac2": {
+                        "text": "",
+                        "description": ""
+                    }
+                }
+            }
+        }
+    }
+}
