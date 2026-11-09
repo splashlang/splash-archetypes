@@ -1,0 +1,41 @@
+archetype (adl_version=2.3.0; rm_release=1.0.2; generated)
+	openEHR-TEST_PKG-TEST_ENTRY.WOUC_ac_code_unused.v1.0.0
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"unmanaged">
+	original_author = <
+		["name"] = <"Peter Gummer">
+	>
+	copyright = <"copyright (c) 2008 The openEHR Foundation">
+	other_details = <
+		["regression"] = <"WOUC">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Test WOUC validation warning, triggered when an ac-code in the ontology is not used anywhere in the archetype.">
+			use = <"Regression testing">
+			keywords = <"ADL", "validation", "test">
+		>
+	>
+
+definition
+	TEST_ENTRY[id1] 
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"">
+				description = <"">
+			>
+			["ac2"] = <
+				text = <"">
+				description = <"">
+			>
+		>
+	>
+

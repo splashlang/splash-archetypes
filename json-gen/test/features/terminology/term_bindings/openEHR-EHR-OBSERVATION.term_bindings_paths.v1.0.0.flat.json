@@ -1,0 +1,190 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-09T19:00:51.704859326Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-OBSERVATION.term_bindings_paths.v1.0.0",
+        "is_generated": true,
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "published",
+            "original_author": {
+                "name": "Thomas Beale",
+                "email": "thomas.beale@openEHR.org",
+                "organisation": "openEHR Foundation <http://www.openEHR.org>",
+                "date": "2012-10-21"
+            },
+            "custodian_namespace": "org.openehr",
+            "custodian_organisation": "openEHR Foundation <http://www.openEHR.org>",
+            "copyright": "Copyright © 2012 openEHR Foundation <http://www.openEHR.org>",
+            "licence": "Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Simple example of a term binding to a path rather than a code. The meaning of this is that the binding only relates to the node at the path, whereas with a code-only binding, it relates to every location where that node appears (e.g. due to use_node internal references) or that the code appears (due to static definition).",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "ADL",
+                        "test",
+                        "terminology bindings"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "OBSERVATION",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "data",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "HISTORY",
+                            "node_id": "id3",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "events",
+                                    "is_multiple": true,
+                                    "cardinality": {
+                                        "interval": {
+                                            "lower": 1
+                                        },
+                                        "is_ordered": false
+                                    },
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "POINT_EVENT",
+                                            "node_id": "id4",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "data",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ITEM_LIST",
+                                                            "node_id": "id2",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "items",
+                                                                    "is_multiple": true,
+                                                                    "cardinality": {
+                                                                        "interval": {
+                                                                            "lower": 1,
+                                                                            "upper": 6
+                                                                        }
+                                                                    },
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id5",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "POINT_EVENT",
+                                            "node_id": "id7",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "data",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ITEM_LIST",
+                                                            "node_id": "id2",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "items",
+                                                                    "is_multiple": true,
+                                                                    "cardinality": {
+                                                                        "interval": {
+                                                                            "lower": 1,
+                                                                            "upper": 6
+                                                                        }
+                                                                    },
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "ELEMENT",
+                                                                            "node_id": "id5",
+                                                                            "occurrences": {
+                                                                                "lower": 0,
+                                                                                "upper": 1
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "Apgar score",
+                        "description": "Clinical score derived from assessment of respiratory effort, heart rate, reflex irritability, muscle tone and skin colour."
+                    },
+                    "id4": {
+                        "text": "1 minute",
+                        "description": "Apgar score 1 minute after birth"
+                    },
+                    "id5": {
+                        "text": "Total",
+                        "description": "The sum of the 5 ordinal scores for each component parameter."
+                    },
+                    "id7": {
+                        "text": "5 minute",
+                        "description": "Apgar score 5 minutes after birth"
+                    }
+                }
+            },
+            "term_bindings": {
+                "LNC205": {
+                    "/data[id3]/events[id4]/data[id2]/items[id5]": "http://LNC205.org/id/9272-6"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,232 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-09T19:00:51.760726407Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-EHR-EVALUATION.annotations_1st_child.v1.0.0",
+        "parent_archetype_id": "openEHR-EHR-EVALUATION.annotations_parent.v1",
+        "is_generated": true,
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "published",
+            "original_author": {
+                "name": "Thomas Beale",
+                "email": "thomas.beale@openEHR.org",
+                "organisation": "openEHR Foundation <http://www.openEHR.org>",
+                "date": "2010-12-12"
+            },
+            "copyright": "copyright © 2010 openEHR Foundation <http://www.openEHR.org>",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "To test use of annotations in a specialised archetype, on specialised paths.",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "ADL",
+                        "test"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "EVALUATION",
+            "node_id": "id1.1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "data",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ITEM_TREE",
+                            "node_id": "id2",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "items",
+                                    "is_multiple": true,
+                                    "cardinality": {
+                                        "interval": {
+                                            "lower": 1
+                                        },
+                                        "is_ordered": false
+                                    },
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id3",
+                                            "occurrences": {
+                                                "lower": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_CODED_TEXT",
+                                                            "node_id": "id4"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id0.7",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_TEXT",
+                                                            "node_id": "id0.5"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id0.8",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_TEXT",
+                                                            "node_id": "id0.6"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id0.9",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_TEXT",
+                                                            "node_id": "id0.7"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id0.10",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_TEXT",
+                                                            "node_id": "id0.8"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1.1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "General statement of exclusions or states",
+                        "description": "A category of conditions or states which have been excluded"
+                    },
+                    "id3": {
+                        "text": "Statement",
+                        "description": "The statement about what is excluded"
+                    },
+                    "id1.1": {
+                        "text": "Exclusion statement - Adverse Reaction",
+                        "description": "Statements about Adverse Reactions that need to be positively recorded as absent or excluded."
+                    },
+                    "id0.10": {
+                        "text": "No known intolerance to",
+                        "description": "Positive statement about intolerances to substances that are explicitly known to have not been identified at the time of recording."
+                    },
+                    "id0.7": {
+                        "text": "No known adverse reaction to",
+                        "description": "Positive statement about adverse reactions to substances that are explicitly known to have not been identified at the time of recording."
+                    },
+                    "id0.8": {
+                        "text": "No known allergic reaction to",
+                        "description": "Positive statement about allergic reactions to substances that are explicitly known to have not been identified at the time of recording."
+                    },
+                    "id0.9": {
+                        "text": "No known hypersensitivity reaction to",
+                        "description": "Positive statement about hypersensitivity reactions to substances that are explicitly known to have not been identified at the time of recording."
+                    }
+                }
+            }
+        },
+        "annotations": {
+            "en": {
+                "/data[id2]": {
+                    "ui": "passthrough"
+                },
+                "/data[id2]/items[id3]": {
+                    "design note": "this is a design note on Statement",
+                    "requirements note": "this is a requirements note on Statement",
+                    "medline ref": "this is a medline ref on Statement"
+                },
+                "/data[id2]/items[id0.8]": {
+                    "design note": "this is a design note on allergic reaction",
+                    "requirements note": "this is a requirements note on allergic reaction",
+                    "medline ref": "this is a medline ref on allergic reaction"
+                },
+                "/data[id2]/items[id0.10]": {
+                    "design note": "this is a design note on intelerance",
+                    "requirements note": "this is a requirements note on intolerance",
+                    "national data dictionary": "NDD ref for intolerance"
+                }
+            }
+        }
+    }
+}

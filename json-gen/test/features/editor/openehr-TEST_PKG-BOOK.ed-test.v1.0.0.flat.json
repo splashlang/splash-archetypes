@@ -1,0 +1,149 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-09T19:00:51.712715525Z",
+    "rm_id": "org.openehr:test",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openehr-TEST_PKG-BOOK.ed-test.v1.0.0",
+        "is_generated": true,
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Thomas Beale"
+            },
+            "copyright": "copyright (c) 2010 The openEHR Foundation",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Test basic structure hierarchy",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "ADL",
+                        "structure",
+                        "test"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "BOOK",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "title",
+                    "children": [
+                        {
+                            "_type": "C_string",
+                            "constraint": [
+                                "Devils"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "rm_attribute_name": "author",
+                    "children": [
+                        {
+                            "_type": "C_string",
+                            "constraint": [
+                                "Fyodor Dostoyevsky"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "rm_attribute_name": "chapters",
+                    "is_multiple": true,
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "CHAPTER",
+                            "node_id": "id2",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "title",
+                                    "children": [
+                                        {
+                                            "_type": "C_string",
+                                            "constraint": [
+                                                "By way of introductoin"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "CHAPTER",
+                            "node_id": "id3",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "title",
+                                    "children": [
+                                        {
+                                            "_type": "C_string",
+                                            "constraint": [
+                                                "Prince Harry, matchmaking"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "CHAPTER",
+                            "node_id": "id4",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "title",
+                                    "children": [
+                                        {
+                                            "_type": "C_string",
+                                            "constraint": [
+                                                "Another man's sins"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "Work of fiction",
+                        "description": "Novel"
+                    },
+                    "id2": {
+                        "text": "1st chapter of the book",
+                        "description": "Chapter 1"
+                    },
+                    "id3": {
+                        "text": "2nd chapter of the book",
+                        "description": "Chapter 2"
+                    },
+                    "id4": {
+                        "text": "3rd chapter of the book",
+                        "description": "Chapter 3"
+                    }
+                }
+            }
+        }
+    }
+}

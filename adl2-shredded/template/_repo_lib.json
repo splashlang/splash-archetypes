@@ -2,5 +2,6 @@
     "name": "Single file template",
     "shortName": "adl2_template",
     "description": "Single file template example",
-    "maintainer": "openEHR"
+    "maintainer": "SPLASH",
+    "maintainer_uri": "http://splashform.org"
 }

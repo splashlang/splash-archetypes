@@ -45,9 +45,7 @@ definition
 									DV_INTERVAL[id15] 
 								}
 								magnitude matches {|0.0..1.0|}
-								units matches {
-									String[id9999] 
-								}
+								units matches {/.*/}
 							}
 						}
 					}

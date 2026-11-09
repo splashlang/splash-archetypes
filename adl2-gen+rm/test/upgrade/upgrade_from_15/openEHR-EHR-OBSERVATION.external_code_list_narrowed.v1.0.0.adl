@@ -1,0 +1,96 @@
+archetype (adl_version=2.3.0; rm_release=1.0.2; generated)
+	openEHR-EHR-OBSERVATION.external_code_list_narrowed.v1.0.0
+
+specialize
+	openEHR-EHR-OBSERVATION.external_code_list.v1
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"unmanaged">
+	original_author = <
+		["name"] = <"Thomas Beale <thomas.beale@openEHR.org>">
+		["organisation"] = <"openEHR Foundation <http://www.openEHR.org>">
+		["date"] = <"22/01/2014">
+	>
+	copyright = <"© 2014 openEHR Foundation">
+	other_details = <
+		["regression"] = <"PASS">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To test narrowing of external code list">
+			use = <"Regression testing">
+		>
+	>
+
+definition
+	OBSERVATION[id1.1] occurrences matches {0..*} matches {
+		protocol existence matches {0..1} matches {
+			ITEM_TREE[id2] occurrences matches {0..1} matches {
+				items existence matches {0..1} cardinality matches {0..*; ordered} matches {
+					ELEMENT[id3] occurrences matches {0..1} matches {
+						value existence matches {0..1} matches {
+							DV_CODED_TEXT[id4] occurrences matches {0..1} matches {
+								defining_code existence matches {1} matches {[ac1.1]}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Test Obs">
+				description = <"Test Obs">
+			>
+			["id3"] = <
+				text = <"document state">
+				description = <"document state">
+			>
+			["ac1"] = <
+				text = <"document state">
+				description = <"document state">
+			>
+			["at1"] = <
+				text = <"modification">
+				description = <"modification">
+			>
+			["at2"] = <
+				text = <"creation">
+				description = <"creation">
+			>
+			["at6"] = <
+				text = <"attestation">
+				description = <"attestation">
+			>
+			["id1.1"] = <
+				text = <"Test Obs specialised">
+				description = <"Test Obs specialised">
+			>
+			["ac1.1"] = <
+				text = <"(added by post-parse processor)">
+				description = <"(added by post-parse processor)">
+			>
+		>
+	>
+	term_bindings = <
+		["openehr"] = <
+			["at1"] = <http://openehr.org/id/251>
+			["at2"] = <http://openehr.org/id/249>
+			["at6"] = <http://openehr.org/id/666>
+		>
+	>
+	value_sets = <
+		["ac1.1"] = <
+			id = <"ac1.1">
+			members = <"at2", "at1", "at6">
+		>
+	>
+

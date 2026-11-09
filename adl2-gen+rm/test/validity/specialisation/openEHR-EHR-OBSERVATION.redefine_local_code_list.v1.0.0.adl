@@ -1,0 +1,158 @@
+archetype (adl_version=2.3.0; rm_release=1.0.2; generated)
+	openEHR-EHR-OBSERVATION.redefine_local_code_list.v1.0.0
+
+specialize
+	openEHR-EHR-OBSERVATION.spec_test_obs2.v1.0.0
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"unmanaged">
+	original_author = <
+		["name"] = <"Thomas Beale">
+		["organisation"] = <"Ocean Informatics">
+		["date"] = <"19/6/2008">
+	>
+	other_details = <
+		["regression"] = <"PASS">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To test redefinition of an RM type into a RM subtype">
+			use = <"Regression testing">
+		>
+	>
+
+definition
+	OBSERVATION[id1.1] occurrences matches {0..*} matches {
+		data existence matches {1} matches {
+			HISTORY[id12] occurrences matches {0..1} matches {
+				events existence matches {0..1} cardinality matches {1..*; unordered} matches {
+					EVENT[id3] occurrences matches {0..*} matches {
+						data existence matches {1} matches {
+							ITEM_TREE[id13] occurrences matches {0..1} matches {
+								items existence matches {0..1} cardinality matches {2..*; ordered} matches {
+									ELEMENT[id4] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_CODED_TEXT[id14] occurrences matches {0..1} matches {
+												defining_code existence matches {1} matches {[ac0.1]}
+											}
+										}
+									}
+									ELEMENT[id5] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_CODED_TEXT[id15] occurrences matches {0..1} matches {
+												defining_code existence matches {1} matches {[ac3]}
+											}
+										}
+									}
+									ELEMENT[id11] occurrences matches {0..1} matches {
+										value existence matches {0..1} matches {
+											DV_CODED_TEXT[id16] occurrences matches {0..1} matches {
+												defining_code existence matches {1} matches {[ac2]}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Observation">
+				description = <"Observation">
+			>
+			["id3"] = <
+				text = <"event">
+				description = <"event">
+			>
+			["id4"] = <
+				text = <"element 1">
+				description = <"element 1">
+			>
+			["id5"] = <
+				text = <"element 2">
+				description = <"element 2">
+			>
+			["at6"] = <
+				text = <"term 1">
+				description = <"term 1">
+			>
+			["at7"] = <
+				text = <"term 2">
+				description = <"term 2">
+			>
+			["at8"] = <
+				text = <"term 3">
+				description = <"term 3">
+			>
+			["at9"] = <
+				text = <"term 4">
+				description = <"term 4">
+			>
+			["at10"] = <
+				text = <"term 5">
+				description = <"term 5">
+			>
+			["id11"] = <
+				text = <"element 3">
+				description = <"element 3">
+			>
+			["ac2"] = <
+				text = <"ref set X">
+				description = <"ref set X">
+			>
+			["ac3"] = <
+				text = <"element 2">
+				description = <"element 2">
+			>
+			["at0.1"] = <
+				text = <"term A">
+				description = <"term A">
+			>
+			["at0.2"] = <
+				text = <"term B">
+				description = <"term B">
+			>
+			["at0.3"] = <
+				text = <"term C">
+				description = <"term C">
+			>
+			["at0.4"] = <
+				text = <"term D">
+				description = <"term D">
+			>
+			["at0.5"] = <
+				text = <"term E">
+				description = <"term E">
+			>
+			["id1.1"] = <
+				text = <"obs">
+				description = <"obs">
+			>
+			["ac0.1"] = <
+				text = <"(added by post-parse processor)">
+				description = <"(added by post-parse processor)">
+			>
+		>
+	>
+	value_sets = <
+		["ac3"] = <
+			id = <"ac3">
+			members = <"at6", "at7", "at8", "at9", "at10">
+		>
+		["ac0.1"] = <
+			id = <"ac0.1">
+			members = <"at0.1", "at0.2", "at0.3", "at0.4", "at0.5">
+		>
+	>
+

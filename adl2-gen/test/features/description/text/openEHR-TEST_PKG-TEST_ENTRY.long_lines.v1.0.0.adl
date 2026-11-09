@@ -1,0 +1,57 @@
+archetype (adl_version=2.3.0; rm_release=1.0.2; generated)
+	openEHR-TEST_PKG-TEST_ENTRY.long_lines.v1.0.0
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"published">
+	original_author = <
+		["name"] = <"Thomas Beale">
+		["email"] = <"thomas.beale@openEHR.org">
+		["organisation"] = <"openEHR Foundation <http://www.openEHR.org>">
+		["date"] = <"2003-06-01">
+	>
+	other_contributors = <"friend 1", ...>
+	custodian_namespace = <"org.openehr">
+	custodian_organisation = <"openEHR Foundation <http://www.openEHR.org>">
+	copyright = <"Copyright © 2012 openEHR Foundation <http://www.openEHR.org> ... this is mine, mine, mine I tell you! Since 2003. 
+And another thing.
+And another">
+	licence = <"Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>">
+	other_details = <
+		["regression"] = <"PASS">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"what this is for">
+			use = <"this is what it is used for, this could be a really long line or even
+					multiple lines, just like 
+					what you are reading now">
+			misuse = <"this is not what it is used for">
+			keywords = <"this", "is", "a", "list", "keywords">
+			original_resource_uri = <
+				["guideline"] = <"http://guidelines.are.us/wherever/en">
+				["medline"] = <"http://some%20medline%20ref">
+			>
+		>
+	>
+
+definition
+	TEST_ENTRY[id1] 
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"most minimal sdfasdjb adsnfsadf s dns cshdisdh;sidoew dfhswdisdh sd swdf
+sdfsdf sdf sdfs sds a saof sodfhsdf sdf ashsdos ss sjhsdoisd shsdic sos shdodshdsf 
+sdfsdf sdf sdfs sds a saof sodfhsdf sdf">
+				description = <"long lines of description asf asdf wfs f dsfwewfvkuwbefovewfd ewfvhewofn wefv
+					ewdfcewfc ewdfch ofd ewdchew cwec ewfv ewfvwec ewfvcoidsc d d s sdfch swhd dc
+					dwf wsdswfvwd">
+			>
+		>
+	>
+

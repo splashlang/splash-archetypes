@@ -1,0 +1,137 @@
+archetype (adl_version=2.3.0; rm_release=1.0.2; generated)
+	openehr-demographic-PERSON.test2.v0.0.1
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"unmanaged">
+	original_author = <
+		["name"] = <"Thomas Beale <thomas.beale@openEHR.org>">
+		["organisation"] = <"openEHR Foundation <http://www.openEHR.org>">
+	>
+	copyright = <"Copyright (c) 2012 openEHR Foundation ">
+	other_details = <
+		["regression"] = <"PASS">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"???">
+			use = <"Regression testing">
+		>
+	>
+
+definition
+	PERSON[id1] occurrences matches {0..*} matches {
+		contacts existence matches {0..1} cardinality matches {0..*; ordered} matches {
+			CONTACT[id2] occurrences matches {0..1} matches {
+				addresses existence matches {1} cardinality matches {0..*; ordered} matches {
+					ADDRESS[id7] occurrences matches {0..1} matches {
+						name existence matches {1} matches {
+							DV_CODED_TEXT[id8] occurrences matches {0..1} 
+						}
+					}
+				}
+			}
+			CONTACT[id3] occurrences matches {0..1} matches {
+				addresses existence matches {1} cardinality matches {0..*; ordered} matches {
+					ADDRESS[id4] occurrences matches {0..*} matches {
+						details existence matches {1} matches {
+							ITEM_TREE[id12] occurrences matches {0..1} matches {
+								items existence matches {0..1} cardinality matches {0..*; ordered} matches {
+									ELEMENT[id13] occurrences matches {0..1} matches {
+										value existence matches {0..1} matches {
+											DV_TEXT[id15] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id14] occurrences matches {1} matches {
+										value existence matches {0..1} matches {
+											DV_TEXT[id16] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id17] occurrences matches {0..1} matches {
+										value existence matches {0..1} matches {
+											DV_ENCAPSULATED[id18] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id19] occurrences matches {0..1} matches {
+										value existence matches {0..1} matches {
+											DV_MULTIMEDIA[id20] occurrences matches {0..1} 
+										}
+									}
+								}
+							}
+						}
+					}
+					allow_archetype ADDRESS[id5] occurrences matches {0..*} 
+				}
+			}
+			CONTACT[id6] occurrences matches {0..*} 
+		}
+		identities existence matches {1} cardinality matches {0..*; ordered} matches {
+			PARTY_IDENTITY[id9] occurrences matches {1} matches {
+				name existence matches {1} matches {
+					DV_CODED_TEXT[id10] occurrences matches {0..1} 
+				}
+			}
+		}
+		name existence matches {1} matches {
+			DV_CODED_TEXT[id11] occurrences matches {0..1} 
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"-">
+				description = <"-">
+			>
+			["id2"] = <
+				text = <"home">
+				description = <"-">
+			>
+			["id3"] = <
+				text = <"work">
+				description = <"-">
+			>
+			["id4"] = <
+				text = <"Postal">
+				description = <"-">
+			>
+			["id5"] = <
+				text = <"Delivery">
+				description = <"-">
+			>
+			["id6"] = <
+				text = <"Holiday">
+				description = <"-">
+			>
+			["id7"] = <
+				text = <"Primary">
+				description = <"-">
+			>
+			["id9"] = <
+				text = <"Primary name">
+				description = <"-">
+			>
+			["id13"] = <
+				text = <"Appartment">
+				description = <"-">
+			>
+			["id14"] = <
+				text = <"Street">
+				description = <"-">
+			>
+			["id17"] = <
+				text = <"Test DV_ENCAPSULATED type">
+				description = <"-">
+			>
+			["id19"] = <
+				text = <"Test 2">
+				description = <"-">
+			>
+		>
+	>
+

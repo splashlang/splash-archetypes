@@ -1,0 +1,72 @@
+archetype (adl_version=2.3.0; rm_release=1.0.2; generated)
+	openEHR-EHR-EVALUATION.use_node_ref_to_sibling.v1.0.0
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"unmanaged">
+	original_author = <
+		["name"] = <"Thomas Beale">
+		["submission"] = <"01/05/2004">
+		["organisation"] = <"openEHR Foundation">
+	>
+	copyright = <"copyright (c) 2010 The openEHR Foundation">
+	other_details = <
+		["regression"] = <"PASS">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Use node ref (object proxy) whose target at-code is same as at-code of a sibling node of the proxy">
+			use = <"Regression testing">
+			keywords = <"ADL", "test">
+		>
+	>
+
+definition
+	EVALUATION[id1] occurrences matches {0..*} matches {
+		data existence matches {1} matches {
+			ITEM_TREE[id6] occurrences matches {0..1} matches {
+				items existence matches {0..1} cardinality matches {0..*; ordered} matches {
+					CLUSTER[id2] occurrences matches {0..*} matches {
+						items existence matches {1} cardinality matches {0..*; ordered} matches {
+							ELEMENT[id5] occurrences matches {0..*} 
+							allow_archetype CLUSTER[id4] occurrences matches {0..*} matches {
+								include
+									archetype_id/value matches {/.*/}
+							}
+							ELEMENT[id3] occurrences matches {0..*} 
+						}
+					}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Evaluation">
+				description = <"Evaluation">
+			>
+			["id2"] = <
+				text = <"cluster">
+				description = <"cluster">
+			>
+			["id3"] = <
+				text = <"element">
+				description = <"element">
+			>
+			["id4"] = <
+				text = <"element">
+				description = <"element">
+			>
+			["id5"] = <
+				text = <"use node element">
+				description = <"use node element">
+			>
+		>
+	>
+

@@ -1,0 +1,304 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-09T19:00:51.693576955Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openehr-demographic-PERSON.test.v0.0.1",
+        "is_generated": true,
+        "adl_version": "2.0.6",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Thomas Beale <thomas.beale@openEHR.org>",
+                "organisation": "openEHR Foundation <http://www.openEHR.org>"
+            },
+            "copyright": "Copyright (c) 2012 openEHR Foundation ",
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "???",
+                    "use": "Regression testing"
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "PERSON",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "name",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "DV_TEXT",
+                            "node_id": "id2"
+                        }
+                    ]
+                },
+                {
+                    "rm_attribute_name": "identities",
+                    "is_multiple": true,
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "PARTY_IDENTITY",
+                            "node_id": "id3",
+                            "occurrences": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "details",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ITEM_TREE",
+                                            "node_id": "id8",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "name",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id13"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "rm_attribute_name": "details",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "ITEM_TREE",
+                            "node_id": "id4",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "items",
+                                    "is_multiple": true,
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "CLUSTER",
+                                            "node_id": "id5"
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id6",
+                                            "occurrences": {
+                                                "lower": 0,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_QUANTITY",
+                                                            "node_id": "id14",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "normal_range",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_INTERVAL",
+                                                                            "node_id": "id15"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "rm_attribute_name": "magnitude",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_real",
+                                                                            "constraint": [
+                                                                                {
+                                                                                    "lower": "0.0",
+                                                                                    "upper": "1.0"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "rm_attribute_name": "units",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_string",
+                                                                            "constraint": [
+                                                                                "/.*/"
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ELEMENT",
+                                            "node_id": "id16",
+                                            "occurrences": {
+                                                "lower": 1,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "value",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_COUNT",
+                                                            "node_id": "id17",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "magnitude",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_integer",
+                                                                            "constraint": [
+                                                                                {
+                                                                                    "lower": 0,
+                                                                                    "upper": 1
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "name",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_TEXT",
+                                            "node_id": "id7"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "rm_attribute_name": "contacts",
+                    "is_multiple": true,
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "CONTACT",
+                            "node_id": "id9"
+                        },
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "CONTACT",
+                            "node_id": "id10",
+                            "occurrences": {
+                                "lower": 0,
+                                "upper": 1
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "addresses",
+                                    "is_multiple": true,
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ADDRESS",
+                                            "node_id": "id11",
+                                            "occurrences": {
+                                                "lower": 1,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "details",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ITEM_TREE",
+                                                            "node_id": "id12"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "-",
+                        "description": "-"
+                    },
+                    "id3": {
+                        "text": "Legal name",
+                        "description": "-"
+                    },
+                    "id5": {
+                        "text": "Project",
+                        "description": "-"
+                    },
+                    "id6": {
+                        "text": "Rating",
+                        "description": "-"
+                    },
+                    "id9": {
+                        "text": "Work",
+                        "description": "-"
+                    },
+                    "id10": {
+                        "text": "Home",
+                        "description": "-"
+                    },
+                    "id11": {
+                        "text": "Home address",
+                        "description": "-"
+                    },
+                    "id16": {
+                        "text": "asdf",
+                        "description": "-"
+                    }
+                }
+            }
+        }
+    }
+}

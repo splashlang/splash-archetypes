@@ -1,5 +1,6 @@
 {
     "name": "SPLASH",
     "description": "SPLASH Archetype repository",
-    "maintainer": "splashform.org"
+    "maintainer": "splashform.org",
+    "maintainer_uri": "http://splashform.org"
 }

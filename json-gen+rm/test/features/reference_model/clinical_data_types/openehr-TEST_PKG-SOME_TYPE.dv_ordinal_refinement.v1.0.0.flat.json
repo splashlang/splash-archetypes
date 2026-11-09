@@ -1,0 +1,157 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-09T19:00:51.778602204Z",
+    "rm_id": "org.openehr:test",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openehr-TEST_PKG-SOME_TYPE.dv_ordinal_refinement.v1.0.0",
+        "is_generated": true,
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "published",
+            "original_author": {
+                "name": "Thomas Beale",
+                "email": "thomas.beale@openEHR.org",
+                "organisation": "openEHR Foundation <http://www.openEHR.org>",
+                "date": "2021-02-02"
+            },
+            "custodian_namespace": "org.openehr",
+            "custodian_organisation": "openEHR Foundation <http://www.openEHR.org>",
+            "copyright": "Copyright © 2021 openEHR Foundation <http://www.openEHR.org>",
+            "licence": "Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Example to show refinement of a DV_ORDINAL.",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "ADL",
+                        "ordinal",
+                        "test"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "SOME_TYPE",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "standard_ordinal_attr",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "DV_ORDINAL",
+                            "node_id": "id6",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "value",
+                                    "children": [
+                                        {
+                                            "_type": "C_integer",
+                                            "constraint": [
+                                                {
+                                                    "lower": 1,
+                                                    "upper": 1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "symbol",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "DV_CODED_TEXT",
+                                            "node_id": "id9",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "defining_code",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_terminology_code",
+                                                            "constraint": "at3"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "rm_attribute_name": "clinical_ordinal_attr_1",
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "DV_ORDINAL",
+                            "node_id": "id11",
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "value",
+                                    "children": [
+                                        {
+                                            "_type": "C_integer",
+                                            "constraint": [
+                                                {
+                                                    "lower": 1,
+                                                    "upper": 1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "symbol",
+                                    "children": [
+                                        {
+                                            "_type": "C_terminology_code",
+                                            "constraint": "at3"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "attribute_tuples": [
+                                [
+                                    "value",
+                                    "symbol"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "root item",
+                        "description": "xxxx"
+                    },
+                    "id6": {
+                        "text": "ordinal 2",
+                        "description": "ordinal 2"
+                    },
+                    "at3": {
+                        "text": ">3 L/min",
+                        "description": ">3 L/min flow-rate"
+                    }
+                }
+            }
+        }
+    }
+}

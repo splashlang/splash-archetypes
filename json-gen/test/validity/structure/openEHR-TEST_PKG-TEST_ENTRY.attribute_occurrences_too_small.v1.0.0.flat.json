@@ -1,0 +1,80 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-09T19:00:51.716808901Z",
+    "rm_id": "org.openehr:test",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-TEST_PKG-TEST_ENTRY.attribute_occurrences_too_small.v1.0.0",
+        "is_generated": true,
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Peter Gummer"
+            },
+            "copyright": "copyright (c) 2008 The openEHR Foundation",
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Test what happens when an object's occurrences is less than the attribute's cardinality.",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "ADL",
+                        "validation",
+                        "test"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "TEST_ENTRY",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "element_attr_2",
+                    "is_multiple": true,
+                    "cardinality": {
+                        "interval": {
+                            "lower": 2,
+                            "upper": 3
+                        }
+                    },
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "TEST_ELEMENT",
+                            "node_id": "id2",
+                            "occurrences": {
+                                "lower": 1,
+                                "upper": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "",
+                        "description": ""
+                    },
+                    "id2": {
+                        "text": "",
+                        "description": ""
+                    }
+                }
+            }
+        }
+    }
+}

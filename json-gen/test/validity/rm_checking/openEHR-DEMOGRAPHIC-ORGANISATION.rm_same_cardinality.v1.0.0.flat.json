@@ -1,0 +1,74 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "flat",
+    "created": "2026-11-09T19:00:51.693175534Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Authored_archetype",
+        "archetype_id": "openEHR-DEMOGRAPHIC-ORGANISATION.rm_same_cardinality.v1.0.0",
+        "is_generated": true,
+        "adl_version": "2.0.5",
+        "rm_release": "1.0.2",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Thomas Beale",
+                "organisation": "openEHR Foundation",
+                "email": "thomas.beale@openehr.org",
+                "date": "12/03/2009"
+            },
+            "other_details": {
+                "regression": "PASS"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Test cardinality same as in RM, should report WCACA warning",
+                    "use": "Regression testing",
+                    "keywords": [
+                        "test",
+                        "RM checking"
+                    ]
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "ORGANISATION",
+            "node_id": "id1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "identities",
+                    "is_multiple": true,
+                    "children": [
+                        {
+                            "_type": "C_complex_object",
+                            "rm_type_name": "PARTY_IDENTITY",
+                            "node_id": "id2",
+                            "occurrences": {
+                                "lower": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1",
+            "term_definitions": {
+                "en": {
+                    "id1": {
+                        "text": "An organisation",
+                        "description": "An orgnisation"
+                    },
+                    "id2": {
+                        "text": "A party identity",
+                        "description": "A party identity"
+                    }
+                }
+            }
+        }
+    }
+}

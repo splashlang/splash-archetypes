@@ -1,0 +1,104 @@
+archetype (adl_version=2.3.0; rm_release=1.0.3; generated)
+	openEHR-EHR-OBSERVATION.lab_test-microbiology-csf.v1.0.0
+
+specialize
+	openEHR-EHR-OBSERVATION.lab_test-microbiology.v1
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"unmanaged">
+	original_author = <
+		["name"] = <"Dr Ian McNicoll">
+		["organisation"] = <"openEHR Archetype Editorial Group / Ocean Informatics">
+		["email"] = <"ian.mcnicoll@oceaninformatics.com">
+		["date"] = <"27/01/2009">
+	>
+	copyright = <"copyright (c) 2010 openEHR Foundation">
+	other_details = <
+		["regression"] = <"PASS">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Test for anomaly in generation of differential archetypes">
+			use = <"Regression testing">
+		>
+	>
+
+definition
+	OBSERVATION[id1.1.1] matches {
+		data matches {
+			HISTORY[id2] matches {
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[id3] matches {
+						data matches {
+							ITEM_TREE[id4] matches {
+								items matches {
+									ELEMENT[id6] occurrences matches {0..1} matches {
+										value matches {
+											DV_TEXT[id7] 
+										}
+									}
+									CLUSTER[id0.34] occurrences matches {0..1} matches {
+										items matches {
+											ELEMENT[id0.36] occurrences matches {0..1} matches {
+												value matches {
+													DV_QUANTITY[id0.37] 
+												}
+											}
+											ELEMENT[id0.0.39] occurrences matches {0..1} matches {
+												value matches {
+													DV_QUANTITY[id0.0.40] 
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Laboratory test">
+				description = <"To record the result of a laboratory test which may be used to record a single valued test but will often be specialised or templated to represent multiple value or 'panel' tests.  This archetype also acts as the parent for specialisations appropriate for more specific laboratory tests microbiology, histopathology.">
+			>
+			["id3"] = <
+				text = <"Any event">
+				description = <"Any event.">
+			>
+			["id6"] = <
+				text = <"Test name">
+				description = <"Specific identifier for this lab test. e.g. Full blood count , blood glucose, urine microbiology.  May equate to the result name for a single value result. Commonly a coded term e.g from LOINC or SNOMED-CT.">
+			>
+			["id0.34"] = <
+				text = <"Bodily fluid findings">
+				description = <"Findings related to a bodily fluid specimen.">
+			>
+			["id0.36"] = <
+				text = <"Red cell count">
+				description = <"Red blood cell count in the bodily fluid..">
+			>
+			["id1.1"] = <
+				text = <"Microbiolology">
+				description = <"Generic laboratory test archetype for microbiology testing.">
+			>
+			["id0.0.39"] = <
+				text = <"Lymphocyte count">
+				description = <"Count of lymphocytes found in cerebro-spinal fluid.">
+			>
+			["id1.1.1"] = <
+				text = <"Microbiolology of cerebro-spinal fluid">
+				description = <"Cerebro-spinal fluid microbiology test result.">
+			>
+		>
+	>
+

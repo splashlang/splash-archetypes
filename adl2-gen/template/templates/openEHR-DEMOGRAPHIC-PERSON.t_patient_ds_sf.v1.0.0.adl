@@ -1,0 +1,810 @@
+template (adl_version=2.3.0; rm_release=1.1.0; generated)
+	openEHR-DEMOGRAPHIC-PERSON.t_patient_ds_sf.v1.0.0
+
+specialize
+	openEHR-DEMOGRAPHIC-PERSON.person.v1
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"Sergio Miranda Freire">
+				["organisation"] = <"Universidade do Estado do Rio de Janeiro - UERJ">
+				["email"] = <"sergio@lampada.uerj.br">
+			>
+		>
+	>
+
+description
+	lifecycle_state = <"unmanaged">
+	original_author = <
+		["name"] = <"Thomas Beale">
+		["organisation"] = <"Ocean Informatics">
+		["email"] = <"thomas.beale@oceaninformatics.com">
+		["date"] = <"01/04/2011">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Templated PERSON object to describe patient in Simple discharge summary">
+			use = <"test use">
+		>
+	>
+
+definition
+	PERSON[id1.1] matches {
+		details matches {
+			ITEM_TREE[id2] occurrences matches {0..1} matches {
+				items matches {
+					use_archetype CLUSTER[id11.1, openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-1.v1] occurrences matches {0..1} 
+					use_archetype CLUSTER[id11.2, openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-2.v1] occurrences matches {0..1} 
+					use_archetype CLUSTER[id11.3, openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-3.v1] occurrences matches {0..1} 
+					allow_archetype CLUSTER[id11] closed 
+				}
+			}
+		}
+		identities cardinality matches {1..*; ordered} matches {
+			use_archetype PARTY_IDENTITY[id3.1, openEHR-DEMOGRAPHIC-PARTY_IDENTITY.t_patient_ds_sf-4.v1] 
+			allow_archetype PARTY_IDENTITY[id3] closed 
+		}
+		contacts matches {
+			CONTACT[id4] occurrences matches {1} matches {
+				addresses matches {
+					use_archetype ADDRESS[id31.1, openEHR-DEMOGRAPHIC-ADDRESS.t_patient_ds_sf-5.v1] 
+					allow_archetype ADDRESS[id31] closed 
+				}
+			}
+		}
+		relationships existence matches {0} 
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Person">
+				description = <"Personal demographic data">
+			>
+			["id2"] = <
+				text = <"Demographic details">
+				description = <"A person's demographic details.">
+			>
+			["id3"] = <
+				text = <"Name">
+				description = <"A person's name.">
+			>
+			["id4"] = <
+				text = <"Contacts">
+				description = <"A person's contacts.">
+			>
+			["id5"] = <
+				text = <"Relationships">
+				description = <"A person's relationships, especially family ties.">
+			>
+			["id11"] = <
+				text = <"Birth, death, documentation and other demographic data">
+				description = <"Allows the collection of data about birth and death data, documentation and other person's demographic data.">
+			>
+			["id31"] = <
+				text = <"Addresses">
+				description = <"Addresses linked to a single contact, i.e., with the same time validity.">
+			>
+			["id41"] = <
+				text = <"Relationship type">
+				description = <"Defines the type of relationship between related persons.">
+			>
+			["ac1"] = <
+				text = <"Codes for type of relationship">
+				description = <"Valid codes for type of relationship.">
+			>
+			["id1.1"] = <
+				text = <"Patient demographic data">
+				description = <"Simple patient personal demographic data">
+			>
+			["id11.1"] = <
+				text = <"race data">
+				description = <"race data">
+			>
+			["id11.2"] = <
+				text = <"other data">
+				description = <"other data">
+			>
+			["id11.3"] = <
+				text = <"birth data">
+				description = <"birth data">
+			>
+			["id3.1"] = <
+				text = <"Person name">
+				description = <"Person name">
+			>
+			["id31.1"] = <
+				text = <"Address">
+				description = <"Address">
+			>
+		>
+	>
+
+-------------------------------------------------------------
+template_overlay
+	openEHR-DEMOGRAPHIC-ADDRESS.t_patient_ds_sf-5.v1.0.0
+
+specialize
+	openEHR-DEMOGRAPHIC-ADDRESS.address.v1
+
+definition
+	ADDRESS[id1.1] matches {
+		name matches {
+			DV_TEXT[id34] 
+			DV_CODED_TEXT[id35] matches {
+				defining_code matches {[ac6]}
+			}
+		}
+		details matches {
+			ITEM_TREE[id2] occurrences matches {0..1} matches {
+				items cardinality matches {1..*; ordered} matches {
+					CLUSTER[id3] occurrences matches {0..*} matches {
+						items matches {
+							ELEMENT[id22] occurrences matches {0..1} matches {
+								value matches {
+									DV_CODED_TEXT[id36] matches {
+										defining_code matches {[ac1]}
+									}
+								}
+							}
+							ELEMENT[id23] occurrences matches {0..1} matches {
+								value matches {
+									DV_TEXT[id37] 
+								}
+							}
+							ELEMENT[id24] occurrences matches {0..1} matches {
+								value matches {
+									DV_TEXT[id38] 
+								}
+							}
+							ELEMENT[id25] occurrences matches {0..1} matches {
+								value matches {
+									DV_TEXT[id39] 
+								}
+							}
+							ELEMENT[id26] occurrences matches {0..1} matches {
+								value matches {
+									DV_TEXT[id40] 
+								}
+							}
+							ELEMENT[id27] occurrences matches {0..1} matches {
+								value matches {
+									DV_TEXT[id41] 
+								}
+							}
+							ELEMENT[id28] occurrences matches {0..1} matches {
+								value matches {
+									DV_CODED_TEXT[id42] matches {
+										defining_code matches {[ac2]}
+									}
+								}
+							}
+							ELEMENT[id29] occurrences matches {0..1} matches {
+								value matches {
+									DV_TEXT[id43] 
+								}
+							}
+							ELEMENT[id30] occurrences matches {0..1} matches {
+								value matches {
+									DV_TEXT[id44] 
+								}
+							}
+							ELEMENT[id31] occurrences matches {0..1} matches {
+								value matches {
+									DV_CODED_TEXT[id45] matches {
+										defining_code matches {[ac3]}
+									}
+								}
+							}
+							ELEMENT[id32] occurrences matches {0..1} matches {
+								value matches {
+									DV_TEXT[id46] 
+								}
+							}
+							allow_archetype CLUSTER[id33] occurrences matches {0..*} matches {
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.local_address_line(-?a-zA-Z0-9_]+)*\.v1/}
+							}
+						}
+					}
+					CLUSTER[id3.1] occurrences matches {1..3} matches {
+						items matches {
+							ELEMENT[id32] occurrences matches {0..1} matches {
+								value matches {
+									DV_TEXT[id46] 
+								}
+							}
+							allow_archetype CLUSTER[id33] closed 
+						}
+					}
+					ELEMENT[id5] occurrences matches {0..1} matches {
+						value matches {
+							DV_TEXT[id48] 
+						}
+					}
+					ELEMENT[id6] occurrences matches {0..1} matches {
+						value matches {
+							DV_TEXT[id49] 
+						}
+					}
+					ELEMENT[id8] occurrences matches {0..1} matches {
+						value matches {
+							DV_CODED_TEXT[id51] matches {
+								defining_code matches {[ac5]}
+							}
+						}
+					}
+					allow_archetype CLUSTER[id11] closed 
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Address">
+				description = <"Address based on ISO22220 standard.">
+			>
+			["id2"] = <
+				text = <"Items">
+				description = <"Address items.">
+			>
+			["id3"] = <
+				text = <"Address lines">
+				description = <"A composite of one or more standard address components that describe a low level of geographical/physical description of a location that, used in conjunction with the other high-level address components i.e. ‘suburb / town / locality name’, ‘postal code’, ‘state / territory / province’, and ‘country’, forms a complete geographical/physical address.">
+			>
+			["id4"] = <
+				text = <"Delivery point identifier">
+				description = <"A unique number assigned to a postal address as designated by the postal service.">
+			>
+			["id5"] = <
+				text = <"Postal code (ZIP code)">
+				description = <"The code for a postal delivery area, aligned with locality, suburb or place for the address, as defined by the postal service.">
+			>
+			["id6"] = <
+				text = <"Suburb/town/locality">
+				description = <"The full name of the general locality containing the specific address.">
+			>
+			["id7"] = <
+				text = <"State/territory/province identifier">
+				description = <"An identifier of the province, state or territory containing the address.">
+			>
+			["id8"] = <
+				text = <"Country identifier">
+				description = <"A code representing the country component of an address.">
+			>
+			["id9"] = <
+				text = <"Address type start date accuracy indicator">
+				description = <"An indication of the accuracy of the address type start date at the component level for the date. It is expressed by means of a sequence of three characters with possible values A (accurate), E (estimated) or U (unknown) each. The characters represent the accuracy for the year, month and day respectively. This element was introduced in order to be compatible with ISO 22220, but openEHR reference model represents date accuracy in a different way (see the data types specification).">
+			>
+			["id10"] = <
+				text = <"Address type end date accuracy indicator">
+				description = <"An indication of the accuracy of the address type end date at the component level for the date. It is expressed by means of a sequence of three characters with possible values A (accurate), E (estimated) or U (unknown) each. The characters represent the accuracy for the year, month and day respectively. This element was introduced in order to be compatible with ISO 22220, but openEHR reference model represents date accuracy in a different way (see the data types specification).">
+			>
+			["id11"] = <
+				text = <"Local high level address components">
+				description = <"Local high level address components. Archetypes that include other elements not present in ISO/TS22220 to meet local needs like county/parish, etc.">
+			>
+			["id22"] = <
+				text = <"Building/complex sub-unit type—abbreviation">
+				description = <"The specification of the type of a separately identifiable portion within a building/complex, marina etc. to clearly distinguish it from another.">
+			>
+			["id23"] = <
+				text = <"Building/complex sub-unit number">
+				description = <"The specification of the number of identifier of a building/complex, marina etc. to clearly distinguish it from another.">
+			>
+			["id24"] = <
+				text = <"Address site name">
+				description = <"The full name used to identify the physical building or property as part of its location.">
+			>
+			["id25"] = <
+				text = <"Floor/level number">
+				description = <"Descriptor used to identify the floor or level of a multi-storey building/complex.">
+			>
+			["id26"] = <
+				text = <"Floor/level type">
+				description = <"Descriptor used to classify the type of floor or level of a multi-storey building/complex.">
+			>
+			["id27"] = <
+				text = <"Lot number">
+				description = <"Section, allotment number.">
+			>
+			["id28"] = <
+				text = <"Street type code">
+				description = <"A code that identifies the type of public thoroughfare.">
+			>
+			["id29"] = <
+				text = <"Street name">
+				description = <"The name that identifies a public thoroughfare and differentiates it from others in the same suburb/town/locality.">
+			>
+			["id30"] = <
+				text = <"Street number">
+				description = <"The numeric or string reference number of a house or property that is unique within a street name, suburb.">
+			>
+			["id31"] = <
+				text = <"Street suffix code">
+				description = <"Term used to qualify the street name suitable for directional references.">
+			>
+			["id32"] = <
+				text = <"Address line">
+				description = <"Complete address line.">
+			>
+			["id33"] = <
+				text = <"Local address line components">
+				description = <"Local address line components. Archetypes that include other elements not present in ISO/TS22220 to meet local needs.">
+			>
+			["at462"] = <
+				text = <"Business">
+				description = <"Used to indicate an address that is the physical location of a business or office at which an entity can be contacted.">
+			>
+			["at463"] = <
+				text = <"Mailing or postal">
+				description = <"Used to indicate an address that is only for correspondence and/or billing purposes.">
+			>
+			["at464"] = <
+				text = <"Temporary accomodation">
+				description = <"Temporary accomodation address (such as for a person who usually resides overseas or where the provider of the address is in temporary accomodation due to renovation or treatment).">
+			>
+			["at465"] = <
+				text = <"Residential">
+				description = <"Used to indicate where a person is living. Note that this code is not valid for organisations.">
+			>
+			["at466"] = <
+				text = <"No fixed address">
+				description = <"Used where a person has no fixed address.">
+			>
+			["at467"] = <
+				text = <"Unknown/not stated/inadequately described">
+				description = <"Unknown/not stated/inadequately described may also be used where the person has no fixed address or does not wish to have their residential or correspondence address recorded.">
+			>
+			["ac1"] = <
+				text = <"Building type codes">
+				description = <"Valid codes for types of buildings.">
+			>
+			["ac2"] = <
+				text = <"Street type codes">
+				description = <"Valid codes for street types.">
+			>
+			["ac3"] = <
+				text = <"Street suffix codes">
+				description = <"Valid codes for street suffixes.">
+			>
+			["ac4"] = <
+				text = <"State codes">
+				description = <"valid codes for state/territory/province.">
+			>
+			["ac5"] = <
+				text = <"Country codes">
+				description = <"valid codes for countries.">
+			>
+			["ac6"] = <
+				text = <"Address (synthesised)">
+				description = <"Address based on ISO22220 standard. (synthesised)">
+			>
+			["id1.1"] = <
+				text = <"Address">
+				description = <"Address based on ISO22220 standard.">
+			>
+			["id3.1"] = <
+				text = <"Address lines">
+				description = <"Address lines">
+			>
+		>
+	>
+	value_sets = <
+		["ac6"] = <
+			id = <"ac6">
+			members = <"at462", "at463", "at464", "at465", "at466", "at467">
+		>
+	>
+
+-------------------------------------------------------------
+template_overlay
+	openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-1.v1.0.0
+
+specialize
+	openEHR-DEMOGRAPHIC-CLUSTER.person_additional_data_br.v1
+
+definition
+	CLUSTER[id1.1] occurrences matches {0..1} matches {
+		items matches {
+			ELEMENT[id3] occurrences matches {0..*} matches {
+				value matches {
+					DV_CODED_TEXT[id5] matches {
+						defining_code matches {[ac3]}
+					}
+				}
+			}
+			ELEMENT[id3.1] occurrences matches {0..*} matches {
+				value matches {
+					DV_CODED_TEXT[id5] matches {
+						defining_code matches {[ac3]}
+					}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Extended personal demographics">
+				description = <"Personal demographic data extended beyond those specified by ISO 22220.">
+			>
+			["id2"] = <
+				text = <"Marital status">
+				description = <"Marital status.">
+			>
+			["id3"] = <
+				text = <"Ethnic background">
+				description = <"The person's ethnic background.">
+			>
+			["ac2"] = <
+				text = <"Marital status codes">
+				description = <"Valid codes for marital status">
+			>
+			["ac3"] = <
+				text = <"Ethnic background codes">
+				description = <"Valid codes for ethnic background">
+			>
+			["id1.1"] = <
+				text = <"Person additional demographic data">
+				description = <"Person additional demographic data">
+			>
+			["id3.1"] = <
+				text = <"Race">
+				description = <"The person's race classifier">
+			>
+		>
+	>
+
+-------------------------------------------------------------
+template_overlay
+	openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-2.v1.0.0
+
+specialize
+	openEHR-DEMOGRAPHIC-CLUSTER.person_additional_data_iso.v1
+
+definition
+	CLUSTER[id1.1] occurrences matches {0..1} matches {
+		items matches {
+			ELEMENT[id2.1] occurrences matches {0..1} matches {
+				value matches {
+					DV_CODED_TEXT[id5] matches {
+						defining_code matches {[ac1]}
+					}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Person additional demographic data">
+				description = <"Person additional demographic data according to ISO 22220: sex and mother's family name">
+			>
+			["id2"] = <
+				text = <"Sex">
+				description = <"The sex of the subject.">
+			>
+			["id3"] = <
+				text = <"Mother's family name">
+				description = <"Mother's original family name">
+			>
+			["id4"] = <
+				text = <"Identification comment">
+				description = <"Comments recorded for a person registration to distinguish between two or more persons with the same or similar demographic information">
+			>
+			["at11"] = <
+				text = <"Male">
+				description = <"Male">
+			>
+			["at12"] = <
+				text = <"Female">
+				description = <"Female">
+			>
+			["at13"] = <
+				text = <"Intersex or indeterminate">
+				description = <"is normally used for babies for whom sex has not been determined for whatever reason, should not generally be used on data collection forms completed by the respondent and should only be used if the person or respondent volunteers that the person is intersex or where it otherwise becomes clear during the collection process that the individual is neither male nor female">
+			>
+			["at14"] = <
+				text = <"Not declared/inadequately described">
+				description = <"is not to be used on primary collection forms. It is primarily for use in administrative collections when transferring data from data sets where the item has not been collected.">
+			>
+			["ac1"] = <
+				text = <"Sex (synthesised)">
+				description = <"The sex of the subject. (synthesised)">
+			>
+			["id1.1"] = <
+				text = <"Person additional demographic data">
+				description = <"*">
+			>
+			["id2.1"] = <
+				text = <"Sex">
+				description = <"*">
+			>
+		>
+	>
+	value_sets = <
+		["ac1"] = <
+			id = <"ac1">
+			members = <"at11", "at12", "at13", "at14">
+		>
+	>
+
+-------------------------------------------------------------
+template_overlay
+	openEHR-DEMOGRAPHIC-CLUSTER.t_patient_ds_sf-3.v1.0.0
+
+specialize
+	openEHR-DEMOGRAPHIC-CLUSTER.person_birth_data_iso.v1
+
+definition
+	CLUSTER[id1.1] matches {
+		items matches {
+			ELEMENT[id2] occurrences matches {1} matches {
+				value matches {
+					DV_DATE[id8] 
+				}
+			}
+			ELEMENT[id4] occurrences matches {0..1} matches {
+				value matches {
+					DV_CODED_TEXT[id10] matches {
+						defining_code matches {[ac2]}
+					}
+				}
+			}
+			allow_archetype CLUSTER[id7] closed 
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Birth data">
+				description = <"Birth demographic data">
+			>
+			["id2"] = <
+				text = <"Birth date">
+				description = <"The date of birth of a person">
+			>
+			["id3"] = <
+				text = <"Country of birth">
+				description = <"The country where a person was born">
+			>
+			["id4"] = <
+				text = <"Birth plurality">
+				description = <"An indicator of multiple birth, showing the total number of births resulting from a single pregnancy">
+			>
+			["id5"] = <
+				text = <"Birth order">
+				description = <"The sequential order of this person in a multiple birth regardless of live or still birth">
+			>
+			["id6"] = <
+				text = <"Date of birth follow-up indicator">
+				description = <"Flag that indicates when the current date of birth requires follow-up to obtain a more accurate date">
+			>
+			["id7"] = <
+				text = <"Country specific data">
+				description = <"Additional birth data that are country specific">
+			>
+			["ac1"] = <
+				text = <"Country codes">
+				description = <"valid codes for countries">
+			>
+			["ac2"] = <
+				text = <"Birth plurality codes">
+				description = <"valid codes for birth plurality">
+			>
+			["ac3"] = <
+				text = <"Birth order codes">
+				description = <"valid codes for birth order">
+			>
+			["id1.1"] = <
+				text = <"Birth data">
+				description = <"Singapore birth demographic data">
+			>
+		>
+	>
+
+-------------------------------------------------------------
+template_overlay
+	openEHR-DEMOGRAPHIC-PARTY_IDENTITY.t_patient_ds_sf-4.v1.0.0
+
+specialize
+	openEHR-DEMOGRAPHIC-PARTY_IDENTITY.person_name.v1
+
+definition
+	PARTY_IDENTITY[id1.1] matches {
+		name matches {
+			DV_TEXT[id24] 
+			DV_CODED_TEXT[id25] matches {
+				defining_code matches {[ac1]}
+			}
+		}
+		details matches {
+			ITEM_TREE[id2] occurrences matches {0..1} matches {
+				items cardinality matches {1..*; ordered} matches {
+					ELEMENT[id3] occurrences matches {0..*} matches {
+						value matches {
+							DV_TEXT[id26] 
+						}
+					}
+					ELEMENT[id4] occurrences matches {0..*} matches {
+						value matches {
+							DV_TEXT[id27] 
+						}
+					}
+					ELEMENT[id5] occurrences matches {0..*} matches {
+						value matches {
+							DV_TEXT[id28] 
+						}
+					}
+					CLUSTER[id8] occurrences matches {0..1} matches {
+						items matches {
+							ELEMENT[id22] occurrences matches {1} matches {
+								value matches {
+									DV_TEXT[id32] 
+								}
+							}
+							ELEMENT[id23] occurrences matches {1} matches {
+								value matches {
+									DV_TEXT[id33] 
+								}
+							}
+						}
+					}
+					ELEMENT[id11] occurrences matches {0..1} matches {
+						value matches {
+							DV_TEXT[id37] 
+						}
+					}
+				}
+			}
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"Person name">
+				description = <"Person name details.">
+			>
+			["id2"] = <
+				text = <"Name">
+				description = <"Components of a person name.">
+			>
+			["id3"] = <
+				text = <"Given name">
+				description = <"The person's identifying name(s) within the family group or by which he/she is uniquely socially identified.">
+			>
+			["id4"] = <
+				text = <"Family name">
+				description = <"The part of a name a person usually has in common with some other members of his/her family, as distinguished from his/her given names.">
+			>
+			["id5"] = <
+				text = <"Title">
+				description = <"An honorific form of address commencing a name, used when addressing a person by name, whether by mail, by phone, or depending upon cultural situation in person.">
+			>
+			["id6"] = <
+				text = <"Suffix">
+				description = <"Additional term used following a person name.">
+			>
+			["id8"] = <
+				text = <"Alternative name representations">
+				description = <"Details of alternative representations such as local codesets or language variations.">
+			>
+			["id9"] = <
+				text = <"Preferred name">
+				description = <"Indicates that this is the name by which a person chooses to be identified.">
+			>
+			["id10"] = <
+				text = <"Issues of accuracy and privacy">
+				description = <"An indicator of specific conditions or rules that should be applied to the use of the person name.">
+			>
+			["id11"] = <
+				text = <"Full Name">
+				description = <"The person's full name as a concatenation of its name parts.">
+			>
+			["id20"] = <
+				text = <"Usage interval">
+				description = <"The period of time for which the name usage applies.">
+			>
+			["id21"] = <
+				text = <"Usage identifier">
+				description = <"The combination of identifier type, identifier issuer and identifier name that specify the link between this name and reporting or other unique identifier usage.">
+			>
+			["id22"] = <
+				text = <"Representation usage">
+				description = <"Name of the representational form used.">
+			>
+			["id23"] = <
+				text = <"Alternative representation">
+				description = <"Alternative Representation of this subject of care name using alternative styles of representation such as characters or language character set variations for local display.">
+			>
+			["at24"] = <
+				text = <"Reporting name">
+				description = <"The subject’s name as it is to be used for reporting, when used with a specific identifier.">
+			>
+			["at25"] = <
+				text = <"Newborn name">
+				description = <"A type reserved for the identification of unnamed newborn babies.">
+			>
+			["at26"] = <
+				text = <"Professional or business name">
+				description = <"The name used by the subject for business or professional purposes.">
+			>
+			["at27"] = <
+				text = <"Maiden name">
+				description = <"The name used by the subject of care prior to marriage.">
+			>
+			["at28"] = <
+				text = <"Legal name">
+				description = <"Registered name (Legal name).">
+			>
+			["at29"] = <
+				text = <"Other name">
+				description = <"Any other name by which the subject is known, or has been known by in the past.">
+			>
+			["at32"] = <
+				text = <"Unreliable information">
+				description = <"The name recorded is a fictitious or partial name.">
+			>
+			["at33"] = <
+				text = <"Known misspelling">
+				description = <"This is a misspelling, but should be retained for potential future matching.">
+			>
+			["at34"] = <
+				text = <"Name not to be used">
+				description = <"This name should not be used when referring to this subject.">
+			>
+			["at35"] = <
+				text = <"Name linkage forbidden by law">
+				description = <"By Law, this name and all names prior to it in the name sequence are not to be displayed or indicated in any way when searching for or dealing with information and events associated with a name that is subsequent to this one in the name sequence.">
+			>
+			["at36"] = <
+				text = <"Special privacy/security requirements">
+				description = <"A name for which episodes are attached that should only be accessible to specified authorised persons.">
+			>
+			["at37"] = <
+				text = <"Temporary name">
+				description = <"A temporary name issued where the subject's name has not been determined.">
+			>
+			["ac1"] = <
+				text = <"Person name (synthesised)">
+				description = <"Person name details. (synthesised)">
+			>
+			["ac2"] = <
+				text = <"Issues of accuracy and privacy (synthesised)">
+				description = <"An indicator of specific conditions or rules that should be applied to the use of the person name. (synthesised)">
+			>
+			["id1.1"] = <
+				text = <"Person name">
+				description = <"Person name for Simple discharge summary">
+			>
+		>
+	>
+	value_sets = <
+		["ac1"] = <
+			id = <"ac1">
+			members = <"at24", "at25", "at26", "at27", "at28", "at29">
+		>
+		["ac2"] = <
+			id = <"ac2">
+			members = <"at32", "at33", "at34", "at35", "at36", "at37">
+		>
+	>
+

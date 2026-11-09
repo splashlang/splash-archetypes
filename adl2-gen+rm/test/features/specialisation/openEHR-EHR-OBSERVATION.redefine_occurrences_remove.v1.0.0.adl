@@ -1,0 +1,218 @@
+archetype (adl_version=2.3.0; rm_release=1.0.2; generated)
+	openEHR-EHR-OBSERVATION.redefine_occurrences_remove.v1.0.0
+
+specialize
+	openEHR-EHR-OBSERVATION.redefine_occurrences_multiple.v1.0.0
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"published">
+	original_author = <
+		["name"] = <"Thomas Beale">
+		["email"] = <"thomas.beale@openEHR.org">
+		["organisation"] = <"openEHR Foundation <http://www.openEHR.org>">
+		["date"] = <"2008-08-11">
+	>
+	custodian_namespace = <"org.openehr">
+	custodian_organisation = <"openEHR Foundation <http://www.openEHR.org>">
+	copyright = <"Copyright © 2008 openEHR Foundation <http://www.openEHR.org>">
+	licence = <"Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>">
+	other_details = <
+		["regression"] = <"PASS">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Example of refinement of occurrences to {0..1} from {0..*}.">
+			use = <"Regression testing">
+			keywords = <"ADL", "test", "specialisation">
+		>
+	>
+
+definition
+	OBSERVATION[id1.1.1] occurrences matches {0..*} matches {
+		data existence matches {1} matches {
+			HISTORY[id9] occurrences matches {0..1} matches {
+				events existence matches {0..1} cardinality matches {2..*; unordered} matches {
+					EVENT[id3.1] occurrences matches {0..2} matches {
+						data existence matches {1} matches {
+							ITEM_TREE[id10] occurrences matches {0..1} matches {
+								items existence matches {0..1} cardinality matches {2..*; ordered} matches {
+									ELEMENT[id4] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_TEXT[id11] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id5] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_BOOLEAN[id12] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id6] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_QUANTITY[id13] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id7] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_MULTIMEDIA[id14] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id8] occurrences matches {0..*} 
+								}
+							}
+						}
+					}
+					EVENT[id3.2] occurrences matches {1..2} matches {
+						data existence matches {1} matches {
+							ITEM_TREE[id10] occurrences matches {0..1} matches {
+								items existence matches {0..1} cardinality matches {2..*; ordered} matches {
+									ELEMENT[id4] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_TEXT[id11] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id5] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_BOOLEAN[id12] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id6] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_QUANTITY[id13] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id7] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_MULTIMEDIA[id14] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id8] occurrences matches {0..*} 
+								}
+							}
+						}
+					}
+					EVENT[id3.3] occurrences matches {0..4} matches {
+						data existence matches {1} matches {
+							ITEM_TREE[id10] occurrences matches {0..1} matches {
+								items existence matches {0..1} cardinality matches {2..*; ordered} matches {
+									ELEMENT[id4] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_TEXT[id11] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id5] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_BOOLEAN[id12] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id6] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_QUANTITY[id13] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id7] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_MULTIMEDIA[id14] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id8] occurrences matches {0..*} 
+								}
+							}
+						}
+					}
+					EVENT[id3.4] occurrences matches {0..*} matches {
+						data existence matches {1} matches {
+							ITEM_TREE[id10] occurrences matches {0..1} matches {
+								items existence matches {0..1} cardinality matches {2..*; ordered} matches {
+									ELEMENT[id4] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_TEXT[id11] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id5] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_BOOLEAN[id12] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id6] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_QUANTITY[id13] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id7] occurrences matches {0..*} matches {
+										value existence matches {0..1} matches {
+											DV_MULTIMEDIA[id14] occurrences matches {0..1} 
+										}
+									}
+									ELEMENT[id8] occurrences matches {0..*} 
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol existence matches {1} 
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"top-level archetype">
+				description = <"top level test archetype for specialisation lineage">
+			>
+			["id3"] = <
+				text = <"any event">
+				description = <"*">
+			>
+			["id4"] = <
+				text = <"Text field">
+				description = <"test text field">
+			>
+			["id5"] = <
+				text = <"Boolean field">
+				description = <"test boolean field">
+			>
+			["id6"] = <
+				text = <"Quantity field">
+				description = <"test quantity field">
+			>
+			["id7"] = <
+				text = <"Multimedia field">
+				description = <"test multimedia field">
+			>
+			["id8"] = <
+				text = <"Any field">
+				description = <"test any-value field">
+			>
+			["id1.1"] = <
+				text = <"specialised archetype">
+				description = <"specialised archetype">
+			>
+			["id3.1"] = <
+				text = <"any event - occurrences specialised A">
+				description = <"any event - occurrences specialised A">
+			>
+			["id3.2"] = <
+				text = <"any event - occurrences specialised B">
+				description = <"any event - occurrences specialised B">
+			>
+			["id3.3"] = <
+				text = <"any event - occurrences specialised C">
+				description = <"any event - occurrences specialised C">
+			>
+			["id3.4"] = <
+				text = <"any event - occurrences specialised D">
+				description = <"any event - occurrences specialised D">
+			>
+			["id1.1.1"] = <
+				text = <"specialised archetype, removed Object node">
+				description = <"specialised archetype, removed Object node">
+			>
+		>
+	>
+

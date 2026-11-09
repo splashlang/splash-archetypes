@@ -1,0 +1,467 @@
+{
+    "format": "splash-aom2",
+    "format_version": "1.0",
+    "form": "opt",
+    "created": "2026-11-09T19:00:51.741741756Z",
+    "rm_id": "org.openehr:healthcare",
+    "archetype": {
+        "_type": "Operational_template",
+        "archetype_id": "openEHR-EHR-SECTION.t_patient_event_info_ds_sf.v1.0.0",
+        "parent_archetype_id": "openEHR-EHR-SECTION.adhoc.v1",
+        "is_generated": true,
+        "adl_version": "2.3.0",
+        "rm_release": "1.1.0",
+        "description": {
+            "original_language": "en",
+            "lifecycle_state": "unmanaged",
+            "original_author": {
+                "name": "Dr Ian McNicoll",
+                "organisation": "Ocean Informatics, United Kingdom",
+                "email": "ian.mcnicoll@oceaninformatics.com",
+                "date": "01/04/2011"
+            },
+            "details": {
+                "en": {
+                    "language": "en",
+                    "purpose": "Templated section for Simple discharge summary",
+                    "use": "test use"
+                }
+            }
+        },
+        "definition": {
+            "rm_type_name": "SECTION",
+            "node_id": "id1.1",
+            "attributes": [
+                {
+                    "rm_attribute_name": "items",
+                    "is_multiple": true,
+                    "children": [
+                        {
+                            "_type": "C_archetype_root",
+                            "rm_type_name": "ADMIN_ENTRY",
+                            "node_id": "id0.1",
+                            "occurrences": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "other_participations",
+                                    "is_multiple": true,
+                                    "existence": {
+                                        "lower": 0,
+                                        "upper": 0
+                                    }
+                                },
+                                {
+                                    "rm_attribute_name": "data",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ITEM_TREE",
+                                            "node_id": "id4",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "items",
+                                                    "is_multiple": true,
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id5.1",
+                                                            "occurrences": {
+                                                                "lower": 1,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_DATE_TIME",
+                                                                            "node_id": "id63"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id58",
+                                                            "occurrences": {
+                                                                "lower": 0
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id64"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id58.1",
+                                                            "occurrences": {
+                                                                "lower": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id64"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "archetype_ref": "openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-1.v1.0.0"
+                        },
+                        {
+                            "_type": "C_archetype_root",
+                            "rm_type_name": "ADMIN_ENTRY",
+                            "node_id": "id0.2",
+                            "occurrences": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "attributes": [
+                                {
+                                    "rm_attribute_name": "other_participations",
+                                    "is_multiple": true,
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "PARTICIPATION",
+                                            "node_id": "id85.1",
+                                            "occurrences": {
+                                                "lower": 1,
+                                                "upper": 1
+                                            },
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "function",
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "DV_CODED_TEXT",
+                                                            "node_id": "id88",
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "defining_code",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_terminology_code",
+                                                                            "constraint": "at82"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "rm_attribute_name": "performer",
+                                                    "existence": {
+                                                        "lower": 1,
+                                                        "upper": 1
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "rm_attribute_name": "data",
+                                    "children": [
+                                        {
+                                            "_type": "C_complex_object",
+                                            "rm_type_name": "ITEM_TREE",
+                                            "node_id": "id4",
+                                            "attributes": [
+                                                {
+                                                    "rm_attribute_name": "items",
+                                                    "is_multiple": true,
+                                                    "children": [
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id5.1",
+                                                            "occurrences": {
+                                                                "lower": 1,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_DATE_TIME",
+                                                                            "node_id": "id90"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id67",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id92"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id61.1",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id93"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id31",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id94"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "Archetype_slot",
+                                                            "rm_type_name": "CLUSTER",
+                                                            "node_id": "id75",
+                                                            "occurrences": {
+                                                                "lower": 0
+                                                            },
+                                                            "includes": [
+                                                                {
+                                                                    "source_text": "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.organisation\\.v1|openEHR-EHR-CLUSTER\\.individual_professional\\.v1|openEHR-EHR-CLUSTER\\.address\\.v1|openEHR-EHR-CLUSTER\\.individual_personal\\.v1/}",
+                                                                    "tag": "archetype_id/value"
+                                                                }
+                                                            ],
+                                                            "excludes": [
+                                                                {
+                                                                    "source_text": "archetype_id/value matches {/.*/}",
+                                                                    "tag": "archetype_id/value"
+                                                                }
+                                                            ],
+                                                            "is_closed": true
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id78.1",
+                                                            "occurrences": {
+                                                                "lower": 0,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id96"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_type": "C_complex_object",
+                                                            "rm_type_name": "ELEMENT",
+                                                            "node_id": "id80.1",
+                                                            "occurrences": {
+                                                                "lower": 1,
+                                                                "upper": 1
+                                                            },
+                                                            "attributes": [
+                                                                {
+                                                                    "rm_attribute_name": "value",
+                                                                    "children": [
+                                                                        {
+                                                                            "_type": "C_complex_object",
+                                                                            "rm_type_name": "DV_TEXT",
+                                                                            "node_id": "id98"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "archetype_ref": "openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-2.v1.0.0"
+                        }
+                    ]
+                }
+            ]
+        },
+        "terminology": {
+            "original_language": "en",
+            "concept_code": "id1.1",
+            "term_definitions": {
+                "en": {
+                    "id1.1": {
+                        "text": "Patient event information",
+                        "description": "Information about the patient event"
+                    },
+                    "id0.1": {
+                        "text": "Event start",
+                        "description": "Event start"
+                    },
+                    "id0.2": {
+                        "text": "Event end",
+                        "description": "Event end"
+                    }
+                }
+            }
+        },
+        "component_terminologies": {
+            "openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-1.v1.0.0": {
+                "original_language": "en",
+                "concept_code": "id1.1",
+                "term_definitions": {
+                    "en": {
+                        "at47": {
+                            "text": "Emergency",
+                            "description": "*"
+                        },
+                        "at48": {
+                            "text": "Elective",
+                            "description": "*"
+                        },
+                        "id58": {
+                            "text": "Event Identifier",
+                            "description": "*"
+                        },
+                        "id1.1": {
+                            "text": "Admission event start information",
+                            "description": "Administrative information for the start of episode in hospital"
+                        },
+                        "id5.1": {
+                            "text": "Event start date/time",
+                            "description": "*"
+                        },
+                        "id58.1": {
+                            "text": "Event identifier - mandatory",
+                            "description": "Event identifier - mandatory"
+                        }
+                    }
+                }
+            },
+            "openEHR-EHR-ADMIN_ENTRY.t_patient_event_info_ds_sf-2.v1.0.0": {
+                "original_language": "en",
+                "concept_code": "id1.1",
+                "term_definitions": {
+                    "en": {
+                        "id31": {
+                            "text": "Discharge destination type",
+                            "description": "The destination of a patient on completion of a hospital provder spell"
+                        },
+                        "id67": {
+                            "text": "Discharge location",
+                            "description": "The ward from which the patient was discharged"
+                        },
+                        "id75": {
+                            "text": "Discharge details",
+                            "description": "*"
+                        },
+                        "at82": {
+                            "text": "Principal doctor",
+                            "description": "Doctor responsible for discharge"
+                        },
+                        "id1.1": {
+                            "text": "Discharge event end information - Simple discharge summary",
+                            "description": "The administrative information at discharge of a patient from a period of care"
+                        },
+                        "id5.1": {
+                            "text": "Event end datetime",
+                            "description": "*"
+                        },
+                        "id61.1": {
+                            "text": "Discharge from service/specialty",
+                            "description": "*"
+                        },
+                        "id78.1": {
+                            "text": "Discharge outcome",
+                            "description": "*"
+                        },
+                        "id80.1": {
+                            "text": "Discharge status/type",
+                            "description": "*"
+                        },
+                        "id85.1": {
+                            "text": "Responsible clinician on discharge",
+                            "description": "Clinician responsible for discharge"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

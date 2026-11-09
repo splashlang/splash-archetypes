@@ -92,8 +92,46 @@ a| Reports on each library, as CSV and JSON files in `reports/<library>/`:
 
 It also holds the library statistics (`library-statistics.md` and `library-statistics.json`).
 | Review and quality assurance of the library contents.
+
+| `kg/`
+| Knowledge graph representation of each archetype library. See below.
+| Used for KG tools.
+
 |===
 
 Each generated directory mirrors the structure of `adl2/`. The tools delete and regenerate a
 directory each time they produce it, so it never contains files of archetypes that have since
 been removed or renamed.
+
+== Knowledge Graph rendering
+
+The /kg directory contains a KG form of the library as CSV files. These are as follows:
+
+=== Description.csv
+
+This currently contains rows consisting of:
+
+* archetype_leaf_node_uri
+* RM type
+* description, from archetype
+
+An example row is:
+
+* http://splashform.org/adl2_template/openEHR-EHR-EVALUATION.problem-diagnosis.v1#data_Diagnosis_value
+* /data[id2]/items[id3]/value[id40]
+* DV_CODED_TEXT
+* The index diagnosis
+
+The URI is constructed as: ```<publisher_uri>/<library>/<archetype_logical_id>#<node_tag>```
+
+=== Ralation.csv
+
+The relation table contains the following kinds of relation so far:
+
+* archetype specialises archetype (archetype inheritance)
+* archetype uses        archetype (i.e. due to slots and use_archetype refs)
+* archetype has_rm_type BMM-type
+* BMM-type  is_a        BMM-type (BMM class inheritance)
+
+
+

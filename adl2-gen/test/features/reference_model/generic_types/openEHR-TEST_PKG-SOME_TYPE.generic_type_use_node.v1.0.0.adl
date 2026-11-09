@@ -1,0 +1,54 @@
+archetype (adl_version=2.3.0; rm_release=1.0.2; generated)
+	openEHR-TEST_PKG-SOME_TYPE.generic_type_use_node.v1.0.0
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	lifecycle_state = <"published">
+	original_author = <
+		["name"] = <"Thomas Beale">
+		["email"] = <"thomas.beale@openEHR.org">
+		["organisation"] = <"openEHR Foundation <http://www.openEHR.org>">
+		["date"] = <"2006-06-12">
+	>
+	custodian_namespace = <"org.openehr">
+	custodian_organisation = <"openEHR Foundation <http://www.openEHR.org>">
+	copyright = <"Copyright © 2006 openEHR Foundation <http://www.openEHR.org>">
+	licence = <"Creative Commons CC-BY-SA <https://creativecommons.org/licenses/by-sa/3.0/>">
+	other_details = <
+		["regression"] = <"PASS">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Illustrates the use of generic RM types in ADL constraints. The syntax is standard UML, i.e. using '<>' markers.">
+			use = <"Regression testing">
+			keywords = <"ADL", "test", "generic types">
+		>
+	>
+
+definition
+	SOME_TYPE[id1] matches {
+		qty_interval_attr_1 matches {
+			DV_INTERVAL<DV_QUANTITY>[id2] 
+		}
+		qty_interval_attr_2 matches {
+			DV_INTERVAL<DV_QUANTITY>[id3] 
+		}
+	}
+
+terminology
+	term_definitions = <
+		["en"] = <
+			["id1"] = <
+				text = <"root item">
+				description = <"xxxx">
+			>
+			["id2"] = <
+				text = <"interval of quantities">
+				description = <"interval">
+			>
+		>
+	>
+
