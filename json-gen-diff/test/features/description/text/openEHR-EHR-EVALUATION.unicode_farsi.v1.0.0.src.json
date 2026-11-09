@@ -2,7 +2,7 @@
     "format": "splash-aom2",
     "format_version": "1.0",
     "form": "src",
-    "created": "2026-11-06T20:07:43.663802014Z",
+    "created": "2026-11-09T20:21:48.343422179Z",
     "rm_id": "org.openehr:healthcare",
     "archetype": {
         "_type": "Authored_archetype",
@@ -222,21 +222,18 @@
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_string",
-                                                                                                            "node_id": "id99992",
                                                                                                             "constraint": [
                                                                                                                 "mth"
                                                                                                             ]
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_string",
-                                                                                                            "node_id": "id99993",
                                                                                                             "constraint": [
                                                                                                                 "wk"
                                                                                                             ]
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_string",
-                                                                                                            "node_id": "id99994",
                                                                                                             "constraint": [
                                                                                                                 "day"
                                                                                                             ]
@@ -257,7 +254,6 @@
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_real",
-                                                                                                            "node_id": "id99992",
                                                                                                             "constraint": [
                                                                                                                 {
                                                                                                                     "lower": "0.0",
@@ -267,7 +263,6 @@
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_real",
-                                                                                                            "node_id": "id99993",
                                                                                                             "constraint": [
                                                                                                                 {
                                                                                                                     "lower": "0.0",
@@ -277,7 +272,6 @@
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_real",
-                                                                                                            "node_id": "id99994",
                                                                                                             "constraint": [
                                                                                                                 {
                                                                                                                     "lower": "0.0",
@@ -486,7 +480,6 @@
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_integer",
-                                                                                                            "node_id": "id99992",
                                                                                                             "constraint": [
                                                                                                                 {
                                                                                                                     "lower": 4,
@@ -496,7 +489,6 @@
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_integer",
-                                                                                                            "node_id": "id99993",
                                                                                                             "constraint": [
                                                                                                                 {
                                                                                                                     "lower": 7,
@@ -515,12 +507,10 @@
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_terminology_code",
-                                                                                                            "node_id": "id99992",
                                                                                                             "constraint": "at111"
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_terminology_code",
-                                                                                                            "node_id": "id99993",
                                                                                                             "constraint": "at112"
                                                                                                         }
                                                                                                     ]

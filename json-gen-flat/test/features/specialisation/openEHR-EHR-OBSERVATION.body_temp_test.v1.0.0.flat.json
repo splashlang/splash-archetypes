@@ -2,7 +2,7 @@
     "format": "splash-aom2",
     "format_version": "1.0",
     "form": "flat",
-    "created": "2026-11-06T20:07:43.698304584Z",
+    "created": "2026-11-09T20:21:48.364002311Z",
     "rm_id": "org.openehr:healthcare",
     "archetype": {
         "_type": "Authored_archetype",
@@ -121,7 +121,6 @@
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_string",
-                                                                                                            "node_id": "id99992",
                                                                                                             "constraint": [
                                                                                                                 "°F"
                                                                                                             ]
@@ -142,7 +141,6 @@
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_integer",
-                                                                                                            "node_id": "id99992",
                                                                                                             "constraint": [
                                                                                                                 {
                                                                                                                     "lower": 1,

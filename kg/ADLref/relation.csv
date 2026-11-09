@@ -62,15 +62,8 @@ http://splashform.org/ADLref/openEHR-EHR-OBSERVATION.body_temp_test.v1,uses,http
 http://splashform.org/ADLref/openEHR-EHR-OBSERVATION.body_temp_test.v1,uses,http://splashform.org/ADLref/openEHR-EHR-ELEMENT.last_normal_menstrual_period.v1
 http://splashform.org/ADLref/openEHR-EHR-OBSERVATION.body_temp_test.v1,uses,http://splashform.org/ADLref/openEHR-EHR-ELEMENT.menstrual_cycle_day.v1
 http://splashform.org/ADLref/openEHR-EHR-OBSERVATION.body_temp_test.v1,uses,http://splashform.org/ADLref/openEHR-EHR-CLUSTER.device.v1
-http://splashform.org/ADLref/openEHR-EHR-OBSERVATION.body_temp_narrow_dv_quantity.v1,uses,http://splashform.org/ADLref/openEHR-EHR-CLUSTER.environmental_conditions.v1
-http://splashform.org/ADLref/openEHR-EHR-OBSERVATION.body_temp_narrow_dv_quantity.v1,uses,http://splashform.org/ADLref/openEHR-EHR-CLUSTER.level_of_exertion.v1
-http://splashform.org/ADLref/openEHR-EHR-OBSERVATION.body_temp_narrow_dv_quantity.v1,uses,http://splashform.org/ADLref/openEHR-EHR-ELEMENT.last_normal_menstrual_period.v1
-http://splashform.org/ADLref/openEHR-EHR-OBSERVATION.body_temp_narrow_dv_quantity.v1,uses,http://splashform.org/ADLref/openEHR-EHR-ELEMENT.menstrual_cycle_day.v1
-http://splashform.org/ADLref/openEHR-EHR-OBSERVATION.body_temp_narrow_dv_quantity.v1,uses,http://splashform.org/ADLref/openEHR-EHR-CLUSTER.device.v1
 http://splashform.org/ADLref/openEHR-EHR-OBSERVATION.ordering_parent.v1,uses,http://splashform.org/ADLref/openEHR-EHR-CLUSTER.specimen.v1
-http://splashform.org/ADLref/openEHR-EHR-OBSERVATION.ordering_parent-merge_children.v1,uses,http://splashform.org/ADLref/openEHR-EHR-CLUSTER.specimen.v1
 http://splashform.org/ADLref/openEHR-EHR-OBSERVATION.substance_use.v1,uses,http://splashform.org/ADLref/openEHR-EHR-CLUSTER.change.v1
-http://splashform.org/ADLref/openEHR-EHR-OBSERVATION.substance_use-tobacco.v1,uses,http://splashform.org/ADLref/openEHR-EHR-CLUSTER.change.v1
 http://splashform.org/ADLref/openEHR-EHR-OBSERVATION.test_regex.v1,uses,http://splashform.org/ADLref/openEHR-EHR-CLUSTER.anatomical_location.v1
 http://splashform.org/ADLref/openEHR-EHR-OBSERVATION.upgrade_parent.v1,uses,http://splashform.org/ADLref/openEHR-EHR-CLUSTER.specimen.v1
 http://splashform.org/ADLref/openEHR-EHR-OBSERVATION.upgrade_parent.v1,uses,http://splashform.org/ADLref/openEHR-EHR-CLUSTER.lab_result_annotation.v1

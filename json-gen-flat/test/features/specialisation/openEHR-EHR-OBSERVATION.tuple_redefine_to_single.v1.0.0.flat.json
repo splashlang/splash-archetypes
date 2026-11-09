@@ -2,7 +2,7 @@
     "format": "splash-aom2",
     "format_version": "1.0",
     "form": "flat",
-    "created": "2026-11-06T20:07:43.706867816Z",
+    "created": "2026-11-09T20:21:48.369792901Z",
     "rm_id": "org.openehr:healthcare",
     "archetype": {
         "_type": "Authored_archetype",
@@ -197,7 +197,6 @@
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_integer",
-                                                                                                            "node_id": "id99992",
                                                                                                             "constraint": [
                                                                                                                 {
                                                                                                                     "lower": 2,
@@ -207,7 +206,6 @@
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_integer",
-                                                                                                            "node_id": "id99993",
                                                                                                             "constraint": [
                                                                                                                 {
                                                                                                                     "lower": 4,
@@ -217,7 +215,6 @@
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_integer",
-                                                                                                            "node_id": "id99994",
                                                                                                             "constraint": [
                                                                                                                 {
                                                                                                                     "lower": 6,
@@ -227,7 +224,6 @@
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_integer",
-                                                                                                            "node_id": "id99995",
                                                                                                             "constraint": [
                                                                                                                 {
                                                                                                                     "lower": 8,
@@ -246,22 +242,18 @@
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_terminology_code",
-                                                                                                            "node_id": "id99992",
                                                                                                             "constraint": "at18"
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_terminology_code",
-                                                                                                            "node_id": "id99993",
                                                                                                             "constraint": "at19"
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_terminology_code",
-                                                                                                            "node_id": "id99994",
                                                                                                             "constraint": "at20"
                                                                                                         },
                                                                                                         {
                                                                                                             "_type": "C_terminology_code",
-                                                                                                            "node_id": "id99995",
                                                                                                             "constraint": "at21"
                                                                                                         }
                                                                                                     ]

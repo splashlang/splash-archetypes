@@ -2,7 +2,7 @@
     "format": "splash-aom2",
     "format_version": "1.0",
     "form": "src",
-    "created": "2026-11-06T20:07:43.672982047Z",
+    "created": "2026-11-09T20:21:48.347823062Z",
     "rm_id": "org.openehr:healthcare",
     "archetype": {
         "_type": "Authored_archetype",
@@ -112,7 +112,6 @@
                                                         },
                                                         {
                                                             "_type": "C_terminology_code",
-                                                            "node_id": "id99992",
                                                             "constraint": "at0.8"
                                                         }
                                                     ]
@@ -130,7 +129,6 @@
                                                         },
                                                         {
                                                             "_type": "C_string",
-                                                            "node_id": "id99992",
                                                             "constraint": [
                                                                 "gm/d",
                                                                 "gm/wk"

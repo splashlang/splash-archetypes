@@ -2,7 +2,7 @@
     "format": "splash-aom2",
     "format_version": "1.0",
     "form": "src",
-    "created": "2026-11-06T20:07:43.680100046Z",
+    "created": "2026-11-09T20:21:48.351713369Z",
     "rm_id": "org.openehr:test",
     "archetype": {
         "_type": "Authored_archetype",
@@ -135,7 +135,6 @@
                                         },
                                         {
                                             "_type": "C_real",
-                                            "node_id": "id99992",
                                             "constraint": [
                                                 {
                                                     "lower": "40.0"
@@ -155,7 +154,6 @@
                                         },
                                         {
                                             "_type": "C_string",
-                                            "node_id": "id99992",
                                             "constraint": [
                                                 "F"
                                             ]

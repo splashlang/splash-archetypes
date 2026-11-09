@@ -2,7 +2,7 @@
     "format": "splash-aom2",
     "format_version": "1.0",
     "form": "flat",
-    "created": "2026-11-06T20:07:43.709418781Z",
+    "created": "2026-11-09T20:21:48.372041861Z",
     "rm_id": "org.openehr:healthcare",
     "archetype": {
         "_type": "Authored_archetype",
@@ -91,7 +91,6 @@
                                                         },
                                                         {
                                                             "_type": "C_real",
-                                                            "node_id": "id99992",
                                                             "constraint": [
                                                                 {
                                                                     "lower": "0.0",
@@ -112,7 +111,6 @@
                                                         },
                                                         {
                                                             "_type": "C_string",
-                                                            "node_id": "id99992",
                                                             "constraint": [
                                                                 "ml/min"
                                                             ]
@@ -133,7 +131,6 @@
                                                         },
                                                         {
                                                             "_type": "C_integer",
-                                                            "node_id": "id99992",
                                                             "constraint": [
                                                                 {
                                                                     "lower": 1,
@@ -298,7 +295,6 @@
                                                         },
                                                         {
                                                             "_type": "C_real",
-                                                            "node_id": "id99992",
                                                             "constraint": [
                                                                 {
                                                                     "lower": "0.0",
@@ -320,7 +316,6 @@
                                                         },
                                                         {
                                                             "_type": "C_boolean",
-                                                            "node_id": "id99992",
                                                             "constraint": [
                                                                 false
                                                             ]
@@ -341,7 +336,6 @@
                                                         },
                                                         {
                                                             "_type": "C_integer",
-                                                            "node_id": "id99992",
                                                             "constraint": [
                                                                 {
                                                                     "lower": 2,

@@ -2,7 +2,7 @@
     "format": "splash-aom2",
     "format_version": "1.0",
     "form": "flat",
-    "created": "2026-11-06T20:07:43.704092303Z",
+    "created": "2026-11-09T20:21:48.368062691Z",
     "rm_id": "org.openehr:healthcare",
     "archetype": {
         "_type": "Authored_archetype",
@@ -250,7 +250,6 @@
                                                                                                                         },
                                                                                                                         {
                                                                                                                             "_type": "C_terminology_code",
-                                                                                                                            "node_id": "id99992",
                                                                                                                             "constraint": "at0.8"
                                                                                                                         }
                                                                                                                     ]
@@ -268,7 +267,6 @@
                                                                                                                         },
                                                                                                                         {
                                                                                                                             "_type": "C_string",
-                                                                                                                            "node_id": "id99992",
                                                                                                                             "constraint": [
                                                                                                                                 "gm/d",
                                                                                                                                 "gm/wk"
